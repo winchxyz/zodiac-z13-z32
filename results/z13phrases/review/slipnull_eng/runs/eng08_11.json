@@ -1,0 +1,618 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:36:00.635Z",
+ "label": "eng08_11",
+ "cipher": {
+  "id": "eng08",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng08.txt",
+  "text": "abcdeccdfgfhh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   11
+  ],
+  "isomorphAfterSlips": "abcdeccdfgf*h"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 220630,
+  "scored": 204091,
+  "keptAtLeastStreamMin": 764,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 14336,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 3037,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 764,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 55,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 4,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 2,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 37,
+  "4": 723,
+  "5": 3
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -5.655933690142276,
+  "topShare": 0.1623895440055912,
+  "top10Share": 0.49176329911590166,
+  "effectiveNumberExpEntropy": 106.81063268615773,
+  "effectiveNumberInverseSimpson": 19.139126906763924,
+  "unscoredMassBoundRelative": 0.000820999584526417,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 15,
+   "maxWordLogp": -16.113551436235234,
+   "massEstimateRelative": 1.0589865037357584e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0002587201588920786
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 3,
+   "-18.25": 15,
+   "-18.00": 25,
+   "-17.75": 41,
+   "-17.50": 54,
+   "-17.25": 71,
+   "-17.00": 65,
+   "-16.75": 137,
+   "-16.50": 184,
+   "-16.25": 232,
+   "-16.00": 281,
+   "-15.75": 355,
+   "-15.50": 495,
+   "-15.25": 607,
+   "-15.00": 903,
+   "-14.75": 1061,
+   "-14.50": 1208,
+   "-14.25": 1520,
+   "-14.00": 1782,
+   "-13.75": 2041,
+   "-13.50": 2356,
+   "-13.25": 2658,
+   "-13.00": 2999,
+   "-12.75": 3346,
+   "-12.50": 3907,
+   "-12.25": 4318,
+   "-12.00": 4719,
+   "-11.75": 5300,
+   "-11.50": 5756,
+   "-11.25": 6490,
+   "-11.00": 6905,
+   "-10.75": 7072,
+   "-10.50": 7573,
+   "-10.25": 7679,
+   "-10.00": 8064,
+   "-9.75": 8087,
+   "-9.50": 8151,
+   "-9.25": 8542,
+   "-9.00": 8526,
+   "-8.75": 8546,
+   "-8.50": 8864,
+   "-8.25": 8530,
+   "-8.00": 8397,
+   "-7.75": 8221,
+   "-7.50": 7964,
+   "-7.25": 7571,
+   "-7.00": 6991,
+   "-6.75": 6289,
+   "-6.50": 5320,
+   "-6.25": 4698,
+   "-6.00": 3845,
+   "-5.75": 3102,
+   "-5.50": 2363,
+   "-5.25": 1833,
+   "-5.00": 1328,
+   "-4.75": 988,
+   "-4.50": 734,
+   "-4.25": 527,
+   "-4.00": 380,
+   "-3.75": 227,
+   "-3.50": 184,
+   "-3.25": 82,
+   "-3.00": 72,
+   "-2.75": 26,
+   "-2.50": 19,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.00": 9,
+   "-18.75": 51,
+   "-18.50": 208,
+   "-18.25": 774,
+   "-18.00": 1816,
+   "-17.75": 3432,
+   "-17.50": 5659,
+   "-17.25": 8201,
+   "-17.00": 10618,
+   "-16.75": 12614,
+   "-16.50": 13898,
+   "-16.25": 14499,
+   "-16.00": 14464,
+   "-15.75": 14360,
+   "-15.50": 13716,
+   "-15.25": 13004,
+   "-15.00": 11887,
+   "-14.75": 10488,
+   "-14.50": 9229,
+   "-14.25": 8113,
+   "-14.00": 7123,
+   "-13.75": 5840,
+   "-13.50": 4979,
+   "-13.25": 4150,
+   "-13.00": 3331,
+   "-12.75": 2582,
+   "-12.50": 2082,
+   "-12.25": 1546,
+   "-12.00": 1164,
+   "-11.75": 931,
+   "-11.50": 679,
+   "-11.25": 545,
+   "-11.00": 401,
+   "-10.75": 311,
+   "-10.50": 279,
+   "-10.25": 250,
+   "-10.00": 185,
+   "-9.75": 200,
+   "-9.50": 116,
+   "-9.25": 138,
+   "-9.00": 78,
+   "-8.75": 51,
+   "-8.50": 45,
+   "-8.25": 13,
+   "-8.00": 15,
+   "-7.75": 11,
+   "-7.25": 3,
+   "-7.00": 1,
+   "-6.75": 1,
+   "-6.50": 1
+  },
+  "boundUnscored": {
+   "-18.50": 3,
+   "-18.25": 15,
+   "-18.00": 25,
+   "-17.75": 41,
+   "-17.50": 54,
+   "-17.25": 71,
+   "-17.00": 65,
+   "-16.75": 137,
+   "-16.50": 184,
+   "-16.25": 232,
+   "-16.00": 281,
+   "-15.75": 355,
+   "-15.50": 495,
+   "-15.25": 607,
+   "-15.00": 903,
+   "-14.75": 1061,
+   "-14.50": 1208,
+   "-14.25": 1520,
+   "-14.00": 1782,
+   "-13.75": 2041,
+   "-13.50": 2356,
+   "-13.25": 2658,
+   "-13.00": 445
+  }
+ },
+ "timeMs": {
+  "total": 2192,
+  "setup": 480
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "OFTHATTHEREIS",
+   "wordLogp": -6.4454,
+   "words": "OF THAT THERE IS",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "INTHATTHEREIS",
+   "wordLogp": -6.5404,
+   "words": "IN THAT THERE IS",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ONTHATTHEREIS",
+   "wordLogp": -6.875,
+   "words": "ON THAT THERE IS",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "N",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "BYTHATTHEREIS",
+   "wordLogp": -7.0294,
+   "words": "BY THAT THERE IS",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "Y",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "DOTHATTHEREIS",
+   "wordLogp": -7.2049,
+   "words": "DO THAT THERE IS",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "O",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "IFTHATTHEREIS",
+   "wordLogp": -7.2448,
+   "words": "IF THAT THERE IS",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "F",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ISTHATTHEYEAR",
+   "wordLogp": -7.5594,
+   "words": "IS THAT THE YEAR",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "Y",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ISTHATTHERETO",
+   "wordLogp": -7.6414,
+   "words": "IS THAT THERE TO",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "OFTHATTHEYEAR",
+   "wordLogp": -7.6451,
+   "words": "OF THAT THE YEAR",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "Y",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ISTHATTHENEED",
+   "wordLogp": -7.6978,
+   "words": "IS THAT THE NEED",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "N",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "UPTHATTHEREIS",
+   "wordLogp": -7.6978,
+   "words": "UP THAT THERE IS",
+   "unknown": 0,
+   "key": {
+    "a": "U",
+    "b": "P",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "PMTHATTHEREIS",
+   "wordLogp": -7.7005,
+   "words": "PM THAT THERE IS",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "M",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "MYTHATTHEREIS",
+   "wordLogp": -7.7151,
+   "words": "MY THAT THERE IS",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "Y",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ISTHATTHEVERY",
+   "wordLogp": -7.7275,
+   "words": "IS THAT THE VERY",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "V",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "NOTHATTHEREIS",
+   "wordLogp": -7.732,
+   "words": "NO THAT THERE IS",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "SOTHATTHEYEAR",
+   "wordLogp": -7.733,
+   "words": "SO THAT THE YEAR",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "Y",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "INTHATTHEYEAR",
+   "wordLogp": -7.7401,
+   "words": "IN THAT THE YEAR",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "Y",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ISTHATTHEREAL",
+   "wordLogp": -7.7736,
+   "words": "IS THAT THE REAL",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "OFTHATTHENEED",
+   "wordLogp": -7.7834,
+   "words": "OF THAT THE NEED",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "N",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ISTHATTHEREIN",
+   "wordLogp": -7.7902,
+   "words": "IS THAT THERE IN",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "R",
+    "h": "N"
+   }
+  }
+ ]
+}

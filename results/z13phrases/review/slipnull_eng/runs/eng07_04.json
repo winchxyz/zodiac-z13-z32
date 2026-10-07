@@ -1,0 +1,409 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:34:27.374Z",
+ "label": "eng07_04",
+ "cipher": {
+  "id": "eng07",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng07.txt",
+  "text": "abcdefghchcfd",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   4
+  ],
+  "isomorphAfterSlips": "abcd*fghchcfd"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 19723,
+  "scored": 18869,
+  "keptAtLeastStreamMin": 10,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 997,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 112,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 10,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 8,
+  "4": 2
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.286235837674633,
+  "topShare": 0.09505118970061294,
+  "top10Share": 0.5490141561484277,
+  "effectiveNumberExpEntropy": 84.10053195635786,
+  "effectiveNumberInverseSimpson": 25.750596107143302,
+  "unscoredMassBoundRelative": 0.018096463382015412,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.006883704143115172
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.50": 1,
+   "-17.25": 2,
+   "-16.75": 4,
+   "-16.50": 8,
+   "-16.25": 5,
+   "-16.00": 6,
+   "-15.75": 10,
+   "-15.50": 22,
+   "-15.25": 19,
+   "-15.00": 32,
+   "-14.75": 37,
+   "-14.50": 50,
+   "-14.25": 79,
+   "-14.00": 103,
+   "-13.75": 130,
+   "-13.50": 149,
+   "-13.25": 165,
+   "-13.00": 188,
+   "-12.75": 226,
+   "-12.50": 251,
+   "-12.25": 324,
+   "-12.00": 349,
+   "-11.75": 427,
+   "-11.50": 431,
+   "-11.25": 541,
+   "-11.00": 600,
+   "-10.75": 687,
+   "-10.50": 677,
+   "-10.25": 767,
+   "-10.00": 788,
+   "-9.75": 771,
+   "-9.50": 778,
+   "-9.25": 841,
+   "-9.00": 798,
+   "-8.75": 779,
+   "-8.50": 821,
+   "-8.25": 828,
+   "-8.00": 817,
+   "-7.75": 833,
+   "-7.50": 835,
+   "-7.25": 843,
+   "-7.00": 739,
+   "-6.75": 681,
+   "-6.50": 577,
+   "-6.25": 474,
+   "-6.00": 326,
+   "-5.75": 300,
+   "-5.50": 215,
+   "-5.25": 154,
+   "-5.00": 77,
+   "-4.75": 62,
+   "-4.50": 45,
+   "-4.25": 20,
+   "-4.00": 18,
+   "-3.75": 6,
+   "-3.50": 5,
+   "-3.25": 2
+  },
+  "exactScored": {
+   "-18.50": 5,
+   "-18.25": 42,
+   "-18.00": 98,
+   "-17.75": 181,
+   "-17.50": 320,
+   "-17.25": 611,
+   "-17.00": 880,
+   "-16.75": 1041,
+   "-16.50": 1127,
+   "-16.25": 1283,
+   "-16.00": 1364,
+   "-15.75": 1438,
+   "-15.50": 1517,
+   "-15.25": 1456,
+   "-15.00": 1321,
+   "-14.75": 1175,
+   "-14.50": 1049,
+   "-14.25": 817,
+   "-14.00": 677,
+   "-13.75": 610,
+   "-13.50": 433,
+   "-13.25": 369,
+   "-13.00": 292,
+   "-12.75": 203,
+   "-12.50": 157,
+   "-12.25": 111,
+   "-12.00": 89,
+   "-11.75": 60,
+   "-11.50": 55,
+   "-11.25": 33,
+   "-11.00": 20,
+   "-10.75": 9,
+   "-10.50": 12,
+   "-10.25": 4,
+   "-10.00": 4,
+   "-9.75": 2,
+   "-9.50": 4
+  },
+  "boundUnscored": {
+   "-17.50": 1,
+   "-17.25": 2,
+   "-16.75": 4,
+   "-16.50": 8,
+   "-16.25": 5,
+   "-16.00": 6,
+   "-15.75": 10,
+   "-15.50": 22,
+   "-15.25": 19,
+   "-15.00": 32,
+   "-14.75": 37,
+   "-14.50": 50,
+   "-14.25": 79,
+   "-14.00": 103,
+   "-13.75": 130,
+   "-13.50": 149,
+   "-13.25": 165,
+   "-13.00": 32
+  }
+ },
+ "timeMs": {
+  "total": 3715,
+  "setup": 439
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "THESINGLELENS",
+   "wordLogp": -9.3083,
+   "words": "THE SINGLE LENS",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "S",
+    "f": "N",
+    "g": "G",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "AFTERHOSTSTHE",
+   "wordLogp": -9.3559,
+   "words": "AFTER HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "F",
+    "c": "T",
+    "d": "E",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "WATERHOSTSTHE",
+   "wordLogp": -9.3771,
+   "words": "WATER HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "JASONTHISISTO",
+   "wordLogp": -9.384,
+   "words": "JASON THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "J",
+    "b": "A",
+    "c": "S",
+    "d": "O",
+    "f": "T",
+    "g": "H",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "RATESHOSTSTHE",
+   "wordLogp": -9.5856,
+   "words": "RATES HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "DATEOHIOTOTHE",
+   "wordLogp": -9.7348,
+   "words": "DATE OHIO TO THE",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "f": "H",
+    "g": "I",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THEYDRIVEVERY",
+   "wordLogp": -9.7725,
+   "words": "THEY DRIVE VERY",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "Y",
+    "f": "R",
+    "g": "I",
+    "h": "V"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "LATERHOSTSTHE",
+   "wordLogp": -9.8017,
+   "words": "LATER HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "DATEGHOSTSTHE",
+   "wordLogp": -9.8171,
+   "words": "DATE GHOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "RATEDHOSTSTHE",
+   "wordLogp": -9.8175,
+   "words": "RATED HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  }
+ ]
+}

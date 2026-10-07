@@ -1,0 +1,568 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:09:32.851Z",
+ "label": "scr04_07",
+ "cipher": {
+  "id": "scr04",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr04.txt",
+  "text": "0z0[KNN0MEAMA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abacdee*fghfh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 4,
+  "tasks": 109,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 109,
+  "tasks": 109,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 150051,
+  "scored": 140842,
+  "keptAtLeastStreamMin": 18,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 5187,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 482,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 18,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 5,
+  "4": 13
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.726252433648227,
+  "topShare": 0.05333180746733363,
+  "top10Share": 0.2934197336295831,
+  "effectiveNumberExpEntropy": 470.4922949013876,
+  "effectiveNumberInverseSimpson": 81.47115281376819,
+  "unscoredMassBoundRelative": 0.05374832154329707,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 7,
+   "maxWordLogp": -16.385633793041404,
+   "massEstimateRelative": 0.000004503726235083995,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.018344294129736125
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 2,
+   "-17.75": 8,
+   "-17.50": 13,
+   "-17.25": 18,
+   "-17.00": 29,
+   "-16.75": 34,
+   "-16.50": 41,
+   "-16.25": 85,
+   "-16.00": 151,
+   "-15.75": 202,
+   "-15.50": 235,
+   "-15.25": 315,
+   "-15.00": 431,
+   "-14.75": 628,
+   "-14.50": 663,
+   "-14.25": 784,
+   "-14.00": 1011,
+   "-13.75": 1223,
+   "-13.50": 1439,
+   "-13.25": 1636,
+   "-13.00": 1936,
+   "-12.75": 2271,
+   "-12.50": 2634,
+   "-12.25": 3058,
+   "-12.00": 3503,
+   "-11.75": 3876,
+   "-11.50": 4213,
+   "-11.25": 4549,
+   "-11.00": 5043,
+   "-10.75": 5318,
+   "-10.50": 5571,
+   "-10.25": 5950,
+   "-10.00": 5996,
+   "-9.75": 6310,
+   "-9.50": 6518,
+   "-9.25": 6553,
+   "-9.00": 6715,
+   "-8.75": 6718,
+   "-8.50": 6583,
+   "-8.25": 6462,
+   "-8.00": 6271,
+   "-7.75": 5674,
+   "-7.50": 5229,
+   "-7.25": 4730,
+   "-7.00": 4252,
+   "-6.75": 3465,
+   "-6.50": 2959,
+   "-6.25": 2339,
+   "-6.00": 1870,
+   "-5.75": 1371,
+   "-5.50": 1044,
+   "-5.25": 755,
+   "-5.00": 530,
+   "-4.75": 324,
+   "-4.50": 217,
+   "-4.25": 126,
+   "-4.00": 82,
+   "-3.75": 53,
+   "-3.50": 24,
+   "-3.25": 3,
+   "-3.00": 7
+  },
+  "exactScored": {
+   "-19.00": 10,
+   "-18.75": 89,
+   "-18.50": 578,
+   "-18.25": 1566,
+   "-18.00": 3131,
+   "-17.75": 4760,
+   "-17.50": 6439,
+   "-17.25": 7882,
+   "-17.00": 8968,
+   "-16.75": 9687,
+   "-16.50": 9729,
+   "-16.25": 9677,
+   "-16.00": 9502,
+   "-15.75": 9130,
+   "-15.50": 8844,
+   "-15.25": 8517,
+   "-15.00": 7714,
+   "-14.75": 7044,
+   "-14.50": 5976,
+   "-14.25": 4964,
+   "-14.00": 3887,
+   "-13.75": 3018,
+   "-13.50": 2447,
+   "-13.25": 1807,
+   "-13.00": 1520,
+   "-12.75": 1109,
+   "-12.50": 886,
+   "-12.25": 620,
+   "-12.00": 444,
+   "-11.75": 308,
+   "-11.50": 213,
+   "-11.25": 136,
+   "-11.00": 100,
+   "-10.75": 53,
+   "-10.50": 37,
+   "-10.25": 23,
+   "-10.00": 15,
+   "-9.75": 4,
+   "-9.50": 5,
+   "-9.25": 2,
+   "-9.00": 1
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 2,
+   "-17.75": 8,
+   "-17.50": 13,
+   "-17.25": 18,
+   "-17.00": 29,
+   "-16.75": 34,
+   "-16.50": 41,
+   "-16.25": 85,
+   "-16.00": 151,
+   "-15.75": 202,
+   "-15.50": 235,
+   "-15.25": 315,
+   "-15.00": 431,
+   "-14.75": 628,
+   "-14.50": 663,
+   "-14.25": 784,
+   "-14.00": 1011,
+   "-13.75": 1223,
+   "-13.50": 1439,
+   "-13.25": 1636,
+   "-13.00": 260
+  }
+ },
+ "timeMs": {
+  "total": 3658,
+  "setup": 580
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "TOTHREEDAYSAS",
+   "wordLogp": -8.9993,
+   "words": "TO THREE DAYS AS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "R",
+    "N": "E",
+    "M": "A",
+    "E": "Y",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TOTHREESIGNIN",
+   "wordLogp": -9.0003,
+   "words": "TO THREE SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "R",
+    "N": "E",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ISINDEEDTHATA",
+   "wordLogp": -9.1284,
+   "words": "IS INDEED THAT A",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "z": "S",
+    "[": "N",
+    "K": "D",
+    "N": "E",
+    "M": "T",
+    "E": "H",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "PAPERSSHOWNON",
+   "wordLogp": -9.2649,
+   "words": "PAPERS SHOWN ON",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "z": "A",
+    "[": "E",
+    "K": "R",
+    "N": "S",
+    "M": "O",
+    "E": "W",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "TOTHREEKANSAS",
+   "wordLogp": -9.3088,
+   "words": "TO THREE KANSAS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "R",
+    "N": "E",
+    "M": "A",
+    "E": "N",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "TITLESSHOWNON",
+   "wordLogp": -9.3481,
+   "words": "TITLES SHOWN ON",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "I",
+    "[": "L",
+    "K": "E",
+    "N": "S",
+    "M": "O",
+    "E": "W",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "DIDNOTTHEUSES",
+   "wordLogp": -9.4296,
+   "words": "DID NOT THE USES",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "I",
+    "[": "N",
+    "K": "O",
+    "N": "T",
+    "M": "E",
+    "E": "U",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ASANOFFERHERE",
+   "wordLogp": -9.4511,
+   "words": "AS AN OFFER HERE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "S",
+    "[": "N",
+    "K": "O",
+    "N": "F",
+    "M": "R",
+    "E": "H",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "BABYISSHOWNON",
+   "wordLogp": -9.5336,
+   "words": "BABY IS SHOWN ON",
+   "unknown": 0,
+   "key": {
+    "0": "B",
+    "z": "A",
+    "[": "Y",
+    "K": "I",
+    "N": "S",
+    "M": "O",
+    "E": "W",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ATAPOSSIBLEBE",
+   "wordLogp": -9.5778,
+   "words": "AT A POSSIBLE BE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "T",
+    "[": "P",
+    "K": "O",
+    "N": "S",
+    "M": "B",
+    "E": "L",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ASAWINNERHERE",
+   "wordLogp": -9.6207,
+   "words": "AS A WINNER HERE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "S",
+    "[": "W",
+    "K": "I",
+    "N": "N",
+    "M": "R",
+    "E": "H",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "IFILESSHOWNON",
+   "wordLogp": -9.7218,
+   "words": "I FILES SHOWN ON",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "z": "F",
+    "[": "L",
+    "K": "E",
+    "N": "S",
+    "M": "O",
+    "E": "W",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "BABIESSHOWNON",
+   "wordLogp": -9.7936,
+   "words": "BABIES SHOWN ON",
+   "unknown": 0,
+   "key": {
+    "0": "B",
+    "z": "A",
+    "[": "I",
+    "K": "E",
+    "N": "S",
+    "M": "O",
+    "E": "W",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "EYEBALLSIGNIN",
+   "wordLogp": -9.7978,
+   "words": "EYEBALL SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "Y",
+    "[": "B",
+    "K": "A",
+    "N": "L",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "TOTHREEWAYSAS",
+   "wordLogp": -9.8027,
+   "words": "TO THREE WAYS AS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "R",
+    "N": "E",
+    "M": "A",
+    "E": "Y",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "SOSMALLSIGNIN",
+   "wordLogp": -9.8158,
+   "words": "SO SMALL SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "O",
+    "[": "M",
+    "K": "A",
+    "N": "L",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "TOTHREEMAINAN",
+   "wordLogp": -9.8309,
+   "words": "TO THREE MAIN AN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "R",
+    "N": "E",
+    "M": "A",
+    "E": "I",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ASANOFFERWERE",
+   "wordLogp": -9.8505,
+   "words": "AS AN OFFER WERE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "S",
+    "[": "N",
+    "K": "O",
+    "N": "F",
+    "M": "R",
+    "E": "W",
+    "A": "E"
+   }
+  }
+ ]
+}

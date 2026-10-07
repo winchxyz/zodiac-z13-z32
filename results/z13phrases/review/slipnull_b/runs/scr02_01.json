@@ -1,0 +1,577 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:19:47.139Z",
+ "label": "scr02_01",
+ "cipher": {
+  "id": "scr02",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr02.txt",
+  "text": "0[EMAAMK0zN0N",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*cdeedfaghah"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 15506,
+  "scored": 14994,
+  "keptAtLeastStreamMin": 20,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1235,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 185,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 20,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 14,
+  "4": 5
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.350358725689206,
+  "topShare": 0.4921602885210363,
+  "top10Share": 0.8477723846275813,
+  "effectiveNumberExpEntropy": 11.784429939737159,
+  "effectiveNumberInverseSimpson": 3.7771284743988907,
+  "unscoredMassBoundRelative": 0.0012575599178423487,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0004427095107839672
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.00": 1,
+   "-16.75": 2,
+   "-16.50": 2,
+   "-16.25": 4,
+   "-16.00": 5,
+   "-15.75": 9,
+   "-15.50": 17,
+   "-15.25": 20,
+   "-15.00": 24,
+   "-14.75": 35,
+   "-14.50": 29,
+   "-14.25": 54,
+   "-14.00": 61,
+   "-13.75": 50,
+   "-13.50": 88,
+   "-13.25": 95,
+   "-13.00": 125,
+   "-12.75": 169,
+   "-12.50": 215,
+   "-12.25": 237,
+   "-12.00": 253,
+   "-11.75": 318,
+   "-11.50": 347,
+   "-11.25": 407,
+   "-11.00": 390,
+   "-10.75": 414,
+   "-10.50": 493,
+   "-10.25": 525,
+   "-10.00": 604,
+   "-9.75": 589,
+   "-9.50": 630,
+   "-9.25": 657,
+   "-9.00": 664,
+   "-8.75": 670,
+   "-8.50": 702,
+   "-8.25": 709,
+   "-8.00": 702,
+   "-7.75": 641,
+   "-7.50": 625,
+   "-7.25": 617,
+   "-7.00": 534,
+   "-6.75": 506,
+   "-6.50": 445,
+   "-6.25": 414,
+   "-6.00": 341,
+   "-5.75": 271,
+   "-5.50": 255,
+   "-5.25": 158,
+   "-5.00": 124,
+   "-4.75": 96,
+   "-4.50": 61,
+   "-4.25": 50,
+   "-4.00": 24,
+   "-3.75": 14,
+   "-3.50": 7,
+   "-3.25": 3,
+   "-3.00": 1,
+   "-2.75": 2,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-18.75": 7,
+   "-18.50": 25,
+   "-18.25": 88,
+   "-18.00": 129,
+   "-17.75": 177,
+   "-17.50": 309,
+   "-17.25": 462,
+   "-17.00": 623,
+   "-16.75": 780,
+   "-16.50": 869,
+   "-16.25": 938,
+   "-16.00": 996,
+   "-15.75": 1007,
+   "-15.50": 1075,
+   "-15.25": 1042,
+   "-15.00": 968,
+   "-14.75": 924,
+   "-14.50": 797,
+   "-14.25": 673,
+   "-14.00": 574,
+   "-13.75": 499,
+   "-13.50": 432,
+   "-13.25": 314,
+   "-13.00": 279,
+   "-12.75": 223,
+   "-12.50": 179,
+   "-12.25": 160,
+   "-12.00": 131,
+   "-11.75": 101,
+   "-11.50": 66,
+   "-11.25": 43,
+   "-11.00": 29,
+   "-10.75": 19,
+   "-10.50": 15,
+   "-10.25": 15,
+   "-10.00": 12,
+   "-9.75": 3,
+   "-9.50": 2,
+   "-9.25": 3,
+   "-9.00": 2,
+   "-8.75": 1,
+   "-8.50": 2,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-17.00": 1,
+   "-16.75": 2,
+   "-16.50": 2,
+   "-16.25": 4,
+   "-16.00": 5,
+   "-15.75": 9,
+   "-15.50": 17,
+   "-15.25": 20,
+   "-15.00": 24,
+   "-14.75": 35,
+   "-14.50": 29,
+   "-14.25": 54,
+   "-14.00": 61,
+   "-13.75": 50,
+   "-13.50": 88,
+   "-13.25": 95,
+   "-13.00": 16
+  }
+ },
+ "timeMs": {
+  "total": 1165,
+  "setup": 411
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "THEALLARTISTS",
+   "wordLogp": -7.6583,
+   "words": "THE ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "E",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TOFOLLOWTHATA",
+   "wordLogp": -8.3797,
+   "words": "TO FOLLOW THAT A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "H",
+    "N": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "TOMORROWTHATA",
+   "wordLogp": -8.4104,
+   "words": "TOMORROW THAT A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "M",
+    "M": "O",
+    "A": "R",
+    "K": "W",
+    "z": "H",
+    "N": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "TOMORROWTESTS",
+   "wordLogp": -8.5885,
+   "words": "TOMORROW TESTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "M",
+    "M": "O",
+    "A": "R",
+    "K": "W",
+    "z": "E",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "TOCALLARTISTS",
+   "wordLogp": -8.8813,
+   "words": "TO CALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "C",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ORSELLEROFNON",
+   "wordLogp": -8.9938,
+   "words": "OR SELLER OF NON",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "E": "S",
+    "M": "E",
+    "A": "L",
+    "K": "R",
+    "z": "F",
+    "N": "N"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "TOFOLLOWTESTS",
+   "wordLogp": -9.0427,
+   "words": "TO FOLLOW TESTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "E",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "TOPALLARTISTS",
+   "wordLogp": -9.0796,
+   "words": "TOP ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "P",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THEADDARTISTS",
+   "wordLogp": -9.2116,
+   "words": "THE ADD ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "E",
+    "M": "A",
+    "A": "D",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "TWOALLARTISTS",
+   "wordLogp": -9.2588,
+   "words": "TWO ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "O",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "TOFALLARTISTS",
+   "wordLogp": -9.3135,
+   "words": "TO FALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "F",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TOCOMMONTHATA",
+   "wordLogp": -9.5552,
+   "words": "TO COMMON THAT A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "C",
+    "M": "O",
+    "A": "M",
+    "K": "N",
+    "z": "H",
+    "N": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "TAXALLARTISTS",
+   "wordLogp": -9.6599,
+   "words": "TAX ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "X",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "TOOALLARTISTS",
+   "wordLogp": -9.6864,
+   "words": "TOO ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "O",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "OFSELLEROFNON",
+   "wordLogp": -9.7778,
+   "words": "OF SELLER OF NON",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "E": "S",
+    "M": "E",
+    "A": "L",
+    "K": "R",
+    "z": "F",
+    "N": "N"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "TRYALLARTISTS",
+   "wordLogp": -9.8251,
+   "words": "TRY ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "Y",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "TOCOMMONTESTS",
+   "wordLogp": -9.8319,
+   "words": "TO COMMON TESTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "C",
+    "M": "O",
+    "A": "M",
+    "K": "N",
+    "z": "E",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "TOFILLINTESTS",
+   "wordLogp": -9.8334,
+   "words": "TO FILL IN TESTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "F",
+    "M": "I",
+    "A": "L",
+    "K": "N",
+    "z": "E",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "INTERREGIONIN",
+   "wordLogp": -9.84,
+   "words": "INTER REGION IN",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "E": "T",
+    "M": "E",
+    "A": "R",
+    "K": "G",
+    "z": "O",
+    "N": "N"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "THUALLARTISTS",
+   "wordLogp": -9.8573,
+   "words": "THU ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "U",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  }
+ ]
+}

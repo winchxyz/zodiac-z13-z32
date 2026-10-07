@@ -1,0 +1,579 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:29:05.272Z",
+ "label": "scr15_01",
+ "cipher": {
+  "id": "scr15",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr15.txt",
+  "text": "NE0N[MA0AzMK0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*cadefcfgehc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 18735,
+  "scored": 17626,
+  "keptAtLeastStreamMin": 23,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1663,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 202,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 23,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 13,
+  "4": 10
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.691779715657799,
+  "topShare": 0.14493899035994903,
+  "top10Share": 0.6086692889133946,
+  "effectiveNumberExpEntropy": 49.309333237798114,
+  "effectiveNumberInverseSimpson": 15.043789882411293,
+  "unscoredMassBoundRelative": 0.005978761948398108,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0020811409725179425
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 1,
+   "-17.75": 2,
+   "-17.50": 1,
+   "-17.25": 4,
+   "-17.00": 3,
+   "-16.75": 10,
+   "-16.50": 9,
+   "-16.25": 9,
+   "-16.00": 16,
+   "-15.75": 18,
+   "-15.50": 29,
+   "-15.25": 34,
+   "-15.00": 59,
+   "-14.75": 53,
+   "-14.50": 80,
+   "-14.25": 98,
+   "-14.00": 118,
+   "-13.75": 160,
+   "-13.50": 170,
+   "-13.25": 200,
+   "-13.00": 206,
+   "-12.75": 272,
+   "-12.50": 304,
+   "-12.25": 340,
+   "-12.00": 378,
+   "-11.75": 412,
+   "-11.50": 484,
+   "-11.25": 581,
+   "-11.00": 634,
+   "-10.75": 611,
+   "-10.50": 668,
+   "-10.25": 727,
+   "-10.00": 668,
+   "-9.75": 692,
+   "-9.50": 755,
+   "-9.25": 686,
+   "-9.00": 772,
+   "-8.75": 754,
+   "-8.50": 763,
+   "-8.25": 757,
+   "-8.00": 745,
+   "-7.75": 742,
+   "-7.50": 738,
+   "-7.25": 652,
+   "-7.00": 617,
+   "-6.75": 553,
+   "-6.50": 427,
+   "-6.25": 431,
+   "-6.00": 290,
+   "-5.75": 272,
+   "-5.50": 221,
+   "-5.25": 156,
+   "-5.00": 125,
+   "-4.75": 79,
+   "-4.50": 49,
+   "-4.25": 45,
+   "-4.00": 24,
+   "-3.75": 12,
+   "-3.50": 8,
+   "-3.25": 10,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-18.75": 2,
+   "-18.50": 7,
+   "-18.25": 26,
+   "-18.00": 75,
+   "-17.75": 170,
+   "-17.50": 324,
+   "-17.25": 506,
+   "-17.00": 687,
+   "-16.75": 826,
+   "-16.50": 982,
+   "-16.25": 1095,
+   "-16.00": 1168,
+   "-15.75": 1195,
+   "-15.50": 1159,
+   "-15.25": 1185,
+   "-15.00": 1199,
+   "-14.75": 1085,
+   "-14.50": 1009,
+   "-14.25": 876,
+   "-14.00": 723,
+   "-13.75": 630,
+   "-13.50": 511,
+   "-13.25": 463,
+   "-13.00": 362,
+   "-12.75": 337,
+   "-12.50": 269,
+   "-12.25": 215,
+   "-12.00": 180,
+   "-11.75": 111,
+   "-11.50": 87,
+   "-11.25": 58,
+   "-11.00": 25,
+   "-10.75": 24,
+   "-10.50": 17,
+   "-10.25": 8,
+   "-10.00": 10,
+   "-9.75": 10,
+   "-9.50": 6,
+   "-9.00": 1,
+   "-8.75": 3
+  },
+  "boundUnscored": {
+   "-18.00": 1,
+   "-17.75": 2,
+   "-17.50": 1,
+   "-17.25": 4,
+   "-17.00": 3,
+   "-16.75": 10,
+   "-16.50": 9,
+   "-16.25": 9,
+   "-16.00": 16,
+   "-15.75": 18,
+   "-15.50": 29,
+   "-15.25": 34,
+   "-15.00": 59,
+   "-14.75": 53,
+   "-14.50": 80,
+   "-14.25": 98,
+   "-14.00": 118,
+   "-13.75": 160,
+   "-13.50": 170,
+   "-13.25": 200,
+   "-13.00": 35
+  }
+ },
+ "timeMs": {
+  "total": 1266,
+  "setup": 493
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "PEOPLETOTHENO",
+   "wordLogp": -8.5306,
+   "words": "PEOPLE TO THE NO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "P",
+    "[": "L",
+    "M": "E",
+    "A": "T",
+    "z": "H",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "PEOPLETOTHEDO",
+   "wordLogp": -8.5606,
+   "words": "PEOPLE TO THE DO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "P",
+    "[": "L",
+    "M": "E",
+    "A": "T",
+    "z": "H",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "PEOPLETOTHESO",
+   "wordLogp": -8.5912,
+   "words": "PEOPLE TO THE SO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "P",
+    "[": "L",
+    "M": "E",
+    "A": "T",
+    "z": "H",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "PEOPLETOTHEGO",
+   "wordLogp": -8.7881,
+   "words": "PEOPLE TO THE GO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "P",
+    "[": "L",
+    "M": "E",
+    "A": "T",
+    "z": "H",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "AREASINENTIRE",
+   "wordLogp": -9.3083,
+   "words": "AREAS IN ENTIRE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "[": "S",
+    "M": "I",
+    "A": "N",
+    "z": "T",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "CHECKINENTIRE",
+   "wordLogp": -9.3434,
+   "words": "CHECK IN ENTIRE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "C",
+    "[": "K",
+    "M": "I",
+    "A": "N",
+    "z": "T",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ISRICHOROTHER",
+   "wordLogp": -9.3693,
+   "words": "IS RICH OR OTHER",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "N": "I",
+    "[": "C",
+    "M": "H",
+    "A": "O",
+    "z": "T",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THETHOSESCORE",
+   "wordLogp": -9.3708,
+   "words": "THE THOSE SCORE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "O",
+    "A": "S",
+    "z": "C",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "GOOGLETOTHENO",
+   "wordLogp": -9.4487,
+   "words": "GOOGLE TO THE NO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "G",
+    "[": "L",
+    "M": "E",
+    "A": "T",
+    "z": "H",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "GOOGLETOTHEDO",
+   "wordLogp": -9.4787,
+   "words": "GOOGLE TO THE DO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "G",
+    "[": "L",
+    "M": "E",
+    "A": "T",
+    "z": "H",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "GOOGLETOTHESO",
+   "wordLogp": -9.5093,
+   "words": "GOOGLE TO THE SO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "G",
+    "[": "L",
+    "M": "E",
+    "A": "T",
+    "z": "H",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "OFMOVIEMEDIUM",
+   "wordLogp": -9.5257,
+   "words": "OF MOVIE MEDIUM",
+   "unknown": 0,
+   "key": {
+    "0": "M",
+    "N": "O",
+    "[": "V",
+    "M": "I",
+    "A": "E",
+    "z": "D",
+    "K": "U"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "INRICHOROTHER",
+   "wordLogp": -9.5276,
+   "words": "IN RICH OR OTHER",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "N": "I",
+    "[": "C",
+    "M": "H",
+    "A": "O",
+    "z": "T",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "OCTOBERTRUEAT",
+   "wordLogp": -9.5645,
+   "words": "OCTOBER TRUE AT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "[": "B",
+    "M": "E",
+    "A": "R",
+    "z": "U",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "PEOPLEDODUETO",
+   "wordLogp": -9.5778,
+   "words": "PEOPLE DO DUE TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "P",
+    "[": "L",
+    "M": "E",
+    "A": "D",
+    "z": "U",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "PEOPLEDODGETO",
+   "wordLogp": -9.6198,
+   "words": "PEOPLE DODGE TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "P",
+    "[": "L",
+    "M": "E",
+    "A": "D",
+    "z": "G",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "INSIGHTSTOHAS",
+   "wordLogp": -9.6389,
+   "words": "INSIGHTS TO HAS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "I",
+    "[": "G",
+    "M": "H",
+    "A": "T",
+    "z": "O",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "PMSPORTSTERMS",
+   "wordLogp": -9.6402,
+   "words": "PM SPORTS TERMS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "P",
+    "[": "O",
+    "M": "R",
+    "A": "T",
+    "z": "E",
+    "K": "M"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "OCTOBERTRUEIT",
+   "wordLogp": -9.6532,
+   "words": "OCTOBER TRUE IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "[": "B",
+    "M": "E",
+    "A": "R",
+    "z": "U",
+    "K": "I"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "SEESTORERHODE",
+   "wordLogp": -9.6591,
+   "words": "SEE STORE RHODE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "S",
+    "[": "T",
+    "M": "O",
+    "A": "R",
+    "z": "H",
+    "K": "D"
+   }
+  }
+ ]
+}

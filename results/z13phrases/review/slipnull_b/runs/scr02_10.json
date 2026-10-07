@@ -1,0 +1,608 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:20:28.242Z",
+ "label": "scr02_10",
+ "cipher": {
+  "id": "scr02",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr02.txt",
+  "text": "0[EMAAMK0zN0N",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   10
+  ],
+  "isomorphAfterSlips": "abcdeedfag*ah"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 254861,
+  "scored": 241333,
+  "keptAtLeastStreamMin": 81,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 13686,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1512,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 81,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 4,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 3,
+  "3": 60,
+  "4": 18
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.807537410766479,
+  "topShare": 0.15936529444749006,
+  "top10Share": 0.6151972556780438,
+  "effectiveNumberExpEntropy": 91.82822529375727,
+  "effectiveNumberInverseSimpson": 13.831299915234185,
+  "unscoredMassBoundRelative": 0.00952074657886971,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 11,
+   "maxWordLogp": -13.997459623999802,
+   "massEstimateRelative": 0.00006753954714525645,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0032482913801132806
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 2,
+   "-17.75": 11,
+   "-17.50": 18,
+   "-17.25": 25,
+   "-17.00": 59,
+   "-16.75": 113,
+   "-16.50": 101,
+   "-16.25": 155,
+   "-16.00": 162,
+   "-15.75": 278,
+   "-15.50": 343,
+   "-15.25": 516,
+   "-15.00": 575,
+   "-14.75": 843,
+   "-14.50": 983,
+   "-14.25": 1211,
+   "-14.00": 1494,
+   "-13.75": 1807,
+   "-13.50": 1993,
+   "-13.25": 2413,
+   "-13.00": 2862,
+   "-12.75": 3283,
+   "-12.50": 3887,
+   "-12.25": 4331,
+   "-12.00": 5047,
+   "-11.75": 5756,
+   "-11.50": 6574,
+   "-11.25": 7119,
+   "-11.00": 7449,
+   "-10.75": 8335,
+   "-10.50": 8679,
+   "-10.25": 9250,
+   "-10.00": 9740,
+   "-9.75": 10008,
+   "-9.50": 10395,
+   "-9.25": 10908,
+   "-9.00": 10955,
+   "-8.75": 11115,
+   "-8.50": 11108,
+   "-8.25": 10759,
+   "-8.00": 10597,
+   "-7.75": 10230,
+   "-7.50": 9651,
+   "-7.25": 8988,
+   "-7.00": 8158,
+   "-6.75": 7307,
+   "-6.50": 6420,
+   "-6.25": 5383,
+   "-6.00": 4490,
+   "-5.75": 3622,
+   "-5.50": 2825,
+   "-5.25": 2100,
+   "-5.00": 1542,
+   "-4.75": 1139,
+   "-4.50": 737,
+   "-4.25": 431,
+   "-4.00": 265,
+   "-3.75": 154,
+   "-3.50": 77,
+   "-3.25": 50,
+   "-3.00": 17,
+   "-2.75": 8,
+   "-2.50": 6,
+   "-2.00": 2
+  },
+  "exactScored": {
+   "-19.00": 2,
+   "-18.75": 48,
+   "-18.50": 273,
+   "-18.25": 848,
+   "-18.00": 1706,
+   "-17.75": 3361,
+   "-17.50": 5655,
+   "-17.25": 8242,
+   "-17.00": 10820,
+   "-16.75": 13460,
+   "-16.50": 15873,
+   "-16.25": 17060,
+   "-16.00": 18001,
+   "-15.75": 18077,
+   "-15.50": 18171,
+   "-15.25": 16932,
+   "-15.00": 15777,
+   "-14.75": 14147,
+   "-14.50": 12175,
+   "-14.25": 10326,
+   "-14.00": 8607,
+   "-13.75": 6929,
+   "-13.50": 5815,
+   "-13.25": 4714,
+   "-13.00": 3723,
+   "-12.75": 2870,
+   "-12.50": 2232,
+   "-12.25": 1670,
+   "-12.00": 1202,
+   "-11.75": 842,
+   "-11.50": 585,
+   "-11.25": 445,
+   "-11.00": 278,
+   "-10.75": 185,
+   "-10.50": 101,
+   "-10.25": 70,
+   "-10.00": 49,
+   "-9.75": 27,
+   "-9.50": 15,
+   "-9.25": 5,
+   "-9.00": 6,
+   "-8.75": 3,
+   "-8.50": 2,
+   "-8.00": 2,
+   "-7.75": 2
+  },
+  "boundUnscored": {
+   "-18.25": 2,
+   "-17.75": 11,
+   "-17.50": 18,
+   "-17.25": 25,
+   "-17.00": 59,
+   "-16.75": 113,
+   "-16.50": 101,
+   "-16.25": 155,
+   "-16.00": 162,
+   "-15.75": 278,
+   "-15.50": 343,
+   "-15.25": 516,
+   "-15.00": 575,
+   "-14.75": 843,
+   "-14.50": 983,
+   "-14.25": 1211,
+   "-14.00": 1494,
+   "-13.75": 1807,
+   "-13.50": 1993,
+   "-13.25": 2413,
+   "-13.00": 426
+  }
+ },
+ "timeMs": {
+  "total": 2507,
+  "setup": 446
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "EMAILLICENSED",
+   "wordLogp": -7.6051,
+   "words": "EMAIL LICENSED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "M",
+    "E": "A",
+    "M": "I",
+    "A": "L",
+    "K": "C",
+    "z": "N",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THEALLARTISTS",
+   "wordLogp": -7.6583,
+   "words": "THE ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "E": "E",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "CHINAANDCLICK",
+   "wordLogp": -7.7593,
+   "words": "CHINA AND CLICK",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "[": "H",
+    "E": "I",
+    "M": "N",
+    "A": "A",
+    "K": "D",
+    "z": "L",
+    "N": "K"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "ITFOLLOWINGIS",
+   "wordLogp": -7.7625,
+   "words": "IT FOLLOWING IS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "T",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "N",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ISFOLLOWINGIT",
+   "wordLogp": -8.4255,
+   "words": "IS FOLLOWING IT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "S",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "N",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "EMAILLIKETHEY",
+   "wordLogp": -8.4826,
+   "words": "EMAIL LIKE THEY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "M",
+    "E": "A",
+    "M": "I",
+    "A": "L",
+    "K": "K",
+    "z": "T",
+    "N": "Y"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "RECALLAIRPORT",
+   "wordLogp": -8.6877,
+   "words": "RECALL AIRPORT",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "[": "E",
+    "E": "C",
+    "M": "A",
+    "A": "L",
+    "K": "I",
+    "z": "P",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "IDFOLLOWINGIS",
+   "wordLogp": -8.7244,
+   "words": "ID FOLLOWING IS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "D",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "N",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ATCOMMONAREAS",
+   "wordLogp": -8.7256,
+   "words": "AT COMMON AREAS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "T",
+    "E": "C",
+    "M": "O",
+    "A": "M",
+    "K": "N",
+    "z": "R",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "EATONNOVEMBER",
+   "wordLogp": -8.8281,
+   "words": "EATON NOVEMBER",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "A",
+    "E": "T",
+    "M": "O",
+    "A": "N",
+    "K": "V",
+    "z": "M",
+    "N": "R"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "TRAILLISTENTO",
+   "wordLogp": -8.8341,
+   "words": "TRAIL LISTEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "R",
+    "E": "A",
+    "M": "I",
+    "A": "L",
+    "K": "S",
+    "z": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TOCALLARTISTS",
+   "wordLogp": -8.8813,
+   "words": "TO CALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "O",
+    "E": "C",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "OTHERREMOVEOF",
+   "wordLogp": -8.9341,
+   "words": "OTHER REMOVE OF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "T",
+    "E": "H",
+    "M": "E",
+    "A": "R",
+    "K": "M",
+    "z": "V",
+    "N": "F"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "EMAILLIKEWHEN",
+   "wordLogp": -8.977,
+   "words": "EMAIL LIKE WHEN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "M",
+    "E": "A",
+    "M": "I",
+    "A": "L",
+    "K": "K",
+    "z": "W",
+    "N": "N"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "ISBETTERINDIA",
+   "wordLogp": -8.9827,
+   "words": "IS BETTER INDIA",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "S",
+    "E": "B",
+    "M": "E",
+    "A": "T",
+    "K": "R",
+    "z": "N",
+    "N": "A"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "TOPALLARTISTS",
+   "wordLogp": -9.0796,
+   "words": "TOP ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "O",
+    "E": "P",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "EMAILLIFEWHEN",
+   "wordLogp": -9.1946,
+   "words": "EMAIL LIFE WHEN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "M",
+    "E": "A",
+    "M": "I",
+    "A": "L",
+    "K": "F",
+    "z": "W",
+    "N": "N"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ASWELLEMAILAT",
+   "wordLogp": -9.1996,
+   "words": "AS WELL EMAIL AT",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "S",
+    "E": "W",
+    "M": "E",
+    "A": "L",
+    "K": "M",
+    "z": "I",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THEADDARTISTS",
+   "wordLogp": -9.2116,
+   "words": "THE ADD ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "E": "E",
+    "M": "A",
+    "A": "D",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "TOPEFFECTWITH",
+   "wordLogp": -9.2417,
+   "words": "TOP EFFECT WITH",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "O",
+    "E": "P",
+    "M": "E",
+    "A": "F",
+    "K": "C",
+    "z": "W",
+    "N": "H"
+   }
+  }
+ ]
+}

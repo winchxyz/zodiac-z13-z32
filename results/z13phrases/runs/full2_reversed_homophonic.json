@@ -1,0 +1,8642 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T15:39:51.752Z",
+ "label": "full2_reversed_homophonic",
+ "cipher": {
+  "id": "z13.reversed",
+  "source": "data/ciphers/variants/z13.reversed.txt",
+  "text": "MAN[0M0K0zNEA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcdeaefegchb"
+ },
+ "options": {
+  "mode": "homophonic",
+  "topWords": 333333,
+  "wordsUsed": 323973,
+  "maxWords": 2,
+  "vocab": "full",
+  "wordList": "data/lm/words.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9851,
+  "streamMin": -12.9851,
+  "threads": 4,
+  "taskDepth": 2,
+  "tasks": 113,
+  "maxSeconds": 300
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "full",
+  "dist": {
+   "mean": -10.0682,
+   "max": -4.5418,
+   "p5": -14.055,
+   "p10": -12.9851,
+   "p25": -11.4764,
+   "p50": -9.9444,
+   "p75": -8.4039,
+   "p90": -7.2578,
+   "p95": -6.6898,
+   "p99": -6.0523
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 113,
+  "tasks": 113,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 6126,
+  "scored": 6020,
+  "keptAtLeastStreamMin": 917,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9851,
+    "count": 917,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4764,
+    "count": 137,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.9444,
+    "count": 11,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.4039,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.2578,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6898,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0523,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 9,
+  "3": 2
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.888957277966335,
+  "topShare": 0.44073942383614084,
+  "top10Share": 0.7608594738265061,
+  "effectiveNumberExpEntropy": 18.241192333737633,
+  "effectiveNumberInverseSimpson": 4.601988779871847,
+  "unscoredMassBoundRelative": 0.0008494995306000192,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00042520718863643854
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-15.00": 2,
+   "-14.75": 6,
+   "-14.50": 5,
+   "-14.25": 10,
+   "-14.00": 11,
+   "-13.75": 18,
+   "-13.50": 19,
+   "-13.25": 33,
+   "-13.00": 30,
+   "-12.75": 32,
+   "-12.50": 27,
+   "-12.25": 44,
+   "-12.00": 50,
+   "-11.75": 65,
+   "-11.50": 75,
+   "-11.25": 80,
+   "-11.00": 98,
+   "-10.75": 103,
+   "-10.50": 137,
+   "-10.25": 143,
+   "-10.00": 163,
+   "-9.75": 176,
+   "-9.50": 226,
+   "-9.25": 211,
+   "-9.00": 222,
+   "-8.75": 228,
+   "-8.50": 267,
+   "-8.25": 240,
+   "-8.00": 289,
+   "-7.75": 287,
+   "-7.50": 288,
+   "-7.25": 306,
+   "-7.00": 266,
+   "-6.75": 286,
+   "-6.50": 279,
+   "-6.25": 234,
+   "-6.00": 175,
+   "-5.75": 163,
+   "-5.50": 224,
+   "-5.25": 154,
+   "-5.00": 139,
+   "-4.75": 109,
+   "-4.50": 92,
+   "-4.25": 45,
+   "-4.00": 25,
+   "-3.75": 17,
+   "-3.50": 10,
+   "-3.25": 8,
+   "-3.00": 4,
+   "-2.75": 3,
+   "-2.50": 1,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-15.50": 49,
+   "-15.25": 469,
+   "-15.00": 743,
+   "-14.75": 743,
+   "-14.50": 767,
+   "-14.25": 573,
+   "-14.00": 554,
+   "-13.75": 455,
+   "-13.50": 431,
+   "-13.25": 302,
+   "-13.00": 235,
+   "-12.75": 181,
+   "-12.50": 132,
+   "-12.25": 91,
+   "-12.00": 87,
+   "-11.75": 66,
+   "-11.50": 34,
+   "-11.25": 37,
+   "-11.00": 21,
+   "-10.75": 20,
+   "-10.50": 8,
+   "-10.25": 11,
+   "-10.00": 4,
+   "-9.75": 3,
+   "-9.50": 1,
+   "-9.25": 1,
+   "-9.00": 1,
+   "-8.25": 1
+  },
+  "boundUnscored": {
+   "-15.00": 2,
+   "-14.75": 6,
+   "-14.50": 5,
+   "-14.25": 10,
+   "-14.00": 11,
+   "-13.75": 18,
+   "-13.50": 19,
+   "-13.25": 33,
+   "-13.00": 2
+  }
+ },
+ "timeMs": {
+  "total": 24442,
+  "setup": 7148
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "STATESELEGANT",
+   "wordLogp": -8.2448,
+   "words": "STATES ELEGANT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "A",
+    "[": "T",
+    "K": "L",
+    "z": "G",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CLINICINITIAL",
+   "wordLogp": -8.7982,
+   "words": "CLINIC INITIAL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "C",
+    "A": "L",
+    "N": "I",
+    "[": "N",
+    "K": "N",
+    "z": "T",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "IDENTITYTREND",
+   "wordLogp": -9.0888,
+   "words": "IDENTITY TREND",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "D",
+    "N": "E",
+    "[": "N",
+    "K": "Y",
+    "z": "R",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "ALICIAINITIAL",
+   "wordLogp": -9.3108,
+   "words": "ALICIA INITIAL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "A",
+    "A": "L",
+    "N": "I",
+    "[": "C",
+    "K": "N",
+    "z": "T",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "LEAVELEVERAGE",
+   "wordLogp": -9.5085,
+   "words": "LEAVE LEVERAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "L",
+    "A": "E",
+    "N": "A",
+    "[": "V",
+    "K": "V",
+    "z": "R",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "DEANADATABASE",
+   "wordLogp": -9.5774,
+   "words": "DEAN A DATABASE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "D",
+    "A": "E",
+    "N": "A",
+    "[": "N",
+    "K": "T",
+    "z": "B",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "STAGESELEGANT",
+   "wordLogp": -9.7075,
+   "words": "STAGES ELEGANT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "A",
+    "[": "G",
+    "K": "L",
+    "z": "G",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "LEASELEVERAGE",
+   "wordLogp": -9.7903,
+   "words": "LEASE LEVERAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "L",
+    "A": "E",
+    "N": "A",
+    "[": "S",
+    "K": "V",
+    "z": "R",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "IDENTITYTHEAD",
+   "wordLogp": -9.8071,
+   "words": "IDENTITY THE AD",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "D",
+    "N": "E",
+    "[": "N",
+    "K": "Y",
+    "z": "H",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "RATHERELECTRA",
+   "wordLogp": -9.8251,
+   "words": "RATHER ELECTRA",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "A",
+    "N": "T",
+    "[": "H",
+    "K": "L",
+    "z": "C",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "FSCREFERENCES",
+   "wordLogp": -9.8263,
+   "words": "FSC REFERENCES",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "F",
+    "A": "S",
+    "N": "C",
+    "[": "R",
+    "K": "R",
+    "z": "N",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "STORESEREPORT",
+   "wordLogp": -10.0017,
+   "words": "STORES E REPORT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "O",
+    "[": "R",
+    "K": "R",
+    "z": "P",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "STAKESELEGANT",
+   "wordLogp": -10.0197,
+   "words": "STAKES ELEGANT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "A",
+    "[": "K",
+    "K": "L",
+    "z": "G",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "READERELEVATE",
+   "wordLogp": -10.0276,
+   "words": "READER ELEVATE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "A",
+    "[": "D",
+    "K": "L",
+    "z": "V",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THEDATAGARETH",
+   "wordLogp": -10.0406,
+   "words": "THE DATA GARETH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "G",
+    "z": "R",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "IDENTITYTREAD",
+   "wordLogp": -10.0626,
+   "words": "IDENTITY TREAD",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "D",
+    "N": "E",
+    "[": "N",
+    "K": "Y",
+    "z": "R",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "IDENTITYTWEED",
+   "wordLogp": -10.0733,
+   "words": "IDENTITY TWEED",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "D",
+    "N": "E",
+    "[": "N",
+    "K": "Y",
+    "z": "W",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ENTIRERARITAN",
+   "wordLogp": -10.0987,
+   "words": "ENTIRE RARITAN",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "A": "N",
+    "N": "T",
+    "[": "I",
+    "K": "A",
+    "z": "I",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "RATHERELEKTRA",
+   "wordLogp": -10.124,
+   "words": "RATHER ELEKTRA",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "A",
+    "N": "T",
+    "[": "H",
+    "K": "L",
+    "z": "K",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "GSIZEGENETICS",
+   "wordLogp": -10.1561,
+   "words": "G SIZE GENETICS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "G",
+    "A": "S",
+    "N": "I",
+    "[": "Z",
+    "K": "N",
+    "z": "T",
+    "E": "C"
+   }
+  },
+  {
+   "rank": 21,
+   "plaintext": "STATESELEFANT",
+   "wordLogp": -10.1938,
+   "words": "STATES ELEFANT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "A",
+    "[": "T",
+    "K": "L",
+    "z": "F",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 22,
+   "plaintext": "NEOGENEBEFORE",
+   "wordLogp": -10.2402,
+   "words": "NEOGENE BEFORE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "A": "E",
+    "N": "O",
+    "[": "G",
+    "K": "B",
+    "z": "F",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 23,
+   "plaintext": "STEVESELEMENT",
+   "wordLogp": -10.3261,
+   "words": "STEVES ELEMENT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "E",
+    "[": "V",
+    "K": "L",
+    "z": "M",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 24,
+   "plaintext": "HEALTHTITRATE",
+   "wordLogp": -10.3419,
+   "words": "HEALTH TITRATE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "H",
+    "A": "E",
+    "N": "A",
+    "[": "L",
+    "K": "I",
+    "z": "R",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 25,
+   "plaintext": "SMILESELENIUM",
+   "wordLogp": -10.3848,
+   "words": "SMILE SELENIUM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "M",
+    "N": "I",
+    "[": "L",
+    "K": "L",
+    "z": "N",
+    "E": "U"
+   }
+  },
+  {
+   "rank": 26,
+   "plaintext": "MASSAMALAYSIA",
+   "wordLogp": -10.4093,
+   "words": "MASSA MALAYSIA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "M",
+    "A": "A",
+    "N": "S",
+    "[": "S",
+    "K": "L",
+    "z": "Y",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 27,
+   "plaintext": "IDENTITYTHEED",
+   "wordLogp": -10.4132,
+   "words": "IDENTITY THE ED",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "D",
+    "N": "E",
+    "[": "N",
+    "K": "Y",
+    "z": "H",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 28,
+   "plaintext": "KAUNAKAKAIUSA",
+   "wordLogp": -10.4587,
+   "words": "KAUNAKAKAI USA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "K",
+    "A": "A",
+    "N": "U",
+    "[": "N",
+    "K": "K",
+    "z": "I",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 29,
+   "plaintext": "THESETELETECH",
+   "wordLogp": -10.4919,
+   "words": "THESE TELETECH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "S",
+    "K": "L",
+    "z": "T",
+    "E": "C"
+   }
+  },
+  {
+   "rank": 30,
+   "plaintext": "READEREYECARE",
+   "wordLogp": -10.4976,
+   "words": "READER EYE CARE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "A",
+    "[": "D",
+    "K": "Y",
+    "z": "C",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 31,
+   "plaintext": "ANNOTATETONON",
+   "wordLogp": -10.507,
+   "words": "ANNOTATE TO NON",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "A": "N",
+    "N": "N",
+    "[": "O",
+    "K": "E",
+    "z": "O",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 32,
+   "plaintext": "SLIDESEZEKIEL",
+   "wordLogp": -10.5254,
+   "words": "SLIDES EZEKIEL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "L",
+    "N": "I",
+    "[": "D",
+    "K": "Z",
+    "z": "K",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 33,
+   "plaintext": "THEDATARAMESH",
+   "wordLogp": -10.5343,
+   "words": "THE DATA RAMESH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "R",
+    "z": "M",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 34,
+   "plaintext": "CHINACAMALICH",
+   "wordLogp": -10.5566,
+   "words": "CHINA CAMALICH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "C",
+    "A": "H",
+    "N": "I",
+    "[": "N",
+    "K": "M",
+    "z": "L",
+    "E": "C"
+   }
+  },
+  {
+   "rank": 35,
+   "plaintext": "RENDEREDERNIE",
+   "wordLogp": -10.5625,
+   "words": "RENDERED ERNIE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "N",
+    "[": "D",
+    "K": "D",
+    "z": "R",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 36,
+   "plaintext": "THEDATARAJESH",
+   "wordLogp": -10.5676,
+   "words": "THE DATA RAJESH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "R",
+    "z": "J",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 37,
+   "plaintext": "THEDATAGANESH",
+   "wordLogp": -10.5833,
+   "words": "THE DATA GANESH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "G",
+    "z": "N",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 38,
+   "plaintext": "BSIZEBENEFITS",
+   "wordLogp": -10.5854,
+   "words": "B SIZE BENEFITS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "B",
+    "A": "S",
+    "N": "I",
+    "[": "Z",
+    "K": "N",
+    "z": "F",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 39,
+   "plaintext": "NEOGENEBECOME",
+   "wordLogp": -10.6026,
+   "words": "NEOGENE BECOME",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "A": "E",
+    "N": "O",
+    "[": "G",
+    "K": "B",
+    "z": "C",
+    "E": "M"
+   }
+  },
+  {
+   "rank": 40,
+   "plaintext": "THERETELETECH",
+   "wordLogp": -10.6153,
+   "words": "THERE TELETECH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "R",
+    "K": "L",
+    "z": "T",
+    "E": "C"
+   }
+  },
+  {
+   "rank": 41,
+   "plaintext": "KLINIKINITIAL",
+   "wordLogp": -10.6247,
+   "words": "KLINIK INITIAL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "K",
+    "A": "L",
+    "N": "I",
+    "[": "N",
+    "K": "N",
+    "z": "T",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 42,
+   "plaintext": "SERIESEGEORGE",
+   "wordLogp": -10.628,
+   "words": "SERIES E GEORGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "E",
+    "N": "R",
+    "[": "I",
+    "K": "G",
+    "z": "O",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 43,
+   "plaintext": "SERIESEDEGREE",
+   "wordLogp": -10.6359,
+   "words": "SERIES E DEGREE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "E",
+    "N": "R",
+    "[": "I",
+    "K": "D",
+    "z": "G",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 44,
+   "plaintext": "PRICEPELETIER",
+   "wordLogp": -10.6373,
+   "words": "PRICE PELETIER",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "P",
+    "A": "R",
+    "N": "I",
+    "[": "C",
+    "K": "L",
+    "z": "T",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 45,
+   "plaintext": "MSICEMETERIES",
+   "wordLogp": -10.6415,
+   "words": "MSI CEMETERIES",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "M",
+    "A": "S",
+    "N": "I",
+    "[": "C",
+    "K": "T",
+    "z": "R",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 46,
+   "plaintext": "DRCMADAGASCAR",
+   "wordLogp": -10.6525,
+   "words": "DRC MADAGASCAR",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "D",
+    "A": "R",
+    "N": "C",
+    "[": "M",
+    "K": "G",
+    "z": "S",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 47,
+   "plaintext": "THEDATAMAHESH",
+   "wordLogp": -10.6983,
+   "words": "THE DATA MAHESH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "M",
+    "z": "H",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 48,
+   "plaintext": "READIRISIMAGE",
+   "wordLogp": -10.704,
+   "words": "READIRIS IMAGE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "R",
+    "A": "E",
+    "N": "A",
+    "[": "D",
+    "K": "S",
+    "z": "M",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 49,
+   "plaintext": "READEREDEBATE",
+   "wordLogp": -10.705,
+   "words": "READER EDEBATE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "A",
+    "[": "D",
+    "K": "D",
+    "z": "B",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 50,
+   "plaintext": "INUKTITUTTURN",
+   "wordLogp": -10.721,
+   "words": "INUKTITUT TURN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "N",
+    "N": "U",
+    "[": "K",
+    "K": "U",
+    "z": "T",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 51,
+   "plaintext": "SHARESEYELASH",
+   "wordLogp": -10.7574,
+   "words": "SHARES EYELASH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "H",
+    "N": "A",
+    "[": "R",
+    "K": "Y",
+    "z": "L",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 52,
+   "plaintext": "DOTTEDELECTRO",
+   "wordLogp": -10.7652,
+   "words": "DOTTED ELECTRO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "D",
+    "A": "O",
+    "N": "T",
+    "[": "T",
+    "K": "L",
+    "z": "C",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 53,
+   "plaintext": "ASIANANUNCIOS",
+   "wordLogp": -10.7798,
+   "words": "ASIAN ANUNCIOS",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "A",
+    "A": "S",
+    "N": "I",
+    "[": "A",
+    "K": "U",
+    "z": "C",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 54,
+   "plaintext": "MEIRAMAGAZINE",
+   "wordLogp": -10.7935,
+   "words": "MEIRA MAGAZINE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "M",
+    "A": "E",
+    "N": "I",
+    "[": "R",
+    "K": "G",
+    "z": "Z",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 55,
+   "plaintext": "FDCREFERENCED",
+   "wordLogp": -10.8073,
+   "words": "FDC REFERENCED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "F",
+    "A": "D",
+    "N": "C",
+    "[": "R",
+    "K": "R",
+    "z": "N",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 56,
+   "plaintext": "LETTELECENTRE",
+   "wordLogp": -10.8089,
+   "words": "LET TELECENTRE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "L",
+    "A": "E",
+    "N": "T",
+    "[": "T",
+    "K": "C",
+    "z": "N",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 57,
+   "plaintext": "ENGINENANOGEN",
+   "wordLogp": -10.8254,
+   "words": "ENGINE NANOGEN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "E",
+    "A": "N",
+    "N": "G",
+    "[": "I",
+    "K": "A",
+    "z": "O",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 58,
+   "plaintext": "MIAMIMILILANI",
+   "wordLogp": -10.833,
+   "words": "MIAMI MILILANI",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "M",
+    "A": "I",
+    "N": "A",
+    "[": "M",
+    "K": "L",
+    "z": "L",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 59,
+   "plaintext": "NEEDANAZARENE",
+   "wordLogp": -10.8346,
+   "words": "NEED A NAZARENE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "N",
+    "A": "E",
+    "N": "E",
+    "[": "D",
+    "K": "Z",
+    "z": "R",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 60,
+   "plaintext": "THEDATARAKESH",
+   "wordLogp": -10.8601,
+   "words": "THE DATA RAKESH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "R",
+    "z": "K",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 61,
+   "plaintext": "BEALEBEVERAGE",
+   "wordLogp": -10.8674,
+   "words": "BEALE BEVERAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "B",
+    "A": "E",
+    "N": "A",
+    "[": "L",
+    "K": "V",
+    "z": "R",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 62,
+   "plaintext": "ARANEAEREPAIR",
+   "wordLogp": -10.907,
+   "words": "ARANEAE REPAIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "A",
+    "A": "R",
+    "N": "A",
+    "[": "N",
+    "K": "R",
+    "z": "P",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 63,
+   "plaintext": "STARESELEGANT",
+   "wordLogp": -10.9211,
+   "words": "STARES ELEGANT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "A",
+    "[": "R",
+    "K": "L",
+    "z": "G",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 64,
+   "plaintext": "CLINICINICIAL",
+   "wordLogp": -10.9381,
+   "words": "CLINIC INICIAL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "C",
+    "A": "L",
+    "N": "I",
+    "[": "N",
+    "K": "N",
+    "z": "C",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 65,
+   "plaintext": "MASTAMALAYSIA",
+   "wordLogp": -10.9476,
+   "words": "MASTA MALAYSIA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "M",
+    "A": "A",
+    "N": "S",
+    "[": "T",
+    "K": "L",
+    "z": "Y",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 66,
+   "plaintext": "TOONETELEFONO",
+   "wordLogp": -10.9606,
+   "words": "TO ONE TELEFONO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "T",
+    "A": "O",
+    "N": "O",
+    "[": "N",
+    "K": "L",
+    "z": "F",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 67,
+   "plaintext": "NEOGENEREMOTE",
+   "wordLogp": -10.9787,
+   "words": "NEOGENE REMOTE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "A": "E",
+    "N": "O",
+    "[": "G",
+    "K": "R",
+    "z": "M",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 68,
+   "plaintext": "THEDATAMAKETH",
+   "wordLogp": -10.9833,
+   "words": "THE DATA MAKETH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "M",
+    "z": "K",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 69,
+   "plaintext": "NEOGENEREMOVE",
+   "wordLogp": -10.9843,
+   "words": "NEOGENE REMOVE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "A": "E",
+    "N": "O",
+    "[": "G",
+    "K": "R",
+    "z": "M",
+    "E": "V"
+   }
+  },
+  {
+   "rank": 70,
+   "plaintext": "STEVESEREVENT",
+   "wordLogp": -10.9847,
+   "words": "STEVE SEREVENT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "E",
+    "[": "V",
+    "K": "R",
+    "z": "V",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 71,
+   "plaintext": "READEREYESAVE",
+   "wordLogp": -10.9879,
+   "words": "READER EYESAVE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "A",
+    "[": "D",
+    "K": "Y",
+    "z": "S",
+    "E": "V"
+   }
+  },
+  {
+   "rank": 72,
+   "plaintext": "SLICESEZEKIEL",
+   "wordLogp": -11.0094,
+   "words": "SLICES EZEKIEL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "L",
+    "N": "I",
+    "[": "C",
+    "K": "Z",
+    "z": "K",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 73,
+   "plaintext": "ESTATETETITAS",
+   "wordLogp": -11.0132,
+   "words": "ESTATE TETITAS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "E",
+    "A": "S",
+    "N": "T",
+    "[": "A",
+    "K": "E",
+    "z": "I",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 74,
+   "plaintext": "INSITITUTESAN",
+   "wordLogp": -11.0184,
+   "words": "INSITITUTE SAN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "N",
+    "N": "S",
+    "[": "I",
+    "K": "U",
+    "z": "E",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 75,
+   "plaintext": "THEDATATAKETH",
+   "wordLogp": -11.0238,
+   "words": "THE DATA TAKETH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "T",
+    "z": "K",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 76,
+   "plaintext": "GRETAGAMATEUR",
+   "wordLogp": -11.0265,
+   "words": "GRETAG AMATEUR",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "G",
+    "A": "R",
+    "N": "E",
+    "[": "T",
+    "K": "M",
+    "z": "T",
+    "E": "U"
+   }
+  },
+  {
+   "rank": 77,
+   "plaintext": "ADVOCACYCOVAD",
+   "wordLogp": -11.0376,
+   "words": "ADVOCACY COVAD",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "M": "A",
+    "A": "D",
+    "N": "V",
+    "[": "O",
+    "K": "Y",
+    "z": "O",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 78,
+   "plaintext": "MASHAMALAYSIA",
+   "wordLogp": -11.0392,
+   "words": "MASHA MALAYSIA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "M",
+    "A": "A",
+    "N": "S",
+    "[": "H",
+    "K": "L",
+    "z": "Y",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 79,
+   "plaintext": "STORESEYEBOLT",
+   "wordLogp": -11.0415,
+   "words": "STORES EYEBOLT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "O",
+    "[": "R",
+    "K": "Y",
+    "z": "B",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 80,
+   "plaintext": "PRECIPITINEUR",
+   "wordLogp": -11.0441,
+   "words": "PRECIPITIN EUR",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "P",
+    "A": "R",
+    "N": "E",
+    "[": "C",
+    "K": "T",
+    "z": "N",
+    "E": "U"
+   }
+  },
+  {
+   "rank": 81,
+   "plaintext": "STONESEREPORT",
+   "wordLogp": -11.0441,
+   "words": "STONES E REPORT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "O",
+    "[": "N",
+    "K": "R",
+    "z": "P",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 82,
+   "plaintext": "REUTEREXECUTE",
+   "wordLogp": -11.0529,
+   "words": "REUTER EXECUTE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "U",
+    "[": "T",
+    "K": "X",
+    "z": "C",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 83,
+   "plaintext": "STEVESEVEREST",
+   "wordLogp": -11.053,
+   "words": "STEVE SEVEREST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "E",
+    "[": "V",
+    "K": "V",
+    "z": "R",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 84,
+   "plaintext": "THEDATAPAREKH",
+   "wordLogp": -11.0637,
+   "words": "THE DATA PAREKH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "P",
+    "z": "R",
+    "E": "K"
+   }
+  },
+  {
+   "rank": 85,
+   "plaintext": "TARGETEDEUROA",
+   "wordLogp": -11.0699,
+   "words": "TARGETED EURO A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "T",
+    "A": "A",
+    "N": "R",
+    "[": "G",
+    "K": "D",
+    "z": "U",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 86,
+   "plaintext": "PSITOPOLOGIES",
+   "wordLogp": -11.0867,
+   "words": "PSI TOPOLOGIES",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "P",
+    "A": "S",
+    "N": "I",
+    "[": "T",
+    "K": "L",
+    "z": "G",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 87,
+   "plaintext": "BEAREBEVERAGE",
+   "wordLogp": -11.0925,
+   "words": "BE ARE BEVERAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "B",
+    "A": "E",
+    "N": "A",
+    "[": "R",
+    "K": "V",
+    "z": "R",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 88,
+   "plaintext": "INSITITUTESUN",
+   "wordLogp": -11.1148,
+   "words": "INSITITUTE SUN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "N",
+    "N": "S",
+    "[": "I",
+    "K": "U",
+    "z": "E",
+    "E": "U"
+   }
+  },
+  {
+   "rank": 89,
+   "plaintext": "CSIROCOLONIES",
+   "wordLogp": -11.1203,
+   "words": "CSIRO COLONIES",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "C",
+    "A": "S",
+    "N": "I",
+    "[": "R",
+    "K": "L",
+    "z": "N",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 90,
+   "plaintext": "ELAPSESISRAEL",
+   "wordLogp": -11.1399,
+   "words": "ELAPSES ISRAEL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "A": "L",
+    "N": "A",
+    "[": "P",
+    "K": "I",
+    "z": "R",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 91,
+   "plaintext": "ANISSASESSION",
+   "wordLogp": -11.1476,
+   "words": "ANISSA SESSION",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "A",
+    "A": "N",
+    "N": "I",
+    "[": "S",
+    "K": "E",
+    "z": "S",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 92,
+   "plaintext": "PAISAPAYANITA",
+   "wordLogp": -11.1507,
+   "words": "PAISAPAY ANITA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "P",
+    "A": "A",
+    "N": "I",
+    "[": "S",
+    "K": "Y",
+    "z": "N",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 93,
+   "plaintext": "MEIJIMINIMIZE",
+   "wordLogp": -11.1582,
+   "words": "MEIJI MINIMIZE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "M",
+    "A": "E",
+    "N": "I",
+    "[": "J",
+    "K": "N",
+    "z": "M",
+    "E": "Z"
+   }
+  },
+  {
+   "rank": 94,
+   "plaintext": "CLITICINITIAL",
+   "wordLogp": -11.1668,
+   "words": "CLITIC INITIAL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "C",
+    "A": "L",
+    "N": "I",
+    "[": "T",
+    "K": "N",
+    "z": "T",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 95,
+   "plaintext": "LEONELEVELONE",
+   "wordLogp": -11.1695,
+   "words": "LEONE LEVEL ONE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "L",
+    "A": "E",
+    "N": "O",
+    "[": "N",
+    "K": "V",
+    "z": "L",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 96,
+   "plaintext": "GLOBEGENEPOOL",
+   "wordLogp": -11.1952,
+   "words": "GLOBE GENE POOL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "G",
+    "A": "L",
+    "N": "O",
+    "[": "B",
+    "K": "N",
+    "z": "P",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 97,
+   "plaintext": "EUROPEPAPURAU",
+   "wordLogp": -11.1965,
+   "words": "EUROPE PAPURAU",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "M": "E",
+    "A": "U",
+    "N": "R",
+    "[": "O",
+    "K": "A",
+    "z": "U",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 98,
+   "plaintext": "IDENTITYTHEYD",
+   "wordLogp": -11.2119,
+   "words": "IDENTITY THEY D",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "D",
+    "N": "E",
+    "[": "N",
+    "K": "Y",
+    "z": "H",
+    "E": "Y"
+   }
+  },
+  {
+   "rank": 99,
+   "plaintext": "SLAVESEYEBALL",
+   "wordLogp": -11.2131,
+   "words": "SLAVES EYEBALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "L",
+    "N": "A",
+    "[": "V",
+    "K": "Y",
+    "z": "B",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 100,
+   "plaintext": "SHARESEYEWASH",
+   "wordLogp": -11.216,
+   "words": "SHARES EYEWASH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "H",
+    "N": "A",
+    "[": "R",
+    "K": "Y",
+    "z": "W",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 101,
+   "plaintext": "DEANEDELEGATE",
+   "wordLogp": -11.2181,
+   "words": "DEANE DELEGATE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "D",
+    "A": "E",
+    "N": "A",
+    "[": "N",
+    "K": "L",
+    "z": "G",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 102,
+   "plaintext": "ENTREEEVENTIN",
+   "wordLogp": -11.2206,
+   "words": "ENTREE EVENT IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "E",
+    "A": "N",
+    "N": "T",
+    "[": "R",
+    "K": "V",
+    "z": "N",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 103,
+   "plaintext": "STAVESELEGANT",
+   "wordLogp": -11.2346,
+   "words": "STAVES ELEGANT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "A",
+    "[": "V",
+    "K": "L",
+    "z": "G",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 104,
+   "plaintext": "ARACEAEREPAIR",
+   "wordLogp": -11.2351,
+   "words": "ARACEAE REPAIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "A",
+    "A": "R",
+    "N": "A",
+    "[": "C",
+    "K": "R",
+    "z": "P",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 105,
+   "plaintext": "INLININGNYLON",
+   "wordLogp": -11.2354,
+   "words": "INLINING NYLON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "I",
+    "A": "N",
+    "N": "L",
+    "[": "I",
+    "K": "G",
+    "z": "Y",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 106,
+   "plaintext": "THEDATANARESH",
+   "wordLogp": -11.2368,
+   "words": "THE DATA NARESH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "N",
+    "z": "R",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 107,
+   "plaintext": "SHAPESEYELASH",
+   "wordLogp": -11.2413,
+   "words": "SHAPES EYELASH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "H",
+    "N": "A",
+    "[": "P",
+    "K": "Y",
+    "z": "L",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 108,
+   "plaintext": "BEANEBEVERAGE",
+   "wordLogp": -11.2429,
+   "words": "BEANE BEVERAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "B",
+    "A": "E",
+    "N": "A",
+    "[": "N",
+    "K": "V",
+    "z": "R",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 109,
+   "plaintext": "NAAMANALABAMA",
+   "wordLogp": -11.2587,
+   "words": "NAAMAN ALABAMA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "N",
+    "A": "A",
+    "N": "A",
+    "[": "M",
+    "K": "L",
+    "z": "B",
+    "E": "M"
+   }
+  },
+  {
+   "rank": 110,
+   "plaintext": "NEGRINISINGLE",
+   "wordLogp": -11.2675,
+   "words": "NEGRINI SINGLE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "N",
+    "A": "E",
+    "N": "G",
+    "[": "R",
+    "K": "S",
+    "z": "N",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 111,
+   "plaintext": "MSOHOMOLOGOUS",
+   "wordLogp": -11.2869,
+   "words": "MSO HOMOLOGOUS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "M",
+    "A": "S",
+    "N": "O",
+    "[": "H",
+    "K": "L",
+    "z": "G",
+    "E": "U"
+   }
+  },
+  {
+   "rank": 112,
+   "plaintext": "JEENAJAPANESE",
+   "wordLogp": -11.298,
+   "words": "JEENA JAPANESE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "J",
+    "A": "E",
+    "N": "E",
+    "[": "N",
+    "K": "P",
+    "z": "N",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 113,
+   "plaintext": "TIAVATARANAKI",
+   "wordLogp": -11.302,
+   "words": "TIAVA TARANAKI",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "I",
+    "N": "A",
+    "[": "V",
+    "K": "R",
+    "z": "N",
+    "E": "K"
+   }
+  },
+  {
+   "rank": 114,
+   "plaintext": "ALISIAINITIAL",
+   "wordLogp": -11.3193,
+   "words": "ALISIA INITIAL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "A",
+    "A": "L",
+    "N": "I",
+    "[": "S",
+    "K": "N",
+    "z": "T",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 115,
+   "plaintext": "STEVESEVERETT",
+   "wordLogp": -11.324,
+   "words": "STEVES EVERETT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "E",
+    "[": "V",
+    "K": "V",
+    "z": "R",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 116,
+   "plaintext": "KAUNAKAKAIUPA",
+   "wordLogp": -11.3248,
+   "words": "KAUNAKAKAI UP A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "K",
+    "A": "A",
+    "N": "U",
+    "[": "N",
+    "K": "K",
+    "z": "I",
+    "E": "P"
+   }
+  },
+  {
+   "rank": 117,
+   "plaintext": "OSERRORORDERS",
+   "wordLogp": -11.3258,
+   "words": "OSERROR ORDERS",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "A": "S",
+    "N": "E",
+    "[": "R",
+    "K": "O",
+    "z": "D",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 118,
+   "plaintext": "NOELENEHERETO",
+   "wordLogp": -11.3309,
+   "words": "NOELENE HERE TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "A": "O",
+    "N": "E",
+    "[": "L",
+    "K": "H",
+    "z": "R",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 119,
+   "plaintext": "NEUKENEXECUTE",
+   "wordLogp": -11.3383,
+   "words": "NEUKEN EXECUTE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "A": "E",
+    "N": "U",
+    "[": "K",
+    "K": "X",
+    "z": "C",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 120,
+   "plaintext": "ROTHERELECTRO",
+   "wordLogp": -11.341,
+   "words": "R OTHER ELECTRO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "O",
+    "N": "T",
+    "[": "H",
+    "K": "L",
+    "z": "C",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 121,
+   "plaintext": "IDENTITYTREED",
+   "wordLogp": -11.3714,
+   "words": "IDENTITY TREED",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "D",
+    "N": "E",
+    "[": "N",
+    "K": "Y",
+    "z": "R",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 122,
+   "plaintext": "MYAGIMILITARY",
+   "wordLogp": -11.3862,
+   "words": "MYAGI MILITARY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "M",
+    "A": "Y",
+    "N": "A",
+    "[": "G",
+    "K": "L",
+    "z": "T",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 123,
+   "plaintext": "THEMETELETECH",
+   "wordLogp": -11.3892,
+   "words": "THEME TELETECH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "M",
+    "K": "L",
+    "z": "T",
+    "E": "C"
+   }
+  },
+  {
+   "rank": 124,
+   "plaintext": "ADVOCACYCAVED",
+   "wordLogp": -11.3985,
+   "words": "ADVOCACY CAVED",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "M": "A",
+    "A": "D",
+    "N": "V",
+    "[": "O",
+    "K": "Y",
+    "z": "A",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 125,
+   "plaintext": "TICKETEXECCGI",
+   "wordLogp": -11.4036,
+   "words": "TICKET EXECCGI",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "T",
+    "A": "I",
+    "N": "C",
+    "[": "K",
+    "K": "X",
+    "z": "C",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 126,
+   "plaintext": "NSUMONOLOGUES",
+   "wordLogp": -11.4049,
+   "words": "NSU MONOLOGUES",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "N",
+    "A": "S",
+    "N": "U",
+    "[": "M",
+    "K": "L",
+    "z": "G",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 127,
+   "plaintext": "PAISAPAYAMIGA",
+   "wordLogp": -11.407,
+   "words": "PAISAPAY AMIGA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "P",
+    "A": "A",
+    "N": "I",
+    "[": "S",
+    "K": "Y",
+    "z": "M",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 128,
+   "plaintext": "SHADESEYELASH",
+   "wordLogp": -11.4076,
+   "words": "SHADES EYELASH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "H",
+    "N": "A",
+    "[": "D",
+    "K": "Y",
+    "z": "L",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 129,
+   "plaintext": "RENDERERERNIE",
+   "wordLogp": -11.4097,
+   "words": "RENDERER ERNIE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "N",
+    "[": "D",
+    "K": "R",
+    "z": "R",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 130,
+   "plaintext": "NYLAINITIALLY",
+   "wordLogp": -11.4102,
+   "words": "NYLA INITIALLY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "N",
+    "A": "Y",
+    "N": "L",
+    "[": "A",
+    "K": "T",
+    "z": "A",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 131,
+   "plaintext": "READERELEVAGE",
+   "wordLogp": -11.4165,
+   "words": "READER ELEVAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "A",
+    "[": "D",
+    "K": "L",
+    "z": "V",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 132,
+   "plaintext": "THEDATASAYETH",
+   "wordLogp": -11.4233,
+   "words": "THE DATA SAYETH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "S",
+    "z": "Y",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 133,
+   "plaintext": "NOISENECESITO",
+   "wordLogp": -11.4341,
+   "words": "NOISE NECESITO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "A": "O",
+    "N": "I",
+    "[": "S",
+    "K": "C",
+    "z": "S",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 134,
+   "plaintext": "INSITITUTESON",
+   "wordLogp": -11.4343,
+   "words": "INSITITUTE SON",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "N",
+    "N": "S",
+    "[": "I",
+    "K": "U",
+    "z": "E",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 135,
+   "plaintext": "REAPERELEVATE",
+   "wordLogp": -11.4498,
+   "words": "REAPER ELEVATE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "A",
+    "[": "P",
+    "K": "L",
+    "z": "V",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 136,
+   "plaintext": "ALICIAINICIAL",
+   "wordLogp": -11.4507,
+   "words": "ALICIA INICIAL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "A",
+    "A": "L",
+    "N": "I",
+    "[": "C",
+    "K": "N",
+    "z": "C",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 137,
+   "plaintext": "THEDATAKAWEAH",
+   "wordLogp": -11.461,
+   "words": "THE DATA KAWEAH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "K",
+    "z": "W",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 138,
+   "plaintext": "READEREYEWARE",
+   "wordLogp": -11.48,
+   "words": "READER EYEWARE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "A",
+    "[": "D",
+    "K": "Y",
+    "z": "W",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 139,
+   "plaintext": "CARLACALABRIA",
+   "wordLogp": -11.483,
+   "words": "CARLA CALABRIA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "C",
+    "A": "A",
+    "N": "R",
+    "[": "L",
+    "K": "L",
+    "z": "B",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 140,
+   "plaintext": "SREVASAMATEUR",
+   "wordLogp": -11.4899,
+   "words": "SREVAS AMATEUR",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "S",
+    "A": "R",
+    "N": "E",
+    "[": "V",
+    "K": "M",
+    "z": "T",
+    "E": "U"
+   }
+  },
+  {
+   "rank": 141,
+   "plaintext": "ONANCOCKCHAIN",
+   "wordLogp": -11.4906,
+   "words": "ONANCOCK CHAIN",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "M": "O",
+    "A": "N",
+    "N": "A",
+    "[": "N",
+    "K": "K",
+    "z": "H",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 142,
+   "plaintext": "INUKTITUTBURN",
+   "wordLogp": -11.4923,
+   "words": "INUKTITUT BURN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "N",
+    "N": "U",
+    "[": "K",
+    "K": "U",
+    "z": "B",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 143,
+   "plaintext": "NORTONONOFRIO",
+   "wordLogp": -11.5064,
+   "words": "NORTON ONOFRIO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "N",
+    "A": "O",
+    "N": "R",
+    "[": "T",
+    "K": "N",
+    "z": "F",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 144,
+   "plaintext": "STARSSSISTANT",
+   "wordLogp": -11.5076,
+   "words": "STARS SSISTANT",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "S",
+    "A": "T",
+    "N": "A",
+    "[": "R",
+    "K": "I",
+    "z": "T",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 145,
+   "plaintext": "GENREGEMEENTE",
+   "wordLogp": -11.5169,
+   "words": "GENRE GEMEENTE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "G",
+    "A": "E",
+    "N": "N",
+    "[": "R",
+    "K": "M",
+    "z": "E",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 146,
+   "plaintext": "CRONACALABOUR",
+   "wordLogp": -11.5295,
+   "words": "CRONACA LABOUR",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "C",
+    "A": "R",
+    "N": "O",
+    "[": "N",
+    "K": "L",
+    "z": "B",
+    "E": "U"
+   }
+  },
+  {
+   "rank": 147,
+   "plaintext": "THEDATAGATECH",
+   "wordLogp": -11.5325,
+   "words": "THE DATA GATECH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "G",
+    "z": "T",
+    "E": "C"
+   }
+  },
+  {
+   "rank": 148,
+   "plaintext": "ATENEAELEMENT",
+   "wordLogp": -11.5346,
+   "words": "ATENEA ELEMENT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "A",
+    "A": "T",
+    "N": "E",
+    "[": "N",
+    "K": "L",
+    "z": "M",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 149,
+   "plaintext": "SHARESEREWASH",
+   "wordLogp": -11.5363,
+   "words": "SHARES EREWASH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "H",
+    "N": "A",
+    "[": "R",
+    "K": "R",
+    "z": "W",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 150,
+   "plaintext": "LEAKELEVERAGE",
+   "wordLogp": -11.5382,
+   "words": "LEAKE LEVERAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "L",
+    "A": "E",
+    "N": "A",
+    "[": "K",
+    "K": "V",
+    "z": "R",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 151,
+   "plaintext": "MIAMIMILITARI",
+   "wordLogp": -11.5429,
+   "words": "MIAMI MILITARI",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "M",
+    "A": "I",
+    "N": "A",
+    "[": "M",
+    "K": "L",
+    "z": "T",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 152,
+   "plaintext": "MASKAMALAYSIA",
+   "wordLogp": -11.5509,
+   "words": "MASK A MALAYSIA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "M",
+    "A": "A",
+    "N": "S",
+    "[": "K",
+    "K": "L",
+    "z": "Y",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 153,
+   "plaintext": "BEATEBEVERAGE",
+   "wordLogp": -11.5656,
+   "words": "BEATE BEVERAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "B",
+    "A": "E",
+    "N": "A",
+    "[": "T",
+    "K": "V",
+    "z": "R",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 154,
+   "plaintext": "JEERAJAPANESE",
+   "wordLogp": -11.5673,
+   "words": "JEERA JAPANESE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "J",
+    "A": "E",
+    "N": "E",
+    "[": "R",
+    "K": "P",
+    "z": "N",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 155,
+   "plaintext": "THEDATAEATETH",
+   "wordLogp": -11.57,
+   "words": "THE DATA EATETH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "E",
+    "z": "T",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 156,
+   "plaintext": "DEEPADAPALENE",
+   "wordLogp": -11.5752,
+   "words": "DEEP ADAPALENE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "D",
+    "A": "E",
+    "N": "E",
+    "[": "P",
+    "K": "P",
+    "z": "L",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 157,
+   "plaintext": "TARGETERETRIA",
+   "wordLogp": -11.5849,
+   "words": "TARGET ERETRIA",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "T",
+    "A": "A",
+    "N": "R",
+    "[": "G",
+    "K": "R",
+    "z": "T",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 158,
+   "plaintext": "NSTAINITIATES",
+   "wordLogp": -11.5903,
+   "words": "NSTA INITIATES",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "N",
+    "A": "S",
+    "N": "T",
+    "[": "A",
+    "K": "T",
+    "z": "A",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 159,
+   "plaintext": "THEDATADANESH",
+   "wordLogp": -11.5983,
+   "words": "THE DATA DANESH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "D",
+    "z": "N",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 160,
+   "plaintext": "FMDREFERENDUM",
+   "wordLogp": -11.5985,
+   "words": "FMD REFERENDUM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "F",
+    "A": "M",
+    "N": "D",
+    "[": "R",
+    "K": "R",
+    "z": "N",
+    "E": "U"
+   }
+  },
+  {
+   "rank": 161,
+   "plaintext": "SATYASAMANTHA",
+   "wordLogp": -11.5987,
+   "words": "SATYA SAMANTHA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "S",
+    "A": "A",
+    "N": "T",
+    "[": "Y",
+    "K": "M",
+    "z": "N",
+    "E": "H"
+   }
+  },
+  {
+   "rank": 162,
+   "plaintext": "PAISAPAYASINA",
+   "wordLogp": -11.6042,
+   "words": "PAISAPAY AS IN A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "P",
+    "A": "A",
+    "N": "I",
+    "[": "S",
+    "K": "Y",
+    "z": "S",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 163,
+   "plaintext": "INUKTITUTJUAN",
+   "wordLogp": -11.6069,
+   "words": "INUKTITUT JUAN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "N",
+    "N": "U",
+    "[": "K",
+    "K": "U",
+    "z": "J",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 164,
+   "plaintext": "RATHERELETTRA",
+   "wordLogp": -11.6077,
+   "words": "RATHER ELETTRA",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "A",
+    "N": "T",
+    "[": "H",
+    "K": "L",
+    "z": "T",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 165,
+   "plaintext": "MEEHOMOLOGENE",
+   "wordLogp": -11.6114,
+   "words": "MEE HOMOLOGENE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "M",
+    "A": "E",
+    "N": "E",
+    "[": "H",
+    "K": "L",
+    "z": "G",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 166,
+   "plaintext": "READEREDETATE",
+   "wordLogp": -11.6144,
+   "words": "READER EDETATE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "A",
+    "[": "D",
+    "K": "D",
+    "z": "T",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 167,
+   "plaintext": "THEDATAPARESH",
+   "wordLogp": -11.6172,
+   "words": "THE DATA PARESH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "P",
+    "z": "R",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 168,
+   "plaintext": "MEDIAMANANDRE",
+   "wordLogp": -11.62,
+   "words": "MEDIA MAN AND RE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "M",
+    "A": "E",
+    "N": "D",
+    "[": "I",
+    "K": "N",
+    "z": "N",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 169,
+   "plaintext": "ALIVIAINITIAL",
+   "wordLogp": -11.6217,
+   "words": "ALIVIA INITIAL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "A",
+    "A": "L",
+    "N": "I",
+    "[": "V",
+    "K": "N",
+    "z": "T",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 170,
+   "plaintext": "COAMOCOLORADO",
+   "wordLogp": -11.622,
+   "words": "COAMO COLORADO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "C",
+    "A": "O",
+    "N": "A",
+    "[": "M",
+    "K": "L",
+    "z": "R",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 171,
+   "plaintext": "PAISAPAYAKIRA",
+   "wordLogp": -11.6227,
+   "words": "PAISAPAY AKIRA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "P",
+    "A": "A",
+    "N": "I",
+    "[": "S",
+    "K": "Y",
+    "z": "K",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 172,
+   "plaintext": "THEDATAKADESH",
+   "wordLogp": -11.6243,
+   "words": "THE DATA KADESH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "K",
+    "z": "D",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 173,
+   "plaintext": "HATMAHARASTRA",
+   "wordLogp": -11.6278,
+   "words": "HAT MAHARASTRA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "H",
+    "A": "A",
+    "N": "T",
+    "[": "M",
+    "K": "R",
+    "z": "S",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 174,
+   "plaintext": "DEAREDELEGATE",
+   "wordLogp": -11.6286,
+   "words": "DE ARE DELEGATE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "D",
+    "A": "E",
+    "N": "A",
+    "[": "R",
+    "K": "L",
+    "z": "G",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 175,
+   "plaintext": "LEICALAXATIVE",
+   "wordLogp": -11.6321,
+   "words": "LEICA LAXATIVE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "L",
+    "A": "E",
+    "N": "I",
+    "[": "C",
+    "K": "X",
+    "z": "T",
+    "E": "V"
+   }
+  },
+  {
+   "rank": 176,
+   "plaintext": "GENREGEMEINDE",
+   "wordLogp": -11.6335,
+   "words": "GENRE GEMEINDE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "G",
+    "A": "E",
+    "N": "N",
+    "[": "R",
+    "K": "M",
+    "z": "I",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 177,
+   "plaintext": "NEUMANAMATURE",
+   "wordLogp": -11.6352,
+   "words": "NEUMAN AMATURE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "N",
+    "A": "E",
+    "N": "U",
+    "[": "M",
+    "K": "M",
+    "z": "T",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 178,
+   "plaintext": "GLOVEGENEPOOL",
+   "wordLogp": -11.637,
+   "words": "GLOVE GENE POOL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "G",
+    "A": "L",
+    "N": "O",
+    "[": "V",
+    "K": "N",
+    "z": "P",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 179,
+   "plaintext": "READEREVERAGE",
+   "wordLogp": -11.6393,
+   "words": "READER EVERAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "E",
+    "N": "A",
+    "[": "D",
+    "K": "V",
+    "z": "R",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 180,
+   "plaintext": "JEEVAJAPANESE",
+   "wordLogp": -11.64,
+   "words": "JEEVA JAPANESE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "J",
+    "A": "E",
+    "N": "E",
+    "[": "V",
+    "K": "P",
+    "z": "N",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 181,
+   "plaintext": "CONCACAFAINFO",
+   "wordLogp": -11.6519,
+   "words": "CONCACAF A INFO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "C",
+    "A": "O",
+    "N": "N",
+    "[": "C",
+    "K": "F",
+    "z": "I",
+    "E": "F"
+   }
+  },
+  {
+   "rank": 182,
+   "plaintext": "STAGESELEFANT",
+   "wordLogp": -11.6565,
+   "words": "STAGES ELEFANT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "T",
+    "N": "A",
+    "[": "G",
+    "K": "L",
+    "z": "F",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 183,
+   "plaintext": "PAOLAPARANOIA",
+   "wordLogp": -11.6595,
+   "words": "PAOLA PARANOIA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "P",
+    "A": "A",
+    "N": "O",
+    "[": "L",
+    "K": "R",
+    "z": "N",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 184,
+   "plaintext": "NATHANADASTRA",
+   "wordLogp": -11.6703,
+   "words": "NATHAN ADASTRA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "N",
+    "A": "A",
+    "N": "T",
+    "[": "H",
+    "K": "D",
+    "z": "S",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 185,
+   "plaintext": "IDENTITYTEEND",
+   "wordLogp": -11.6788,
+   "words": "IDENTITY TEEN D",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "A": "D",
+    "N": "E",
+    "[": "N",
+    "K": "Y",
+    "z": "E",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 186,
+   "plaintext": "WESTAWAYASSHE",
+   "wordLogp": -11.6827,
+   "words": "WEST AWAY AS SHE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "W",
+    "A": "E",
+    "N": "S",
+    "[": "T",
+    "K": "Y",
+    "z": "S",
+    "E": "H"
+   }
+  },
+  {
+   "rank": 187,
+   "plaintext": "GEAREGENERATE",
+   "wordLogp": -11.6832,
+   "words": "GEAR E GENERATE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "G",
+    "A": "E",
+    "N": "A",
+    "[": "R",
+    "K": "N",
+    "z": "R",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 188,
+   "plaintext": "THEDATANAGESH",
+   "wordLogp": -11.6854,
+   "words": "THE DATA NAGESH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "N",
+    "z": "G",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 189,
+   "plaintext": "THEDATALAMECH",
+   "wordLogp": -11.6931,
+   "words": "THE DATA LAMECH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "A": "H",
+    "N": "E",
+    "[": "D",
+    "K": "L",
+    "z": "M",
+    "E": "C"
+   }
+  },
+  {
+   "rank": 190,
+   "plaintext": "CEILOCOMOTIVE",
+   "wordLogp": -11.6989,
+   "words": "CEI LOCOMOTIVE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "C",
+    "A": "E",
+    "N": "I",
+    "[": "L",
+    "K": "M",
+    "z": "T",
+    "E": "V"
+   }
+  },
+  {
+   "rank": 191,
+   "plaintext": "SHAPESEYEWASH",
+   "wordLogp": -11.6999,
+   "words": "SHAPES EYEWASH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "H",
+    "N": "A",
+    "[": "P",
+    "K": "Y",
+    "z": "W",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 192,
+   "plaintext": "NYLEINITIALLY",
+   "wordLogp": -11.7014,
+   "words": "NYLE INITIALLY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "N",
+    "A": "Y",
+    "N": "L",
+    "[": "E",
+    "K": "T",
+    "z": "A",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 193,
+   "plaintext": "STATSSSISTANT",
+   "wordLogp": -11.7028,
+   "words": "STATS SSISTANT",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "S",
+    "A": "T",
+    "N": "A",
+    "[": "T",
+    "K": "I",
+    "z": "T",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 194,
+   "plaintext": "ENTREEEVERTON",
+   "wordLogp": -11.7029,
+   "words": "ENTREE EVERTON",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "E",
+    "A": "N",
+    "N": "T",
+    "[": "R",
+    "K": "V",
+    "z": "R",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 195,
+   "plaintext": "MSUHOMOLOGUES",
+   "wordLogp": -11.7047,
+   "words": "MSU HOMOLOGUES",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "M",
+    "A": "S",
+    "N": "U",
+    "[": "H",
+    "K": "L",
+    "z": "G",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 196,
+   "plaintext": "CIARACALAMARI",
+   "wordLogp": -11.7102,
+   "words": "CIARA CALAMARI",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "C",
+    "A": "I",
+    "N": "A",
+    "[": "R",
+    "K": "L",
+    "z": "M",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 197,
+   "plaintext": "RHREERESEARCH",
+   "wordLogp": -11.7113,
+   "words": "RHREE RESEARCH",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "M": "R",
+    "A": "H",
+    "N": "R",
+    "[": "E",
+    "K": "S",
+    "z": "A",
+    "E": "C"
+   }
+  },
+  {
+   "rank": 198,
+   "plaintext": "SIAMESEDENALI",
+   "wordLogp": -11.7175,
+   "words": "SIAMESE DENALI",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "I",
+    "N": "A",
+    "[": "M",
+    "K": "D",
+    "z": "N",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 199,
+   "plaintext": "INTONINGNOTIN",
+   "wordLogp": -11.7202,
+   "words": "INTONING NOT IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "I",
+    "A": "N",
+    "N": "T",
+    "[": "O",
+    "K": "G",
+    "z": "O",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 200,
+   "plaintext": "SLAVESEVERALL",
+   "wordLogp": -11.7234,
+   "words": "SLAVES EVER ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "S",
+    "A": "L",
+    "N": "A",
+    "[": "V",
+    "K": "V",
+    "z": "R",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 201,
+   "plaintext": "BELLABATAILLE",
+   "wordLogp": -11.7234,
+   "words": "BELLA BATAILLE",
+   "unknown": 0
+  },
+  {
+   "rank": 202,
+   "plaintext": "NISSANADAMSKI",
+   "wordLogp": -11.7252,
+   "words": "NISSAN ADAMSKI",
+   "unknown": 0
+  },
+  {
+   "rank": 203,
+   "plaintext": "THEDATAHATETH",
+   "wordLogp": -11.7254,
+   "words": "THE DATA HATETH",
+   "unknown": 0
+  },
+  {
+   "rank": 204,
+   "plaintext": "MACNAMARANCAA",
+   "wordLogp": -11.7287,
+   "words": "MACNAMARA NCAA",
+   "unknown": 0
+  },
+  {
+   "rank": 205,
+   "plaintext": "RANGARAJANNBA",
+   "wordLogp": -11.7354,
+   "words": "RANGARAJAN NBA",
+   "unknown": 0
+  },
+  {
+   "rank": 206,
+   "plaintext": "ISOSTITUTIONS",
+   "wordLogp": -11.7399,
+   "words": "ISO STITUTIONS",
+   "unknown": 0
+  },
+  {
+   "rank": 207,
+   "plaintext": "READIRISIHAVE",
+   "wordLogp": -11.7441,
+   "words": "READIRIS I HAVE",
+   "unknown": 0
+  },
+  {
+   "rank": 208,
+   "plaintext": "PRECIPITINEAR",
+   "wordLogp": -11.7495,
+   "words": "PRECIPITIN EAR",
+   "unknown": 0
+  },
+  {
+   "rank": 209,
+   "plaintext": "THEDATAJARETH",
+   "wordLogp": -11.7638,
+   "words": "THE DATA JARETH",
+   "unknown": 0
+  },
+  {
+   "rank": 210,
+   "plaintext": "POSTAPATAPSCO",
+   "wordLogp": -11.7649,
+   "words": "POST A PATAPSCO",
+   "unknown": 0
+  },
+  {
+   "rank": 211,
+   "plaintext": "STOVESEREPORT",
+   "wordLogp": -11.7653,
+   "words": "STOVES E REPORT",
+   "unknown": 0
+  },
+  {
+   "rank": 212,
+   "plaintext": "TIARATARANAKI",
+   "wordLogp": -11.7659,
+   "words": "TIARA TARANAKI",
+   "unknown": 0
+  },
+  {
+   "rank": 213,
+   "plaintext": "RATHEREVENTIA",
+   "wordLogp": -11.7661,
+   "words": "RATHER EVENTIA",
+   "unknown": 0
+  },
+  {
+   "rank": 214,
+   "plaintext": "ANNOTATETENON",
+   "wordLogp": -11.7668,
+   "words": "ANNOTATE TEN ON",
+   "unknown": 0
+  },
+  {
+   "rank": 215,
+   "plaintext": "ENTIRERURITAN",
+   "wordLogp": -11.7686,
+   "words": "ENTIRE RURITAN",
+   "unknown": 0
+  },
+  {
+   "rank": 216,
+   "plaintext": "STOKESEREPORT",
+   "wordLogp": -11.7687,
+   "words": "STOKES E REPORT",
+   "unknown": 0
+  },
+  {
+   "rank": 217,
+   "plaintext": "SHAKESEYELASH",
+   "wordLogp": -11.7721,
+   "words": "SHAKES EYELASH",
+   "unknown": 0
+  },
+  {
+   "rank": 218,
+   "plaintext": "NDTVINITIATED",
+   "wordLogp": -11.7722,
+   "words": "NDTV INITIATED",
+   "unknown": 0
+  },
+  {
+   "rank": 219,
+   "plaintext": "RATNERELECTRA",
+   "wordLogp": -11.7725,
+   "words": "RATNER ELECTRA",
+   "unknown": 0
+  },
+  {
+   "rank": 220,
+   "plaintext": "THEDATASAYEGH",
+   "wordLogp": -11.7736,
+   "words": "THE DATA SAYEGH",
+   "unknown": 0
+  },
+  {
+   "rank": 221,
+   "plaintext": "REISEREDEFINE",
+   "wordLogp": -11.7858,
+   "words": "REISE REDEFINE",
+   "unknown": 0
+  },
+  {
+   "rank": 222,
+   "plaintext": "NANDINIVIENNA",
+   "wordLogp": -11.787,
+   "words": "NANDINI VIENNA",
+   "unknown": 0
+  },
+  {
+   "rank": 223,
+   "plaintext": "ALINIAINITIAL",
+   "wordLogp": -11.7939,
+   "words": "ALINIA INITIAL",
+   "unknown": 0
+  },
+  {
+   "rank": 224,
+   "plaintext": "NEOGENEGENOME",
+   "wordLogp": -11.7943,
+   "words": "NEOGENE GENOME",
+   "unknown": 0
+  },
+  {
+   "rank": 225,
+   "plaintext": "ANNOTATETYNAN",
+   "wordLogp": -11.7953,
+   "words": "ANNOTATE TYNAN",
+   "unknown": 0
+  },
+  {
+   "rank": 226,
+   "plaintext": "RSIZEREMEDIES",
+   "wordLogp": -11.7958,
+   "words": "R SIZE REMEDIES",
+   "unknown": 0
+  },
+  {
+   "rank": 227,
+   "plaintext": "THEDATAPARENH",
+   "wordLogp": -11.8069,
+   "words": "THE DATA PARENH",
+   "unknown": 0
+  },
+  {
+   "rank": 228,
+   "plaintext": "ALIFIAINITIAL",
+   "wordLogp": -11.8071,
+   "words": "ALIFIA INITIAL",
+   "unknown": 0
+  },
+  {
+   "rank": 229,
+   "plaintext": "THEDATATAPESH",
+   "wordLogp": -11.8129,
+   "words": "THE DATA TAPESH",
+   "unknown": 0
+  },
+  {
+   "rank": 230,
+   "plaintext": "NATHANAMARTYA",
+   "wordLogp": -11.8151,
+   "words": "NATHAN AMARTYA",
+   "unknown": 0
+  },
+  {
+   "rank": 231,
+   "plaintext": "REBBERESEMBLE",
+   "wordLogp": -11.8171,
+   "words": "REBBE RESEMBLE",
+   "unknown": 0
+  },
+  {
+   "rank": 232,
+   "plaintext": "MASIAMALAYSIA",
+   "wordLogp": -11.8222,
+   "words": "M ASIA MALAYSIA",
+   "unknown": 0
+  },
+  {
+   "rank": 233,
+   "plaintext": "MEIJIMINIMISE",
+   "wordLogp": -11.824,
+   "words": "MEIJI MINIMISE",
+   "unknown": 0
+  },
+  {
+   "rank": 234,
+   "plaintext": "ALIXIAINITIAL",
+   "wordLogp": -11.8261,
+   "words": "ALIXIA INITIAL",
+   "unknown": 0
+  },
+  {
+   "rank": 235,
+   "plaintext": "VNUKOVOCOLUMN",
+   "wordLogp": -11.827,
+   "words": "VNUKOVO COLUMN",
+   "unknown": 0
+  },
+  {
+   "rank": 236,
+   "plaintext": "RAIDEREMERITA",
+   "wordLogp": -11.8312,
+   "words": "RAIDER EMERITA",
+   "unknown": 0
+  },
+  {
+   "rank": 237,
+   "plaintext": "TAUPETEMECULA",
+   "wordLogp": -11.833,
+   "words": "TAUPE TEMECULA",
+   "unknown": 0
+  },
+  {
+   "rank": 238,
+   "plaintext": "PRIMEPELETIER",
+   "wordLogp": -11.8399,
+   "words": "PRIME PELETIER",
+   "unknown": 0
+  },
+  {
+   "rank": 239,
+   "plaintext": "NGIMINIMIZING",
+   "wordLogp": -11.8449,
+   "words": "NGI MINIMIZING",
+   "unknown": 0
+  },
+  {
+   "rank": 240,
+   "plaintext": "GSAVEGENERALS",
+   "wordLogp": -11.8461,
+   "words": "GSAVE GENERALS",
+   "unknown": 0
+  },
+  {
+   "rank": 241,
+   "plaintext": "PLAZAPARASAIL",
+   "wordLogp": -11.8472,
+   "words": "PLAZA PARASAIL",
+   "unknown": 0
+  },
+  {
+   "rank": 242,
+   "plaintext": "THEDATAJATECH",
+   "wordLogp": -11.8509,
+   "words": "THE DATA JATECH",
+   "unknown": 0
+  },
+  {
+   "rank": 243,
+   "plaintext": "THEDATASAHEEH",
+   "wordLogp": -11.8542,
+   "words": "THE DATA SAHEEH",
+   "unknown": 0
+  },
+  {
+   "rank": 244,
+   "plaintext": "THEDATARALEGH",
+   "wordLogp": -11.8575,
+   "words": "THE DATA RALEGH",
+   "unknown": 0
+  },
+  {
+   "rank": 245,
+   "plaintext": "THEDATAJAYESH",
+   "wordLogp": -11.8587,
+   "words": "THE DATA JAYESH",
+   "unknown": 0
+  },
+  {
+   "rank": 246,
+   "plaintext": "SHADESEYEWASH",
+   "wordLogp": -11.8662,
+   "words": "SHADES EYEWASH",
+   "unknown": 0
+  },
+  {
+   "rank": 247,
+   "plaintext": "BEIGEBERENICE",
+   "wordLogp": -11.867,
+   "words": "BEIGE BERENICE",
+   "unknown": 0
+  },
+  {
+   "rank": 248,
+   "plaintext": "STAMPSPOPTART",
+   "wordLogp": -11.8671,
+   "words": "STAMPS POPTART",
+   "unknown": 0
+  },
+  {
+   "rank": 249,
+   "plaintext": "KIANAKAWASAKI",
+   "wordLogp": -11.868,
+   "words": "KIANA KAWASAKI",
+   "unknown": 0
+  },
+  {
+   "rank": 250,
+   "plaintext": "VRNDAVANAINOR",
+   "wordLogp": -11.8744,
+   "words": "VRNDAVANA IN OR",
+   "unknown": 0
+  },
+  {
+   "rank": 251,
+   "plaintext": "APOSTATETROOP",
+   "wordLogp": -11.8789,
+   "words": "APOSTATE TROOP",
+   "unknown": 0
+  },
+  {
+   "rank": 252,
+   "plaintext": "RENDEREDEYNDE",
+   "wordLogp": -11.8911,
+   "words": "RENDERED EYNDE",
+   "unknown": 0
+  },
+  {
+   "rank": 253,
+   "plaintext": "NARDINISIERRA",
+   "wordLogp": -11.8914,
+   "words": "NARDINI SIERRA",
+   "unknown": 0
+  },
+  {
+   "rank": 254,
+   "plaintext": "CAIXACATALINA",
+   "wordLogp": -11.8982,
+   "words": "CAIXA CATALINA",
+   "unknown": 0
+  },
+  {
+   "rank": 255,
+   "plaintext": "ANTHEAEVENTIN",
+   "wordLogp": -11.9014,
+   "words": "ANTHEA EVENT IN",
+   "unknown": 0
+  },
+  {
+   "rank": 256,
+   "plaintext": "TOCCATARANCHO",
+   "wordLogp": -11.9033,
+   "words": "TOCCATA RANCHO",
+   "unknown": 0
+  },
+  {
+   "rank": 257,
+   "plaintext": "RAIDEREMERICA",
+   "wordLogp": -11.9045,
+   "words": "RAIDER EMERICA",
+   "unknown": 0
+  },
+  {
+   "rank": 258,
+   "plaintext": "YEARLYLILIANE",
+   "wordLogp": -11.9047,
+   "words": "YEARLY LILIANE",
+   "unknown": 0
+  },
+  {
+   "rank": 259,
+   "plaintext": "ANONBABYBJORN",
+   "wordLogp": -11.9086,
+   "words": "A NON BABYBJORN",
+   "unknown": 0
+  },
+  {
+   "rank": 260,
+   "plaintext": "SEALESEPERATE",
+   "wordLogp": -11.9096,
+   "words": "SEALE SEPERATE",
+   "unknown": 0
+  },
+  {
+   "rank": 261,
+   "plaintext": "PAISAPAYAVILA",
+   "wordLogp": -11.9108,
+   "words": "PAISAPAY AVILA",
+   "unknown": 0
+  },
+  {
+   "rank": 262,
+   "plaintext": "SIAMESENEPALI",
+   "wordLogp": -11.9134,
+   "words": "SIAMESE NEPALI",
+   "unknown": 0
+  },
+  {
+   "rank": 263,
+   "plaintext": "INLININGNOLAN",
+   "wordLogp": -11.9152,
+   "words": "INLINING NOLAN",
+   "unknown": 0
+  },
+  {
+   "rank": 264,
+   "plaintext": "ROTTERELECTRO",
+   "wordLogp": -11.9168,
+   "words": "ROTTER ELECTRO",
+   "unknown": 0
+  },
+  {
+   "rank": 265,
+   "plaintext": "REAPEREYECARE",
+   "wordLogp": -11.9199,
+   "words": "REAPER EYE CARE",
+   "unknown": 0
+  },
+  {
+   "rank": 266,
+   "plaintext": "SERIESEBEFREE",
+   "wordLogp": -11.9265,
+   "words": "SERIES E BE FREE",
+   "unknown": 0
+  },
+  {
+   "rank": 267,
+   "plaintext": "KAUNAKAKAIUNA",
+   "wordLogp": -11.9279,
+   "words": "KAUNAKAKAI UNA",
+   "unknown": 0
+  },
+  {
+   "rank": 268,
+   "plaintext": "NEYMANANALYZE",
+   "wordLogp": -11.9288,
+   "words": "NEYMAN ANALYZE",
+   "unknown": 0
+  },
+  {
+   "rank": 269,
+   "plaintext": "NEIMANALANINE",
+   "wordLogp": -11.9302,
+   "words": "NEIMAN ALANINE",
+   "unknown": 0
+  },
+  {
+   "rank": 270,
+   "plaintext": "CARTACALABRIA",
+   "wordLogp": -11.9374,
+   "words": "CART A CALABRIA",
+   "unknown": 0
+  },
+  {
+   "rank": 271,
+   "plaintext": "STAPESELEGANT",
+   "wordLogp": -11.9392,
+   "words": "STAPES ELEGANT",
+   "unknown": 0
+  },
+  {
+   "rank": 272,
+   "plaintext": "THEDATAHAMESH",
+   "wordLogp": -11.9403,
+   "words": "THE DATA HAMESH",
+   "unknown": 0
+  },
+  {
+   "rank": 273,
+   "plaintext": "FERMIFILIGREE",
+   "wordLogp": -11.9435,
+   "words": "FERMI FILIGREE",
+   "unknown": 0
+  },
+  {
+   "rank": 274,
+   "plaintext": "SERIESEDECREE",
+   "wordLogp": -11.9437,
+   "words": "SERIES E DECREE",
+   "unknown": 0
+  },
+  {
+   "rank": 275,
+   "plaintext": "INSITITUTESIN",
+   "wordLogp": -11.9446,
+   "words": "INSITITUTE SIN",
+   "unknown": 0
+  },
+  {
+   "rank": 276,
+   "plaintext": "PRECIPILINEAR",
+   "wordLogp": -11.9451,
+   "words": "PRECIPI LINEAR",
+   "unknown": 0
+  },
+  {
+   "rank": 277,
+   "plaintext": "MUSLIMILIESCU",
+   "wordLogp": -11.9471,
+   "words": "MUSLIM ILIESCU",
+   "unknown": 0
+  },
+  {
+   "rank": 278,
+   "plaintext": "TIAVATALABANI",
+   "wordLogp": -11.9505,
+   "words": "TIAVA TALABANI",
+   "unknown": 0
+  },
+  {
+   "rank": 279,
+   "plaintext": "CARDACALABRIA",
+   "wordLogp": -11.9547,
+   "words": "CARD A CALABRIA",
+   "unknown": 0
+  },
+  {
+   "rank": 280,
+   "plaintext": "SSOUTSTATIONS",
+   "wordLogp": -11.9578,
+   "words": "SS OUTSTATIONS",
+   "unknown": 0
+  },
+  {
+   "rank": 281,
+   "plaintext": "KIARAKAWASAKI",
+   "wordLogp": -11.9582,
+   "words": "KIARA KAWASAKI",
+   "unknown": 0
+  },
+  {
+   "rank": 282,
+   "plaintext": "THEDATAPANETH",
+   "wordLogp": -11.9611,
+   "words": "THE DATA PANETH",
+   "unknown": 0
+  },
+  {
+   "rank": 283,
+   "plaintext": "READERENEGADE",
+   "wordLogp": -11.9615,
+   "words": "READE RENEGADE",
+   "unknown": 0
+  },
+  {
+   "rank": 284,
+   "plaintext": "RSUMEREVENUES",
+   "wordLogp": -11.9622,
+   "words": "RSUME REVENUES",
+   "unknown": 0
+  },
+  {
+   "rank": 285,
+   "plaintext": "CYANOCORONARY",
+   "wordLogp": -11.9643,
+   "words": "CYANO CORONARY",
+   "unknown": 0
+  },
+  {
+   "rank": 286,
+   "plaintext": "STAKESELEFANT",
+   "wordLogp": -11.9687,
+   "words": "STAKES ELEFANT",
+   "unknown": 0
+  },
+  {
+   "rank": 287,
+   "plaintext": "SLINOSOCOMIAL",
+   "wordLogp": -11.9713,
+   "words": "SLI NOSOCOMIAL",
+   "unknown": 0
+  },
+  {
+   "rank": 288,
+   "plaintext": "PAULAPAPAKURA",
+   "wordLogp": -11.9765,
+   "words": "PAULA PAPAKURA",
+   "unknown": 0
+  },
+  {
+   "rank": 289,
+   "plaintext": "KIAMAKAWASAKI",
+   "wordLogp": -11.9826,
+   "words": "KIAMA KAWASAKI",
+   "unknown": 0
+  },
+  {
+   "rank": 290,
+   "plaintext": "EMILIEIRIDIUM",
+   "wordLogp": -11.9841,
+   "words": "EMILIE IRIDIUM",
+   "unknown": 0
+  },
+  {
+   "rank": 291,
+   "plaintext": "THEDATALAYETH",
+   "wordLogp": -11.9871,
+   "words": "THE DATA LAYETH",
+   "unknown": 0
+  },
+  {
+   "rank": 292,
+   "plaintext": "LESTALAHASSEE",
+   "wordLogp": -11.9902,
+   "words": "LES TALAHASSEE",
+   "unknown": 0
+  },
+  {
+   "rank": 293,
+   "plaintext": "DOTTEDELEKTRO",
+   "wordLogp": -11.9904,
+   "words": "DOTTED ELEKTRO",
+   "unknown": 0
+  },
+  {
+   "rank": 294,
+   "plaintext": "NSIMONOPOLIES",
+   "wordLogp": -11.9932,
+   "words": "NSI MONOPOLIES",
+   "unknown": 0
+  },
+  {
+   "rank": 295,
+   "plaintext": "SMITESELENIUM",
+   "wordLogp": -11.9972,
+   "words": "SMITE SELENIUM",
+   "unknown": 0
+  },
+  {
+   "rank": 296,
+   "plaintext": "SLIGOSOLOGIRL",
+   "wordLogp": -12.0013,
+   "words": "SLIGO SOLOGIRL",
+   "unknown": 0
+  },
+  {
+   "rank": 297,
+   "plaintext": "PAISAPAYANIMA",
+   "wordLogp": -12.0022,
+   "words": "PAISAPAY ANIMA",
+   "unknown": 0
+  },
+  {
+   "rank": 298,
+   "plaintext": "MAORIMININOVA",
+   "wordLogp": -12.0045,
+   "words": "MAORI MININOVA",
+   "unknown": 0
+  },
+  {
+   "rank": 299,
+   "plaintext": "CRITICINICIAR",
+   "wordLogp": -12.0079,
+   "words": "CRITIC INICIAR",
+   "unknown": 0
+  },
+  {
+   "rank": 300,
+   "plaintext": "TANGATANARNIA",
+   "wordLogp": -12.0142,
+   "words": "TANGATA NARNIA",
+   "unknown": 0
+  },
+  {
+   "rank": 301,
+   "plaintext": "TICKETELENCHI",
+   "wordLogp": -12.0175,
+   "words": "TICKET ELENCHI",
+   "unknown": 0
+  },
+  {
+   "rank": 302,
+   "plaintext": "NETTENEVERTHE",
+   "wordLogp": -12.0192,
+   "words": "NETTE NEVER THE",
+   "unknown": 0
+  },
+  {
+   "rank": 303,
+   "plaintext": "ROIPARAMARIBO",
+   "wordLogp": -12.02,
+   "words": "ROI PARAMARIBO",
+   "unknown": 0
+  },
+  {
+   "rank": 304,
+   "plaintext": "SHAPESEREWASH",
+   "wordLogp": -12.0202,
+   "words": "SHAPES EREWASH",
+   "unknown": 0
+  },
+  {
+   "rank": 305,
+   "plaintext": "RANGARAJANNOA",
+   "wordLogp": -12.023,
+   "words": "RANGARAJAN NO A",
+   "unknown": 0
+  },
+  {
+   "rank": 306,
+   "plaintext": "PAISAPAYANINA",
+   "wordLogp": -12.024,
+   "words": "PAISAPAY AN IN A",
+   "unknown": 0
+  },
+  {
+   "rank": 307,
+   "plaintext": "INUKTITUTDUNN",
+   "wordLogp": -12.0312,
+   "words": "INUKTITUT DUNN",
+   "unknown": 0
+  },
+  {
+   "rank": 308,
+   "plaintext": "REALERENEGADE",
+   "wordLogp": -12.0317,
+   "words": "REALE RENEGADE",
+   "unknown": 0
+  },
+  {
+   "rank": 309,
+   "plaintext": "SIAMESELEGALI",
+   "wordLogp": -12.0375,
+   "words": "SIAMESE LEGAL I",
+   "unknown": 0
+  },
+  {
+   "rank": 310,
+   "plaintext": "ASHIMAMEMPHIS",
+   "wordLogp": -12.0384,
+   "words": "ASHIMA MEMPHIS",
+   "unknown": 0
+  },
+  {
+   "rank": 311,
+   "plaintext": "VECTAVALANCHE",
+   "wordLogp": -12.0404,
+   "words": "VECT AVALANCHE",
+   "unknown": 0
+  },
+  {
+   "rank": 312,
+   "plaintext": "ANDREAEHELDON",
+   "wordLogp": -12.042,
+   "words": "ANDREAE HELD ON",
+   "unknown": 0
+  },
+  {
+   "rank": 313,
+   "plaintext": "THEBETELETECH",
+   "wordLogp": -12.0424,
+   "words": "THE BE TELETECH",
+   "unknown": 0
+  },
+  {
+   "rank": 314,
+   "plaintext": "PAISAPAYASIFA",
+   "wordLogp": -12.0442,
+   "words": "PAISAPAY AS IF A",
+   "unknown": 0
+  },
+  {
+   "rank": 315,
+   "plaintext": "MDHDIMINISHED",
+   "wordLogp": -12.0503,
+   "words": "MDH DIMINISHED",
+   "unknown": 0
+  },
+  {
+   "rank": 316,
+   "plaintext": "CLIMOCOLONIAL",
+   "wordLogp": -12.0553,
+   "words": "CLIMO COLONIAL",
+   "unknown": 0
+  },
+  {
+   "rank": 317,
+   "plaintext": "PAISAPAYAMINA",
+   "wordLogp": -12.0563,
+   "words": "PAISAPAY AM IN A",
+   "unknown": 0
+  },
+  {
+   "rank": 318,
+   "plaintext": "WAIPAWALATINA",
+   "wordLogp": -12.0576,
+   "words": "WAIPAWA LATINA",
+   "unknown": 0
+  },
+  {
+   "rank": 319,
+   "plaintext": "ADVOCACYCOVED",
+   "wordLogp": -12.0583,
+   "words": "ADVOCACY COVED",
+   "unknown": 0
+  },
+  {
+   "rank": 320,
+   "plaintext": "TROVATALABOUR",
+   "wordLogp": -12.0608,
+   "words": "TROVATA LABOUR",
+   "unknown": 0
+  },
+  {
+   "rank": 321,
+   "plaintext": "RANGERETERNIA",
+   "wordLogp": -12.0674,
+   "words": "RANGER ETERNIA",
+   "unknown": 0
+  },
+  {
+   "rank": 322,
+   "plaintext": "RATNERELEKTRA",
+   "wordLogp": -12.0713,
+   "words": "RATNER ELEKTRA",
+   "unknown": 0
+  },
+  {
+   "rank": 323,
+   "plaintext": "WAIKAWALATINA",
+   "wordLogp": -12.0757,
+   "words": "WAIKAWA LATINA",
+   "unknown": 0
+  },
+  {
+   "rank": 324,
+   "plaintext": "MEDIAMAXANDRE",
+   "wordLogp": -12.0804,
+   "words": "MEDIAMAX AND RE",
+   "unknown": 0
+  },
+  {
+   "rank": 325,
+   "plaintext": "STONESEYEBOLT",
+   "wordLogp": -12.0839,
+   "words": "STONES EYEBOLT",
+   "unknown": 0
+  },
+  {
+   "rank": 326,
+   "plaintext": "IDENTITITREND",
+   "wordLogp": -12.0905,
+   "words": "IDENTITI TREND",
+   "unknown": 0
+  },
+  {
+   "rank": 327,
+   "plaintext": "ANNOTATETONIN",
+   "wordLogp": -12.0928,
+   "words": "ANNOTATE TON IN",
+   "unknown": 0
+  },
+  {
+   "rank": 328,
+   "plaintext": "REIFEREDEFINE",
+   "wordLogp": -12.0931,
+   "words": "REIFE REDEFINE",
+   "unknown": 0
+  },
+  {
+   "rank": 329,
+   "plaintext": "LRDSALAMANDER",
+   "wordLogp": -12.1028,
+   "words": "LRD SALAMANDER",
+   "unknown": 0
+  },
+  {
+   "rank": 330,
+   "plaintext": "PAISAPAYAKITA",
+   "wordLogp": -12.1059,
+   "words": "PAISAPAY AKITA",
+   "unknown": 0
+  },
+  {
+   "rank": 331,
+   "plaintext": "AHHAHAHAHAHAH",
+   "wordLogp": -12.1062,
+   "words": "AH HAHAHAHAHAH",
+   "unknown": 0
+  },
+  {
+   "rank": 332,
+   "plaintext": "DEALEDELEGATE",
+   "wordLogp": -12.1077,
+   "words": "DEALE DELEGATE",
+   "unknown": 0
+  },
+  {
+   "rank": 333,
+   "plaintext": "ANDREAEREADIN",
+   "wordLogp": -12.1088,
+   "words": "ANDREAE READ IN",
+   "unknown": 0
+  },
+  {
+   "rank": 334,
+   "plaintext": "THEDATAJANETH",
+   "wordLogp": -12.1093,
+   "words": "THE DATA JANETH",
+   "unknown": 0
+  },
+  {
+   "rank": 335,
+   "plaintext": "REINEREDEFINE",
+   "wordLogp": -12.1119,
+   "words": "REINE REDEFINE",
+   "unknown": 0
+  },
+  {
+   "rank": 336,
+   "plaintext": "PAISAPAYALISA",
+   "wordLogp": -12.1137,
+   "words": "PAISAPAY ALISA",
+   "unknown": 0
+  },
+  {
+   "rank": 337,
+   "plaintext": "CATHECELESTIA",
+   "wordLogp": -12.1227,
+   "words": "CA THE CELESTIA",
+   "unknown": 0
+  },
+  {
+   "rank": 338,
+   "plaintext": "REAPEREDEBATE",
+   "wordLogp": -12.1272,
+   "words": "REAPER EDEBATE",
+   "unknown": 0
+  },
+  {
+   "rank": 339,
+   "plaintext": "THEDATASADEGH",
+   "wordLogp": -12.1305,
+   "words": "THE DATA SADEGH",
+   "unknown": 0
+  },
+  {
+   "rank": 340,
+   "plaintext": "THEDATAJABESH",
+   "wordLogp": -12.1338,
+   "words": "THE DATA JABESH",
+   "unknown": 0
+  },
+  {
+   "rank": 341,
+   "plaintext": "BARNABASAORTA",
+   "wordLogp": -12.1343,
+   "words": "BARNABAS AORTA",
+   "unknown": 0
+  },
+  {
+   "rank": 342,
+   "plaintext": "THEDATAMARESH",
+   "wordLogp": -12.1343,
+   "words": "THE DATA MARESH",
+   "unknown": 0
+  },
+  {
+   "rank": 343,
+   "plaintext": "ASIGNANUNCIOS",
+   "wordLogp": -12.1345,
+   "words": "A SIGN ANUNCIOS",
+   "unknown": 0
+  },
+  {
+   "rank": 344,
+   "plaintext": "ASONBABYBOOKS",
+   "wordLogp": -12.137,
+   "words": "AS ON BABY BOOKS",
+   "unknown": 0
+  },
+  {
+   "rank": 345,
+   "plaintext": "SLAVESEYEWALL",
+   "wordLogp": -12.1373,
+   "words": "SLAVES EYEWALL",
+   "unknown": 0
+  },
+  {
+   "rank": 346,
+   "plaintext": "MACNAMARAUCLA",
+   "wordLogp": -12.1379,
+   "words": "MACNAMARA UCLA",
+   "unknown": 0
+  },
+  {
+   "rank": 347,
+   "plaintext": "PAISAPAYANISA",
+   "wordLogp": -12.1383,
+   "words": "PAISAPAY AN IS A",
+   "unknown": 0
+  },
+  {
+   "rank": 348,
+   "plaintext": "CRONACAFAVOUR",
+   "wordLogp": -12.1419,
+   "words": "CRONACA FAVOUR",
+   "unknown": 0
+  },
+  {
+   "rank": 349,
+   "plaintext": "SETUPSPIPETTE",
+   "wordLogp": -12.1512,
+   "words": "SETUPS PIPETTE",
+   "unknown": 0
+  },
+  {
+   "rank": 350,
+   "plaintext": "INUKTITUTYUAN",
+   "wordLogp": -12.152,
+   "words": "INUKTITUT YUAN",
+   "unknown": 0
+  },
+  {
+   "rank": 351,
+   "plaintext": "NEOGENEDENOTE",
+   "wordLogp": -12.156,
+   "words": "NEOGENE DENOTE",
+   "unknown": 0
+  },
+  {
+   "rank": 352,
+   "plaintext": "NYOMANANATOMY",
+   "wordLogp": -12.1561,
+   "words": "NYOMAN ANATOMY",
+   "unknown": 0
+  },
+  {
+   "rank": 353,
+   "plaintext": "NANNINIVIENNA",
+   "wordLogp": -12.1581,
+   "words": "NANNINI VIENNA",
+   "unknown": 0
+  },
+  {
+   "rank": 354,
+   "plaintext": "DEASEDELEGATE",
+   "wordLogp": -12.1586,
+   "words": "DEASE DELEGATE",
+   "unknown": 0
+  },
+  {
+   "rank": 355,
+   "plaintext": "GNOMEGENETOWN",
+   "wordLogp": -12.1601,
+   "words": "GNOME GENETOWN",
+   "unknown": 0
+  },
+  {
+   "rank": 356,
+   "plaintext": "THEDETELETECH",
+   "wordLogp": -12.1616,
+   "words": "THE DE TELETECH",
+   "unknown": 0
+  },
+  {
+   "rank": 357,
+   "plaintext": "HYOGOHOMOLOGY",
+   "wordLogp": -12.1647,
+   "words": "HYOGO HOMOLOGY",
+   "unknown": 0
+  },
+  {
+   "rank": 358,
+   "plaintext": "NEOGENEJEROME",
+   "wordLogp": -12.1656,
+   "words": "NEOGENE JEROME",
+   "unknown": 0
+  },
+  {
+   "rank": 359,
+   "plaintext": "BEIGEBENEFICE",
+   "wordLogp": -12.1665,
+   "words": "BEIGE BENEFICE",
+   "unknown": 0
+  },
+  {
+   "rank": 360,
+   "plaintext": "INUKTITUTRUIN",
+   "wordLogp": -12.1666,
+   "words": "INUKTITUT RUIN",
+   "unknown": 0
+  },
+  {
+   "rank": 361,
+   "plaintext": "LISTILIPINSKI",
+   "wordLogp": -12.1729,
+   "words": "LIST I LIPINSKI",
+   "unknown": 0
+  },
+  {
+   "rank": 362,
+   "plaintext": "NIRVANASAMRAI",
+   "wordLogp": -12.1745,
+   "words": "NIRVANA SAMRAI",
+   "unknown": 0
+  },
+  {
+   "rank": 363,
+   "plaintext": "SHADESEREWASH",
+   "wordLogp": -12.1866,
+   "words": "SHADES EREWASH",
+   "unknown": 0
+  },
+  {
+   "rank": 364,
+   "plaintext": "THROATAAAARGH",
+   "wordLogp": -12.195,
+   "words": "THROAT AAAARGH",
+   "unknown": 0
+  },
+  {
+   "rank": 365,
+   "plaintext": "LEVEELEFEBVRE",
+   "wordLogp": -12.1955,
+   "words": "LEVEE LEFEBVRE",
+   "unknown": 0
+  },
+  {
+   "rank": 366,
+   "plaintext": "SEALESEWERAGE",
+   "wordLogp": -12.1986,
+   "words": "SEALE SEWERAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 367,
+   "plaintext": "PEEJAPANANESE",
+   "wordLogp": -12.1993,
+   "words": "PEE JAPANANESE",
+   "unknown": 0
+  },
+  {
+   "rank": 368,
+   "plaintext": "PRIZEPELETIER",
+   "wordLogp": -12.2011,
+   "words": "PRIZE PELETIER",
+   "unknown": 0
+  },
+  {
+   "rank": 369,
+   "plaintext": "LEADELETEPAGE",
+   "wordLogp": -12.2018,
+   "words": "LEA DELETEPAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 370,
+   "plaintext": "LEDGELEGENDRE",
+   "wordLogp": -12.2031,
+   "words": "LEDGE LEGENDRE",
+   "unknown": 0
+  },
+  {
+   "rank": 371,
+   "plaintext": "LEANELEVERAGE",
+   "wordLogp": -12.207,
+   "words": "LEANE LEVERAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 372,
+   "plaintext": "DEERADAPALENE",
+   "wordLogp": -12.2073,
+   "words": "DEER ADAPALENE",
+   "unknown": 0
+  },
+  {
+   "rank": 373,
+   "plaintext": "NYLAUNUSUALLY",
+   "wordLogp": -12.2105,
+   "words": "NYLA UNUSUALLY",
+   "unknown": 0
+  },
+  {
+   "rank": 374,
+   "plaintext": "MSIHOMOLOGIES",
+   "wordLogp": -12.2152,
+   "words": "MSI HOMOLOGIES",
+   "unknown": 0
+  },
+  {
+   "rank": 375,
+   "plaintext": "RAINEREMERITA",
+   "wordLogp": -12.2158,
+   "words": "RAINER EMERITA",
+   "unknown": 0
+  },
+  {
+   "rank": 376,
+   "plaintext": "INSERIRERESIN",
+   "wordLogp": -12.2161,
+   "words": "INSERIRE RESIN",
+   "unknown": 0
+  },
+  {
+   "rank": 377,
+   "plaintext": "LOTRELELECTRO",
+   "wordLogp": -12.2165,
+   "words": "LOTREL ELECTRO",
+   "unknown": 0
+  },
+  {
+   "rank": 378,
+   "plaintext": "KAUNAKAKAIUKA",
+   "wordLogp": -12.2254,
+   "words": "KAUNAKAKAI UK A",
+   "unknown": 0
+  },
+  {
+   "rank": 379,
+   "plaintext": "SHAKESEYEWASH",
+   "wordLogp": -12.2307,
+   "words": "SHAKES EYEWASH",
+   "unknown": 0
+  },
+  {
+   "rank": 380,
+   "plaintext": "INTONINGNOTON",
+   "wordLogp": -12.2344,
+   "words": "INTONING NOT ON",
+   "unknown": 0
+  },
+  {
+   "rank": 381,
+   "plaintext": "INSCRIRERESIN",
+   "wordLogp": -12.2386,
+   "words": "INSCRIRE RESIN",
+   "unknown": 0
+  },
+  {
+   "rank": 382,
+   "plaintext": "NAUKANAKAMURA",
+   "wordLogp": -12.2393,
+   "words": "NAUKA NAKAMURA",
+   "unknown": 0
+  },
+  {
+   "rank": 383,
+   "plaintext": "SERIESEPEARCE",
+   "wordLogp": -12.2399,
+   "words": "SERIES E PEARCE",
+   "unknown": 0
+  },
+  {
+   "rank": 384,
+   "plaintext": "TARGETEDEMRSA",
+   "wordLogp": -12.2418,
+   "words": "TARGETED EMRSA",
+   "unknown": 0
+  },
+  {
+   "rank": 385,
+   "plaintext": "PAISAPAYALINA",
+   "wordLogp": -12.2446,
+   "words": "PAISAPAY ALINA",
+   "unknown": 0
+  },
+  {
+   "rank": 386,
+   "plaintext": "NYLJINITIALLY",
+   "wordLogp": -12.2467,
+   "words": "NYLJ INITIALLY",
+   "unknown": 0
+  },
+  {
+   "rank": 387,
+   "plaintext": "SNOOPSPOPCORN",
+   "wordLogp": -12.2504,
+   "words": "SNOOPS POPCORN",
+   "unknown": 0
+  },
+  {
+   "rank": 388,
+   "plaintext": "FACREFERENCIA",
+   "wordLogp": -12.2552,
+   "words": "FAC REFERENCIA",
+   "unknown": 0
+  },
+  {
+   "rank": 389,
+   "plaintext": "NATHANANANTHA",
+   "wordLogp": -12.2558,
+   "words": "NATHAN ANANTHA",
+   "unknown": 0
+  },
+  {
+   "rank": 390,
+   "plaintext": "WALKAWAYALLIA",
+   "wordLogp": -12.259,
+   "words": "WALK AWAY ALL I A",
+   "unknown": 0
+  },
+  {
+   "rank": 391,
+   "plaintext": "RAISEREMERITA",
+   "wordLogp": -12.2621,
+   "words": "RAISER EMERITA",
+   "unknown": 0
+  },
+  {
+   "rank": 392,
+   "plaintext": "PAISAPAYABITA",
+   "wordLogp": -12.2642,
+   "words": "PAISAPAY A BIT A",
+   "unknown": 0
+  },
+  {
+   "rank": 393,
+   "plaintext": "PAISAPAYAVIVA",
+   "wordLogp": -12.2656,
+   "words": "PAISAPAY AVIVA",
+   "unknown": 0
+  },
+  {
+   "rank": 394,
+   "plaintext": "SANTOSOFOUNDA",
+   "wordLogp": -12.2665,
+   "words": "SANTOSO FOUND A",
+   "unknown": 0
+  },
+  {
+   "rank": 395,
+   "plaintext": "NAIVENECESITA",
+   "wordLogp": -12.2672,
+   "words": "NAIVE NECESITA",
+   "unknown": 0
+  },
+  {
+   "rank": 396,
+   "plaintext": "BARNABASADRIA",
+   "wordLogp": -12.2683,
+   "words": "BARNABAS ADRIA",
+   "unknown": 0
+  },
+  {
+   "rank": 397,
+   "plaintext": "READIRISIPAGE",
+   "wordLogp": -12.2706,
+   "words": "READIRIS I PAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 398,
+   "plaintext": "SHORTSTATOOSH",
+   "wordLogp": -12.2713,
+   "words": "SHORTS TATOOSH",
+   "unknown": 0
+  },
+  {
+   "rank": 399,
+   "plaintext": "MSHDIMINISHES",
+   "wordLogp": -12.2714,
+   "words": "MSH DIMINISHES",
+   "unknown": 0
+  },
+  {
+   "rank": 400,
+   "plaintext": "GEEKAGAVACEAE",
+   "wordLogp": -12.2715,
+   "words": "GEEK AGAVACEAE",
+   "unknown": 0
+  },
+  {
+   "rank": 401,
+   "plaintext": "LEICALAVALIFE",
+   "wordLogp": -12.2766,
+   "words": "LEICA LAVALIFE",
+   "unknown": 0
+  },
+  {
+   "rank": 402,
+   "plaintext": "SEALESERENADE",
+   "wordLogp": -12.2778,
+   "words": "SEALE SERENADE",
+   "unknown": 0
+  },
+  {
+   "rank": 403,
+   "plaintext": "NEGRONOGOOGLE",
+   "wordLogp": -12.2813,
+   "words": "NEGRO NO GOOGLE",
+   "unknown": 0
+  },
+  {
+   "rank": 404,
+   "plaintext": "MEINIMINIMIZE",
+   "wordLogp": -12.2869,
+   "words": "ME IN I MINIMIZE",
+   "unknown": 0
+  },
+  {
+   "rank": 405,
+   "plaintext": "THREATAAAARGH",
+   "wordLogp": -12.2875,
+   "words": "THREAT AAAARGH",
+   "unknown": 0
+  },
+  {
+   "rank": 406,
+   "plaintext": "DONALDLRLANDO",
+   "wordLogp": -12.2891,
+   "words": "DONALD LRLANDO",
+   "unknown": 0
+  },
+  {
+   "rank": 407,
+   "plaintext": "RAINEREMERICA",
+   "wordLogp": -12.2891,
+   "words": "RAINER EMERICA",
+   "unknown": 0
+  },
+  {
+   "rank": 408,
+   "plaintext": "PAISAPAYARIMA",
+   "wordLogp": -12.2895,
+   "words": "PAISAPAY ARIMA",
+   "unknown": 0
+  },
+  {
+   "rank": 409,
+   "plaintext": "ANNOTATETANON",
+   "wordLogp": -12.2923,
+   "words": "ANNOTATE TAN ON",
+   "unknown": 0
+  },
+  {
+   "rank": 410,
+   "plaintext": "CSABACARAVANS",
+   "wordLogp": -12.2939,
+   "words": "CSABA CARAVANS",
+   "unknown": 0
+  },
+  {
+   "rank": 411,
+   "plaintext": "RAIDEREVELINA",
+   "wordLogp": -12.2946,
+   "words": "RAIDER EVELINA",
+   "unknown": 0
+  },
+  {
+   "rank": 412,
+   "plaintext": "BEAMEBEVERAGE",
+   "wordLogp": -12.2955,
+   "words": "BE A ME BEVERAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 413,
+   "plaintext": "SLIDESEZEKIAL",
+   "wordLogp": -12.2957,
+   "words": "SLIDES EZEKIAL",
+   "unknown": 0
+  },
+  {
+   "rank": 414,
+   "plaintext": "MADEAMAJANDRA",
+   "wordLogp": -12.2997,
+   "words": "MADE A MAJANDRA",
+   "unknown": 0
+  },
+  {
+   "rank": 415,
+   "plaintext": "BEENABAYADERE",
+   "wordLogp": -12.3019,
+   "words": "BEEN A BAYADERE",
+   "unknown": 0
+  },
+  {
+   "rank": 416,
+   "plaintext": "RENDEREDEINDE",
+   "wordLogp": -12.3025,
+   "words": "RENDERED EINDE",
+   "unknown": 0
+  },
+  {
+   "rank": 417,
+   "plaintext": "MEILIMINIMIZE",
+   "wordLogp": -12.3037,
+   "words": "MEILI MINIMIZE",
+   "unknown": 0
+  },
+  {
+   "rank": 418,
+   "plaintext": "PRECIPITINERR",
+   "wordLogp": -12.305,
+   "words": "PRECIPITIN ERR",
+   "unknown": 0
+  },
+  {
+   "rank": 419,
+   "plaintext": "TSACATAMARANS",
+   "wordLogp": -12.3091,
+   "words": "TSA CATAMARANS",
+   "unknown": 0
+  },
+  {
+   "rank": 420,
+   "plaintext": "TOILETEFEDITO",
+   "wordLogp": -12.3094,
+   "words": "TOILET EFEDITO",
+   "unknown": 0
+  },
+  {
+   "rank": 421,
+   "plaintext": "PRIDEPELETIER",
+   "wordLogp": -12.3133,
+   "words": "PRIDE PELETIER",
+   "unknown": 0
+  },
+  {
+   "rank": 422,
+   "plaintext": "ANDREAENEEDIN",
+   "wordLogp": -12.3165,
+   "words": "ANDREAE NEED IN",
+   "unknown": 0
+  },
+  {
+   "rank": 423,
+   "plaintext": "SEITESELENITE",
+   "wordLogp": -12.3179,
+   "words": "SEITE SELENITE",
+   "unknown": 0
+  },
+  {
+   "rank": 424,
+   "plaintext": "MACNAMARAACTA",
+   "wordLogp": -12.3217,
+   "words": "MACNAMARA ACTA",
+   "unknown": 0
+  },
+  {
+   "rank": 425,
+   "plaintext": "SANTOSOBOSNIA",
+   "wordLogp": -12.322,
+   "words": "SANTOSO BOSNIA",
+   "unknown": 0
+  },
+  {
+   "rank": 426,
+   "plaintext": "LEILALAXATIVE",
+   "wordLogp": -12.3237,
+   "words": "LEILA LAXATIVE",
+   "unknown": 0
+  },
+  {
+   "rank": 427,
+   "plaintext": "REAVERELEVATE",
+   "wordLogp": -12.3298,
+   "words": "REAVER ELEVATE",
+   "unknown": 0
+  },
+  {
+   "rank": 428,
+   "plaintext": "STILESEVERITT",
+   "wordLogp": -12.3329,
+   "words": "STILES EVERITT",
+   "unknown": 0
+  },
+  {
+   "rank": 429,
+   "plaintext": "SAINTSTUTUILA",
+   "wordLogp": -12.3349,
+   "words": "SAINTS TUTUILA",
+   "unknown": 0
+  },
+  {
+   "rank": 430,
+   "plaintext": "SOBRESETEMBRO",
+   "wordLogp": -12.3353,
+   "words": "SOBRE SETEMBRO",
+   "unknown": 0
+  },
+  {
+   "rank": 431,
+   "plaintext": "RAISEREMERICA",
+   "wordLogp": -12.3354,
+   "words": "RAISER EMERICA",
+   "unknown": 0
+  },
+  {
+   "rank": 432,
+   "plaintext": "GEADEGENERATE",
+   "wordLogp": -12.3361,
+   "words": "GEA DEGENERATE",
+   "unknown": 0
+  },
+  {
+   "rank": 433,
+   "plaintext": "HANRAHANAPNEA",
+   "wordLogp": -12.3375,
+   "words": "HANRAHAN APNEA",
+   "unknown": 0
+  },
+  {
+   "rank": 434,
+   "plaintext": "GLAZEGENERALL",
+   "wordLogp": -12.3421,
+   "words": "GLAZE GENERAL L",
+   "unknown": 0
+  },
+  {
+   "rank": 435,
+   "plaintext": "GDSLOGOHOUSED",
+   "wordLogp": -12.3444,
+   "words": "GDSLOGO HOUSED",
+   "unknown": 0
+  },
+  {
+   "rank": 436,
+   "plaintext": "ANDREAESENDIN",
+   "wordLogp": -12.3485,
+   "words": "ANDREAE SEND IN",
+   "unknown": 0
+  },
+  {
+   "rank": 437,
+   "plaintext": "SLATESEYEBALL",
+   "wordLogp": -12.3494,
+   "words": "SLATES EYEBALL",
+   "unknown": 0
+  },
+  {
+   "rank": 438,
+   "plaintext": "SMIMESELENIUM",
+   "wordLogp": -12.3508,
+   "words": "SMIME SELENIUM",
+   "unknown": 0
+  },
+  {
+   "rank": 439,
+   "plaintext": "ANDREAEHEADIN",
+   "wordLogp": -12.3514,
+   "words": "ANDREAE HEAD IN",
+   "unknown": 0
+  },
+  {
+   "rank": 440,
+   "plaintext": "RENDEREDEENIE",
+   "wordLogp": -12.3527,
+   "words": "RENDERED EENIE",
+   "unknown": 0
+  },
+  {
+   "rank": 441,
+   "plaintext": "NEYMANANALYSE",
+   "wordLogp": -12.3528,
+   "words": "NEYMAN ANALYSE",
+   "unknown": 0
+  },
+  {
+   "rank": 442,
+   "plaintext": "CLITOCOLONIAL",
+   "wordLogp": -12.3536,
+   "words": "CLITO COLONIAL",
+   "unknown": 0
+  },
+  {
+   "rank": 443,
+   "plaintext": "INUKTITUTQUAN",
+   "wordLogp": -12.3553,
+   "words": "INUKTITUT QUAN",
+   "unknown": 0
+  },
+  {
+   "rank": 444,
+   "plaintext": "KYLIEKENEALLY",
+   "wordLogp": -12.3554,
+   "words": "KYLIE KENEALLY",
+   "unknown": 0
+  },
+  {
+   "rank": 445,
+   "plaintext": "LSTAELEMENTIS",
+   "wordLogp": -12.3556,
+   "words": "LSTA ELEMENT IS",
+   "unknown": 0
+  },
+  {
+   "rank": 446,
+   "plaintext": "ESTINENDNOTES",
+   "wordLogp": -12.356,
+   "words": "EST IN ENDNOTES",
+   "unknown": 0
+  },
+  {
+   "rank": 447,
+   "plaintext": "STARTSTITRANT",
+   "wordLogp": -12.3593,
+   "words": "STARTS TITRANT",
+   "unknown": 0
+  },
+  {
+   "rank": 448,
+   "plaintext": "MDADAMARALAND",
+   "wordLogp": -12.3603,
+   "words": "MDA DAMARALAND",
+   "unknown": 0
+  },
+  {
+   "rank": 449,
+   "plaintext": "TEASETELECARE",
+   "wordLogp": -12.3622,
+   "words": "TEASE TELECARE",
+   "unknown": 0
+  },
+  {
+   "rank": 450,
+   "plaintext": "DOTMEDELECTRO",
+   "wordLogp": -12.3676,
+   "words": "DOTMED ELECTRO",
+   "unknown": 0
+  },
+  {
+   "rank": 451,
+   "plaintext": "TEILETENERIFE",
+   "wordLogp": -12.3704,
+   "words": "TEILE TENERIFE",
+   "unknown": 0
+  },
+  {
+   "rank": 452,
+   "plaintext": "GLAREGENERALL",
+   "wordLogp": -12.3793,
+   "words": "GLARE GENERAL L",
+   "unknown": 0
+  },
+  {
+   "rank": 453,
+   "plaintext": "PAISAPAYAMIDA",
+   "wordLogp": -12.3807,
+   "words": "PAISAPAY AMID A",
+   "unknown": 0
+  },
+  {
+   "rank": 454,
+   "plaintext": "MAORIMINIDOKA",
+   "wordLogp": -12.3816,
+   "words": "MAORI MINIDOKA",
+   "unknown": 0
+  },
+  {
+   "rank": 455,
+   "plaintext": "OSERRORBREEDS",
+   "wordLogp": -12.3829,
+   "words": "OSERROR BREEDS",
+   "unknown": 0
+  },
+  {
+   "rank": 456,
+   "plaintext": "ANTHEAEVERTON",
+   "wordLogp": -12.3837,
+   "words": "ANTHEA EVERTON",
+   "unknown": 0
+  },
+  {
+   "rank": 457,
+   "plaintext": "NEIMANANALIZE",
+   "wordLogp": -12.3841,
+   "words": "NEIMAN ANALIZE",
+   "unknown": 0
+  },
+  {
+   "rank": 458,
+   "plaintext": "REUBEREXECUTE",
+   "wordLogp": -12.3844,
+   "words": "REUBER EXECUTE",
+   "unknown": 0
+  },
+  {
+   "rank": 459,
+   "plaintext": "MCRAEMETEORIC",
+   "wordLogp": -12.387,
+   "words": "MCRAE METEORIC",
+   "unknown": 0
+  },
+  {
+   "rank": 460,
+   "plaintext": "RAISEREVELINA",
+   "wordLogp": -12.3919,
+   "words": "RAISE REVEL IN A",
+   "unknown": 0
+  },
+  {
+   "rank": 461,
+   "plaintext": "DHAKADATAPATH",
+   "wordLogp": -12.3925,
+   "words": "DHAKA DATA PATH",
+   "unknown": 0
+  },
+  {
+   "rank": 462,
+   "plaintext": "NIRVANAMAZRUI",
+   "wordLogp": -12.395,
+   "words": "NIRVANA MAZRUI",
+   "unknown": 0
+  },
+  {
+   "rank": 463,
+   "plaintext": "CERVICITISRUE",
+   "wordLogp": -12.3958,
+   "words": "CERVICITIS RUE",
+   "unknown": 0
+  },
+  {
+   "rank": 464,
+   "plaintext": "SOTRESELECTRO",
+   "wordLogp": -12.3959,
+   "words": "SOTRES ELECTRO",
+   "unknown": 0
+  },
+  {
+   "rank": 465,
+   "plaintext": "PAISAPAYAVIRA",
+   "wordLogp": -12.3993,
+   "words": "PAISAPAY AVIRA",
+   "unknown": 0
+  },
+  {
+   "rank": 466,
+   "plaintext": "ANDREAELEADIN",
+   "wordLogp": -12.4009,
+   "words": "ANDREAE LEAD IN",
+   "unknown": 0
+  },
+  {
+   "rank": 467,
+   "plaintext": "RAMSARANAEMIA",
+   "wordLogp": -12.4024,
+   "words": "RAMSAR ANAEMIA",
+   "unknown": 0
+  },
+  {
+   "rank": 468,
+   "plaintext": "LEADELEVERAGE",
+   "wordLogp": -12.4069,
+   "words": "LEAD E LEVERAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 469,
+   "plaintext": "MAILAMAMACITA",
+   "wordLogp": -12.4087,
+   "words": "MAIL A MAMACITA",
+   "unknown": 0
+  },
+  {
+   "rank": 470,
+   "plaintext": "REAPEREYESAVE",
+   "wordLogp": -12.4101,
+   "words": "REAPER EYESAVE",
+   "unknown": 0
+  },
+  {
+   "rank": 471,
+   "plaintext": "TIARATALABANI",
+   "wordLogp": -12.4144,
+   "words": "TIARA TALABANI",
+   "unknown": 0
+  },
+  {
+   "rank": 472,
+   "plaintext": "NATHANARANTXA",
+   "wordLogp": -12.4211,
+   "words": "NATHAN ARANTXA",
+   "unknown": 0
+  },
+  {
+   "rank": 473,
+   "plaintext": "DTIMEDERELICT",
+   "wordLogp": -12.4213,
+   "words": "D TIME DERELICT",
+   "unknown": 0
+  },
+  {
+   "rank": 474,
+   "plaintext": "PAISAPAYARIBA",
+   "wordLogp": -12.4218,
+   "words": "PAISAPAY ARIBA",
+   "unknown": 0
+  },
+  {
+   "rank": 475,
+   "plaintext": "ALTERARBRUTAL",
+   "wordLogp": -12.4249,
+   "words": "ALTERAR BRUTAL",
+   "unknown": 0
+  },
+  {
+   "rank": 476,
+   "plaintext": "BAOBABAMAZONA",
+   "wordLogp": -12.4274,
+   "words": "BAOBAB AMAZON A",
+   "unknown": 0
+  },
+  {
+   "rank": 477,
+   "plaintext": "WAHIAWANASHUA",
+   "wordLogp": -12.4289,
+   "words": "WAHIAWA NASHUA",
+   "unknown": 0
+  },
+  {
+   "rank": 478,
+   "plaintext": "SATTASAMANTHA",
+   "wordLogp": -12.4296,
+   "words": "SATTA SAMANTHA",
+   "unknown": 0
+  },
+  {
+   "rank": 479,
+   "plaintext": "GLADEGENERALL",
+   "wordLogp": -12.4304,
+   "words": "GLADE GENERAL L",
+   "unknown": 0
+  },
+  {
+   "rank": 480,
+   "plaintext": "SEIKOSODOMITE",
+   "wordLogp": -12.4322,
+   "words": "SEIKO SODOMITE",
+   "unknown": 0
+  },
+  {
+   "rank": 481,
+   "plaintext": "SLEEPSPEPPERL",
+   "wordLogp": -12.4349,
+   "words": "SLEEPS PEPPERL",
+   "unknown": 0
+  },
+  {
+   "rank": 482,
+   "plaintext": "KAUNAKAKAIUMA",
+   "wordLogp": -12.4373,
+   "words": "KAUNAKAKAI UMA",
+   "unknown": 0
+  },
+  {
+   "rank": 483,
+   "plaintext": "FAIREFEDERICA",
+   "wordLogp": -12.4388,
+   "words": "FAIRE FEDERICA",
+   "unknown": 0
+  },
+  {
+   "rank": 484,
+   "plaintext": "CNILOCOMOTION",
+   "wordLogp": -12.4394,
+   "words": "CNI LOCOMOTION",
+   "unknown": 0
+  },
+  {
+   "rank": 485,
+   "plaintext": "SEIZESELENITE",
+   "wordLogp": -12.444,
+   "words": "SEIZE SELENITE",
+   "unknown": 0
+  },
+  {
+   "rank": 486,
+   "plaintext": "NIRVANAMAERKI",
+   "wordLogp": -12.4442,
+   "words": "NIRVANA MAERKI",
+   "unknown": 0
+  },
+  {
+   "rank": 487,
+   "plaintext": "NEIMANAVARICE",
+   "wordLogp": -12.4529,
+   "words": "NEIMAN AVARICE",
+   "unknown": 0
+  },
+  {
+   "rank": 488,
+   "plaintext": "WAIPAWAMARINA",
+   "wordLogp": -12.4538,
+   "words": "WAIPAWA MARINA",
+   "unknown": 0
+  },
+  {
+   "rank": 489,
+   "plaintext": "REAMERELEVATE",
+   "wordLogp": -12.4558,
+   "words": "REAMER ELEVATE",
+   "unknown": 0
+  },
+  {
+   "rank": 490,
+   "plaintext": "STENTSTATMENT",
+   "wordLogp": -12.4566,
+   "words": "STENT STATMENT",
+   "unknown": 0
+  },
+  {
+   "rank": 491,
+   "plaintext": "RITTERELECTRI",
+   "wordLogp": -12.4579,
+   "words": "RITTER ELECTRI",
+   "unknown": 0
+  },
+  {
+   "rank": 492,
+   "plaintext": "CLARACARAMAIL",
+   "wordLogp": -12.4592,
+   "words": "CLARA CARAMAIL",
+   "unknown": 0
+  },
+  {
+   "rank": 493,
+   "plaintext": "CENTOCOROUNCE",
+   "wordLogp": -12.4594,
+   "words": "CENTOCOR OUNCE",
+   "unknown": 0
+  },
+  {
+   "rank": 494,
+   "plaintext": "REIHEREDEFINE",
+   "wordLogp": -12.4597,
+   "words": "REIHE REDEFINE",
+   "unknown": 0
+  },
+  {
+   "rank": 495,
+   "plaintext": "OSERRORBRIEFS",
+   "wordLogp": -12.4634,
+   "words": "OSERROR BRIEFS",
+   "unknown": 0
+  },
+  {
+   "rank": 496,
+   "plaintext": "NOTMANAVANTGO",
+   "wordLogp": -12.4637,
+   "words": "NOT MAN AVANTGO",
+   "unknown": 0
+  },
+  {
+   "rank": 497,
+   "plaintext": "WALKAWAYALLOA",
+   "wordLogp": -12.4648,
+   "words": "WALK AWAY ALLOA",
+   "unknown": 0
+  },
+  {
+   "rank": 498,
+   "plaintext": "PAISAPAYADINA",
+   "wordLogp": -12.4651,
+   "words": "PAISAPAY ADINA",
+   "unknown": 0
+  },
+  {
+   "rank": 499,
+   "plaintext": "NEIMANAPATITE",
+   "wordLogp": -12.466,
+   "words": "NEIMAN APATITE",
+   "unknown": 0
+  },
+  {
+   "rank": 500,
+   "plaintext": "WAIKAWAMARINA",
+   "wordLogp": -12.4719,
+   "words": "WAIKAWA MARINA",
+   "unknown": 0
+  },
+  {
+   "rank": 501,
+   "plaintext": "NGIMINIMISING",
+   "wordLogp": -12.4739,
+   "words": "NGI MINIMISING",
+   "unknown": 0
+  },
+  {
+   "rank": 502,
+   "plaintext": "NEOGENEWECOME",
+   "wordLogp": -12.4774,
+   "words": "NEOGENE WE COME",
+   "unknown": 0
+  },
+  {
+   "rank": 503,
+   "plaintext": "INSITITUTESEN",
+   "wordLogp": -12.4799,
+   "words": "INSITITUTE SEN",
+   "unknown": 0
+  },
+  {
+   "rank": 504,
+   "plaintext": "NEOGENEDEVOTE",
+   "wordLogp": -12.4835,
+   "words": "NEOGENE DEVOTE",
+   "unknown": 0
+  },
+  {
+   "rank": 505,
+   "plaintext": "GDSLOGOTOSSED",
+   "wordLogp": -12.4858,
+   "words": "GDSLOGO TOSSED",
+   "unknown": 0
+  },
+  {
+   "rank": 506,
+   "plaintext": "VLNDIVISIONAL",
+   "wordLogp": -12.4858,
+   "words": "VLN DIVISIONAL",
+   "unknown": 0
+  },
+  {
+   "rank": 507,
+   "plaintext": "LATVALAMARTHA",
+   "wordLogp": -12.4866,
+   "words": "LATVALA MARTHA",
+   "unknown": 0
+  },
+  {
+   "rank": 508,
+   "plaintext": "TOOLETELEFONO",
+   "wordLogp": -12.4869,
+   "words": "TOOLE TELEFONO",
+   "unknown": 0
+  },
+  {
+   "rank": 509,
+   "plaintext": "ASORBABYBOOKS",
+   "wordLogp": -12.4876,
+   "words": "AS OR BABY BOOKS",
+   "unknown": 0
+  },
+  {
+   "rank": 510,
+   "plaintext": "NEOGENEDECODE",
+   "wordLogp": -12.4886,
+   "words": "NEOGENE DECODE",
+   "unknown": 0
+  },
+  {
+   "rank": 511,
+   "plaintext": "SEULESEXECUTE",
+   "wordLogp": -12.4894,
+   "words": "SEULES EXECUTE",
+   "unknown": 0
+  },
+  {
+   "rank": 512,
+   "plaintext": "PEOLEPENELOPE",
+   "wordLogp": -12.4924,
+   "words": "PEOLE PENELOPE",
+   "unknown": 0
+  },
+  {
+   "rank": 513,
+   "plaintext": "INUKTITUTGUNN",
+   "wordLogp": -12.4934,
+   "words": "INUKTITUT GUNN",
+   "unknown": 0
+  },
+  {
+   "rank": 514,
+   "plaintext": "INSERIRERISEN",
+   "wordLogp": -12.4938,
+   "words": "INSERIRE RISEN",
+   "unknown": 0
+  },
+  {
+   "rank": 515,
+   "plaintext": "PAISAPAYAMICA",
+   "wordLogp": -12.4948,
+   "words": "PAISAPAY AMICA",
+   "unknown": 0
+  },
+  {
+   "rank": 516,
+   "plaintext": "BARNABASATRIA",
+   "wordLogp": -12.4948,
+   "words": "BARNABAS ATRIA",
+   "unknown": 0
+  },
+  {
+   "rank": 517,
+   "plaintext": "NAABANANARAMA",
+   "wordLogp": -12.4953,
+   "words": "NAA BANANARAMA",
+   "unknown": 0
+  },
+  {
+   "rank": 518,
+   "plaintext": "MACNAMARAOCTA",
+   "wordLogp": -12.4998,
+   "words": "MACNAMARA OCT A",
+   "unknown": 0
+  },
+  {
+   "rank": 519,
+   "plaintext": "LEAFELEVERAGE",
+   "wordLogp": -12.5003,
+   "words": "LEAFE LEVERAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 520,
+   "plaintext": "NYLEUNUSUALLY",
+   "wordLogp": -12.5017,
+   "words": "NYLE UNUSUALLY",
+   "unknown": 0
+  },
+  {
+   "rank": 521,
+   "plaintext": "GGIDIGITIZING",
+   "wordLogp": -12.5081,
+   "words": "GGI DIGITIZING",
+   "unknown": 0
+  },
+  {
+   "rank": 522,
+   "plaintext": "MASUIMIFIESTA",
+   "wordLogp": -12.5093,
+   "words": "MASUIMI FIESTA",
+   "unknown": 0
+  },
+  {
+   "rank": 523,
+   "plaintext": "PAOLAPARABOLA",
+   "wordLogp": -12.5097,
+   "words": "PAOLA PARABOLA",
+   "unknown": 0
+  },
+  {
+   "rank": 524,
+   "plaintext": "ALLSTATETALAL",
+   "wordLogp": -12.511,
+   "words": "ALLSTATE TALAL",
+   "unknown": 0
+  },
+  {
+   "rank": 525,
+   "plaintext": "RANGARAJANNSA",
+   "wordLogp": -12.5137,
+   "words": "RANGARAJAN NSA",
+   "unknown": 0
+  },
+  {
+   "rank": 526,
+   "plaintext": "VECPAVALANCHE",
+   "wordLogp": -12.5149,
+   "words": "VECP AVALANCHE",
+   "unknown": 0
+  },
+  {
+   "rank": 527,
+   "plaintext": "PRECIPITINEOR",
+   "wordLogp": -12.5149,
+   "words": "PRECIPITIN E OR",
+   "unknown": 0
+  },
+  {
+   "rank": 528,
+   "plaintext": "TIAVATAKASAKI",
+   "wordLogp": -12.5159,
+   "words": "TIAVA TAKASAKI",
+   "unknown": 0
+  },
+  {
+   "rank": 529,
+   "plaintext": "INSCRIRERISEN",
+   "wordLogp": -12.5164,
+   "words": "INSCRIRE RISEN",
+   "unknown": 0
+  },
+  {
+   "rank": 530,
+   "plaintext": "ASIANANANNIES",
+   "wordLogp": -12.5197,
+   "words": "ASIAN A NANNIES",
+   "unknown": 0
+  },
+  {
+   "rank": 531,
+   "plaintext": "DEIRADATAFILE",
+   "wordLogp": -12.5198,
+   "words": "DEIRA DATA FILE",
+   "unknown": 0
+  },
+  {
+   "rank": 532,
+   "plaintext": "SEIXASALANINE",
+   "wordLogp": -12.5202,
+   "words": "SEIXAS ALANINE",
+   "unknown": 0
+  },
+  {
+   "rank": 533,
+   "plaintext": "ENTREEEGERTON",
+   "wordLogp": -12.5294,
+   "words": "ENTREE EGERTON",
+   "unknown": 0
+  },
+  {
+   "rank": 534,
+   "plaintext": "PAISAPAYAMIRA",
+   "wordLogp": -12.5299,
+   "words": "PAISAPAY AMIRA",
+   "unknown": 0
+  },
+  {
+   "rank": 535,
+   "plaintext": "GDSLOGOPOISED",
+   "wordLogp": -12.531,
+   "words": "GDSLOGO POISED",
+   "unknown": 0
+  },
+  {
+   "rank": 536,
+   "plaintext": "ATENEAEVERETT",
+   "wordLogp": -12.5325,
+   "words": "ATENEA EVERETT",
+   "unknown": 0
+  },
+  {
+   "rank": 537,
+   "plaintext": "PLAYAPARASAIL",
+   "wordLogp": -12.5354,
+   "words": "PLAYA PARASAIL",
+   "unknown": 0
+  },
+  {
+   "rank": 538,
+   "plaintext": "NIRVANAPARRYI",
+   "wordLogp": -12.5373,
+   "words": "NIRVANA PARRYI",
+   "unknown": 0
+  },
+  {
+   "rank": 539,
+   "plaintext": "DSTLEDERENTAS",
+   "wordLogp": -12.542,
+   "words": "DST LEDERENTAS",
+   "unknown": 0
+  },
+  {
+   "rank": 540,
+   "plaintext": "TOILETENEMIGO",
+   "wordLogp": -12.5423,
+   "words": "TOILET ENEMIGO",
+   "unknown": 0
+  },
+  {
+   "rank": 541,
+   "plaintext": "SEINESELENITE",
+   "wordLogp": -12.5429,
+   "words": "SEINE SELENITE",
+   "unknown": 0
+  },
+  {
+   "rank": 542,
+   "plaintext": "NEIMANADALINE",
+   "wordLogp": -12.5433,
+   "words": "NEIMAN ADALINE",
+   "unknown": 0
+  },
+  {
+   "rank": 543,
+   "plaintext": "ANDREAEHEADON",
+   "wordLogp": -12.5446,
+   "words": "ANDREAE HEAD ON",
+   "unknown": 0
+  },
+  {
+   "rank": 544,
+   "plaintext": "ADVOCACYCAVID",
+   "wordLogp": -12.545,
+   "words": "ADVOCACY CAVID",
+   "unknown": 0
+  },
+  {
+   "rank": 545,
+   "plaintext": "THIRSTSISAIAH",
+   "wordLogp": -12.5469,
+   "words": "THIRSTS ISAIAH",
+   "unknown": 0
+  },
+  {
+   "rank": 546,
+   "plaintext": "ALICEAEZEKIEL",
+   "wordLogp": -12.5485,
+   "words": "ALICE A EZEKIEL",
+   "unknown": 0
+  },
+  {
+   "rank": 547,
+   "plaintext": "TAILSTSUSHIMA",
+   "wordLogp": -12.5491,
+   "words": "TAILS TSUSHIMA",
+   "unknown": 0
+  },
+  {
+   "rank": 548,
+   "plaintext": "SHAKESEREWASH",
+   "wordLogp": -12.5511,
+   "words": "SHAKES EREWASH",
+   "unknown": 0
+  },
+  {
+   "rank": 549,
+   "plaintext": "ASTARARTRITIS",
+   "wordLogp": -12.5511,
+   "words": "A STAR ARTRITIS",
+   "unknown": 0
+  },
+  {
+   "rank": 550,
+   "plaintext": "MEIRIMINIMIZE",
+   "wordLogp": -12.5522,
+   "words": "MEIRI MINIMIZE",
+   "unknown": 0
+  },
+  {
+   "rank": 551,
+   "plaintext": "KIATAKAYANAGI",
+   "wordLogp": -12.5538,
+   "words": "KIA TAKAYANAGI",
+   "unknown": 0
+  },
+  {
+   "rank": 552,
+   "plaintext": "PISCOPOBONSAI",
+   "wordLogp": -12.5566,
+   "words": "PISCOPO BONSAI",
+   "unknown": 0
+  },
+  {
+   "rank": 553,
+   "plaintext": "OSERRORGREENS",
+   "wordLogp": -12.5653,
+   "words": "OSERROR GREENS",
+   "unknown": 0
+  },
+  {
+   "rank": 554,
+   "plaintext": "DAURADALAGUNA",
+   "wordLogp": -12.5654,
+   "words": "DAURADA LAGUNA",
+   "unknown": 0
+  },
+  {
+   "rank": 555,
+   "plaintext": "SEUMASAMATURE",
+   "wordLogp": -12.5654,
+   "words": "SEUMAS AMATURE",
+   "unknown": 0
+  },
+  {
+   "rank": 556,
+   "plaintext": "ROTHERELEKTRO",
+   "wordLogp": -12.5662,
+   "words": "R OTHER ELEKTRO",
+   "unknown": 0
+  },
+  {
+   "rank": 557,
+   "plaintext": "ASERTATITTENS",
+   "wordLogp": -12.5663,
+   "words": "ASERTA TITTENS",
+   "unknown": 0
+  },
+  {
+   "rank": 558,
+   "plaintext": "GEILEGENETIDE",
+   "wordLogp": -12.5691,
+   "words": "GEILE GENETIDE",
+   "unknown": 0
+  },
+  {
+   "rank": 559,
+   "plaintext": "WAIPAWAVAGINA",
+   "wordLogp": -12.5699,
+   "words": "WAIPAWA VAGINA",
+   "unknown": 0
+  },
+  {
+   "rank": 560,
+   "plaintext": "ROSTEREDEBSCO",
+   "wordLogp": -12.5716,
+   "words": "ROSTERED EBSCO",
+   "unknown": 0
+  },
+  {
+   "rank": 561,
+   "plaintext": "PEOPEPENELOPE",
+   "wordLogp": -12.5727,
+   "words": "PEOPE PENELOPE",
+   "unknown": 0
+  },
+  {
+   "rank": 562,
+   "plaintext": "RENEEREFERNCE",
+   "wordLogp": -12.573,
+   "words": "RENEE REFERNCE",
+   "unknown": 0
+  },
+  {
+   "rank": 563,
+   "plaintext": "LEAGELEVERAGE",
+   "wordLogp": -12.5732,
+   "words": "LEAGE LEVERAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 564,
+   "plaintext": "ANDREAEWERDEN",
+   "wordLogp": -12.5733,
+   "words": "ANDREAE WERDEN",
+   "unknown": 0
+  },
+  {
+   "rank": 565,
+   "plaintext": "BELLEBEVERLEE",
+   "wordLogp": -12.5742,
+   "words": "BELLE BEVERLEE",
+   "unknown": 0
+  },
+  {
+   "rank": 566,
+   "plaintext": "MISKOMOROWSKI",
+   "wordLogp": -12.5746,
+   "words": "MIS KOMOROWSKI",
+   "unknown": 0
+  },
+  {
+   "rank": 567,
+   "plaintext": "PAISAPAYAVICA",
+   "wordLogp": -12.5751,
+   "words": "PAISAPAY AVICA",
+   "unknown": 0
+  },
+  {
+   "rank": 568,
+   "plaintext": "KIANAKALAHARI",
+   "wordLogp": -12.5752,
+   "words": "KIANA KALAHARI",
+   "unknown": 0
+  },
+  {
+   "rank": 569,
+   "plaintext": "FAIREFEMENINA",
+   "wordLogp": -12.576,
+   "words": "FAIRE FEMENINA",
+   "unknown": 0
+  },
+  {
+   "rank": 570,
+   "plaintext": "BARNABASAZRIA",
+   "wordLogp": -12.5777,
+   "words": "BARNABAS AZRIA",
+   "unknown": 0
+  },
+  {
+   "rank": 571,
+   "plaintext": "NATHANACARTIA",
+   "wordLogp": -12.5788,
+   "words": "NATHAN ACARTIA",
+   "unknown": 0
+  },
+  {
+   "rank": 572,
+   "plaintext": "NEOGENEREVOKE",
+   "wordLogp": -12.5809,
+   "words": "NEOGENE REVOKE",
+   "unknown": 0
+  },
+  {
+   "rank": 573,
+   "plaintext": "PAISAPAYAKIVA",
+   "wordLogp": -12.5821,
+   "words": "PAISAPAY AKIVA",
+   "unknown": 0
+  },
+  {
+   "rank": 574,
+   "plaintext": "HAUSAHAYABUSA",
+   "wordLogp": -12.5831,
+   "words": "HAUSA HAYABUSA",
+   "unknown": 0
+  },
+  {
+   "rank": 575,
+   "plaintext": "CHATACAVANAGH",
+   "wordLogp": -12.5833,
+   "words": "CHAT A CAVANAGH",
+   "unknown": 0
+  },
+  {
+   "rank": 576,
+   "plaintext": "RICHEREXECCGI",
+   "wordLogp": -12.5848,
+   "words": "RICHER EXECCGI",
+   "unknown": 0
+  },
+  {
+   "rank": 577,
+   "plaintext": "DENSEDECENNIE",
+   "wordLogp": -12.5852,
+   "words": "DENSE DECENNIE",
+   "unknown": 0
+  },
+  {
+   "rank": 578,
+   "plaintext": "WAIKAWAVAGINA",
+   "wordLogp": -12.588,
+   "words": "WAIKAWA VAGINA",
+   "unknown": 0
+  },
+  {
+   "rank": 579,
+   "plaintext": "SLATESEVERALL",
+   "wordLogp": -12.5896,
+   "words": "SLATE SEVERAL L",
+   "unknown": 0
+  },
+  {
+   "rank": 580,
+   "plaintext": "NAIRANAKAJIMA",
+   "wordLogp": -12.5924,
+   "words": "NAIRA NAKAJIMA",
+   "unknown": 0
+  },
+  {
+   "rank": 581,
+   "plaintext": "NATRENELECTRA",
+   "wordLogp": -12.5935,
+   "words": "NATREN ELECTRA",
+   "unknown": 0
+  },
+  {
+   "rank": 582,
+   "plaintext": "GETINGNANETTE",
+   "wordLogp": -12.5963,
+   "words": "GETING NANETTE",
+   "unknown": 0
+  },
+  {
+   "rank": 583,
+   "plaintext": "CACHACAGARCIA",
+   "wordLogp": -12.597,
+   "words": "CACHACA GARCIA",
+   "unknown": 0
+  },
+  {
+   "rank": 584,
+   "plaintext": "NEIMONOPOLIZE",
+   "wordLogp": -12.5972,
+   "words": "NEI MONOPOLIZE",
+   "unknown": 0
+  },
+  {
+   "rank": 585,
+   "plaintext": "CERVICITISROE",
+   "wordLogp": -12.5973,
+   "words": "CERVICITIS ROE",
+   "unknown": 0
+  },
+  {
+   "rank": 586,
+   "plaintext": "INUKTITUTKUHN",
+   "wordLogp": -12.5976,
+   "words": "INUKTITUT KUHN",
+   "unknown": 0
+  },
+  {
+   "rank": 587,
+   "plaintext": "STAYSSSISTANT",
+   "wordLogp": -12.5983,
+   "words": "STAYS SSISTANT",
+   "unknown": 0
+  },
+  {
+   "rank": 588,
+   "plaintext": "VECOAVALANCHE",
+   "wordLogp": -12.6012,
+   "words": "VECO AVALANCHE",
+   "unknown": 0
+  },
+  {
+   "rank": 589,
+   "plaintext": "TEIDETENERIFE",
+   "wordLogp": -12.6013,
+   "words": "TEIDE TENERIFE",
+   "unknown": 0
+  },
+  {
+   "rank": 590,
+   "plaintext": "TRADATABAZAAR",
+   "wordLogp": -12.6025,
+   "words": "TRA DATABAZAAR",
+   "unknown": 0
+  },
+  {
+   "rank": 591,
+   "plaintext": "ANOTBABYBJORN",
+   "wordLogp": -12.6046,
+   "words": "A NOT BABYBJORN",
+   "unknown": 0
+  },
+  {
+   "rank": 592,
+   "plaintext": "CSIMACADAMIAS",
+   "wordLogp": -12.6053,
+   "words": "CSI MACADAMIAS",
+   "unknown": 0
+  },
+  {
+   "rank": 593,
+   "plaintext": "GSIRIGIDITIES",
+   "wordLogp": -12.6136,
+   "words": "GSI RIGIDITIES",
+   "unknown": 0
+  },
+  {
+   "rank": 594,
+   "plaintext": "READIRISIDATE",
+   "wordLogp": -12.6156,
+   "words": "READIRIS I DATE",
+   "unknown": 0
+  },
+  {
+   "rank": 595,
+   "plaintext": "TRAVATANAFAIR",
+   "wordLogp": -12.6174,
+   "words": "TRAVATAN A FAIR",
+   "unknown": 0
+  },
+  {
+   "rank": 596,
+   "plaintext": "ANGINANANOGEN",
+   "wordLogp": -12.6195,
+   "words": "ANGINA NANOGEN",
+   "unknown": 0
+  },
+  {
+   "rank": 597,
+   "plaintext": "INSITITUTESVN",
+   "wordLogp": -12.6197,
+   "words": "INSITITUTE SVN",
+   "unknown": 0
+  },
+  {
+   "rank": 598,
+   "plaintext": "INSERIREROSEN",
+   "wordLogp": -12.6201,
+   "words": "INSERIRE ROSEN",
+   "unknown": 0
+  },
+  {
+   "rank": 599,
+   "plaintext": "TERRETENEBRAE",
+   "wordLogp": -12.6202,
+   "words": "TERRE TENEBRAE",
+   "unknown": 0
+  },
+  {
+   "rank": 600,
+   "plaintext": "RMIHOROLOGIUM",
+   "wordLogp": -12.6207,
+   "words": "RMI HOROLOGIUM",
+   "unknown": 0
+  },
+  {
+   "rank": 601,
+   "plaintext": "PISCOPOPOLSKI",
+   "wordLogp": -12.6217,
+   "words": "PISCOPO POLSKI",
+   "unknown": 0
+  },
+  {
+   "rank": 602,
+   "plaintext": "CHAKACAVANAGH",
+   "wordLogp": -12.6223,
+   "words": "CHAKA CAVANAGH",
+   "unknown": 0
+  },
+  {
+   "rank": 603,
+   "plaintext": "ANTARARARITAN",
+   "wordLogp": -12.6252,
+   "words": "ANTARA RARITAN",
+   "unknown": 0
+  },
+  {
+   "rank": 604,
+   "plaintext": "MOIRAMASAHIRO",
+   "wordLogp": -12.6263,
+   "words": "MOIRA MASAHIRO",
+   "unknown": 0
+  },
+  {
+   "rank": 605,
+   "plaintext": "STOUTSTATSOFT",
+   "wordLogp": -12.6269,
+   "words": "STOUT STATSOFT",
+   "unknown": 0
+  },
+  {
+   "rank": 606,
+   "plaintext": "NATHANAGASTYA",
+   "wordLogp": -12.6274,
+   "words": "NATHAN AGASTYA",
+   "unknown": 0
+  },
+  {
+   "rank": 607,
+   "plaintext": "MYOHOMONOPOLY",
+   "wordLogp": -12.6275,
+   "words": "MYOHO MONOPOLY",
+   "unknown": 0
+  },
+  {
+   "rank": 608,
+   "plaintext": "MEADEMECENATE",
+   "wordLogp": -12.629,
+   "words": "MEADE MECENATE",
+   "unknown": 0
+  },
+  {
+   "rank": 609,
+   "plaintext": "EXPONENTNNPGX",
+   "wordLogp": -12.6298,
+   "words": "EXPONENT NNPGX",
+   "unknown": 0
+  },
+  {
+   "rank": 610,
+   "plaintext": "READIRISIMAKE",
+   "wordLogp": -12.6329,
+   "words": "READIRIS I MAKE",
+   "unknown": 0
+  },
+  {
+   "rank": 611,
+   "plaintext": "GENIEGEMEENTE",
+   "wordLogp": -12.6331,
+   "words": "GENIE GEMEENTE",
+   "unknown": 0
+  },
+  {
+   "rank": 612,
+   "plaintext": "DEEDADAPALENE",
+   "wordLogp": -12.6341,
+   "words": "DEED ADAPALENE",
+   "unknown": 0
+  },
+  {
+   "rank": 613,
+   "plaintext": "DEEMEDEXEGETE",
+   "wordLogp": -12.6363,
+   "words": "DEEMED EXEGETE",
+   "unknown": 0
+  },
+  {
+   "rank": 614,
+   "plaintext": "READIRISINAME",
+   "wordLogp": -12.6379,
+   "words": "READIRIS I NAME",
+   "unknown": 0
+  },
+  {
+   "rank": 615,
+   "plaintext": "NANDINIBIANCA",
+   "wordLogp": -12.6379,
+   "words": "NANDINI BIANCA",
+   "unknown": 0
+  },
+  {
+   "rank": 616,
+   "plaintext": "LASCALANAUSEA",
+   "wordLogp": -12.6385,
+   "words": "LASCALA NAUSEA",
+   "unknown": 0
+  },
+  {
+   "rank": 617,
+   "plaintext": "DEGRADAMAGGIE",
+   "wordLogp": -12.6386,
+   "words": "DEGRADA MAGGIE",
+   "unknown": 0
+  },
+  {
+   "rank": 618,
+   "plaintext": "FTEWIFIDIRECT",
+   "wordLogp": -12.64,
+   "words": "FTE WIFIDIRECT",
+   "unknown": 0
+  },
+  {
+   "rank": 619,
+   "plaintext": "KAUNAKAKAIUVA",
+   "wordLogp": -12.641,
+   "words": "KAUNAKAKAI UVA",
+   "unknown": 0
+  },
+  {
+   "rank": 620,
+   "plaintext": "ONERRORORBEON",
+   "wordLogp": -12.642,
+   "words": "ON ERROR OR BE ON",
+   "unknown": 0
+  },
+  {
+   "rank": 621,
+   "plaintext": "INSCRIREROSEN",
+   "wordLogp": -12.6426,
+   "words": "INSCRIRE ROSEN",
+   "unknown": 0
+  },
+  {
+   "rank": 622,
+   "plaintext": "NSOMONOTONOUS",
+   "wordLogp": -12.6437,
+   "words": "NSO MONOTONOUS",
+   "unknown": 0
+  },
+  {
+   "rank": 623,
+   "plaintext": "REPRORODOLPHE",
+   "wordLogp": -12.6463,
+   "words": "REPRO RODOLPHE",
+   "unknown": 0
+  },
+  {
+   "rank": 624,
+   "plaintext": "CSIVICINITIES",
+   "wordLogp": -12.6493,
+   "words": "CSI VICINITIES",
+   "unknown": 0
+  },
+  {
+   "rank": 625,
+   "plaintext": "MEITOMONOXIDE",
+   "wordLogp": -12.6506,
+   "words": "MEITO MONOXIDE",
+   "unknown": 0
+  },
+  {
+   "rank": 626,
+   "plaintext": "LEAPELEVERAGE",
+   "wordLogp": -12.6511,
+   "words": "LEAPE LEVERAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 627,
+   "plaintext": "STOLESEREPORT",
+   "wordLogp": -12.6541,
+   "words": "STOLES E REPORT",
+   "unknown": 0
+  },
+  {
+   "rank": 628,
+   "plaintext": "HEEHEHEHEHEHE",
+   "wordLogp": -12.6551,
+   "words": "HEE HEHEHEHEHE",
+   "unknown": 0
+  },
+  {
+   "rank": 629,
+   "plaintext": "NSTXINITIATES",
+   "wordLogp": -12.6554,
+   "words": "NSTX INITIATES",
+   "unknown": 0
+  },
+  {
+   "rank": 630,
+   "plaintext": "NNIPANAMANIAN",
+   "wordLogp": -12.6575,
+   "words": "NNI PANAMANIAN",
+   "unknown": 0
+  },
+  {
+   "rank": 631,
+   "plaintext": "RENDEREDEANNE",
+   "wordLogp": -12.6584,
+   "words": "RENDERED E ANNE",
+   "unknown": 0
+  },
+  {
+   "rank": 632,
+   "plaintext": "NYOMANANALOGY",
+   "wordLogp": -12.6593,
+   "words": "NYOMAN ANALOGY",
+   "unknown": 0
+  },
+  {
+   "rank": 633,
+   "plaintext": "NANDINISIENNA",
+   "wordLogp": -12.6615,
+   "words": "NANDINI SIENNA",
+   "unknown": 0
+  },
+  {
+   "rank": 634,
+   "plaintext": "CSINOCOLONIES",
+   "wordLogp": -12.6621,
+   "words": "CSINO COLONIES",
+   "unknown": 0
+  },
+  {
+   "rank": 635,
+   "plaintext": "TAHOETELEPHIA",
+   "wordLogp": -12.6626,
+   "words": "TAHOE TELEPHIA",
+   "unknown": 0
+  },
+  {
+   "rank": 636,
+   "plaintext": "HEARTHTITRATE",
+   "wordLogp": -12.6632,
+   "words": "HEARTH TITRATE",
+   "unknown": 0
+  },
+  {
+   "rank": 637,
+   "plaintext": "KIARAKALAHARI",
+   "wordLogp": -12.6654,
+   "words": "KIARA KALAHARI",
+   "unknown": 0
+  },
+  {
+   "rank": 638,
+   "plaintext": "THRUSTSYSARCH",
+   "wordLogp": -12.6672,
+   "words": "THRUST SYSARCH",
+   "unknown": 0
+  },
+  {
+   "rank": 639,
+   "plaintext": "MEINEMEDECINE",
+   "wordLogp": -12.6677,
+   "words": "MEINE MEDECINE",
+   "unknown": 0
+  },
+  {
+   "rank": 640,
+   "plaintext": "KATJAKAWARTHA",
+   "wordLogp": -12.668,
+   "words": "KATJA KAWARTHA",
+   "unknown": 0
+  },
+  {
+   "rank": 641,
+   "plaintext": "SEIYASATALITE",
+   "wordLogp": -12.6684,
+   "words": "SEIYA SATALITE",
+   "unknown": 0
+  },
+  {
+   "rank": 642,
+   "plaintext": "ESTONENDNOTES",
+   "wordLogp": -12.6705,
+   "words": "EST ON ENDNOTES",
+   "unknown": 0
+  },
+  {
+   "rank": 643,
+   "plaintext": "TRATATABAZAAR",
+   "wordLogp": -12.6708,
+   "words": "TRATATA BAZAAR",
+   "unknown": 0
+  },
+  {
+   "rank": 644,
+   "plaintext": "SLIMESEZEKIEL",
+   "wordLogp": -12.6715,
+   "words": "SLIMES EZEKIEL",
+   "unknown": 0
+  },
+  {
+   "rank": 645,
+   "plaintext": "TROVATAFAVOUR",
+   "wordLogp": -12.6732,
+   "words": "TROVATA FAVOUR",
+   "unknown": 0
+  },
+  {
+   "rank": 646,
+   "plaintext": "SEENASAVARESE",
+   "wordLogp": -12.6751,
+   "words": "SEEN AS A VARESE",
+   "unknown": 0
+  },
+  {
+   "rank": 647,
+   "plaintext": "CERVICITISRYE",
+   "wordLogp": -12.6755,
+   "words": "CERVICITIS RYE",
+   "unknown": 0
+  },
+  {
+   "rank": 648,
+   "plaintext": "NIRVANAFAHRNI",
+   "wordLogp": -12.6764,
+   "words": "NIRVANA FAHRNI",
+   "unknown": 0
+  },
+  {
+   "rank": 649,
+   "plaintext": "WALKAWAYAILSA",
+   "wordLogp": -12.6765,
+   "words": "WALK AWAY AILSA",
+   "unknown": 0
+  },
+  {
+   "rank": 650,
+   "plaintext": "RAINEREVELINA",
+   "wordLogp": -12.6791,
+   "words": "RAINER EVELINA",
+   "unknown": 0
+  },
+  {
+   "rank": 651,
+   "plaintext": "FERRIFILIGREE",
+   "wordLogp": -12.68,
+   "words": "FERRI FILIGREE",
+   "unknown": 0
+  },
+  {
+   "rank": 652,
+   "plaintext": "MAILAMAHAVIRA",
+   "wordLogp": -12.6815,
+   "words": "MAIL A MAHAVIRA",
+   "unknown": 0
+  },
+  {
+   "rank": 653,
+   "plaintext": "VENTIVIVIENNE",
+   "wordLogp": -12.6823,
+   "words": "VENTI VIVIENNE",
+   "unknown": 0
+  },
+  {
+   "rank": 654,
+   "plaintext": "WAIPAWACAPITA",
+   "wordLogp": -12.6841,
+   "words": "WAIPAWA CAPITA",
+   "unknown": 0
+  },
+  {
+   "rank": 655,
+   "plaintext": "WAIPAWAMANILA",
+   "wordLogp": -12.6848,
+   "words": "WAIPAWA MANILA",
+   "unknown": 0
+  },
+  {
+   "rank": 656,
+   "plaintext": "GSEDIGITIZERS",
+   "wordLogp": -12.6888,
+   "words": "GSE DIGITIZERS",
+   "unknown": 0
+  },
+  {
+   "rank": 657,
+   "plaintext": "ROGCARAVAGGIO",
+   "wordLogp": -12.6888,
+   "words": "ROG CARAVAGGIO",
+   "unknown": 0
+  },
+  {
+   "rank": 658,
+   "plaintext": "KIAMAKALAHARI",
+   "wordLogp": -12.6899,
+   "words": "KIAMA KALAHARI",
+   "unknown": 0
+  },
+  {
+   "rank": 659,
+   "plaintext": "NTIMONOPOLIST",
+   "wordLogp": -12.6902,
+   "words": "NTI MONOPOLIST",
+   "unknown": 0
+  },
+  {
+   "rank": 660,
+   "plaintext": "CERVICITISRAE",
+   "wordLogp": -12.6905,
+   "words": "CERVICITIS RAE",
+   "unknown": 0
+  },
+  {
+   "rank": 661,
+   "plaintext": "SAIDASATANICA",
+   "wordLogp": -12.6921,
+   "words": "SAID A SATANICA",
+   "unknown": 0
+  },
+  {
+   "rank": 662,
+   "plaintext": "TIANATARANAKI",
+   "wordLogp": -12.6966,
+   "words": "TIANA TARANAKI",
+   "unknown": 0
+  },
+  {
+   "rank": 663,
+   "plaintext": "SHAVESEYELASH",
+   "wordLogp": -12.6999,
+   "words": "SHAVES EYELASH",
+   "unknown": 0
+  },
+  {
+   "rank": 664,
+   "plaintext": "NIAAANAGASAKI",
+   "wordLogp": -12.7013,
+   "words": "NIAAA NAGASAKI",
+   "unknown": 0
+  },
+  {
+   "rank": 665,
+   "plaintext": "WAIKAWACAPITA",
+   "wordLogp": -12.7022,
+   "words": "WAIKAWA CAPITA",
+   "unknown": 0
+  },
+  {
+   "rank": 666,
+   "plaintext": "WAIKAWAMANILA",
+   "wordLogp": -12.7029,
+   "words": "WAIKAWA MANILA",
+   "unknown": 0
+  },
+  {
+   "rank": 667,
+   "plaintext": "SEITESELENIDE",
+   "wordLogp": -12.704,
+   "words": "SEITE SELENIDE",
+   "unknown": 0
+  },
+  {
+   "rank": 668,
+   "plaintext": "SATRASAMANTHA",
+   "wordLogp": -12.7051,
+   "words": "SATRA SAMANTHA",
+   "unknown": 0
+  },
+  {
+   "rank": 669,
+   "plaintext": "INLININGNALIN",
+   "wordLogp": -12.7077,
+   "words": "INLINING NALIN",
+   "unknown": 0
+  },
+  {
+   "rank": 670,
+   "plaintext": "ATTATATATATAT",
+   "wordLogp": -12.709,
+   "words": "ATT ATATATATAT",
+   "unknown": 0
+  },
+  {
+   "rank": 671,
+   "plaintext": "SAUNASASAKUSA",
+   "wordLogp": -12.7096,
+   "words": "SAUNAS ASAKUSA",
+   "unknown": 0
+  },
+  {
+   "rank": 672,
+   "plaintext": "PAISAPAYANIKA",
+   "wordLogp": -12.7154,
+   "words": "PAISAPAY ANIKA",
+   "unknown": 0
+  },
+  {
+   "rank": 673,
+   "plaintext": "MNHRAMANATHAN",
+   "wordLogp": -12.7167,
+   "words": "MNH RAMANATHAN",
+   "unknown": 0
+  },
+  {
+   "rank": 674,
+   "plaintext": "NEOGENEREHOME",
+   "wordLogp": -12.7177,
+   "words": "NEOGENE RE HOME",
+   "unknown": 0
+  },
+  {
+   "rank": 675,
+   "plaintext": "NEIMANAMARIGE",
+   "wordLogp": -12.719,
+   "words": "NEIMAN AMARIGE",
+   "unknown": 0
+  },
+  {
+   "rank": 676,
+   "plaintext": "THANETEYELASH",
+   "wordLogp": -12.72,
+   "words": "THANET EYELASH",
+   "unknown": 0
+  },
+  {
+   "rank": 677,
+   "plaintext": "COOLACATALOGO",
+   "wordLogp": -12.7237,
+   "words": "COOL A CATALOGO",
+   "unknown": 0
+  },
+  {
+   "rank": 678,
+   "plaintext": "PLANOPOCOMAIL",
+   "wordLogp": -12.7246,
+   "words": "PLANO POCOMAIL",
+   "unknown": 0
+  },
+  {
+   "rank": 679,
+   "plaintext": "SDATASARABAND",
+   "wordLogp": -12.7251,
+   "words": "S DATA SARABAND",
+   "unknown": 0
+  },
+  {
+   "rank": 680,
+   "plaintext": "APOSTATETROUP",
+   "wordLogp": -12.7266,
+   "words": "APOSTATE TROUP",
+   "unknown": 0
+  },
+  {
+   "rank": 681,
+   "plaintext": "MAENAMALAMEDA",
+   "wordLogp": -12.7267,
+   "words": "MAENAM ALAMEDA",
+   "unknown": 0
+  },
+  {
+   "rank": 682,
+   "plaintext": "ENTREEEDENTON",
+   "wordLogp": -12.7271,
+   "words": "ENTREE EDENTON",
+   "unknown": 0
+  },
+  {
+   "rank": 683,
+   "plaintext": "KIANIKIRIBATI",
+   "wordLogp": -12.7306,
+   "words": "KIANI KIRIBATI",
+   "unknown": 0
+  },
+  {
+   "rank": 684,
+   "plaintext": "CEADECELERATE",
+   "wordLogp": -12.732,
+   "words": "CEA DECELERATE",
+   "unknown": 0
+  },
+  {
+   "rank": 685,
+   "plaintext": "TAUBETEMECULA",
+   "wordLogp": -12.7335,
+   "words": "TAUBE TEMECULA",
+   "unknown": 0
+  },
+  {
+   "rank": 686,
+   "plaintext": "CHIRACAZARIAH",
+   "wordLogp": -12.7343,
+   "words": "CHIRAC AZARIAH",
+   "unknown": 0
+  },
+  {
+   "rank": 687,
+   "plaintext": "PAISAPAYALIDA",
+   "wordLogp": -12.7343,
+   "words": "PAISAPAY ALIDA",
+   "unknown": 0
+  },
+  {
+   "rank": 688,
+   "plaintext": "NETZENEVERTHE",
+   "wordLogp": -12.7355,
+   "words": "NETZE NEVER THE",
+   "unknown": 0
+  },
+  {
+   "rank": 689,
+   "plaintext": "CARMACALABRIA",
+   "wordLogp": -12.7368,
+   "words": "CARMA CALABRIA",
+   "unknown": 0
+  },
+  {
+   "rank": 690,
+   "plaintext": "RENDEREREYNDE",
+   "wordLogp": -12.7383,
+   "words": "RENDERER EYNDE",
+   "unknown": 0
+  },
+  {
+   "rank": 691,
+   "plaintext": "INUKTITUTMUON",
+   "wordLogp": -12.7398,
+   "words": "INUKTITUT MUON",
+   "unknown": 0
+  },
+  {
+   "rank": 692,
+   "plaintext": "VRNDAVANAANDR",
+   "wordLogp": -12.741,
+   "words": "VRNDAVANA AND R",
+   "unknown": 0
+  },
+  {
+   "rank": 693,
+   "plaintext": "SHIVASAFAVIEH",
+   "wordLogp": -12.744,
+   "words": "SHIVA SAFAVIEH",
+   "unknown": 0
+  },
+  {
+   "rank": 694,
+   "plaintext": "CAIDACATALINA",
+   "wordLogp": -12.7441,
+   "words": "CAIDA CATALINA",
+   "unknown": 0
+  },
+  {
+   "rank": 695,
+   "plaintext": "TIAVATALAMATI",
+   "wordLogp": -12.7468,
+   "words": "TIAVA TALAMATI",
+   "unknown": 0
+  },
+  {
+   "rank": 696,
+   "plaintext": "INUKTITUTIUCN",
+   "wordLogp": -12.7469,
+   "words": "INUKTITUT IUCN",
+   "unknown": 0
+  },
+  {
+   "rank": 697,
+   "plaintext": "APOSTATETHORP",
+   "wordLogp": -12.7472,
+   "words": "APOSTATE THORP",
+   "unknown": 0
+  },
+  {
+   "rank": 698,
+   "plaintext": "GENIEGEMEINDE",
+   "wordLogp": -12.7497,
+   "words": "GENIE GEMEINDE",
+   "unknown": 0
+  },
+  {
+   "rank": 699,
+   "plaintext": "LEAUELEVERAGE",
+   "wordLogp": -12.75,
+   "words": "LEAUE LEVERAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 700,
+   "plaintext": "STORMSMEMMOTT",
+   "wordLogp": -12.7509,
+   "words": "STORMS MEMMOTT",
+   "unknown": 0
+  },
+  {
+   "rank": 701,
+   "plaintext": "PAISAPAYAVIDA",
+   "wordLogp": -12.7517,
+   "words": "PAISAPAY AVIDA",
+   "unknown": 0
+  },
+  {
+   "rank": 702,
+   "plaintext": "WAHIAWAMADHYA",
+   "wordLogp": -12.753,
+   "words": "WAHIAWA MADHYA",
+   "unknown": 0
+  },
+  {
+   "rank": 703,
+   "plaintext": "SIAMESEMEGAMI",
+   "wordLogp": -12.7541,
+   "words": "SIAMESE MEGAMI",
+   "unknown": 0
+  },
+  {
+   "rank": 704,
+   "plaintext": "OTSEGOGIGASET",
+   "wordLogp": -12.7544,
+   "words": "OTSEGO GIGASET",
+   "unknown": 0
+  },
+  {
+   "rank": 705,
+   "plaintext": "SIAMESEOEKAKI",
+   "wordLogp": -12.7545,
+   "words": "SIAMESE OEKAKI",
+   "unknown": 0
+  },
+  {
+   "rank": 706,
+   "plaintext": "ANDREAEWELDON",
+   "wordLogp": -12.7549,
+   "words": "ANDREAE WELDON",
+   "unknown": 0
+  },
+  {
+   "rank": 707,
+   "plaintext": "REINEREMELINE",
+   "wordLogp": -12.7559,
+   "words": "REINER EMELINE",
+   "unknown": 0
+  },
+  {
+   "rank": 708,
+   "plaintext": "NEIMANAVALIDE",
+   "wordLogp": -12.7578,
+   "words": "NEIMAN A VALID E",
+   "unknown": 0
+  },
+  {
+   "rank": 709,
+   "plaintext": "DANCEDETERNIA",
+   "wordLogp": -12.7595,
+   "words": "DANCED ETERNIA",
+   "unknown": 0
+  },
+  {
+   "rank": 710,
+   "plaintext": "IMEMCICECREAM",
+   "wordLogp": -12.7618,
+   "words": "IMEMC ICE CREAM",
+   "unknown": 0
+  },
+  {
+   "rank": 711,
+   "plaintext": "GEOMAGABALONE",
+   "wordLogp": -12.7629,
+   "words": "GEOMAG ABALONE",
+   "unknown": 0
+  },
+  {
+   "rank": 712,
+   "plaintext": "BARNABASAUREA",
+   "wordLogp": -12.7636,
+   "words": "BARNABAS AUREA",
+   "unknown": 0
+  },
+  {
+   "rank": 713,
+   "plaintext": "KLINIKINICIAL",
+   "wordLogp": -12.7646,
+   "words": "KLINIK INICIAL",
+   "unknown": 0
+  },
+  {
+   "rank": 714,
+   "plaintext": "PLATOPOCOMAIL",
+   "wordLogp": -12.7671,
+   "words": "PLATO POCOMAIL",
+   "unknown": 0
+  },
+  {
+   "rank": 715,
+   "plaintext": "LEGGELEBESGUE",
+   "wordLogp": -12.7683,
+   "words": "LEGGE LEBESGUE",
+   "unknown": 0
+  },
+  {
+   "rank": 716,
+   "plaintext": "COOSACATALOGO",
+   "wordLogp": -12.7685,
+   "words": "COOSA CATALOGO",
+   "unknown": 0
+  },
+  {
+   "rank": 717,
+   "plaintext": "REITEREMELINE",
+   "wordLogp": -12.7685,
+   "words": "REITER EMELINE",
+   "unknown": 0
+  },
+  {
+   "rank": 718,
+   "plaintext": "ENCODEDADDCON",
+   "wordLogp": -12.7699,
+   "words": "ENCODED ADDCON",
+   "unknown": 0
+  },
+  {
+   "rank": 719,
+   "plaintext": "SDTDESELECTED",
+   "wordLogp": -12.7703,
+   "words": "SDT DESELECTED",
+   "unknown": 0
+  },
+  {
+   "rank": 720,
+   "plaintext": "NEOGENEBEGONE",
+   "wordLogp": -12.7704,
+   "words": "NEOGENE BE GONE",
+   "unknown": 0
+  },
+  {
+   "rank": 721,
+   "plaintext": "KIARIKIRIBATI",
+   "wordLogp": -12.7725,
+   "words": "KIARI KIRIBATI",
+   "unknown": 0
+  },
+  {
+   "rank": 722,
+   "plaintext": "CHICACAMALICH",
+   "wordLogp": -12.773,
+   "words": "CHICA CAMALICH",
+   "unknown": 0
+  },
+  {
+   "rank": 723,
+   "plaintext": "CHATACALABASH",
+   "wordLogp": -12.7757,
+   "words": "CHAT A CALABASH",
+   "unknown": 0
+  },
+  {
+   "rank": 724,
+   "plaintext": "SEATESEPERATE",
+   "wordLogp": -12.7766,
+   "words": "SEATE SEPERATE",
+   "unknown": 0
+  },
+  {
+   "rank": 725,
+   "plaintext": "SLICESEZEKIAL",
+   "wordLogp": -12.7798,
+   "words": "SLICES EZEKIAL",
+   "unknown": 0
+  },
+  {
+   "rank": 726,
+   "plaintext": "GOOSEGENEROSO",
+   "wordLogp": -12.7802,
+   "words": "GOOSE GENEROSO",
+   "unknown": 0
+  },
+  {
+   "rank": 727,
+   "plaintext": "PAISAPAYARICA",
+   "wordLogp": -12.7832,
+   "words": "PAISAPAY ARICA",
+   "unknown": 0
+  },
+  {
+   "rank": 728,
+   "plaintext": "MEDIAMANANDIE",
+   "wordLogp": -12.7834,
+   "words": "MEDIA MAN AND IE",
+   "unknown": 0
+  },
+  {
+   "rank": 729,
+   "plaintext": "MEIKOMONOXIDE",
+   "wordLogp": -12.7836,
+   "words": "MEIKO MONOXIDE",
+   "unknown": 0
+  },
+  {
+   "rank": 730,
+   "plaintext": "SHANESEYELASH",
+   "wordLogp": -12.7837,
+   "words": "SHANES EYELASH",
+   "unknown": 0
+  },
+  {
+   "rank": 731,
+   "plaintext": "BOISEBENEDITO",
+   "wordLogp": -12.7837,
+   "words": "BOISE BENEDITO",
+   "unknown": 0
+  },
+  {
+   "rank": 732,
+   "plaintext": "DEEREDEMEYERE",
+   "wordLogp": -12.7844,
+   "words": "DEERE DEMEYERE",
+   "unknown": 0
+  },
+  {
+   "rank": 733,
+   "plaintext": "KLIMEKEZEKIEL",
+   "wordLogp": -12.787,
+   "words": "KLIMEK EZEKIEL",
+   "unknown": 0
+  },
+  {
+   "rank": 734,
+   "plaintext": "REINEREVELINE",
+   "wordLogp": -12.7897,
+   "words": "REINER EVELINE",
+   "unknown": 0
+  },
+  {
+   "rank": 735,
+   "plaintext": "CAIXACATARINA",
+   "wordLogp": -12.7915,
+   "words": "CAIXA CATARINA",
+   "unknown": 0
+  },
+  {
+   "rank": 736,
+   "plaintext": "OSERRORDRYERS",
+   "wordLogp": -12.7915,
+   "words": "OSERROR DRYERS",
+   "unknown": 0
+  },
+  {
+   "rank": 737,
+   "plaintext": "INUKTITUTNUNN",
+   "wordLogp": -12.7919,
+   "words": "INUKTITUT NUNN",
+   "unknown": 0
+  },
+  {
+   "rank": 738,
+   "plaintext": "SHALESEYELASH",
+   "wordLogp": -12.7935,
+   "words": "SHALES EYELASH",
+   "unknown": 0
+  },
+  {
+   "rank": 739,
+   "plaintext": "ESTANENDNOTES",
+   "wordLogp": -12.7941,
+   "words": "ESTAN ENDNOTES",
+   "unknown": 0
+  },
+  {
+   "rank": 740,
+   "plaintext": "SAUNASAWAMURA",
+   "wordLogp": -12.7961,
+   "words": "SAUNA SAWAMURA",
+   "unknown": 0
+  },
+  {
+   "rank": 741,
+   "plaintext": "ANDREAELEIDEN",
+   "wordLogp": -12.7975,
+   "words": "ANDREAE LEIDEN",
+   "unknown": 0
+  },
+  {
+   "rank": 742,
+   "plaintext": "PAISAPAYADISA",
+   "wordLogp": -12.7976,
+   "words": "PAISAPAY AD IS A",
+   "unknown": 0
+  },
+  {
+   "rank": 743,
+   "plaintext": "REAVEREYECARE",
+   "wordLogp": -12.7999,
+   "words": "REAVER EYE CARE",
+   "unknown": 0
+  },
+  {
+   "rank": 744,
+   "plaintext": "REITEREVELINE",
+   "wordLogp": -12.8024,
+   "words": "REITER EVELINE",
+   "unknown": 0
+  },
+  {
+   "rank": 745,
+   "plaintext": "RANGARAJANNGA",
+   "wordLogp": -12.8027,
+   "words": "RANGARAJAN NGA",
+   "unknown": 0
+  },
+  {
+   "rank": 746,
+   "plaintext": "PAELAPASADENA",
+   "wordLogp": -12.8029,
+   "words": "PAELA PASADENA",
+   "unknown": 0
+  },
+  {
+   "rank": 747,
+   "plaintext": "SERIESESEARLE",
+   "wordLogp": -12.8032,
+   "words": "SERIES E SEARLE",
+   "unknown": 0
+  },
+  {
+   "rank": 748,
+   "plaintext": "LETHALAPARTME",
+   "wordLogp": -12.8036,
+   "words": "LETHAL APARTME",
+   "unknown": 0
+  },
+  {
+   "rank": 749,
+   "plaintext": "NSTCINITIATES",
+   "wordLogp": -12.8036,
+   "words": "NSTC INITIATES",
+   "unknown": 0
+  },
+  {
+   "rank": 750,
+   "plaintext": "NRTIINITIATOR",
+   "wordLogp": -12.8042,
+   "words": "NRTI INITIATOR",
+   "unknown": 0
+  },
+  {
+   "rank": 751,
+   "plaintext": "RMLCEREBELLUM",
+   "wordLogp": -12.8049,
+   "words": "RML CEREBELLUM",
+   "unknown": 0
+  },
+  {
+   "rank": 752,
+   "plaintext": "STOVESEYEBOLT",
+   "wordLogp": -12.8051,
+   "words": "STOVES EYEBOLT",
+   "unknown": 0
+  },
+  {
+   "rank": 753,
+   "plaintext": "SMIKESELENIUM",
+   "wordLogp": -12.8052,
+   "words": "S MIKE SELENIUM",
+   "unknown": 0
+  },
+  {
+   "rank": 754,
+   "plaintext": "MCADAMARAMAIC",
+   "wordLogp": -12.8059,
+   "words": "MCADAM ARAMAIC",
+   "unknown": 0
+  },
+  {
+   "rank": 755,
+   "plaintext": "WAIPAWAPAGINA",
+   "wordLogp": -12.8063,
+   "words": "WAIPAWA PAGINA",
+   "unknown": 0
+  },
+  {
+   "rank": 756,
+   "plaintext": "HYOGOHOMOTOPY",
+   "wordLogp": -12.8079,
+   "words": "HYOGO HOMOTOPY",
+   "unknown": 0
+  },
+  {
+   "rank": 757,
+   "plaintext": "STOKESEYEBOLT",
+   "wordLogp": -12.8085,
+   "words": "STOKES EYEBOLT",
+   "unknown": 0
+  },
+  {
+   "rank": 758,
+   "plaintext": "IDENTITITHEAD",
+   "wordLogp": -12.8089,
+   "words": "IDENTITI THE AD",
+   "unknown": 0
+  },
+  {
+   "rank": 759,
+   "plaintext": "RANGARAJANNEA",
+   "wordLogp": -12.8113,
+   "words": "RANGARAJAN NEA",
+   "unknown": 0
+  },
+  {
+   "rank": 760,
+   "plaintext": "PAISAPAYALIYA",
+   "wordLogp": -12.8114,
+   "words": "PAISAPAY ALIYA",
+   "unknown": 0
+  },
+  {
+   "rank": 761,
+   "plaintext": "KRENEKEYEWEAR",
+   "wordLogp": -12.8115,
+   "words": "KRENEK EYEWEAR",
+   "unknown": 0
+  },
+  {
+   "rank": 762,
+   "plaintext": "CHAKACALABASH",
+   "wordLogp": -12.8147,
+   "words": "CHAKA CALABASH",
+   "unknown": 0
+  },
+  {
+   "rank": 763,
+   "plaintext": "ALINEAEZEKIEL",
+   "wordLogp": -12.8154,
+   "words": "A LINE A EZEKIEL",
+   "unknown": 0
+  },
+  {
+   "rank": 764,
+   "plaintext": "INTERIRARITAN",
+   "wordLogp": -12.8162,
+   "words": "INTER I RARITAN",
+   "unknown": 0
+  },
+  {
+   "rank": 765,
+   "plaintext": "MACNAMARACCNA",
+   "wordLogp": -12.817,
+   "words": "MACNAMARA CCNA",
+   "unknown": 0
+  },
+  {
+   "rank": 766,
+   "plaintext": "CIARACATALANI",
+   "wordLogp": -12.8191,
+   "words": "CIARA CATALANI",
+   "unknown": 0
+  },
+  {
+   "rank": 767,
+   "plaintext": "TEASETELERATE",
+   "wordLogp": -12.8205,
+   "words": "TEASE TELERATE",
+   "unknown": 0
+  },
+  {
+   "rank": 768,
+   "plaintext": "TAUMATALAGUNA",
+   "wordLogp": -12.8212,
+   "words": "TAUMATA LAGUNA",
+   "unknown": 0
+  },
+  {
+   "rank": 769,
+   "plaintext": "CSIROCOLONIAS",
+   "wordLogp": -12.822,
+   "words": "CSIRO COLONIAS",
+   "unknown": 0
+  },
+  {
+   "rank": 770,
+   "plaintext": "MEUSIMILITUDE",
+   "wordLogp": -12.8222,
+   "words": "MEU SIMILITUDE",
+   "unknown": 0
+  },
+  {
+   "rank": 771,
+   "plaintext": "REALERELEVATE",
+   "wordLogp": -12.8225,
+   "words": "REALER ELEVATE",
+   "unknown": 0
+  },
+  {
+   "rank": 772,
+   "plaintext": "BELLABABAILLE",
+   "wordLogp": -12.8237,
+   "words": "BELLA BABAILLE",
+   "unknown": 0
+  },
+  {
+   "rank": 773,
+   "plaintext": "WAIKAWAPAGINA",
+   "wordLogp": -12.8244,
+   "words": "WAIKAWA PAGINA",
+   "unknown": 0
+  },
+  {
+   "rank": 774,
+   "plaintext": "SERIESEPETRIE",
+   "wordLogp": -12.8254,
+   "words": "SERIES E PETRIE",
+   "unknown": 0
+  },
+  {
+   "rank": 775,
+   "plaintext": "VECSAVALANCHE",
+   "wordLogp": -12.8258,
+   "words": "VECS AVALANCHE",
+   "unknown": 0
+  },
+  {
+   "rank": 776,
+   "plaintext": "ATENEAEVEREST",
+   "wordLogp": -12.8281,
+   "words": "ATENEA EVEREST",
+   "unknown": 0
+  },
+  {
+   "rank": 777,
+   "plaintext": "SEIKOSONOSITE",
+   "wordLogp": -12.8283,
+   "words": "SEIKO SONOSITE",
+   "unknown": 0
+  },
+  {
+   "rank": 778,
+   "plaintext": "MAINAMAMACITA",
+   "wordLogp": -12.8296,
+   "words": "MAIN A MAMACITA",
+   "unknown": 0
+  },
+  {
+   "rank": 779,
+   "plaintext": "SEIZESELENIDE",
+   "wordLogp": -12.83,
+   "words": "SEIZE SELENIDE",
+   "unknown": 0
+  },
+  {
+   "rank": 780,
+   "plaintext": "KSIWIKICITIES",
+   "wordLogp": -12.8316,
+   "words": "KSI WIKICITIES",
+   "unknown": 0
+  },
+  {
+   "rank": 781,
+   "plaintext": "SAONASARASOTA",
+   "wordLogp": -12.8316,
+   "words": "SAONA SARASOTA",
+   "unknown": 0
+  },
+  {
+   "rank": 782,
+   "plaintext": "WYLIEWELESLEY",
+   "wordLogp": -12.8317,
+   "words": "WYLIE WELESLEY",
+   "unknown": 0
+  },
+  {
+   "rank": 783,
+   "plaintext": "NANKANANARNIA",
+   "wordLogp": -12.833,
+   "words": "NANKANA NARNIA",
+   "unknown": 0
+  },
+  {
+   "rank": 784,
+   "plaintext": "INUKTITUTYUEN",
+   "wordLogp": -12.8369,
+   "words": "INUKTITUT YUEN",
+   "unknown": 0
+  },
+  {
+   "rank": 785,
+   "plaintext": "PLATAPARASAIL",
+   "wordLogp": -12.837,
+   "words": "PLATA PARASAIL",
+   "unknown": 0
+  },
+  {
+   "rank": 786,
+   "plaintext": "LLTIELEMENTAL",
+   "wordLogp": -12.8371,
+   "words": "LLTI ELEMENTAL",
+   "unknown": 0
+  },
+  {
+   "rank": 787,
+   "plaintext": "PAISAPAYAKIBA",
+   "wordLogp": -12.8381,
+   "words": "PAISAPAY AKIBA",
+   "unknown": 0
+  },
+  {
+   "rank": 788,
+   "plaintext": "SEITESEVERINE",
+   "wordLogp": -12.8383,
+   "words": "SEITE SEVERINE",
+   "unknown": 0
+  },
+  {
+   "rank": 789,
+   "plaintext": "REAPERELEVAGE",
+   "wordLogp": -12.8388,
+   "words": "REAPER ELEVAGE",
+   "unknown": 0
+  },
+  {
+   "rank": 790,
+   "plaintext": "NSTIINITIATES",
+   "wordLogp": -12.8411,
+   "words": "NSTI INITIATES",
+   "unknown": 0
+  },
+  {
+   "rank": 791,
+   "plaintext": "TOCCATASANCHO",
+   "wordLogp": -12.8412,
+   "words": "TOCCATA SANCHO",
+   "unknown": 0
+  },
+  {
+   "rank": 792,
+   "plaintext": "CHIBACAMALICH",
+   "wordLogp": -12.8415,
+   "words": "CHIBA CAMALICH",
+   "unknown": 0
+  },
+  {
+   "rank": 793,
+   "plaintext": "SHRUBSBABERGH",
+   "wordLogp": -12.8421,
+   "words": "SHRUBS BABERGH",
+   "unknown": 0
+  },
+  {
+   "rank": 794,
+   "plaintext": "PAISAPAYAMIKA",
+   "wordLogp": -12.8422,
+   "words": "PAISAPAY AMIKA",
+   "unknown": 0
+  },
+  {
+   "rank": 795,
+   "plaintext": "MIURAMASAYUKI",
+   "wordLogp": -12.8428,
+   "words": "MIURA MASAYUKI",
+   "unknown": 0
+  },
+  {
+   "rank": 796,
+   "plaintext": "TRENETEYEWEAR",
+   "wordLogp": -12.8449,
+   "words": "TRENET EYEWEAR",
+   "unknown": 0
+  },
+  {
+   "rank": 797,
+   "plaintext": "SANTOSOJOANNA",
+   "wordLogp": -12.8454,
+   "words": "SANTOSO JOANNA",
+   "unknown": 0
+  },
+  {
+   "rank": 798,
+   "plaintext": "WLLJAWAHARLAL",
+   "wordLogp": -12.8472,
+   "words": "WLL JAWAHARLAL",
+   "unknown": 0
+  },
+  {
+   "rank": 799,
+   "plaintext": "GEOMAGAGAROSE",
+   "wordLogp": -12.8499,
+   "words": "GEOMAG AGAROSE",
+   "unknown": 0
+  },
+  {
+   "rank": 800,
+   "plaintext": "INUKTITUTBUNN",
+   "wordLogp": -12.8499,
+   "words": "INUKTITUT BUNN",
+   "unknown": 0
+  },
+  {
+   "rank": 801,
+   "plaintext": "NDATANAGALAND",
+   "wordLogp": -12.85,
+   "words": "N DATA NAGALAND",
+   "unknown": 0
+  },
+  {
+   "rank": 802,
+   "plaintext": "SEIKOSODOMIZE",
+   "wordLogp": -12.8521,
+   "words": "SEIKO SODOMIZE",
+   "unknown": 0
+  },
+  {
+   "rank": 803,
+   "plaintext": "KIANAKATAMARI",
+   "wordLogp": -12.854,
+   "words": "KIANA KATAMARI",
+   "unknown": 0
+  },
+  {
+   "rank": 804,
+   "plaintext": "STEHTSTATMENT",
+   "wordLogp": -12.8551,
+   "words": "STEHT STATMENT",
+   "unknown": 0
+  },
+  {
+   "rank": 805,
+   "plaintext": "KAUNAKAKAIUGA",
+   "wordLogp": -12.8551,
+   "words": "KAUNAKAKAI UGA",
+   "unknown": 0
+  },
+  {
+   "rank": 806,
+   "plaintext": "PHILOPOPOVICH",
+   "wordLogp": -12.857,
+   "words": "PHILO POPOVICH",
+   "unknown": 0
+  },
+  {
+   "rank": 807,
+   "plaintext": "SAUNASASAKURA",
+   "wordLogp": -12.858,
+   "words": "SAUNAS ASAKURA",
+   "unknown": 0
+  },
+  {
+   "rank": 808,
+   "plaintext": "FOIREFEDERICO",
+   "wordLogp": -12.8607,
+   "words": "FOIRE FEDERICO",
+   "unknown": 0
+  },
+  {
+   "rank": 809,
+   "plaintext": "RDSRERELEASED",
+   "wordLogp": -12.8608,
+   "words": "RDS RE RELEASED",
+   "unknown": 0
+  },
+  {
+   "rank": 810,
+   "plaintext": "SAIDASALAMINA",
+   "wordLogp": -12.861,
+   "words": "SAID A SALAMINA",
+   "unknown": 0
+  },
+  {
+   "rank": 811,
+   "plaintext": "SINAISIRIANNI",
+   "wordLogp": -12.8626,
+   "words": "SINAI SIRIANNI",
+   "unknown": 0
+  },
+  {
+   "rank": 812,
+   "plaintext": "RANGARAJANNYA",
+   "wordLogp": -12.8665,
+   "words": "RANGARAJAN NY A",
+   "unknown": 0
+  },
+  {
+   "rank": 813,
+   "plaintext": "WESTAWAYAISLE",
+   "wordLogp": -12.8672,
+   "words": "WESTAWAY AISLE",
+   "unknown": 0
+  },
+  {
+   "rank": 814,
+   "plaintext": "BAOBABALAMOSA",
+   "wordLogp": -12.8677,
+   "words": "BAOBAB ALAMOSA",
+   "unknown": 0
+  },
+  {
+   "rank": 815,
+   "plaintext": "STARESELEFANT",
+   "wordLogp": -12.8701,
+   "words": "STARES ELEFANT",
+   "unknown": 0
+  },
+  {
+   "rank": 816,
+   "plaintext": "DEEREDELETEME",
+   "wordLogp": -12.8709,
+   "words": "DEERE DELETE ME",
+   "unknown": 0
+  },
+  {
+   "rank": 817,
+   "plaintext": "MSIJOMODOKIDS",
+   "wordLogp": -12.8725,
+   "words": "MSI JOMODOKIDS",
+   "unknown": 0
+  },
+  {
+   "rank": 818,
+   "plaintext": "PAISAPAYAKICA",
+   "wordLogp": -12.8734,
+   "words": "PAISAPAY AKICA",
+   "unknown": 0
+  },
+  {
+   "rank": 819,
+   "plaintext": "KATIAKAWARTHA",
+   "wordLogp": -12.8735,
+   "words": "KATIA KAWARTHA",
+   "unknown": 0
+  },
+  {
+   "rank": 820,
+   "plaintext": "RANGARAJANNRA",
+   "wordLogp": -12.8737,
+   "words": "RANGARAJAN NRA",
+   "unknown": 0
+  },
+  {
+   "rank": 821,
+   "plaintext": "ANDREAETENDON",
+   "wordLogp": -12.8737,
+   "words": "ANDREAE TENDON",
+   "unknown": 0
+  },
+  {
+   "rank": 822,
+   "plaintext": "SERIESEPEIRCE",
+   "wordLogp": -12.8773,
+   "words": "SERIES E PEIRCE",
+   "unknown": 0
+  },
+  {
+   "rank": 823,
+   "plaintext": "ANNOTATETENEN",
+   "wordLogp": -12.8808,
+   "words": "ANNOTATE TENEN",
+   "unknown": 0
+  },
+  {
+   "rank": 824,
+   "plaintext": "PAISAPAYALIZA",
+   "wordLogp": -12.8815,
+   "words": "PAISAPAY ALIZA",
+   "unknown": 0
+  },
+  {
+   "rank": 825,
+   "plaintext": "SIAMESEMELATI",
+   "wordLogp": -12.8816,
+   "words": "SIAMESE MELATI",
+   "unknown": 0
+  },
+  {
+   "rank": 826,
+   "plaintext": "YUDHOYONOSDSU",
+   "wordLogp": -12.8817,
+   "words": "YUDHOYONO SDSU",
+   "unknown": 0
+  },
+  {
+   "rank": 827,
+   "plaintext": "NMIMONOSODIUM",
+   "wordLogp": -12.8826,
+   "words": "NMI MONOSODIUM",
+   "unknown": 0
+  },
+  {
+   "rank": 828,
+   "plaintext": "GEILEGENEWISE",
+   "wordLogp": -12.8847,
+   "words": "GEILE GENEWISE",
+   "unknown": 0
+  },
+  {
+   "rank": 829,
+   "plaintext": "SATNASAMANTHA",
+   "wordLogp": -12.8869,
+   "words": "SATNA SAMANTHA",
+   "unknown": 0
+  },
+  {
+   "rank": 830,
+   "plaintext": "ROEDERERENERO",
+   "wordLogp": -12.8901,
+   "words": "ROEDERER ENERO",
+   "unknown": 0
+  },
+  {
+   "rank": 831,
+   "plaintext": "VRNDAVANAANOR",
+   "wordLogp": -12.8902,
+   "words": "VRNDAVANA AN OR",
+   "unknown": 0
+  },
+  {
+   "rank": 832,
+   "plaintext": "GSIZEGENERICS",
+   "wordLogp": -12.8908,
+   "words": "G SIZE GENERICS",
+   "unknown": 0
+  },
+  {
+   "rank": 833,
+   "plaintext": "LADSALAMANDRA",
+   "wordLogp": -12.8911,
+   "words": "LAD SALAMANDRA",
+   "unknown": 0
+  },
+  {
+   "rank": 834,
+   "plaintext": "CEATECELEVATE",
+   "wordLogp": -12.8914,
+   "words": "CEATEC ELEVATE",
+   "unknown": 0
+  },
+  {
+   "rank": 835,
+   "plaintext": "CERVICITISRBE",
+   "wordLogp": -12.8917,
+   "words": "CERVICITIS R BE",
+   "unknown": 0
+  },
+  {
+   "rank": 836,
+   "plaintext": "TOCCATACALCIO",
+   "wordLogp": -12.892,
+   "words": "TOCCATA CALCIO",
+   "unknown": 0
+  },
+  {
+   "rank": 837,
+   "plaintext": "NATRENELEKTRA",
+   "wordLogp": -12.8923,
+   "words": "NATREN ELEKTRA",
+   "unknown": 0
+  },
+  {
+   "rank": 838,
+   "plaintext": "CHANACAVANAGH",
+   "wordLogp": -12.8936,
+   "words": "CHANA CAVANAGH",
+   "unknown": 0
+  },
+  {
+   "rank": 839,
+   "plaintext": "INSITITUTESYN",
+   "wordLogp": -12.8936,
+   "words": "INSITITUTE SYN",
+   "unknown": 0
+  },
+  {
+   "rank": 840,
+   "plaintext": "NEENANAZARENE",
+   "wordLogp": -12.8954,
+   "words": "NEENA NAZARENE",
+   "unknown": 0
+  },
+  {
+   "rank": 841,
+   "plaintext": "INUKTITUTJUIN",
+   "wordLogp": -12.8969,
+   "words": "INUKTITUT JUIN",
+   "unknown": 0
+  },
+  {
+   "rank": 842,
+   "plaintext": "RSLKARAMANLIS",
+   "wordLogp": -12.8989,
+   "words": "RSL KARAMANLIS",
+   "unknown": 0
+  },
+  {
+   "rank": 843,
+   "plaintext": "REAPEREYEWARE",
+   "wordLogp": -12.9023,
+   "words": "REAPER EYEWARE",
+   "unknown": 0
+  },
+  {
+   "rank": 844,
+   "plaintext": "SIAMESEREGALI",
+   "wordLogp": -12.9031,
+   "words": "SIAMESE REGALI",
+   "unknown": 0
+  },
+  {
+   "rank": 845,
+   "plaintext": "PAISAPAYATIMA",
+   "wordLogp": -12.9031,
+   "words": "PAISAPAY ATIMA",
+   "unknown": 0
+  },
+  {
+   "rank": 846,
+   "plaintext": "CRONACAVAPOUR",
+   "wordLogp": -12.9075,
+   "words": "CRONACA VAPOUR",
+   "unknown": 0
+  },
+  {
+   "rank": 847,
+   "plaintext": "VECMAVALANCHE",
+   "wordLogp": -12.9098,
+   "words": "VECM AVALANCHE",
+   "unknown": 0
+  },
+  {
+   "rank": 848,
+   "plaintext": "GULLYGYSYLLTU",
+   "wordLogp": -12.9128,
+   "words": "GULLY GYSYLLTU",
+   "unknown": 0
+  },
+  {
+   "rank": 849,
+   "plaintext": "PAISAPAYARITA",
+   "wordLogp": -12.913,
+   "words": "PAISAPAY ARITA",
+   "unknown": 0
+  },
+  {
+   "rank": 850,
+   "plaintext": "MISHAMAHARSHI",
+   "wordLogp": -12.9144,
+   "words": "MISHA MAHARSHI",
+   "unknown": 0
+  },
+  {
+   "rank": 851,
+   "plaintext": "CERVICITISRTE",
+   "wordLogp": -12.9168,
+   "words": "CERVICITIS RTE",
+   "unknown": 0
+  },
+  {
+   "rank": 852,
+   "plaintext": "MOCHAMASACCIO",
+   "wordLogp": -12.9172,
+   "words": "MOCHA MASACCIO",
+   "unknown": 0
+  },
+  {
+   "rank": 853,
+   "plaintext": "PAISAPAYALITA",
+   "wordLogp": -12.9189,
+   "words": "PAISAPAY ALITA",
+   "unknown": 0
+  },
+  {
+   "rank": 854,
+   "plaintext": "ELAPSESISMAIL",
+   "wordLogp": -12.9191,
+   "words": "ELAPSES ISMAIL",
+   "unknown": 0
+  },
+  {
+   "rank": 855,
+   "plaintext": "GERINGNONFREE",
+   "wordLogp": -12.9214,
+   "words": "GERING NON FREE",
+   "unknown": 0
+  },
+  {
+   "rank": 856,
+   "plaintext": "COSMOCOLOSSEO",
+   "wordLogp": -12.9218,
+   "words": "COSMO COLOSSEO",
+   "unknown": 0
+  },
+  {
+   "rank": 857,
+   "plaintext": "CHARACAVANAGH",
+   "wordLogp": -12.9252,
+   "words": "CHARA CAVANAGH",
+   "unknown": 0
+  },
+  {
+   "rank": 858,
+   "plaintext": "REAMEREYECARE",
+   "wordLogp": -12.9259,
+   "words": "REAMER EYE CARE",
+   "unknown": 0
+  },
+  {
+   "rank": 859,
+   "plaintext": "SEINESELENIDE",
+   "wordLogp": -12.9289,
+   "words": "SEINE SELENIDE",
+   "unknown": 0
+  },
+  {
+   "rank": 860,
+   "plaintext": "TEAPOTOBOVATE",
+   "wordLogp": -12.9295,
+   "words": "TEAPOT OBOVATE",
+   "unknown": 0
+  },
+  {
+   "rank": 861,
+   "plaintext": "VESPAVACANSEE",
+   "wordLogp": -12.9296,
+   "words": "VESPA VACANSEE",
+   "unknown": 0
+  },
+  {
+   "rank": 862,
+   "plaintext": "REDCARAWARDEE",
+   "wordLogp": -12.9299,
+   "words": "REDCAR AWARDEE",
+   "unknown": 0
+  },
+  {
+   "rank": 863,
+   "plaintext": "MACNAMARARCRA",
+   "wordLogp": -12.9303,
+   "words": "MACNAMARA RCRA",
+   "unknown": 0
+  },
+  {
+   "rank": 864,
+   "plaintext": "SRILASABATIER",
+   "wordLogp": -12.9307,
+   "words": "SRILA SABATIER",
+   "unknown": 0
+  },
+  {
+   "rank": 865,
+   "plaintext": "TENORTRORANGE",
+   "wordLogp": -12.9322,
+   "words": "TENOR TRORANGE",
+   "unknown": 0
+  },
+  {
+   "rank": 866,
+   "plaintext": "READIRISICASE",
+   "wordLogp": -12.9328,
+   "words": "READIRIS I CASE",
+   "unknown": 0
+  },
+  {
+   "rank": 867,
+   "plaintext": "SIAMESEBEHARI",
+   "wordLogp": -12.9338,
+   "words": "SIAMESE BEHARI",
+   "unknown": 0
+  },
+  {
+   "rank": 868,
+   "plaintext": "MERLIMITIERTE",
+   "wordLogp": -12.9345,
+   "words": "MER LIMITIERTE",
+   "unknown": 0
+  },
+  {
+   "rank": 869,
+   "plaintext": "BYSTOBOLOWSKY",
+   "wordLogp": -12.935,
+   "words": "BY S TOBOLOWSKY",
+   "unknown": 0
+  },
+  {
+   "rank": 870,
+   "plaintext": "VIANAVARANASI",
+   "wordLogp": -12.9368,
+   "words": "VIANA VARANASI",
+   "unknown": 0
+  },
+  {
+   "rank": 871,
+   "plaintext": "ANDREAELEADON",
+   "wordLogp": -12.9382,
+   "words": "ANDREAE LEAD ON",
+   "unknown": 0
+  },
+  {
+   "rank": 872,
+   "plaintext": "GONZAGAAARNIO",
+   "wordLogp": -12.9382,
+   "words": "GONZAGA AARNIO",
+   "unknown": 0
+  },
+  {
+   "rank": 873,
+   "plaintext": "PAISAPAYAGILA",
+   "wordLogp": -12.9391,
+   "words": "PAISAPAY AGILA",
+   "unknown": 0
+  },
+  {
+   "rank": 874,
+   "plaintext": "REAMEREDEBATE",
+   "wordLogp": -12.9401,
+   "words": "RE A MERE DEBATE",
+   "unknown": 0
+  },
+  {
+   "rank": 875,
+   "plaintext": "INSITITUTESDN",
+   "wordLogp": -12.9411,
+   "words": "INSITITUTE SDN",
+   "unknown": 0
+  },
+  {
+   "rank": 876,
+   "plaintext": "DEANEDELEWARE",
+   "wordLogp": -12.9435,
+   "words": "DEANE DELEWARE",
+   "unknown": 0
+  },
+  {
+   "rank": 877,
+   "plaintext": "KIARAKATAMARI",
+   "wordLogp": -12.9443,
+   "words": "KIARA KATAMARI",
+   "unknown": 0
+  },
+  {
+   "rank": 878,
+   "plaintext": "TANGATASARNIA",
+   "wordLogp": -12.9444,
+   "words": "TANGATA SARNIA",
+   "unknown": 0
+  },
+  {
+   "rank": 879,
+   "plaintext": "HEEROHOLOCENE",
+   "wordLogp": -12.9447,
+   "words": "HEERO HOLOCENE",
+   "unknown": 0
+  },
+  {
+   "rank": 880,
+   "plaintext": "GONZAGAVAINIO",
+   "wordLogp": -12.9461,
+   "words": "GONZAGA VAINIO",
+   "unknown": 0
+  },
+  {
+   "rank": 881,
+   "plaintext": "SAIDISIBIRICA",
+   "wordLogp": -12.9466,
+   "words": "SAID I SIBIRICA",
+   "unknown": 0
+  },
+  {
+   "rank": 882,
+   "plaintext": "NAUTANAKAMURA",
+   "wordLogp": -12.9479,
+   "words": "NAUTA NAKAMURA",
+   "unknown": 0
+  },
+  {
+   "rank": 883,
+   "plaintext": "SEIMASALANINE",
+   "wordLogp": -12.9496,
+   "words": "SEIMAS ALANINE",
+   "unknown": 0
+  },
+  {
+   "rank": 884,
+   "plaintext": "NELVANASALLIE",
+   "wordLogp": -12.9502,
+   "words": "NELVANA SALLIE",
+   "unknown": 0
+  },
+  {
+   "rank": 885,
+   "plaintext": "CHIRACARAMITH",
+   "wordLogp": -12.9514,
+   "words": "CHIRAC ARAMITH",
+   "unknown": 0
+  },
+  {
+   "rank": 886,
+   "plaintext": "READIRISICARE",
+   "wordLogp": -12.9521,
+   "words": "READIRIS I CARE",
+   "unknown": 0
+  },
+  {
+   "rank": 887,
+   "plaintext": "MEINIMINIMISE",
+   "wordLogp": -12.9527,
+   "words": "ME IN I MINIMISE",
+   "unknown": 0
+  },
+  {
+   "rank": 888,
+   "plaintext": "KAUNAKAKAIUTA",
+   "wordLogp": -12.9532,
+   "words": "KAUNAKAKAI UTA",
+   "unknown": 0
+  },
+  {
+   "rank": 889,
+   "plaintext": "GLACEGENERALL",
+   "wordLogp": -12.9559,
+   "words": "GLACE GENERAL L",
+   "unknown": 0
+  },
+  {
+   "rank": 890,
+   "plaintext": "ELAPSESYSCALL",
+   "wordLogp": -12.9573,
+   "words": "ELAPSE SYSCALL",
+   "unknown": 0
+  },
+  {
+   "rank": 891,
+   "plaintext": "MOIRAMASAHIKO",
+   "wordLogp": -12.9594,
+   "words": "MOIRA MASAHIKO",
+   "unknown": 0
+  },
+  {
+   "rank": 892,
+   "plaintext": "NEOGENEREPOSE",
+   "wordLogp": -12.9594,
+   "words": "NEOGENE REPOSE",
+   "unknown": 0
+  },
+  {
+   "rank": 893,
+   "plaintext": "DIANIDIGITALI",
+   "wordLogp": -12.9605,
+   "words": "DIANI DIGITAL I",
+   "unknown": 0
+  },
+  {
+   "rank": 894,
+   "plaintext": "MSITEMEMETICS",
+   "wordLogp": -12.9605,
+   "words": "M SITE MEMETICS",
+   "unknown": 0
+  },
+  {
+   "rank": 895,
+   "plaintext": "LEICALARAMIDE",
+   "wordLogp": -12.9618,
+   "words": "LEICA LARAMIDE",
+   "unknown": 0
+  },
+  {
+   "rank": 896,
+   "plaintext": "SEIZESEVERINE",
+   "wordLogp": -12.9643,
+   "words": "SEIZE SEVERINE",
+   "unknown": 0
+  },
+  {
+   "rank": 897,
+   "plaintext": "LEONELEVERONE",
+   "wordLogp": -12.966,
+   "words": "LEONE LEVER ONE",
+   "unknown": 0
+  },
+  {
+   "rank": 898,
+   "plaintext": "BOOKABAGAMOYO",
+   "wordLogp": -12.9673,
+   "words": "BOOK A BAGAMOYO",
+   "unknown": 0
+  },
+  {
+   "rank": 899,
+   "plaintext": "CARGACALABRIA",
+   "wordLogp": -12.9678,
+   "words": "CARGA CALABRIA",
+   "unknown": 0
+  },
+  {
+   "rank": 900,
+   "plaintext": "CONDICIOIINFO",
+   "wordLogp": -12.9682,
+   "words": "CONDICIO I INFO",
+   "unknown": 0
+  },
+  {
+   "rank": 901,
+   "plaintext": "LEILALAVALIFE",
+   "wordLogp": -12.9683,
+   "words": "LEILA LAVALIFE",
+   "unknown": 0
+  },
+  {
+   "rank": 902,
+   "plaintext": "RANGARAJANNIA",
+   "wordLogp": -12.9686,
+   "words": "RANGARAJAN NIA",
+   "unknown": 0
+  },
+  {
+   "rank": 903,
+   "plaintext": "KIAMAKATAMARI",
+   "wordLogp": -12.9687,
+   "words": "KIAMA KATAMARI",
+   "unknown": 0
+  },
+  {
+   "rank": 904,
+   "plaintext": "PEIJAPANANIME",
+   "wordLogp": -12.9691,
+   "words": "PEI JAPANANIME",
+   "unknown": 0
+  },
+  {
+   "rank": 905,
+   "plaintext": "MEILIMINIMISE",
+   "wordLogp": -12.9695,
+   "words": "MEILI MINIMISE",
+   "unknown": 0
+  },
+  {
+   "rank": 906,
+   "plaintext": "REATERENEGADE",
+   "wordLogp": -12.9696,
+   "words": "REATE RENEGADE",
+   "unknown": 0
+  },
+  {
+   "rank": 907,
+   "plaintext": "SHAMESEYELASH",
+   "wordLogp": -12.9711,
+   "words": "SHAMES EYELASH",
+   "unknown": 0
+  },
+  {
+   "rank": 908,
+   "plaintext": "HAAHAHAHAHAHA",
+   "wordLogp": -12.974,
+   "words": "HAA HAHAHAHAHA",
+   "unknown": 0
+  },
+  {
+   "rank": 909,
+   "plaintext": "SEIXASANALIZE",
+   "wordLogp": -12.9741,
+   "words": "SEIXAS ANALIZE",
+   "unknown": 0
+  },
+  {
+   "rank": 910,
+   "plaintext": "SIAMESEHENATI",
+   "wordLogp": -12.9761,
+   "words": "SIAMESE HENATI",
+   "unknown": 0
+  },
+  {
+   "rank": 911,
+   "plaintext": "NAURANAKAMURA",
+   "wordLogp": -12.9768,
+   "words": "NAURA NAKAMURA",
+   "unknown": 0
+  },
+  {
+   "rank": 912,
+   "plaintext": "CACHACAMARCHA",
+   "wordLogp": -12.9769,
+   "words": "CACHACA MARCH A",
+   "unknown": 0
+  },
+  {
+   "rank": 913,
+   "plaintext": "RENDEREJEANNE",
+   "wordLogp": -12.977,
+   "words": "RENDERE JEANNE",
+   "unknown": 0
+  },
+  {
+   "rank": 914,
+   "plaintext": "PEIREPETETIVE",
+   "wordLogp": -12.9771,
+   "words": "PEI REPETETIVE",
+   "unknown": 0
+  },
+  {
+   "rank": 915,
+   "plaintext": "DNCMADAGASCAN",
+   "wordLogp": -12.9795,
+   "words": "DNC MADAGASCAN",
+   "unknown": 0
+  },
+  {
+   "rank": 916,
+   "plaintext": "TIARATAKASAKI",
+   "wordLogp": -12.9798,
+   "words": "TIARA TAKASAKI",
+   "unknown": 0
+  },
+  {
+   "rank": 917,
+   "plaintext": "SHOOTSTATOOSH",
+   "wordLogp": -12.9844,
+   "words": "SHOOTS TATOOSH",
+   "unknown": 0
+  }
+ ]
+}

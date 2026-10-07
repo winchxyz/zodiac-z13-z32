@@ -1,0 +1,124 @@
+{
+ "tool": "tools/cyclemodel_score.js",
+ "created": "2026-10-07T14:50:26.920Z",
+ "command": "node tools/cyclemodel_score.js --cipher data/ciphers/variants/z13.canonical.txt --in results/cyclemodel/enum_z13_letters_literal_simple.tsv --in results/cyclemodel/enum_z13_letters_literal_homophonic.tsv --track 4,9 --top 60 --out results/cyclemodel/score_z13_letters_literal_words.json",
+ "cipher": {
+  "source": "data/ciphers/variants/z13.canonical.txt",
+  "text": "AENz0K0M0[NAM",
+  "isomorph": "abcdefegehcag",
+  "rows": "13"
+ },
+ "inputs": [
+  "results/cyclemodel/enum_z13_letters_literal_simple.tsv",
+  "results/cyclemodel/enum_z13_letters_literal_homophonic.tsv"
+ ],
+ "model": "results/cyclemodel/fit.json",
+ "hyp": {
+  "kind": "homophonic",
+  "S": [
+   20,
+   26,
+   30,
+   35,
+   40,
+   45,
+   50,
+   54,
+   58,
+   63,
+   68
+  ],
+  "regimes": [
+   "z408p12",
+   "z340",
+   "z408p3"
+  ]
+ },
+ "counts": {
+  "read": 0,
+  "droppedBelowLmWindow": 0,
+  "lmWindow": 12,
+  "maxLM": null,
+  "candidates": 0,
+  "skipped": 0,
+  "inconsistentWithIsomorph": 0,
+  "simpleFits": 0,
+  "approximatedPatterns": 0
+ },
+ "evidence": {
+  "note": "log10 sum over the listed candidates of 10^lm * L_H(P); comparable between hypotheses on the same list (same normalisation)",
+  "simple": null,
+  "homophonicSmallS": null,
+  "homophonicZodiacSize": null,
+  "homophonicMixture": null,
+  "perRegime": {
+   "z408p12": null,
+   "z340": null,
+   "z408p3": null
+  },
+  "lmOnly": null
+ },
+ "concentration": {
+  "lm": {
+   "top1": 0,
+   "top10": 0,
+   "top100": 0,
+   "effectiveN": null
+  },
+  "post": {
+   "top1": 0,
+   "top10": 0,
+   "top100": 0,
+   "effectiveN": null
+  },
+  "postComb": {
+   "top1": 0,
+   "top10": 0,
+   "top100": 0,
+   "effectiveN": null
+  }
+ },
+ "lmTopMoves": [],
+ "letterPosterior": {
+  "lm": [
+   {
+    "position": 4,
+    "symbol": "0",
+    "letters": {}
+   },
+   {
+    "position": 9,
+    "symbol": "[",
+    "letters": {}
+   }
+  ],
+  "post": [
+   {
+    "position": 4,
+    "symbol": "0",
+    "letters": {}
+   },
+   {
+    "position": 9,
+    "symbol": "[",
+    "letters": {}
+   }
+  ],
+  "postComb": [
+   {
+    "position": 4,
+    "symbol": "0",
+    "letters": {}
+   },
+   {
+    "position": 9,
+    "symbol": "[",
+    "letters": {}
+   }
+  ]
+ },
+ "topLM": [],
+ "topPost": [],
+ "topComb": [],
+ "seconds": 0.045
+}

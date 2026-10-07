@@ -1,0 +1,616 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:27:58.670Z",
+ "label": "eng01_05",
+ "cipher": {
+  "id": "eng01",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng01.txt",
+  "text": "abcdefghechef",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   5
+  ],
+  "isomorphAfterSlips": "abcde*ghechef"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 1200941,
+  "scored": 1101861,
+  "keptAtLeastStreamMin": 276,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 33820,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 4077,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 276,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 13,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 1,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 17,
+  "3": 144,
+  "4": 115
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -5.877003311932067,
+  "topShare": 0.6551348551146345,
+  "top10Share": 0.7980153653938036,
+  "effectiveNumberExpEntropy": 13.164907411497357,
+  "effectiveNumberInverseSimpson": 2.309230305595556,
+  "unscoredMassBoundRelative": 0.008182562097322345,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 97,
+   "maxWordLogp": -13.725666084465505,
+   "massEstimateRelative": 0.00001758463901765954,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0026677639915970493
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 4,
+   "-18.25": 20,
+   "-18.00": 58,
+   "-17.75": 110,
+   "-17.50": 157,
+   "-17.25": 279,
+   "-17.00": 380,
+   "-16.75": 705,
+   "-16.50": 930,
+   "-16.25": 1243,
+   "-16.00": 1551,
+   "-15.75": 2134,
+   "-15.50": 2958,
+   "-15.25": 3867,
+   "-15.00": 5037,
+   "-14.75": 5936,
+   "-14.50": 7527,
+   "-14.25": 8865,
+   "-14.00": 10771,
+   "-13.75": 12603,
+   "-13.50": 14537,
+   "-13.25": 16561,
+   "-13.00": 18873,
+   "-12.75": 21383,
+   "-12.50": 23952,
+   "-12.25": 27007,
+   "-12.00": 30142,
+   "-11.75": 32984,
+   "-11.50": 36031,
+   "-11.25": 38711,
+   "-11.00": 41018,
+   "-10.75": 43637,
+   "-10.50": 45253,
+   "-10.25": 47084,
+   "-10.00": 48127,
+   "-9.75": 49903,
+   "-9.50": 51094,
+   "-9.25": 51374,
+   "-9.00": 51853,
+   "-8.75": 51865,
+   "-8.50": 50915,
+   "-8.25": 49094,
+   "-8.00": 46595,
+   "-7.75": 43328,
+   "-7.50": 39265,
+   "-7.25": 34498,
+   "-7.00": 29624,
+   "-6.75": 25048,
+   "-6.50": 20220,
+   "-6.25": 15825,
+   "-6.00": 12135,
+   "-5.75": 8980,
+   "-5.50": 6624,
+   "-5.25": 4601,
+   "-5.00": 2940,
+   "-4.75": 1994,
+   "-4.50": 1246,
+   "-4.25": 710,
+   "-4.00": 395,
+   "-3.75": 211,
+   "-3.50": 104,
+   "-3.25": 50,
+   "-3.00": 13,
+   "-2.50": 2
+  },
+  "exactScored": {
+   "-19.75": 4,
+   "-19.50": 12,
+   "-19.25": 37,
+   "-19.00": 113,
+   "-18.75": 617,
+   "-18.50": 2549,
+   "-18.25": 8607,
+   "-18.00": 19870,
+   "-17.75": 36193,
+   "-17.50": 53556,
+   "-17.25": 69771,
+   "-17.00": 82602,
+   "-16.75": 90983,
+   "-16.50": 92679,
+   "-16.25": 90460,
+   "-16.00": 83684,
+   "-15.75": 75575,
+   "-15.50": 67260,
+   "-15.25": 59422,
+   "-15.00": 51288,
+   "-14.75": 43638,
+   "-14.50": 36519,
+   "-14.25": 30277,
+   "-14.00": 24516,
+   "-13.75": 19387,
+   "-13.50": 15104,
+   "-13.25": 11729,
+   "-13.00": 8961,
+   "-12.75": 6870,
+   "-12.50": 5385,
+   "-12.25": 4099,
+   "-12.00": 3102,
+   "-11.75": 2226,
+   "-11.50": 1609,
+   "-11.25": 1102,
+   "-11.00": 671,
+   "-10.75": 499,
+   "-10.50": 313,
+   "-10.25": 218,
+   "-10.00": 121,
+   "-9.75": 96,
+   "-9.50": 51,
+   "-9.25": 32,
+   "-9.00": 22,
+   "-8.75": 14,
+   "-8.50": 8,
+   "-8.25": 4,
+   "-8.00": 1,
+   "-7.75": 1,
+   "-7.50": 3,
+   "-6.25": 1
+  },
+  "boundUnscored": {
+   "-18.50": 4,
+   "-18.25": 20,
+   "-18.00": 58,
+   "-17.75": 110,
+   "-17.50": 157,
+   "-17.25": 279,
+   "-17.00": 380,
+   "-16.75": 705,
+   "-16.50": 930,
+   "-16.25": 1243,
+   "-16.00": 1551,
+   "-15.75": 2134,
+   "-15.50": 2958,
+   "-15.25": 3867,
+   "-15.00": 5037,
+   "-14.75": 5936,
+   "-14.50": 7527,
+   "-14.25": 8865,
+   "-14.00": 10771,
+   "-13.75": 12603,
+   "-13.50": 14537,
+   "-13.25": 16561,
+   "-13.00": 2847
+  }
+ },
+ "timeMs": {
+  "total": 11929,
+  "setup": 395
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "HASBEENTESTED",
+   "wordLogp": -6.0607,
+   "words": "HAS BEEN TESTED",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "A",
+    "c": "S",
+    "d": "B",
+    "e": "E",
+    "g": "N",
+    "h": "T",
+    "f": "D"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "GREATCONTENTS",
+   "wordLogp": -7.2851,
+   "words": "GREAT CONTENTS",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "R",
+    "c": "E",
+    "d": "A",
+    "e": "T",
+    "g": "O",
+    "h": "N",
+    "f": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "NOTSEEWHETHER",
+   "wordLogp": -7.3572,
+   "words": "NOT SEE WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "S",
+    "e": "E",
+    "g": "W",
+    "h": "H",
+    "f": "R"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "BACKINWHICHIS",
+   "wordLogp": -7.4771,
+   "words": "BACK IN WHICH IS",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "A",
+    "c": "C",
+    "d": "K",
+    "e": "I",
+    "g": "W",
+    "h": "H",
+    "f": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "FORLARGEAREAS",
+   "wordLogp": -7.7421,
+   "words": "FOR LARGE AREAS",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "R",
+    "d": "L",
+    "e": "A",
+    "g": "G",
+    "h": "E",
+    "f": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "PORTABLEAREAS",
+   "wordLogp": -7.872,
+   "words": "PORTABLE AREAS",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "O",
+    "c": "R",
+    "d": "T",
+    "e": "A",
+    "g": "L",
+    "h": "E",
+    "f": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ONCEINWHICHIS",
+   "wordLogp": -8.1156,
+   "words": "ONCE IN WHICH IS",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "N",
+    "c": "C",
+    "d": "E",
+    "e": "I",
+    "g": "W",
+    "h": "H",
+    "f": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "OUTLETWHETHER",
+   "wordLogp": -8.1197,
+   "words": "OUTLET WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "U",
+    "c": "T",
+    "d": "L",
+    "e": "E",
+    "g": "W",
+    "h": "H",
+    "f": "R"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ALERTCONTENTS",
+   "wordLogp": -8.1429,
+   "words": "ALERT CONTENTS",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "L",
+    "c": "E",
+    "d": "R",
+    "e": "T",
+    "g": "O",
+    "h": "N",
+    "f": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "OFTENPRINTING",
+   "wordLogp": -8.1852,
+   "words": "OFTEN PRINTING",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "T",
+    "d": "E",
+    "e": "N",
+    "g": "R",
+    "h": "I",
+    "f": "G"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "GRAPHICTHATHE",
+   "wordLogp": -8.2708,
+   "words": "GRAPHIC THAT HE",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "R",
+    "c": "A",
+    "d": "P",
+    "e": "H",
+    "g": "C",
+    "h": "T",
+    "f": "E"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "NOTYETWHETHER",
+   "wordLogp": -8.2787,
+   "words": "NOT YET WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "Y",
+    "e": "E",
+    "g": "W",
+    "h": "H",
+    "f": "R"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "WITHACREATEAN",
+   "wordLogp": -8.3104,
+   "words": "WITH A CREATE AN",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "I",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "g": "R",
+    "h": "E",
+    "f": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "OFTENPAINTING",
+   "wordLogp": -8.3943,
+   "words": "OFTEN PAINTING",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "T",
+    "d": "E",
+    "e": "N",
+    "g": "A",
+    "h": "I",
+    "f": "G"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "BACKINWHICHIT",
+   "wordLogp": -8.4103,
+   "words": "BACK IN WHICH IT",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "A",
+    "c": "C",
+    "d": "K",
+    "e": "I",
+    "g": "W",
+    "h": "H",
+    "f": "T"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "FACEINWHICHIS",
+   "wordLogp": -8.4235,
+   "words": "FACE IN WHICH IS",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "A",
+    "c": "C",
+    "d": "E",
+    "e": "I",
+    "g": "W",
+    "h": "H",
+    "f": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "DUTIESWHETHER",
+   "wordLogp": -8.4521,
+   "words": "DUTIES WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "U",
+    "c": "T",
+    "d": "I",
+    "e": "E",
+    "g": "W",
+    "h": "H",
+    "f": "R"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SPECIALDIEDIN",
+   "wordLogp": -8.4817,
+   "words": "SPECIAL DIED IN",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "P",
+    "c": "E",
+    "d": "C",
+    "e": "I",
+    "g": "L",
+    "h": "D",
+    "f": "N"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "PERSONALORLOG",
+   "wordLogp": -8.5015,
+   "words": "PERSONAL OR LOG",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "R",
+    "d": "S",
+    "e": "O",
+    "g": "A",
+    "h": "L",
+    "f": "G"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "TAKENTHINKING",
+   "wordLogp": -8.5018,
+   "words": "TAKEN THINKING",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "A",
+    "c": "K",
+    "d": "E",
+    "e": "N",
+    "g": "H",
+    "h": "I",
+    "f": "G"
+   }
+  }
+ ]
+}

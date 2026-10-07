@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:24:08.341Z",
+ "label": "scr08_02",
+ "cipher": {
+  "id": "scr08",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr08.txt",
+  "text": "A0M0M[AN0EzKN",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   2
+  ],
+  "isomorphAfterSlips": "ab*bcdaebfghe"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 119,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 119,
+  "tasks": 119,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 256255,
+  "scored": 237580,
+  "keptAtLeastStreamMin": 86,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 11695,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1303,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 86,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 27,
+  "4": 57
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.045828592950085,
+  "topShare": 0.05885509871045866,
+  "top10Share": 0.3053770274619059,
+  "effectiveNumberExpEntropy": 374.7268654886151,
+  "effectiveNumberInverseSimpson": 73.90207399233987,
+  "unscoredMassBoundRelative": 0.02275040872544271,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 17,
+   "maxWordLogp": -15.45260579792234,
+   "massEstimateRelative": 0.000009944809761348027,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.007162704813220054
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 2,
+   "-18.25": 7,
+   "-18.00": 20,
+   "-17.75": 36,
+   "-17.50": 59,
+   "-17.25": 90,
+   "-17.00": 135,
+   "-16.75": 158,
+   "-16.50": 214,
+   "-16.25": 266,
+   "-16.00": 289,
+   "-15.75": 386,
+   "-15.50": 533,
+   "-15.25": 723,
+   "-15.00": 966,
+   "-14.75": 1216,
+   "-14.50": 1388,
+   "-14.25": 1685,
+   "-14.00": 2087,
+   "-13.75": 2256,
+   "-13.50": 2658,
+   "-13.25": 2976,
+   "-13.00": 3344,
+   "-12.75": 3962,
+   "-12.50": 4350,
+   "-12.25": 5033,
+   "-12.00": 5700,
+   "-11.75": 6428,
+   "-11.50": 7171,
+   "-11.25": 7909,
+   "-11.00": 8618,
+   "-10.75": 8991,
+   "-10.50": 9331,
+   "-10.25": 9559,
+   "-10.00": 9638,
+   "-9.75": 9818,
+   "-9.50": 10079,
+   "-9.25": 10081,
+   "-9.00": 10377,
+   "-8.75": 10528,
+   "-8.50": 10735,
+   "-8.25": 10738,
+   "-8.00": 10310,
+   "-7.75": 9849,
+   "-7.50": 9334,
+   "-7.25": 8446,
+   "-7.00": 7347,
+   "-6.75": 6461,
+   "-6.50": 5534,
+   "-6.25": 4669,
+   "-6.00": 3770,
+   "-5.75": 2919,
+   "-5.50": 2255,
+   "-5.25": 1619,
+   "-5.00": 1130,
+   "-4.75": 761,
+   "-4.50": 502,
+   "-4.25": 350,
+   "-4.00": 203,
+   "-3.75": 121,
+   "-3.50": 72,
+   "-3.25": 41,
+   "-3.00": 14,
+   "-2.75": 6,
+   "-2.50": 2
+  },
+  "exactScored": {
+   "-19.25": 4,
+   "-19.00": 20,
+   "-18.75": 115,
+   "-18.50": 406,
+   "-18.25": 1082,
+   "-18.00": 2578,
+   "-17.75": 4333,
+   "-17.50": 6854,
+   "-17.25": 9886,
+   "-17.00": 13119,
+   "-16.75": 15044,
+   "-16.50": 16892,
+   "-16.25": 18004,
+   "-16.00": 17687,
+   "-15.75": 17248,
+   "-15.50": 16129,
+   "-15.25": 15354,
+   "-15.00": 13562,
+   "-14.75": 12006,
+   "-14.50": 10962,
+   "-14.25": 9372,
+   "-14.00": 8113,
+   "-13.75": 6746,
+   "-13.50": 5455,
+   "-13.25": 4300,
+   "-13.00": 3335,
+   "-12.75": 2546,
+   "-12.50": 1901,
+   "-12.25": 1320,
+   "-12.00": 1055,
+   "-11.75": 641,
+   "-11.50": 469,
+   "-11.25": 350,
+   "-11.00": 249,
+   "-10.75": 152,
+   "-10.50": 102,
+   "-10.25": 76,
+   "-10.00": 43,
+   "-9.75": 22,
+   "-9.50": 23,
+   "-9.25": 10,
+   "-9.00": 7,
+   "-8.75": 6,
+   "-8.50": 2
+  },
+  "boundUnscored": {
+   "-18.50": 2,
+   "-18.25": 7,
+   "-18.00": 20,
+   "-17.75": 36,
+   "-17.50": 59,
+   "-17.25": 90,
+   "-17.00": 135,
+   "-16.75": 158,
+   "-16.50": 214,
+   "-16.25": 266,
+   "-16.00": 289,
+   "-15.75": 386,
+   "-15.50": 533,
+   "-15.25": 723,
+   "-15.00": 966,
+   "-14.75": 1216,
+   "-14.50": 1388,
+   "-14.25": 1685,
+   "-14.00": 2087,
+   "-13.75": 2256,
+   "-13.50": 2658,
+   "-13.25": 2976,
+   "-13.00": 525
+  }
+ },
+ "timeMs": {
+  "total": 2676,
+  "setup": 428
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "LIVINGLEISURE",
+   "wordLogp": -8.276,
+   "words": "LIVING LEISURE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "L",
+    "M": "N",
+    "[": "G",
+    "N": "E",
+    "E": "S",
+    "z": "U",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ONANDTOENSURE",
+   "wordLogp": -8.3753,
+   "words": "ON AND TO ENSURE",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "O",
+    "M": "D",
+    "[": "T",
+    "N": "E",
+    "E": "S",
+    "z": "U",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "SOCOURSEOFTHE",
+   "wordLogp": -8.5068,
+   "words": "SO COURSE OF THE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "S",
+    "M": "U",
+    "[": "R",
+    "N": "E",
+    "E": "F",
+    "z": "T",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "HIMINTHEIMAGE",
+   "wordLogp": -8.5401,
+   "words": "HIM IN THE IMAGE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "H",
+    "M": "N",
+    "[": "T",
+    "N": "E",
+    "E": "M",
+    "z": "A",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "FUTUREFOUNDTO",
+   "wordLogp": -8.5819,
+   "words": "FUTURE FOUND TO",
+   "unknown": 0,
+   "key": {
+    "0": "U",
+    "A": "F",
+    "M": "R",
+    "[": "E",
+    "N": "O",
+    "E": "N",
+    "z": "D",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "APOPULARPOWER",
+   "wordLogp": -8.617,
+   "words": "A POPULAR POWER",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "A",
+    "M": "U",
+    "[": "L",
+    "N": "R",
+    "E": "O",
+    "z": "W",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "TOPOINTYOUMAY",
+   "wordLogp": -8.727,
+   "words": "TO POINT YOU MAY",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "T",
+    "M": "I",
+    "[": "N",
+    "N": "Y",
+    "E": "U",
+    "z": "M",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ONANDTOENABLE",
+   "wordLogp": -8.7294,
+   "words": "ON AND TO ENABLE",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "O",
+    "M": "D",
+    "[": "T",
+    "N": "E",
+    "E": "A",
+    "z": "B",
+    "K": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "NEVERINHEALTH",
+   "wordLogp": -8.7744,
+   "words": "NEVER IN HEALTH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "N",
+    "M": "R",
+    "[": "I",
+    "N": "H",
+    "E": "A",
+    "z": "L",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "AUGUSTAEUROPE",
+   "wordLogp": -8.819,
+   "words": "AUGUSTA EUROPE",
+   "unknown": 0,
+   "key": {
+    "0": "U",
+    "A": "A",
+    "M": "S",
+    "[": "T",
+    "N": "E",
+    "E": "R",
+    "z": "O",
+    "K": "P"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "HISINTHEIMAGE",
+   "wordLogp": -8.8586,
+   "words": "HIS IN THE IMAGE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "H",
+    "M": "N",
+    "[": "T",
+    "N": "E",
+    "E": "M",
+    "z": "A",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "APOPULARPOKER",
+   "wordLogp": -8.8615,
+   "words": "A POPULAR POKER",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "A",
+    "M": "U",
+    "[": "L",
+    "N": "R",
+    "E": "O",
+    "z": "K",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "MAPANDMEASURE",
+   "wordLogp": -8.913,
+   "words": "MAP AND MEASURE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "M",
+    "M": "N",
+    "[": "D",
+    "N": "E",
+    "E": "S",
+    "z": "U",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "MAYANDMEASURE",
+   "wordLogp": -8.9167,
+   "words": "MAY AND MEASURE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "M",
+    "M": "N",
+    "[": "D",
+    "N": "E",
+    "E": "S",
+    "z": "U",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "MANANDMEASURE",
+   "wordLogp": -8.9345,
+   "words": "MAN AND MEASURE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "M",
+    "M": "N",
+    "[": "D",
+    "N": "E",
+    "E": "S",
+    "z": "U",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "WERENOWHEALTH",
+   "wordLogp": -9.0049,
+   "words": "WERE NOW HEALTH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "W",
+    "M": "N",
+    "[": "O",
+    "N": "H",
+    "E": "A",
+    "z": "L",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ANDNOWATNIGHT",
+   "wordLogp": -9.022,
+   "words": "AND NOW AT NIGHT",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "A",
+    "M": "O",
+    "[": "W",
+    "N": "T",
+    "E": "I",
+    "z": "G",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "TOPOFITSOUNDS",
+   "wordLogp": -9.0595,
+   "words": "TOP OF IT SOUNDS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "T",
+    "M": "F",
+    "[": "I",
+    "N": "S",
+    "E": "U",
+    "z": "N",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ONANYTOENSURE",
+   "wordLogp": -9.0705,
+   "words": "ON ANY TO ENSURE",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "O",
+    "M": "Y",
+    "[": "T",
+    "N": "E",
+    "E": "S",
+    "z": "U",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "FAXANDFEATURE",
+   "wordLogp": -9.1018,
+   "words": "FAX AND FEATURE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "F",
+    "M": "N",
+    "[": "D",
+    "N": "E",
+    "E": "T",
+    "z": "U",
+    "K": "R"
+   }
+  }
+ ]
+}

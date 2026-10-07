@@ -1,0 +1,111 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:46:12.329Z",
+ "argv": "--ciphers z13.crosshair_null --keys union --null 10000 --null-kind permute --threads 1 --seed 1970 --stat word --out results/keyprior/word_parts/fullpin_word_z13.crosshair_null_union.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 4.896,
+ "results": [
+  {
+   "cipher": "z13.crosshair_null",
+   "key": "union",
+   "text": "AEN0K0M0[NAM",
+   "pinnedSymbols": "AENKM",
+   "nPinned": 5,
+   "nFree": 2,
+   "carriedOver": "WEE?S?H??EWH",
+   "real": {
+    "best": {
+     "plaintext": "WEEESEHEEEWH",
+     "words": "WEEESEHEEEWH",
+     "wordLogp": -16.640509543454158,
+     "unknownWords": [
+      "WEEESEHEEEWH"
+     ],
+     "ngram5": -58.03576993942261
+    },
+    "score": -16.260204269045914,
+    "top5": [
+     {
+      "plaintext": "WEEESEHEEEWH",
+      "score": -16.260204269045914
+     },
+     {
+      "plaintext": "WEEKSKHKEEWH",
+      "score": -16.376869015701637
+     },
+     {
+      "plaintext": "WEEESEHETEWH",
+      "score": -16.40006895219716
+     },
+     {
+      "plaintext": "WEEESEHEAEWH",
+      "score": -16.45434458410176
+     },
+     {
+      "plaintext": "WEEDSDHDEEWH",
+      "score": -16.458011016886978
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -16.64772294901748,
+     "sd": 1.6182526487490645,
+     "min": -23.403820452725398,
+     "q05": -19.346278128659236,
+     "q25": -17.659937319790828,
+     "median": -16.61858981612872,
+     "q75": -15.595375146955444,
+     "q95": -14.007718701486102,
+     "q99": -13.05349203172355,
+     "max": -10.087861242940246
+    },
+    "topNull": [
+     {
+      "index": 9689,
+      "score": -10.087861242940246,
+      "plaintext": "RAININENTIRE"
+     },
+     {
+      "index": 9267,
+      "score": -10.520716248625924,
+      "plaintext": "WISHTHEHASWE"
+     },
+     {
+      "index": 3844,
+      "score": -10.707436018939092,
+      "plaintext": "OFTONONORTON"
+     },
+     {
+      "index": 197,
+      "score": -10.804606132928452,
+      "plaintext": "ASWERESEEWAS"
+     },
+     {
+      "index": 6470,
+      "score": -10.847979809707219,
+      "plaintext": "AREACANAREAN"
+     }
+    ]
+   },
+   "test": {
+    "ge": 4053,
+    "n": 10000,
+    "p": 0.40535946405359463,
+    "percentile": 59.47,
+    "z": 0.23946735404457722
+   }
+  }
+ ]
+}

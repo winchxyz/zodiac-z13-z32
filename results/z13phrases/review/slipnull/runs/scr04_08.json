@@ -1,0 +1,604 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:09:35.039Z",
+ "label": "scr04_08",
+ "cipher": {
+  "id": "scr04",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr04.txt",
+  "text": "0z0[KNN0MEAMA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   8
+  ],
+  "isomorphAfterSlips": "abacdeea*ghfh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 4,
+  "tasks": 109,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 109,
+  "tasks": 109,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 97799,
+  "scored": 90915,
+  "keptAtLeastStreamMin": 20,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 3879,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 372,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 20,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 6,
+  "4": 14
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.428874268053148,
+  "topShare": 0.2517421057711175,
+  "top10Share": 0.7230340629680401,
+  "effectiveNumberExpEntropy": 37.54318497939077,
+  "effectiveNumberInverseSimpson": 7.755991392421649,
+  "unscoredMassBoundRelative": 0.020258865899778735,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 4,
+   "maxWordLogp": -17.282568746808323,
+   "massEstimateRelative": 4.122247821929922e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.006371124979968257
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 2,
+   "-17.75": 8,
+   "-17.50": 22,
+   "-17.25": 19,
+   "-17.00": 38,
+   "-16.75": 42,
+   "-16.50": 51,
+   "-16.25": 84,
+   "-16.00": 110,
+   "-15.75": 180,
+   "-15.50": 195,
+   "-15.25": 297,
+   "-15.00": 368,
+   "-14.75": 446,
+   "-14.50": 556,
+   "-14.25": 593,
+   "-14.00": 756,
+   "-13.75": 820,
+   "-13.50": 1025,
+   "-13.25": 1117,
+   "-13.00": 1230,
+   "-12.75": 1536,
+   "-12.50": 1703,
+   "-12.25": 2058,
+   "-12.00": 2419,
+   "-11.75": 2515,
+   "-11.50": 2765,
+   "-11.25": 3012,
+   "-11.00": 3249,
+   "-10.75": 3485,
+   "-10.50": 3691,
+   "-10.25": 3839,
+   "-10.00": 3976,
+   "-9.75": 4127,
+   "-9.50": 4161,
+   "-9.25": 4161,
+   "-9.00": 4301,
+   "-8.75": 4286,
+   "-8.50": 4115,
+   "-8.25": 4139,
+   "-8.00": 3958,
+   "-7.75": 3719,
+   "-7.50": 3441,
+   "-7.25": 2982,
+   "-7.00": 2635,
+   "-6.75": 2201,
+   "-6.50": 1845,
+   "-6.25": 1477,
+   "-6.00": 1225,
+   "-5.75": 926,
+   "-5.50": 652,
+   "-5.25": 470,
+   "-5.00": 272,
+   "-4.75": 194,
+   "-4.50": 128,
+   "-4.25": 73,
+   "-4.00": 42,
+   "-3.75": 24,
+   "-3.50": 19,
+   "-3.25": 10,
+   "-3.00": 7,
+   "-2.75": 2
+  },
+  "exactScored": {
+   "-19.25": 3,
+   "-19.00": 11,
+   "-18.75": 60,
+   "-18.50": 294,
+   "-18.25": 727,
+   "-18.00": 1563,
+   "-17.75": 2472,
+   "-17.50": 3497,
+   "-17.25": 4410,
+   "-17.00": 5236,
+   "-16.75": 5679,
+   "-16.50": 5752,
+   "-16.25": 5922,
+   "-16.00": 6205,
+   "-15.75": 6264,
+   "-15.50": 6298,
+   "-15.25": 5973,
+   "-15.00": 5420,
+   "-14.75": 4959,
+   "-14.50": 4313,
+   "-14.25": 3381,
+   "-14.00": 2862,
+   "-13.75": 2264,
+   "-13.50": 1833,
+   "-13.25": 1451,
+   "-13.00": 1091,
+   "-12.75": 853,
+   "-12.50": 635,
+   "-12.25": 478,
+   "-12.00": 318,
+   "-11.75": 264,
+   "-11.50": 140,
+   "-11.25": 126,
+   "-11.00": 55,
+   "-10.75": 43,
+   "-10.50": 24,
+   "-10.25": 12,
+   "-10.00": 11,
+   "-9.75": 6,
+   "-9.50": 2,
+   "-9.25": 3,
+   "-9.00": 1,
+   "-8.75": 2,
+   "-8.25": 2
+  },
+  "boundUnscored": {
+   "-18.00": 2,
+   "-17.75": 8,
+   "-17.50": 22,
+   "-17.25": 19,
+   "-17.00": 38,
+   "-16.75": 42,
+   "-16.50": 51,
+   "-16.25": 84,
+   "-16.00": 110,
+   "-15.75": 180,
+   "-15.50": 195,
+   "-15.25": 297,
+   "-15.00": 368,
+   "-14.75": 446,
+   "-14.50": 556,
+   "-14.25": 593,
+   "-14.00": 756,
+   "-13.75": 820,
+   "-13.50": 1025,
+   "-13.25": 1117,
+   "-13.00": 155
+  }
+ },
+ "timeMs": {
+  "total": 1986,
+  "setup": 441
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "TOTHISSTORYBY",
+   "wordLogp": -8.0279,
+   "words": "TO THIS STORY BY",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "R",
+    "A": "Y",
+    "M": "B"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TOTHISSTUDYBY",
+   "wordLogp": -8.0642,
+   "words": "TO THIS STUDY BY",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "D",
+    "A": "Y",
+    "M": "B"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "TOTHISSTOREBE",
+   "wordLogp": -8.5105,
+   "words": "TO THIS STORE BE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "R",
+    "A": "E",
+    "M": "B"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "TOTHISSTOREWE",
+   "wordLogp": -8.7473,
+   "words": "TO THIS STORE WE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "R",
+    "A": "E",
+    "M": "W"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "TOTHISSTORYMY",
+   "wordLogp": -8.9282,
+   "words": "TO THIS STORY MY",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "R",
+    "A": "Y",
+    "M": "M"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "TOTHISSTUDYMY",
+   "wordLogp": -9.1257,
+   "words": "TO THIS STUDY MY",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "D",
+    "A": "Y",
+    "M": "M"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "TOTHISSTOREME",
+   "wordLogp": -9.1372,
+   "words": "TO THIS STORE ME",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "R",
+    "A": "E",
+    "M": "M"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "TOTHISSTAGEBE",
+   "wordLogp": -9.2076,
+   "words": "TO THIS STAGE BE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "G",
+    "A": "E",
+    "M": "B"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "OFONLYYOUWERE",
+   "wordLogp": -9.3805,
+   "words": "OF ONLY YOU WERE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "F",
+    "[": "N",
+    "K": "L",
+    "N": "Y",
+    "E": "W",
+    "A": "E",
+    "M": "R"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "TOTHISSTAGEWE",
+   "wordLogp": -9.4443,
+   "words": "TO THIS STAGE WE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "G",
+    "A": "E",
+    "M": "W"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "EYECOMMENTSIS",
+   "wordLogp": -9.5091,
+   "words": "EYE COMMENTS IS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "Y",
+    "[": "C",
+    "K": "O",
+    "N": "M",
+    "E": "T",
+    "A": "S",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TITLESSTUDYBY",
+   "wordLogp": -9.6415,
+   "words": "TITLES STUDY BY",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "I",
+    "[": "L",
+    "K": "E",
+    "N": "S",
+    "E": "D",
+    "A": "Y",
+    "M": "B"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "TOTHISSTYLEBE",
+   "wordLogp": -9.6618,
+   "words": "TO THIS STYLE BE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "L",
+    "A": "E",
+    "M": "B"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "EVENTSSEXUALA",
+   "wordLogp": -9.6828,
+   "words": "EVENTS SEXUAL A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "V",
+    "[": "N",
+    "K": "T",
+    "N": "S",
+    "E": "U",
+    "A": "A",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "EVENTSSERIALA",
+   "wordLogp": -9.7101,
+   "words": "EVENTS SERIAL A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "V",
+    "[": "N",
+    "K": "T",
+    "N": "S",
+    "E": "I",
+    "A": "A",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "EYECOMMENTSAS",
+   "wordLogp": -9.7375,
+   "words": "EYE COMMENTS AS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "Y",
+    "[": "C",
+    "K": "O",
+    "N": "M",
+    "E": "T",
+    "A": "S",
+    "M": "A"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "TITLESSTORYBY",
+   "wordLogp": -9.781,
+   "words": "TITLES STORY BY",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "I",
+    "[": "L",
+    "K": "E",
+    "N": "S",
+    "E": "R",
+    "A": "Y",
+    "M": "B"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SOSMALLSIGNIN",
+   "wordLogp": -9.8158,
+   "words": "SO SMALL SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "O",
+    "[": "M",
+    "K": "A",
+    "N": "L",
+    "E": "G",
+    "A": "N",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "TOTHISSTAGEME",
+   "wordLogp": -9.8342,
+   "words": "TO THIS STAGE ME",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "I",
+    "N": "S",
+    "E": "G",
+    "A": "E",
+    "M": "M"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "TOTHREETHANIN",
+   "wordLogp": -9.8362,
+   "words": "TO THREE THAN IN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "R",
+    "N": "E",
+    "E": "A",
+    "A": "N",
+    "M": "I"
+   }
+  }
+ ]
+}

@@ -1,0 +1,612 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:28:28.972Z",
+ "label": "scr13_08",
+ "cipher": {
+  "id": "scr13",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr13.txt",
+  "text": "0zAEM0MAN[K0N",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   8
+  ],
+  "isomorphAfterSlips": "abcdeaec*ghaf"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 221126,
+  "scored": 207311,
+  "keptAtLeastStreamMin": 141,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 14067,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1680,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 141,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 10,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 10,
+  "3": 72,
+  "4": 57,
+  "5": 2
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.602975408429731,
+  "topShare": 0.16519617801025147,
+  "top10Share": 0.5391845964750459,
+  "effectiveNumberExpEntropy": 104.04427992163437,
+  "effectiveNumberInverseSimpson": 17.36575189722605,
+  "unscoredMassBoundRelative": 0.006070525638702816,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 12,
+   "maxWordLogp": -15.699487223780512,
+   "massEstimateRelative": 0.000001533402248562234,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0019835430017318095
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 4,
+   "-18.00": 24,
+   "-17.75": 13,
+   "-17.50": 35,
+   "-17.25": 68,
+   "-17.00": 88,
+   "-16.75": 71,
+   "-16.50": 102,
+   "-16.25": 158,
+   "-16.00": 216,
+   "-15.75": 284,
+   "-15.50": 360,
+   "-15.25": 561,
+   "-15.00": 701,
+   "-14.75": 835,
+   "-14.50": 1066,
+   "-14.25": 1215,
+   "-14.00": 1542,
+   "-13.75": 1790,
+   "-13.50": 1927,
+   "-13.25": 2339,
+   "-13.00": 2701,
+   "-12.75": 3124,
+   "-12.50": 3614,
+   "-12.25": 4032,
+   "-12.00": 4537,
+   "-11.75": 5298,
+   "-11.50": 5808,
+   "-11.25": 6277,
+   "-11.00": 7018,
+   "-10.75": 7233,
+   "-10.50": 7541,
+   "-10.25": 8009,
+   "-10.00": 8263,
+   "-9.75": 8222,
+   "-9.50": 8593,
+   "-9.25": 8893,
+   "-9.00": 9106,
+   "-8.75": 9354,
+   "-8.50": 9288,
+   "-8.25": 9303,
+   "-8.00": 9223,
+   "-7.75": 8758,
+   "-7.50": 8348,
+   "-7.25": 7644,
+   "-7.00": 6860,
+   "-6.75": 6221,
+   "-6.50": 5280,
+   "-6.25": 4434,
+   "-6.00": 3736,
+   "-5.75": 3004,
+   "-5.50": 2438,
+   "-5.25": 1807,
+   "-5.00": 1252,
+   "-4.75": 994,
+   "-4.50": 661,
+   "-4.25": 388,
+   "-4.00": 263,
+   "-3.75": 111,
+   "-3.50": 52,
+   "-3.25": 20,
+   "-3.00": 9,
+   "-2.75": 7,
+   "-2.50": 1,
+   "-2.00": 2
+  },
+  "exactScored": {
+   "-19.25": 2,
+   "-19.00": 9,
+   "-18.75": 47,
+   "-18.50": 242,
+   "-18.25": 821,
+   "-18.00": 1915,
+   "-17.75": 3345,
+   "-17.50": 5204,
+   "-17.25": 7031,
+   "-17.00": 9188,
+   "-16.75": 11038,
+   "-16.50": 12492,
+   "-16.25": 13645,
+   "-16.00": 14654,
+   "-15.75": 14956,
+   "-15.50": 14384,
+   "-15.25": 14242,
+   "-15.00": 13151,
+   "-14.75": 12210,
+   "-14.50": 10497,
+   "-14.25": 9037,
+   "-14.00": 7875,
+   "-13.75": 6627,
+   "-13.50": 5507,
+   "-13.25": 4501,
+   "-13.00": 3632,
+   "-12.75": 2878,
+   "-12.50": 2361,
+   "-12.25": 1713,
+   "-12.00": 1254,
+   "-11.75": 883,
+   "-11.50": 620,
+   "-11.25": 442,
+   "-11.00": 285,
+   "-10.75": 208,
+   "-10.50": 147,
+   "-10.25": 89,
+   "-10.00": 62,
+   "-9.75": 39,
+   "-9.50": 30,
+   "-9.25": 22,
+   "-9.00": 6,
+   "-8.75": 8,
+   "-8.50": 4,
+   "-8.25": 6,
+   "-7.50": 2
+  },
+  "boundUnscored": {
+   "-18.25": 4,
+   "-18.00": 24,
+   "-17.75": 13,
+   "-17.50": 35,
+   "-17.25": 68,
+   "-17.00": 88,
+   "-16.75": 71,
+   "-16.50": 102,
+   "-16.25": 158,
+   "-16.00": 216,
+   "-15.75": 284,
+   "-15.50": 360,
+   "-15.25": 561,
+   "-15.00": 701,
+   "-14.75": 835,
+   "-14.50": 1066,
+   "-14.25": 1215,
+   "-14.00": 1542,
+   "-13.75": 1790,
+   "-13.50": 1927,
+   "-13.25": 2339,
+   "-13.00": 416
+  }
+ },
+ "timeMs": {
+  "total": 2261,
+  "setup": 414
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "EUROPEPROBLEM",
+   "wordLogp": -7.385,
+   "words": "EUROPE PROBLEM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "U",
+    "A": "R",
+    "E": "O",
+    "M": "P",
+    "[": "B",
+    "K": "L",
+    "N": "M"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "SHORTSTORIESA",
+   "wordLogp": -7.431,
+   "words": "SHORT STORIES A",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "H",
+    "A": "O",
+    "E": "R",
+    "M": "T",
+    "[": "I",
+    "K": "E",
+    "N": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THEARTRESULTS",
+   "wordLogp": -8.082,
+   "words": "THE ART RESULTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "H",
+    "A": "E",
+    "E": "A",
+    "M": "R",
+    "[": "U",
+    "K": "L",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "EUROPEPREVIEW",
+   "wordLogp": -8.0825,
+   "words": "EUROPE PREVIEW",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "U",
+    "A": "R",
+    "E": "O",
+    "M": "P",
+    "[": "V",
+    "K": "I",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "EUROPEPRINTED",
+   "wordLogp": -8.1047,
+   "words": "EUROPE PRINTED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "U",
+    "A": "R",
+    "E": "O",
+    "M": "P",
+    "[": "N",
+    "K": "T",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "SHORTSTORYISA",
+   "wordLogp": -8.1116,
+   "words": "SHORT STORY IS A",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "H",
+    "A": "O",
+    "E": "R",
+    "M": "T",
+    "[": "Y",
+    "K": "I",
+    "N": "A"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "AFRICACRYSTAL",
+   "wordLogp": -8.12,
+   "words": "AFRICA CRYSTAL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "F",
+    "A": "R",
+    "E": "I",
+    "M": "C",
+    "[": "S",
+    "K": "T",
+    "N": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "SPORTSTORAISE",
+   "wordLogp": -8.1948,
+   "words": "SPORTS TO RAISE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "P",
+    "A": "O",
+    "E": "R",
+    "M": "T",
+    "[": "A",
+    "K": "I",
+    "N": "E"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "OVERTOTELLYOU",
+   "wordLogp": -8.2832,
+   "words": "OVER TO TELL YOU",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "V",
+    "A": "E",
+    "E": "R",
+    "M": "T",
+    "[": "L",
+    "K": "Y",
+    "N": "U"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "OPENTOTELLYOU",
+   "wordLogp": -8.3086,
+   "words": "OPEN TO TELL YOU",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "P",
+    "A": "E",
+    "E": "N",
+    "M": "T",
+    "[": "L",
+    "K": "Y",
+    "N": "U"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SPORTSTOCAUSE",
+   "wordLogp": -8.4776,
+   "words": "SPORTS TO CAUSE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "P",
+    "A": "O",
+    "E": "R",
+    "M": "T",
+    "[": "A",
+    "K": "U",
+    "N": "E"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "OVERTOTERMSOF",
+   "wordLogp": -8.4809,
+   "words": "OVER TO TERMS OF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "V",
+    "A": "E",
+    "E": "R",
+    "M": "T",
+    "[": "M",
+    "K": "S",
+    "N": "F"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ARESTATEDGOAL",
+   "wordLogp": -8.505,
+   "words": "ARE STATED GOAL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "R",
+    "A": "E",
+    "E": "S",
+    "M": "T",
+    "[": "G",
+    "K": "O",
+    "N": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "OPENTOTERMSOF",
+   "wordLogp": -8.5063,
+   "words": "OPEN TO TERMS OF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "P",
+    "A": "E",
+    "E": "N",
+    "M": "T",
+    "[": "M",
+    "K": "S",
+    "N": "F"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "ROMPARAMETERS",
+   "wordLogp": -8.555,
+   "words": "ROM PARAMETERS",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "z": "O",
+    "A": "M",
+    "E": "P",
+    "M": "A",
+    "[": "T",
+    "K": "E",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THEDATAEASYTO",
+   "wordLogp": -8.6136,
+   "words": "THE DATA EASY TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "H",
+    "A": "E",
+    "E": "D",
+    "M": "A",
+    "[": "S",
+    "K": "Y",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "THEDATAEQUITY",
+   "wordLogp": -8.6485,
+   "words": "THE DATA EQUITY",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "H",
+    "A": "E",
+    "E": "D",
+    "M": "A",
+    "[": "U",
+    "K": "I",
+    "N": "Y"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SHORTSTORYUSE",
+   "wordLogp": -8.6685,
+   "words": "SHORT STORY USE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "H",
+    "A": "O",
+    "E": "R",
+    "M": "T",
+    "[": "Y",
+    "K": "U",
+    "N": "E"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ATERMAMERICAN",
+   "wordLogp": -8.706,
+   "words": "A TERM AMERICAN",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "T",
+    "A": "E",
+    "E": "R",
+    "M": "M",
+    "[": "I",
+    "K": "C",
+    "N": "N"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "NICEANACCOUNT",
+   "wordLogp": -8.7131,
+   "words": "NICE AN ACCOUNT",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "z": "I",
+    "A": "C",
+    "E": "E",
+    "M": "A",
+    "[": "O",
+    "K": "U",
+    "N": "T"
+   }
+  }
+ ]
+}

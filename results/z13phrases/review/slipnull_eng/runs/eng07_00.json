@@ -1,0 +1,443 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:33:53.624Z",
+ "label": "eng07_00",
+ "cipher": {
+  "id": "eng07",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng07.txt",
+  "text": "abcdefghchcfd",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   0
+  ],
+  "isomorphAfterSlips": "*bcdefghchcfd"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 118,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 118,
+  "tasks": 118,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 19026,
+  "scored": 18167,
+  "keptAtLeastStreamMin": 12,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 975,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 114,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 12,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 9,
+  "4": 3
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.177314798240586,
+  "topShare": 0.18916267672364467,
+  "top10Share": 0.5827006240776178,
+  "effectiveNumberExpEntropy": 59.19287269494248,
+  "effectiveNumberInverseSimpson": 16.76647115667447,
+  "unscoredMassBoundRelative": 0.01416471895672521,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0055319129388805635
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.50": 1,
+   "-17.00": 1,
+   "-16.75": 3,
+   "-16.50": 6,
+   "-16.25": 6,
+   "-16.00": 8,
+   "-15.75": 13,
+   "-15.50": 19,
+   "-15.25": 18,
+   "-15.00": 26,
+   "-14.75": 37,
+   "-14.50": 53,
+   "-14.25": 73,
+   "-14.00": 103,
+   "-13.75": 134,
+   "-13.50": 151,
+   "-13.25": 177,
+   "-13.00": 184,
+   "-12.75": 226,
+   "-12.50": 258,
+   "-12.25": 313,
+   "-12.00": 332,
+   "-11.75": 442,
+   "-11.50": 434,
+   "-11.25": 542,
+   "-11.00": 561,
+   "-10.75": 645,
+   "-10.50": 639,
+   "-10.25": 768,
+   "-10.00": 778,
+   "-9.75": 752,
+   "-9.50": 773,
+   "-9.25": 785,
+   "-9.00": 773,
+   "-8.75": 755,
+   "-8.50": 810,
+   "-8.25": 826,
+   "-8.00": 776,
+   "-7.75": 791,
+   "-7.50": 763,
+   "-7.25": 777,
+   "-7.00": 698,
+   "-6.75": 642,
+   "-6.50": 556,
+   "-6.25": 431,
+   "-6.00": 307,
+   "-5.75": 277,
+   "-5.50": 182,
+   "-5.25": 144,
+   "-5.00": 95,
+   "-4.75": 66,
+   "-4.50": 40,
+   "-4.25": 26,
+   "-4.00": 13,
+   "-3.75": 9,
+   "-3.50": 6,
+   "-3.25": 1,
+   "-3.00": 1
+  },
+  "exactScored": {
+   "-18.50": 3,
+   "-18.25": 35,
+   "-18.00": 112,
+   "-17.75": 192,
+   "-17.50": 340,
+   "-17.25": 577,
+   "-17.00": 807,
+   "-16.75": 942,
+   "-16.50": 1033,
+   "-16.25": 1222,
+   "-16.00": 1340,
+   "-15.75": 1391,
+   "-15.50": 1472,
+   "-15.25": 1393,
+   "-15.00": 1305,
+   "-14.75": 1123,
+   "-14.50": 1027,
+   "-14.25": 823,
+   "-14.00": 678,
+   "-13.75": 557,
+   "-13.50": 413,
+   "-13.25": 349,
+   "-13.00": 282,
+   "-12.75": 190,
+   "-12.50": 160,
+   "-12.25": 113,
+   "-12.00": 86,
+   "-11.75": 59,
+   "-11.50": 52,
+   "-11.25": 32,
+   "-11.00": 20,
+   "-10.75": 11,
+   "-10.50": 11,
+   "-10.25": 4,
+   "-10.00": 7,
+   "-9.75": 1,
+   "-9.50": 4,
+   "-9.00": 1
+  },
+  "boundUnscored": {
+   "-17.50": 1,
+   "-17.00": 1,
+   "-16.75": 3,
+   "-16.50": 6,
+   "-16.25": 6,
+   "-16.00": 8,
+   "-15.75": 13,
+   "-15.50": 19,
+   "-15.25": 18,
+   "-15.00": 26,
+   "-14.75": 37,
+   "-14.50": 53,
+   "-14.25": 73,
+   "-14.00": 103,
+   "-13.75": 134,
+   "-13.50": 151,
+   "-13.25": 177,
+   "-13.00": 30
+  }
+ },
+ "timeMs": {
+  "total": 3615,
+  "setup": 403
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ADIAGNOSISINA",
+   "wordLogp": -8.9005,
+   "words": "A DIAGNOSIS IN A",
+   "unknown": 0,
+   "key": {
+    "b": "D",
+    "c": "I",
+    "d": "A",
+    "e": "G",
+    "f": "N",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THESINGLELENS",
+   "wordLogp": -9.3083,
+   "words": "THE SINGLE LENS",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "S",
+    "e": "I",
+    "f": "N",
+    "g": "G",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "AFTERHOSTSTHE",
+   "wordLogp": -9.3559,
+   "words": "AFTER HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "b": "F",
+    "c": "T",
+    "d": "E",
+    "e": "R",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "WATERHOSTSTHE",
+   "wordLogp": -9.3771,
+   "words": "WATER HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "e": "R",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "JASONTHISISTO",
+   "wordLogp": -9.384,
+   "words": "JASON THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "b": "A",
+    "c": "S",
+    "d": "O",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "SITEGHOSTSTHE",
+   "wordLogp": -9.6808,
+   "words": "SITE GHOSTS THE",
+   "unknown": 0,
+   "key": {
+    "b": "I",
+    "c": "T",
+    "d": "E",
+    "e": "G",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THEYDRIVEVERY",
+   "wordLogp": -9.7725,
+   "words": "THEY DRIVE VERY",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "Y",
+    "e": "D",
+    "f": "R",
+    "g": "I",
+    "h": "V"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "IDIAGNOSISINA",
+   "wordLogp": -9.7865,
+   "words": "I DIAGNOSIS IN A",
+   "unknown": 0,
+   "key": {
+    "b": "D",
+    "c": "I",
+    "d": "A",
+    "e": "G",
+    "f": "N",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "LATERHOSTSTHE",
+   "wordLogp": -9.8017,
+   "words": "LATER HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "e": "R",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "DATEGHOSTSTHE",
+   "wordLogp": -9.8171,
+   "words": "DATE GHOSTS THE",
+   "unknown": 0,
+   "key": {
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "e": "G",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "RATEDHOSTSTHE",
+   "wordLogp": -9.8175,
+   "words": "RATED HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "e": "D",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "OFTENHOSTSTHE",
+   "wordLogp": -9.8177,
+   "words": "OFTEN HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "b": "F",
+    "c": "T",
+    "d": "E",
+    "e": "N",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  }
+ ]
+}

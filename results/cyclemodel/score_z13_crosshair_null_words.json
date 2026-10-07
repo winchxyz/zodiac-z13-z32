@@ -1,0 +1,3475 @@
+{
+ "tool": "tools/cyclemodel_score.js",
+ "created": "2026-10-07T14:42:31.362Z",
+ "command": "node tools/cyclemodel_score.js --cipher data/ciphers/variants/z13.crosshair_null.txt --in results/cyclemodel/enum_z13_crosshair_null_simple.tsv --in results/cyclemodel/enum_z13_crosshair_null_homophonic.tsv --track 3,8 --top 60 --out results/cyclemodel/score_z13_crosshair_null_words.json",
+ "cipher": {
+  "source": "data/ciphers/variants/z13.crosshair_null.txt",
+  "text": "AEN0K0M0[NAM",
+  "isomorph": "abcdedfdgcaf",
+  "rows": "12"
+ },
+ "inputs": [
+  "results/cyclemodel/enum_z13_crosshair_null_simple.tsv",
+  "results/cyclemodel/enum_z13_crosshair_null_homophonic.tsv"
+ ],
+ "model": "results/cyclemodel/fit.json",
+ "hyp": {
+  "kind": "homophonic",
+  "S": [
+   20,
+   26,
+   30,
+   35,
+   40,
+   45,
+   50,
+   54,
+   58,
+   63,
+   68
+  ],
+  "regimes": [
+   "z408p12",
+   "z340",
+   "z408p3"
+  ]
+ },
+ "counts": {
+  "read": 1119904,
+  "droppedBelowLmWindow": 22529,
+  "lmWindow": 12,
+  "maxLM": -7.994098368403389,
+  "candidates": 890712,
+  "skipped": 0,
+  "inconsistentWithIsomorph": 0,
+  "simpleFits": 206651,
+  "approximatedPatterns": 514
+ },
+ "evidence": {
+  "note": "log10 sum over the listed candidates of 10^lm * L_H(P); comparable between hypotheses on the same list (same normalisation)",
+  "simple": -8.176421428196315,
+  "homophonicSmallS": -9.739333121259138,
+  "homophonicZodiacSize": -11.735574398524818,
+  "homophonicMixture": -9.998838211466712,
+  "perRegime": {
+   "z408p12": -10.09994264243141,
+   "z340": -10.056480026071874,
+   "z408p3": -9.874339368202834
+  },
+  "lmOnly": -7.452935415857963
+ },
+ "concentration": {
+  "lm": {
+   "top1": 0.2876,
+   "top10": 0.5221,
+   "top100": 0.8095,
+   "effectiveN": 10.9
+  },
+  "post": {
+   "top1": 0.1415,
+   "top10": 0.5216,
+   "top100": 0.8082,
+   "effectiveN": 22.8
+  },
+  "postComb": {
+   "top1": 0.1951,
+   "top10": 0.6549,
+   "top100": 0.8686,
+   "effectiveN": 13.5
+  }
+ },
+ "lmTopMoves": [
+  {
+   "k": 10,
+   "meanLog10RankChange": 0.559,
+   "stillInTopK": 4
+  },
+  {
+   "k": 100,
+   "meanLog10RankChange": 0.361,
+   "stillInTopK": 54
+  },
+  {
+   "k": 1000,
+   "meanLog10RankChange": 0.358,
+   "stillInTopK": 533
+  }
+ ],
+ "letterPosterior": {
+  "lm": [
+   {
+    "position": 3,
+    "symbol": "0",
+    "letters": {
+     "A": 0.4246,
+     "O": 0.187,
+     "T": 0.1594,
+     "E": 0.0585,
+     "N": 0.043,
+     "S": 0.0359,
+     "H": 0.0277,
+     "I": 0.0261,
+     "B": 0.017
+    }
+   },
+   {
+    "position": 8,
+    "symbol": "[",
+    "letters": {
+     "D": 0.3271,
+     "T": 0.1189,
+     "H": 0.0903,
+     "E": 0.0648,
+     "R": 0.0516,
+     "U": 0.0506,
+     "A": 0.0486,
+     "O": 0.0384,
+     "S": 0.031,
+     "L": 0.0309,
+     "F": 0.029,
+     "N": 0.0247,
+     "C": 0.0184,
+     "Y": 0.0175,
+     "W": 0.0164,
+     "G": 0.0123,
+     "I": 0.0097,
+     "M": 0.007
+    }
+   }
+  ],
+  "post": [
+   {
+    "position": 3,
+    "symbol": "0",
+    "letters": {
+     "O": 0.4816,
+     "A": 0.1372,
+     "H": 0.0511,
+     "V": 0.0491,
+     "N": 0.0483,
+     "T": 0.0477,
+     "B": 0.0415,
+     "R": 0.0322,
+     "E": 0.0316,
+     "S": 0.027,
+     "I": 0.022,
+     "C": 0.0078,
+     "U": 0.0057
+    }
+   },
+   {
+    "position": 8,
+    "symbol": "[",
+    "letters": {
+     "U": 0.2201,
+     "E": 0.1327,
+     "F": 0.1262,
+     "T": 0.1065,
+     "D": 0.0827,
+     "O": 0.0493,
+     "N": 0.0442,
+     "L": 0.0405,
+     "A": 0.0378,
+     "Y": 0.0316,
+     "R": 0.0312,
+     "S": 0.026,
+     "C": 0.0163,
+     "I": 0.0135,
+     "W": 0.0114,
+     "G": 0.0079,
+     "H": 0.0053
+    }
+   }
+  ],
+  "postComb": [
+   {
+    "position": 3,
+    "symbol": "0",
+    "letters": {
+     "O": 0.6068,
+     "E": 0.1204,
+     "A": 0.1057,
+     "B": 0.0698,
+     "N": 0.024,
+     "I": 0.021,
+     "S": 0.0209,
+     "T": 0.0205
+    }
+   },
+   {
+    "position": 8,
+    "symbol": "[",
+    "letters": {
+     "T": 0.2423,
+     "U": 0.1756,
+     "F": 0.126,
+     "L": 0.0734,
+     "Y": 0.0717,
+     "S": 0.0584,
+     "N": 0.0482,
+     "R": 0.0384,
+     "D": 0.0338,
+     "A": 0.0203,
+     "C": 0.0172,
+     "W": 0.0151,
+     "M": 0.0108,
+     "E": 0.0104,
+     "G": 0.0102,
+     "I": 0.0102,
+     "B": 0.0077,
+     "X": 0.0067,
+     "P": 0.0066,
+     "O": 0.0062,
+     "K": 0.0056
+    }
+   }
+  ]
+ },
+ "topLM": [
+  {
+   "plaintext": "ASIACANADIAN",
+   "words": "ASIA CANADIAN",
+   "lm": -7.994,
+   "logL": -3.508,
+   "logLzodiacSize": -4.767,
+   "logLperRegime": {
+    "z408p12": -5.595,
+    "z340": -3.406,
+    "z408p3": -3.27
+   },
+   "simpleFit": false,
+   "post": -11.502,
+   "postComb": -11.803,
+   "rankLM": 1,
+   "rankPost": 6,
+   "rankComb": 128
+  },
+  {
+   "plaintext": "THETOTOTHETO",
+   "words": "THE TO TO THE TO",
+   "lm": -8.691,
+   "logL": -4.789,
+   "logLzodiacSize": -4.948,
+   "logLperRegime": {
+    "z408p12": -8.568,
+    "z340": -5.372,
+    "z408p3": -4.351
+   },
+   "simpleFit": false,
+   "post": -13.48,
+   "postComb": -13.781,
+   "rankLM": 2,
+   "rankPost": 208,
+   "rankComb": 2376
+  },
+  {
+   "plaintext": "ECHOFOROTHER",
+   "words": "ECHO FOR OTHER",
+   "lm": -8.881,
+   "logL": -2.41,
+   "logLzodiacSize": -4.973,
+   "logLperRegime": {
+    "z408p12": -2.593,
+    "z340": -2.554,
+    "z408p3": -2.199
+   },
+   "simpleFit": true,
+   "post": -11.291,
+   "postComb": -9.181,
+   "rankLM": 3,
+   "rankPost": 3,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "APHOTOTOTHAT",
+   "words": "A PHOTO TO THAT",
+   "lm": -8.971,
+   "logL": -3.272,
+   "logLzodiacSize": -4.979,
+   "logLperRegime": {
+    "z408p12": -3.871,
+    "z340": -3.109,
+    "z408p3": -3.161
+   },
+   "simpleFit": false,
+   "post": -12.243,
+   "postComb": -12.544,
+   "rankLM": 4,
+   "rankPost": 22,
+   "rankComb": 466
+  },
+  {
+   "plaintext": "THATSTATEATA",
+   "words": "THAT STATE AT A",
+   "lm": -9.098,
+   "logL": -3.145,
+   "logLzodiacSize": -4.228,
+   "logLperRegime": {
+    "z408p12": -5.061,
+    "z340": -3.057,
+    "z408p3": -2.898
+   },
+   "simpleFit": false,
+   "post": -12.243,
+   "postComb": -12.544,
+   "rankLM": 5,
+   "rankPost": 21,
+   "rankComb": 465
+  },
+  {
+   "plaintext": "ALSODOYOUSAY",
+   "words": "ALSO DO YOU SAY",
+   "lm": -9.108,
+   "logL": -1.74,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.788,
+    "z340": -1.779,
+    "z408p3": -1.665
+   },
+   "simpleFit": true,
+   "post": -10.848,
+   "postComb": -9.401,
+   "rankLM": 6,
+   "rankPost": 1,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "IPHOTOSOFHIS",
+   "words": "I PHOTOS OF HIS",
+   "lm": -9.156,
+   "logL": -1.813,
+   "logLzodiacSize": -4.978,
+   "logLperRegime": {
+    "z408p12": -1.857,
+    "z340": -1.849,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -10.969,
+   "postComb": -9.45,
+   "rankLM": 7,
+   "rankPost": 2,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "BUTNONENOTBE",
+   "words": "BUT NONE NOT BE",
+   "lm": -9.251,
+   "logL": -2.739,
+   "logLzodiacSize": -4.232,
+   "logLperRegime": {
+    "z408p12": -2.964,
+    "z340": -2.92,
+    "z408p3": -2.497
+   },
+   "simpleFit": false,
+   "post": -11.99,
+   "postComb": -12.291,
+   "rankLM": 8,
+   "rankPost": 15,
+   "rankComb": 308
+  },
+  {
+   "plaintext": "TEETHTOTHETO",
+   "words": "TEETH TO THE TO",
+   "lm": -9.271,
+   "logL": -4.488,
+   "logLzodiacSize": -4.953,
+   "logLperRegime": {
+    "z408p12": -7.626,
+    "z340": -4.675,
+    "z408p3": -4.117
+   },
+   "simpleFit": false,
+   "post": -13.759,
+   "postComb": -14.06,
+   "rankLM": 9,
+   "rankPost": 344,
+   "rankComb": 3418
+  },
+  {
+   "plaintext": "ALLINITIALAT",
+   "words": "ALL INITIAL AT",
+   "lm": -9.328,
+   "logL": -3.586,
+   "logLzodiacSize": -4.791,
+   "logLperRegime": {
+    "z408p12": -4.583,
+    "z340": -3.558,
+    "z408p3": -3.323
+   },
+   "simpleFit": false,
+   "post": -12.914,
+   "postComb": -13.215,
+   "rankLM": 10,
+   "rankPost": 79,
+   "rankComb": 1144
+  },
+  {
+   "plaintext": "HOTBABEBYTHE",
+   "words": "HOT BABE BY THE",
+   "lm": -9.35,
+   "logL": -2.346,
+   "logLzodiacSize": -3.327,
+   "logLperRegime": {
+    "z408p12": -2.621,
+    "z340": -2.575,
+    "z408p3": -2.073
+   },
+   "simpleFit": true,
+   "post": -11.696,
+   "postComb": -9.649,
+   "rankLM": 11,
+   "rankPost": 11,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "WITHTHEHOTWE",
+   "words": "WITH THE HOT WE",
+   "lm": -9.351,
+   "logL": -2.255,
+   "logLzodiacSize": -4.147,
+   "logLperRegime": {
+    "z408p12": -2.436,
+    "z340": -2.447,
+    "z408p3": -2.025
+   },
+   "simpleFit": false,
+   "post": -11.606,
+   "postComb": -11.907,
+   "rankLM": 12,
+   "rankPost": 8,
+   "rankComb": 156
+  },
+  {
+   "plaintext": "APHOTOTOWHAT",
+   "words": "A PHOTO TO WHAT",
+   "lm": -9.371,
+   "logL": -2.979,
+   "logLzodiacSize": -5.038,
+   "logLperRegime": {
+    "z408p12": -3.942,
+    "z340": -2.899,
+    "z408p3": -2.752
+   },
+   "simpleFit": false,
+   "post": -12.351,
+   "postComb": -12.652,
+   "rankLM": 13,
+   "rankPost": 30,
+   "rankComb": 543
+  },
+  {
+   "plaintext": "SAYACATALYST",
+   "words": "SAY A CATALYST",
+   "lm": -9.432,
+   "logL": -3.596,
+   "logLzodiacSize": -4.357,
+   "logLperRegime": {
+    "z408p12": -5.783,
+    "z340": -3.614,
+    "z408p3": -3.287
+   },
+   "simpleFit": false,
+   "post": -13.028,
+   "postComb": -13.329,
+   "rankLM": 14,
+   "rankPost": 99,
+   "rankComb": 1331
+  },
+  {
+   "plaintext": "ARIACANADIAN",
+   "words": "ARIA CANADIAN",
+   "lm": -9.446,
+   "logL": -3.508,
+   "logLzodiacSize": -4.767,
+   "logLperRegime": {
+    "z408p12": -5.595,
+    "z340": -3.406,
+    "z408p3": -3.27
+   },
+   "simpleFit": false,
+   "post": -12.954,
+   "postComb": -13.255,
+   "rankLM": 15,
+   "rankPost": 87,
+   "rankComb": 1218
+  },
+  {
+   "plaintext": "THATITATDATA",
+   "words": "THAT IT AT DATA",
+   "lm": -9.453,
+   "logL": -3.145,
+   "logLzodiacSize": -4.228,
+   "logLperRegime": {
+    "z408p12": -5.061,
+    "z340": -3.057,
+    "z408p3": -2.898
+   },
+   "simpleFit": false,
+   "post": -12.598,
+   "postComb": -12.899,
+   "rankLM": 16,
+   "rankPost": 45,
+   "rankComb": 759
+  },
+  {
+   "plaintext": "ENDOFOROLDER",
+   "words": "END OF OR OLDER",
+   "lm": -9.468,
+   "logL": -2.301,
+   "logLzodiacSize": -4.889,
+   "logLperRegime": {
+    "z408p12": -2.485,
+    "z340": -2.444,
+    "z408p3": -2.09
+   },
+   "simpleFit": true,
+   "post": -11.769,
+   "postComb": -9.767,
+   "rankLM": 17,
+   "rankPost": 12,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "RAINANENTIRE",
+   "words": "RAIN AN ENTIRE",
+   "lm": -9.525,
+   "logL": -2.637,
+   "logLzodiacSize": -5.026,
+   "logLperRegime": {
+    "z408p12": -2.819,
+    "z340": -2.778,
+    "z408p3": -2.428
+   },
+   "simpleFit": false,
+   "post": -12.162,
+   "postComb": -12.463,
+   "rankLM": 18,
+   "rankPost": 17,
+   "rankComb": 406
+  },
+  {
+   "plaintext": "TOSTATETASTE",
+   "words": "TO STATE TASTE",
+   "lm": -9.555,
+   "logL": -4.165,
+   "logLzodiacSize": -4.892,
+   "logLperRegime": {
+    "z408p12": -6.592,
+    "z340": -4.356,
+    "z408p3": -3.793
+   },
+   "simpleFit": false,
+   "post": -13.72,
+   "postComb": -14.021,
+   "rankLM": 19,
+   "rankPost": 323,
+   "rankComb": 3238
+  },
+  {
+   "plaintext": "AREASASAREAS",
+   "words": "AREAS AS AREAS",
+   "lm": -9.581,
+   "logL": -4.8,
+   "logLzodiacSize": -4.877,
+   "logLperRegime": {
+    "z408p12": -8.652,
+    "z340": -5.431,
+    "z408p3": -4.358
+   },
+   "simpleFit": false,
+   "post": -14.38,
+   "postComb": -14.681,
+   "rankLM": 20,
+   "rankPost": 896,
+   "rankComb": 7048
+  },
+  {
+   "plaintext": "ALSOTOYOUSAY",
+   "words": "ALSO TO YOU SAY",
+   "lm": -9.584,
+   "logL": -1.74,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.788,
+    "z340": -1.779,
+    "z408p3": -1.665
+   },
+   "simpleFit": true,
+   "post": -11.324,
+   "postComb": -9.877,
+   "rankLM": 21,
+   "rankPost": 5,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "ENDOFORORDER",
+   "words": "END OF OR ORDER",
+   "lm": -9.698,
+   "logL": -2.7,
+   "logLzodiacSize": -4.437,
+   "logLperRegime": {
+    "z408p12": -2.873,
+    "z340": -2.882,
+    "z408p3": -2.477
+   },
+   "simpleFit": false,
+   "post": -12.398,
+   "postComb": -12.699,
+   "rankLM": 22,
+   "rankPost": 36,
+   "rankComb": 575
+  },
+  {
+   "plaintext": "PHASESESCAPE",
+   "words": "PHASES ESCAPE",
+   "lm": -9.704,
+   "logL": -2.552,
+   "logLzodiacSize": -4.228,
+   "logLperRegime": {
+    "z408p12": -3.455,
+    "z340": -2.564,
+    "z408p3": -2.272
+   },
+   "simpleFit": false,
+   "post": -12.256,
+   "postComb": -12.557,
+   "rankLM": 23,
+   "rankPost": 23,
+   "rankComb": 475
+  },
+  {
+   "plaintext": "THETATOTHETO",
+   "words": "THETA TO THE TO",
+   "lm": -9.711,
+   "logL": -4.386,
+   "logLzodiacSize": -4.896,
+   "logLperRegime": {
+    "z408p12": -6.871,
+    "z340": -4.636,
+    "z408p3": -3.999
+   },
+   "simpleFit": false,
+   "post": -14.097,
+   "postComb": -14.398,
+   "rankLM": 24,
+   "rankPost": 609,
+   "rankComb": 5103
+  },
+  {
+   "plaintext": "TRYTOTOTRYTO",
+   "words": "TRY TO TO TRY TO",
+   "lm": -9.724,
+   "logL": -3.945,
+   "logLzodiacSize": -4.227,
+   "logLperRegime": {
+    "z408p12": -7.025,
+    "z340": -4.07,
+    "z408p3": -3.593
+   },
+   "simpleFit": false,
+   "post": -13.669,
+   "postComb": -13.97,
+   "rankLM": 25,
+   "rankPost": 289,
+   "rankComb": 3068
+  },
+  {
+   "plaintext": "OFHEREWESHOW",
+   "words": "OF HERE WE SHOW",
+   "lm": -9.727,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.174,
+   "postComb": -10.026,
+   "rankLM": 26,
+   "rankPost": 18,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "TOASTSESTATE",
+   "words": "TOASTS ESTATE",
+   "lm": -9.737,
+   "logL": -3.524,
+   "logLzodiacSize": -4.953,
+   "logLperRegime": {
+    "z408p12": -3.481,
+    "z340": -3.705,
+    "z408p3": -3.431
+   },
+   "simpleFit": false,
+   "post": -13.261,
+   "postComb": -13.562,
+   "rankLM": 27,
+   "rankPost": 138,
+   "rankComb": 1805
+  },
+  {
+   "plaintext": "INCANADAACID",
+   "words": "IN CANADA ACID",
+   "lm": -9.746,
+   "logL": -3.708,
+   "logLzodiacSize": -4.423,
+   "logLperRegime": {
+    "z408p12": -5.521,
+    "z340": -4.982,
+    "z408p3": -3.241
+   },
+   "simpleFit": false,
+   "post": -13.455,
+   "postComb": -13.756,
+   "rankLM": 28,
+   "rankPost": 201,
+   "rankComb": 2308
+  },
+  {
+   "plaintext": "FOOTSTATEOFA",
+   "words": "FOOT STATE OF A",
+   "lm": -9.764,
+   "logL": -3.074,
+   "logLzodiacSize": -4.345,
+   "logLperRegime": {
+    "z408p12": -4.054,
+    "z340": -2.986,
+    "z408p3": -2.851
+   },
+   "simpleFit": false,
+   "post": -12.837,
+   "postComb": -13.138,
+   "rankLM": 29,
+   "rankPost": 66,
+   "rankComb": 1045
+  },
+  {
+   "plaintext": "EIGHTHTHEGET",
+   "words": "EIGHTH THE GET",
+   "lm": -9.796,
+   "logL": -2.586,
+   "logLzodiacSize": -4.305,
+   "logLperRegime": {
+    "z408p12": -3.507,
+    "z340": -2.565,
+    "z408p3": -2.323
+   },
+   "simpleFit": false,
+   "post": -12.382,
+   "postComb": -12.683,
+   "rankLM": 30,
+   "rankPost": 34,
+   "rankComb": 568
+  },
+  {
+   "plaintext": "SURVIVEVERSE",
+   "words": "SURVIVE VERSE",
+   "lm": -9.82,
+   "logL": -1.488,
+   "logLzodiacSize": -3.209,
+   "logLperRegime": {
+    "z408p12": -1.53,
+    "z340": -1.588,
+    "z408p3": -1.375
+   },
+   "simpleFit": false,
+   "post": -11.308,
+   "postComb": -11.609,
+   "rankLM": 31,
+   "rankPost": 4,
+   "rankComb": 102
+  },
+  {
+   "plaintext": "ALLUNUSUALAS",
+   "words": "ALL UNUSUAL AS",
+   "lm": -9.844,
+   "logL": -2.756,
+   "logLzodiacSize": -3.498,
+   "logLperRegime": {
+    "z408p12": -3.739,
+    "z340": -2.723,
+    "z408p3": -2.496
+   },
+   "simpleFit": false,
+   "post": -12.599,
+   "postComb": -12.9,
+   "rankLM": 32,
+   "rankPost": 46,
+   "rankComb": 761
+  },
+  {
+   "plaintext": "TEASESESTATE",
+   "words": "TEASES ESTATE",
+   "lm": -9.846,
+   "logL": -3.209,
+   "logLzodiacSize": -4.962,
+   "logLperRegime": {
+    "z408p12": -4.023,
+    "z340": -3.037,
+    "z408p3": -3.076
+   },
+   "simpleFit": false,
+   "post": -13.056,
+   "postComb": -13.357,
+   "rankLM": 33,
+   "rankPost": 105,
+   "rankComb": 1379
+  },
+  {
+   "plaintext": "IPHOTOSONHIS",
+   "words": "I PHOTOS ON HIS",
+   "lm": -9.853,
+   "logL": -1.813,
+   "logLzodiacSize": -4.978,
+   "logLperRegime": {
+    "z408p12": -1.857,
+    "z340": -1.849,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -11.666,
+   "postComb": -10.148,
+   "rankLM": 34,
+   "rankPost": 9,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "THISUSESSITE",
+   "words": "THIS USES SITE",
+   "lm": -9.869,
+   "logL": -4.716,
+   "logLzodiacSize": -5.097,
+   "logLperRegime": {
+    "z408p12": -7.058,
+    "z340": -6.478,
+    "z408p3": -4.242
+   },
+   "simpleFit": false,
+   "post": -14.585,
+   "postComb": -14.886,
+   "rankLM": 35,
+   "rankPost": 1204,
+   "rankComb": 8739
+  },
+  {
+   "plaintext": "ELSEHEREUSER",
+   "words": "ELSE HERE USER",
+   "lm": -9.871,
+   "logL": -3.41,
+   "logLzodiacSize": -4.986,
+   "logLperRegime": {
+    "z408p12": -5.496,
+    "z340": -3.36,
+    "z408p3": -3.138
+   },
+   "simpleFit": false,
+   "post": -13.281,
+   "postComb": -13.582,
+   "rankLM": 36,
+   "rankPost": 146,
+   "rankComb": 1862
+  },
+  {
+   "plaintext": "AREAWASAREAS",
+   "words": "AREA WAS AREAS",
+   "lm": -9.873,
+   "logL": -4.314,
+   "logLzodiacSize": -4.823,
+   "logLperRegime": {
+    "z408p12": -6.848,
+    "z340": -4.59,
+    "z408p3": -3.921
+   },
+   "simpleFit": false,
+   "post": -14.187,
+   "postComb": -14.488,
+   "rankLM": 37,
+   "rankPost": 690,
+   "rankComb": 5654
+  },
+  {
+   "plaintext": "AREAMANAGEAN",
+   "words": "AREA MANAGE AN",
+   "lm": -9.904,
+   "logL": -4.039,
+   "logLzodiacSize": -4.768,
+   "logLperRegime": {
+    "z408p12": -6.454,
+    "z340": -4.212,
+    "z408p3": -3.673
+   },
+   "simpleFit": false,
+   "post": -13.943,
+   "postComb": -14.244,
+   "rankLM": 38,
+   "rankPost": 478,
+   "rankComb": 4250
+  },
+  {
+   "plaintext": "ONHEREWESHOW",
+   "words": "ON HERE WE SHOW",
+   "lm": -9.928,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.376,
+   "postComb": -10.228,
+   "rankLM": 39,
+   "rankPost": 33,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "OTTAWAFACTOF",
+   "words": "OTTAWA FACT OF",
+   "lm": -9.973,
+   "logL": -2.782,
+   "logLzodiacSize": -4.347,
+   "logLperRegime": {
+    "z408p12": -3.726,
+    "z340": -2.697,
+    "z408p3": -2.56
+   },
+   "simpleFit": false,
+   "post": -12.755,
+   "postComb": -13.056,
+   "rankLM": 40,
+   "rankPost": 55,
+   "rankComb": 938
+  },
+  {
+   "plaintext": "THATITSTHATS",
+   "words": "THAT ITS THATS",
+   "lm": -9.988,
+   "logL": -3.891,
+   "logLzodiacSize": -4.892,
+   "logLperRegime": {
+    "z408p12": -6.01,
+    "z340": -3.828,
+    "z408p3": -3.627
+   },
+   "simpleFit": false,
+   "post": -13.879,
+   "postComb": -14.18,
+   "rankLM": 41,
+   "rankPost": 436,
+   "rankComb": 3943
+  },
+  {
+   "plaintext": "APHOTOSOFHAS",
+   "words": "A PHOTOS OF HAS",
+   "lm": -10.003,
+   "logL": -1.926,
+   "logLzodiacSize": -4.979,
+   "logLperRegime": {
+    "z408p12": -1.98,
+    "z340": -1.97,
+    "z408p3": -1.843
+   },
+   "simpleFit": true,
+   "post": -11.929,
+   "postComb": -10.299,
+   "rankLM": 42,
+   "rankPost": 13,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "WITHTHEHITWE",
+   "words": "WITH THE HIT WE",
+   "lm": -10.013,
+   "logL": -2.584,
+   "logLzodiacSize": -4.203,
+   "logLperRegime": {
+    "z408p12": -2.796,
+    "z340": -2.797,
+    "z408p3": -2.335
+   },
+   "simpleFit": false,
+   "post": -12.597,
+   "postComb": -12.898,
+   "rankLM": 43,
+   "rankPost": 44,
+   "rankComb": 757
+  },
+  {
+   "plaintext": "ISLAMABADLIB",
+   "words": "ISLAMABAD LIB",
+   "lm": -10.014,
+   "logL": -1.556,
+   "logLzodiacSize": -4.032,
+   "logLperRegime": {
+    "z408p12": -1.586,
+    "z340": -1.581,
+    "z408p3": -1.504
+   },
+   "simpleFit": true,
+   "post": -11.569,
+   "postComb": -10.303,
+   "rankLM": 44,
+   "rankPost": 7,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "THISUSESUITE",
+   "words": "THIS USE SUITE",
+   "lm": -10.02,
+   "logL": -3.57,
+   "logLzodiacSize": -5.174,
+   "logLperRegime": {
+    "z408p12": -3.788,
+    "z340": -3.747,
+    "z408p3": -3.332
+   },
+   "simpleFit": false,
+   "post": -13.59,
+   "postComb": -13.891,
+   "rankLM": 45,
+   "rankPost": 254,
+   "rankComb": 2762
+  },
+  {
+   "plaintext": "MOSTSTATESMA",
+   "words": "MOST STATES MA",
+   "lm": -10.024,
+   "logL": -2.268,
+   "logLzodiacSize": -3.956,
+   "logLperRegime": {
+    "z408p12": -2.27,
+    "z340": -2.325,
+    "z408p3": -2.216
+   },
+   "simpleFit": false,
+   "post": -12.292,
+   "postComb": -12.593,
+   "rankLM": 46,
+   "rankPost": 26,
+   "rankComb": 500
+  },
+  {
+   "plaintext": "OVERORFREEOF",
+   "words": "OVER OR FREE OF",
+   "lm": -10.029,
+   "logL": -1.644,
+   "logLzodiacSize": -3.859,
+   "logLperRegime": {
+    "z408p12": -1.636,
+    "z340": -1.764,
+    "z408p3": -1.558
+   },
+   "simpleFit": false,
+   "post": -11.673,
+   "postComb": -11.974,
+   "rankLM": 47,
+   "rankPost": 10,
+   "rankComb": 181
+  },
+  {
+   "plaintext": "OTTAWASANTOS",
+   "words": "OTTAWA SANTOS",
+   "lm": -10.044,
+   "logL": -2.969,
+   "logLzodiacSize": -5.036,
+   "logLperRegime": {
+    "z408p12": -3.921,
+    "z340": -2.879,
+    "z408p3": -2.75
+   },
+   "simpleFit": false,
+   "post": -13.013,
+   "postComb": -13.314,
+   "rankLM": 48,
+   "rankPost": 98,
+   "rankComb": 1303
+  },
+  {
+   "plaintext": "WITHTHEHATWE",
+   "words": "WITH THE HAT WE",
+   "lm": -10.045,
+   "logL": -2.255,
+   "logLzodiacSize": -4.147,
+   "logLperRegime": {
+    "z408p12": -2.436,
+    "z340": -2.447,
+    "z408p3": -2.025
+   },
+   "simpleFit": false,
+   "post": -12.3,
+   "postComb": -12.601,
+   "rankLM": 49,
+   "rankPost": 27,
+   "rankComb": 509
+  },
+  {
+   "plaintext": "AREAHASAREAS",
+   "words": "AREA HAS AREAS",
+   "lm": -10.06,
+   "logL": -4.314,
+   "logLzodiacSize": -4.823,
+   "logLperRegime": {
+    "z408p12": -6.848,
+    "z340": -4.59,
+    "z408p3": -3.921
+   },
+   "simpleFit": false,
+   "post": -14.374,
+   "postComb": -14.675,
+   "rankLM": 50,
+   "rankPost": 887,
+   "rankComb": 7001
+  },
+  {
+   "plaintext": "ALSODONOTSAN",
+   "words": "ALSO DO NOT SAN",
+   "lm": -10.091,
+   "logL": -1.952,
+   "logLzodiacSize": -4.98,
+   "logLperRegime": {
+    "z408p12": -2.008,
+    "z340": -1.997,
+    "z408p3": -1.866
+   },
+   "simpleFit": true,
+   "post": -12.043,
+   "postComb": -10.387,
+   "rankLM": 51,
+   "rankPost": 16,
+   "rankComb": 12
+  },
+  {
+   "plaintext": "THISISASUITA",
+   "words": "THIS IS A SUIT A",
+   "lm": -10.103,
+   "logL": -2.335,
+   "logLzodiacSize": -4.602,
+   "logLperRegime": {
+    "z408p12": -2.374,
+    "z340": -2.42,
+    "z408p3": -2.233
+   },
+   "simpleFit": false,
+   "post": -12.438,
+   "postComb": -12.739,
+   "rankLM": 52,
+   "rankPost": 38,
+   "rankComb": 601
+  },
+  {
+   "plaintext": "AVIACANADIAN",
+   "words": "A VIA CANADIAN",
+   "lm": -10.105,
+   "logL": -3.508,
+   "logLzodiacSize": -4.767,
+   "logLperRegime": {
+    "z408p12": -5.595,
+    "z340": -3.406,
+    "z408p3": -3.27
+   },
+   "simpleFit": false,
+   "post": -13.613,
+   "postComb": -13.914,
+   "rankLM": 53,
+   "rankPost": 273,
+   "rankComb": 2857
+  },
+  {
+   "plaintext": "HOTBABEBETHE",
+   "words": "HOT BABE BE THE",
+   "lm": -10.115,
+   "logL": -1.835,
+   "logLzodiacSize": -3.294,
+   "logLperRegime": {
+    "z408p12": -1.908,
+    "z340": -1.958,
+    "z408p3": -1.688
+   },
+   "simpleFit": false,
+   "post": -11.949,
+   "postComb": -12.251,
+   "rankLM": 54,
+   "rankPost": 14,
+   "rankComb": 293
+  },
+  {
+   "plaintext": "RAININENTIRE",
+   "words": "RAIN IN ENTIRE",
+   "lm": -10.116,
+   "logL": -2.588,
+   "logLzodiacSize": -4.615,
+   "logLperRegime": {
+    "z408p12": -2.758,
+    "z340": -2.769,
+    "z408p3": -2.367
+   },
+   "simpleFit": false,
+   "post": -12.704,
+   "postComb": -13.005,
+   "rankLM": 55,
+   "rankPost": 52,
+   "rankComb": 881
+  },
+  {
+   "plaintext": "OTTAWAFASTOF",
+   "words": "OTTAWA FAST OF",
+   "lm": -10.166,
+   "logL": -2.782,
+   "logLzodiacSize": -4.347,
+   "logLperRegime": {
+    "z408p12": -3.726,
+    "z340": -2.697,
+    "z408p3": -2.56
+   },
+   "simpleFit": false,
+   "post": -12.949,
+   "postComb": -13.25,
+   "rankLM": 56,
+   "rankPost": 85,
+   "rankComb": 1206
+  },
+  {
+   "plaintext": "GUESTSOSWEGO",
+   "words": "GUESTS OSWEGO",
+   "lm": -10.177,
+   "logL": -2.234,
+   "logLzodiacSize": -4.272,
+   "logLperRegime": {
+    "z408p12": -2.443,
+    "z340": -2.399,
+    "z408p3": -2.004
+   },
+   "simpleFit": true,
+   "post": -12.411,
+   "postComb": -10.476,
+   "rankLM": 57,
+   "rankPost": 37,
+   "rankComb": 13
+  },
+  {
+   "plaintext": "ALSOSOYOUSAY",
+   "words": "ALSO SO YOU SAY",
+   "lm": -10.194,
+   "logL": -2.034,
+   "logLzodiacSize": -3.849,
+   "logLperRegime": {
+    "z408p12": -2.038,
+    "z340": -2.091,
+    "z408p3": -1.98
+   },
+   "simpleFit": false,
+   "post": -12.228,
+   "postComb": -12.529,
+   "rankLM": 58,
+   "rankPost": 20,
+   "rankComb": 452
+  },
+  {
+   "plaintext": "ASIANANASIAN",
+   "words": "ASIAN AN ASIAN",
+   "lm": -10.213,
+   "logL": -4.443,
+   "logLzodiacSize": -4.876,
+   "logLperRegime": {
+    "z408p12": -7.659,
+    "z340": -4.476,
+    "z408p3": -4.126
+   },
+   "simpleFit": false,
+   "post": -14.655,
+   "postComb": -14.956,
+   "rankLM": 59,
+   "rankPost": 1356,
+   "rankComb": 9406
+  },
+  {
+   "plaintext": "THENONONCETO",
+   "words": "THE NON ONCE TO",
+   "lm": -10.22,
+   "logL": -3.696,
+   "logLzodiacSize": -5.032,
+   "logLperRegime": {
+    "z408p12": -4.931,
+    "z340": -3.817,
+    "z408p3": -3.357
+   },
+   "simpleFit": false,
+   "post": -13.916,
+   "postComb": -14.217,
+   "rankLM": 60,
+   "rankPost": 457,
+   "rankComb": 4119
+  }
+ ],
+ "topPost": [
+  {
+   "plaintext": "ALSODOYOUSAY",
+   "words": "ALSO DO YOU SAY",
+   "lm": -9.108,
+   "logL": -1.74,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.788,
+    "z340": -1.779,
+    "z408p3": -1.665
+   },
+   "simpleFit": true,
+   "post": -10.848,
+   "postComb": -9.401,
+   "rankLM": 6,
+   "rankPost": 1,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "IPHOTOSOFHIS",
+   "words": "I PHOTOS OF HIS",
+   "lm": -9.156,
+   "logL": -1.813,
+   "logLzodiacSize": -4.978,
+   "logLperRegime": {
+    "z408p12": -1.857,
+    "z340": -1.849,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -10.969,
+   "postComb": -9.45,
+   "rankLM": 7,
+   "rankPost": 2,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "ECHOFOROTHER",
+   "words": "ECHO FOR OTHER",
+   "lm": -8.881,
+   "logL": -2.41,
+   "logLzodiacSize": -4.973,
+   "logLperRegime": {
+    "z408p12": -2.593,
+    "z340": -2.554,
+    "z408p3": -2.199
+   },
+   "simpleFit": true,
+   "post": -11.291,
+   "postComb": -9.181,
+   "rankLM": 3,
+   "rankPost": 3,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "SURVIVEVERSE",
+   "words": "SURVIVE VERSE",
+   "lm": -9.82,
+   "logL": -1.488,
+   "logLzodiacSize": -3.209,
+   "logLperRegime": {
+    "z408p12": -1.53,
+    "z340": -1.588,
+    "z408p3": -1.375
+   },
+   "simpleFit": false,
+   "post": -11.308,
+   "postComb": -11.609,
+   "rankLM": 31,
+   "rankPost": 4,
+   "rankComb": 102
+  },
+  {
+   "plaintext": "ALSOTOYOUSAY",
+   "words": "ALSO TO YOU SAY",
+   "lm": -9.584,
+   "logL": -1.74,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.788,
+    "z340": -1.779,
+    "z408p3": -1.665
+   },
+   "simpleFit": true,
+   "post": -11.324,
+   "postComb": -9.877,
+   "rankLM": 21,
+   "rankPost": 5,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "ASIACANADIAN",
+   "words": "ASIA CANADIAN",
+   "lm": -7.994,
+   "logL": -3.508,
+   "logLzodiacSize": -4.767,
+   "logLperRegime": {
+    "z408p12": -5.595,
+    "z340": -3.406,
+    "z408p3": -3.27
+   },
+   "simpleFit": false,
+   "post": -11.502,
+   "postComb": -11.803,
+   "rankLM": 1,
+   "rankPost": 6,
+   "rankComb": 128
+  },
+  {
+   "plaintext": "ISLAMABADLIB",
+   "words": "ISLAMABAD LIB",
+   "lm": -10.014,
+   "logL": -1.556,
+   "logLzodiacSize": -4.032,
+   "logLperRegime": {
+    "z408p12": -1.586,
+    "z340": -1.581,
+    "z408p3": -1.504
+   },
+   "simpleFit": true,
+   "post": -11.569,
+   "postComb": -10.303,
+   "rankLM": 44,
+   "rankPost": 7,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "WITHTHEHOTWE",
+   "words": "WITH THE HOT WE",
+   "lm": -9.351,
+   "logL": -2.255,
+   "logLzodiacSize": -4.147,
+   "logLperRegime": {
+    "z408p12": -2.436,
+    "z340": -2.447,
+    "z408p3": -2.025
+   },
+   "simpleFit": false,
+   "post": -11.606,
+   "postComb": -11.907,
+   "rankLM": 12,
+   "rankPost": 8,
+   "rankComb": 156
+  },
+  {
+   "plaintext": "IPHOTOSONHIS",
+   "words": "I PHOTOS ON HIS",
+   "lm": -9.853,
+   "logL": -1.813,
+   "logLzodiacSize": -4.978,
+   "logLperRegime": {
+    "z408p12": -1.857,
+    "z340": -1.849,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -11.666,
+   "postComb": -10.148,
+   "rankLM": 34,
+   "rankPost": 9,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "OVERORFREEOF",
+   "words": "OVER OR FREE OF",
+   "lm": -10.029,
+   "logL": -1.644,
+   "logLzodiacSize": -3.859,
+   "logLperRegime": {
+    "z408p12": -1.636,
+    "z340": -1.764,
+    "z408p3": -1.558
+   },
+   "simpleFit": false,
+   "post": -11.673,
+   "postComb": -11.974,
+   "rankLM": 47,
+   "rankPost": 10,
+   "rankComb": 181
+  },
+  {
+   "plaintext": "HOTBABEBYTHE",
+   "words": "HOT BABE BY THE",
+   "lm": -9.35,
+   "logL": -2.346,
+   "logLzodiacSize": -3.327,
+   "logLperRegime": {
+    "z408p12": -2.621,
+    "z340": -2.575,
+    "z408p3": -2.073
+   },
+   "simpleFit": true,
+   "post": -11.696,
+   "postComb": -9.649,
+   "rankLM": 11,
+   "rankPost": 11,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "ENDOFOROLDER",
+   "words": "END OF OR OLDER",
+   "lm": -9.468,
+   "logL": -2.301,
+   "logLzodiacSize": -4.889,
+   "logLperRegime": {
+    "z408p12": -2.485,
+    "z340": -2.444,
+    "z408p3": -2.09
+   },
+   "simpleFit": true,
+   "post": -11.769,
+   "postComb": -9.767,
+   "rankLM": 17,
+   "rankPost": 12,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "APHOTOSOFHAS",
+   "words": "A PHOTOS OF HAS",
+   "lm": -10.003,
+   "logL": -1.926,
+   "logLzodiacSize": -4.979,
+   "logLperRegime": {
+    "z408p12": -1.98,
+    "z340": -1.97,
+    "z408p3": -1.843
+   },
+   "simpleFit": true,
+   "post": -11.929,
+   "postComb": -10.299,
+   "rankLM": 42,
+   "rankPost": 13,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "HOTBABEBETHE",
+   "words": "HOT BABE BE THE",
+   "lm": -10.115,
+   "logL": -1.835,
+   "logLzodiacSize": -3.294,
+   "logLperRegime": {
+    "z408p12": -1.908,
+    "z340": -1.958,
+    "z408p3": -1.688
+   },
+   "simpleFit": false,
+   "post": -11.949,
+   "postComb": -12.251,
+   "rankLM": 54,
+   "rankPost": 14,
+   "rankComb": 293
+  },
+  {
+   "plaintext": "BUTNONENOTBE",
+   "words": "BUT NONE NOT BE",
+   "lm": -9.251,
+   "logL": -2.739,
+   "logLzodiacSize": -4.232,
+   "logLperRegime": {
+    "z408p12": -2.964,
+    "z340": -2.92,
+    "z408p3": -2.497
+   },
+   "simpleFit": false,
+   "post": -11.99,
+   "postComb": -12.291,
+   "rankLM": 8,
+   "rankPost": 15,
+   "rankComb": 308
+  },
+  {
+   "plaintext": "ALSODONOTSAN",
+   "words": "ALSO DO NOT SAN",
+   "lm": -10.091,
+   "logL": -1.952,
+   "logLzodiacSize": -4.98,
+   "logLperRegime": {
+    "z408p12": -2.008,
+    "z340": -1.997,
+    "z408p3": -1.866
+   },
+   "simpleFit": true,
+   "post": -12.043,
+   "postComb": -10.387,
+   "rankLM": 51,
+   "rankPost": 16,
+   "rankComb": 12
+  },
+  {
+   "plaintext": "RAINANENTIRE",
+   "words": "RAIN AN ENTIRE",
+   "lm": -9.525,
+   "logL": -2.637,
+   "logLzodiacSize": -5.026,
+   "logLperRegime": {
+    "z408p12": -2.819,
+    "z340": -2.778,
+    "z408p3": -2.428
+   },
+   "simpleFit": false,
+   "post": -12.162,
+   "postComb": -12.463,
+   "rankLM": 18,
+   "rankPost": 17,
+   "rankComb": 406
+  },
+  {
+   "plaintext": "OFHEREWESHOW",
+   "words": "OF HERE WE SHOW",
+   "lm": -9.727,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.174,
+   "postComb": -10.026,
+   "rankLM": 26,
+   "rankPost": 18,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "SKYACATALYST",
+   "words": "SKY A CATALYST",
+   "lm": -10.276,
+   "logL": -1.91,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.972,
+    "z340": -1.96,
+    "z408p3": -1.815
+   },
+   "simpleFit": true,
+   "post": -12.186,
+   "postComb": -10.572,
+   "rankLM": 65,
+   "rankPost": 19,
+   "rankComb": 14
+  },
+  {
+   "plaintext": "ALSOSOYOUSAY",
+   "words": "ALSO SO YOU SAY",
+   "lm": -10.194,
+   "logL": -2.034,
+   "logLzodiacSize": -3.849,
+   "logLperRegime": {
+    "z408p12": -2.038,
+    "z340": -2.091,
+    "z408p3": -1.98
+   },
+   "simpleFit": false,
+   "post": -12.228,
+   "postComb": -12.529,
+   "rankLM": 58,
+   "rankPost": 20,
+   "rankComb": 452
+  },
+  {
+   "plaintext": "THATSTATEATA",
+   "words": "THAT STATE AT A",
+   "lm": -9.098,
+   "logL": -3.145,
+   "logLzodiacSize": -4.228,
+   "logLperRegime": {
+    "z408p12": -5.061,
+    "z340": -3.057,
+    "z408p3": -2.898
+   },
+   "simpleFit": false,
+   "post": -12.243,
+   "postComb": -12.544,
+   "rankLM": 5,
+   "rankPost": 21,
+   "rankComb": 465
+  },
+  {
+   "plaintext": "APHOTOTOTHAT",
+   "words": "A PHOTO TO THAT",
+   "lm": -8.971,
+   "logL": -3.272,
+   "logLzodiacSize": -4.979,
+   "logLperRegime": {
+    "z408p12": -3.871,
+    "z340": -3.109,
+    "z408p3": -3.161
+   },
+   "simpleFit": false,
+   "post": -12.243,
+   "postComb": -12.544,
+   "rankLM": 4,
+   "rankPost": 22,
+   "rankComb": 466
+  },
+  {
+   "plaintext": "PHASESESCAPE",
+   "words": "PHASES ESCAPE",
+   "lm": -9.704,
+   "logL": -2.552,
+   "logLzodiacSize": -4.228,
+   "logLperRegime": {
+    "z408p12": -3.455,
+    "z340": -2.564,
+    "z408p3": -2.272
+   },
+   "simpleFit": false,
+   "post": -12.256,
+   "postComb": -12.557,
+   "rankLM": 23,
+   "rankPost": 23,
+   "rankComb": 475
+  },
+  {
+   "plaintext": "MARTITSTERMS",
+   "words": "MART ITS TERMS",
+   "lm": -10.509,
+   "logL": -1.753,
+   "logLzodiacSize": -4.36,
+   "logLperRegime": {
+    "z408p12": -1.785,
+    "z340": -1.78,
+    "z408p3": -1.699
+   },
+   "simpleFit": true,
+   "post": -12.262,
+   "postComb": -10.803,
+   "rankLM": 97,
+   "rankPost": 24,
+   "rankComb": 23
+  },
+  {
+   "plaintext": "THANINANDATA",
+   "words": "THAN IN AN DATA",
+   "lm": -10.314,
+   "logL": -1.96,
+   "logLzodiacSize": -4.375,
+   "logLperRegime": {
+    "z408p12": -1.935,
+    "z340": -2.047,
+    "z408p3": -1.911
+   },
+   "simpleFit": false,
+   "post": -12.274,
+   "postComb": -12.575,
+   "rankLM": 67,
+   "rankPost": 25,
+   "rankComb": 484
+  },
+  {
+   "plaintext": "MOSTSTATESMA",
+   "words": "MOST STATES MA",
+   "lm": -10.024,
+   "logL": -2.268,
+   "logLzodiacSize": -3.956,
+   "logLperRegime": {
+    "z408p12": -2.27,
+    "z340": -2.325,
+    "z408p3": -2.216
+   },
+   "simpleFit": false,
+   "post": -12.292,
+   "postComb": -12.593,
+   "rankLM": 46,
+   "rankPost": 26,
+   "rankComb": 500
+  },
+  {
+   "plaintext": "WITHTHEHATWE",
+   "words": "WITH THE HAT WE",
+   "lm": -10.045,
+   "logL": -2.255,
+   "logLzodiacSize": -4.147,
+   "logLperRegime": {
+    "z408p12": -2.436,
+    "z340": -2.447,
+    "z408p3": -2.025
+   },
+   "simpleFit": false,
+   "post": -12.3,
+   "postComb": -12.601,
+   "rankLM": 49,
+   "rankPost": 27,
+   "rankComb": 509
+  },
+  {
+   "plaintext": "INTHEHTHATIT",
+   "words": "IN THE H THAT IT",
+   "lm": -10.685,
+   "logL": -1.624,
+   "logLzodiacSize": -4.504,
+   "logLperRegime": {
+    "z408p12": -1.564,
+    "z340": -1.689,
+    "z408p3": -1.629
+   },
+   "simpleFit": false,
+   "post": -12.309,
+   "postComb": -12.61,
+   "rankLM": 121,
+   "rankPost": 28,
+   "rankComb": 517
+  },
+  {
+   "plaintext": "DONTITSTANDS",
+   "words": "DONT IT STANDS",
+   "lm": -10.445,
+   "logL": -1.895,
+   "logLzodiacSize": -4.896,
+   "logLperRegime": {
+    "z408p12": -1.934,
+    "z340": -1.927,
+    "z408p3": -1.832
+   },
+   "simpleFit": true,
+   "post": -12.34,
+   "postComb": -10.74,
+   "rankLM": 86,
+   "rankPost": 29,
+   "rankComb": 18
+  },
+  {
+   "plaintext": "APHOTOTOWHAT",
+   "words": "A PHOTO TO WHAT",
+   "lm": -9.371,
+   "logL": -2.979,
+   "logLzodiacSize": -5.038,
+   "logLperRegime": {
+    "z408p12": -3.942,
+    "z340": -2.899,
+    "z408p3": -2.752
+   },
+   "simpleFit": false,
+   "post": -12.351,
+   "postComb": -12.652,
+   "rankLM": 13,
+   "rankPost": 30,
+   "rankComb": 543
+  },
+  {
+   "plaintext": "TAHITISIGHTS",
+   "words": "TAHITI SIGHTS",
+   "lm": -10.549,
+   "logL": -1.802,
+   "logLzodiacSize": -4.788,
+   "logLperRegime": {
+    "z408p12": -1.797,
+    "z340": -1.853,
+    "z408p3": -1.762
+   },
+   "simpleFit": false,
+   "post": -12.352,
+   "postComb": -12.653,
+   "rankLM": 102,
+   "rankPost": 31,
+   "rankComb": 545
+  },
+  {
+   "plaintext": "SPYACATALYST",
+   "words": "SPY A CATALYST",
+   "lm": -10.461,
+   "logL": -1.91,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.972,
+    "z340": -1.96,
+    "z408p3": -1.815
+   },
+   "simpleFit": true,
+   "post": -12.371,
+   "postComb": -10.757,
+   "rankLM": 90,
+   "rankPost": 32,
+   "rankComb": 20
+  },
+  {
+   "plaintext": "ONHEREWESHOW",
+   "words": "ON HERE WE SHOW",
+   "lm": -9.928,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.376,
+   "postComb": -10.228,
+   "rankLM": 39,
+   "rankPost": 33,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "EIGHTHTHEGET",
+   "words": "EIGHTH THE GET",
+   "lm": -9.796,
+   "logL": -2.586,
+   "logLzodiacSize": -4.305,
+   "logLperRegime": {
+    "z408p12": -3.507,
+    "z340": -2.565,
+    "z408p3": -2.323
+   },
+   "simpleFit": false,
+   "post": -12.382,
+   "postComb": -12.683,
+   "rankLM": 30,
+   "rankPost": 34,
+   "rankComb": 568
+  },
+  {
+   "plaintext": "URBANAMALBUM",
+   "words": "URBAN AM ALBUM",
+   "lm": -11.135,
+   "logL": -1.252,
+   "logLzodiacSize": -2.983,
+   "logLperRegime": {
+    "z408p12": -1.272,
+    "z340": -1.27,
+    "z408p3": -1.217
+   },
+   "simpleFit": true,
+   "post": -12.387,
+   "postComb": -11.412,
+   "rankLM": 297,
+   "rankPost": 35,
+   "rankComb": 70
+  },
+  {
+   "plaintext": "ENDOFORORDER",
+   "words": "END OF OR ORDER",
+   "lm": -9.698,
+   "logL": -2.7,
+   "logLzodiacSize": -4.437,
+   "logLperRegime": {
+    "z408p12": -2.873,
+    "z340": -2.882,
+    "z408p3": -2.477
+   },
+   "simpleFit": false,
+   "post": -12.398,
+   "postComb": -12.699,
+   "rankLM": 22,
+   "rankPost": 36,
+   "rankComb": 575
+  },
+  {
+   "plaintext": "GUESTSOSWEGO",
+   "words": "GUESTS OSWEGO",
+   "lm": -10.177,
+   "logL": -2.234,
+   "logLzodiacSize": -4.272,
+   "logLperRegime": {
+    "z408p12": -2.443,
+    "z340": -2.399,
+    "z408p3": -2.004
+   },
+   "simpleFit": true,
+   "post": -12.411,
+   "postComb": -10.476,
+   "rankLM": 57,
+   "rankPost": 37,
+   "rankComb": 13
+  },
+  {
+   "plaintext": "THISISASUITA",
+   "words": "THIS IS A SUIT A",
+   "lm": -10.103,
+   "logL": -2.335,
+   "logLzodiacSize": -4.602,
+   "logLperRegime": {
+    "z408p12": -2.374,
+    "z340": -2.42,
+    "z408p3": -2.233
+   },
+   "simpleFit": false,
+   "post": -12.438,
+   "postComb": -12.739,
+   "rankLM": 52,
+   "rankPost": 38,
+   "rankComb": 601
+  },
+  {
+   "plaintext": "OWNAVATARNOT",
+   "words": "OWN AVATAR NOT",
+   "lm": -10.298,
+   "logL": -2.213,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.288,
+    "z340": -2.273,
+    "z408p3": -2.102
+   },
+   "simpleFit": true,
+   "post": -12.51,
+   "postComb": -10.596,
+   "rankLM": 66,
+   "rankPost": 39,
+   "rankComb": 15
+  },
+  {
+   "plaintext": "APHOTOSORHAS",
+   "words": "A PHOTOS OR HAS",
+   "lm": -10.612,
+   "logL": -1.926,
+   "logLzodiacSize": -4.979,
+   "logLperRegime": {
+    "z408p12": -1.98,
+    "z340": -1.97,
+    "z408p3": -1.843
+   },
+   "simpleFit": true,
+   "post": -12.538,
+   "postComb": -10.908,
+   "rankLM": 114,
+   "rankPost": 40,
+   "rankComb": 27
+  },
+  {
+   "plaintext": "BIRTHTOTURBO",
+   "words": "BIRTH TO TURBO",
+   "lm": -10.696,
+   "logL": -1.846,
+   "logLzodiacSize": -4.171,
+   "logLperRegime": {
+    "z408p12": -1.886,
+    "z340": -1.88,
+    "z408p3": -1.78
+   },
+   "simpleFit": true,
+   "post": -12.541,
+   "postComb": -10.99,
+   "rankLM": 125,
+   "rankPost": 41,
+   "rankComb": 29
+  },
+  {
+   "plaintext": "IPHOTOSORHIS",
+   "words": "I PHOTOS OR HIS",
+   "lm": -10.729,
+   "logL": -1.813,
+   "logLzodiacSize": -4.978,
+   "logLperRegime": {
+    "z408p12": -1.857,
+    "z340": -1.849,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -12.543,
+   "postComb": -11.024,
+   "rankLM": 133,
+   "rankPost": 42,
+   "rankComb": 31
+  },
+  {
+   "plaintext": "ALSOMOTORSAT",
+   "words": "ALSO MOTORS AT",
+   "lm": -10.406,
+   "logL": -2.163,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -2.241,
+    "z340": -2.226,
+    "z408p3": -2.049
+   },
+   "simpleFit": true,
+   "post": -12.569,
+   "postComb": -10.704,
+   "rankLM": 80,
+   "rankPost": 43,
+   "rankComb": 16
+  },
+  {
+   "plaintext": "WITHTHEHITWE",
+   "words": "WITH THE HIT WE",
+   "lm": -10.013,
+   "logL": -2.584,
+   "logLzodiacSize": -4.203,
+   "logLperRegime": {
+    "z408p12": -2.796,
+    "z340": -2.797,
+    "z408p3": -2.335
+   },
+   "simpleFit": false,
+   "post": -12.597,
+   "postComb": -12.898,
+   "rankLM": 43,
+   "rankPost": 44,
+   "rankComb": 757
+  },
+  {
+   "plaintext": "THATITATDATA",
+   "words": "THAT IT AT DATA",
+   "lm": -9.453,
+   "logL": -3.145,
+   "logLzodiacSize": -4.228,
+   "logLperRegime": {
+    "z408p12": -5.061,
+    "z340": -3.057,
+    "z408p3": -2.898
+   },
+   "simpleFit": false,
+   "post": -12.598,
+   "postComb": -12.899,
+   "rankLM": 16,
+   "rankPost": 45,
+   "rankComb": 759
+  },
+  {
+   "plaintext": "ALLUNUSUALAS",
+   "words": "ALL UNUSUAL AS",
+   "lm": -9.844,
+   "logL": -2.756,
+   "logLzodiacSize": -3.498,
+   "logLperRegime": {
+    "z408p12": -3.739,
+    "z340": -2.723,
+    "z408p3": -2.496
+   },
+   "simpleFit": false,
+   "post": -12.599,
+   "postComb": -12.9,
+   "rankLM": 32,
+   "rankPost": 46,
+   "rankComb": 761
+  },
+  {
+   "plaintext": "APHOTOSONHAS",
+   "words": "A PHOTOS ON HAS",
+   "lm": -10.698,
+   "logL": -1.926,
+   "logLzodiacSize": -4.979,
+   "logLperRegime": {
+    "z408p12": -1.98,
+    "z340": -1.97,
+    "z408p3": -1.843
+   },
+   "simpleFit": true,
+   "post": -12.624,
+   "postComb": -10.994,
+   "rankLM": 128,
+   "rankPost": 47,
+   "rankComb": 30
+  },
+  {
+   "plaintext": "DELTATOTALDO",
+   "words": "DELTA TOTAL DO",
+   "lm": -10.528,
+   "logL": -2.116,
+   "logLzodiacSize": -4.807,
+   "logLperRegime": {
+    "z408p12": -2.139,
+    "z340": -2.136,
+    "z408p3": -2.076
+   },
+   "simpleFit": false,
+   "post": -12.644,
+   "postComb": -12.945,
+   "rankLM": 98,
+   "rankPost": 48,
+   "rankComb": 810
+  },
+  {
+   "plaintext": "ANDBABYBYDAY",
+   "words": "AND BABY BY DAY",
+   "lm": -10.651,
+   "logL": -2.016,
+   "logLzodiacSize": -2.56,
+   "logLperRegime": {
+    "z408p12": -2.026,
+    "z340": -2.149,
+    "z408p3": -1.907
+   },
+   "simpleFit": false,
+   "post": -12.667,
+   "postComb": -12.968,
+   "rankLM": 117,
+   "rankPost": 49,
+   "rankComb": 835
+  },
+  {
+   "plaintext": "ANDBABYBEDAY",
+   "words": "AND BABY BE DAY",
+   "lm": -11.668,
+   "logL": -1.003,
+   "logLzodiacSize": -2.19,
+   "logLperRegime": {
+    "z408p12": -1.008,
+    "z340": -1.068,
+    "z408p3": -0.941
+   },
+   "simpleFit": false,
+   "post": -12.671,
+   "postComb": -12.972,
+   "rankLM": 738,
+   "rankPost": 50,
+   "rankComb": 840
+  },
+  {
+   "plaintext": "ALSONOYOUSAY",
+   "words": "ALSO NO YOU SAY",
+   "lm": -10.947,
+   "logL": -1.74,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.788,
+    "z340": -1.779,
+    "z408p3": -1.665
+   },
+   "simpleFit": true,
+   "post": -12.688,
+   "postComb": -11.241,
+   "rankLM": 198,
+   "rankPost": 51,
+   "rankComb": 47
+  },
+  {
+   "plaintext": "RAININENTIRE",
+   "words": "RAIN IN ENTIRE",
+   "lm": -10.116,
+   "logL": -2.588,
+   "logLzodiacSize": -4.615,
+   "logLperRegime": {
+    "z408p12": -2.758,
+    "z340": -2.769,
+    "z408p3": -2.367
+   },
+   "simpleFit": false,
+   "post": -12.704,
+   "postComb": -13.005,
+   "rankLM": 55,
+   "rankPost": 52,
+   "rankComb": 881
+  },
+  {
+   "plaintext": "DEPTHTOTOPDO",
+   "words": "DEPTH TO TOP DO",
+   "lm": -10.907,
+   "logL": -1.84,
+   "logLzodiacSize": -3.808,
+   "logLperRegime": {
+    "z408p12": -1.821,
+    "z340": -1.882,
+    "z408p3": -1.821
+   },
+   "simpleFit": false,
+   "post": -12.748,
+   "postComb": -13.049,
+   "rankLM": 186,
+   "rankPost": 53,
+   "rankComb": 924
+  },
+  {
+   "plaintext": "WITHTHEHETWE",
+   "words": "WITH THE HET WE",
+   "lm": -11.07,
+   "logL": -1.68,
+   "logLzodiacSize": -4.103,
+   "logLperRegime": {
+    "z408p12": -1.663,
+    "z340": -1.789,
+    "z408p3": -1.608
+   },
+   "simpleFit": false,
+   "post": -12.75,
+   "postComb": -13.051,
+   "rankLM": 255,
+   "rankPost": 54,
+   "rankComb": 926
+  },
+  {
+   "plaintext": "OTTAWAFACTOF",
+   "words": "OTTAWA FACT OF",
+   "lm": -9.973,
+   "logL": -2.782,
+   "logLzodiacSize": -4.347,
+   "logLperRegime": {
+    "z408p12": -3.726,
+    "z340": -2.697,
+    "z408p3": -2.56
+   },
+   "simpleFit": false,
+   "post": -12.755,
+   "postComb": -13.056,
+   "rankLM": 40,
+   "rankPost": 55,
+   "rankComb": 938
+  },
+  {
+   "plaintext": "INDATASAIDIS",
+   "words": "IN DATA SAID IS",
+   "lm": -10.806,
+   "logL": -1.955,
+   "logLzodiacSize": -4.536,
+   "logLperRegime": {
+    "z408p12": -1.936,
+    "z340": -1.994,
+    "z408p3": -1.937
+   },
+   "simpleFit": false,
+   "post": -12.76,
+   "postComb": -13.061,
+   "rankLM": 152,
+   "rankPost": 56,
+   "rankComb": 945
+  },
+  {
+   "plaintext": "IPHOTOSOTHIS",
+   "words": "I PHOTO SO THIS",
+   "lm": -10.756,
+   "logL": -2.006,
+   "logLzodiacSize": -5.035,
+   "logLperRegime": {
+    "z408p12": -2.033,
+    "z340": -2.028,
+    "z408p3": -1.962
+   },
+   "simpleFit": false,
+   "post": -12.762,
+   "postComb": -13.063,
+   "rankLM": 140,
+   "rankPost": 57,
+   "rankComb": 948
+  },
+  {
+   "plaintext": "AOLUNUSUALAS",
+   "words": "AOL UNUSUAL AS",
+   "lm": -11.416,
+   "logL": -1.358,
+   "logLzodiacSize": -3.264,
+   "logLperRegime": {
+    "z408p12": -1.361,
+    "z340": -1.417,
+    "z408p3": -1.304
+   },
+   "simpleFit": false,
+   "post": -12.774,
+   "postComb": -13.075,
+   "rankLM": 472,
+   "rankPost": 58,
+   "rankComb": 962
+  },
+  {
+   "plaintext": "NEARORDRYAND",
+   "words": "NEAR OR DRY AND",
+   "lm": -11.083,
+   "logL": -1.707,
+   "logLzodiacSize": -4.822,
+   "logLperRegime": {
+    "z408p12": -1.764,
+    "z340": -1.753,
+    "z408p3": -1.62
+   },
+   "simpleFit": true,
+   "post": -12.79,
+   "postComb": -11.375,
+   "rankLM": 263,
+   "rankPost": 59,
+   "rankComb": 64
+  },
+  {
+   "plaintext": "SKINONANDISA",
+   "words": "SKIN ON AND IS A",
+   "lm": -10.913,
+   "logL": -1.881,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -1.937,
+    "z340": -1.927,
+    "z408p3": -1.794
+   },
+   "simpleFit": true,
+   "post": -12.794,
+   "postComb": -11.208,
+   "rankLM": 189,
+   "rankPost": 60,
+   "rankComb": 44
+  }
+ ],
+ "topComb": [
+  {
+   "plaintext": "ECHOFOROTHER",
+   "words": "ECHO FOR OTHER",
+   "lm": -8.881,
+   "logL": -2.41,
+   "logLzodiacSize": -4.973,
+   "logLperRegime": {
+    "z408p12": -2.593,
+    "z340": -2.554,
+    "z408p3": -2.199
+   },
+   "simpleFit": true,
+   "post": -11.291,
+   "postComb": -9.181,
+   "rankLM": 3,
+   "rankPost": 3,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "ALSODOYOUSAY",
+   "words": "ALSO DO YOU SAY",
+   "lm": -9.108,
+   "logL": -1.74,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.788,
+    "z340": -1.779,
+    "z408p3": -1.665
+   },
+   "simpleFit": true,
+   "post": -10.848,
+   "postComb": -9.401,
+   "rankLM": 6,
+   "rankPost": 1,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "IPHOTOSOFHIS",
+   "words": "I PHOTOS OF HIS",
+   "lm": -9.156,
+   "logL": -1.813,
+   "logLzodiacSize": -4.978,
+   "logLperRegime": {
+    "z408p12": -1.857,
+    "z340": -1.849,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -10.969,
+   "postComb": -9.45,
+   "rankLM": 7,
+   "rankPost": 2,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "HOTBABEBYTHE",
+   "words": "HOT BABE BY THE",
+   "lm": -9.35,
+   "logL": -2.346,
+   "logLzodiacSize": -3.327,
+   "logLperRegime": {
+    "z408p12": -2.621,
+    "z340": -2.575,
+    "z408p3": -2.073
+   },
+   "simpleFit": true,
+   "post": -11.696,
+   "postComb": -9.649,
+   "rankLM": 11,
+   "rankPost": 11,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "ENDOFOROLDER",
+   "words": "END OF OR OLDER",
+   "lm": -9.468,
+   "logL": -2.301,
+   "logLzodiacSize": -4.889,
+   "logLperRegime": {
+    "z408p12": -2.485,
+    "z340": -2.444,
+    "z408p3": -2.09
+   },
+   "simpleFit": true,
+   "post": -11.769,
+   "postComb": -9.767,
+   "rankLM": 17,
+   "rankPost": 12,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "ALSOTOYOUSAY",
+   "words": "ALSO TO YOU SAY",
+   "lm": -9.584,
+   "logL": -1.74,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.788,
+    "z340": -1.779,
+    "z408p3": -1.665
+   },
+   "simpleFit": true,
+   "post": -11.324,
+   "postComb": -9.877,
+   "rankLM": 21,
+   "rankPost": 5,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "OFHEREWESHOW",
+   "words": "OF HERE WE SHOW",
+   "lm": -9.727,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.174,
+   "postComb": -10.026,
+   "rankLM": 26,
+   "rankPost": 18,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "IPHOTOSONHIS",
+   "words": "I PHOTOS ON HIS",
+   "lm": -9.853,
+   "logL": -1.813,
+   "logLzodiacSize": -4.978,
+   "logLperRegime": {
+    "z408p12": -1.857,
+    "z340": -1.849,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -11.666,
+   "postComb": -10.148,
+   "rankLM": 34,
+   "rankPost": 9,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "ONHEREWESHOW",
+   "words": "ON HERE WE SHOW",
+   "lm": -9.928,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.376,
+   "postComb": -10.228,
+   "rankLM": 39,
+   "rankPost": 33,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "APHOTOSOFHAS",
+   "words": "A PHOTOS OF HAS",
+   "lm": -10.003,
+   "logL": -1.926,
+   "logLzodiacSize": -4.979,
+   "logLperRegime": {
+    "z408p12": -1.98,
+    "z340": -1.97,
+    "z408p3": -1.843
+   },
+   "simpleFit": true,
+   "post": -11.929,
+   "postComb": -10.299,
+   "rankLM": 42,
+   "rankPost": 13,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "ISLAMABADLIB",
+   "words": "ISLAMABAD LIB",
+   "lm": -10.014,
+   "logL": -1.556,
+   "logLzodiacSize": -4.032,
+   "logLperRegime": {
+    "z408p12": -1.586,
+    "z340": -1.581,
+    "z408p3": -1.504
+   },
+   "simpleFit": true,
+   "post": -11.569,
+   "postComb": -10.303,
+   "rankLM": 44,
+   "rankPost": 7,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "ALSODONOTSAN",
+   "words": "ALSO DO NOT SAN",
+   "lm": -10.091,
+   "logL": -1.952,
+   "logLzodiacSize": -4.98,
+   "logLperRegime": {
+    "z408p12": -2.008,
+    "z340": -1.997,
+    "z408p3": -1.866
+   },
+   "simpleFit": true,
+   "post": -12.043,
+   "postComb": -10.387,
+   "rankLM": 51,
+   "rankPost": 16,
+   "rankComb": 12
+  },
+  {
+   "plaintext": "GUESTSOSWEGO",
+   "words": "GUESTS OSWEGO",
+   "lm": -10.177,
+   "logL": -2.234,
+   "logLzodiacSize": -4.272,
+   "logLperRegime": {
+    "z408p12": -2.443,
+    "z340": -2.399,
+    "z408p3": -2.004
+   },
+   "simpleFit": true,
+   "post": -12.411,
+   "postComb": -10.476,
+   "rankLM": 57,
+   "rankPost": 37,
+   "rankComb": 13
+  },
+  {
+   "plaintext": "SKYACATALYST",
+   "words": "SKY A CATALYST",
+   "lm": -10.276,
+   "logL": -1.91,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.972,
+    "z340": -1.96,
+    "z408p3": -1.815
+   },
+   "simpleFit": true,
+   "post": -12.186,
+   "postComb": -10.572,
+   "rankLM": 65,
+   "rankPost": 19,
+   "rankComb": 14
+  },
+  {
+   "plaintext": "OWNAVATARNOT",
+   "words": "OWN AVATAR NOT",
+   "lm": -10.298,
+   "logL": -2.213,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.288,
+    "z340": -2.273,
+    "z408p3": -2.102
+   },
+   "simpleFit": true,
+   "post": -12.51,
+   "postComb": -10.596,
+   "rankLM": 66,
+   "rankPost": 39,
+   "rankComb": 15
+  },
+  {
+   "plaintext": "ALSOMOTORSAT",
+   "words": "ALSO MOTORS AT",
+   "lm": -10.406,
+   "logL": -2.163,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -2.241,
+    "z340": -2.226,
+    "z408p3": -2.049
+   },
+   "simpleFit": true,
+   "post": -12.569,
+   "postComb": -10.704,
+   "rankLM": 80,
+   "rankPost": 43,
+   "rankComb": 16
+  },
+  {
+   "plaintext": "EXHIBITINHET",
+   "words": "EXHIBIT IN HET",
+   "lm": -10.419,
+   "logL": -2.613,
+   "logLzodiacSize": -4.977,
+   "logLperRegime": {
+    "z408p12": -2.825,
+    "z340": -2.783,
+    "z408p3": -2.379
+   },
+   "simpleFit": true,
+   "post": -13.031,
+   "postComb": -10.719,
+   "rankLM": 84,
+   "rankPost": 100,
+   "rankComb": 17
+  },
+  {
+   "plaintext": "DONTITSTANDS",
+   "words": "DONT IT STANDS",
+   "lm": -10.445,
+   "logL": -1.895,
+   "logLzodiacSize": -4.896,
+   "logLperRegime": {
+    "z408p12": -1.934,
+    "z340": -1.927,
+    "z408p3": -1.832
+   },
+   "simpleFit": true,
+   "post": -12.34,
+   "postComb": -10.74,
+   "rankLM": 86,
+   "rankPost": 29,
+   "rankComb": 18
+  },
+  {
+   "plaintext": "IDEAMANAGEIN",
+   "words": "IDEA MANAGE IN",
+   "lm": -10.455,
+   "logL": -2.554,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.737,
+    "z340": -2.698,
+    "z408p3": -2.342
+   },
+   "simpleFit": true,
+   "post": -13.009,
+   "postComb": -10.755,
+   "rankLM": 89,
+   "rankPost": 97,
+   "rankComb": 19
+  },
+  {
+   "plaintext": "SPYACATALYST",
+   "words": "SPY A CATALYST",
+   "lm": -10.461,
+   "logL": -1.91,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.972,
+    "z340": -1.96,
+    "z408p3": -1.815
+   },
+   "simpleFit": true,
+   "post": -12.371,
+   "postComb": -10.757,
+   "rankLM": 90,
+   "rankPost": 32,
+   "rankComb": 20
+  },
+  {
+   "plaintext": "THIEVESEDITS",
+   "words": "THIEVES EDITS",
+   "lm": -10.475,
+   "logL": -2.758,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -2.844,
+    "z340": -2.831,
+    "z408p3": -2.632
+   },
+   "simpleFit": true,
+   "post": -13.233,
+   "postComb": -10.775,
+   "rankLM": 91,
+   "rankPost": 132,
+   "rankComb": 21
+  },
+  {
+   "plaintext": "RAINONENTIRE",
+   "words": "RAIN ON ENTIRE",
+   "lm": -10.501,
+   "logL": -2.363,
+   "logLzodiacSize": -4.969,
+   "logLperRegime": {
+    "z408p12": -2.553,
+    "z340": -2.512,
+    "z408p3": -2.147
+   },
+   "simpleFit": true,
+   "post": -12.864,
+   "postComb": -10.8,
+   "rankLM": 95,
+   "rankPost": 72,
+   "rankComb": 22
+  },
+  {
+   "plaintext": "MARTITSTERMS",
+   "words": "MART ITS TERMS",
+   "lm": -10.509,
+   "logL": -1.753,
+   "logLzodiacSize": -4.36,
+   "logLperRegime": {
+    "z408p12": -1.785,
+    "z340": -1.78,
+    "z408p3": -1.699
+   },
+   "simpleFit": true,
+   "post": -12.262,
+   "postComb": -10.803,
+   "rankLM": 97,
+   "rankPost": 24,
+   "rankComb": 23
+  },
+  {
+   "plaintext": "RUINANENTIRE",
+   "words": "RUIN AN ENTIRE",
+   "lm": -10.546,
+   "logL": -2.363,
+   "logLzodiacSize": -4.969,
+   "logLperRegime": {
+    "z408p12": -2.553,
+    "z340": -2.512,
+    "z408p3": -2.147
+   },
+   "simpleFit": true,
+   "post": -12.91,
+   "postComb": -10.845,
+   "rankLM": 101,
+   "rankPost": 78,
+   "rankComb": 24
+  },
+  {
+   "plaintext": "SPEAKATABEST",
+   "words": "SPEAK AT A BEST",
+   "lm": -10.562,
+   "logL": -2.715,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -2.919,
+    "z340": -2.879,
+    "z408p3": -2.488
+   },
+   "simpleFit": true,
+   "post": -13.277,
+   "postComb": -10.862,
+   "rankLM": 105,
+   "rankPost": 143,
+   "rankComb": 25
+  },
+  {
+   "plaintext": "IDEASANAMEIN",
+   "words": "IDEAS A NAME IN",
+   "lm": -10.605,
+   "logL": -2.554,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.737,
+    "z340": -2.698,
+    "z408p3": -2.342
+   },
+   "simpleFit": true,
+   "post": -13.159,
+   "postComb": -10.905,
+   "rankLM": 110,
+   "rankPost": 120,
+   "rankComb": 26
+  },
+  {
+   "plaintext": "APHOTOSORHAS",
+   "words": "A PHOTOS OR HAS",
+   "lm": -10.612,
+   "logL": -1.926,
+   "logLzodiacSize": -4.979,
+   "logLperRegime": {
+    "z408p12": -1.98,
+    "z340": -1.97,
+    "z408p3": -1.843
+   },
+   "simpleFit": true,
+   "post": -12.538,
+   "postComb": -10.908,
+   "rankLM": 114,
+   "rankPost": 40,
+   "rankComb": 27
+  },
+  {
+   "plaintext": "OFSEVEREUSOR",
+   "words": "OF SEVERE US OR",
+   "lm": -10.69,
+   "logL": -2.549,
+   "logLzodiacSize": -4.972,
+   "logLperRegime": {
+    "z408p12": -2.615,
+    "z340": -2.607,
+    "z408p3": -2.446
+   },
+   "simpleFit": true,
+   "post": -13.238,
+   "postComb": -10.989,
+   "rankLM": 124,
+   "rankPost": 135,
+   "rankComb": 28
+  },
+  {
+   "plaintext": "BIRTHTOTURBO",
+   "words": "BIRTH TO TURBO",
+   "lm": -10.696,
+   "logL": -1.846,
+   "logLzodiacSize": -4.171,
+   "logLperRegime": {
+    "z408p12": -1.886,
+    "z340": -1.88,
+    "z408p3": -1.78
+   },
+   "simpleFit": true,
+   "post": -12.541,
+   "postComb": -10.99,
+   "rankLM": 125,
+   "rankPost": 41,
+   "rankComb": 29
+  },
+  {
+   "plaintext": "APHOTOSONHAS",
+   "words": "A PHOTOS ON HAS",
+   "lm": -10.698,
+   "logL": -1.926,
+   "logLzodiacSize": -4.979,
+   "logLperRegime": {
+    "z408p12": -1.98,
+    "z340": -1.97,
+    "z408p3": -1.843
+   },
+   "simpleFit": true,
+   "post": -12.624,
+   "postComb": -10.994,
+   "rankLM": 128,
+   "rankPost": 47,
+   "rankComb": 30
+  },
+  {
+   "plaintext": "IPHOTOSORHIS",
+   "words": "I PHOTOS OR HIS",
+   "lm": -10.729,
+   "logL": -1.813,
+   "logLzodiacSize": -4.978,
+   "logLperRegime": {
+    "z408p12": -1.857,
+    "z340": -1.849,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -12.543,
+   "postComb": -11.024,
+   "rankLM": 133,
+   "rankPost": 42,
+   "rankComb": 31
+  },
+  {
+   "plaintext": "ECHOAOROTHER",
+   "words": "ECHO A OR OTHER",
+   "lm": -10.736,
+   "logL": -2.41,
+   "logLzodiacSize": -4.973,
+   "logLperRegime": {
+    "z408p12": -2.593,
+    "z340": -2.554,
+    "z408p3": -2.199
+   },
+   "simpleFit": true,
+   "post": -13.146,
+   "postComb": -11.035,
+   "rankLM": 136,
+   "rankPost": 119,
+   "rankComb": 32
+  },
+  {
+   "plaintext": "ECHOIOROTHER",
+   "words": "ECHO I OR OTHER",
+   "lm": -10.778,
+   "logL": -2.41,
+   "logLzodiacSize": -4.973,
+   "logLperRegime": {
+    "z408p12": -2.593,
+    "z340": -2.554,
+    "z408p3": -2.199
+   },
+   "simpleFit": true,
+   "post": -13.188,
+   "postComb": -11.077,
+   "rankLM": 141,
+   "rankPost": 126,
+   "rankComb": 33
+  },
+  {
+   "plaintext": "OFSEVEREISOR",
+   "words": "OF SEVERE IS OR",
+   "lm": -10.8,
+   "logL": -2.549,
+   "logLzodiacSize": -4.972,
+   "logLperRegime": {
+    "z408p12": -2.615,
+    "z340": -2.607,
+    "z408p3": -2.446
+   },
+   "simpleFit": true,
+   "post": -13.349,
+   "postComb": -11.1,
+   "rankLM": 148,
+   "rankPost": 170,
+   "rankComb": 34
+  },
+  {
+   "plaintext": "AREITISIDEAS",
+   "words": "ARE IT IS IDEAS",
+   "lm": -10.804,
+   "logL": -2.492,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -2.689,
+    "z340": -2.649,
+    "z408p3": -2.269
+   },
+   "simpleFit": true,
+   "post": -13.296,
+   "postComb": -11.104,
+   "rankLM": 151,
+   "rankPost": 149,
+   "rankComb": 35
+  },
+  {
+   "plaintext": "HOTBABEBUTHE",
+   "words": "HOT BABE BUT HE",
+   "lm": -10.821,
+   "logL": -2.346,
+   "logLzodiacSize": -3.327,
+   "logLperRegime": {
+    "z408p12": -2.621,
+    "z340": -2.575,
+    "z408p3": -2.073
+   },
+   "simpleFit": true,
+   "post": -13.167,
+   "postComb": -11.12,
+   "rankLM": 159,
+   "rankPost": 122,
+   "rankComb": 36
+  },
+  {
+   "plaintext": "ARTELEMENTAM",
+   "words": "ART ELEMENT AM",
+   "lm": -10.828,
+   "logL": -2.716,
+   "logLzodiacSize": -4.374,
+   "logLperRegime": {
+    "z408p12": -2.811,
+    "z340": -2.798,
+    "z408p3": -2.581
+   },
+   "simpleFit": true,
+   "post": -13.544,
+   "postComb": -11.128,
+   "rankLM": 162,
+   "rankPost": 232,
+   "rankComb": 37
+  },
+  {
+   "plaintext": "THIEVESEXITS",
+   "words": "THIEVES EXITS",
+   "lm": -10.848,
+   "logL": -2.758,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -2.844,
+    "z340": -2.831,
+    "z408p3": -2.632
+   },
+   "simpleFit": true,
+   "post": -13.606,
+   "postComb": -11.148,
+   "rankLM": 167,
+   "rankPost": 269,
+   "rankComb": 38
+  },
+  {
+   "plaintext": "EXHIBITISHET",
+   "words": "EXHIBIT IS HET",
+   "lm": -10.85,
+   "logL": -2.613,
+   "logLzodiacSize": -4.977,
+   "logLperRegime": {
+    "z408p12": -2.825,
+    "z340": -2.783,
+    "z408p3": -2.379
+   },
+   "simpleFit": true,
+   "post": -13.462,
+   "postComb": -11.15,
+   "rankLM": 168,
+   "rankPost": 205,
+   "rankComb": 39
+  },
+  {
+   "plaintext": "ALSOHONORSAN",
+   "words": "ALSO HONORS AN",
+   "lm": -10.867,
+   "logL": -1.952,
+   "logLzodiacSize": -4.98,
+   "logLperRegime": {
+    "z408p12": -2.008,
+    "z340": -1.997,
+    "z408p3": -1.866
+   },
+   "simpleFit": true,
+   "post": -12.819,
+   "postComb": -11.163,
+   "rankLM": 174,
+   "rankPost": 62,
+   "rankComb": 40
+  },
+  {
+   "plaintext": "ONEASAFACEOF",
+   "words": "ONE AS A FACE OF",
+   "lm": -10.874,
+   "logL": -2.414,
+   "logLzodiacSize": -4.292,
+   "logLperRegime": {
+    "z408p12": -2.603,
+    "z340": -2.563,
+    "z408p3": -2.199
+   },
+   "simpleFit": true,
+   "post": -13.288,
+   "postComb": -11.173,
+   "rankLM": 175,
+   "rankPost": 147,
+   "rankComb": 41
+  },
+  {
+   "plaintext": "ALSOGOTOUSAT",
+   "words": "ALSO GO TO US AT",
+   "lm": -10.895,
+   "logL": -2.163,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -2.241,
+    "z340": -2.226,
+    "z408p3": -2.049
+   },
+   "simpleFit": true,
+   "post": -13.058,
+   "postComb": -11.193,
+   "rankLM": 180,
+   "rankPost": 106,
+   "rankComb": 42
+  },
+  {
+   "plaintext": "THENINONCETO",
+   "words": "THEN IN ONCE TO",
+   "lm": -10.897,
+   "logL": -2.697,
+   "logLzodiacSize": -4.979,
+   "logLperRegime": {
+    "z408p12": -2.913,
+    "z340": -2.871,
+    "z408p3": -2.461
+   },
+   "simpleFit": true,
+   "post": -13.594,
+   "postComb": -11.197,
+   "rankLM": 182,
+   "rankPost": 257,
+   "rankComb": 43
+  },
+  {
+   "plaintext": "SKINONANDISA",
+   "words": "SKIN ON AND IS A",
+   "lm": -10.913,
+   "logL": -1.881,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -1.937,
+    "z340": -1.927,
+    "z408p3": -1.794
+   },
+   "simpleFit": true,
+   "post": -12.794,
+   "postComb": -11.208,
+   "rankLM": 189,
+   "rankPost": 60,
+   "rankComb": 44
+  },
+  {
+   "plaintext": "DIETSTOTHEDO",
+   "words": "DIETS TO THE DO",
+   "lm": -10.909,
+   "logL": -2.61,
+   "logLzodiacSize": -4.9,
+   "logLperRegime": {
+    "z408p12": -2.789,
+    "z340": -2.752,
+    "z408p3": -2.402
+   },
+   "simpleFit": true,
+   "post": -13.519,
+   "postComb": -11.209,
+   "rankLM": 188,
+   "rankPost": 225,
+   "rankComb": 45
+  },
+  {
+   "plaintext": "HITSUSESATHE",
+   "words": "HITS USES A THE",
+   "lm": -10.934,
+   "logL": -2.568,
+   "logLzodiacSize": -4.957,
+   "logLperRegime": {
+    "z408p12": -2.785,
+    "z340": -2.743,
+    "z408p3": -2.332
+   },
+   "simpleFit": true,
+   "post": -13.502,
+   "postComb": -11.234,
+   "rankLM": 194,
+   "rankPost": 217,
+   "rankComb": 46
+  },
+  {
+   "plaintext": "ALSONOYOUSAY",
+   "words": "ALSO NO YOU SAY",
+   "lm": -10.947,
+   "logL": -1.74,
+   "logLzodiacSize": -4.262,
+   "logLperRegime": {
+    "z408p12": -1.788,
+    "z340": -1.779,
+    "z408p3": -1.665
+   },
+   "simpleFit": true,
+   "post": -12.688,
+   "postComb": -11.241,
+   "rankLM": 198,
+   "rankPost": 51,
+   "rankComb": 47
+  },
+  {
+   "plaintext": "DENTITSTANDS",
+   "words": "DENT IT STANDS",
+   "lm": -10.962,
+   "logL": -1.895,
+   "logLzodiacSize": -4.896,
+   "logLperRegime": {
+    "z408p12": -1.934,
+    "z340": -1.927,
+    "z408p3": -1.832
+   },
+   "simpleFit": true,
+   "post": -12.858,
+   "postComb": -11.258,
+   "rankLM": 203,
+   "rankPost": 70,
+   "rankComb": 48
+  },
+  {
+   "plaintext": "SPINONANDISA",
+   "words": "SPIN ON AND IS A",
+   "lm": -10.967,
+   "logL": -1.881,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -1.937,
+    "z340": -1.927,
+    "z408p3": -1.794
+   },
+   "simpleFit": true,
+   "post": -12.848,
+   "postComb": -11.262,
+   "rankLM": 208,
+   "rankPost": 67,
+   "rankComb": 49
+  },
+  {
+   "plaintext": "OUTASAFACTOF",
+   "words": "OUT AS A FACT OF",
+   "lm": -10.965,
+   "logL": -2.015,
+   "logLzodiacSize": -4.292,
+   "logLperRegime": {
+    "z408p12": -2.084,
+    "z340": -2.071,
+    "z408p3": -1.913
+   },
+   "simpleFit": true,
+   "post": -12.981,
+   "postComb": -11.262,
+   "rankLM": 207,
+   "rankPost": 92,
+   "rankComb": 50
+  },
+  {
+   "plaintext": "TILEBEHEALTH",
+   "words": "TILE BE HEALTH",
+   "lm": -10.979,
+   "logL": -2.644,
+   "logLzodiacSize": -4.842,
+   "logLperRegime": {
+    "z408p12": -2.726,
+    "z340": -2.715,
+    "z408p3": -2.523
+   },
+   "simpleFit": true,
+   "post": -13.623,
+   "postComb": -11.279,
+   "rankLM": 213,
+   "rankPost": 275,
+   "rankComb": 51
+  },
+  {
+   "plaintext": "OFSEVEREASOR",
+   "words": "OF SEVERE AS OR",
+   "lm": -10.998,
+   "logL": -2.549,
+   "logLzodiacSize": -4.972,
+   "logLperRegime": {
+    "z408p12": -2.615,
+    "z340": -2.607,
+    "z408p3": -2.446
+   },
+   "simpleFit": true,
+   "post": -13.546,
+   "postComb": -11.297,
+   "rankLM": 223,
+   "rankPost": 236,
+   "rankComb": 52
+  },
+  {
+   "plaintext": "OUTASANACTON",
+   "words": "OUT AS AN ACT ON",
+   "lm": -11.007,
+   "logL": -2.213,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.288,
+    "z340": -2.273,
+    "z408p3": -2.102
+   },
+   "simpleFit": true,
+   "post": -13.22,
+   "postComb": -11.305,
+   "rankLM": 226,
+   "rankPost": 129,
+   "rankComb": 53
+  },
+  {
+   "plaintext": "LINESEYEONLY",
+   "words": "LINES EYE ONLY",
+   "lm": -11.014,
+   "logL": -2.264,
+   "logLzodiacSize": -4.115,
+   "logLperRegime": {
+    "z408p12": -2.328,
+    "z340": -2.322,
+    "z408p3": -2.163
+   },
+   "simpleFit": true,
+   "post": -13.278,
+   "postComb": -11.313,
+   "rankLM": 227,
+   "rankPost": 145,
+   "rankComb": 54
+  },
+  {
+   "plaintext": "THISUSESPITE",
+   "words": "THIS USE SPITE",
+   "lm": -11.019,
+   "logL": -2.588,
+   "logLzodiacSize": -4.957,
+   "logLperRegime": {
+    "z408p12": -2.805,
+    "z340": -2.763,
+    "z408p3": -2.351
+   },
+   "simpleFit": true,
+   "post": -13.606,
+   "postComb": -11.319,
+   "rankLM": 232,
+   "rankPost": 270,
+   "rankComb": 55
+  },
+  {
+   "plaintext": "INHEREMETHIM",
+   "words": "IN HERE MET HIM",
+   "lm": -11.022,
+   "logL": -2.389,
+   "logLzodiacSize": -4.372,
+   "logLperRegime": {
+    "z408p12": -2.452,
+    "z340": -2.445,
+    "z408p3": -2.29
+   },
+   "simpleFit": true,
+   "post": -13.411,
+   "postComb": -11.321,
+   "rankLM": 233,
+   "rankPost": 185,
+   "rankComb": 56
+  },
+  {
+   "plaintext": "ALSODONORSAN",
+   "words": "ALSO DONORS AN",
+   "lm": -11.036,
+   "logL": -1.952,
+   "logLzodiacSize": -4.98,
+   "logLperRegime": {
+    "z408p12": -2.008,
+    "z340": -1.997,
+    "z408p3": -1.866
+   },
+   "simpleFit": true,
+   "post": -12.988,
+   "postComb": -11.333,
+   "rankLM": 237,
+   "rankPost": 95,
+   "rankComb": 57
+  },
+  {
+   "plaintext": "ISTEVENEXTIN",
+   "words": "I STEVE NEXT IN",
+   "lm": -11.032,
+   "logL": -2.799,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.887,
+    "z340": -2.875,
+    "z408p3": -2.671
+   },
+   "simpleFit": true,
+   "post": -13.832,
+   "postComb": -11.333,
+   "rankLM": 235,
+   "rankPost": 403,
+   "rankComb": 58
+  },
+  {
+   "plaintext": "IDEASATAKEIT",
+   "words": "IDEAS A TAKE IT",
+   "lm": -11.037,
+   "logL": -2.753,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.958,
+    "z340": -2.917,
+    "z408p3": -2.524
+   },
+   "simpleFit": true,
+   "post": -13.79,
+   "postComb": -11.338,
+   "rankLM": 239,
+   "rankPost": 372,
+   "rankComb": 59
+  },
+  {
+   "plaintext": "SPEAKATAWEST",
+   "words": "SPEAK AT A WEST",
+   "lm": -11.058,
+   "logL": -2.715,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -2.919,
+    "z340": -2.879,
+    "z408p3": -2.488
+   },
+   "simpleFit": true,
+   "post": -13.773,
+   "postComb": -11.358,
+   "rankLM": 247,
+   "rankPost": 362,
+   "rankComb": 60
+  }
+ ],
+ "seconds": 51.444
+}

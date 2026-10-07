@@ -1,0 +1,611 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:11:59.453Z",
+ "label": "scr08_07",
+ "cipher": {
+  "id": "scr08",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr08.txt",
+  "text": "ANN[00MMKAEz0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abbcdde*faghd"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 4,
+  "tasks": 120,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 120,
+  "tasks": 120,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 207793,
+  "scored": 195961,
+  "keptAtLeastStreamMin": 179,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 14609,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2143,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 179,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 10,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 21,
+  "3": 102,
+  "4": 55,
+  "5": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.467979480292076,
+  "topShare": 0.29473043452855346,
+  "top10Share": 0.5677212817895814,
+  "effectiveNumberExpEntropy": 82.98241081055212,
+  "effectiveNumberInverseSimpson": 10.084470192774432,
+  "unscoredMassBoundRelative": 0.003810111115065561,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 10,
+   "maxWordLogp": -15.617341250177098,
+   "massEstimateRelative": 0.000001384280778623683,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0012144232481342738
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 4,
+   "-18.00": 18,
+   "-17.75": 34,
+   "-17.50": 63,
+   "-17.25": 68,
+   "-17.00": 85,
+   "-16.75": 99,
+   "-16.50": 135,
+   "-16.25": 143,
+   "-16.00": 186,
+   "-15.75": 284,
+   "-15.50": 322,
+   "-15.25": 404,
+   "-15.00": 571,
+   "-14.75": 701,
+   "-14.50": 932,
+   "-14.25": 1101,
+   "-14.00": 1267,
+   "-13.75": 1451,
+   "-13.50": 1708,
+   "-13.25": 1930,
+   "-13.00": 2149,
+   "-12.75": 2601,
+   "-12.50": 2952,
+   "-12.25": 3518,
+   "-12.00": 3917,
+   "-11.75": 4582,
+   "-11.50": 5119,
+   "-11.25": 5731,
+   "-11.00": 6328,
+   "-10.75": 6856,
+   "-10.50": 7217,
+   "-10.25": 7486,
+   "-10.00": 7585,
+   "-9.75": 8029,
+   "-9.50": 8301,
+   "-9.25": 8444,
+   "-9.00": 8709,
+   "-8.75": 9058,
+   "-8.50": 9079,
+   "-8.25": 9006,
+   "-8.00": 9021,
+   "-7.75": 8929,
+   "-7.50": 8307,
+   "-7.25": 7699,
+   "-7.00": 7026,
+   "-6.75": 6202,
+   "-6.50": 5126,
+   "-6.25": 4331,
+   "-6.00": 3610,
+   "-5.75": 2910,
+   "-5.50": 2131,
+   "-5.25": 1566,
+   "-5.00": 1107,
+   "-4.75": 708,
+   "-4.50": 435,
+   "-4.25": 259,
+   "-4.00": 148,
+   "-3.75": 52,
+   "-3.50": 25,
+   "-3.25": 12,
+   "-3.00": 9,
+   "-2.75": 7
+  },
+  "exactScored": {
+   "-19.00": 9,
+   "-18.75": 111,
+   "-18.50": 346,
+   "-18.25": 901,
+   "-18.00": 1845,
+   "-17.75": 3139,
+   "-17.50": 4758,
+   "-17.25": 6162,
+   "-17.00": 8028,
+   "-16.75": 9902,
+   "-16.50": 11872,
+   "-16.25": 13271,
+   "-16.00": 14429,
+   "-15.75": 14655,
+   "-15.50": 14651,
+   "-15.25": 13867,
+   "-15.00": 12461,
+   "-14.75": 10978,
+   "-14.50": 9568,
+   "-14.25": 8051,
+   "-14.00": 6989,
+   "-13.75": 5763,
+   "-13.50": 4972,
+   "-13.25": 4039,
+   "-13.00": 3575,
+   "-12.75": 2772,
+   "-12.50": 2269,
+   "-12.25": 1710,
+   "-12.00": 1415,
+   "-11.75": 997,
+   "-11.50": 740,
+   "-11.25": 539,
+   "-11.00": 342,
+   "-10.75": 277,
+   "-10.50": 212,
+   "-10.25": 123,
+   "-10.00": 74,
+   "-9.75": 58,
+   "-9.50": 38,
+   "-9.25": 17,
+   "-9.00": 16,
+   "-8.75": 7,
+   "-8.50": 3,
+   "-8.25": 6,
+   "-8.00": 2,
+   "-7.75": 1,
+   "-7.00": 1
+  },
+  "boundUnscored": {
+   "-18.25": 4,
+   "-18.00": 18,
+   "-17.75": 34,
+   "-17.50": 63,
+   "-17.25": 68,
+   "-17.00": 85,
+   "-16.75": 99,
+   "-16.50": 135,
+   "-16.25": 143,
+   "-16.00": 186,
+   "-15.75": 284,
+   "-15.50": 322,
+   "-15.25": 404,
+   "-15.00": 571,
+   "-14.75": 701,
+   "-14.50": 932,
+   "-14.25": 1101,
+   "-14.00": 1267,
+   "-13.75": 1451,
+   "-13.50": 1708,
+   "-13.25": 1930,
+   "-13.00": 326
+  }
+ },
+ "timeMs": {
+  "total": 2884,
+  "setup": 457
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ACCESSDETAILS",
+   "wordLogp": -6.9986,
+   "words": "ACCESS DETAILS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "D",
+    "K": "T",
+    "E": "I",
+    "z": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ACCESSISLANDS",
+   "wordLogp": -7.5941,
+   "words": "ACCESS ISLANDS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "I",
+    "K": "L",
+    "E": "N",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ACCESSTOWARDS",
+   "wordLogp": -7.8812,
+   "words": "ACCESS TOWARDS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "T",
+    "K": "W",
+    "E": "R",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "APPLEEXCHANGE",
+   "wordLogp": -7.8906,
+   "words": "APPLE EXCHANGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "N": "P",
+    "[": "L",
+    "M": "X",
+    "K": "H",
+    "E": "N",
+    "z": "G"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ACCESSREMAINS",
+   "wordLogp": -8.0394,
+   "words": "ACCESS REMAINS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "R",
+    "K": "M",
+    "E": "I",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "TOOLSSENDTHIS",
+   "wordLogp": -8.1705,
+   "words": "TOOLS SEND THIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "N": "O",
+    "[": "L",
+    "M": "E",
+    "K": "D",
+    "E": "H",
+    "z": "I"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "INNOTTHEFIRST",
+   "wordLogp": -8.1822,
+   "words": "IN NOT THE FIRST",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "I",
+    "N": "N",
+    "[": "O",
+    "M": "H",
+    "K": "F",
+    "E": "R",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ACCESSORYARTS",
+   "wordLogp": -8.19,
+   "words": "ACCESSORY ARTS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "O",
+    "K": "Y",
+    "E": "R",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ACCESSDOMAINS",
+   "wordLogp": -8.1922,
+   "words": "ACCESS DOMAINS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "D",
+    "K": "M",
+    "E": "I",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "OCCURRINGOVER",
+   "wordLogp": -8.2132,
+   "words": "OCCURRING OVER",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "O",
+    "N": "C",
+    "[": "U",
+    "M": "I",
+    "K": "G",
+    "E": "V",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "INNATTHEFIRST",
+   "wordLogp": -8.3875,
+   "words": "INN AT THE FIRST",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "I",
+    "N": "N",
+    "[": "A",
+    "M": "H",
+    "K": "F",
+    "E": "R",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ACCESSTOBANKS",
+   "wordLogp": -8.4058,
+   "words": "ACCESS TO BANKS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "T",
+    "K": "B",
+    "E": "N",
+    "z": "K"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "LOOKSSUPPLIES",
+   "wordLogp": -8.4425,
+   "words": "LOOKS SUPPLIES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "L",
+    "N": "O",
+    "[": "K",
+    "M": "U",
+    "K": "P",
+    "E": "I",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "TOOLSSAVETHIS",
+   "wordLogp": -8.5062,
+   "words": "TOOLS SAVE THIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "N": "O",
+    "[": "L",
+    "M": "A",
+    "K": "E",
+    "E": "H",
+    "z": "I"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "TEENSSYMPTOMS",
+   "wordLogp": -8.5235,
+   "words": "TEENS SYMPTOMS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "N": "E",
+    "[": "N",
+    "M": "Y",
+    "K": "P",
+    "E": "O",
+    "z": "M"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ACCESSTOHANDS",
+   "wordLogp": -8.5338,
+   "words": "ACCESS TO HANDS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "T",
+    "K": "H",
+    "E": "N",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ACCESSTOPARIS",
+   "wordLogp": -8.5361,
+   "words": "ACCESS TO PARIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "T",
+    "K": "P",
+    "E": "R",
+    "z": "I"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ACCESSTOPAYIS",
+   "wordLogp": -8.633,
+   "words": "ACCESS TO PAY IS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "T",
+    "K": "P",
+    "E": "Y",
+    "z": "I"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ACCESSTODAYIS",
+   "wordLogp": -8.6893,
+   "words": "ACCESS TODAY IS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "T",
+    "K": "D",
+    "E": "Y",
+    "z": "I"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ACCESSORYAIDS",
+   "wordLogp": -8.6967,
+   "words": "ACCESSORY AIDS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "A",
+    "N": "C",
+    "[": "E",
+    "M": "O",
+    "K": "Y",
+    "E": "I",
+    "z": "D"
+   }
+  }
+ ]
+}

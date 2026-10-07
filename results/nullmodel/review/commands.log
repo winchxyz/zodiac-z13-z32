@@ -1,0 +1,28 @@
+# nullmodel adversarial review - commands run (working directory the repository root), 2026-10-07
+
+# 1. independent re-count of the corpus windows (new code, no numpy, no attacker cache)
+node tools/run_slot.js --label nullmodel-review-windows -- node results/nullmodel/review/review_windows.js
+#   -> results/nullmodel/review/windows_check.json, review_windows.log  (30.7 s)
+
+# 2. reproduce the attacker's real-cipher solver runs (joint 5-gram + entropy 0.5 + word weight 1), single thread, ~3 s each
+node tools/anneal.js --cipher data/ciphers/variants/z13.canonical.txt --mode homophonic --restarts 54 --top 20 --wordweight 1 --threads 1 --seed 1 --quiet --out results/nullmodel/review/z13_homophonic_joint5w_repro.json
+node tools/anneal.js --cipher data/ciphers/variants/z13.canonical.txt --mode simple --restarts 54 --top 20 --wordweight 1 --threads 1 --seed 1 --quiet --out results/nullmodel/review/z13_simple_joint5w_repro.json
+
+# 3. same annealer with the Markov 6-gram objective (log10 P6 of the text), single thread, ~5 s each
+node tools/anneal.js --cipher data/ciphers/variants/z13.canonical.txt --mode simple --score markov --n 6 --entropy 0 --restarts 54 --top 10 --threads 1 --seed 1 --out results/nullmodel/review/z13_simple_markov6.json
+node tools/anneal.js --cipher data/ciphers/variants/z13.canonical.txt --mode homophonic --score markov --n 6 --entropy 0 --restarts 54 --top 20 --threads 1 --seed 1 --quiet --out results/nullmodel/review/z13_hom_markov6.json
+
+# 4. objective dependence of the solver null and the length scan (same synthetic ciphers, markov6 vs the attacker's joint5w)
+node tools/run_slot.js --label nullmodel-review-objective -- node results/nullmodel/review/review_objective.js --threads 4
+#   -> results/nullmodel/review/objective_check.json, review_objective.log  (193 s)
+
+# 5. normalization of the 6-gram "posteriors" P6(W)/f (0.7 s)
+node results/nullmodel/review/review_posterior_norm.js
+#   -> results/nullmodel/review/posterior_normalization.json
+
+# 6. topic-matched null for Z32: radian/inch phrases from a small grammar
+#    (the first run, 81 s single-threaded, went outside the slot runner by mistake; the rerun below used a slot)
+node tools/run_slot.js --label nullmodel-review-radians -- node results/nullmodel/review/review_z32_radians.js
+#   -> results/nullmodel/review/z32_radians_grammar.json, review_z32_radians.log
+
+# 7. source check: https://zodiackillerciphers.com/my-name-is-sarah-the-horse/ (WebFetch, two queries)

@@ -1,0 +1,462 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:36:04.285Z",
+ "label": "eng09_none",
+ "cipher": {
+  "id": "eng09",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng09.txt",
+  "text": "abcdbefbgdahc",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcdbefbgdahc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 59802,
+  "scored": 55293,
+  "keptAtLeastStreamMin": 12,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1697,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 210,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 12,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 8,
+  "4": 4
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.124963654350717,
+  "topShare": 0.07815083601386226,
+  "top10Share": 0.35580532364645523,
+  "effectiveNumberExpEntropy": 197.05766800266716,
+  "effectiveNumberInverseSimpson": 53.69167813046857,
+  "unscoredMassBoundRelative": 0.06590887362438988,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 3,
+   "maxWordLogp": -16.56717043861295,
+   "massEstimateRelative": 0.000005090052704721273,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.021159230266036326
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 2,
+   "-18.00": 7,
+   "-17.75": 15,
+   "-17.50": 14,
+   "-17.25": 16,
+   "-17.00": 36,
+   "-16.75": 34,
+   "-16.50": 41,
+   "-16.25": 69,
+   "-16.00": 84,
+   "-15.75": 81,
+   "-15.50": 108,
+   "-15.25": 158,
+   "-15.00": 232,
+   "-14.75": 301,
+   "-14.50": 349,
+   "-14.25": 419,
+   "-14.00": 489,
+   "-13.75": 558,
+   "-13.50": 603,
+   "-13.25": 753,
+   "-13.00": 925,
+   "-12.75": 1045,
+   "-12.50": 1129,
+   "-12.25": 1358,
+   "-12.00": 1516,
+   "-11.75": 1753,
+   "-11.50": 1854,
+   "-11.25": 1983,
+   "-11.00": 2172,
+   "-10.75": 2204,
+   "-10.50": 2319,
+   "-10.25": 2382,
+   "-10.00": 2474,
+   "-9.75": 2443,
+   "-9.50": 2568,
+   "-9.25": 2632,
+   "-9.00": 2596,
+   "-8.75": 2572,
+   "-8.50": 2607,
+   "-8.25": 2440,
+   "-8.00": 2309,
+   "-7.75": 2103,
+   "-7.50": 1958,
+   "-7.25": 1702,
+   "-7.00": 1397,
+   "-6.75": 1186,
+   "-6.50": 1045,
+   "-6.25": 796,
+   "-6.00": 581,
+   "-5.75": 474,
+   "-5.50": 302,
+   "-5.25": 234,
+   "-5.00": 148,
+   "-4.75": 98,
+   "-4.50": 60,
+   "-4.25": 45,
+   "-4.00": 11,
+   "-3.75": 3,
+   "-3.50": 5,
+   "-3.25": 4
+  },
+  "exactScored": {
+   "-19.00": 1,
+   "-18.75": 10,
+   "-18.50": 139,
+   "-18.25": 419,
+   "-18.00": 897,
+   "-17.75": 1688,
+   "-17.50": 2674,
+   "-17.25": 3468,
+   "-17.00": 4187,
+   "-16.75": 4608,
+   "-16.50": 4598,
+   "-16.25": 4592,
+   "-16.00": 4127,
+   "-15.75": 3740,
+   "-15.50": 3260,
+   "-15.25": 2994,
+   "-15.00": 2576,
+   "-14.75": 2269,
+   "-14.50": 1948,
+   "-14.25": 1549,
+   "-14.00": 1331,
+   "-13.75": 1026,
+   "-13.50": 771,
+   "-13.25": 643,
+   "-13.00": 465,
+   "-12.75": 330,
+   "-12.50": 273,
+   "-12.25": 214,
+   "-12.00": 147,
+   "-11.75": 106,
+   "-11.50": 84,
+   "-11.25": 60,
+   "-11.00": 34,
+   "-10.75": 23,
+   "-10.50": 16,
+   "-10.25": 13,
+   "-10.00": 4,
+   "-9.75": 7,
+   "-9.50": 1,
+   "-9.25": 1
+  },
+  "boundUnscored": {
+   "-18.25": 2,
+   "-18.00": 7,
+   "-17.75": 15,
+   "-17.50": 14,
+   "-17.25": 16,
+   "-17.00": 36,
+   "-16.75": 34,
+   "-16.50": 41,
+   "-16.25": 69,
+   "-16.00": 84,
+   "-15.75": 81,
+   "-15.50": 108,
+   "-15.25": 158,
+   "-15.00": 232,
+   "-14.75": 301,
+   "-14.50": 349,
+   "-14.25": 419,
+   "-14.00": 489,
+   "-13.75": 558,
+   "-13.50": 603,
+   "-13.25": 753,
+   "-13.00": 140
+  }
+ },
+ "timeMs": {
+  "total": 1367,
+  "setup": 419
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "HOSTONEOFTHIS",
+   "wordLogp": -9.232,
+   "words": "HOST ONE OF THIS",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "S",
+    "d": "T",
+    "e": "N",
+    "f": "E",
+    "g": "F",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CENTERBESTCAN",
+   "wordLogp": -9.403,
+   "words": "CENTER BEST CAN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "B",
+    "g": "S",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "CENTERWESTCAN",
+   "wordLogp": -9.5358,
+   "words": "CENTER WEST CAN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "W",
+    "g": "S",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "FIREINTIMEFOR",
+   "wordLogp": -9.5892,
+   "words": "FIRE IN TIME FOR",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "I",
+    "c": "R",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "M",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "SENTEXPERTSIN",
+   "wordLogp": -9.6403,
+   "words": "SENT EXPERTS IN",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "X",
+    "f": "P",
+    "g": "R",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "IENTERSECTION",
+   "wordLogp": -9.6843,
+   "words": "I ENTER SECTION",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "S",
+    "g": "C",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "CENTERLEFTCAN",
+   "wordLogp": -9.7203,
+   "words": "CENTER LEFT CAN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "L",
+    "g": "F",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ENDINGONFIELD",
+   "wordLogp": -9.7446,
+   "words": "ENDING ON FIELD",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "N",
+    "c": "D",
+    "d": "I",
+    "e": "G",
+    "f": "O",
+    "g": "F",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ROSEOCTOBERIS",
+   "wordLogp": -9.7488,
+   "words": "ROSE OCTOBER IS",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "O",
+    "c": "S",
+    "d": "E",
+    "e": "C",
+    "f": "T",
+    "g": "B",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "HOMEOFLOVEHIM",
+   "wordLogp": -9.8136,
+   "words": "HOME OF LOVE HIM",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "F",
+    "f": "L",
+    "g": "V",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ANDONEINBOARD",
+   "wordLogp": -9.8307,
+   "words": "AND ONE IN BOARD",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "O",
+    "e": "E",
+    "f": "I",
+    "g": "B",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "FIREINSIDEFOR",
+   "wordLogp": -9.8329,
+   "words": "FIRE INSIDE FOR",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "I",
+    "c": "R",
+    "d": "E",
+    "e": "N",
+    "f": "S",
+    "g": "D",
+    "h": "O"
+   }
+  }
+ ]
+}

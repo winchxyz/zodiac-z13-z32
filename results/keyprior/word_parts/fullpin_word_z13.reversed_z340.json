@@ -1,0 +1,111 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:46:45.327Z",
+ "argv": "--ciphers z13.reversed --keys z340 --null 10000 --null-kind permute --threads 1 --seed 1970 --stat word --out results/keyprior/word_parts/fullpin_word_z13.reversed_z340.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 3.523,
+ "results": [
+  {
+   "cipher": "z13.reversed",
+   "key": "z340",
+   "text": "MAN[0M0K0zNEA",
+   "pinnedSymbols": "MANKzE",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "ODE??O?A?AERD",
+   "real": {
+    "best": {
+     "plaintext": "ODERTOTATAERD",
+     "words": "ODER TO TATAERD",
+     "wordLogp": -18.097527597933325,
+     "unknownWords": [
+      "TATAERD"
+     ],
+     "ngram5": -59.73118591308594
+    },
+    "score": -17.50883507609086,
+    "top5": [
+     {
+      "plaintext": "ODERTOTATAERD",
+      "score": -17.50883507609086
+     },
+     {
+      "plaintext": "ODEEEOEAEAERD",
+      "score": -17.546702952537206
+     },
+     {
+      "plaintext": "ODETEOEAEAERD",
+      "score": -17.68656763568845
+     },
+     {
+      "plaintext": "ODEAEOEAEAERD",
+      "score": -17.740843267593053
+     },
+     {
+      "plaintext": "ODEONONANAERD",
+      "score": -17.754190412760344
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -18.20839211939214,
+     "sd": 1.440696948486997,
+     "min": -23.37465700641599,
+     "q05": -20.46724698081937,
+     "q25": -19.205635399970678,
+     "median": -18.287268252525,
+     "q75": -17.26603290573087,
+     "q95": -15.735164754016784,
+     "q99": -14.678827221828817,
+     "max": -11.763870675363059
+    },
+    "topNull": [
+     {
+      "index": 946,
+      "score": -11.763870675363059,
+      "plaintext": "ISINSISTSAIDS"
+     },
+     {
+      "index": 136,
+      "score": -12.011612748125394,
+      "plaintext": "TENANTNONONCE"
+     },
+     {
+      "index": 5725,
+      "score": -12.304630184264814,
+      "plaintext": "STATESEYEDAAT"
+     },
+     {
+      "index": 979,
+      "score": -12.315265325601516,
+      "plaintext": "REDHERENEEDWE"
+     },
+     {
+      "index": 916,
+      "score": -12.621548655757802,
+      "plaintext": "ATESTATETHEUT"
+     }
+    ]
+   },
+   "test": {
+    "ge": 3050,
+    "n": 10000,
+    "p": 0.3050694930506949,
+    "percentile": 69.5,
+    "z": 0.4855684910250876
+   }
+  }
+ ]
+}

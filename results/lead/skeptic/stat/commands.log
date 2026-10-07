@@ -1,0 +1,11 @@
+2026-10-07T18:37:07Z node tools/run_slot.js --label skeptic -- node tools/lead_skeptic_multiverse.js --key {z340,z408} --null {perm,class,iid}
+note: moved from results/lead/skeptic/ to results/lead/skeptic/stat/; scripts renamed tools/lead_skeptic_stat_*
+2026-10-07T18:41:04Z node tools/run_slot.js --label skeptic -- node tools/lead_skeptic_stat_arrange.js (keys z340,z408; all6 + capitalsOnly)
+2026-10-07T18:44:52Z node tools/run_slot.js --label skeptic -- node tools/lead_skeptic_stat_influence.js --key {z340,z408} --draws 10000
+2026-10-07T18:45:30Z node tools/lead_skeptic_stat_families.js
+2026-10-07T18:46:13Z node tools/run_slot.js --label skeptic -- node tools/lead_skeptic_stat_multiverse.js --key z340 --null {iso_weighted,iso_uniform,occ,class_fixz}
+2026-10-07T18:49:45Z node tools/lead_skeptic_stat_core.js --draws 100000
+2026-10-07T18:50:44Z node tools/lead_skeptic_stat_bayes.js
+2026-10-07T18:51:30Z (rerun, 4 shards in parallel, 5000 draws) node tools/run_slot.js --label skeptic -- node tools/lead_skeptic_stat_influence.js --key {z340,z408} --draws 5000 --nulls <shard> --out results/lead/skeptic/stat/influence_<key>_<a|b>.json
+2026-10-07T18:52:15Z node tools/run_slot.js --label skeptic -- node tools/lead_skeptic_stat_arrpowerw.js
+2026-10-07T19:07:46Z node tools/lead_skeptic_stat_summary.js

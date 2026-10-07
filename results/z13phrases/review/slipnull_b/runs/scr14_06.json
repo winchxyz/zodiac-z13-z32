@@ -1,0 +1,607 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:28:49.144Z",
+ "label": "scr14_06",
+ "cipher": {
+  "id": "scr14",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr14.txt",
+  "text": "[0K0MMAA0zNNE",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   6
+  ],
+  "isomorphAfterSlips": "abcbdd*ebfggh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 164954,
+  "scored": 153605,
+  "keptAtLeastStreamMin": 35,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 7147,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 815,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 35,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 4,
+  "3": 10,
+  "4": 21
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.479491993346379,
+  "topShare": 0.07743099731369954,
+  "top10Share": 0.24915084126637224,
+  "effectiveNumberExpEntropy": 566.8628249000957,
+  "effectiveNumberInverseSimpson": 84.9555297121598,
+  "unscoredMassBoundRelative": 0.03752749617469606,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 10,
+   "maxWordLogp": -15.759197411760724,
+   "massEstimateRelative": 0.000012113546122289088,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.012061765527277451
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 5,
+   "-17.75": 7,
+   "-17.50": 19,
+   "-17.25": 22,
+   "-17.00": 36,
+   "-16.75": 65,
+   "-16.50": 95,
+   "-16.25": 125,
+   "-16.00": 181,
+   "-15.75": 269,
+   "-15.50": 333,
+   "-15.25": 447,
+   "-15.00": 581,
+   "-14.75": 713,
+   "-14.50": 873,
+   "-14.25": 1095,
+   "-14.00": 1267,
+   "-13.75": 1461,
+   "-13.50": 1541,
+   "-13.25": 1874,
+   "-13.00": 2139,
+   "-12.75": 2532,
+   "-12.50": 3072,
+   "-12.25": 3349,
+   "-12.00": 3722,
+   "-11.75": 4282,
+   "-11.50": 4565,
+   "-11.25": 5075,
+   "-11.00": 5279,
+   "-10.75": 5675,
+   "-10.50": 6158,
+   "-10.25": 6343,
+   "-10.00": 6729,
+   "-9.75": 6729,
+   "-9.50": 6924,
+   "-9.25": 6792,
+   "-9.00": 6766,
+   "-8.75": 6747,
+   "-8.50": 6882,
+   "-8.25": 6595,
+   "-8.00": 6590,
+   "-7.75": 6203,
+   "-7.50": 5915,
+   "-7.25": 5636,
+   "-7.00": 4959,
+   "-6.75": 4258,
+   "-6.50": 3613,
+   "-6.25": 2775,
+   "-6.00": 2145,
+   "-5.75": 1652,
+   "-5.50": 1303,
+   "-5.25": 897,
+   "-5.00": 670,
+   "-4.75": 412,
+   "-4.50": 252,
+   "-4.25": 158,
+   "-4.00": 73,
+   "-3.75": 42,
+   "-3.50": 16,
+   "-3.25": 12,
+   "-3.00": 2,
+   "-2.75": 3,
+   "-2.50": 2,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.00": 5,
+   "-18.75": 75,
+   "-18.50": 299,
+   "-18.25": 883,
+   "-18.00": 1692,
+   "-17.75": 2990,
+   "-17.50": 4581,
+   "-17.25": 6364,
+   "-17.00": 8063,
+   "-16.75": 9723,
+   "-16.50": 11099,
+   "-16.25": 11798,
+   "-16.00": 11804,
+   "-15.75": 11659,
+   "-15.50": 10658,
+   "-15.25": 9884,
+   "-15.00": 8736,
+   "-14.75": 7928,
+   "-14.50": 6930,
+   "-14.25": 5962,
+   "-14.00": 5108,
+   "-13.75": 4086,
+   "-13.50": 3317,
+   "-13.25": 2437,
+   "-13.00": 2014,
+   "-12.75": 1543,
+   "-12.50": 1146,
+   "-12.25": 831,
+   "-12.00": 602,
+   "-11.75": 437,
+   "-11.50": 322,
+   "-11.25": 209,
+   "-11.00": 145,
+   "-10.75": 113,
+   "-10.50": 66,
+   "-10.25": 45,
+   "-10.00": 29,
+   "-9.75": 11,
+   "-9.50": 6,
+   "-9.25": 3,
+   "-9.00": 1,
+   "-8.75": 1
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 5,
+   "-17.75": 7,
+   "-17.50": 19,
+   "-17.25": 22,
+   "-17.00": 36,
+   "-16.75": 65,
+   "-16.50": 95,
+   "-16.25": 125,
+   "-16.00": 181,
+   "-15.75": 269,
+   "-15.50": 333,
+   "-15.25": 447,
+   "-15.00": 581,
+   "-14.75": 713,
+   "-14.50": 873,
+   "-14.25": 1095,
+   "-14.00": 1267,
+   "-13.75": 1461,
+   "-13.50": 1541,
+   "-13.25": 1874,
+   "-13.00": 339
+  }
+ },
+ "timeMs": {
+  "total": 2389,
+  "setup": 511
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "SEVENNOTEBOOK",
+   "wordLogp": -8.5906,
+   "words": "SEVEN NOTEBOOK",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "S",
+    "K": "V",
+    "M": "N",
+    "A": "T",
+    "z": "B",
+    "N": "O",
+    "E": "K"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "HAWAIIANAGOOD",
+   "wordLogp": -8.8471,
+   "words": "HAWAIIAN A GOOD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "N",
+    "z": "G",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "HAWAIISEAFOOD",
+   "wordLogp": -9.0783,
+   "words": "HAWAII SEAFOOD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "E",
+    "z": "F",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "HAWAIIMEANTTO",
+   "wordLogp": -9.1417,
+   "words": "HAWAII MEANT TO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "E",
+    "z": "N",
+    "N": "T",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "HAWAIIISAGOOD",
+   "wordLogp": -9.2372,
+   "words": "HAWAII IS A GOOD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "S",
+    "z": "G",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "CANAPPLYAGOOD",
+   "wordLogp": -9.2722,
+   "words": "CAN APPLY A GOOD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "C",
+    "K": "N",
+    "M": "P",
+    "A": "Y",
+    "z": "G",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "BEMESSAGETOOF",
+   "wordLogp": -9.3572,
+   "words": "BE MESSAGE TO OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "B",
+    "K": "M",
+    "M": "S",
+    "A": "G",
+    "z": "T",
+    "N": "O",
+    "E": "F"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "MAYALLOWAGOOD",
+   "wordLogp": -9.3652,
+   "words": "MAY ALLOW A GOOD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "M",
+    "K": "Y",
+    "M": "L",
+    "A": "W",
+    "z": "G",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "HAWAIIOFAGOOD",
+   "wordLogp": -9.4243,
+   "words": "HAWAII OF A GOOD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "F",
+    "z": "G",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "HAWAIIINAGOOD",
+   "wordLogp": -9.4515,
+   "words": "HAWAII IN A GOOD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "N",
+    "z": "G",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "HAWAIIANALOOK",
+   "wordLogp": -9.4979,
+   "words": "HAWAIIAN A LOOK",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "N",
+    "z": "L",
+    "N": "O",
+    "E": "K"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "WEMESSAGETOOF",
+   "wordLogp": -9.535,
+   "words": "WE MESSAGE TO OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "W",
+    "K": "M",
+    "M": "S",
+    "A": "G",
+    "z": "T",
+    "N": "O",
+    "E": "F"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "NEVERROSEWOOD",
+   "wordLogp": -9.5552,
+   "words": "NEVER ROSEWOOD",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "N",
+    "K": "V",
+    "M": "R",
+    "A": "S",
+    "z": "W",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "PETERROSEWOOD",
+   "wordLogp": -9.5614,
+   "words": "PETER ROSEWOOD",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "P",
+    "K": "T",
+    "M": "R",
+    "A": "S",
+    "z": "W",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HAWAIIHEARTTO",
+   "wordLogp": -9.5763,
+   "words": "HAWAII HEART TO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "E",
+    "z": "R",
+    "N": "T",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "CANALLOWAGOOD",
+   "wordLogp": -9.5766,
+   "words": "CAN ALLOW A GOOD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "C",
+    "K": "N",
+    "M": "L",
+    "A": "W",
+    "z": "G",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "HAWAIIANABOOK",
+   "wordLogp": -9.5942,
+   "words": "HAWAIIAN A BOOK",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "N",
+    "z": "B",
+    "N": "O",
+    "E": "K"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "HAWAIIASAGOOD",
+   "wordLogp": -9.6039,
+   "words": "HAWAII AS A GOOD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "S",
+    "z": "G",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "HAWAIILEASTTO",
+   "wordLogp": -9.6266,
+   "words": "HAWAII LEAST TO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "E",
+    "z": "S",
+    "N": "T",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "HAWAIIGRANTTO",
+   "wordLogp": -9.6312,
+   "words": "HAWAII GRANT TO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "H",
+    "K": "W",
+    "M": "I",
+    "A": "R",
+    "z": "N",
+    "N": "T",
+    "E": "O"
+   }
+  }
+ ]
+}

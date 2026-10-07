@@ -1,0 +1,499 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:31:57.444Z",
+ "label": "eng04_10",
+ "cipher": {
+  "id": "eng04",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng04.txt",
+  "text": "abcdeefgcfheg",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   10
+  ],
+  "isomorphAfterSlips": "abcdeefgcf*eg"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 20228,
+  "scored": 18994,
+  "keptAtLeastStreamMin": 15,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 891,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 116,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 15,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 2,
+  "4": 13
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.610702891689239,
+  "topShare": 0.5390092382891802,
+  "top10Share": 0.8522122179770681,
+  "effectiveNumberExpEntropy": 10.355429352783986,
+  "effectiveNumberInverseSimpson": 3.269475324568021,
+  "unscoredMassBoundRelative": 0.005519732755982071,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0017426918556235557
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 3,
+   "-17.75": 4,
+   "-17.50": 5,
+   "-17.25": 6,
+   "-17.00": 8,
+   "-16.75": 12,
+   "-16.50": 6,
+   "-16.25": 20,
+   "-16.00": 6,
+   "-15.75": 17,
+   "-15.50": 27,
+   "-15.25": 40,
+   "-15.00": 46,
+   "-14.75": 80,
+   "-14.50": 119,
+   "-14.25": 131,
+   "-14.00": 138,
+   "-13.75": 159,
+   "-13.50": 186,
+   "-13.25": 191,
+   "-13.00": 214,
+   "-12.75": 271,
+   "-12.50": 279,
+   "-12.25": 363,
+   "-12.00": 459,
+   "-11.75": 503,
+   "-11.50": 524,
+   "-11.25": 601,
+   "-11.00": 628,
+   "-10.75": 645,
+   "-10.50": 697,
+   "-10.25": 746,
+   "-10.00": 771,
+   "-9.75": 693,
+   "-9.50": 756,
+   "-9.25": 814,
+   "-9.00": 834,
+   "-8.75": 917,
+   "-8.50": 888,
+   "-8.25": 926,
+   "-8.00": 879,
+   "-7.75": 937,
+   "-7.50": 914,
+   "-7.25": 772,
+   "-7.00": 668,
+   "-6.75": 578,
+   "-6.50": 431,
+   "-6.25": 329,
+   "-6.00": 253,
+   "-5.75": 213,
+   "-5.50": 137,
+   "-5.25": 130,
+   "-5.00": 93,
+   "-4.75": 65,
+   "-4.50": 32,
+   "-4.25": 33,
+   "-4.00": 14,
+   "-3.75": 11,
+   "-3.50": 4,
+   "-3.25": 2
+  },
+  "exactScored": {
+   "-18.50": 5,
+   "-18.25": 53,
+   "-18.00": 152,
+   "-17.75": 333,
+   "-17.50": 589,
+   "-17.25": 846,
+   "-17.00": 1076,
+   "-16.75": 1284,
+   "-16.50": 1363,
+   "-16.25": 1455,
+   "-16.00": 1523,
+   "-15.75": 1388,
+   "-15.50": 1314,
+   "-15.25": 1195,
+   "-15.00": 1076,
+   "-14.75": 923,
+   "-14.50": 840,
+   "-14.25": 738,
+   "-14.00": 629,
+   "-13.75": 502,
+   "-13.50": 425,
+   "-13.25": 349,
+   "-13.00": 259,
+   "-12.75": 182,
+   "-12.50": 136,
+   "-12.25": 103,
+   "-12.00": 65,
+   "-11.75": 55,
+   "-11.50": 32,
+   "-11.25": 30,
+   "-11.00": 22,
+   "-10.75": 21,
+   "-10.50": 9,
+   "-10.25": 5,
+   "-10.00": 4,
+   "-9.75": 4,
+   "-9.50": 2,
+   "-9.25": 3,
+   "-9.00": 2,
+   "-8.75": 1,
+   "-8.00": 1
+  },
+  "boundUnscored": {
+   "-18.00": 3,
+   "-17.75": 4,
+   "-17.50": 5,
+   "-17.25": 6,
+   "-17.00": 8,
+   "-16.75": 12,
+   "-16.50": 6,
+   "-16.25": 20,
+   "-16.00": 6,
+   "-15.75": 17,
+   "-15.50": 27,
+   "-15.25": 40,
+   "-15.00": 46,
+   "-14.75": 80,
+   "-14.50": 119,
+   "-14.25": 131,
+   "-14.00": 138,
+   "-13.75": 159,
+   "-13.50": 186,
+   "-13.25": 191,
+   "-13.00": 30
+  }
+ },
+ "timeMs": {
+  "total": 1599,
+  "setup": 555
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "WECANNOTCOUNT",
+   "wordLogp": -7.8791,
+   "words": "WE CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "E",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "HECANNOTCOUNT",
+   "wordLogp": -8.6795,
+   "words": "HE CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "E",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THEBOOKWEKNOW",
+   "wordLogp": -8.9613,
+   "words": "THE BOOK WE KNOW",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "B",
+    "e": "O",
+    "f": "K",
+    "g": "W"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "WHOSEEMTOMEET",
+   "wordLogp": -8.979,
+   "words": "WHO SEEM TO MEET",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "H",
+    "c": "O",
+    "d": "S",
+    "e": "E",
+    "f": "M",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "BYCANNOTCOUNT",
+   "wordLogp": -9.0426,
+   "words": "BY CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "Y",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "NOWATTHEWHITE",
+   "wordLogp": -9.1451,
+   "words": "NOW AT THE WHITE",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "W",
+    "d": "A",
+    "e": "T",
+    "f": "H",
+    "g": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "INPUTTOSPORTS",
+   "wordLogp": -9.2061,
+   "words": "INPUT TO SPORTS",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "P",
+    "d": "U",
+    "e": "T",
+    "f": "O",
+    "g": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "USCANNOTCOUNT",
+   "wordLogp": -9.2573,
+   "words": "US CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "U",
+    "b": "S",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ISCANNOTCOUNT",
+   "wordLogp": -9.4116,
+   "words": "IS CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "PMCANNOTCOUNT",
+   "wordLogp": -9.5917,
+   "words": "PM CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "M",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "MYCANNOTCOUNT",
+   "wordLogp": -9.6063,
+   "words": "MY CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "Y",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THEPOOLNELSON",
+   "wordLogp": -9.6749,
+   "words": "THE POOL NELSON",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "P",
+    "e": "O",
+    "f": "L",
+    "g": "N"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "BECANNOTCOUNT",
+   "wordLogp": -9.7087,
+   "words": "BE CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "E",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "UPCANNOTCOUNT",
+   "wordLogp": -9.7573,
+   "words": "UP CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "U",
+    "b": "P",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "MECANNOTCOUNT",
+   "wordLogp": -9.7929,
+   "words": "ME CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "E",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T"
+   }
+  }
+ ]
+}

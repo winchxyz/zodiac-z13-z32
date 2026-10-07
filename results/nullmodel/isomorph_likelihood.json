@@ -1,0 +1,355 @@
+{
+ "tool": "tools/nullmodel_isolik.js",
+ "created": "2026-10-07T14:05:53.847Z",
+ "command": "node tools/nullmodel_isolik.js --windows 100000 --keys 2000 --cache <scratch>/nmcache --out results/nullmodel/isomorph_likelihood.json",
+ "models": {
+  "simple": {
+   "alloc": "simple"
+  },
+  "z63cycle": {
+   "symbols": 63,
+   "alloc": "proportional",
+   "select": "cycle",
+   "allLetters": true
+  },
+  "z63random": {
+   "symbols": 63,
+   "alloc": "proportional",
+   "select": "random",
+   "allLetters": true
+  },
+  "z35cycle": {
+   "symbols": 35,
+   "alloc": "proportional",
+   "select": "cycle",
+   "allLetters": true
+  }
+ },
+ "ciphers": {
+  "z13.canonical": {
+   "text": "AENz0K0M0[NAM",
+   "isomorph": "abcdefegehcag",
+   "profile": "3,2,2,2,1,1,1,1",
+   "profileLikelihood": {
+    "simple": {
+     "windows": 100000,
+     "hits": 7865,
+     "p": 0.07865,
+     "meanDistinctSymbols": 9.40249,
+     "realDistinct": 8
+    },
+    "z63cycle": {
+     "windows": 100000,
+     "hits": 0,
+     "p": 0,
+     "meanDistinctSymbols": 12.95051,
+     "realDistinct": 8
+    },
+    "z63random": {
+     "windows": 100000,
+     "hits": 66,
+     "p": 0.00066,
+     "meanDistinctSymbols": 11.82028,
+     "realDistinct": 8
+    },
+    "z35cycle": {
+     "windows": 100000,
+     "hits": 102,
+     "p": 0.00102,
+     "meanDistinctSymbols": 11.75971,
+     "realDistinct": 8
+    }
+   },
+   "exactLikelihood": {
+    "simple": {
+     "fittingWindowsUsed": 53,
+     "keysPerWindow": 2000,
+     "hits": 24000,
+     "pIsoGivenFit": 0.22641509433962265,
+     "fHomClean": 4.7312336998956327e-7,
+     "split": "train",
+     "pIso": 1.0712227245046716e-7,
+     "log2pIso": -23.154238193337296,
+     "upperBound95IfZero": null
+    },
+    "z63cycle": {
+     "fittingWindowsUsed": 53,
+     "keysPerWindow": 2000,
+     "hits": 0,
+     "pIsoGivenFit": 0,
+     "fHomClean": 4.7312336998956327e-7,
+     "split": "train",
+     "pIso": 0,
+     "log2pIso": null,
+     "upperBound95IfZero": 1.3390284056308394e-11
+    },
+    "z63random": {
+     "fittingWindowsUsed": 53,
+     "keysPerWindow": 2000,
+     "hits": 119,
+     "pIsoGivenFit": 0.0011226415094339622,
+     "fHomClean": 4.7312336998956327e-7,
+     "split": "train",
+     "pIso": 5.311479342335663e-10,
+     "log2pIso": -30.810167215412598,
+     "upperBound95IfZero": null
+    },
+    "z35cycle": {
+     "fittingWindowsUsed": 53,
+     "keysPerWindow": 2000,
+     "hits": 0,
+     "pIsoGivenFit": 0,
+     "fHomClean": 4.7312336998956327e-7,
+     "split": "train",
+     "pIso": 0,
+     "log2pIso": null,
+     "upperBound95IfZero": 1.3390284056308394e-11
+    }
+   }
+  },
+  "z13.circles_distinct": {
+   "text": "AENz0K{M}[NAM",
+   "isomorph": "abcdefghijcah",
+   "profile": "2,2,2,1,1,1,1,1,1,1",
+   "profileLikelihood": {
+    "simple": {
+     "windows": 100000,
+     "hits": 17978,
+     "p": 0.17978,
+     "meanDistinctSymbols": 9.40487,
+     "realDistinct": 10
+    },
+    "z63cycle": {
+     "windows": 100000,
+     "hits": 16,
+     "p": 0.00016,
+     "meanDistinctSymbols": 12.9487,
+     "realDistinct": 10
+    },
+    "z63random": {
+     "windows": 100000,
+     "hits": 5232,
+     "p": 0.05232,
+     "meanDistinctSymbols": 11.82773,
+     "realDistinct": 10
+    },
+    "z35cycle": {
+     "windows": 100000,
+     "hits": 6027,
+     "p": 0.06027,
+     "meanDistinctSymbols": 11.7574,
+     "realDistinct": 10
+    }
+   },
+   "exactLikelihood": {
+    "simple": {
+     "fittingWindowsUsed": 262,
+     "keysPerWindow": 2000,
+     "hits": 24000,
+     "pIsoGivenFit": 0.04580152671755725,
+     "fHomClean": 0.00025030198958973446,
+     "split": "heldout",
+     "pIso": 0.00001146421326365196,
+     "log2pIso": -16.41250312166137,
+     "upperBound95IfZero": null
+    },
+    "z63cycle": {
+     "fittingWindowsUsed": 262,
+     "keysPerWindow": 2000,
+     "hits": 0,
+     "pIsoGivenFit": 0,
+     "fHomClean": 0.00025030198958973446,
+     "split": "heldout",
+     "pIso": 0,
+     "log2pIso": null,
+     "upperBound95IfZero": 1.433026657956495e-9
+    },
+    "z63random": {
+     "fittingWindowsUsed": 262,
+     "keysPerWindow": 2000,
+     "hits": 6056,
+     "pIsoGivenFit": 0.011557251908396947,
+     "fHomClean": 0.00025030198958973446,
+     "split": "heldout",
+     "pIso": 0.0000028928031468615115,
+     "log2pIso": -18.399100417058882,
+     "upperBound95IfZero": null
+    },
+    "z35cycle": {
+     "fittingWindowsUsed": 262,
+     "keysPerWindow": 2000,
+     "hits": 16000,
+     "pIsoGivenFit": 0.030534351145038167,
+     "fHomClean": 0.00025030198958973446,
+     "split": "heldout",
+     "pIso": 0.00000764280884243464,
+     "log2pIso": -16.997465622382528,
+     "upperBound95IfZero": null
+    }
+   }
+  },
+  "z32.canonical": {
+   "text": "C9J|#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "isomorph": "abcdefghijklmfnopqrstuvwxayzABCb",
+   "profile": "2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1",
+   "profileLikelihood": {
+    "simple": {
+     "windows": 100000,
+     "hits": 0,
+     "p": 0,
+     "meanDistinctSymbols": 15.05152,
+     "realDistinct": 29
+    },
+    "z63cycle": {
+     "windows": 100000,
+     "hits": 17491,
+     "p": 0.17491,
+     "meanDistinctSymbols": 30.04972,
+     "realDistinct": 29
+    },
+    "z63random": {
+     "windows": 100000,
+     "hits": 1301,
+     "p": 0.01301,
+     "meanDistinctSymbols": 24.71618,
+     "realDistinct": 29
+    },
+    "z35cycle": {
+     "windows": 100000,
+     "hits": 1,
+     "p": 0.00001,
+     "meanDistinctSymbols": 21.49588,
+     "realDistinct": 29
+    }
+   },
+   "exactLikelihood": {
+    "simple": {
+     "fittingWindowsUsed": 286,
+     "keysPerWindow": 2000,
+     "hits": 0,
+     "pIsoGivenFit": 0,
+     "fHomClean": 0.0002733165067374194,
+     "split": "heldout",
+     "pIso": 0,
+     "log2pIso": null,
+     "upperBound95IfZero": 1.4334781821892626e-9
+    },
+    "z63cycle": {
+     "fittingWindowsUsed": 286,
+     "keysPerWindow": 2000,
+     "hits": 0,
+     "pIsoGivenFit": 0,
+     "fHomClean": 0.0002733165067374194,
+     "split": "heldout",
+     "pIso": 0,
+     "log2pIso": null,
+     "upperBound95IfZero": 1.4334781821892626e-9
+    },
+    "z63random": {
+     "fittingWindowsUsed": 286,
+     "keysPerWindow": 2000,
+     "hits": 4,
+     "pIsoGivenFit": 0.000006993006993006993,
+     "fHomClean": 0.0002733165067374194,
+     "split": "heldout",
+     "pIso": 1.9113042429190166e-9,
+     "log2pIso": -28.96279540805496,
+     "upperBound95IfZero": null
+    },
+    "z35cycle": {
+     "fittingWindowsUsed": 286,
+     "keysPerWindow": 2000,
+     "hits": 0,
+     "pIsoGivenFit": 0,
+     "fHomClean": 0.0002733165067374194,
+     "split": "heldout",
+     "pIso": 0,
+     "log2pIso": null,
+     "upperBound95IfZero": 1.4334781821892626e-9
+    }
+   }
+  },
+  "z32.triangles_merged": {
+   "text": "C9J|#Ok[AMf9?ORTGX6FDVj%HCELzPW9",
+   "isomorph": "abcdefghijkblfmnopqrstuvwaxyzABb",
+   "profile": "3,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1",
+   "profileLikelihood": {
+    "simple": {
+     "windows": 100000,
+     "hits": 0,
+     "p": 0,
+     "meanDistinctSymbols": 15.0549,
+     "realDistinct": 28
+    },
+    "z63cycle": {
+     "windows": 100000,
+     "hits": 440,
+     "p": 0.0044,
+     "meanDistinctSymbols": 30.04626,
+     "realDistinct": 28
+    },
+    "z63random": {
+     "windows": 100000,
+     "hits": 1179,
+     "p": 0.01179,
+     "meanDistinctSymbols": 24.72718,
+     "realDistinct": 28
+    },
+    "z35cycle": {
+     "windows": 100000,
+     "hits": 1,
+     "p": 0.00001,
+     "meanDistinctSymbols": 21.49634,
+     "realDistinct": 28
+    }
+   },
+   "exactLikelihood": {
+    "simple": {
+     "fittingWindowsUsed": 346,
+     "keysPerWindow": 2000,
+     "hits": 0,
+     "pIsoGivenFit": 0,
+     "fHomClean": 0.00002162397382659921,
+     "split": "train",
+     "pIso": 0,
+     "log2pIso": null,
+     "upperBound95IfZero": 9.374555127138385e-11
+    },
+    "z63cycle": {
+     "fittingWindowsUsed": 346,
+     "keysPerWindow": 2000,
+     "hits": 0,
+     "pIsoGivenFit": 0,
+     "fHomClean": 0.00002162397382659921,
+     "split": "train",
+     "pIso": 0,
+     "log2pIso": null,
+     "upperBound95IfZero": 9.374555127138385e-11
+    },
+    "z63random": {
+     "fittingWindowsUsed": 346,
+     "keysPerWindow": 2000,
+     "hits": 0,
+     "pIsoGivenFit": 0,
+     "fHomClean": 0.00002162397382659921,
+     "split": "train",
+     "pIso": 0,
+     "log2pIso": null,
+     "upperBound95IfZero": 9.374555127138385e-11
+    },
+    "z35cycle": {
+     "fittingWindowsUsed": 346,
+     "keysPerWindow": 2000,
+     "hits": 0,
+     "pIsoGivenFit": 0,
+     "fHomClean": 0.00002162397382659921,
+     "split": "train",
+     "pIso": 0,
+     "log2pIso": null,
+     "upperBound95IfZero": 9.374555127138385e-11
+    }
+   }
+  }
+ },
+ "seconds": 424.312
+}

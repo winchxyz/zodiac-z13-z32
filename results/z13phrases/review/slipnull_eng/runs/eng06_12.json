@@ -1,0 +1,608 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:33:46.691Z",
+ "label": "eng06_12",
+ "cipher": {
+  "id": "eng06",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng06.txt",
+  "text": "abccdbcefgehh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   12
+  ],
+  "isomorphAfterSlips": "abccdbcefgeh*"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 687914,
+  "scored": 638298,
+  "keptAtLeastStreamMin": 193,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 35133,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 3731,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 193,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 8,
+  "3": 122,
+  "4": 63
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.6930376597142915,
+  "topShare": 0.04693217994340092,
+  "top10Share": 0.19251478762663096,
+  "effectiveNumberExpEntropy": 1362.8695812578217,
+  "effectiveNumberInverseSimpson": 156.07287904816332,
+  "unscoredMassBoundRelative": 0.02682621547363414,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 48,
+   "maxWordLogp": -15.49872742620268,
+   "massEstimateRelative": 0.00000826532223638115,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.008620630702519684
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 6,
+   "-18.25": 25,
+   "-18.00": 78,
+   "-17.75": 116,
+   "-17.50": 167,
+   "-17.25": 243,
+   "-17.00": 330,
+   "-16.75": 404,
+   "-16.50": 424,
+   "-16.25": 599,
+   "-16.00": 808,
+   "-15.75": 1076,
+   "-15.50": 1404,
+   "-15.25": 1838,
+   "-15.00": 2409,
+   "-14.75": 3116,
+   "-14.50": 3782,
+   "-14.25": 4509,
+   "-14.00": 5344,
+   "-13.75": 6200,
+   "-13.50": 7189,
+   "-13.25": 8108,
+   "-13.00": 9376,
+   "-12.75": 10908,
+   "-12.50": 12213,
+   "-12.25": 14124,
+   "-12.00": 16222,
+   "-11.75": 18062,
+   "-11.50": 20147,
+   "-11.25": 22077,
+   "-11.00": 23882,
+   "-10.75": 25266,
+   "-10.50": 25936,
+   "-10.25": 26648,
+   "-10.00": 27815,
+   "-9.75": 27872,
+   "-9.50": 28035,
+   "-9.25": 28173,
+   "-9.00": 28223,
+   "-8.75": 28484,
+   "-8.50": 28200,
+   "-8.25": 28137,
+   "-8.00": 27583,
+   "-7.75": 26159,
+   "-7.50": 24516,
+   "-7.25": 22730,
+   "-7.00": 20087,
+   "-6.75": 17099,
+   "-6.50": 14182,
+   "-6.25": 11257,
+   "-6.00": 8755,
+   "-5.75": 6448,
+   "-5.50": 4336,
+   "-5.25": 2826,
+   "-5.00": 1749,
+   "-4.75": 1000,
+   "-4.50": 583,
+   "-4.25": 351,
+   "-4.00": 155,
+   "-3.75": 81,
+   "-3.50": 28,
+   "-3.25": 11,
+   "-3.00": 3
+  },
+  "exactScored": {
+   "-19.00": 4,
+   "-18.75": 98,
+   "-18.50": 658,
+   "-18.25": 2105,
+   "-18.00": 5252,
+   "-17.75": 10366,
+   "-17.50": 16798,
+   "-17.25": 24103,
+   "-17.00": 31508,
+   "-16.75": 38423,
+   "-16.50": 43755,
+   "-16.25": 46987,
+   "-16.00": 48865,
+   "-15.75": 48485,
+   "-15.50": 46621,
+   "-15.25": 43772,
+   "-15.00": 39909,
+   "-14.75": 34769,
+   "-14.50": 29988,
+   "-14.25": 25337,
+   "-14.00": 20803,
+   "-13.75": 17244,
+   "-13.50": 14122,
+   "-13.25": 11615,
+   "-13.00": 9301,
+   "-12.75": 7425,
+   "-12.50": 5732,
+   "-12.25": 4416,
+   "-12.00": 3162,
+   "-11.75": 2215,
+   "-11.50": 1581,
+   "-11.25": 987,
+   "-11.00": 681,
+   "-10.75": 454,
+   "-10.50": 298,
+   "-10.25": 194,
+   "-10.00": 119,
+   "-9.75": 67,
+   "-9.50": 34,
+   "-9.25": 17,
+   "-9.00": 15,
+   "-8.75": 10,
+   "-8.50": 1,
+   "-8.25": 2
+  },
+  "boundUnscored": {
+   "-18.50": 6,
+   "-18.25": 25,
+   "-18.00": 78,
+   "-17.75": 116,
+   "-17.50": 167,
+   "-17.25": 243,
+   "-17.00": 330,
+   "-16.75": 404,
+   "-16.50": 424,
+   "-16.25": 599,
+   "-16.00": 808,
+   "-15.75": 1076,
+   "-15.50": 1404,
+   "-15.25": 1838,
+   "-15.00": 2409,
+   "-14.75": 3116,
+   "-14.50": 3782,
+   "-14.25": 4509,
+   "-14.00": 5344,
+   "-13.75": 6200,
+   "-13.50": 7189,
+   "-13.25": 8108,
+   "-13.00": 1441
+  }
+ },
+ "timeMs": {
+  "total": 4251,
+  "setup": 440
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "FREEDREAMCAST",
+   "wordLogp": -8.0216,
+   "words": "FREE DREAMCAST",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "D",
+    "e": "A",
+    "f": "M",
+    "g": "C",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TREEBREAKFAST",
+   "wordLogp": -8.1972,
+   "words": "TREE BREAKFAST",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "R",
+    "c": "E",
+    "d": "B",
+    "e": "A",
+    "f": "K",
+    "g": "F",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "FREEAREHIGHLY",
+   "wordLogp": -8.3028,
+   "words": "FREE ARE HIGHLY",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "A",
+    "e": "H",
+    "f": "I",
+    "g": "G",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "CARRYAREQUEST",
+   "wordLogp": -8.5041,
+   "words": "CARRY A REQUEST",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "A",
+    "c": "R",
+    "d": "Y",
+    "e": "E",
+    "f": "Q",
+    "g": "U",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "FREEBREASTAND",
+   "wordLogp": -8.5151,
+   "words": "FREE BREAST AND",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "B",
+    "e": "A",
+    "f": "S",
+    "g": "T",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "FREEDREAMSAND",
+   "wordLogp": -8.5229,
+   "words": "FREE DREAMS AND",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "D",
+    "e": "A",
+    "f": "M",
+    "g": "S",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "FREEPREMIUMOF",
+   "wordLogp": -8.6065,
+   "words": "FREE PREMIUM OF",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "P",
+    "e": "M",
+    "f": "I",
+    "g": "U",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "FUNNYUNTILTHE",
+   "wordLogp": -8.6361,
+   "words": "FUNNY UNTIL THE",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "U",
+    "c": "N",
+    "d": "Y",
+    "e": "T",
+    "f": "I",
+    "g": "L",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "FREEPREMIUMTO",
+   "wordLogp": -8.6407,
+   "words": "FREE PREMIUM TO",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "P",
+    "e": "M",
+    "f": "I",
+    "g": "U",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "FREEBREAKSAND",
+   "wordLogp": -8.7149,
+   "words": "FREE BREAKS AND",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "B",
+    "e": "A",
+    "f": "K",
+    "g": "S",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "CATTHATPEOPLE",
+   "wordLogp": -8.7193,
+   "words": "CAT THAT PEOPLE",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "A",
+    "c": "T",
+    "d": "H",
+    "e": "P",
+    "f": "E",
+    "g": "O",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "SATTHATPEOPLE",
+   "wordLogp": -8.7231,
+   "words": "SAT THAT PEOPLE",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "A",
+    "c": "T",
+    "d": "H",
+    "e": "P",
+    "f": "E",
+    "g": "O",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "FREEGREATMANY",
+   "wordLogp": -8.7234,
+   "words": "FREE GREAT MANY",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "G",
+    "e": "A",
+    "f": "T",
+    "g": "M",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "MISSLISTOFTHE",
+   "wordLogp": -8.7691,
+   "words": "MISS LIST OF THE",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "I",
+    "c": "S",
+    "d": "L",
+    "e": "T",
+    "f": "O",
+    "g": "F",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "FREEDREAMLAND",
+   "wordLogp": -8.8021,
+   "words": "FREE DREAMLAND",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "D",
+    "e": "A",
+    "f": "M",
+    "g": "L",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "GETTHETOAVOID",
+   "wordLogp": -8.8226,
+   "words": "GET THE TO AVOID",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "E",
+    "c": "T",
+    "d": "H",
+    "e": "O",
+    "f": "A",
+    "g": "V",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "LESSRESTOFTHE",
+   "wordLogp": -8.8263,
+   "words": "LESS REST OF THE",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "E",
+    "c": "S",
+    "d": "R",
+    "e": "T",
+    "f": "O",
+    "g": "F",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "LESSBESTOFTHE",
+   "wordLogp": -8.8307,
+   "words": "LESS BEST OF THE",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "E",
+    "c": "S",
+    "d": "B",
+    "e": "T",
+    "f": "O",
+    "g": "F",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "WILLFILTERTHE",
+   "wordLogp": -8.8681,
+   "words": "WILL FILTER THE",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "I",
+    "c": "L",
+    "d": "F",
+    "e": "T",
+    "f": "E",
+    "g": "R",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "SPEEDPERFORMS",
+   "wordLogp": -8.8716,
+   "words": "SPEED PERFORMS",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "P",
+    "c": "E",
+    "d": "D",
+    "e": "R",
+    "f": "F",
+    "g": "O",
+    "h": "M"
+   }
+  }
+ ]
+}

@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:35:51.819Z",
+ "label": "eng08_07",
+ "cipher": {
+  "id": "eng08",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng08.txt",
+  "text": "abcdeccdfgfhh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abcdecc*fgfhh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 260100,
+  "scored": 242693,
+  "keptAtLeastStreamMin": 134,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 10684,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1406,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 134,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 6,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 29,
+  "4": 104
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.641035112502642,
+  "topShare": 0.3508033865587448,
+  "top10Share": 0.5454498661308098,
+  "effectiveNumberExpEntropy": 69.1860972082967,
+  "effectiveNumberInverseSimpson": 7.734663787358177,
+  "unscoredMassBoundRelative": 0.008349472561007947,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 14,
+   "maxWordLogp": -16.542003881979355,
+   "massEstimateRelative": 4.117743554075459e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.002856581052453924
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 3,
+   "-17.75": 16,
+   "-17.50": 15,
+   "-17.25": 64,
+   "-17.00": 81,
+   "-16.75": 100,
+   "-16.50": 162,
+   "-16.25": 239,
+   "-16.00": 340,
+   "-15.75": 426,
+   "-15.50": 537,
+   "-15.25": 593,
+   "-15.00": 796,
+   "-14.75": 976,
+   "-14.50": 1220,
+   "-14.25": 1435,
+   "-14.00": 1864,
+   "-13.75": 2195,
+   "-13.50": 2661,
+   "-13.25": 3122,
+   "-13.00": 3689,
+   "-12.75": 4284,
+   "-12.50": 4647,
+   "-12.25": 5507,
+   "-12.00": 6217,
+   "-11.75": 6756,
+   "-11.50": 7503,
+   "-11.25": 7961,
+   "-11.00": 8907,
+   "-10.75": 9469,
+   "-10.50": 10000,
+   "-10.25": 10433,
+   "-10.00": 10749,
+   "-9.75": 10980,
+   "-9.50": 11385,
+   "-9.25": 11085,
+   "-9.00": 11084,
+   "-8.75": 10902,
+   "-8.50": 10567,
+   "-8.25": 10114,
+   "-8.00": 9805,
+   "-7.75": 9367,
+   "-7.50": 8539,
+   "-7.25": 7541,
+   "-7.00": 6847,
+   "-6.75": 6169,
+   "-6.50": 5234,
+   "-6.25": 4183,
+   "-6.00": 3416,
+   "-5.75": 2853,
+   "-5.50": 2240,
+   "-5.25": 1625,
+   "-5.00": 1107,
+   "-4.75": 707,
+   "-4.50": 479,
+   "-4.25": 342,
+   "-4.00": 217,
+   "-3.75": 140,
+   "-3.50": 83,
+   "-3.25": 55,
+   "-3.00": 34,
+   "-2.75": 20,
+   "-2.50": 10,
+   "-2.25": 2,
+   "-2.00": 1
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-19.00": 11,
+   "-18.75": 139,
+   "-18.50": 603,
+   "-18.25": 1690,
+   "-18.00": 3644,
+   "-17.75": 6351,
+   "-17.50": 9045,
+   "-17.25": 12183,
+   "-17.00": 15056,
+   "-16.75": 16948,
+   "-16.50": 18507,
+   "-16.25": 18676,
+   "-16.00": 18023,
+   "-15.75": 17088,
+   "-15.50": 15591,
+   "-15.25": 14504,
+   "-15.00": 13094,
+   "-14.75": 11282,
+   "-14.50": 9743,
+   "-14.25": 8400,
+   "-14.00": 6986,
+   "-13.75": 5697,
+   "-13.50": 4527,
+   "-13.25": 3704,
+   "-13.00": 2801,
+   "-12.75": 2116,
+   "-12.50": 1744,
+   "-12.25": 1265,
+   "-12.00": 926,
+   "-11.75": 745,
+   "-11.50": 482,
+   "-11.25": 347,
+   "-11.00": 258,
+   "-10.75": 158,
+   "-10.50": 112,
+   "-10.25": 73,
+   "-10.00": 58,
+   "-9.75": 41,
+   "-9.50": 23,
+   "-9.25": 22,
+   "-9.00": 12,
+   "-8.75": 8,
+   "-8.50": 5,
+   "-8.25": 3,
+   "-7.25": 1
+  },
+  "boundUnscored": {
+   "-18.00": 3,
+   "-17.75": 16,
+   "-17.50": 15,
+   "-17.25": 64,
+   "-17.00": 81,
+   "-16.75": 100,
+   "-16.50": 162,
+   "-16.25": 239,
+   "-16.00": 340,
+   "-15.75": 426,
+   "-15.50": 537,
+   "-15.25": 593,
+   "-15.00": 796,
+   "-14.75": 976,
+   "-14.50": 1220,
+   "-14.25": 1435,
+   "-14.00": 1864,
+   "-13.75": 2195,
+   "-13.50": 2661,
+   "-13.25": 3122,
+   "-13.00": 562
+  }
+ },
+ "timeMs": {
+  "total": 2878,
+  "setup": 391
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "DISCUSSIONOFF",
+   "wordLogp": -7.096,
+   "words": "DISCUSSION OFF",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "I",
+    "c": "S",
+    "d": "C",
+    "e": "U",
+    "f": "O",
+    "g": "N",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ISTHATTHEWELL",
+   "wordLogp": -8.1244,
+   "words": "IS THAT THE WELL",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "NOTMATTERFREE",
+   "wordLogp": -8.1632,
+   "words": "NOT MATTER FREE",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "M",
+    "e": "A",
+    "f": "R",
+    "g": "F",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "OFTHATTHEWELL",
+   "wordLogp": -8.21,
+   "words": "OF THAT THE WELL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "SOTHATTHEWELL",
+   "wordLogp": -8.298,
+   "words": "SO THAT THE WELL",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "INTHATTHEWELL",
+   "wordLogp": -8.305,
+   "words": "IN THAT THE WELL",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ISTHATTHECELL",
+   "wordLogp": -8.3801,
+   "words": "IS THAT THE CELL",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "C",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "OFTHATTHECELL",
+   "wordLogp": -8.4657,
+   "words": "OF THAT THE CELL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "C",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "OFTHATTHELESS",
+   "wordLogp": -8.4772,
+   "words": "OF THAT THE LESS",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "L",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THEFREEWAYALL",
+   "wordLogp": -8.5184,
+   "words": "THE FREEWAY ALL",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "F",
+    "e": "R",
+    "f": "A",
+    "g": "Y",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SOTHATTHECELL",
+   "wordLogp": -8.5537,
+   "words": "SO THAT THE CELL",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "C",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "INTHATTHECELL",
+   "wordLogp": -8.5607,
+   "words": "IN THAT THE CELL",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "C",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "INTHATTHELESS",
+   "wordLogp": -8.5722,
+   "words": "IN THAT THE LESS",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "L",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THEFREEHAWAII",
+   "wordLogp": -8.608,
+   "words": "THE FREE HAWAII",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "F",
+    "e": "R",
+    "f": "A",
+    "g": "W",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "ONTHATTHEWELL",
+   "wordLogp": -8.6397,
+   "words": "ON THAT THE WELL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "N",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THEFREEGAYASS",
+   "wordLogp": -8.6444,
+   "words": "THE FREE GAY ASS",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "F",
+    "e": "R",
+    "f": "A",
+    "g": "Y",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ARTISTTHEWELL",
+   "wordLogp": -8.6611,
+   "words": "ARTIST THE WELL",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "R",
+    "c": "T",
+    "d": "I",
+    "e": "S",
+    "f": "E",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "BYTHATTHEWELL",
+   "wordLogp": -8.7941,
+   "words": "BY THAT THE WELL",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "Y",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ANDMIDDLEWELL",
+   "wordLogp": -8.809,
+   "words": "AND MIDDLE WELL",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "M",
+    "e": "I",
+    "f": "E",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "OFTHATTHESELL",
+   "wordLogp": -8.8546,
+   "words": "OF THAT THE SELL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "E",
+    "g": "S",
+    "h": "L"
+   }
+  }
+ ]
+}

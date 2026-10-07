@@ -1,0 +1,548 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:25:37.519Z",
+ "label": "z13_01",
+ "cipher": {
+  "id": "z13",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\z13.txt",
+  "text": "AENz0K0M0[NAM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*cdefegehcag"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 16648,
+  "scored": 15730,
+  "keptAtLeastStreamMin": 18,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1168,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 164,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 18,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 3,
+  "4": 15
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.962836586202919,
+  "topShare": 0.24034859600203817,
+  "top10Share": 0.6325172921725124,
+  "effectiveNumberExpEntropy": 46.472341845801225,
+  "effectiveNumberInverseSimpson": 12.413249238910346,
+  "unscoredMassBoundRelative": 0.009238027854649151,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.003239542101364792
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 2,
+   "-17.75": 1,
+   "-17.50": 1,
+   "-17.25": 1,
+   "-17.00": 7,
+   "-16.75": 2,
+   "-16.50": 3,
+   "-16.25": 9,
+   "-16.00": 10,
+   "-15.75": 18,
+   "-15.50": 21,
+   "-15.25": 38,
+   "-15.00": 34,
+   "-14.75": 50,
+   "-14.50": 57,
+   "-14.25": 84,
+   "-14.00": 113,
+   "-13.75": 125,
+   "-13.50": 151,
+   "-13.25": 160,
+   "-13.00": 157,
+   "-12.75": 227,
+   "-12.50": 230,
+   "-12.25": 280,
+   "-12.00": 344,
+   "-11.75": 392,
+   "-11.50": 403,
+   "-11.25": 471,
+   "-11.00": 546,
+   "-10.75": 612,
+   "-10.50": 604,
+   "-10.25": 614,
+   "-10.00": 671,
+   "-9.75": 660,
+   "-9.50": 671,
+   "-9.25": 681,
+   "-9.00": 666,
+   "-8.75": 674,
+   "-8.50": 614,
+   "-8.25": 664,
+   "-8.00": 667,
+   "-7.75": 621,
+   "-7.50": 608,
+   "-7.25": 627,
+   "-7.00": 544,
+   "-6.75": 520,
+   "-6.50": 438,
+   "-6.25": 376,
+   "-6.00": 298,
+   "-5.75": 259,
+   "-5.50": 211,
+   "-5.25": 130,
+   "-5.00": 104,
+   "-4.75": 60,
+   "-4.50": 62,
+   "-4.25": 24,
+   "-4.00": 20,
+   "-3.75": 4,
+   "-3.50": 5,
+   "-3.25": 2
+  },
+  "exactScored": {
+   "-19.00": 1,
+   "-18.75": 1,
+   "-18.50": 10,
+   "-18.25": 35,
+   "-18.00": 105,
+   "-17.75": 193,
+   "-17.50": 288,
+   "-17.25": 454,
+   "-17.00": 662,
+   "-16.75": 825,
+   "-16.50": 975,
+   "-16.25": 1117,
+   "-16.00": 1171,
+   "-15.75": 1102,
+   "-15.50": 1081,
+   "-15.25": 1029,
+   "-15.00": 1006,
+   "-14.75": 878,
+   "-14.50": 821,
+   "-14.25": 732,
+   "-14.00": 658,
+   "-13.75": 543,
+   "-13.50": 434,
+   "-13.25": 388,
+   "-13.00": 314,
+   "-12.75": 232,
+   "-12.50": 188,
+   "-12.25": 129,
+   "-12.00": 98,
+   "-11.75": 76,
+   "-11.50": 56,
+   "-11.25": 48,
+   "-11.00": 27,
+   "-10.75": 26,
+   "-10.50": 5,
+   "-10.25": 3,
+   "-10.00": 8,
+   "-9.75": 2,
+   "-9.50": 6,
+   "-9.25": 1,
+   "-9.00": 1,
+   "-8.75": 1
+  },
+  "boundUnscored": {
+   "-18.00": 2,
+   "-17.75": 1,
+   "-17.50": 1,
+   "-17.25": 1,
+   "-17.00": 7,
+   "-16.75": 2,
+   "-16.50": 3,
+   "-16.25": 9,
+   "-16.00": 10,
+   "-15.75": 18,
+   "-15.50": 21,
+   "-15.25": 38,
+   "-15.00": 34,
+   "-14.75": 50,
+   "-14.50": 57,
+   "-14.25": 84,
+   "-14.00": 113,
+   "-13.75": 125,
+   "-13.50": 151,
+   "-13.25": 160,
+   "-13.00": 31
+  }
+ },
+ "timeMs": {
+  "total": 1583,
+  "setup": 398
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "INTHEDESERTIS",
+   "wordLogp": -8.582,
+   "words": "IN THE DESERT IS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "DONOTITSTANDS",
+   "wordLogp": -8.9922,
+   "words": "DO NOT IT STANDS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "D",
+    "N": "N",
+    "z": "O",
+    "K": "I",
+    "M": "S",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "CHIEFOFAFRICA",
+   "wordLogp": -9.2244,
+   "words": "CHIEF OF AFRICA",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "A": "C",
+    "N": "I",
+    "z": "E",
+    "K": "O",
+    "M": "A",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "ISTHEDESERTIS",
+   "wordLogp": -9.3138,
+   "words": "IS THE DESERT IS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "IFTHERENEXTIN",
+   "wordLogp": -9.3416,
+   "words": "IF THERE NEXT IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "N",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "INTHESENEXTIN",
+   "wordLogp": -9.3835,
+   "words": "IN THESE NEXT IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "N",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "FRONTSTATEOFA",
+   "wordLogp": -9.4583,
+   "words": "FRONT STATE OF A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "F",
+    "N": "O",
+    "z": "N",
+    "K": "S",
+    "M": "A",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ISTHERENEXTIN",
+   "wordLogp": -9.4689,
+   "words": "IS THERE NEXT IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "N",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ATTHEDESERTAS",
+   "wordLogp": -9.4781,
+   "words": "AT THE DESERT AS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "OFTHESENEXTON",
+   "wordLogp": -9.5487,
+   "words": "OF THESE NEXT ON",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "N",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SARAHTHEHORSE",
+   "wordLogp": -9.6477,
+   "words": "SARAH THE HORSE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "A": "S",
+    "N": "R",
+    "z": "A",
+    "K": "T",
+    "M": "E",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "IFTHEDESERTIS",
+   "wordLogp": -9.762,
+   "words": "IF THE DESERT IS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "INTHERENEXTIN",
+   "wordLogp": -9.7754,
+   "words": "IN THERE NEXT IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "N",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "OFTHESERENTOR",
+   "wordLogp": -9.8018,
+   "words": "OF THESE RENT OR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "R",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "PATHELEMENTPM",
+   "wordLogp": -9.8311,
+   "words": "PATH ELEMENT PM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "N": "T",
+    "z": "H",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ASTHEDESERTAS",
+   "wordLogp": -9.8478,
+   "words": "AS THE DESERT AS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "FRIDAYATAGIFT",
+   "wordLogp": -9.8572,
+   "words": "FRIDAY AT A GIFT",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "F",
+    "N": "I",
+    "z": "D",
+    "K": "Y",
+    "M": "T",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ANDHEREYESDAY",
+   "wordLogp": -9.8595,
+   "words": "AND HER EYES DAY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "N": "D",
+    "z": "H",
+    "K": "R",
+    "M": "Y",
+    "[": "S"
+   }
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T16:45:06.971Z",
+ "argv": "--ciphers z32.canonical --keys z408 --null 200 --null-kind permute --threads 4 --seed 1970 --max-free 4 --out results/keyprior/review/repro_fullpin_z32_canonical_z408_200.json",
+ "statistic": "objective",
+ "objective": "anneal.js objective: 5-gram joint log10 + entropy penalty 0.5 + 1.0 x wordfast log10 P (common vocab); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 200,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 85.963,
+ "results": [
+  {
+   "cipher": "z32.canonical",
+   "key": "z408",
+   "text": "C9J|#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "9J#OkAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 25,
+   "nFree": 4,
+   "carriedOver": "?IF?LNI?WHDA?NGOAOESNBXLT?ETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "HIFULNINWHDAINGOAOESNBXLTHETDIEI",
+     "words": "HIFULNINWHDA IN GOAOESNBXL THE TDIEI",
+     "wordLogp": -49.091122343517966,
+     "unknownWords": [
+      "HIFULNINWHDA",
+      "GOAOESNBXL",
+      "TDIEI"
+     ],
+     "ngram5": -253.5782389640808
+    },
+    "score": -301.83835135608746,
+    "top5": [
+     {
+      "plaintext": "HIFULNINWHDAINGOAOESNBXLTHETDIEI",
+      "score": -301.83835135608746
+     },
+     {
+      "plaintext": "HIFULNINWHDAWNGOAOESNBXLTHETDIEI",
+      "score": -303.6223203342728
+     },
+     {
+      "plaintext": "HIFULNINWHDAMNGOAOESNBXLTHETDIEI",
+      "score": -304.1271505416908
+     },
+     {
+      "plaintext": "HIFULNINWHDARNGOAOESNBXLTHETDIEI",
+      "score": -304.58468556984144
+     },
+     {
+      "plaintext": "HIFELNINWHDAINGOAOESNBXLTHETDIEI",
+      "score": -305.7000429502113
+     }
+    ]
+   },
+   "null": {
+    "n": 200,
+    "kind": "permute",
+    "summary": {
+     "n": 200,
+     "finite": 200,
+     "mean": -280.2743461501747,
+     "sd": 23.38259701126913,
+     "min": -341.3798076665242,
+     "q05": -320.13031227282517,
+     "q25": -297.8758276626282,
+     "median": -279.89749930446135,
+     "q75": -262.4599781989343,
+     "q95": -245.77407637386412,
+     "q99": -230.81692211058785,
+     "max": -213.61278641358743
+    },
+    "topNull": [
+     {
+      "index": 24,
+      "score": -213.61278641358743,
+      "plaintext": "UTALLERBAGVEREETINERSPEYOUSSTOHT"
+     },
+     {
+      "index": 113,
+      "score": -218.92663285444286,
+      "plaintext": "LSUSOHERAEFIGHTLEDSLOTRABLEPONGS"
+     },
+     {
+      "index": 196,
+      "score": -230.81692211058785,
+      "plaintext": "TOFEDHASTELATHEIRNSLOEDTSTIOFECO"
+     },
+     {
+      "index": 163,
+      "score": -232.40764056314634,
+      "plaintext": "HASPLAINROOWNASLATPEITVESHECOBNA"
+     },
+     {
+      "index": 43,
+      "score": -234.54177830990125,
+      "plaintext": "ELIVESDEKSAWASINGLENTHHTREIBLISL"
+     }
+    ]
+   },
+   "test": {
+    "ge": 166,
+    "n": 200,
+    "p": 0.8308457711442786,
+    "percentile": 17.000000000000004,
+    "z": -0.922224558526158
+   }
+  }
+ ]
+}

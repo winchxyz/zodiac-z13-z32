@@ -1,0 +1,615 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:19:35.960Z",
+ "label": "scr01_12",
+ "cipher": {
+  "id": "scr01",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr01.txt",
+  "text": "NzKNAME0A[0M0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   12
+  ],
+  "isomorphAfterSlips": "abcadefgdhge*"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 338916,
+  "scored": 313431,
+  "keptAtLeastStreamMin": 108,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 13660,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1539,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 108,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 6,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 19,
+  "3": 44,
+  "4": 45
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.665282292877668,
+  "topShare": 0.1648982952877805,
+  "top10Share": 0.5680555496261133,
+  "effectiveNumberExpEntropy": 89.54706983851133,
+  "effectiveNumberInverseSimpson": 15.840273214990974,
+  "unscoredMassBoundRelative": 0.012926082718660047,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 24,
+   "maxWordLogp": -15.428889314487527,
+   "massEstimateRelative": 0.00000499205158220452,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0041241477242687855
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 1,
+   "-18.25": 12,
+   "-18.00": 14,
+   "-17.75": 37,
+   "-17.50": 62,
+   "-17.25": 78,
+   "-17.00": 133,
+   "-16.75": 183,
+   "-16.50": 222,
+   "-16.25": 341,
+   "-16.00": 426,
+   "-15.75": 614,
+   "-15.50": 800,
+   "-15.25": 983,
+   "-15.00": 1278,
+   "-14.75": 1614,
+   "-14.50": 1992,
+   "-14.25": 2336,
+   "-14.00": 2676,
+   "-13.75": 3122,
+   "-13.50": 3705,
+   "-13.25": 4087,
+   "-13.00": 4930,
+   "-12.75": 5454,
+   "-12.50": 6210,
+   "-12.25": 7086,
+   "-12.00": 8040,
+   "-11.75": 8808,
+   "-11.50": 9612,
+   "-11.25": 10440,
+   "-11.00": 11380,
+   "-10.75": 11684,
+   "-10.50": 12040,
+   "-10.25": 12662,
+   "-10.00": 12804,
+   "-9.75": 12834,
+   "-9.50": 13151,
+   "-9.25": 13472,
+   "-9.00": 13822,
+   "-8.75": 13760,
+   "-8.50": 13835,
+   "-8.25": 13356,
+   "-8.00": 12946,
+   "-7.75": 12316,
+   "-7.50": 11400,
+   "-7.25": 10810,
+   "-7.00": 9551,
+   "-6.75": 8541,
+   "-6.50": 7411,
+   "-6.25": 6319,
+   "-6.00": 5111,
+   "-5.75": 4059,
+   "-5.50": 3104,
+   "-5.25": 2356,
+   "-5.00": 1628,
+   "-4.75": 1254,
+   "-4.50": 816,
+   "-4.25": 529,
+   "-4.00": 310,
+   "-3.75": 186,
+   "-3.50": 88,
+   "-3.25": 54,
+   "-3.00": 16,
+   "-2.75": 8,
+   "-2.50": 4,
+   "-2.25": 2,
+   "-2.00": 1
+  },
+  "exactScored": {
+   "-19.75": 1,
+   "-19.00": 7,
+   "-18.75": 93,
+   "-18.50": 531,
+   "-18.25": 1775,
+   "-18.00": 4161,
+   "-17.75": 7349,
+   "-17.50": 10947,
+   "-17.25": 14541,
+   "-17.00": 18195,
+   "-16.75": 20776,
+   "-16.50": 22753,
+   "-16.25": 23162,
+   "-16.00": 22777,
+   "-15.75": 22265,
+   "-15.50": 21022,
+   "-15.25": 19621,
+   "-15.00": 18186,
+   "-14.75": 16219,
+   "-14.50": 13781,
+   "-14.25": 11844,
+   "-14.00": 9694,
+   "-13.75": 8025,
+   "-13.50": 6324,
+   "-13.25": 5064,
+   "-13.00": 3773,
+   "-12.75": 2930,
+   "-12.50": 2200,
+   "-12.25": 1643,
+   "-12.00": 1136,
+   "-11.75": 849,
+   "-11.50": 571,
+   "-11.25": 440,
+   "-11.00": 293,
+   "-10.75": 172,
+   "-10.50": 97,
+   "-10.25": 76,
+   "-10.00": 51,
+   "-9.75": 28,
+   "-9.50": 18,
+   "-9.25": 11,
+   "-9.00": 13,
+   "-8.75": 7,
+   "-8.50": 4,
+   "-8.25": 2,
+   "-8.00": 2,
+   "-7.50": 2
+  },
+  "boundUnscored": {
+   "-18.50": 1,
+   "-18.25": 12,
+   "-18.00": 14,
+   "-17.75": 37,
+   "-17.50": 62,
+   "-17.25": 78,
+   "-17.00": 133,
+   "-16.75": 183,
+   "-16.50": 222,
+   "-16.25": 341,
+   "-16.00": 426,
+   "-15.75": 614,
+   "-15.50": 800,
+   "-15.25": 983,
+   "-15.00": 1278,
+   "-14.75": 1614,
+   "-14.50": 1992,
+   "-14.25": 2336,
+   "-14.00": 2676,
+   "-13.75": 3122,
+   "-13.50": 3705,
+   "-13.25": 4087,
+   "-13.00": 769
+  }
+ },
+ "timeMs": {
+  "total": 3443,
+  "setup": 417
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "EXTENSIONMOST",
+   "wordLogp": -7.4481,
+   "words": "EXTENSION MOST",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "EXTENSIONPOST",
+   "wordLogp": -7.473,
+   "words": "EXTENSION POST",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "EXTENSIONCOST",
+   "wordLogp": -7.8663,
+   "words": "EXTENSION COST",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THETOAPROGRAM",
+   "wordLogp": -7.9117,
+   "words": "THE TO A PROGRAM",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "N": "T",
+    "z": "H",
+    "K": "E",
+    "A": "O",
+    "M": "A",
+    "E": "P",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "EXTENSIONLOSS",
+   "wordLogp": -8.1482,
+   "words": "EXTENSION LOSS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "EXTENSIONLOST",
+   "wordLogp": -8.1938,
+   "words": "EXTENSION LOST",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "EXTENSIONHOST",
+   "wordLogp": -8.3691,
+   "words": "EXTENSION HOST",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "EXTENSIONROSE",
+   "wordLogp": -8.4773,
+   "words": "EXTENSION ROSE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "INDIRECTRATES",
+   "wordLogp": -8.4848,
+   "words": "INDIRECT RATES",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "I",
+    "z": "N",
+    "K": "D",
+    "A": "R",
+    "M": "E",
+    "E": "C",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "OFNOTICETHEIR",
+   "wordLogp": -8.4902,
+   "words": "OF NOTICE THEIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "O",
+    "z": "F",
+    "K": "N",
+    "A": "T",
+    "M": "I",
+    "E": "C",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "INDICATECHEAP",
+   "wordLogp": -8.5895,
+   "words": "INDICATE CHEAP",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "I",
+    "z": "N",
+    "K": "D",
+    "A": "C",
+    "M": "A",
+    "E": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "INDICATECLEAR",
+   "wordLogp": -8.6298,
+   "words": "INDICATE CLEAR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "I",
+    "z": "N",
+    "K": "D",
+    "A": "C",
+    "M": "A",
+    "E": "T",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "EXTENSIONLOSE",
+   "wordLogp": -8.6847,
+   "words": "EXTENSION LOSE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "CLICKWHOKNOWS",
+   "wordLogp": -8.6921,
+   "words": "CLICK WHO KNOWS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "C",
+    "z": "L",
+    "K": "I",
+    "A": "K",
+    "M": "W",
+    "E": "H",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "EXPERTFORBOTH",
+   "wordLogp": -8.7061,
+   "words": "EXPERT FOR BOTH",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "P",
+    "A": "R",
+    "M": "T",
+    "E": "F",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "INFIELDPEOPLE",
+   "wordLogp": -8.7311,
+   "words": "IN FIELD PEOPLE",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "N": "I",
+    "z": "N",
+    "K": "F",
+    "A": "E",
+    "M": "L",
+    "E": "D",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "AREASTHISWITH",
+   "wordLogp": -8.732,
+   "words": "AREAS THIS WITH",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "N": "A",
+    "z": "R",
+    "K": "E",
+    "A": "S",
+    "M": "T",
+    "E": "H",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "EXTENSIONJOSE",
+   "wordLogp": -8.7573,
+   "words": "EXTENSION JOSE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "J"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "OFCONTAINWITH",
+   "wordLogp": -8.7845,
+   "words": "OF CONTAIN WITH",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "N": "O",
+    "z": "F",
+    "K": "C",
+    "A": "N",
+    "M": "T",
+    "E": "A",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "EXTENSIONDOSO",
+   "wordLogp": -8.8375,
+   "words": "EXTENSION DO SO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "D"
+   }
+  }
+ ]
+}

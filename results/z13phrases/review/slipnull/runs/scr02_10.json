@@ -1,0 +1,605 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:08:16.390Z",
+ "label": "scr02_10",
+ "cipher": {
+  "id": "scr02",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr02.txt",
+  "text": "AEMAz[KNMN000",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   10
+  ],
+  "isomorphAfterSlips": "abcadefgcg*hh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 129680,
+  "scored": 122451,
+  "keptAtLeastStreamMin": 79,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 7778,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 986,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 79,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 22,
+  "4": 55
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.1109158002055874,
+  "topShare": 0.0656598288213859,
+  "top10Share": 0.3592778441950236,
+  "effectiveNumberExpEntropy": 240.3881685643058,
+  "effectiveNumberInverseSimpson": 54.291075683029796,
+  "unscoredMassBoundRelative": 0.010230433223033719,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 4,
+   "maxWordLogp": -15.479607422873624,
+   "massEstimateRelative": 0.0000046482264037322346,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0033602210215949776
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 2,
+   "-18.00": 7,
+   "-17.75": 10,
+   "-17.50": 15,
+   "-17.25": 23,
+   "-17.00": 42,
+   "-16.75": 55,
+   "-16.50": 71,
+   "-16.25": 75,
+   "-16.00": 117,
+   "-15.75": 158,
+   "-15.50": 189,
+   "-15.25": 263,
+   "-15.00": 376,
+   "-14.75": 454,
+   "-14.50": 564,
+   "-14.25": 650,
+   "-14.00": 775,
+   "-13.75": 900,
+   "-13.50": 1020,
+   "-13.25": 1239,
+   "-13.00": 1440,
+   "-12.75": 1637,
+   "-12.50": 1904,
+   "-12.25": 2243,
+   "-12.00": 2487,
+   "-11.75": 2838,
+   "-11.50": 3269,
+   "-11.25": 3397,
+   "-11.00": 3774,
+   "-10.75": 4033,
+   "-10.50": 4342,
+   "-10.25": 4484,
+   "-10.00": 4688,
+   "-9.75": 4895,
+   "-9.50": 5039,
+   "-9.25": 5219,
+   "-9.00": 5471,
+   "-8.75": 5580,
+   "-8.50": 5641,
+   "-8.25": 5739,
+   "-8.00": 5625,
+   "-7.75": 5408,
+   "-7.50": 5166,
+   "-7.25": 4844,
+   "-7.00": 4378,
+   "-6.75": 3866,
+   "-6.50": 3358,
+   "-6.25": 2909,
+   "-6.00": 2365,
+   "-5.75": 1910,
+   "-5.50": 1464,
+   "-5.25": 1032,
+   "-5.00": 809,
+   "-4.75": 548,
+   "-4.50": 381,
+   "-4.25": 220,
+   "-4.00": 137,
+   "-3.75": 77,
+   "-3.50": 40,
+   "-3.25": 13,
+   "-3.00": 5
+  },
+  "exactScored": {
+   "-19.00": 3,
+   "-18.75": 20,
+   "-18.50": 100,
+   "-18.25": 393,
+   "-18.00": 885,
+   "-17.75": 1589,
+   "-17.50": 2582,
+   "-17.25": 3763,
+   "-17.00": 5129,
+   "-16.75": 6491,
+   "-16.50": 7775,
+   "-16.25": 8429,
+   "-16.00": 9165,
+   "-15.75": 9266,
+   "-15.50": 9166,
+   "-15.25": 8876,
+   "-15.00": 8310,
+   "-14.75": 7288,
+   "-14.50": 6466,
+   "-14.25": 5271,
+   "-14.00": 4473,
+   "-13.75": 3581,
+   "-13.50": 2946,
+   "-13.25": 2381,
+   "-13.00": 1932,
+   "-12.75": 1583,
+   "-12.50": 1275,
+   "-12.25": 927,
+   "-12.00": 704,
+   "-11.75": 532,
+   "-11.50": 367,
+   "-11.25": 250,
+   "-11.00": 187,
+   "-10.75": 121,
+   "-10.50": 71,
+   "-10.25": 44,
+   "-10.00": 47,
+   "-9.75": 22,
+   "-9.50": 18,
+   "-9.25": 9,
+   "-9.00": 7,
+   "-8.75": 4,
+   "-8.50": 3
+  },
+  "boundUnscored": {
+   "-18.25": 2,
+   "-18.00": 7,
+   "-17.75": 10,
+   "-17.50": 15,
+   "-17.25": 23,
+   "-17.00": 42,
+   "-16.75": 55,
+   "-16.50": 71,
+   "-16.25": 75,
+   "-16.00": 117,
+   "-15.75": 158,
+   "-15.50": 189,
+   "-15.25": 263,
+   "-15.00": 376,
+   "-14.75": 454,
+   "-14.50": 564,
+   "-14.25": 650,
+   "-14.00": 775,
+   "-13.75": 900,
+   "-13.50": 1020,
+   "-13.25": 1239,
+   "-13.00": 224
+  }
+ },
+ "timeMs": {
+  "total": 3111,
+  "setup": 700
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "CHECKIFWEWILL",
+   "wordLogp": -8.2936,
+   "words": "CHECK IF WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "C",
+    "E": "H",
+    "M": "E",
+    "z": "K",
+    "[": "I",
+    "K": "F",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "SHESAIDWEWILL",
+   "wordLogp": -8.3382,
+   "words": "SHE SAID WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "S",
+    "E": "H",
+    "M": "E",
+    "z": "A",
+    "[": "I",
+    "K": "D",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "AREASONWEWILL",
+   "wordLogp": -8.3604,
+   "words": "A REASON WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "A",
+    "E": "R",
+    "M": "E",
+    "z": "S",
+    "[": "O",
+    "K": "N",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "ADIAGNOSISALL",
+   "wordLogp": -8.5222,
+   "words": "A DIAGNOSIS ALL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "A",
+    "E": "D",
+    "M": "I",
+    "z": "G",
+    "[": "N",
+    "K": "O",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "AREAOFTHEHELL",
+   "wordLogp": -8.6562,
+   "words": "AREA OF THE HELL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "A",
+    "E": "R",
+    "M": "E",
+    "z": "O",
+    "[": "F",
+    "K": "T",
+    "N": "H"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "AREASOFWEWILL",
+   "wordLogp": -8.6877,
+   "words": "AREAS OF WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "A",
+    "E": "R",
+    "M": "E",
+    "z": "S",
+    "[": "O",
+    "K": "F",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ASEARCHWEWILL",
+   "wordLogp": -8.7107,
+   "words": "A SEARCH WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "A",
+    "E": "S",
+    "M": "E",
+    "z": "R",
+    "[": "C",
+    "K": "H",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "AREAOFTHEHILL",
+   "wordLogp": -8.7913,
+   "words": "AREA OF THE HILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "A",
+    "E": "R",
+    "M": "E",
+    "z": "O",
+    "[": "F",
+    "K": "T",
+    "N": "H"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "COACHINGAGREE",
+   "wordLogp": -8.7955,
+   "words": "COACHING AGREE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "C",
+    "E": "O",
+    "M": "A",
+    "z": "H",
+    "[": "I",
+    "K": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "AREAOFTHEHALL",
+   "wordLogp": -8.8653,
+   "words": "AREA OF THE HALL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "A",
+    "E": "R",
+    "M": "E",
+    "z": "O",
+    "[": "F",
+    "K": "T",
+    "N": "H"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "PREPAIDWEWILL",
+   "wordLogp": -8.9232,
+   "words": "PREPAID WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "P",
+    "E": "R",
+    "M": "E",
+    "z": "A",
+    "[": "I",
+    "K": "D",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "AREABUTWEWILL",
+   "wordLogp": -8.9344,
+   "words": "AREA BUT WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "A",
+    "E": "R",
+    "M": "E",
+    "z": "B",
+    "[": "U",
+    "K": "T",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THETASKWEWILL",
+   "wordLogp": -8.9628,
+   "words": "THE TASK WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "T",
+    "E": "H",
+    "M": "E",
+    "z": "A",
+    "[": "S",
+    "K": "K",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ADIAGNOSISSEE",
+   "wordLogp": -8.9947,
+   "words": "A DIAGNOSIS SEE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "D",
+    "M": "I",
+    "z": "G",
+    "[": "N",
+    "K": "O",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "CHECKTOWEWILL",
+   "wordLogp": -9.0257,
+   "words": "CHECK TO WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "C",
+    "E": "H",
+    "M": "E",
+    "z": "K",
+    "[": "T",
+    "K": "O",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "HISHEARTSTILL",
+   "wordLogp": -9.0703,
+   "words": "HIS HEART STILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "H",
+    "E": "I",
+    "M": "S",
+    "z": "E",
+    "[": "A",
+    "K": "R",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "THETOURWEWILL",
+   "wordLogp": -9.1357,
+   "words": "THE TOUR WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "T",
+    "E": "H",
+    "M": "E",
+    "z": "O",
+    "[": "U",
+    "K": "R",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "AHEADOFWEWILL",
+   "wordLogp": -9.1614,
+   "words": "AHEAD OF WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "A",
+    "E": "H",
+    "M": "E",
+    "z": "D",
+    "[": "O",
+    "K": "F",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "CHECKITWEWILL",
+   "wordLogp": -9.1638,
+   "words": "CHECK IT WE WILL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "C",
+    "E": "H",
+    "M": "E",
+    "z": "K",
+    "[": "I",
+    "K": "T",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "HISHEARTSTAFF",
+   "wordLogp": -9.1695,
+   "words": "HIS HEART STAFF",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "A": "H",
+    "E": "I",
+    "M": "S",
+    "z": "E",
+    "[": "A",
+    "K": "R",
+    "N": "T"
+   }
+  }
+ ]
+}

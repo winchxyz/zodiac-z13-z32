@@ -1,0 +1,605 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:11:21.705Z",
+ "label": "scr07_04",
+ "cipher": {
+  "id": "scr07",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr07.txt",
+  "text": "KMA0A0NN0M[Ez",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   4
+  ],
+  "isomorphAfterSlips": "abcd*deedbfgh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 252197,
+  "scored": 243935,
+  "keptAtLeastStreamMin": 104,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 12761,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1566,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 104,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 4,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 7,
+  "3": 64,
+  "4": 33
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.919067211680836,
+  "topShare": 0.07281698603902592,
+  "top10Share": 0.43367262442841703,
+  "effectiveNumberExpEntropy": 261.340568409532,
+  "effectiveNumberInverseSimpson": 40.09404076670222,
+  "unscoredMassBoundRelative": 0.0075171359091264715,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 6,
+   "maxWordLogp": -15.24089776964048,
+   "massEstimateRelative": 0.000005182343157196496,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.002915457697679023
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 3,
+   "-17.75": 6,
+   "-17.50": 4,
+   "-17.25": 17,
+   "-17.00": 23,
+   "-16.75": 38,
+   "-16.50": 47,
+   "-16.25": 59,
+   "-16.00": 83,
+   "-15.75": 87,
+   "-15.50": 145,
+   "-15.25": 213,
+   "-15.00": 308,
+   "-14.75": 451,
+   "-14.50": 546,
+   "-14.25": 688,
+   "-14.00": 864,
+   "-13.75": 1213,
+   "-13.50": 1471,
+   "-13.25": 1689,
+   "-13.00": 2070,
+   "-12.75": 2504,
+   "-12.50": 3148,
+   "-12.25": 3597,
+   "-12.00": 4199,
+   "-11.75": 4966,
+   "-11.50": 5865,
+   "-11.25": 6886,
+   "-11.00": 7428,
+   "-10.75": 8452,
+   "-10.50": 8743,
+   "-10.25": 9610,
+   "-10.00": 9678,
+   "-9.75": 10443,
+   "-9.50": 10709,
+   "-9.25": 11264,
+   "-9.00": 11634,
+   "-8.75": 11724,
+   "-8.50": 11872,
+   "-8.25": 11901,
+   "-8.00": 11876,
+   "-7.75": 11555,
+   "-7.50": 11107,
+   "-7.25": 10287,
+   "-7.00": 9233,
+   "-6.75": 8088,
+   "-6.50": 6658,
+   "-6.25": 5240,
+   "-6.00": 4101,
+   "-5.75": 3126,
+   "-5.50": 2296,
+   "-5.25": 1603,
+   "-5.00": 1001,
+   "-4.75": 642,
+   "-4.50": 364,
+   "-4.25": 189,
+   "-4.00": 99,
+   "-3.75": 44,
+   "-3.50": 18,
+   "-3.25": 16,
+   "-3.00": 5,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-19.00": 1,
+   "-18.75": 9,
+   "-18.50": 216,
+   "-18.25": 914,
+   "-18.00": 2235,
+   "-17.75": 3848,
+   "-17.50": 6361,
+   "-17.25": 8964,
+   "-17.00": 11408,
+   "-16.75": 13887,
+   "-16.50": 16046,
+   "-16.25": 17358,
+   "-16.00": 18346,
+   "-15.75": 18428,
+   "-15.50": 18158,
+   "-15.25": 17194,
+   "-15.00": 15544,
+   "-14.75": 13842,
+   "-14.50": 12188,
+   "-14.25": 10334,
+   "-14.00": 8595,
+   "-13.75": 6826,
+   "-13.50": 5635,
+   "-13.25": 4219,
+   "-13.00": 3505,
+   "-12.75": 2603,
+   "-12.50": 2047,
+   "-12.25": 1468,
+   "-12.00": 1086,
+   "-11.75": 842,
+   "-11.50": 578,
+   "-11.25": 439,
+   "-11.00": 290,
+   "-10.75": 182,
+   "-10.50": 105,
+   "-10.25": 98,
+   "-10.00": 61,
+   "-9.75": 31,
+   "-9.50": 20,
+   "-9.25": 12,
+   "-9.00": 2,
+   "-8.75": 3,
+   "-8.50": 3,
+   "-8.25": 4
+  },
+  "boundUnscored": {
+   "-18.00": 3,
+   "-17.75": 6,
+   "-17.50": 4,
+   "-17.25": 17,
+   "-17.00": 23,
+   "-16.75": 38,
+   "-16.50": 47,
+   "-16.25": 59,
+   "-16.00": 83,
+   "-15.75": 87,
+   "-15.50": 145,
+   "-15.25": 213,
+   "-15.00": 308,
+   "-14.75": 451,
+   "-14.50": 546,
+   "-14.25": 688,
+   "-14.00": 864,
+   "-13.75": 1213,
+   "-13.50": 1471,
+   "-13.25": 1689,
+   "-13.00": 307
+  }
+ },
+ "timeMs": {
+  "total": 2934,
+  "setup": 476
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ANGELESSENIOR",
+   "wordLogp": -8.0568,
+   "words": "ANGELES SENIOR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "A",
+    "M": "N",
+    "A": "G",
+    "N": "S",
+    "[": "I",
+    "E": "O",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "WIRELESSEIGHT",
+   "wordLogp": -8.0667,
+   "words": "WIRELESS EIGHT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "W",
+    "M": "I",
+    "A": "R",
+    "N": "S",
+    "[": "G",
+    "E": "H",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ABOUTUSSUBMIT",
+   "wordLogp": -8.0841,
+   "words": "ABOUT US SUBMIT",
+   "unknown": 0,
+   "key": {
+    "0": "U",
+    "K": "A",
+    "M": "B",
+    "A": "O",
+    "N": "S",
+    "[": "M",
+    "E": "I",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "EMAILISSIMPLY",
+   "wordLogp": -8.0948,
+   "words": "EMAIL IS SIMPLY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "E",
+    "M": "M",
+    "A": "A",
+    "N": "S",
+    "[": "P",
+    "E": "L",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "WHITETOOTHERS",
+   "wordLogp": -8.4015,
+   "words": "WHITE TO OTHERS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "K": "W",
+    "M": "H",
+    "A": "I",
+    "N": "O",
+    "[": "E",
+    "E": "R",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "INFOCOMMONTHE",
+   "wordLogp": -8.4332,
+   "words": "INFO COMMON THE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "I",
+    "M": "N",
+    "A": "F",
+    "N": "M",
+    "[": "T",
+    "E": "H",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ANGELESSENDTO",
+   "wordLogp": -8.4387,
+   "words": "ANGELES SEND TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "A",
+    "M": "N",
+    "A": "G",
+    "N": "S",
+    "[": "D",
+    "E": "T",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "TRUEJEFFERSON",
+   "wordLogp": -8.5057,
+   "words": "TRUE JEFFERSON",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "T",
+    "M": "R",
+    "A": "U",
+    "N": "F",
+    "[": "S",
+    "E": "O",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ANDITISSINGLE",
+   "wordLogp": -8.6445,
+   "words": "AND IT IS SINGLE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "A",
+    "M": "N",
+    "A": "D",
+    "N": "S",
+    "[": "G",
+    "E": "L",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ANDIWILLINGTO",
+   "wordLogp": -8.7127,
+   "words": "AND I WILLING TO",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "A",
+    "M": "N",
+    "A": "D",
+    "N": "L",
+    "[": "G",
+    "E": "T",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "INFOCOMMONLAW",
+   "wordLogp": -8.8124,
+   "words": "INFO COMMON LAW",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "I",
+    "M": "N",
+    "A": "F",
+    "N": "M",
+    "[": "L",
+    "E": "A",
+    "z": "W"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TRUESELLERSIN",
+   "wordLogp": -8.9725,
+   "words": "TRUE SELLERS IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "T",
+    "M": "R",
+    "A": "U",
+    "N": "L",
+    "[": "S",
+    "E": "I",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ORJEWELLERYIN",
+   "wordLogp": -9.0217,
+   "words": "OR JEWELLERY IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "O",
+    "M": "R",
+    "A": "J",
+    "N": "L",
+    "[": "Y",
+    "E": "I",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "PAGEYESSEARCH",
+   "wordLogp": -9.0271,
+   "words": "PAGE YES SEARCH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "P",
+    "M": "A",
+    "A": "G",
+    "N": "S",
+    "[": "R",
+    "E": "C",
+    "z": "H"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "ORBEBETTERAND",
+   "wordLogp": -9.0387,
+   "words": "OR BE BETTER AND",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "O",
+    "M": "R",
+    "A": "B",
+    "N": "T",
+    "[": "A",
+    "E": "N",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "AWHOFOLLOWING",
+   "wordLogp": -9.0913,
+   "words": "A WHO FOLLOWING",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "A",
+    "M": "W",
+    "A": "H",
+    "N": "L",
+    "[": "I",
+    "E": "N",
+    "z": "G"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ANGELESSENDIT",
+   "wordLogp": -9.1068,
+   "words": "ANGELES SEND IT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "A",
+    "M": "N",
+    "A": "G",
+    "N": "S",
+    "[": "D",
+    "E": "I",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "HASEVERREADIT",
+   "wordLogp": -9.1166,
+   "words": "HAS EVER READ IT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "H",
+    "M": "A",
+    "A": "S",
+    "N": "R",
+    "[": "D",
+    "E": "I",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "INTOCOMMONLAW",
+   "wordLogp": -9.1519,
+   "words": "INTO COMMON LAW",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "I",
+    "M": "N",
+    "A": "T",
+    "N": "M",
+    "[": "L",
+    "E": "A",
+    "z": "W"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ANGELESSENTBY",
+   "wordLogp": -9.1867,
+   "words": "ANGELES SENT BY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "A",
+    "M": "N",
+    "A": "G",
+    "N": "S",
+    "[": "T",
+    "E": "B",
+    "z": "Y"
+   }
+  }
+ ]
+}

@@ -1,0 +1,582 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:06:26.039Z",
+ "label": "scr01_07",
+ "cipher": {
+  "id": "scr01",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr01.txt",
+  "text": "0NA[MKAENz0M0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abcdefc*bhaea"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 46600,
+  "scored": 43456,
+  "keptAtLeastStreamMin": 50,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1614,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 235,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 50,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 5,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 6,
+  "4": 44
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.061894089941028,
+  "topShare": 0.18620635182953824,
+  "top10Share": 0.7166180858679313,
+  "effectiveNumberExpEntropy": 27.747629619046528,
+  "effectiveNumberInverseSimpson": 12.073460168862576,
+  "unscoredMassBoundRelative": 0.003974446243617654,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0014087722202574388
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.50": 1,
+   "-17.25": 5,
+   "-17.00": 15,
+   "-16.75": 16,
+   "-16.50": 25,
+   "-16.25": 25,
+   "-16.00": 28,
+   "-15.75": 56,
+   "-15.50": 78,
+   "-15.25": 106,
+   "-15.00": 123,
+   "-14.75": 193,
+   "-14.50": 225,
+   "-14.25": 286,
+   "-14.00": 336,
+   "-13.75": 449,
+   "-13.50": 503,
+   "-13.25": 552,
+   "-13.00": 713,
+   "-12.75": 858,
+   "-12.50": 948,
+   "-12.25": 1079,
+   "-12.00": 1238,
+   "-11.75": 1365,
+   "-11.50": 1557,
+   "-11.25": 1642,
+   "-11.00": 1815,
+   "-10.75": 1819,
+   "-10.50": 1992,
+   "-10.25": 2039,
+   "-10.00": 2040,
+   "-9.75": 2079,
+   "-9.50": 2133,
+   "-9.25": 2144,
+   "-9.00": 2099,
+   "-8.75": 2135,
+   "-8.50": 1980,
+   "-8.25": 1852,
+   "-8.00": 1687,
+   "-7.75": 1502,
+   "-7.50": 1289,
+   "-7.25": 1136,
+   "-7.00": 1020,
+   "-6.75": 795,
+   "-6.50": 632,
+   "-6.25": 455,
+   "-6.00": 398,
+   "-5.75": 293,
+   "-5.50": 211,
+   "-5.25": 162,
+   "-5.00": 119,
+   "-4.75": 101,
+   "-4.50": 77,
+   "-4.25": 62,
+   "-4.00": 52,
+   "-3.75": 21,
+   "-3.50": 23,
+   "-3.25": 9,
+   "-3.00": 2,
+   "-2.75": 4,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.00": 2,
+   "-18.75": 18,
+   "-18.50": 128,
+   "-18.25": 320,
+   "-18.00": 851,
+   "-17.75": 1399,
+   "-17.50": 2088,
+   "-17.25": 2658,
+   "-17.00": 3391,
+   "-16.75": 3763,
+   "-16.50": 3754,
+   "-16.25": 3692,
+   "-16.00": 3485,
+   "-15.75": 2993,
+   "-15.50": 2596,
+   "-15.25": 2253,
+   "-15.00": 1839,
+   "-14.75": 1558,
+   "-14.50": 1344,
+   "-14.25": 1021,
+   "-14.00": 875,
+   "-13.75": 707,
+   "-13.50": 554,
+   "-13.25": 481,
+   "-13.00": 385,
+   "-12.75": 317,
+   "-12.50": 251,
+   "-12.25": 208,
+   "-12.00": 141,
+   "-11.75": 113,
+   "-11.50": 77,
+   "-11.25": 50,
+   "-11.00": 38,
+   "-10.75": 22,
+   "-10.50": 13,
+   "-10.25": 12,
+   "-10.00": 14,
+   "-9.75": 11,
+   "-9.50": 11,
+   "-9.25": 11,
+   "-9.00": 4,
+   "-8.75": 1,
+   "-8.50": 2,
+   "-8.25": 3,
+   "-8.00": 2
+  },
+  "boundUnscored": {
+   "-17.50": 1,
+   "-17.25": 5,
+   "-17.00": 15,
+   "-16.75": 16,
+   "-16.50": 25,
+   "-16.25": 25,
+   "-16.00": 28,
+   "-15.75": 56,
+   "-15.50": 78,
+   "-15.25": 106,
+   "-15.00": 123,
+   "-14.75": 193,
+   "-14.50": 225,
+   "-14.25": 286,
+   "-14.00": 336,
+   "-13.75": 449,
+   "-13.50": 503,
+   "-13.25": 552,
+   "-13.00": 122
+  }
+ },
+ "timeMs": {
+  "total": 2926,
+  "setup": 662
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "THELIKETHATIT",
+   "wordLogp": -7.7919,
+   "words": "THE LIKE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "L",
+    "M": "I",
+    "K": "K",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THEFILETHATIT",
+   "wordLogp": -7.8967,
+   "words": "THE FILE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "F",
+    "M": "I",
+    "K": "L",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THELINETHATIT",
+   "wordLogp": -8.1044,
+   "words": "THE LINE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "L",
+    "M": "I",
+    "K": "N",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THELIFETHATIT",
+   "wordLogp": -8.109,
+   "words": "THE LIFE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "L",
+    "M": "I",
+    "K": "F",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "THESIZETHATIT",
+   "wordLogp": -8.2246,
+   "words": "THE SIZE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "S",
+    "M": "I",
+    "K": "Z",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "THEFIRETHATIT",
+   "wordLogp": -8.4945,
+   "words": "THE FIRE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "F",
+    "M": "I",
+    "K": "R",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THESIDETHATIT",
+   "wordLogp": -8.4948,
+   "words": "THE SIDE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "S",
+    "M": "I",
+    "K": "D",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THELIKEWHATIT",
+   "wordLogp": -8.6484,
+   "words": "THE LIKE WHAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "L",
+    "M": "I",
+    "K": "K",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THEFIVETHATIT",
+   "wordLogp": -8.8025,
+   "words": "THE FIVE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "F",
+    "M": "I",
+    "K": "V",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "DETAILTHEYDID",
+   "wordLogp": -8.83,
+   "words": "DETAIL THEY DID",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "N": "E",
+    "A": "T",
+    "[": "A",
+    "M": "I",
+    "K": "L",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THEWINETHATIT",
+   "wordLogp": -8.9575,
+   "words": "THE WINE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "W",
+    "M": "I",
+    "K": "N",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THELIVETHATIT",
+   "wordLogp": -8.9931,
+   "words": "THE LIVE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "L",
+    "M": "I",
+    "K": "V",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THEFILEWHATIT",
+   "wordLogp": -9.0142,
+   "words": "THE FILE WHAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "F",
+    "M": "I",
+    "K": "L",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THEWIFETHATIT",
+   "wordLogp": -9.0267,
+   "words": "THE WIFE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "W",
+    "M": "I",
+    "K": "F",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THESIZEWHATIT",
+   "wordLogp": -9.0379,
+   "words": "THE SIZE WHAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "S",
+    "M": "I",
+    "K": "Z",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THELINEWHATIT",
+   "wordLogp": -9.0441,
+   "words": "THE LINE WHAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "L",
+    "M": "I",
+    "K": "N",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "THERIDETHATIT",
+   "wordLogp": -9.0525,
+   "words": "THE RIDE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "R",
+    "M": "I",
+    "K": "D",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THEFINETHATIT",
+   "wordLogp": -9.0623,
+   "words": "THE FINE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "F",
+    "M": "I",
+    "K": "N",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "SPLITALLPOSTS",
+   "wordLogp": -9.1233,
+   "words": "SPLIT ALL POSTS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "P",
+    "A": "L",
+    "[": "I",
+    "M": "T",
+    "K": "A",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "THEWIDETHATIT",
+   "wordLogp": -9.1284,
+   "words": "THE WIDE THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "A": "E",
+    "[": "W",
+    "M": "I",
+    "K": "D",
+    "z": "A"
+   }
+  }
+ ]
+}

@@ -1,0 +1,604 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:22:56.735Z",
+ "label": "scr06_07",
+ "cipher": {
+  "id": "scr06",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr06.txt",
+  "text": "zAKN0[NAE00MM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abcdefd*geehh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 143408,
+  "scored": 130633,
+  "keptAtLeastStreamMin": 29,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 5345,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 538,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 29,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 23,
+  "4": 6
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.629235116272583,
+  "topShare": 0.09356748992401995,
+  "top10Share": 0.3106149824980454,
+  "effectiveNumberExpEntropy": 354.825293456989,
+  "effectiveNumberInverseSimpson": 59.141207677396146,
+  "unscoredMassBoundRelative": 0.05963428617256023,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 11,
+   "maxWordLogp": -16.7836550433223,
+   "massEstimateRelative": 0.0000027424777824837364,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.021197163342785524
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 18,
+   "-18.00": 25,
+   "-17.75": 20,
+   "-17.50": 21,
+   "-17.25": 41,
+   "-17.00": 56,
+   "-16.75": 98,
+   "-16.50": 136,
+   "-16.25": 208,
+   "-16.00": 282,
+   "-15.75": 351,
+   "-15.50": 426,
+   "-15.25": 511,
+   "-15.00": 553,
+   "-14.75": 640,
+   "-14.50": 709,
+   "-14.25": 946,
+   "-14.00": 1236,
+   "-13.75": 1607,
+   "-13.50": 1964,
+   "-13.25": 2465,
+   "-13.00": 2814,
+   "-12.75": 3200,
+   "-12.50": 3579,
+   "-12.25": 3822,
+   "-12.00": 3954,
+   "-11.75": 4224,
+   "-11.50": 4533,
+   "-11.25": 4977,
+   "-11.00": 5197,
+   "-10.75": 5685,
+   "-10.50": 6057,
+   "-10.25": 6172,
+   "-10.00": 6307,
+   "-9.75": 6439,
+   "-9.50": 6210,
+   "-9.25": 6102,
+   "-9.00": 5600,
+   "-8.75": 5263,
+   "-8.50": 4978,
+   "-8.25": 4672,
+   "-8.00": 4450,
+   "-7.75": 4236,
+   "-7.50": 3860,
+   "-7.25": 3584,
+   "-7.00": 3192,
+   "-6.75": 2828,
+   "-6.50": 2354,
+   "-6.25": 1831,
+   "-6.00": 1409,
+   "-5.75": 1070,
+   "-5.50": 804,
+   "-5.25": 601,
+   "-5.00": 428,
+   "-4.75": 273,
+   "-4.50": 168,
+   "-4.25": 115,
+   "-4.00": 64,
+   "-3.75": 27,
+   "-3.50": 8,
+   "-3.25": 4,
+   "-3.00": 2,
+   "-2.75": 1,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.00": 2,
+   "-18.75": 84,
+   "-18.50": 494,
+   "-18.25": 1515,
+   "-18.00": 2841,
+   "-17.75": 4349,
+   "-17.50": 5810,
+   "-17.25": 7043,
+   "-17.00": 8512,
+   "-16.75": 9150,
+   "-16.50": 9336,
+   "-16.25": 9139,
+   "-16.00": 9026,
+   "-15.75": 8611,
+   "-15.50": 7860,
+   "-15.25": 7149,
+   "-15.00": 6764,
+   "-14.75": 5919,
+   "-14.50": 5244,
+   "-14.25": 4513,
+   "-14.00": 3859,
+   "-13.75": 3047,
+   "-13.50": 2655,
+   "-13.25": 2065,
+   "-13.00": 1590,
+   "-12.75": 1195,
+   "-12.50": 841,
+   "-12.25": 621,
+   "-12.00": 440,
+   "-11.75": 319,
+   "-11.50": 235,
+   "-11.25": 150,
+   "-11.00": 105,
+   "-10.75": 49,
+   "-10.50": 47,
+   "-10.25": 17,
+   "-10.00": 15,
+   "-9.75": 13,
+   "-9.50": 4,
+   "-9.25": 4,
+   "-8.75": 1
+  },
+  "boundUnscored": {
+   "-18.25": 18,
+   "-18.00": 25,
+   "-17.75": 20,
+   "-17.50": 21,
+   "-17.25": 41,
+   "-17.00": 56,
+   "-16.75": 98,
+   "-16.50": 136,
+   "-16.25": 208,
+   "-16.00": 282,
+   "-15.75": 351,
+   "-15.50": 426,
+   "-15.25": 511,
+   "-15.00": 553,
+   "-14.75": 640,
+   "-14.50": 709,
+   "-14.25": 946,
+   "-14.00": 1236,
+   "-13.75": 1607,
+   "-13.50": 1964,
+   "-13.25": 2465,
+   "-13.00": 462
+  }
+ },
+ "timeMs": {
+  "total": 3934,
+  "setup": 433
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "OFLISTINGSSEE",
+   "wordLogp": -8.6581,
+   "words": "OF LISTINGS SEE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "O",
+    "A": "F",
+    "K": "L",
+    "N": "I",
+    "[": "T",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "PERSONSWHOOFF",
+   "wordLogp": -9.0664,
+   "words": "PERSONS WHO OFF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "P",
+    "A": "E",
+    "K": "R",
+    "N": "S",
+    "[": "N",
+    "E": "H",
+    "M": "F"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "YOURAFRICAALL",
+   "wordLogp": -9.0982,
+   "words": "YOUR AFRICA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "Y",
+    "A": "O",
+    "K": "U",
+    "N": "R",
+    "[": "F",
+    "E": "C",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "PROTECTTHEEGG",
+   "wordLogp": -9.1645,
+   "words": "PROTECT THE EGG",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "P",
+    "A": "R",
+    "K": "O",
+    "N": "T",
+    "[": "C",
+    "E": "H",
+    "M": "G"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "BYLISTINGSSEE",
+   "wordLogp": -9.2038,
+   "words": "BY LISTINGS SEE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "B",
+    "A": "Y",
+    "K": "L",
+    "N": "I",
+    "[": "T",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "MYLISTINGSSEE",
+   "wordLogp": -9.2886,
+   "words": "MY LISTINGS SEE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "M",
+    "A": "Y",
+    "K": "L",
+    "N": "I",
+    "[": "T",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "NOLISTINGSSEE",
+   "wordLogp": -9.3028,
+   "words": "NO LISTINGS SEE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "N",
+    "A": "O",
+    "K": "L",
+    "N": "I",
+    "[": "T",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ONLISTINGSSEE",
+   "wordLogp": -9.3127,
+   "words": "ON LISTINGS SEE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "O",
+    "A": "N",
+    "K": "L",
+    "N": "I",
+    "[": "T",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "MEDIAWITHAALL",
+   "wordLogp": -9.4815,
+   "words": "MEDIA WITH A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "M",
+    "A": "E",
+    "K": "D",
+    "N": "I",
+    "[": "W",
+    "E": "H",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "INFOSPORTSSEE",
+   "wordLogp": -9.5201,
+   "words": "INFO SPORTS SEE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "I",
+    "A": "N",
+    "K": "F",
+    "N": "O",
+    "[": "P",
+    "E": "T",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ORLISTINGSSEE",
+   "wordLogp": -9.5203,
+   "words": "OR LISTINGS SEE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "O",
+    "A": "R",
+    "K": "L",
+    "N": "I",
+    "[": "T",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "AUDIOVIDEOOFF",
+   "wordLogp": -9.5491,
+   "words": "AUDIO VIDEO OFF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "A",
+    "A": "U",
+    "K": "D",
+    "N": "I",
+    "[": "V",
+    "E": "E",
+    "M": "F"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "INFOABOUTAALL",
+   "wordLogp": -9.5536,
+   "words": "INFO ABOUT A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "I",
+    "A": "N",
+    "K": "F",
+    "N": "O",
+    "[": "B",
+    "E": "T",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "JUSTAFTERAALL",
+   "wordLogp": -9.574,
+   "words": "JUST AFTER A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "J",
+    "A": "U",
+    "K": "S",
+    "N": "T",
+    "[": "F",
+    "E": "R",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "OFCULTURALLEE",
+   "wordLogp": -9.5843,
+   "words": "OF CULTURAL LEE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "z": "O",
+    "A": "F",
+    "K": "C",
+    "N": "U",
+    "[": "T",
+    "E": "A",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "HOMEAGENDAALL",
+   "wordLogp": -9.5851,
+   "words": "HOME AGENDA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "H",
+    "A": "O",
+    "K": "M",
+    "N": "E",
+    "[": "G",
+    "E": "D",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "USERAFRICAALL",
+   "wordLogp": -9.6229,
+   "words": "USER AFRICA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "U",
+    "A": "S",
+    "K": "E",
+    "N": "R",
+    "[": "F",
+    "E": "C",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "FRIDAYDATAALL",
+   "wordLogp": -9.6289,
+   "words": "FRIDAY DATA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "F",
+    "A": "R",
+    "K": "I",
+    "N": "D",
+    "[": "Y",
+    "E": "T",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "OVERAFRICAALL",
+   "wordLogp": -9.6301,
+   "words": "OVER AFRICA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "O",
+    "A": "V",
+    "K": "E",
+    "N": "R",
+    "[": "F",
+    "E": "C",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "MONDAYDATAALL",
+   "wordLogp": -9.668,
+   "words": "MONDAY DATA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "M",
+    "A": "O",
+    "K": "N",
+    "N": "D",
+    "[": "Y",
+    "E": "T",
+    "M": "L"
+   }
+  }
+ ]
+}

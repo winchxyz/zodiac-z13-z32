@@ -1,0 +1,513 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:37:34.326Z",
+ "label": "eng10_none",
+ "cipher": {
+  "id": "eng10",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng10.txt",
+  "text": "abcdbefcfgdbh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcdbefcfgdbh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 54278,
+  "scored": 50653,
+  "keptAtLeastStreamMin": 15,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1806,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 188,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 15,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 1,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 7,
+  "4": 8
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.511286791966395,
+  "topShare": 0.9726360205924035,
+  "top10Share": 0.9832478334431842,
+  "effectiveNumberExpEntropy": 1.2996804710054077,
+  "effectiveNumberInverseSimpson": 1.0570348951952897,
+  "unscoredMassBoundRelative": 0.0012897181239737406,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00041915686348109127
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 2,
+   "-17.75": 12,
+   "-17.50": 9,
+   "-17.25": 14,
+   "-17.00": 14,
+   "-16.75": 25,
+   "-16.50": 29,
+   "-16.25": 44,
+   "-16.00": 64,
+   "-15.75": 76,
+   "-15.50": 96,
+   "-15.25": 117,
+   "-15.00": 182,
+   "-14.75": 233,
+   "-14.50": 270,
+   "-14.25": 344,
+   "-14.00": 419,
+   "-13.75": 428,
+   "-13.50": 544,
+   "-13.25": 595,
+   "-13.00": 701,
+   "-12.75": 847,
+   "-12.50": 917,
+   "-12.25": 1132,
+   "-12.00": 1242,
+   "-11.75": 1456,
+   "-11.50": 1554,
+   "-11.25": 1804,
+   "-11.00": 1887,
+   "-10.75": 2062,
+   "-10.50": 2138,
+   "-10.25": 2191,
+   "-10.00": 2224,
+   "-9.75": 2194,
+   "-9.50": 2307,
+   "-9.25": 2292,
+   "-9.00": 2388,
+   "-8.75": 2330,
+   "-8.50": 2347,
+   "-8.25": 2330,
+   "-8.00": 2158,
+   "-7.75": 2131,
+   "-7.50": 1964,
+   "-7.25": 1729,
+   "-7.00": 1454,
+   "-6.75": 1216,
+   "-6.50": 1049,
+   "-6.25": 769,
+   "-6.00": 618,
+   "-5.75": 435,
+   "-5.50": 307,
+   "-5.25": 210,
+   "-5.00": 152,
+   "-4.75": 95,
+   "-4.50": 63,
+   "-4.25": 28,
+   "-4.00": 22,
+   "-3.75": 8,
+   "-3.50": 7,
+   "-3.25": 2,
+   "-3.00": 1
+  },
+  "exactScored": {
+   "-19.00": 2,
+   "-18.75": 7,
+   "-18.50": 71,
+   "-18.25": 213,
+   "-18.00": 575,
+   "-17.75": 1118,
+   "-17.50": 1786,
+   "-17.25": 2520,
+   "-17.00": 3296,
+   "-16.75": 3773,
+   "-16.50": 4075,
+   "-16.25": 4221,
+   "-16.00": 4042,
+   "-15.75": 3818,
+   "-15.50": 3543,
+   "-15.25": 3228,
+   "-15.00": 2752,
+   "-14.75": 2374,
+   "-14.50": 2001,
+   "-14.25": 1634,
+   "-14.00": 1318,
+   "-13.75": 998,
+   "-13.50": 742,
+   "-13.25": 644,
+   "-13.00": 540,
+   "-12.75": 352,
+   "-12.50": 271,
+   "-12.25": 231,
+   "-12.00": 185,
+   "-11.75": 112,
+   "-11.50": 70,
+   "-11.25": 44,
+   "-11.00": 30,
+   "-10.75": 23,
+   "-10.50": 17,
+   "-10.25": 11,
+   "-10.00": 3,
+   "-9.75": 8,
+   "-9.50": 3,
+   "-9.00": 1,
+   "-6.75": 1
+  },
+  "boundUnscored": {
+   "-18.00": 2,
+   "-17.75": 12,
+   "-17.50": 9,
+   "-17.25": 14,
+   "-17.00": 14,
+   "-16.75": 25,
+   "-16.50": 29,
+   "-16.25": 44,
+   "-16.00": 64,
+   "-15.75": 76,
+   "-15.50": 96,
+   "-15.25": 117,
+   "-15.00": 182,
+   "-14.75": 233,
+   "-14.50": 270,
+   "-14.25": 344,
+   "-14.00": 419,
+   "-13.75": 428,
+   "-13.50": 544,
+   "-13.25": 595,
+   "-13.00": 108
+  }
+ },
+ "timeMs": {
+  "total": 1534,
+  "setup": 523
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "FORSOMEREASON",
+   "wordLogp": -6.5233,
+   "words": "FOR SOME REASON",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "R",
+    "d": "S",
+    "e": "M",
+    "f": "E",
+    "g": "A",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CONSOLENEWSOF",
+   "wordLogp": -8.9701,
+   "words": "CONSOLE NEWS OF",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "O",
+    "c": "N",
+    "d": "S",
+    "e": "L",
+    "f": "E",
+    "g": "W",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "IORSOMEREASON",
+   "wordLogp": -9.4359,
+   "words": "I OR SOME REASON",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "O",
+    "c": "R",
+    "d": "S",
+    "e": "M",
+    "f": "E",
+    "g": "A",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "STARTEDADIRTY",
+   "wordLogp": -9.4778,
+   "words": "STARTED A DIRTY",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "T",
+    "c": "A",
+    "d": "R",
+    "e": "E",
+    "f": "D",
+    "g": "I",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "HOWTONEWESTOF",
+   "wordLogp": -9.4826,
+   "words": "HOW TO NEWEST OF",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "W",
+    "d": "T",
+    "e": "N",
+    "f": "E",
+    "g": "S",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "BETHEDATAWHEN",
+   "wordLogp": -9.5157,
+   "words": "BE THE DATA WHEN",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "E",
+    "c": "T",
+    "d": "H",
+    "e": "D",
+    "f": "A",
+    "g": "W",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "MENHEFINISHED",
+   "wordLogp": -9.627,
+   "words": "MEN HE FINISHED",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "E",
+    "c": "N",
+    "d": "H",
+    "e": "F",
+    "f": "I",
+    "g": "S",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "TOPSOMEPERSON",
+   "wordLogp": -9.6623,
+   "words": "TOP SOME PERSON",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "c": "P",
+    "d": "S",
+    "e": "M",
+    "f": "E",
+    "g": "R",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "MAYHAVEYETHAS",
+   "wordLogp": -9.6786,
+   "words": "MAY HAVE YET HAS",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "A",
+    "c": "Y",
+    "d": "H",
+    "e": "V",
+    "f": "E",
+    "g": "T",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "CONSOLENEWSOR",
+   "wordLogp": -9.6955,
+   "words": "CONSOLE NEWS OR",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "O",
+    "c": "N",
+    "d": "S",
+    "e": "L",
+    "f": "E",
+    "g": "W",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "MAYHAVEYETHAD",
+   "wordLogp": -9.7126,
+   "words": "MAY HAVE YET HAD",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "A",
+    "c": "Y",
+    "d": "H",
+    "e": "V",
+    "f": "E",
+    "g": "T",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ORDERHADAVERY",
+   "wordLogp": -9.7281,
+   "words": "ORDER HAD A VERY",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "R",
+    "c": "D",
+    "d": "E",
+    "e": "H",
+    "f": "A",
+    "g": "V",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "LORDOFARANDOM",
+   "wordLogp": -9.7298,
+   "words": "LORD OF A RANDOM",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "O",
+    "c": "R",
+    "d": "D",
+    "e": "F",
+    "f": "A",
+    "g": "N",
+    "h": "M"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "WORDOFARANDOM",
+   "wordLogp": -9.7792,
+   "words": "WORD OF A RANDOM",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "O",
+    "c": "R",
+    "d": "D",
+    "e": "F",
+    "f": "A",
+    "g": "N",
+    "h": "M"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "LISTINGSGETIF",
+   "wordLogp": -9.8526,
+   "words": "LISTINGS GET IF",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "I",
+    "c": "S",
+    "d": "T",
+    "e": "N",
+    "f": "G",
+    "g": "E",
+    "h": "F"
+   }
+  }
+ ]
+}

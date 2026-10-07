@@ -1,0 +1,612 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:21:54.773Z",
+ "label": "scr05_00",
+ "cipher": {
+  "id": "scr05",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr05.txt",
+  "text": "ME0NMNA0[z0AK",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   0
+  ],
+  "isomorphAfterSlips": "*bcdadecfgceh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 118,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 118,
+  "tasks": 118,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 230037,
+  "scored": 213623,
+  "keptAtLeastStreamMin": 101,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 12442,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1337,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 101,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 7,
+  "3": 61,
+  "4": 33
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.884340260570448,
+  "topShare": 0.3532660720569583,
+  "top10Share": 0.5330737465859698,
+  "effectiveNumberExpEntropy": 102.00166085132787,
+  "effectiveNumberInverseSimpson": 7.673595487009462,
+  "unscoredMassBoundRelative": 0.013786521094240462,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 14,
+   "maxWordLogp": -16.145636017840637,
+   "massEstimateRelative": 0.0000023297853195782655,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004618039696861925
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 1,
+   "-18.25": 6,
+   "-18.00": 13,
+   "-17.75": 21,
+   "-17.50": 30,
+   "-17.25": 45,
+   "-17.00": 68,
+   "-16.75": 112,
+   "-16.50": 109,
+   "-16.25": 187,
+   "-16.00": 229,
+   "-15.75": 298,
+   "-15.50": 458,
+   "-15.25": 608,
+   "-15.00": 824,
+   "-14.75": 975,
+   "-14.50": 1189,
+   "-14.25": 1563,
+   "-14.00": 1790,
+   "-13.75": 2076,
+   "-13.50": 2480,
+   "-13.25": 2845,
+   "-13.00": 3116,
+   "-12.75": 3738,
+   "-12.50": 4131,
+   "-12.25": 4861,
+   "-12.00": 5544,
+   "-11.75": 6097,
+   "-11.50": 6718,
+   "-11.25": 6975,
+   "-11.00": 7589,
+   "-10.75": 8221,
+   "-10.50": 8470,
+   "-10.25": 8781,
+   "-10.00": 9173,
+   "-9.75": 9121,
+   "-9.50": 9047,
+   "-9.25": 9272,
+   "-9.00": 9549,
+   "-8.75": 9321,
+   "-8.50": 9096,
+   "-8.25": 9236,
+   "-8.00": 8771,
+   "-7.75": 8454,
+   "-7.50": 7745,
+   "-7.25": 7450,
+   "-7.00": 6665,
+   "-6.75": 5841,
+   "-6.50": 4906,
+   "-6.25": 4094,
+   "-6.00": 3168,
+   "-5.75": 2649,
+   "-5.50": 2030,
+   "-5.25": 1366,
+   "-5.00": 1053,
+   "-4.75": 665,
+   "-4.50": 456,
+   "-4.25": 293,
+   "-4.00": 198,
+   "-3.75": 102,
+   "-3.50": 67,
+   "-3.25": 48,
+   "-3.00": 13,
+   "-2.75": 15,
+   "-2.50": 4,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.00": 6,
+   "-18.75": 36,
+   "-18.50": 180,
+   "-18.25": 538,
+   "-18.00": 1372,
+   "-17.75": 2854,
+   "-17.50": 4877,
+   "-17.25": 7225,
+   "-17.00": 9357,
+   "-16.75": 11312,
+   "-16.50": 13047,
+   "-16.25": 14046,
+   "-16.00": 15114,
+   "-15.75": 15516,
+   "-15.50": 15577,
+   "-15.25": 15329,
+   "-15.00": 14391,
+   "-14.75": 13024,
+   "-14.50": 11612,
+   "-14.25": 10126,
+   "-14.00": 8383,
+   "-13.75": 6707,
+   "-13.50": 5538,
+   "-13.25": 4410,
+   "-13.00": 3571,
+   "-12.75": 2697,
+   "-12.50": 1943,
+   "-12.25": 1417,
+   "-12.00": 1097,
+   "-11.75": 746,
+   "-11.50": 524,
+   "-11.25": 334,
+   "-11.00": 230,
+   "-10.75": 193,
+   "-10.50": 99,
+   "-10.25": 62,
+   "-10.00": 53,
+   "-9.75": 41,
+   "-9.50": 17,
+   "-9.25": 12,
+   "-9.00": 3,
+   "-8.75": 4,
+   "-8.50": 1,
+   "-8.25": 1,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-18.50": 1,
+   "-18.25": 6,
+   "-18.00": 13,
+   "-17.75": 21,
+   "-17.50": 30,
+   "-17.25": 45,
+   "-17.00": 68,
+   "-16.75": 112,
+   "-16.50": 109,
+   "-16.25": 187,
+   "-16.00": 229,
+   "-15.75": 298,
+   "-15.50": 458,
+   "-15.25": 608,
+   "-15.00": 824,
+   "-14.75": 975,
+   "-14.50": 1189,
+   "-14.25": 1563,
+   "-14.00": 1790,
+   "-13.75": 2076,
+   "-13.50": 2480,
+   "-13.25": 2845,
+   "-13.00": 487
+  }
+ },
+ "timeMs": {
+  "total": 2586,
+  "setup": 417
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "MODIFIEDUNDER",
+   "wordLogp": -7.3362,
+   "words": "MODIFIED UNDER",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "E": "O",
+    "N": "I",
+    "M": "F",
+    "A": "E",
+    "[": "U",
+    "z": "N",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THESYSTEMGETA",
+   "wordLogp": -8.2247,
+   "words": "THE SYSTEM GET A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "E": "H",
+    "N": "S",
+    "M": "Y",
+    "A": "T",
+    "[": "M",
+    "z": "G",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "MARCHCORNEROF",
+   "wordLogp": -8.4204,
+   "words": "MARCH CORNER OF",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "E": "A",
+    "N": "C",
+    "M": "H",
+    "A": "O",
+    "[": "N",
+    "z": "E",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THESYSTEMBETA",
+   "wordLogp": -8.5591,
+   "words": "THE SYSTEM BETA",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "E": "H",
+    "N": "S",
+    "M": "Y",
+    "A": "T",
+    "[": "M",
+    "z": "B",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "THATITNAMEAND",
+   "wordLogp": -8.5643,
+   "words": "THAT IT NAME AND",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "E": "H",
+    "N": "T",
+    "M": "I",
+    "A": "N",
+    "[": "M",
+    "z": "E",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "WHODIDNOTLONG",
+   "wordLogp": -8.5926,
+   "words": "WHO DID NOT LONG",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "E": "H",
+    "N": "D",
+    "M": "I",
+    "A": "N",
+    "[": "T",
+    "z": "L",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THESYSTEMBETO",
+   "wordLogp": -8.7006,
+   "words": "THE SYSTEM BE TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "E": "H",
+    "N": "S",
+    "M": "Y",
+    "A": "T",
+    "[": "M",
+    "z": "B",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "TURNINORDEROF",
+   "wordLogp": -8.8745,
+   "words": "TURN IN ORDER OF",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "E": "U",
+    "N": "N",
+    "M": "I",
+    "A": "O",
+    "[": "D",
+    "z": "E",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THENONREADERS",
+   "wordLogp": -8.8811,
+   "words": "THE NON READERS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "E": "H",
+    "N": "N",
+    "M": "O",
+    "A": "R",
+    "[": "A",
+    "z": "D",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "MUCHTHECANCER",
+   "wordLogp": -8.9899,
+   "words": "MUCH THE CANCER",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "E": "U",
+    "N": "H",
+    "M": "T",
+    "A": "E",
+    "[": "A",
+    "z": "N",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THESYSTEMWETO",
+   "wordLogp": -9.025,
+   "words": "THE SYSTEM WE TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "E": "H",
+    "N": "S",
+    "M": "Y",
+    "A": "T",
+    "[": "M",
+    "z": "W",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "WHODIDNOTGONE",
+   "wordLogp": -9.0326,
+   "words": "WHO DID NOT GONE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "E": "H",
+    "N": "D",
+    "M": "I",
+    "A": "N",
+    "[": "T",
+    "z": "G",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "MODIFIEDBYDEC",
+   "wordLogp": -9.0407,
+   "words": "MODIFIED BY DEC",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "E": "O",
+    "N": "I",
+    "M": "F",
+    "A": "E",
+    "[": "B",
+    "z": "Y",
+    "K": "C"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "SUCHTHECANCER",
+   "wordLogp": -9.0765,
+   "words": "SUCH THE CANCER",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "E": "U",
+    "N": "H",
+    "M": "T",
+    "A": "E",
+    "[": "A",
+    "z": "N",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "EMAILISANEASY",
+   "wordLogp": -9.0906,
+   "words": "EMAIL IS AN EASY",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "E": "M",
+    "N": "I",
+    "M": "L",
+    "A": "S",
+    "[": "N",
+    "z": "E",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "OFRESEARCHRAY",
+   "wordLogp": -9.117,
+   "words": "OF RESEARCH RAY",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "E": "F",
+    "N": "E",
+    "M": "S",
+    "A": "A",
+    "[": "C",
+    "z": "H",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "THECYCLEFIELD",
+   "wordLogp": -9.1453,
+   "words": "THE CYCLE FIELD",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "E": "H",
+    "N": "C",
+    "M": "Y",
+    "A": "L",
+    "[": "F",
+    "z": "I",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "CARTSTORYFROM",
+   "wordLogp": -9.1853,
+   "words": "CART STORY FROM",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "E": "A",
+    "N": "T",
+    "M": "S",
+    "A": "O",
+    "[": "Y",
+    "z": "F",
+    "K": "M"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "PARTSTORYFROM",
+   "wordLogp": -9.2184,
+   "words": "PART STORY FROM",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "E": "A",
+    "N": "T",
+    "M": "S",
+    "A": "O",
+    "[": "Y",
+    "z": "F",
+    "K": "M"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "OFRESEARCHRAW",
+   "wordLogp": -9.2255,
+   "words": "OF RESEARCH RAW",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "E": "F",
+    "N": "E",
+    "M": "S",
+    "A": "A",
+    "[": "C",
+    "z": "H",
+    "K": "W"
+   }
+  }
+ ]
+}

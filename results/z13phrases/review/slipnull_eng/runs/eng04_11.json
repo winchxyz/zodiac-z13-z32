@@ -1,0 +1,612 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:31:59.978Z",
+ "label": "eng04_11",
+ "cipher": {
+  "id": "eng04",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng04.txt",
+  "text": "abcdeefgcfheg",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   11
+  ],
+  "isomorphAfterSlips": "abcdeefgcfh*g"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 169810,
+  "scored": 158302,
+  "keptAtLeastStreamMin": 93,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 8156,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1052,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 93,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 5,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 56,
+  "4": 35
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.688718489085671,
+  "topShare": 0.34377552670588496,
+  "top10Share": 0.6433739848356608,
+  "effectiveNumberExpEntropy": 44.128342263319205,
+  "effectiveNumberInverseSimpson": 7.435780999380368,
+  "unscoredMassBoundRelative": 0.006160533766169936,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 10,
+   "maxWordLogp": -15.912024598042201,
+   "massEstimateRelative": 0.0000015885287428034925,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0020893013771221968
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 10,
+   "-17.75": 15,
+   "-17.50": 33,
+   "-17.25": 29,
+   "-17.00": 46,
+   "-16.75": 72,
+   "-16.50": 75,
+   "-16.25": 105,
+   "-16.00": 177,
+   "-15.75": 205,
+   "-15.50": 309,
+   "-15.25": 406,
+   "-15.00": 461,
+   "-14.75": 673,
+   "-14.50": 923,
+   "-14.25": 1064,
+   "-14.00": 1264,
+   "-13.75": 1504,
+   "-13.50": 1797,
+   "-13.25": 1988,
+   "-13.00": 2276,
+   "-12.75": 2743,
+   "-12.50": 2945,
+   "-12.25": 3491,
+   "-12.00": 3933,
+   "-11.75": 4308,
+   "-11.50": 4659,
+   "-11.25": 4974,
+   "-11.00": 5393,
+   "-10.75": 5645,
+   "-10.50": 5943,
+   "-10.25": 6114,
+   "-10.00": 6281,
+   "-9.75": 6484,
+   "-9.50": 6651,
+   "-9.25": 6687,
+   "-9.00": 7049,
+   "-8.75": 7142,
+   "-8.50": 6946,
+   "-8.25": 7141,
+   "-8.00": 6743,
+   "-7.75": 6670,
+   "-7.50": 6251,
+   "-7.25": 5747,
+   "-7.00": 5239,
+   "-6.75": 4599,
+   "-6.50": 3847,
+   "-6.25": 3197,
+   "-6.00": 2562,
+   "-5.75": 2038,
+   "-5.50": 1535,
+   "-5.25": 1049,
+   "-5.00": 840,
+   "-4.75": 564,
+   "-4.50": 382,
+   "-4.25": 245,
+   "-4.00": 161,
+   "-3.75": 85,
+   "-3.50": 46,
+   "-3.25": 21,
+   "-3.00": 18,
+   "-2.75": 6,
+   "-2.50": 2,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-19.00": 3,
+   "-18.75": 36,
+   "-18.50": 208,
+   "-18.25": 640,
+   "-18.00": 1482,
+   "-17.75": 2858,
+   "-17.50": 4618,
+   "-17.25": 6447,
+   "-17.00": 8344,
+   "-16.75": 10115,
+   "-16.50": 11235,
+   "-16.25": 11903,
+   "-16.00": 12253,
+   "-15.75": 11799,
+   "-15.50": 11263,
+   "-15.25": 10477,
+   "-15.00": 9396,
+   "-14.75": 8264,
+   "-14.50": 7166,
+   "-14.25": 6150,
+   "-14.00": 4930,
+   "-13.75": 4164,
+   "-13.50": 3308,
+   "-13.25": 2700,
+   "-13.00": 2146,
+   "-12.75": 1642,
+   "-12.50": 1303,
+   "-12.25": 981,
+   "-12.00": 741,
+   "-11.75": 502,
+   "-11.50": 369,
+   "-11.25": 256,
+   "-11.00": 200,
+   "-10.75": 124,
+   "-10.50": 98,
+   "-10.25": 55,
+   "-10.00": 43,
+   "-9.75": 27,
+   "-9.50": 16,
+   "-9.25": 16,
+   "-9.00": 8,
+   "-8.75": 8,
+   "-8.50": 2,
+   "-8.25": 1,
+   "-8.00": 3,
+   "-7.25": 1
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 10,
+   "-17.75": 15,
+   "-17.50": 33,
+   "-17.25": 29,
+   "-17.00": 46,
+   "-16.75": 72,
+   "-16.50": 75,
+   "-16.25": 105,
+   "-16.00": 177,
+   "-15.75": 205,
+   "-15.50": 309,
+   "-15.25": 406,
+   "-15.00": 461,
+   "-14.75": 673,
+   "-14.50": 923,
+   "-14.25": 1064,
+   "-14.00": 1264,
+   "-13.75": 1504,
+   "-13.50": 1797,
+   "-13.25": 1988,
+   "-13.00": 351
+  }
+ },
+ "timeMs": {
+  "total": 2364,
+  "setup": 457
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "HOTELLISTINGS",
+   "wordLogp": -7.1524,
+   "words": "HOTEL LISTINGS",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "T",
+    "d": "E",
+    "e": "L",
+    "f": "I",
+    "g": "S",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "METALLISTINGS",
+   "wordLogp": -7.8059,
+   "words": "METAL LISTINGS",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "E",
+    "c": "T",
+    "d": "A",
+    "e": "L",
+    "f": "I",
+    "g": "S",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "WECANNOTCOUNT",
+   "wordLogp": -7.8791,
+   "words": "WE CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "E",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "INCOMMERCEFOR",
+   "wordLogp": -7.9413,
+   "words": "IN COMMERCE FOR",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "C",
+    "d": "O",
+    "e": "M",
+    "f": "E",
+    "g": "R",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "THEDOORSERIES",
+   "wordLogp": -8.2133,
+   "words": "THE DOOR SERIES",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "D",
+    "e": "O",
+    "f": "R",
+    "g": "S",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "BYCOMMERCEFOR",
+   "wordLogp": -8.4227,
+   "words": "BY COMMERCE FOR",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "Y",
+    "c": "C",
+    "d": "O",
+    "e": "M",
+    "f": "E",
+    "g": "R",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THEPOORSERIES",
+   "wordLogp": -8.4518,
+   "words": "THE POOR SERIES",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "P",
+    "e": "O",
+    "f": "R",
+    "g": "S",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "INPUTTHEPHONE",
+   "wordLogp": -8.5246,
+   "words": "INPUT THE PHONE",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "P",
+    "d": "U",
+    "e": "T",
+    "f": "H",
+    "g": "E",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "BUYITTHEYHAVE",
+   "wordLogp": -8.6005,
+   "words": "BUY IT THEY HAVE",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "U",
+    "c": "Y",
+    "d": "I",
+    "e": "T",
+    "f": "H",
+    "g": "E",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "NOTACCEPTEDUP",
+   "wordLogp": -8.6711,
+   "words": "NOT ACCEPTED UP",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "A",
+    "e": "C",
+    "f": "E",
+    "g": "P",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ATCOMMERCEFOR",
+   "wordLogp": -8.673,
+   "words": "AT COMMERCE FOR",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "T",
+    "c": "C",
+    "d": "O",
+    "e": "M",
+    "f": "E",
+    "g": "R",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "HECANNOTCOUNT",
+   "wordLogp": -8.6795,
+   "words": "HE CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "E",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "g": "T",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ITCOMMERCEFOR",
+   "wordLogp": -8.7039,
+   "words": "IT COMMERCE FOR",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "T",
+    "c": "C",
+    "d": "O",
+    "e": "M",
+    "f": "E",
+    "g": "R",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "USCOMMERCEFOR",
+   "wordLogp": -8.7271,
+   "words": "US COMMERCE FOR",
+   "unknown": 0,
+   "key": {
+    "a": "U",
+    "b": "S",
+    "c": "C",
+    "d": "O",
+    "e": "M",
+    "f": "E",
+    "g": "R",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THEGOODMEDIUM",
+   "wordLogp": -8.7456,
+   "words": "THE GOOD MEDIUM",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "G",
+    "e": "O",
+    "f": "D",
+    "g": "M",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THEROOMDEMAND",
+   "wordLogp": -8.7723,
+   "words": "THE ROOM DEMAND",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "R",
+    "e": "O",
+    "f": "M",
+    "g": "D",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ISCOMMERCEFOR",
+   "wordLogp": -8.8279,
+   "words": "IS COMMERCE FOR",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "C",
+    "d": "O",
+    "e": "M",
+    "f": "E",
+    "g": "R",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "PIONEERFORMOF",
+   "wordLogp": -8.8437,
+   "words": "PIONEER FORM OF",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "I",
+    "c": "O",
+    "d": "N",
+    "e": "E",
+    "f": "R",
+    "g": "F",
+    "h": "M"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THEFOODMEDIUM",
+   "wordLogp": -8.8596,
+   "words": "THE FOOD MEDIUM",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "F",
+    "e": "O",
+    "f": "D",
+    "g": "M",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ITWASSLOWLYTO",
+   "wordLogp": -8.8813,
+   "words": "IT WAS SLOWLY TO",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "T",
+    "c": "W",
+    "d": "A",
+    "e": "S",
+    "f": "L",
+    "g": "O",
+    "h": "Y"
+   }
+  }
+ ]
+}

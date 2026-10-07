@@ -1,0 +1,615 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:27:14.634Z",
+ "label": "eng01_02",
+ "cipher": {
+  "id": "eng01",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng01.txt",
+  "text": "abcdefghechef",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   2
+  ],
+  "isomorphAfterSlips": "ab*defghechef"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 119,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 119,
+  "tasks": 119,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 1386090,
+  "scored": 1293585,
+  "keptAtLeastStreamMin": 862,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 56339,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 7829,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 862,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 57,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 2,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 47,
+  "3": 408,
+  "4": 394,
+  "5": 13
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -5.815504827377739,
+  "topShare": 0.05343416775469809,
+  "top10Share": 0.2513962830770073,
+  "effectiveNumberExpEntropy": 493.1496249268892,
+  "effectiveNumberInverseSimpson": 91.08804396706749,
+  "unscoredMassBoundRelative": 0.006630862691526678,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 91,
+   "maxWordLogp": -15.218359003266777,
+   "massEstimateRelative": 0.0000015959907646890977,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.002168280423686029
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 34,
+   "-17.75": 63,
+   "-17.50": 145,
+   "-17.25": 277,
+   "-17.00": 429,
+   "-16.75": 581,
+   "-16.50": 746,
+   "-16.25": 1177,
+   "-16.00": 1387,
+   "-15.75": 1881,
+   "-15.50": 2521,
+   "-15.25": 3464,
+   "-15.00": 4808,
+   "-14.75": 6030,
+   "-14.50": 7423,
+   "-14.25": 8651,
+   "-14.00": 9851,
+   "-13.75": 11244,
+   "-13.50": 13297,
+   "-13.25": 15784,
+   "-13.00": 18618,
+   "-12.75": 22149,
+   "-12.50": 25155,
+   "-12.25": 28403,
+   "-12.00": 31218,
+   "-11.75": 34868,
+   "-11.50": 38912,
+   "-11.25": 41644,
+   "-11.00": 45096,
+   "-10.75": 47693,
+   "-10.50": 51013,
+   "-10.25": 52396,
+   "-10.00": 54903,
+   "-9.75": 57365,
+   "-9.50": 58312,
+   "-9.25": 59453,
+   "-9.00": 60219,
+   "-8.75": 60380,
+   "-8.50": 60457,
+   "-8.25": 59288,
+   "-8.00": 57731,
+   "-7.75": 54465,
+   "-7.50": 49994,
+   "-7.25": 44332,
+   "-7.00": 38644,
+   "-6.75": 32843,
+   "-6.50": 27021,
+   "-6.25": 22280,
+   "-6.00": 17411,
+   "-5.75": 13338,
+   "-5.50": 9900,
+   "-5.25": 7224,
+   "-5.00": 5006,
+   "-4.75": 3403,
+   "-4.50": 2168,
+   "-4.25": 1320,
+   "-4.00": 770,
+   "-3.75": 465,
+   "-3.50": 232,
+   "-3.25": 116,
+   "-3.00": 61,
+   "-2.75": 19,
+   "-2.50": 9,
+   "-2.25": 2,
+   "-2.00": 1
+  },
+  "exactScored": {
+   "-19.75": 1,
+   "-19.50": 4,
+   "-19.25": 10,
+   "-19.00": 54,
+   "-18.75": 529,
+   "-18.50": 2218,
+   "-18.25": 7427,
+   "-18.00": 17730,
+   "-17.75": 33085,
+   "-17.50": 51525,
+   "-17.25": 71148,
+   "-17.00": 86124,
+   "-16.75": 96953,
+   "-16.50": 100599,
+   "-16.25": 100443,
+   "-16.00": 96338,
+   "-15.75": 89698,
+   "-15.50": 82438,
+   "-15.25": 74507,
+   "-15.00": 67028,
+   "-14.75": 58940,
+   "-14.50": 49962,
+   "-14.25": 41981,
+   "-14.00": 34795,
+   "-13.75": 28898,
+   "-13.50": 23195,
+   "-13.25": 19037,
+   "-13.00": 14617,
+   "-12.75": 11207,
+   "-12.50": 8470,
+   "-12.25": 6737,
+   "-12.00": 5189,
+   "-11.75": 3744,
+   "-11.50": 2553,
+   "-11.25": 1803,
+   "-11.00": 1377,
+   "-10.75": 937,
+   "-10.50": 685,
+   "-10.25": 520,
+   "-10.00": 351,
+   "-9.75": 248,
+   "-9.50": 190,
+   "-9.25": 104,
+   "-9.00": 65,
+   "-8.75": 44,
+   "-8.50": 28,
+   "-8.25": 21,
+   "-8.00": 17,
+   "-7.75": 8,
+   "-7.25": 3
+  },
+  "boundUnscored": {
+   "-18.00": 34,
+   "-17.75": 63,
+   "-17.50": 145,
+   "-17.25": 277,
+   "-17.00": 429,
+   "-16.75": 581,
+   "-16.50": 746,
+   "-16.25": 1177,
+   "-16.00": 1387,
+   "-15.75": 1881,
+   "-15.50": 2521,
+   "-15.25": 3464,
+   "-15.00": 4808,
+   "-14.75": 6030,
+   "-14.50": 7423,
+   "-14.25": 8651,
+   "-14.00": 9851,
+   "-13.75": 11244,
+   "-13.50": 13297,
+   "-13.25": 15784,
+   "-13.00": 2712
+  }
+ },
+ "timeMs": {
+  "total": 22028,
+  "setup": 551
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "CHRISTMASLAST",
+   "wordLogp": -7.0877,
+   "words": "CHRISTMAS LAST",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "H",
+    "d": "I",
+    "e": "S",
+    "f": "T",
+    "g": "M",
+    "h": "A",
+    "c": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "MECHANICALCAN",
+   "wordLogp": -7.1402,
+   "words": "MECHANICAL CAN",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "E",
+    "d": "H",
+    "e": "A",
+    "f": "N",
+    "g": "I",
+    "h": "C",
+    "c": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "NUMBERWHETHER",
+   "wordLogp": -7.1957,
+   "words": "NUMBER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "U",
+    "d": "B",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "PLAYERWHETHER",
+   "wordLogp": -7.5606,
+   "words": "PLAYER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "L",
+    "d": "Y",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "CHRISTMASEAST",
+   "wordLogp": -7.578,
+   "words": "CHRISTMAS EAST",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "H",
+    "d": "I",
+    "e": "S",
+    "f": "T",
+    "g": "M",
+    "h": "A",
+    "c": "E"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "SILVERWHETHER",
+   "wordLogp": -7.5939,
+   "words": "SILVER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "I",
+    "d": "V",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "OFOVERWHETHER",
+   "wordLogp": -7.6237,
+   "words": "OF OVER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "d": "V",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "NATUREFORMORE",
+   "wordLogp": -7.6468,
+   "words": "NATURE FOR MORE",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "A",
+    "d": "U",
+    "e": "R",
+    "f": "E",
+    "g": "F",
+    "h": "O",
+    "c": "M"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "CHRISTMASPAST",
+   "wordLogp": -7.6847,
+   "words": "CHRISTMAS PAST",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "H",
+    "d": "I",
+    "e": "S",
+    "f": "T",
+    "g": "M",
+    "h": "A",
+    "c": "P"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "SUMMERWHETHER",
+   "wordLogp": -7.6947,
+   "words": "SUMMER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "U",
+    "d": "M",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "CHRISTMASFAST",
+   "wordLogp": -7.7356,
+   "words": "CHRISTMAS FAST",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "H",
+    "d": "I",
+    "e": "S",
+    "f": "T",
+    "g": "M",
+    "h": "A",
+    "c": "F"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "EVENTSWITHITS",
+   "wordLogp": -7.7697,
+   "words": "EVENTS WITH ITS",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "V",
+    "d": "N",
+    "e": "T",
+    "f": "S",
+    "g": "W",
+    "h": "I",
+    "c": "H"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "WITHREGARDARE",
+   "wordLogp": -7.7935,
+   "words": "WITH REGARD ARE",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "I",
+    "d": "H",
+    "e": "R",
+    "f": "E",
+    "g": "G",
+    "h": "A",
+    "c": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "MAKESTHISLIST",
+   "wordLogp": -7.8026,
+   "words": "MAKES THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "A",
+    "d": "E",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "FORMERWHETHER",
+   "wordLogp": -7.811,
+   "words": "FORMER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "d": "M",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "GAMESTHISLIST",
+   "wordLogp": -7.8263,
+   "words": "GAMES THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "A",
+    "d": "E",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "L"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ADULTSWITHITS",
+   "wordLogp": -7.8313,
+   "words": "ADULTS WITH ITS",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "D",
+    "d": "L",
+    "e": "T",
+    "f": "S",
+    "g": "W",
+    "h": "I",
+    "c": "H"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "BOOKSTHISLIST",
+   "wordLogp": -7.8413,
+   "words": "BOOKS THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "O",
+    "d": "K",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "FROMTHEITWITH",
+   "wordLogp": -7.8639,
+   "words": "FROM THE IT WITH",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "d": "M",
+    "e": "T",
+    "f": "H",
+    "g": "E",
+    "h": "I",
+    "c": "W"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "LARGERWHETHER",
+   "wordLogp": -7.8786,
+   "words": "LARGER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "A",
+    "d": "G",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H",
+    "c": "T"
+   }
+  }
+ ]
+}

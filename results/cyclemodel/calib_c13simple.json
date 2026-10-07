@@ -1,0 +1,99 @@
+{
+ "command": "node tools/cyclemodel_calib.js --parts real32,c13,c32 --n13 12 --n13simple 4 --n32 10 --enum-seconds 30 --restarts32 30 --real-restarts 100 --iters32 50000",
+ "tried": 7,
+ "accepted": 4,
+ "rows": [
+  {
+   "i": 0,
+   "S": 0,
+   "regime": "simple",
+   "distinct": 9,
+   "cipher": "ABCDEFDCGGHIA",
+   "truthLM": -10.293,
+   "truthLogL": -1.641,
+   "rankLM": 88,
+   "rankPost": 17,
+   "listedAboveThreshold": 2124,
+   "truthListed": false,
+   "enumerateComplete": false,
+   "consistentStrings": 1344746,
+   "seconds": 32.386
+  },
+  {
+   "i": 1,
+   "S": 0,
+   "regime": "simple",
+   "distinct": 7,
+   "cipher": "ABCDAECFCDEGG",
+   "truthLM": -12.396,
+   "truthLogL": -2.806,
+   "rankLM": 257,
+   "rankPost": 301,
+   "listedAboveThreshold": 4713,
+   "truthListed": true,
+   "enumerateComplete": true,
+   "consistentStrings": 30818,
+   "seconds": 2.533
+  },
+  {
+   "i": 2,
+   "S": 0,
+   "regime": "simple",
+   "distinct": 8,
+   "cipher": "ABCDEBFGBADAH",
+   "truthLM": -11.918,
+   "truthLogL": -1.777,
+   "rankLM": 1888,
+   "rankPost": 658,
+   "listedAboveThreshold": 23330,
+   "truthListed": false,
+   "enumerateComplete": true,
+   "consistentStrings": 1018185,
+   "seconds": 19.715
+  },
+  {
+   "i": 3,
+   "S": 0,
+   "regime": "simple",
+   "distinct": 9,
+   "cipher": "ABCDEFGBABHIC",
+   "truthLM": -6.073,
+   "truthLogL": -2.371,
+   "rankLM": 1,
+   "rankPost": 1,
+   "listedAboveThreshold": 5,
+   "truthListed": false,
+   "enumerateComplete": false,
+   "consistentStrings": 3214235,
+   "seconds": 30.879
+  }
+ ],
+ "summary": {
+  "n": 4,
+  "meanLog10RankChange": -0.276,
+  "sdLog10RankChange": 0.374,
+  "seMean": 0.187,
+  "medianLog10RankChange": 0,
+  "improved": 2,
+  "worse": 1,
+  "same": 1,
+  "top1": {
+   "lm": 1,
+   "post": 1
+  },
+  "top10": {
+   "lm": 1,
+   "post": 1
+  },
+  "top100": {
+   "lm": 2,
+   "post": 2
+  },
+  "top1000": {
+   "lm": 3,
+   "post": 4
+  },
+  "medianRankLM": 257,
+  "medianRankPost": 301
+ }
+}

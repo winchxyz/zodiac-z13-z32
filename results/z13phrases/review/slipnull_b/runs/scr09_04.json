@@ -1,0 +1,617 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:24:50.808Z",
+ "label": "scr09_04",
+ "cipher": {
+  "id": "scr09",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr09.txt",
+  "text": "0MKNA0zM[N0EA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   4
+  ],
+  "isomorphAfterSlips": "abcd*afbgdahe"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 369076,
+  "scored": 337564,
+  "keptAtLeastStreamMin": 214,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 19350,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2443,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 214,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 15,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 4,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 10,
+  "3": 147,
+  "4": 57
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.0646822130240725,
+  "topShare": 0.13409083702199187,
+  "top10Share": 0.7461231170820462,
+  "effectiveNumberExpEntropy": 42.46028986667267,
+  "effectiveNumberInverseSimpson": 14.457705717122005,
+  "unscoredMassBoundRelative": 0.0040092042385587124,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 30,
+   "maxWordLogp": -15.54522075576222,
+   "massEstimateRelative": 0.000001160728184360262,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.001211923313484795
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 8,
+   "-18.25": 22,
+   "-18.00": 30,
+   "-17.75": 67,
+   "-17.50": 106,
+   "-17.25": 171,
+   "-17.00": 235,
+   "-16.75": 289,
+   "-16.50": 320,
+   "-16.25": 404,
+   "-16.00": 535,
+   "-15.75": 743,
+   "-15.50": 903,
+   "-15.25": 1252,
+   "-15.00": 1628,
+   "-14.75": 2085,
+   "-14.50": 2507,
+   "-14.25": 3060,
+   "-14.00": 3447,
+   "-13.75": 3853,
+   "-13.50": 4284,
+   "-13.25": 4781,
+   "-13.00": 5201,
+   "-12.75": 6238,
+   "-12.50": 6888,
+   "-12.25": 7843,
+   "-12.00": 8637,
+   "-11.75": 9675,
+   "-11.50": 10646,
+   "-11.25": 11397,
+   "-11.00": 11960,
+   "-10.75": 12758,
+   "-10.50": 13488,
+   "-10.25": 13544,
+   "-10.00": 13697,
+   "-9.75": 13806,
+   "-9.50": 14068,
+   "-9.25": 14305,
+   "-9.00": 14286,
+   "-8.75": 14280,
+   "-8.50": 14332,
+   "-8.25": 14479,
+   "-8.00": 14150,
+   "-7.75": 13478,
+   "-7.50": 12629,
+   "-7.25": 11649,
+   "-7.00": 10574,
+   "-6.75": 9259,
+   "-6.50": 8040,
+   "-6.25": 6720,
+   "-6.00": 5536,
+   "-5.75": 4352,
+   "-5.50": 3378,
+   "-5.25": 2506,
+   "-5.00": 1801,
+   "-4.75": 1197,
+   "-4.50": 702,
+   "-4.25": 395,
+   "-4.00": 232,
+   "-3.75": 120,
+   "-3.50": 61,
+   "-3.25": 24,
+   "-3.00": 10,
+   "-2.75": 4,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.50": 2,
+   "-19.25": 11,
+   "-19.00": 45,
+   "-18.75": 128,
+   "-18.50": 547,
+   "-18.25": 1626,
+   "-18.00": 3374,
+   "-17.75": 6085,
+   "-17.50": 9588,
+   "-17.25": 13466,
+   "-17.00": 17351,
+   "-16.75": 20214,
+   "-16.50": 22547,
+   "-16.25": 23833,
+   "-16.00": 24035,
+   "-15.75": 24035,
+   "-15.50": 23109,
+   "-15.25": 21944,
+   "-15.00": 20370,
+   "-14.75": 18290,
+   "-14.50": 16189,
+   "-14.25": 14081,
+   "-14.00": 11839,
+   "-13.75": 10072,
+   "-13.50": 8090,
+   "-13.25": 6465,
+   "-13.00": 5073,
+   "-12.75": 3885,
+   "-12.50": 2998,
+   "-12.25": 2318,
+   "-12.00": 1842,
+   "-11.75": 1274,
+   "-11.50": 887,
+   "-11.25": 653,
+   "-11.00": 453,
+   "-10.75": 278,
+   "-10.50": 175,
+   "-10.25": 118,
+   "-10.00": 108,
+   "-9.75": 55,
+   "-9.50": 35,
+   "-9.25": 23,
+   "-9.00": 25,
+   "-8.75": 9,
+   "-8.50": 5,
+   "-8.25": 2,
+   "-8.00": 2,
+   "-7.75": 1,
+   "-7.50": 4,
+   "-7.25": 3,
+   "-7.00": 2
+  },
+  "boundUnscored": {
+   "-18.50": 8,
+   "-18.25": 22,
+   "-18.00": 30,
+   "-17.75": 67,
+   "-17.50": 106,
+   "-17.25": 171,
+   "-17.00": 235,
+   "-16.75": 289,
+   "-16.50": 320,
+   "-16.25": 404,
+   "-16.00": 535,
+   "-15.75": 743,
+   "-15.50": 903,
+   "-15.25": 1252,
+   "-15.00": 1628,
+   "-14.75": 2085,
+   "-14.50": 2507,
+   "-14.25": 3060,
+   "-14.00": 3447,
+   "-13.75": 3853,
+   "-13.50": 4284,
+   "-13.25": 4781,
+   "-13.00": 782
+  }
+ },
+ "timeMs": {
+  "total": 2858,
+  "setup": 433
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "RESOURCEFORAN",
+   "wordLogp": -6.9373,
+   "words": "RESOURCE FOR AN",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "A",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "RESOURCEFORIN",
+   "wordLogp": -6.966,
+   "words": "RESOURCE FOR IN",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "I",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "RESOURCEWORLD",
+   "wordLogp": -7.0199,
+   "words": "RESOURCE WORLD",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "W",
+    "E": "L",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "RESOURCEFORIT",
+   "wordLogp": -7.1458,
+   "words": "RESOURCE FOR IT",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "I",
+    "A": "T"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "RESOURCEFORUM",
+   "wordLogp": -7.2497,
+   "words": "RESOURCE FORUM",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "U",
+    "A": "M"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "RESOURCEFORMY",
+   "wordLogp": -7.2674,
+   "words": "RESOURCE FOR MY",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "M",
+    "A": "Y"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "RESOURCENORTH",
+   "wordLogp": -7.3173,
+   "words": "RESOURCE NORTH",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "N",
+    "E": "T",
+    "A": "H"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "RESOURCEFORBY",
+   "wordLogp": -7.4097,
+   "words": "RESOURCE FOR BY",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "B",
+    "A": "Y"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "RESOURCEFORAT",
+   "wordLogp": -7.4534,
+   "words": "RESOURCE FOR AT",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "A",
+    "A": "T"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "RESOURCEFORUP",
+   "wordLogp": -7.7075,
+   "words": "RESOURCE FOR UP",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "U",
+    "A": "P"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "NAMEANDARENOT",
+   "wordLogp": -7.9501,
+   "words": "NAME AND ARE NOT",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "A",
+    "K": "M",
+    "N": "E",
+    "z": "D",
+    "[": "R",
+    "E": "O",
+    "A": "T"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "RESOURCEWORTH",
+   "wordLogp": -7.9734,
+   "words": "RESOURCE WORTH",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "W",
+    "E": "T",
+    "A": "H"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "RESOURCETORUN",
+   "wordLogp": -8.1903,
+   "words": "RESOURCE TO RUN",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "T",
+    "E": "U",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "RESOURCEFORPM",
+   "wordLogp": -8.24,
+   "words": "RESOURCE FOR PM",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "P",
+    "A": "M"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "RESOURCEFORAM",
+   "wordLogp": -8.2607,
+   "words": "RESOURCE FOR AM",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "A",
+    "A": "M"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "RESOURCEFORTH",
+   "wordLogp": -8.3511,
+   "words": "RESOURCE FORTH",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "F",
+    "E": "T",
+    "A": "H"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "NAMEANDAGENCY",
+   "wordLogp": -8.4322,
+   "words": "NAME AND AGENCY",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "A",
+    "K": "M",
+    "N": "E",
+    "z": "D",
+    "[": "G",
+    "E": "C",
+    "A": "Y"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "NAMEANDAGENTS",
+   "wordLogp": -8.4445,
+   "words": "NAME AND AGENTS",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "A",
+    "K": "M",
+    "N": "E",
+    "z": "D",
+    "[": "G",
+    "E": "T",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ASTHEALSOHAVE",
+   "wordLogp": -8.4701,
+   "words": "AS THE ALSO HAVE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "S",
+    "K": "T",
+    "N": "H",
+    "z": "L",
+    "[": "O",
+    "E": "V",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "RESOURCEMORAL",
+   "wordLogp": -8.5204,
+   "words": "RESOURCE MORAL",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "K": "S",
+    "N": "O",
+    "z": "C",
+    "[": "M",
+    "E": "A",
+    "A": "L"
+   }
+  }
+ ]
+}

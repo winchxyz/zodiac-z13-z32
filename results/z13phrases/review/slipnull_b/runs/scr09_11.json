@@ -1,0 +1,585 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:25:11.006Z",
+ "label": "scr09_11",
+ "cipher": {
+  "id": "scr09",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr09.txt",
+  "text": "0MKNA0zM[N0EA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   11
+  ],
+  "isomorphAfterSlips": "abcdeafbgda*e"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 31778,
+  "scored": 29670,
+  "keptAtLeastStreamMin": 24,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1867,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 281,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 24,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 18,
+  "4": 6
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.667447317192858,
+  "topShare": 0.1575146789670202,
+  "top10Share": 0.533488944490581,
+  "effectiveNumberExpEntropy": 77.55503170575925,
+  "effectiveNumberInverseSimpson": 21.42017580090232,
+  "unscoredMassBoundRelative": 0.010745284625090194,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.003604828494681113
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 1,
+   "-18.25": 3,
+   "-18.00": 2,
+   "-17.75": 4,
+   "-17.50": 7,
+   "-17.25": 5,
+   "-17.00": 7,
+   "-16.75": 12,
+   "-16.50": 15,
+   "-16.25": 18,
+   "-16.00": 34,
+   "-15.75": 35,
+   "-15.50": 66,
+   "-15.25": 66,
+   "-15.00": 98,
+   "-14.75": 126,
+   "-14.50": 181,
+   "-14.25": 194,
+   "-14.00": 226,
+   "-13.75": 263,
+   "-13.50": 309,
+   "-13.25": 378,
+   "-13.00": 369,
+   "-12.75": 454,
+   "-12.50": 482,
+   "-12.25": 621,
+   "-12.00": 621,
+   "-11.75": 709,
+   "-11.50": 885,
+   "-11.25": 852,
+   "-11.00": 946,
+   "-10.75": 974,
+   "-10.50": 1070,
+   "-10.25": 1107,
+   "-10.00": 1104,
+   "-9.75": 1141,
+   "-9.50": 1197,
+   "-9.25": 1201,
+   "-9.00": 1203,
+   "-8.75": 1222,
+   "-8.50": 1343,
+   "-8.25": 1299,
+   "-8.00": 1336,
+   "-7.75": 1353,
+   "-7.50": 1255,
+   "-7.25": 1209,
+   "-7.00": 1089,
+   "-6.75": 1031,
+   "-6.50": 818,
+   "-6.25": 683,
+   "-6.00": 549,
+   "-5.75": 477,
+   "-5.50": 328,
+   "-5.25": 261,
+   "-5.00": 210,
+   "-4.75": 122,
+   "-4.50": 90,
+   "-4.25": 39,
+   "-4.00": 39,
+   "-3.75": 20,
+   "-3.50": 14,
+   "-3.25": 3,
+   "-3.00": 1,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-18.75": 1,
+   "-18.50": 10,
+   "-18.25": 75,
+   "-18.00": 204,
+   "-17.75": 351,
+   "-17.50": 619,
+   "-17.25": 923,
+   "-17.00": 1203,
+   "-16.75": 1494,
+   "-16.50": 1891,
+   "-16.25": 2098,
+   "-16.00": 2020,
+   "-15.75": 2118,
+   "-15.50": 2146,
+   "-15.25": 2018,
+   "-15.00": 2047,
+   "-14.75": 1813,
+   "-14.50": 1604,
+   "-14.25": 1467,
+   "-14.00": 1175,
+   "-13.75": 1001,
+   "-13.50": 796,
+   "-13.25": 637,
+   "-13.00": 499,
+   "-12.75": 352,
+   "-12.50": 269,
+   "-12.25": 210,
+   "-12.00": 169,
+   "-11.75": 132,
+   "-11.50": 104,
+   "-11.25": 67,
+   "-11.00": 50,
+   "-10.75": 41,
+   "-10.50": 18,
+   "-10.25": 16,
+   "-10.00": 13,
+   "-9.75": 6,
+   "-9.50": 6,
+   "-9.25": 2,
+   "-9.00": 4,
+   "-8.50": 1
+  },
+  "boundUnscored": {
+   "-18.50": 1,
+   "-18.25": 3,
+   "-18.00": 2,
+   "-17.75": 4,
+   "-17.50": 7,
+   "-17.25": 5,
+   "-17.00": 7,
+   "-16.75": 12,
+   "-16.50": 15,
+   "-16.25": 18,
+   "-16.00": 34,
+   "-15.75": 35,
+   "-15.50": 66,
+   "-15.25": 66,
+   "-15.00": 98,
+   "-14.75": 126,
+   "-14.50": 181,
+   "-14.25": 194,
+   "-14.00": 226,
+   "-13.75": 263,
+   "-13.50": 309,
+   "-13.25": 378,
+   "-13.00": 58
+  }
+ },
+ "timeMs": {
+  "total": 1136,
+  "setup": 392
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ASTHEALSOHAVE",
+   "wordLogp": -8.4701,
+   "words": "AS THE ALSO HAVE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "S",
+    "K": "T",
+    "N": "H",
+    "A": "E",
+    "z": "L",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TEXASTHERATES",
+   "wordLogp": -8.7595,
+   "words": "TEXAS THE RATES",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "E",
+    "K": "X",
+    "N": "A",
+    "A": "S",
+    "z": "H",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ANDLEARNPLACE",
+   "wordLogp": -8.8495,
+   "words": "AND LEARN PLACE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "N",
+    "K": "D",
+    "N": "L",
+    "A": "E",
+    "z": "R",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "TEXASTHEDATES",
+   "wordLogp": -8.9674,
+   "words": "TEXAS THE DATES",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "E",
+    "K": "X",
+    "N": "A",
+    "A": "S",
+    "z": "H",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "OURISOLUTIONS",
+   "wordLogp": -8.979,
+   "words": "OUR I SOLUTIONS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "U",
+    "K": "R",
+    "N": "I",
+    "A": "S",
+    "z": "L",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ADULTANDPLANT",
+   "wordLogp": -9.1742,
+   "words": "ADULT AND PLANT",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "D",
+    "K": "U",
+    "N": "L",
+    "A": "T",
+    "z": "N",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "INREGIONBEING",
+   "wordLogp": -9.2146,
+   "words": "IN REGION BEING",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "N",
+    "K": "R",
+    "N": "E",
+    "A": "G",
+    "z": "O",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "HADTOHEALTHTO",
+   "wordLogp": -9.2523,
+   "words": "HAD TO HEALTH TO",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "A",
+    "K": "D",
+    "N": "T",
+    "A": "O",
+    "z": "E",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "TICKETLINKTHE",
+   "wordLogp": -9.2593,
+   "words": "TICKET LINK THE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "K": "C",
+    "N": "K",
+    "A": "E",
+    "z": "L",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "HASTOHEALTHTO",
+   "wordLogp": -9.3821,
+   "words": "HAS TO HEALTH TO",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "A",
+    "K": "S",
+    "N": "T",
+    "A": "O",
+    "z": "E",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "TABLETMAILTHE",
+   "wordLogp": -9.3831,
+   "words": "TABLET MAIL THE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "K": "B",
+    "N": "L",
+    "A": "E",
+    "z": "M",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TABLETRAILTHE",
+   "wordLogp": -9.4125,
+   "words": "TABLE TRAIL THE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "K": "B",
+    "N": "L",
+    "A": "E",
+    "z": "R",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "HONGTHROUGHIT",
+   "wordLogp": -9.4489,
+   "words": "HONG THROUGH IT",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "O",
+    "K": "N",
+    "N": "G",
+    "A": "T",
+    "z": "R",
+    "[": "U"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ATCHEAPTOHAVE",
+   "wordLogp": -9.5557,
+   "words": "AT CHEAP TO HAVE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "T",
+    "K": "C",
+    "N": "H",
+    "A": "E",
+    "z": "P",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "TICKETSINKTHE",
+   "wordLogp": -9.577,
+   "words": "TICKETS INK THE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "K": "C",
+    "N": "K",
+    "A": "E",
+    "z": "S",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "NATIONWASINTO",
+   "wordLogp": -9.5813,
+   "words": "NATION WAS INTO",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "A",
+    "K": "T",
+    "N": "I",
+    "A": "O",
+    "z": "W",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "NATIONWAYINTO",
+   "wordLogp": -9.6302,
+   "words": "NATION WAY INTO",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "A",
+    "K": "T",
+    "N": "I",
+    "A": "O",
+    "z": "W",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ONLYROUNDYOUR",
+   "wordLogp": -9.6532,
+   "words": "ONLY ROUND YOUR",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "N",
+    "K": "L",
+    "N": "Y",
+    "A": "R",
+    "z": "U",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "TICKETRISKTHE",
+   "wordLogp": -9.6872,
+   "words": "TICKET RISK THE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "K": "C",
+    "N": "K",
+    "A": "E",
+    "z": "R",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "AGOLDANGELAND",
+   "wordLogp": -9.7773,
+   "words": "A GOLD ANGEL AND",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "G",
+    "K": "O",
+    "N": "L",
+    "A": "D",
+    "z": "N",
+    "[": "E"
+   }
+  }
+ ]
+}

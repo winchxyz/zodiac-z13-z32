@@ -1,0 +1,439 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:33:57.780Z",
+ "label": "eng07_01",
+ "cipher": {
+  "id": "eng07",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng07.txt",
+  "text": "abcdefghchcfd",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*cdefghchcfd"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 23801,
+  "scored": 22871,
+  "keptAtLeastStreamMin": 12,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1127,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 127,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 12,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 11,
+  "4": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.076527288357667,
+  "topShare": 0.2266166808499264,
+  "top10Share": 0.6529373054334284,
+  "effectiveNumberExpEntropy": 46.84736710774972,
+  "effectiveNumberInverseSimpson": 12.530357301071271,
+  "unscoredMassBoundRelative": 0.012159346566046265,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004741494992120272
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.50": 1,
+   "-16.75": 2,
+   "-16.50": 5,
+   "-16.25": 7,
+   "-16.00": 4,
+   "-15.75": 16,
+   "-15.50": 19,
+   "-15.25": 23,
+   "-15.00": 26,
+   "-14.75": 36,
+   "-14.50": 60,
+   "-14.25": 76,
+   "-14.00": 115,
+   "-13.75": 149,
+   "-13.50": 177,
+   "-13.25": 178,
+   "-13.00": 225,
+   "-12.75": 274,
+   "-12.50": 290,
+   "-12.25": 404,
+   "-12.00": 418,
+   "-11.75": 514,
+   "-11.50": 540,
+   "-11.25": 669,
+   "-11.00": 715,
+   "-10.75": 814,
+   "-10.50": 843,
+   "-10.25": 963,
+   "-10.00": 975,
+   "-9.75": 997,
+   "-9.50": 1007,
+   "-9.25": 1004,
+   "-9.00": 1036,
+   "-8.75": 1003,
+   "-8.50": 1070,
+   "-8.25": 1058,
+   "-8.00": 987,
+   "-7.75": 1000,
+   "-7.50": 1030,
+   "-7.25": 1008,
+   "-7.00": 893,
+   "-6.75": 782,
+   "-6.50": 632,
+   "-6.25": 486,
+   "-6.00": 357,
+   "-5.75": 323,
+   "-5.50": 208,
+   "-5.25": 166,
+   "-5.00": 89,
+   "-4.75": 59,
+   "-4.50": 30,
+   "-4.25": 16,
+   "-4.00": 13,
+   "-3.75": 6,
+   "-3.50": 3
+  },
+  "exactScored": {
+   "-18.50": 7,
+   "-18.25": 59,
+   "-18.00": 163,
+   "-17.75": 277,
+   "-17.50": 503,
+   "-17.25": 763,
+   "-17.00": 1169,
+   "-16.75": 1386,
+   "-16.50": 1565,
+   "-16.25": 1692,
+   "-16.00": 1713,
+   "-15.75": 1684,
+   "-15.50": 1817,
+   "-15.25": 1652,
+   "-15.00": 1527,
+   "-14.75": 1336,
+   "-14.50": 1126,
+   "-14.25": 937,
+   "-14.00": 782,
+   "-13.75": 644,
+   "-13.50": 487,
+   "-13.25": 404,
+   "-13.00": 305,
+   "-12.75": 233,
+   "-12.50": 183,
+   "-12.25": 137,
+   "-12.00": 92,
+   "-11.75": 74,
+   "-11.50": 60,
+   "-11.25": 35,
+   "-11.00": 23,
+   "-10.75": 8,
+   "-10.50": 9,
+   "-10.25": 6,
+   "-10.00": 6,
+   "-9.50": 5,
+   "-9.25": 1,
+   "-8.75": 1
+  },
+  "boundUnscored": {
+   "-17.50": 1,
+   "-16.75": 2,
+   "-16.50": 5,
+   "-16.25": 7,
+   "-16.00": 4,
+   "-15.75": 16,
+   "-15.50": 19,
+   "-15.25": 23,
+   "-15.00": 26,
+   "-14.75": 36,
+   "-14.50": 60,
+   "-14.25": 76,
+   "-14.00": 115,
+   "-13.75": 149,
+   "-13.50": 177,
+   "-13.25": 178,
+   "-13.00": 36
+  }
+ },
+ "timeMs": {
+  "total": 4034,
+  "setup": 387
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "MEETINGWEWENT",
+   "wordLogp": -8.7212,
+   "words": "MEETING WE WENT",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "c": "E",
+    "d": "T",
+    "e": "I",
+    "f": "N",
+    "g": "G",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CANOBTAININTO",
+   "wordLogp": -9.0312,
+   "words": "CAN OBTAIN INTO",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "c": "N",
+    "d": "O",
+    "e": "B",
+    "f": "T",
+    "g": "A",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THESINGLELENS",
+   "wordLogp": -9.3083,
+   "words": "THE SINGLE LENS",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "c": "E",
+    "d": "S",
+    "e": "I",
+    "f": "N",
+    "g": "G",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "AFTERHOSTSTHE",
+   "wordLogp": -9.3559,
+   "words": "AFTER HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "c": "T",
+    "d": "E",
+    "e": "R",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "WATERHOSTSTHE",
+   "wordLogp": -9.3771,
+   "words": "WATER HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "c": "T",
+    "d": "E",
+    "e": "R",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "JASONTHISISTO",
+   "wordLogp": -9.384,
+   "words": "JASON THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "J",
+    "c": "S",
+    "d": "O",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "FEATURESASART",
+   "wordLogp": -9.4107,
+   "words": "FEATURES AS ART",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "c": "A",
+    "d": "T",
+    "e": "U",
+    "f": "R",
+    "g": "E",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THEYDRIVEVERY",
+   "wordLogp": -9.7725,
+   "words": "THEY DRIVE VERY",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "c": "E",
+    "d": "Y",
+    "e": "D",
+    "f": "R",
+    "g": "I",
+    "h": "V"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "PETERHOSTSTHE",
+   "wordLogp": -9.7861,
+   "words": "PETER HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "c": "T",
+    "d": "E",
+    "e": "R",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "LATERHOSTSTHE",
+   "wordLogp": -9.8017,
+   "words": "LATER HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "c": "T",
+    "d": "E",
+    "e": "R",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "DATEGHOSTSTHE",
+   "wordLogp": -9.8171,
+   "words": "DATE GHOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "c": "T",
+    "d": "E",
+    "e": "G",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "RATEDHOSTSTHE",
+   "wordLogp": -9.8175,
+   "words": "RATED HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "c": "T",
+    "d": "E",
+    "e": "D",
+    "f": "H",
+    "g": "O",
+    "h": "S"
+   }
+  }
+ ]
+}

@@ -1,0 +1,602 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:33:17.835Z",
+ "label": "scr19_03",
+ "cipher": {
+  "id": "scr19",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr19.txt",
+  "text": "[NKAz0EMAM0N0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*efghdhfbf"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 192973,
+  "scored": 185344,
+  "keptAtLeastStreamMin": 95,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 12382,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1414,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 95,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 23,
+  "4": 70
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.041763413272778,
+  "topShare": 0.052066831787894174,
+  "top10Share": 0.25757353604289973,
+  "effectiveNumberExpEntropy": 500.38355303502897,
+  "effectiveNumberInverseSimpson": 96.81842369706499,
+  "unscoredMassBoundRelative": 0.009207273165129256,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 5,
+   "maxWordLogp": -15.942067490306009,
+   "massEstimateRelative": 0.0000020458805609113286,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0033586606914849143
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 2,
+   "-17.50": 4,
+   "-17.25": 10,
+   "-17.00": 15,
+   "-16.75": 31,
+   "-16.50": 53,
+   "-16.25": 66,
+   "-16.00": 83,
+   "-15.75": 101,
+   "-15.50": 178,
+   "-15.25": 231,
+   "-15.00": 323,
+   "-14.75": 435,
+   "-14.50": 591,
+   "-14.25": 677,
+   "-14.00": 807,
+   "-13.75": 1033,
+   "-13.50": 1278,
+   "-13.25": 1435,
+   "-13.00": 1854,
+   "-12.75": 2095,
+   "-12.50": 2360,
+   "-12.25": 2694,
+   "-12.00": 3231,
+   "-11.75": 3536,
+   "-11.50": 4304,
+   "-11.25": 4997,
+   "-11.00": 5373,
+   "-10.75": 6321,
+   "-10.50": 6746,
+   "-10.25": 7392,
+   "-10.00": 7747,
+   "-9.75": 8012,
+   "-9.50": 8477,
+   "-9.25": 8191,
+   "-9.00": 8582,
+   "-8.75": 8679,
+   "-8.50": 8670,
+   "-8.25": 8902,
+   "-8.00": 8875,
+   "-7.75": 8883,
+   "-7.50": 8320,
+   "-7.25": 7738,
+   "-7.00": 7005,
+   "-6.75": 6417,
+   "-6.50": 5305,
+   "-6.25": 4417,
+   "-6.00": 3233,
+   "-5.75": 2473,
+   "-5.50": 1762,
+   "-5.25": 1235,
+   "-5.00": 774,
+   "-4.75": 478,
+   "-4.50": 270,
+   "-4.25": 149,
+   "-4.00": 77,
+   "-3.75": 31,
+   "-3.50": 9,
+   "-3.25": 4,
+   "-3.00": 2
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-19.00": 5,
+   "-18.75": 60,
+   "-18.50": 272,
+   "-18.25": 859,
+   "-18.00": 1615,
+   "-17.75": 2643,
+   "-17.50": 4051,
+   "-17.25": 5402,
+   "-17.00": 6906,
+   "-16.75": 8295,
+   "-16.50": 9639,
+   "-16.25": 10886,
+   "-16.00": 12024,
+   "-15.75": 12779,
+   "-15.50": 12786,
+   "-15.25": 13288,
+   "-15.00": 12720,
+   "-14.75": 12354,
+   "-14.50": 11089,
+   "-14.25": 9735,
+   "-14.00": 8367,
+   "-13.75": 6771,
+   "-13.50": 5529,
+   "-13.25": 4297,
+   "-13.00": 3379,
+   "-12.75": 2656,
+   "-12.50": 1991,
+   "-12.25": 1448,
+   "-12.00": 1099,
+   "-11.75": 742,
+   "-11.50": 540,
+   "-11.25": 341,
+   "-11.00": 236,
+   "-10.75": 193,
+   "-10.50": 123,
+   "-10.25": 96,
+   "-10.00": 55,
+   "-9.75": 27,
+   "-9.50": 19,
+   "-9.25": 12,
+   "-9.00": 7,
+   "-8.75": 5,
+   "-8.50": 2
+  },
+  "boundUnscored": {
+   "-17.75": 2,
+   "-17.50": 4,
+   "-17.25": 10,
+   "-17.00": 15,
+   "-16.75": 31,
+   "-16.50": 53,
+   "-16.25": 66,
+   "-16.00": 83,
+   "-15.75": 101,
+   "-15.50": 178,
+   "-15.25": 231,
+   "-15.00": 323,
+   "-14.75": 435,
+   "-14.50": 591,
+   "-14.25": 677,
+   "-14.00": 807,
+   "-13.75": 1033,
+   "-13.50": 1278,
+   "-13.25": 1435,
+   "-13.00": 276
+  }
+ },
+ "timeMs": {
+  "total": 19772,
+  "setup": 397
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "TIMEANDEVENIN",
+   "wordLogp": -8.3252,
+   "words": "TIME AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "T",
+    "N": "I",
+    "K": "M",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "WITHANDEVENIN",
+   "wordLogp": -8.4389,
+   "words": "WITH AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "W",
+    "N": "I",
+    "K": "T",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "SITEANDEVENIN",
+   "wordLogp": -8.562,
+   "words": "SITE AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "S",
+    "N": "I",
+    "K": "T",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "VIDEOSGENESIS",
+   "wordLogp": -8.623,
+   "words": "VIDEOS GENESIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "V",
+    "N": "I",
+    "K": "D",
+    "z": "O",
+    "E": "G",
+    "M": "E",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "LIFEANDEVENIN",
+   "wordLogp": -8.677,
+   "words": "LIFE AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "L",
+    "N": "I",
+    "K": "F",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "COMMENTSISNON",
+   "wordLogp": -8.7293,
+   "words": "COMMENTS IS NON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "C",
+    "N": "O",
+    "K": "M",
+    "z": "E",
+    "E": "T",
+    "M": "S",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "COMPANYEVENON",
+   "wordLogp": -8.7476,
+   "words": "COMPANY EVEN ON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "C",
+    "N": "O",
+    "K": "M",
+    "z": "A",
+    "E": "Y",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "CITYANDEVENIN",
+   "wordLogp": -8.8161,
+   "words": "CITY AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "C",
+    "N": "I",
+    "K": "T",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "FIGHTSCENESIS",
+   "wordLogp": -8.8802,
+   "words": "FIGHT SCENES IS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "F",
+    "N": "I",
+    "K": "G",
+    "z": "T",
+    "E": "C",
+    "M": "E",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "LISTANDEVENIN",
+   "wordLogp": -8.8858,
+   "words": "LIST AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "L",
+    "N": "I",
+    "K": "S",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SIZEANDEVENIN",
+   "wordLogp": -8.916,
+   "words": "SIZE AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "S",
+    "N": "I",
+    "K": "Z",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "COMMENTSASNON",
+   "wordLogp": -8.92,
+   "words": "COMMENTS AS NON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "C",
+    "N": "O",
+    "K": "M",
+    "z": "E",
+    "E": "T",
+    "M": "S",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "HOMEANDEVENON",
+   "wordLogp": -8.9238,
+   "words": "HOME AND EVEN ON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "H",
+    "N": "O",
+    "K": "M",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "TIPSANDEVENIN",
+   "wordLogp": -8.9955,
+   "words": "TIPS AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "T",
+    "N": "I",
+    "K": "P",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HIGHANDEVENIN",
+   "wordLogp": -9.0168,
+   "words": "HIGH AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "H",
+    "N": "I",
+    "K": "G",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "PAYMENTISINAN",
+   "wordLogp": -9.0245,
+   "words": "PAYMENT IS IN AN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "P",
+    "N": "A",
+    "K": "Y",
+    "z": "E",
+    "E": "T",
+    "M": "I",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "DISTANCEMENIN",
+   "wordLogp": -9.0356,
+   "words": "DISTANCE MEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "D",
+    "N": "I",
+    "K": "S",
+    "z": "A",
+    "E": "C",
+    "M": "E",
+    "A": "M"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "WORKINGASANON",
+   "wordLogp": -9.057,
+   "words": "WORKING AS A NON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "W",
+    "N": "O",
+    "K": "R",
+    "z": "I",
+    "E": "G",
+    "M": "A",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "FILEANDEVENIN",
+   "wordLogp": -9.0571,
+   "words": "FILE AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "F",
+    "N": "I",
+    "K": "L",
+    "z": "A",
+    "E": "D",
+    "M": "E",
+    "A": "V"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "COMPANYISINON",
+   "wordLogp": -9.1103,
+   "words": "COMPANY IS IN ON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "C",
+    "N": "O",
+    "K": "M",
+    "z": "A",
+    "E": "Y",
+    "M": "I",
+    "A": "S"
+   }
+  }
+ ]
+}

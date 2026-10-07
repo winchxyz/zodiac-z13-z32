@@ -1,0 +1,603 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:34:17.269Z",
+ "label": "eng07_02",
+ "cipher": {
+  "id": "eng07",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng07.txt",
+  "text": "abcdefghchcfd",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   2
+  ],
+  "isomorphAfterSlips": "ab*defghchcfd"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 119,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 119,
+  "tasks": 119,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 231266,
+  "scored": 219018,
+  "keptAtLeastStreamMin": 79,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 12498,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1325,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 79,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 43,
+  "4": 35
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.1003195924631015,
+  "topShare": 0.0666570117065582,
+  "top10Share": 0.31152314563599487,
+  "effectiveNumberExpEntropy": 434.2745239541457,
+  "effectiveNumberInverseSimpson": 70.34559640363244,
+  "unscoredMassBoundRelative": 0.01691549729941195,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 10,
+   "maxWordLogp": -16.521595590492648,
+   "massEstimateRelative": 0.000001720239571005263,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.005995943589153615
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 1,
+   "-17.50": 2,
+   "-17.25": 11,
+   "-17.00": 28,
+   "-16.75": 75,
+   "-16.50": 120,
+   "-16.25": 144,
+   "-16.00": 178,
+   "-15.75": 206,
+   "-15.50": 284,
+   "-15.25": 398,
+   "-15.00": 510,
+   "-14.75": 656,
+   "-14.50": 861,
+   "-14.25": 1061,
+   "-14.00": 1391,
+   "-13.75": 1700,
+   "-13.50": 1994,
+   "-13.25": 2276,
+   "-13.00": 2536,
+   "-12.75": 2858,
+   "-12.50": 3252,
+   "-12.25": 3802,
+   "-12.00": 4436,
+   "-11.75": 5091,
+   "-11.50": 5785,
+   "-11.25": 6409,
+   "-11.00": 7116,
+   "-10.75": 7504,
+   "-10.50": 7723,
+   "-10.25": 8479,
+   "-10.00": 9015,
+   "-9.75": 9430,
+   "-9.50": 9495,
+   "-9.25": 9483,
+   "-9.00": 9613,
+   "-8.75": 9658,
+   "-8.50": 9755,
+   "-8.25": 10072,
+   "-8.00": 10002,
+   "-7.75": 10148,
+   "-7.50": 9829,
+   "-7.25": 9050,
+   "-7.00": 8216,
+   "-6.75": 7560,
+   "-6.50": 6080,
+   "-6.25": 4856,
+   "-6.00": 3663,
+   "-5.75": 2729,
+   "-5.50": 2014,
+   "-5.25": 1369,
+   "-5.00": 922,
+   "-4.75": 596,
+   "-4.50": 404,
+   "-4.25": 206,
+   "-4.00": 116,
+   "-3.75": 51,
+   "-3.50": 32,
+   "-3.25": 8,
+   "-3.00": 5,
+   "-2.75": 1,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.00": 3,
+   "-18.75": 36,
+   "-18.50": 187,
+   "-18.25": 784,
+   "-18.00": 1692,
+   "-17.75": 3026,
+   "-17.50": 4833,
+   "-17.25": 7237,
+   "-17.00": 10091,
+   "-16.75": 12309,
+   "-16.50": 14019,
+   "-16.25": 15093,
+   "-16.00": 16196,
+   "-15.75": 16331,
+   "-15.50": 16387,
+   "-15.25": 15827,
+   "-15.00": 14832,
+   "-14.75": 13012,
+   "-14.50": 11269,
+   "-14.25": 9554,
+   "-14.00": 7767,
+   "-13.75": 6197,
+   "-13.50": 5125,
+   "-13.25": 4116,
+   "-13.00": 3327,
+   "-12.75": 2677,
+   "-12.50": 2112,
+   "-12.25": 1479,
+   "-12.00": 1135,
+   "-11.75": 807,
+   "-11.50": 535,
+   "-11.25": 378,
+   "-11.00": 228,
+   "-10.75": 157,
+   "-10.50": 97,
+   "-10.25": 64,
+   "-10.00": 39,
+   "-9.75": 19,
+   "-9.50": 22,
+   "-9.25": 8,
+   "-9.00": 4,
+   "-8.75": 4,
+   "-8.50": 3
+  },
+  "boundUnscored": {
+   "-17.75": 1,
+   "-17.50": 2,
+   "-17.25": 11,
+   "-17.00": 28,
+   "-16.75": 75,
+   "-16.50": 120,
+   "-16.25": 144,
+   "-16.00": 178,
+   "-15.75": 206,
+   "-15.50": 284,
+   "-15.25": 398,
+   "-15.00": 510,
+   "-14.75": 656,
+   "-14.50": 861,
+   "-14.25": 1061,
+   "-14.00": 1391,
+   "-13.75": 1700,
+   "-13.50": 1994,
+   "-13.25": 2276,
+   "-13.00": 352
+  }
+ },
+ "timeMs": {
+  "total": 19321,
+  "setup": 456
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ENJOYTHISISTO",
+   "wordLogp": -8.2765,
+   "words": "ENJOY THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "N",
+    "d": "O",
+    "e": "Y",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "BELOWTHISISTO",
+   "wordLogp": -8.4448,
+   "words": "BELOW THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "E",
+    "d": "O",
+    "e": "W",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "GRADUATEHEHAD",
+   "wordLogp": -8.4578,
+   "words": "GRADUATE HE HAD",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "R",
+    "d": "D",
+    "e": "U",
+    "f": "A",
+    "g": "T",
+    "h": "E",
+    "c": "H"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "CONTAINEDEDIT",
+   "wordLogp": -8.6073,
+   "words": "CONTAINED EDIT",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "O",
+    "d": "T",
+    "e": "A",
+    "f": "I",
+    "g": "N",
+    "h": "E",
+    "c": "D"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "EMOTIONALALOT",
+   "wordLogp": -8.6183,
+   "words": "EMOTIONAL A LOT",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "M",
+    "d": "T",
+    "e": "I",
+    "f": "O",
+    "g": "N",
+    "h": "A",
+    "c": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ALLOWTHISISTO",
+   "wordLogp": -8.667,
+   "words": "ALLOW THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "L",
+    "d": "O",
+    "e": "W",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "MAJORTHISISTO",
+   "wordLogp": -8.7339,
+   "words": "MAJOR THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "A",
+    "d": "O",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "EFFORTSININTO",
+   "wordLogp": -8.8878,
+   "words": "EFFORTS IN INTO",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "F",
+    "d": "O",
+    "e": "R",
+    "f": "T",
+    "g": "S",
+    "h": "I",
+    "c": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "INSTEADOFOFAT",
+   "wordLogp": -8.9551,
+   "words": "INSTEAD OF OF AT",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "d": "T",
+    "e": "E",
+    "f": "A",
+    "g": "D",
+    "h": "O",
+    "c": "F"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "JOSEPHDATATHE",
+   "wordLogp": -8.9662,
+   "words": "JOSEPH DATA THE",
+   "unknown": 0,
+   "key": {
+    "a": "J",
+    "b": "O",
+    "d": "E",
+    "e": "P",
+    "f": "H",
+    "g": "D",
+    "h": "A",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SPEECHGOTOTHE",
+   "wordLogp": -8.9761,
+   "words": "SPEECH GO TO THE",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "P",
+    "d": "E",
+    "e": "C",
+    "f": "H",
+    "g": "G",
+    "h": "O",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "FLOORTHISISTO",
+   "wordLogp": -9.0663,
+   "words": "FLOOR THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "L",
+    "d": "O",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "S"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "DIRECTORARATE",
+   "wordLogp": -9.0664,
+   "words": "DIRECTOR A RATE",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "I",
+    "d": "E",
+    "e": "C",
+    "f": "T",
+    "g": "O",
+    "h": "R",
+    "c": "A"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "SPEECHDATATHE",
+   "wordLogp": -9.0689,
+   "words": "SPEECH DATA THE",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "P",
+    "d": "E",
+    "e": "C",
+    "f": "H",
+    "g": "D",
+    "h": "A",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "CANONTHISISTO",
+   "wordLogp": -9.0854,
+   "words": "CANON THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "A",
+    "d": "O",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "BLOODTHISISTO",
+   "wordLogp": -9.1061,
+   "words": "BLOOD THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "L",
+    "d": "O",
+    "e": "D",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "CHARLESAPAPER",
+   "wordLogp": -9.2128,
+   "words": "CHARLES A PAPER",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "H",
+    "d": "R",
+    "e": "L",
+    "f": "E",
+    "g": "S",
+    "h": "A",
+    "c": "P"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "INDEXHOSTSTHE",
+   "wordLogp": -9.2272,
+   "words": "INDEX HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "d": "E",
+    "e": "X",
+    "f": "H",
+    "g": "O",
+    "h": "S",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "LABORTHISISTO",
+   "wordLogp": -9.2351,
+   "words": "LABOR THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "A",
+    "d": "O",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "c": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "INWEBHOSTSTHE",
+   "wordLogp": -9.2699,
+   "words": "IN WEB HOSTS THE",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "d": "E",
+    "e": "B",
+    "f": "H",
+    "g": "O",
+    "h": "S",
+    "c": "T"
+   }
+  }
+ ]
+}

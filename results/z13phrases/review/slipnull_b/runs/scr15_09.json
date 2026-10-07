@@ -1,0 +1,466 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:29:27.763Z",
+ "label": "scr15_09",
+ "cipher": {
+  "id": "scr15",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr15.txt",
+  "text": "NE0N[MA0AzMK0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   9
+  ],
+  "isomorphAfterSlips": "abcadefcf*ehc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 15518,
+  "scored": 14596,
+  "keptAtLeastStreamMin": 13,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1457,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 181,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 13,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 11,
+  "4": 2
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.109203428475725,
+  "topShare": 0.05831494300006192,
+  "top10Share": 0.35577274128145603,
+  "effectiveNumberExpEntropy": 156.1742504088624,
+  "effectiveNumberInverseSimpson": 54.821903878919606,
+  "unscoredMassBoundRelative": 0.012996737563216792,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004243980225968424
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 2,
+   "-17.75": 3,
+   "-17.50": 1,
+   "-17.25": 6,
+   "-17.00": 4,
+   "-16.75": 13,
+   "-16.50": 8,
+   "-16.25": 9,
+   "-16.00": 14,
+   "-15.75": 20,
+   "-15.50": 18,
+   "-15.25": 24,
+   "-15.00": 49,
+   "-14.75": 45,
+   "-14.50": 71,
+   "-14.25": 77,
+   "-14.00": 110,
+   "-13.75": 134,
+   "-13.50": 144,
+   "-13.25": 142,
+   "-13.00": 146,
+   "-12.75": 204,
+   "-12.50": 223,
+   "-12.25": 244,
+   "-12.00": 278,
+   "-11.75": 297,
+   "-11.50": 385,
+   "-11.25": 441,
+   "-11.00": 491,
+   "-10.75": 487,
+   "-10.50": 538,
+   "-10.25": 572,
+   "-10.00": 569,
+   "-9.75": 574,
+   "-9.50": 586,
+   "-9.25": 540,
+   "-9.00": 616,
+   "-8.75": 557,
+   "-8.50": 647,
+   "-8.25": 620,
+   "-8.00": 615,
+   "-7.75": 652,
+   "-7.50": 609,
+   "-7.25": 586,
+   "-7.00": 524,
+   "-6.75": 495,
+   "-6.50": 390,
+   "-6.25": 398,
+   "-6.00": 287,
+   "-5.75": 282,
+   "-5.50": 228,
+   "-5.25": 157,
+   "-5.00": 134,
+   "-4.75": 85,
+   "-4.50": 57,
+   "-4.25": 51,
+   "-4.00": 25,
+   "-3.75": 13,
+   "-3.50": 9,
+   "-3.25": 10,
+   "-3.00": 1,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-18.75": 2,
+   "-18.50": 7,
+   "-18.25": 18,
+   "-18.00": 52,
+   "-17.75": 137,
+   "-17.50": 200,
+   "-17.25": 318,
+   "-17.00": 470,
+   "-16.75": 610,
+   "-16.50": 757,
+   "-16.25": 865,
+   "-16.00": 927,
+   "-15.75": 1003,
+   "-15.50": 975,
+   "-15.25": 1023,
+   "-15.00": 1054,
+   "-14.75": 972,
+   "-14.50": 898,
+   "-14.25": 767,
+   "-14.00": 658,
+   "-13.75": 535,
+   "-13.50": 447,
+   "-13.25": 386,
+   "-13.00": 349,
+   "-12.75": 273,
+   "-12.50": 231,
+   "-12.25": 182,
+   "-12.00": 160,
+   "-11.75": 104,
+   "-11.50": 77,
+   "-11.25": 45,
+   "-11.00": 24,
+   "-10.75": 26,
+   "-10.50": 16,
+   "-10.25": 11,
+   "-10.00": 9,
+   "-9.75": 6,
+   "-9.50": 2
+  },
+  "boundUnscored": {
+   "-18.00": 2,
+   "-17.75": 3,
+   "-17.50": 1,
+   "-17.25": 6,
+   "-17.00": 4,
+   "-16.75": 13,
+   "-16.50": 8,
+   "-16.25": 9,
+   "-16.00": 14,
+   "-15.75": 20,
+   "-15.50": 18,
+   "-15.25": 24,
+   "-15.00": 49,
+   "-14.75": 45,
+   "-14.50": 71,
+   "-14.25": 77,
+   "-14.00": 110,
+   "-13.75": 134,
+   "-13.50": 144,
+   "-13.25": 142,
+   "-13.00": 28
+  }
+ },
+ "timeMs": {
+  "total": 1213,
+  "setup": 495
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "CHECKINENTIRE",
+   "wordLogp": -9.3434,
+   "words": "CHECK IN ENTIRE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "C",
+    "E": "H",
+    "[": "K",
+    "M": "I",
+    "A": "N",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ISRICHOROTHER",
+   "wordLogp": -9.3693,
+   "words": "IS RICH OR OTHER",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "N": "I",
+    "E": "S",
+    "[": "C",
+    "M": "H",
+    "A": "O",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "OFMOVIEMEDIUM",
+   "wordLogp": -9.5257,
+   "words": "OF MOVIE MEDIUM",
+   "unknown": 0,
+   "key": {
+    "0": "M",
+    "N": "O",
+    "E": "F",
+    "[": "V",
+    "M": "I",
+    "A": "E",
+    "K": "U"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "INRICHOROTHER",
+   "wordLogp": -9.5276,
+   "words": "IN RICH OR OTHER",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "N": "I",
+    "E": "N",
+    "[": "C",
+    "M": "H",
+    "A": "O",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "OCTOBERTRUEAT",
+   "wordLogp": -9.5645,
+   "words": "OCTOBER TRUE AT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "E": "C",
+    "[": "B",
+    "M": "E",
+    "A": "R",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "OCTOBERTREEAT",
+   "wordLogp": -9.626,
+   "words": "OCTOBER TREE AT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "E": "C",
+    "[": "B",
+    "M": "E",
+    "A": "R",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "INSIGHTSTOHAS",
+   "wordLogp": -9.6389,
+   "words": "INSIGHTS TO HAS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "I",
+    "E": "N",
+    "[": "G",
+    "M": "H",
+    "A": "T",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "OCTOBERTRUEIT",
+   "wordLogp": -9.6532,
+   "words": "OCTOBER TRUE IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "E": "C",
+    "[": "B",
+    "M": "E",
+    "A": "R",
+    "K": "I"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THETWINENTIRE",
+   "wordLogp": -9.7816,
+   "words": "THE TWIN ENTIRE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "E": "H",
+    "[": "W",
+    "M": "I",
+    "A": "N",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "AMEASUREROUTE",
+   "wordLogp": -9.7832,
+   "words": "A MEASURE ROUTE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "E": "M",
+    "[": "S",
+    "M": "U",
+    "A": "R",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "OCTOBERTREEIT",
+   "wordLogp": -9.8272,
+   "words": "OCTOBER TREE IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "E": "C",
+    "[": "B",
+    "M": "E",
+    "A": "R",
+    "K": "I"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "SETSPHOTOTHAT",
+   "wordLogp": -9.8342,
+   "words": "SETS PHOTO THAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "S",
+    "E": "E",
+    "[": "P",
+    "M": "H",
+    "A": "O",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "USEUROPEPHONE",
+   "wordLogp": -9.8428,
+   "words": "US EUROPE PHONE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "U",
+    "E": "S",
+    "[": "R",
+    "M": "O",
+    "A": "P",
+    "K": "N"
+   }
+  }
+ ]
+}

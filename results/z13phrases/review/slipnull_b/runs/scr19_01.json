@@ -1,0 +1,605 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:32:53.801Z",
+ "label": "scr19_01",
+ "cipher": {
+  "id": "scr19",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr19.txt",
+  "text": "[NKAz0EMAM0N0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*cdefghdhfbf"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 183293,
+  "scored": 172346,
+  "keptAtLeastStreamMin": 59,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 13825,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1365,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 59,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 6,
+  "3": 17,
+  "4": 33,
+  "5": 3
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.167798680742581,
+  "topShare": 0.08043118578814541,
+  "top10Share": 0.3354470902504164,
+  "effectiveNumberExpEntropy": 514.7250890228548,
+  "effectiveNumberInverseSimpson": 60.32285338068388,
+  "unscoredMassBoundRelative": 0.017660126040911737,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 8,
+   "maxWordLogp": -16.079089356231087,
+   "massEstimateRelative": 0.0000036700896792629933,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004971458398410889
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 17,
+   "-17.50": 19,
+   "-17.25": 88,
+   "-17.00": 88,
+   "-16.75": 160,
+   "-16.50": 146,
+   "-16.25": 153,
+   "-16.00": 190,
+   "-15.75": 244,
+   "-15.50": 337,
+   "-15.25": 483,
+   "-15.00": 640,
+   "-14.75": 742,
+   "-14.50": 990,
+   "-14.25": 1046,
+   "-14.00": 1177,
+   "-13.75": 1243,
+   "-13.50": 1445,
+   "-13.25": 1521,
+   "-13.00": 1614,
+   "-12.75": 1684,
+   "-12.50": 1867,
+   "-12.25": 2305,
+   "-12.00": 2683,
+   "-11.75": 3230,
+   "-11.50": 3679,
+   "-11.25": 4235,
+   "-11.00": 4866,
+   "-10.75": 5566,
+   "-10.50": 6060,
+   "-10.25": 6333,
+   "-10.00": 6914,
+   "-9.75": 7144,
+   "-9.50": 7291,
+   "-9.25": 7249,
+   "-9.00": 7294,
+   "-8.75": 7494,
+   "-8.50": 8043,
+   "-8.25": 8516,
+   "-8.00": 8576,
+   "-7.75": 8588,
+   "-7.50": 8242,
+   "-7.25": 7636,
+   "-7.00": 7110,
+   "-6.75": 6304,
+   "-6.50": 5473,
+   "-6.25": 4662,
+   "-6.00": 3600,
+   "-5.75": 2643,
+   "-5.50": 1974,
+   "-5.25": 1344,
+   "-5.00": 977,
+   "-4.75": 598,
+   "-4.50": 359,
+   "-4.25": 199,
+   "-4.00": 121,
+   "-3.75": 52,
+   "-3.50": 28,
+   "-3.25": 6,
+   "-3.00": 3,
+   "-2.75": 2
+  },
+  "exactScored": {
+   "-19.50": 1,
+   "-19.25": 3,
+   "-19.00": 10,
+   "-18.75": 114,
+   "-18.50": 249,
+   "-18.25": 541,
+   "-18.00": 1051,
+   "-17.75": 1718,
+   "-17.50": 2696,
+   "-17.25": 3724,
+   "-17.00": 5011,
+   "-16.75": 6574,
+   "-16.50": 8054,
+   "-16.25": 9279,
+   "-16.00": 10350,
+   "-15.75": 11221,
+   "-15.50": 12068,
+   "-15.25": 12472,
+   "-15.00": 12375,
+   "-14.75": 11936,
+   "-14.50": 11133,
+   "-14.25": 10013,
+   "-14.00": 8776,
+   "-13.75": 7377,
+   "-13.50": 6093,
+   "-13.25": 4969,
+   "-13.00": 3891,
+   "-12.75": 3027,
+   "-12.50": 2276,
+   "-12.25": 1669,
+   "-12.00": 1175,
+   "-11.75": 853,
+   "-11.50": 622,
+   "-11.25": 388,
+   "-11.00": 266,
+   "-10.75": 153,
+   "-10.50": 80,
+   "-10.25": 57,
+   "-10.00": 40,
+   "-9.75": 18,
+   "-9.50": 5,
+   "-9.25": 9,
+   "-9.00": 4,
+   "-8.75": 3,
+   "-8.50": 2
+  },
+  "boundUnscored": {
+   "-17.75": 17,
+   "-17.50": 19,
+   "-17.25": 88,
+   "-17.00": 88,
+   "-16.75": 160,
+   "-16.50": 146,
+   "-16.25": 153,
+   "-16.00": 190,
+   "-15.75": 244,
+   "-15.50": 337,
+   "-15.25": 483,
+   "-15.00": 640,
+   "-14.75": 742,
+   "-14.50": 990,
+   "-14.25": 1046,
+   "-14.00": 1177,
+   "-13.75": 1243,
+   "-13.50": 1445,
+   "-13.25": 1521,
+   "-13.00": 218
+  }
+ },
+ "timeMs": {
+  "total": 5811,
+  "setup": 392
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ANYONEWHOHERE",
+   "wordLogp": -8.2624,
+   "words": "ANYONE WHO HERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "A",
+    "K": "Y",
+    "A": "O",
+    "z": "N",
+    "E": "W",
+    "M": "H",
+    "N": "R"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "GENERALHEHADA",
+   "wordLogp": -8.4478,
+   "words": "GENERAL HE HAD A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "G",
+    "K": "N",
+    "A": "E",
+    "z": "R",
+    "E": "L",
+    "M": "H",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "EACHMONTHTODO",
+   "wordLogp": -8.5605,
+   "words": "EACH MONTH TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "E",
+    "K": "C",
+    "A": "H",
+    "z": "M",
+    "E": "N",
+    "M": "T",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "GENERALHEHASA",
+   "wordLogp": -8.6172,
+   "words": "GENERAL HE HAS A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "G",
+    "K": "N",
+    "A": "E",
+    "z": "R",
+    "E": "L",
+    "M": "H",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "SOFTWARETEAMA",
+   "wordLogp": -8.6352,
+   "words": "SOFTWARE TEAM A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "S",
+    "K": "F",
+    "A": "T",
+    "z": "W",
+    "E": "R",
+    "M": "E",
+    "N": "M"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "THEWINDOWONAN",
+   "wordLogp": -8.8203,
+   "words": "THE WINDOW ON AN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "T",
+    "K": "E",
+    "A": "W",
+    "z": "I",
+    "E": "D",
+    "M": "O",
+    "N": "A"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "EACHMONTHTOGO",
+   "wordLogp": -8.8243,
+   "words": "EACH MONTH TO GO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "E",
+    "K": "C",
+    "A": "H",
+    "z": "M",
+    "E": "N",
+    "M": "T",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THANKSGENESIS",
+   "wordLogp": -8.9146,
+   "words": "THANKS GENESIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "T",
+    "K": "A",
+    "A": "N",
+    "z": "K",
+    "E": "G",
+    "M": "E",
+    "N": "I"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "OFISLANDSDATA",
+   "wordLogp": -8.9297,
+   "words": "OF ISLANDS DATA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "O",
+    "K": "I",
+    "A": "S",
+    "z": "L",
+    "E": "N",
+    "M": "D",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ANDSPORTSTOGO",
+   "wordLogp": -9.057,
+   "words": "AND SPORTS TO GO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "A",
+    "K": "D",
+    "A": "S",
+    "z": "P",
+    "E": "R",
+    "M": "T",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SEVERALHEHADA",
+   "wordLogp": -9.089,
+   "words": "SEVERAL HE HAD A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "S",
+    "K": "V",
+    "A": "E",
+    "z": "R",
+    "E": "L",
+    "M": "H",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "CAMERASHEHADA",
+   "wordLogp": -9.0963,
+   "words": "CAMERAS HE HAD A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "C",
+    "K": "M",
+    "A": "E",
+    "z": "R",
+    "E": "S",
+    "M": "H",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "BRANDSGENESIS",
+   "wordLogp": -9.1164,
+   "words": "BRANDS GENESIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "B",
+    "K": "A",
+    "A": "N",
+    "z": "D",
+    "E": "G",
+    "M": "E",
+    "N": "I"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "PLANTSGENESIS",
+   "wordLogp": -9.1272,
+   "words": "PLANTS GENESIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "P",
+    "K": "A",
+    "A": "N",
+    "z": "T",
+    "E": "G",
+    "M": "E",
+    "N": "I"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "WAREHOUSESOLO",
+   "wordLogp": -9.1784,
+   "words": "WAREHOUSE SOLO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "W",
+    "K": "R",
+    "A": "E",
+    "z": "H",
+    "E": "U",
+    "M": "S",
+    "N": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "FEDERALHEHASA",
+   "wordLogp": -9.1844,
+   "words": "FEDERAL HE HAS A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "F",
+    "K": "D",
+    "A": "E",
+    "z": "R",
+    "E": "L",
+    "M": "H",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "FORALONGAGOTO",
+   "wordLogp": -9.229,
+   "words": "FOR A LONG AGO TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "F",
+    "K": "R",
+    "A": "A",
+    "z": "L",
+    "E": "N",
+    "M": "G",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "PERSONHASANIN",
+   "wordLogp": -9.2482,
+   "words": "PERSON HAS AN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "P",
+    "K": "R",
+    "A": "S",
+    "z": "O",
+    "E": "H",
+    "M": "A",
+    "N": "I"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "WAREHOUSESOTO",
+   "wordLogp": -9.4014,
+   "words": "WAREHOUSE SO TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "W",
+    "K": "R",
+    "A": "E",
+    "z": "H",
+    "E": "U",
+    "M": "S",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "POUNDSGENESIS",
+   "wordLogp": -9.4021,
+   "words": "POUNDS GENESIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "P",
+    "K": "U",
+    "A": "N",
+    "z": "D",
+    "E": "G",
+    "M": "E",
+    "N": "I"
+   }
+  }
+ ]
+}

@@ -1,0 +1,586 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:35:07.836Z",
+ "label": "scr21_01",
+ "cipher": {
+  "id": "scr21",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr21.txt",
+  "text": "zK0ANE0AM[NM0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*cdefcdghegc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 58719,
+  "scored": 55250,
+  "keptAtLeastStreamMin": 25,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 3395,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 404,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 25,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 12,
+  "4": 13
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.280086441119566,
+  "topShare": 0.2864734378569441,
+  "top10Share": 0.7475937479356897,
+  "effectiveNumberExpEntropy": 29.809870315506355,
+  "effectiveNumberInverseSimpson": 7.210702538900222,
+  "unscoredMassBoundRelative": 0.0072475420026895535,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 1,
+   "maxWordLogp": -14.898994244013279,
+   "massEstimateRelative": 0.000024048732804146686,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.002555346763892829
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 2,
+   "-17.75": 5,
+   "-17.50": 7,
+   "-17.25": 12,
+   "-17.00": 17,
+   "-16.75": 27,
+   "-16.50": 25,
+   "-16.25": 33,
+   "-16.00": 39,
+   "-15.75": 66,
+   "-15.50": 84,
+   "-15.25": 118,
+   "-15.00": 176,
+   "-14.75": 187,
+   "-14.50": 246,
+   "-14.25": 291,
+   "-14.00": 358,
+   "-13.75": 463,
+   "-13.50": 562,
+   "-13.25": 650,
+   "-13.00": 728,
+   "-12.75": 787,
+   "-12.50": 853,
+   "-12.25": 1023,
+   "-12.00": 1150,
+   "-11.75": 1262,
+   "-11.50": 1502,
+   "-11.25": 1586,
+   "-11.00": 1696,
+   "-10.75": 1933,
+   "-10.50": 2138,
+   "-10.25": 2204,
+   "-10.00": 2261,
+   "-9.75": 2207,
+   "-9.50": 2240,
+   "-9.25": 2274,
+   "-9.00": 2615,
+   "-8.75": 2543,
+   "-8.50": 2676,
+   "-8.25": 2655,
+   "-8.00": 2433,
+   "-7.75": 2521,
+   "-7.50": 2394,
+   "-7.25": 2268,
+   "-7.00": 1914,
+   "-6.75": 1694,
+   "-6.50": 1413,
+   "-6.25": 1157,
+   "-6.00": 1015,
+   "-5.75": 633,
+   "-5.50": 537,
+   "-5.25": 391,
+   "-5.00": 237,
+   "-4.75": 174,
+   "-4.50": 118,
+   "-4.25": 51,
+   "-4.00": 35,
+   "-3.75": 18,
+   "-3.50": 8,
+   "-3.25": 2,
+   "-3.00": 2,
+   "-2.75": 2,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.50": 1,
+   "-19.00": 3,
+   "-18.75": 19,
+   "-18.50": 71,
+   "-18.25": 194,
+   "-18.00": 526,
+   "-17.75": 1065,
+   "-17.50": 1686,
+   "-17.25": 2242,
+   "-17.00": 2852,
+   "-16.75": 3263,
+   "-16.50": 3661,
+   "-16.25": 3879,
+   "-16.00": 3844,
+   "-15.75": 3785,
+   "-15.50": 3709,
+   "-15.25": 3464,
+   "-15.00": 3274,
+   "-14.75": 3106,
+   "-14.50": 2745,
+   "-14.25": 2367,
+   "-14.00": 1960,
+   "-13.75": 1657,
+   "-13.50": 1297,
+   "-13.25": 1053,
+   "-13.00": 821,
+   "-12.75": 650,
+   "-12.50": 520,
+   "-12.25": 451,
+   "-12.00": 341,
+   "-11.75": 258,
+   "-11.50": 168,
+   "-11.25": 120,
+   "-11.00": 56,
+   "-10.75": 51,
+   "-10.50": 34,
+   "-10.25": 22,
+   "-10.00": 13,
+   "-9.75": 11,
+   "-9.50": 3,
+   "-9.25": 2,
+   "-9.00": 1,
+   "-8.75": 1,
+   "-8.50": 2,
+   "-8.00": 2
+  },
+  "boundUnscored": {
+   "-18.00": 2,
+   "-17.75": 5,
+   "-17.50": 7,
+   "-17.25": 12,
+   "-17.00": 17,
+   "-16.75": 27,
+   "-16.50": 25,
+   "-16.25": 33,
+   "-16.00": 39,
+   "-15.75": 66,
+   "-15.50": 84,
+   "-15.25": 118,
+   "-15.00": 176,
+   "-14.75": 187,
+   "-14.50": 246,
+   "-14.25": 291,
+   "-14.00": 358,
+   "-13.75": 463,
+   "-13.50": 562,
+   "-13.25": 650,
+   "-13.00": 101
+  }
+ },
+ "timeMs": {
+  "total": 1983,
+  "setup": 468
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "STOREFORTHETO",
+   "wordLogp": -7.823,
+   "words": "STORE FOR THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "S",
+    "A": "R",
+    "N": "E",
+    "E": "F",
+    "M": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "WITHINTHEDIET",
+   "wordLogp": -7.9591,
+   "words": "WITHIN THE DIET",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "W",
+    "A": "H",
+    "N": "I",
+    "E": "N",
+    "M": "E",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "PATIENTISBEST",
+   "wordLogp": -8.4397,
+   "words": "PATIENT IS BEST",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "P",
+    "A": "I",
+    "N": "E",
+    "E": "N",
+    "M": "S",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "SCOREFORTHETO",
+   "wordLogp": -8.4662,
+   "words": "SCORE FOR THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "S",
+    "A": "R",
+    "N": "E",
+    "E": "F",
+    "M": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "PHONESONTHETO",
+   "wordLogp": -8.649,
+   "words": "PHONES ON THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "P",
+    "A": "N",
+    "N": "E",
+    "E": "S",
+    "M": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "POSTERSTIMEIS",
+   "wordLogp": -8.7835,
+   "words": "POSTERS TIME IS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "P",
+    "A": "T",
+    "N": "E",
+    "E": "R",
+    "M": "I",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "AROUNDOUTINTO",
+   "wordLogp": -9.1597,
+   "words": "AROUND OUT INTO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "A",
+    "A": "U",
+    "N": "N",
+    "E": "D",
+    "M": "T",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THELABELSCASE",
+   "wordLogp": -9.2083,
+   "words": "THE LABELS CASE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "A": "L",
+    "N": "A",
+    "E": "B",
+    "M": "S",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "OFTHISTHEDIET",
+   "wordLogp": -9.3045,
+   "words": "OF THIS THE DIET",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "A": "H",
+    "N": "I",
+    "E": "S",
+    "M": "E",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "MOOREFORTHETO",
+   "wordLogp": -9.3394,
+   "words": "MOORE FOR THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "M",
+    "A": "R",
+    "N": "E",
+    "E": "F",
+    "M": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "GROUNDOUTINTO",
+   "wordLogp": -9.4375,
+   "words": "GROUND OUT INTO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "G",
+    "A": "U",
+    "N": "N",
+    "E": "D",
+    "M": "T",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "SINCEINCOMEON",
+   "wordLogp": -9.516,
+   "words": "SINCE INCOME ON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "z": "S",
+    "A": "C",
+    "N": "E",
+    "E": "I",
+    "M": "O",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "SHOREFORTHETO",
+   "wordLogp": -9.5532,
+   "words": "SHORE FOR THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "S",
+    "A": "R",
+    "N": "E",
+    "E": "F",
+    "M": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "SITEAFTERPART",
+   "wordLogp": -9.5913,
+   "words": "SITE AFTER PART",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "S",
+    "A": "E",
+    "N": "A",
+    "E": "F",
+    "M": "R",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HANDSANDITSIN",
+   "wordLogp": -9.6044,
+   "words": "HANDS AND ITS IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "z": "H",
+    "A": "D",
+    "N": "S",
+    "E": "A",
+    "M": "I",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "BOTHINTHEDIET",
+   "wordLogp": -9.6188,
+   "words": "BOTH IN THE DIET",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "B",
+    "A": "H",
+    "N": "I",
+    "E": "N",
+    "M": "E",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "YOURETURNMENU",
+   "wordLogp": -9.6496,
+   "words": "YOU RETURN MENU",
+   "unknown": 0,
+   "key": {
+    "0": "U",
+    "z": "Y",
+    "A": "R",
+    "N": "E",
+    "E": "T",
+    "M": "N",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ONTHISTHEDIET",
+   "wordLogp": -9.6639,
+   "words": "ON THIS THE DIET",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "A": "H",
+    "N": "I",
+    "E": "S",
+    "M": "E",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "DETROITRUNOUT",
+   "wordLogp": -9.6977,
+   "words": "DETROIT RUN OUT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "D",
+    "A": "R",
+    "N": "O",
+    "E": "I",
+    "M": "U",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "FUNDSANDITSIN",
+   "wordLogp": -9.7041,
+   "words": "FUNDS AND ITS IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "z": "F",
+    "A": "D",
+    "N": "S",
+    "E": "A",
+    "M": "I",
+    "[": "T"
+   }
+  }
+ ]
+}

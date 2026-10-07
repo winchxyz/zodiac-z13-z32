@@ -1,0 +1,611 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:23:46.704Z",
+ "label": "scr07_07",
+ "cipher": {
+  "id": "scr07",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr07.txt",
+  "text": "0M[KM0E0NzNAA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abcdbae*fgfhh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 543457,
+  "scored": 504876,
+  "keptAtLeastStreamMin": 111,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 16537,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1869,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 111,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 53,
+  "4": 57
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.795194051543905,
+  "topShare": 0.30377846773915856,
+  "top10Share": 0.480002206338558,
+  "effectiveNumberExpEntropy": 161.63831118565884,
+  "effectiveNumberInverseSimpson": 10.283955383792822,
+  "unscoredMassBoundRelative": 0.02639171007808846,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 37,
+   "maxWordLogp": -14.453121063191112,
+   "massEstimateRelative": 0.000028024917622939827,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.009263252704697633
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 6,
+   "-18.00": 14,
+   "-17.75": 24,
+   "-17.50": 48,
+   "-17.25": 89,
+   "-17.00": 137,
+   "-16.75": 213,
+   "-16.50": 291,
+   "-16.25": 452,
+   "-16.00": 542,
+   "-15.75": 758,
+   "-15.50": 980,
+   "-15.25": 1234,
+   "-15.00": 1527,
+   "-14.75": 2111,
+   "-14.50": 2792,
+   "-14.25": 3555,
+   "-14.00": 4251,
+   "-13.75": 5148,
+   "-13.50": 6148,
+   "-13.25": 7075,
+   "-13.00": 8104,
+   "-12.75": 9271,
+   "-12.50": 10564,
+   "-12.25": 11936,
+   "-12.00": 13423,
+   "-11.75": 14881,
+   "-11.50": 16505,
+   "-11.25": 17954,
+   "-11.00": 19579,
+   "-10.75": 20534,
+   "-10.50": 21679,
+   "-10.25": 22649,
+   "-10.00": 22724,
+   "-9.75": 23327,
+   "-9.50": 23515,
+   "-9.25": 23424,
+   "-9.00": 22940,
+   "-8.75": 22409,
+   "-8.50": 22085,
+   "-8.25": 21122,
+   "-8.00": 19983,
+   "-7.75": 18826,
+   "-7.50": 17262,
+   "-7.25": 15593,
+   "-7.00": 13881,
+   "-6.75": 11915,
+   "-6.50": 9992,
+   "-6.25": 8098,
+   "-6.00": 6400,
+   "-5.75": 4833,
+   "-5.50": 3616,
+   "-5.25": 2546,
+   "-5.00": 1679,
+   "-4.75": 1119,
+   "-4.50": 721,
+   "-4.25": 436,
+   "-4.00": 258,
+   "-3.75": 136,
+   "-3.50": 82,
+   "-3.25": 32,
+   "-3.00": 18,
+   "-2.75": 8,
+   "-2.50": 2,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.25": 13,
+   "-19.00": 84,
+   "-18.75": 445,
+   "-18.50": 1667,
+   "-18.25": 4275,
+   "-18.00": 8829,
+   "-17.75": 14479,
+   "-17.50": 20850,
+   "-17.25": 27357,
+   "-17.00": 33814,
+   "-16.75": 37830,
+   "-16.50": 40189,
+   "-16.25": 40243,
+   "-16.00": 38542,
+   "-15.75": 36908,
+   "-15.50": 33384,
+   "-15.25": 29681,
+   "-15.00": 26156,
+   "-14.75": 22146,
+   "-14.50": 18550,
+   "-14.25": 15551,
+   "-14.00": 12538,
+   "-13.75": 10169,
+   "-13.50": 7767,
+   "-13.25": 6008,
+   "-13.00": 4618,
+   "-12.75": 3588,
+   "-12.50": 2593,
+   "-12.25": 1977,
+   "-12.00": 1432,
+   "-11.75": 1007,
+   "-11.50": 709,
+   "-11.25": 524,
+   "-11.00": 336,
+   "-10.75": 217,
+   "-10.50": 150,
+   "-10.25": 91,
+   "-10.00": 77,
+   "-9.75": 33,
+   "-9.50": 19,
+   "-9.25": 14,
+   "-9.00": 6,
+   "-8.75": 5,
+   "-8.50": 3,
+   "-8.25": 1,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-18.25": 6,
+   "-18.00": 14,
+   "-17.75": 24,
+   "-17.50": 48,
+   "-17.25": 89,
+   "-17.00": 137,
+   "-16.75": 213,
+   "-16.50": 291,
+   "-16.25": 452,
+   "-16.00": 542,
+   "-15.75": 758,
+   "-15.50": 980,
+   "-15.25": 1234,
+   "-15.00": 1527,
+   "-14.75": 2111,
+   "-14.50": 2792,
+   "-14.25": 3555,
+   "-14.00": 4251,
+   "-13.75": 5148,
+   "-13.50": 6148,
+   "-13.25": 7075,
+   "-13.00": 1186
+  }
+ },
+ "timeMs": {
+  "total": 6174,
+  "setup": 515
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "TOANOTHERFREE",
+   "wordLogp": -7.3126,
+   "words": "TO ANOTHER FREE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "O",
+    "[": "A",
+    "K": "N",
+    "E": "H",
+    "N": "R",
+    "z": "F",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "FORMOFTHEWELL",
+   "wordLogp": -8.2328,
+   "words": "FORM OF THE WELL",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "M": "O",
+    "[": "R",
+    "K": "M",
+    "E": "T",
+    "N": "E",
+    "z": "W",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "WHICHWECANADD",
+   "wordLogp": -8.3932,
+   "words": "WHICH WE CAN ADD",
+   "unknown": 0,
+   "key": {
+    "0": "W",
+    "M": "H",
+    "[": "I",
+    "K": "C",
+    "E": "E",
+    "N": "A",
+    "z": "N",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "WANTAWIRELESS",
+   "wordLogp": -8.461,
+   "words": "WANT A WIRELESS",
+   "unknown": 0,
+   "key": {
+    "0": "W",
+    "M": "A",
+    "[": "N",
+    "K": "T",
+    "E": "I",
+    "N": "E",
+    "z": "L",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "FORMOFTHECELL",
+   "wordLogp": -8.4885,
+   "words": "FORM OF THE CELL",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "M": "O",
+    "[": "R",
+    "K": "M",
+    "E": "T",
+    "N": "E",
+    "z": "C",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "FORMOFTHELESS",
+   "wordLogp": -8.5,
+   "words": "FORM OF THE LESS",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "M": "O",
+    "[": "R",
+    "K": "M",
+    "E": "T",
+    "N": "E",
+    "z": "L",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "FORMOFTHEHELL",
+   "wordLogp": -8.5869,
+   "words": "FORM OF THE HELL",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "M": "O",
+    "[": "R",
+    "K": "M",
+    "E": "T",
+    "N": "E",
+    "z": "H",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "WHICHWECANALL",
+   "wordLogp": -8.6697,
+   "words": "WHICH WE CAN ALL",
+   "unknown": 0,
+   "key": {
+    "0": "W",
+    "M": "H",
+    "[": "I",
+    "K": "C",
+    "E": "E",
+    "N": "A",
+    "z": "N",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "HOWTOHAVELESS",
+   "wordLogp": -8.7179,
+   "words": "HOW TO HAVE LESS",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "O",
+    "[": "W",
+    "K": "T",
+    "E": "A",
+    "N": "E",
+    "z": "L",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "SERIESOFATALL",
+   "wordLogp": -8.7363,
+   "words": "SERIES OF AT ALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "I",
+    "E": "O",
+    "N": "A",
+    "z": "T",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SERIESOFANALL",
+   "wordLogp": -8.8264,
+   "words": "SERIES OF AN ALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "I",
+    "E": "O",
+    "N": "A",
+    "z": "N",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "SERIESOFACALL",
+   "wordLogp": -8.8649,
+   "words": "SERIES OF A CALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "I",
+    "E": "O",
+    "N": "A",
+    "z": "C",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "WHICHWEHADALL",
+   "wordLogp": -8.8727,
+   "words": "WHICH WE HAD ALL",
+   "unknown": 0,
+   "key": {
+    "0": "W",
+    "M": "H",
+    "[": "I",
+    "K": "C",
+    "E": "E",
+    "N": "A",
+    "z": "D",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "FORMOFTHESELL",
+   "wordLogp": -8.8773,
+   "words": "FORM OF THE SELL",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "M": "O",
+    "[": "R",
+    "K": "M",
+    "E": "T",
+    "N": "E",
+    "z": "S",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "ENGINEREADALL",
+   "wordLogp": -8.967,
+   "words": "ENGINE READ ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "R",
+    "N": "A",
+    "z": "D",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ORDEROFHAWAII",
+   "wordLogp": -8.9805,
+   "words": "ORDER OF HAWAII",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "R",
+    "[": "D",
+    "K": "E",
+    "E": "F",
+    "N": "A",
+    "z": "W",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "OREUROPEANALL",
+   "wordLogp": -9.0156,
+   "words": "OR EUROPEAN ALL",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "R",
+    "[": "E",
+    "K": "U",
+    "E": "P",
+    "N": "A",
+    "z": "N",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "FOUROFTHEWELL",
+   "wordLogp": -9.0338,
+   "words": "FOUR OF THE WELL",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "M": "O",
+    "[": "U",
+    "K": "R",
+    "E": "T",
+    "N": "E",
+    "z": "W",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "SEXLESBIANADD",
+   "wordLogp": -9.0344,
+   "words": "SEX LESBIAN ADD",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "X",
+    "K": "L",
+    "E": "B",
+    "N": "A",
+    "z": "N",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "FORMOFUSELESS",
+   "wordLogp": -9.0892,
+   "words": "FORM OF USELESS",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "M": "O",
+    "[": "R",
+    "K": "M",
+    "E": "U",
+    "N": "E",
+    "z": "L",
+    "A": "S"
+   }
+  }
+ ]
+}

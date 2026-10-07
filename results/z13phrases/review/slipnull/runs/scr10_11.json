@@ -1,0 +1,613 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:16:28.115Z",
+ "label": "scr10_11",
+ "cipher": {
+  "id": "scr10",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr10.txt",
+  "text": "[0MM0NzEAKN0A",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   11
+  ],
+  "isomorphAfterSlips": "abccbdefghd*g"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 403619,
+  "scored": 375979,
+  "keptAtLeastStreamMin": 263,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 22648,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 3395,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 263,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 15,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 34,
+  "3": 163,
+  "4": 66
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.2713956739337045,
+  "topShare": 0.17057098859943487,
+  "top10Share": 0.5496830570686195,
+  "effectiveNumberExpEntropy": 120.76205782810781,
+  "effectiveNumberInverseSimpson": 18.0475471231737,
+  "unscoredMassBoundRelative": 0.005660225227221544,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 25,
+   "maxWordLogp": -15.70285090685628,
+   "massEstimateRelative": 0.0000011537901484505048,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0018766960954859251
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 1,
+   "-18.25": 5,
+   "-18.00": 12,
+   "-17.75": 49,
+   "-17.50": 71,
+   "-17.25": 123,
+   "-17.00": 158,
+   "-16.75": 216,
+   "-16.50": 257,
+   "-16.25": 320,
+   "-16.00": 388,
+   "-15.75": 472,
+   "-15.50": 720,
+   "-15.25": 1034,
+   "-15.00": 1301,
+   "-14.75": 1638,
+   "-14.50": 2133,
+   "-14.25": 2518,
+   "-14.00": 3017,
+   "-13.75": 3493,
+   "-13.50": 4236,
+   "-13.25": 4635,
+   "-13.00": 5492,
+   "-12.75": 6193,
+   "-12.50": 7037,
+   "-12.25": 7894,
+   "-12.00": 9104,
+   "-11.75": 10315,
+   "-11.50": 11567,
+   "-11.25": 12384,
+   "-11.00": 13569,
+   "-10.75": 14409,
+   "-10.50": 15232,
+   "-10.25": 15537,
+   "-10.00": 16058,
+   "-9.75": 16285,
+   "-9.50": 16619,
+   "-9.25": 16791,
+   "-9.00": 17063,
+   "-8.75": 17127,
+   "-8.50": 16998,
+   "-8.25": 17074,
+   "-8.00": 16587,
+   "-7.75": 16114,
+   "-7.50": 14778,
+   "-7.25": 13563,
+   "-7.00": 12025,
+   "-6.75": 10303,
+   "-6.50": 8299,
+   "-6.25": 6598,
+   "-6.00": 5180,
+   "-5.75": 3630,
+   "-5.50": 2605,
+   "-5.25": 1770,
+   "-5.00": 1079,
+   "-4.75": 709,
+   "-4.50": 395,
+   "-4.25": 218,
+   "-4.00": 141,
+   "-3.75": 55,
+   "-3.50": 15,
+   "-3.25": 6,
+   "-3.00": 4
+  },
+  "exactScored": {
+   "-19.25": 6,
+   "-19.00": 30,
+   "-18.75": 87,
+   "-18.50": 551,
+   "-18.25": 1772,
+   "-18.00": 4123,
+   "-17.75": 7436,
+   "-17.50": 12073,
+   "-17.25": 16868,
+   "-17.00": 21069,
+   "-16.75": 24255,
+   "-16.50": 26356,
+   "-16.25": 27482,
+   "-16.00": 27447,
+   "-15.75": 26657,
+   "-15.50": 25457,
+   "-15.25": 23437,
+   "-15.00": 21095,
+   "-14.75": 19094,
+   "-14.50": 16527,
+   "-14.25": 14106,
+   "-14.00": 12030,
+   "-13.75": 9716,
+   "-13.50": 8006,
+   "-13.25": 6753,
+   "-13.00": 5290,
+   "-12.75": 4392,
+   "-12.50": 3558,
+   "-12.25": 2754,
+   "-12.00": 2138,
+   "-11.75": 1564,
+   "-11.50": 1114,
+   "-11.25": 839,
+   "-11.00": 610,
+   "-10.75": 409,
+   "-10.50": 329,
+   "-10.25": 215,
+   "-10.00": 122,
+   "-9.75": 86,
+   "-9.50": 49,
+   "-9.25": 33,
+   "-9.00": 17,
+   "-8.75": 6,
+   "-8.50": 8,
+   "-8.25": 6,
+   "-8.00": 2,
+   "-7.75": 2,
+   "-7.50": 1,
+   "-7.25": 2
+  },
+  "boundUnscored": {
+   "-18.50": 1,
+   "-18.25": 5,
+   "-18.00": 12,
+   "-17.75": 49,
+   "-17.50": 71,
+   "-17.25": 123,
+   "-17.00": 158,
+   "-16.75": 216,
+   "-16.50": 257,
+   "-16.25": 320,
+   "-16.00": 388,
+   "-15.75": 472,
+   "-15.50": 720,
+   "-15.25": 1034,
+   "-15.00": 1301,
+   "-14.75": 1638,
+   "-14.50": 2133,
+   "-14.25": 2518,
+   "-14.00": 3017,
+   "-13.75": 3493,
+   "-13.50": 4236,
+   "-13.25": 4635,
+   "-13.00": 843
+  }
+ },
+ "timeMs": {
+  "total": 8119,
+  "setup": 426
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "SITTINGDOWNTO",
+   "wordLogp": -7.0395,
+   "words": "SITTING DOWN TO",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "S",
+    "M": "T",
+    "N": "N",
+    "z": "G",
+    "E": "D",
+    "A": "O",
+    "K": "W"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "MILLIONBEFORE",
+   "wordLogp": -7.2039,
+   "words": "MILLION BEFORE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "M",
+    "M": "L",
+    "N": "O",
+    "z": "N",
+    "E": "B",
+    "A": "E",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "MISSIONBEFORE",
+   "wordLogp": -7.4321,
+   "words": "MISSION BEFORE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "M",
+    "M": "S",
+    "N": "O",
+    "z": "N",
+    "E": "B",
+    "A": "E",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "MILLIONBECOME",
+   "wordLogp": -7.5663,
+   "words": "MILLION BECOME",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "M",
+    "M": "L",
+    "N": "O",
+    "z": "N",
+    "E": "B",
+    "A": "E",
+    "K": "C"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "FOLLOWEDBYWEB",
+   "wordLogp": -7.6352,
+   "words": "FOLLOWED BY WEB",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "F",
+    "M": "L",
+    "N": "W",
+    "z": "E",
+    "E": "D",
+    "A": "B",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "MISSIONBECOME",
+   "wordLogp": -7.7945,
+   "words": "MISSION BECOME",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "M",
+    "M": "S",
+    "N": "O",
+    "z": "N",
+    "E": "B",
+    "A": "E",
+    "K": "C"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "COMMONPARTNER",
+   "wordLogp": -7.8409,
+   "words": "COMMON PARTNER",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "C",
+    "M": "M",
+    "N": "N",
+    "z": "P",
+    "E": "A",
+    "A": "R",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "LETTERSCHURCH",
+   "wordLogp": -8.1117,
+   "words": "LETTERS CHURCH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "L",
+    "M": "T",
+    "N": "R",
+    "z": "S",
+    "E": "C",
+    "A": "H",
+    "K": "U"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "WILLIAMBECAME",
+   "wordLogp": -8.1184,
+   "words": "WILLIAM BECAME",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "W",
+    "M": "L",
+    "N": "A",
+    "z": "M",
+    "E": "B",
+    "A": "E",
+    "K": "C"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "MILLIONDAKOTA",
+   "wordLogp": -8.1362,
+   "words": "MILLION DAKOTA",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "M",
+    "M": "L",
+    "N": "O",
+    "z": "N",
+    "E": "D",
+    "A": "A",
+    "K": "K"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "WILLIAMSENATE",
+   "wordLogp": -8.1552,
+   "words": "WILLIAM SENATE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "W",
+    "M": "L",
+    "N": "A",
+    "z": "M",
+    "E": "S",
+    "A": "E",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "SELLERACHURCH",
+   "wordLogp": -8.2061,
+   "words": "SELLER A CHURCH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "S",
+    "M": "L",
+    "N": "R",
+    "z": "A",
+    "E": "C",
+    "A": "H",
+    "K": "U"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "COMMONWITHNOT",
+   "wordLogp": -8.2449,
+   "words": "COMMON WITH NOT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "C",
+    "M": "M",
+    "N": "N",
+    "z": "W",
+    "E": "I",
+    "A": "T",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "WARRANTYSONGS",
+   "wordLogp": -8.32,
+   "words": "WARRANTY SONGS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "W",
+    "M": "R",
+    "N": "N",
+    "z": "T",
+    "E": "Y",
+    "A": "S",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "WILLIAMDEBATE",
+   "wordLogp": -8.3248,
+   "words": "WILLIAM DEBATE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "W",
+    "M": "L",
+    "N": "A",
+    "z": "M",
+    "E": "D",
+    "A": "E",
+    "K": "B"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "WILLITDOESTHE",
+   "wordLogp": -8.353,
+   "words": "WILL IT DOES THE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "W",
+    "M": "L",
+    "N": "T",
+    "z": "D",
+    "E": "O",
+    "A": "E",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "MISSIONDAKOTA",
+   "wordLogp": -8.3644,
+   "words": "MISSION DAKOTA",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "M",
+    "M": "S",
+    "N": "O",
+    "z": "N",
+    "E": "D",
+    "A": "A",
+    "K": "K"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "COMMONSITENOT",
+   "wordLogp": -8.4107,
+   "words": "COMMON SITE NOT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "C",
+    "M": "M",
+    "N": "N",
+    "z": "S",
+    "E": "I",
+    "A": "T",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "MILLIONBEDONE",
+   "wordLogp": -8.4201,
+   "words": "MILLION BE DONE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "M",
+    "M": "L",
+    "N": "O",
+    "z": "N",
+    "E": "B",
+    "A": "E",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "BILLIONREMOTE",
+   "wordLogp": -8.4676,
+   "words": "BILLION REMOTE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "B",
+    "M": "L",
+    "N": "O",
+    "z": "N",
+    "E": "R",
+    "A": "E",
+    "K": "M"
+   }
+  }
+ ]
+}

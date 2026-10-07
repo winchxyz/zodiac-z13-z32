@@ -1,0 +1,614 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:07:05.035Z",
+ "label": "scr01_10",
+ "cipher": {
+  "id": "scr01",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr01.txt",
+  "text": "0NA[MKAENz0M0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   10
+  ],
+  "isomorphAfterSlips": "abcdefcgbh*ea"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 617259,
+  "scored": 565044,
+  "keptAtLeastStreamMin": 192,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 21696,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2629,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 192,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 10,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 16,
+  "3": 94,
+  "4": 82
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.421310041492942,
+  "topShare": 0.2552529909945807,
+  "top10Share": 0.5692093151832012,
+  "effectiveNumberExpEntropy": 91.82155978886684,
+  "effectiveNumberInverseSimpson": 10.806470228855623,
+  "unscoredMassBoundRelative": 0.015100986657134163,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 51,
+   "maxWordLogp": -15.312577368175777,
+   "massEstimateRelative": 0.00000401840800061054,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004836568493927917
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 3,
+   "-18.25": 15,
+   "-18.00": 38,
+   "-17.75": 92,
+   "-17.50": 168,
+   "-17.25": 221,
+   "-17.00": 316,
+   "-16.75": 362,
+   "-16.50": 485,
+   "-16.25": 610,
+   "-16.00": 816,
+   "-15.75": 1096,
+   "-15.50": 1520,
+   "-15.25": 1977,
+   "-15.00": 2637,
+   "-14.75": 3307,
+   "-14.50": 3996,
+   "-14.25": 4947,
+   "-14.00": 5640,
+   "-13.75": 6538,
+   "-13.50": 7354,
+   "-13.25": 8574,
+   "-13.00": 9431,
+   "-12.75": 10973,
+   "-12.50": 12243,
+   "-12.25": 14120,
+   "-12.00": 15803,
+   "-11.75": 17742,
+   "-11.50": 19563,
+   "-11.25": 21144,
+   "-11.00": 22369,
+   "-10.75": 23406,
+   "-10.50": 24222,
+   "-10.25": 24599,
+   "-10.00": 24786,
+   "-9.75": 24906,
+   "-9.50": 25063,
+   "-9.25": 25188,
+   "-9.00": 25432,
+   "-8.75": 25229,
+   "-8.50": 24941,
+   "-8.25": 24502,
+   "-8.00": 23421,
+   "-7.75": 21869,
+   "-7.50": 19967,
+   "-7.25": 17987,
+   "-7.00": 15550,
+   "-6.75": 13005,
+   "-6.50": 10533,
+   "-6.25": 8273,
+   "-6.00": 6321,
+   "-5.75": 4435,
+   "-5.50": 3145,
+   "-5.25": 2353,
+   "-5.00": 1453,
+   "-4.75": 1044,
+   "-4.50": 621,
+   "-4.25": 401,
+   "-4.00": 254,
+   "-3.75": 133,
+   "-3.50": 77,
+   "-3.25": 32,
+   "-3.00": 7,
+   "-2.75": 4
+  },
+  "exactScored": {
+   "-19.75": 1,
+   "-19.50": 10,
+   "-19.25": 23,
+   "-19.00": 65,
+   "-18.75": 254,
+   "-18.50": 1367,
+   "-18.25": 4154,
+   "-18.00": 9079,
+   "-17.75": 15830,
+   "-17.50": 24406,
+   "-17.25": 32148,
+   "-17.00": 39351,
+   "-16.75": 44232,
+   "-16.50": 46345,
+   "-16.25": 45839,
+   "-16.00": 43981,
+   "-15.75": 40402,
+   "-15.50": 36280,
+   "-15.25": 31874,
+   "-15.00": 27897,
+   "-14.75": 23546,
+   "-14.50": 19626,
+   "-14.25": 16105,
+   "-14.00": 13418,
+   "-13.75": 10597,
+   "-13.50": 8564,
+   "-13.25": 6945,
+   "-13.00": 5759,
+   "-12.75": 4390,
+   "-12.50": 3486,
+   "-12.25": 2694,
+   "-12.00": 1997,
+   "-11.75": 1349,
+   "-11.50": 901,
+   "-11.25": 726,
+   "-11.00": 494,
+   "-10.75": 345,
+   "-10.50": 193,
+   "-10.25": 135,
+   "-10.00": 86,
+   "-9.75": 63,
+   "-9.50": 34,
+   "-9.25": 18,
+   "-9.00": 12,
+   "-8.75": 9,
+   "-8.50": 6,
+   "-8.25": 4,
+   "-8.00": 2,
+   "-7.25": 2
+  },
+  "boundUnscored": {
+   "-18.50": 3,
+   "-18.25": 15,
+   "-18.00": 38,
+   "-17.75": 92,
+   "-17.50": 168,
+   "-17.25": 221,
+   "-17.00": 316,
+   "-16.75": 362,
+   "-16.50": 485,
+   "-16.25": 610,
+   "-16.00": 816,
+   "-15.75": 1096,
+   "-15.50": 1520,
+   "-15.25": 1977,
+   "-15.00": 2637,
+   "-14.75": 3307,
+   "-14.50": 3996,
+   "-14.25": 4947,
+   "-14.00": 5640,
+   "-13.75": 6538,
+   "-13.50": 7354,
+   "-13.25": 8574,
+   "-13.00": 1503
+  }
+ },
+ "timeMs": {
+  "total": 14996,
+  "setup": 767
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "TOPICSPRODUCT",
+   "wordLogp": -7.0143,
+   "words": "TOPICS PRODUCT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "A": "P",
+    "[": "I",
+    "M": "C",
+    "K": "S",
+    "E": "R",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TOPICSPROJECT",
+   "wordLogp": -7.2439,
+   "words": "TOPICS PROJECT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "A": "P",
+    "[": "I",
+    "M": "C",
+    "K": "S",
+    "E": "R",
+    "z": "J"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "STRONGRETURNS",
+   "wordLogp": -7.9477,
+   "words": "STRONG RETURNS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "T",
+    "A": "R",
+    "[": "O",
+    "M": "N",
+    "K": "G",
+    "E": "E",
+    "z": "U"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "STRINGRETURNS",
+   "wordLogp": -7.98,
+   "words": "STRING RETURNS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "T",
+    "A": "R",
+    "[": "I",
+    "M": "N",
+    "K": "G",
+    "E": "E",
+    "z": "U"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "SINCEANTIQUES",
+   "wordLogp": -8.0982,
+   "words": "SINCE ANTIQUES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "I",
+    "A": "N",
+    "[": "C",
+    "M": "E",
+    "K": "A",
+    "E": "T",
+    "z": "Q"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ROCKEACHOTHER",
+   "wordLogp": -8.1163,
+   "words": "ROCK EACH OTHER",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "N": "O",
+    "A": "C",
+    "[": "K",
+    "M": "E",
+    "K": "A",
+    "E": "H",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "YETANOTHERANY",
+   "wordLogp": -8.1397,
+   "words": "YET ANOTHER ANY",
+   "unknown": 0,
+   "key": {
+    "0": "Y",
+    "N": "E",
+    "A": "T",
+    "[": "A",
+    "M": "N",
+    "K": "O",
+    "E": "H",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "SHAREMACHINES",
+   "wordLogp": -8.1397,
+   "words": "SHARE MACHINES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "H",
+    "A": "A",
+    "[": "R",
+    "M": "E",
+    "K": "M",
+    "E": "C",
+    "z": "I"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "TOPICAPRODUCT",
+   "wordLogp": -8.2935,
+   "words": "TOPIC A PRODUCT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "A": "P",
+    "[": "I",
+    "M": "C",
+    "K": "A",
+    "E": "R",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ALONEWOULDBEA",
+   "wordLogp": -8.3004,
+   "words": "ALONE WOULD BE A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "N": "L",
+    "A": "O",
+    "[": "N",
+    "M": "E",
+    "K": "W",
+    "E": "U",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ALONECOULDBEA",
+   "wordLogp": -8.3533,
+   "words": "ALONE COULD BE A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "N": "L",
+    "A": "O",
+    "[": "N",
+    "M": "E",
+    "K": "C",
+    "E": "U",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TOPICKPRODUCT",
+   "wordLogp": -8.3643,
+   "words": "TO PICK PRODUCT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "A": "P",
+    "[": "I",
+    "M": "C",
+    "K": "K",
+    "E": "R",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "TOPICAPROJECT",
+   "wordLogp": -8.4252,
+   "words": "TOPIC A PROJECT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "A": "P",
+    "[": "I",
+    "M": "C",
+    "K": "A",
+    "E": "R",
+    "z": "J"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "SMARTPAYMENTS",
+   "wordLogp": -8.4451,
+   "words": "SMART PAYMENTS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "M",
+    "A": "A",
+    "[": "R",
+    "M": "T",
+    "K": "P",
+    "E": "Y",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "NOTJUSTFORFUN",
+   "wordLogp": -8.5213,
+   "words": "NOT JUST FOR FUN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "N": "O",
+    "A": "T",
+    "[": "J",
+    "M": "U",
+    "K": "S",
+    "E": "F",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "TEAMSHAVEJUST",
+   "wordLogp": -8.5361,
+   "words": "TEAMS HAVE JUST",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "E",
+    "A": "A",
+    "[": "M",
+    "M": "S",
+    "K": "H",
+    "E": "V",
+    "z": "J"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "NOTWAITYOUCAN",
+   "wordLogp": -8.5692,
+   "words": "NOT WAIT YOU CAN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "N": "O",
+    "A": "T",
+    "[": "W",
+    "M": "A",
+    "K": "I",
+    "E": "Y",
+    "z": "U"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "TOPICKPROJECT",
+   "wordLogp": -8.5938,
+   "words": "TO PICK PROJECT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "A": "P",
+    "[": "I",
+    "M": "C",
+    "K": "K",
+    "E": "R",
+    "z": "J"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "SHAPEMACHINES",
+   "wordLogp": -8.6479,
+   "words": "SHAPE MACHINES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "H",
+    "A": "A",
+    "[": "P",
+    "M": "E",
+    "K": "M",
+    "E": "C",
+    "z": "I"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ANSWERSINTHEA",
+   "wordLogp": -8.6483,
+   "words": "ANSWERS IN THE A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "N": "N",
+    "A": "S",
+    "[": "W",
+    "M": "E",
+    "K": "R",
+    "E": "I",
+    "z": "T"
+   }
+  }
+ ]
+}

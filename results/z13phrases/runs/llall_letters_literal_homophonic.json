@@ -1,0 +1,2279 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T14:20:49.046Z",
+ "label": "llall_letters_literal_homophonic",
+ "cipher": {
+  "id": "z13.canonical",
+  "source": "data/ciphers/variants/z13.canonical.txt",
+  "text": "AENz0K0M0[NAM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcdefegehcag"
+ },
+ "options": {
+  "mode": "homophonic",
+  "topWords": 60006,
+  "wordsUsed": 59335,
+  "maxWords": 5,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "A=A,E=E,N=N,K=K,M=M",
+  "forbid": "",
+  "tlow": -1000000000,
+  "streamMin": -1000000000,
+  "threads": 1,
+  "taskDepth": 5,
+  "tasks": 28,
+  "maxSeconds": 0
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 28,
+  "tasks": 28,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 124,
+  "scored": 124,
+  "keptAtLeastStreamMin": 124,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 0,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 0,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 0,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {},
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -16.694022922165537,
+  "topShare": 0.3889152426949471,
+  "top10Share": 0.8604210633380658,
+  "effectiveNumberExpEntropy": 11.799276506382853,
+  "effectiveNumberInverseSimpson": 5.218177294261812,
+  "unscoredMassBoundRelative": 0,
+  "unscoredMassBoundFromBoundHistogram": 0
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 2,
+   "-17.75": 2,
+   "-17.50": 4,
+   "-17.25": 6,
+   "-17.00": 8,
+   "-16.75": 11,
+   "-16.50": 5,
+   "-16.25": 5,
+   "-15.75": 3,
+   "-15.50": 3,
+   "-15.25": 4,
+   "-15.00": 7,
+   "-14.75": 3,
+   "-14.50": 6,
+   "-14.25": 4,
+   "-14.00": 4,
+   "-13.75": 2,
+   "-13.50": 5,
+   "-13.25": 3,
+   "-13.00": 6,
+   "-12.75": 3,
+   "-12.50": 6,
+   "-12.25": 4,
+   "-12.00": 3,
+   "-11.75": 3,
+   "-11.50": 2,
+   "-11.25": 1,
+   "-10.75": 4,
+   "-10.50": 2,
+   "-10.00": 2
+  },
+  "exactScored": {
+   "-22.00": 1,
+   "-21.50": 2,
+   "-21.25": 3,
+   "-21.00": 4,
+   "-20.75": 5,
+   "-20.50": 13,
+   "-20.25": 19,
+   "-20.00": 19,
+   "-19.75": 19,
+   "-19.50": 15,
+   "-19.25": 10,
+   "-19.00": 4,
+   "-18.75": 3,
+   "-18.50": 1,
+   "-18.25": 1,
+   "-18.00": 1,
+   "-17.75": 3,
+   "-17.25": 1
+  }
+ },
+ "timeMs": {
+  "total": 1324,
+  "setup": 700
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "AENDAKAMAINAM",
+   "wordLogp": -17.1042,
+   "words": "A END AKA MAIN AM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "AENTAKAMAINAM",
+   "wordLogp": -17.598,
+   "words": "AENTAKA MAIN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "AENTEKEMEANAM",
+   "wordLogp": -17.6859,
+   "words": "AENTEKE MEAN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "AENNAKAMAINAM",
+   "wordLogp": -17.7236,
+   "words": "AENNAKA MAIN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "AENDEKEMEANAM",
+   "wordLogp": -17.984,
+   "words": "AENDEKE MEAN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "AENGAKAMAINAM",
+   "wordLogp": -18.0883,
+   "words": "A ENG AKA MAIN AM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "AENGEKEMEANAM",
+   "wordLogp": -18.3034,
+   "words": "AENGEKE MEAN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "AENTEKEMEINAM",
+   "wordLogp": -18.5544,
+   "words": "AENTEKEME IN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "AENDAKAMANNAM",
+   "wordLogp": -18.6394,
+   "words": "A END AKA MANN AM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "AENDAKAMAYNAM",
+   "wordLogp": -18.6895,
+   "words": "A END AKA MAY NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "AENDAKAMAPNAM",
+   "wordLogp": -18.7618,
+   "words": "A END AKA MAP NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "AENTEKEMEENAM",
+   "wordLogp": -18.8347,
+   "words": "AENTEKEMEEN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "AENDEKEMEINAM",
+   "wordLogp": -18.8525,
+   "words": "AENDEKEME IN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "AENTEKEMETNAM",
+   "wordLogp": -18.9745,
+   "words": "AENTEKEMETN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "AENTEKEMENNAM",
+   "wordLogp": -19.1002,
+   "words": "AENTEKEMENN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "AENTEKEMEHNAM",
+   "wordLogp": -19.1228,
+   "words": "AENTEKEMEHN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "AENDEKEMEENAM",
+   "wordLogp": -19.1328,
+   "words": "AENDEKEMEEN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "AENTAKAMANNAM",
+   "wordLogp": -19.1332,
+   "words": "AENTAKA MANN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "AENTEKEMESNAM",
+   "wordLogp": -19.1423,
+   "words": "AENTEKEMESN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "AENDEKEMEONAM",
+   "wordLogp": -19.1676,
+   "words": "AENDEKEME ON AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 21,
+   "plaintext": "AENGEKEMEINAM",
+   "wordLogp": -19.1718,
+   "words": "AENGEKEME IN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 22,
+   "plaintext": "AENTEKEMERNAM",
+   "wordLogp": -19.1743,
+   "words": "AENTEKEMERN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 23,
+   "plaintext": "AENTAKAMAYNAM",
+   "wordLogp": -19.1833,
+   "words": "AENTAKA MAY NAM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 24,
+   "plaintext": "AENDAKAMARNAM",
+   "wordLogp": -19.1935,
+   "words": "A END AKA MAR NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 25,
+   "plaintext": "AENTAKAMAPNAM",
+   "wordLogp": -19.2557,
+   "words": "AENTAKA MAP NAM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 26,
+   "plaintext": "AENNAKAMANNAM",
+   "wordLogp": -19.2589,
+   "words": "AENNAKA MANN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 27,
+   "plaintext": "AENDEKEMETNAM",
+   "wordLogp": -19.2726,
+   "words": "AENDEKEMETN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 28,
+   "plaintext": "AENTEKEMEDNAM",
+   "wordLogp": -19.2726,
+   "words": "AENTEKEMEDN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 29,
+   "plaintext": "AENTEKEMELNAM",
+   "wordLogp": -19.3071,
+   "words": "AENTEKEMELN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 30,
+   "plaintext": "AENNAKAMAYNAM",
+   "wordLogp": -19.309,
+   "words": "AENNAKA MAY NAM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 31,
+   "plaintext": "AENDEKEMENNAM",
+   "wordLogp": -19.3983,
+   "words": "AENDEKEMENN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 32,
+   "plaintext": "AENTAKAMAENAM",
+   "wordLogp": -19.4171,
+   "words": "AENTAKAMAEN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 33,
+   "plaintext": "AENDEKEMEHNAM",
+   "wordLogp": -19.4209,
+   "words": "AENDEKEMEHN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 34,
+   "plaintext": "AENNAKAMAONAM",
+   "wordLogp": -19.4324,
+   "words": "AENNA KAMA ON AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 35,
+   "plaintext": "AENDEKEMESNAM",
+   "wordLogp": -19.4404,
+   "words": "AENDEKEMESN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 36,
+   "plaintext": "AENGEKEMEENAM",
+   "wordLogp": -19.4521,
+   "words": "AENGEKEMEEN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 37,
+   "plaintext": "AENDAKAMAXNAM",
+   "wordLogp": -19.4533,
+   "words": "A END AKA MAX NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 38,
+   "plaintext": "AENDAKAMACNAM",
+   "wordLogp": -19.4643,
+   "words": "A END AKA MAC NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 39,
+   "plaintext": "AENDEKEMERNAM",
+   "wordLogp": -19.4724,
+   "words": "AENDEKEMERN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 40,
+   "plaintext": "AENTEKEMEMNAM",
+   "wordLogp": -19.5368,
+   "words": "AENTEKEMEMN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 41,
+   "plaintext": "AENTEKEMEWNAM",
+   "wordLogp": -19.5502,
+   "words": "AENTEKEMEWN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 42,
+   "plaintext": "AENTAKAMATNAM",
+   "wordLogp": -19.557,
+   "words": "AENTAKAMATN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 43,
+   "plaintext": "AENDEKEMEDNAM",
+   "wordLogp": -19.5707,
+   "words": "AENDEKEMEDN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 44,
+   "plaintext": "AENGEKEMETNAM",
+   "wordLogp": -19.592,
+   "words": "AENGEKEMETN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 45,
+   "plaintext": "AENTEKEMEGNAM",
+   "wordLogp": -19.592,
+   "words": "AENTEKEMEGN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 46,
+   "plaintext": "AENDEKEMELNAM",
+   "wordLogp": -19.6052,
+   "words": "AENDEKEMELN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 47,
+   "plaintext": "AENGAKAMANNAM",
+   "wordLogp": -19.6235,
+   "words": "A ENG AKA MANN AM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 48,
+   "plaintext": "AENGAKAMAYNAM",
+   "wordLogp": -19.6736,
+   "words": "A ENG AKA MAY NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 49,
+   "plaintext": "AENNAKAMATNAM",
+   "wordLogp": -19.6826,
+   "words": "AENNAKAMATN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 50,
+   "plaintext": "AENTAKAMARNAM",
+   "wordLogp": -19.6874,
+   "words": "AENTAKA MAR NAM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 51,
+   "plaintext": "AENTAKAMAHNAM",
+   "wordLogp": -19.7052,
+   "words": "AENTAKAMAHN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 52,
+   "plaintext": "AENTEKEMEPNAM",
+   "wordLogp": -19.713,
+   "words": "AENTEKEMEPN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 53,
+   "plaintext": "AENDAKAMAENAM",
+   "wordLogp": -19.7152,
+   "words": "AENDAKAMAEN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 54,
+   "plaintext": "AENGEKEMENNAM",
+   "wordLogp": -19.7176,
+   "words": "AENGEKEMENN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 55,
+   "plaintext": "AENTAKAMASNAM",
+   "wordLogp": -19.7247,
+   "words": "AENTAKAMASN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 56,
+   "plaintext": "AENNAKAMAANAM",
+   "wordLogp": -19.7369,
+   "words": "AENNAKAMAAN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 57,
+   "plaintext": "AENGEKEMEHNAM",
+   "wordLogp": -19.7403,
+   "words": "AENGEKEMEHN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 58,
+   "plaintext": "AENGAKAMAPNAM",
+   "wordLogp": -19.7459,
+   "words": "A ENG AKA MAP NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 59,
+   "plaintext": "AENGEKEMESNAM",
+   "wordLogp": -19.7597,
+   "words": "AENGEKEMESN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 60,
+   "plaintext": "AENGEKEMERNAM",
+   "wordLogp": -19.7917,
+   "words": "AENGEKEMERN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 61,
+   "plaintext": "AENNAKAMARNAM",
+   "wordLogp": -19.813,
+   "words": "AENNAKA MAR NAM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 62,
+   "plaintext": "AENNAKAMAHNAM",
+   "wordLogp": -19.8309,
+   "words": "AENNAKAMAHN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 63,
+   "plaintext": "AENDAKAMASNAM",
+   "wordLogp": -19.8337,
+   "words": "A END A KAMAS NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 64,
+   "plaintext": "AENDEKEMEMNAM",
+   "wordLogp": -19.8349,
+   "words": "AENDEKEMEMN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 65,
+   "plaintext": "AENDEKEMEWNAM",
+   "wordLogp": -19.8483,
+   "words": "AENDEKEMEWN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 66,
+   "plaintext": "AENNAKAMASNAM",
+   "wordLogp": -19.8503,
+   "words": "AENNAKAMASN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 67,
+   "plaintext": "AENDAKAMATNAM",
+   "wordLogp": -19.855,
+   "words": "AENDAKAMATN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 68,
+   "plaintext": "AENTAKAMADNAM",
+   "wordLogp": -19.855,
+   "words": "AENTAKAMADN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 69,
+   "plaintext": "AENTAKAMALNAM",
+   "wordLogp": -19.8895,
+   "words": "AENTAKAMALN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 70,
+   "plaintext": "AENDEKEMEGNAM",
+   "wordLogp": -19.8901,
+   "words": "AENDEKEMEGN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 71,
+   "plaintext": "AENGEKEMEDNAM",
+   "wordLogp": -19.8901,
+   "words": "AENGEKEMEDN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 72,
+   "plaintext": "AENGEKEMELNAM",
+   "wordLogp": -19.9245,
+   "words": "AENGEKEMELN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 73,
+   "plaintext": "AENTAKAMAXNAM",
+   "wordLogp": -19.9471,
+   "words": "AENTAKA MAX NAM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 74,
+   "plaintext": "AENTEKEMEKNAM",
+   "wordLogp": -19.9551,
+   "words": "AENTEKEMEKN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "K"
+   }
+  },
+  {
+   "rank": 75,
+   "plaintext": "AENTAKAMACNAM",
+   "wordLogp": -19.9581,
+   "words": "AENTAKA MAC NAM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 76,
+   "plaintext": "AENDAKAMAUNAM",
+   "wordLogp": -19.962,
+   "words": "A END AKA MAUN AM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "U"
+   }
+  },
+  {
+   "rank": 77,
+   "plaintext": "AENNAKAMADNAM",
+   "wordLogp": -19.9807,
+   "words": "AENNAKAMADN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 78,
+   "plaintext": "AENDAKAMAHNAM",
+   "wordLogp": -20.0033,
+   "words": "AENDAKAMAHN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 79,
+   "plaintext": "AENDEKEMEPNAM",
+   "wordLogp": -20.0111,
+   "words": "AENDEKEMEPN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 80,
+   "plaintext": "AENNAKAMALNAM",
+   "wordLogp": -20.0151,
+   "words": "AENNAKAMALN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 81,
+   "plaintext": "AENGAKAMAENAM",
+   "wordLogp": -20.0346,
+   "words": "AENGAKAMAEN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 82,
+   "plaintext": "AENDAKAMADNAM",
+   "wordLogp": -20.0435,
+   "words": "A END AKA MAD NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 83,
+   "plaintext": "AENDEKEMEBNAM",
+   "wordLogp": -20.0456,
+   "words": "AENDEKEMEBN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 84,
+   "plaintext": "AENTAKAMAUNAM",
+   "wordLogp": -20.0559,
+   "words": "AENTAKAMAUN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "U"
+   }
+  },
+  {
+   "rank": 85,
+   "plaintext": "AENNAKAMAXNAM",
+   "wordLogp": -20.0727,
+   "words": "AENNAKA MAX NAM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 86,
+   "plaintext": "AENTAKAMAMNAM",
+   "wordLogp": -20.1192,
+   "words": "AENTAKAMAMN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 87,
+   "plaintext": "AENTAKAMAWNAM",
+   "wordLogp": -20.1327,
+   "words": "AENTAKAMAWN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 88,
+   "plaintext": "AENGEKEMEMNAM",
+   "wordLogp": -20.1543,
+   "words": "AENGEKEMEMN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 89,
+   "plaintext": "AENGEKEMEWNAM",
+   "wordLogp": -20.1677,
+   "words": "AENGEKEMEWN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 90,
+   "plaintext": "AENGAKAMATNAM",
+   "wordLogp": -20.1744,
+   "words": "AENGAKAMATN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 91,
+   "plaintext": "AENTAKAMAGNAM",
+   "wordLogp": -20.1744,
+   "words": "AENTAKAMAGN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 92,
+   "plaintext": "AENGAKAMARNAM",
+   "wordLogp": -20.1776,
+   "words": "A ENG AKA MAR NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 93,
+   "plaintext": "AENNAKAMAUNAM",
+   "wordLogp": -20.1815,
+   "words": "AENNAKAMAUN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "U"
+   }
+  },
+  {
+   "rank": 94,
+   "plaintext": "AENDAKAMALNAM",
+   "wordLogp": -20.1876,
+   "words": "AENDAKAMALN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 95,
+   "plaintext": "AENGEKEMEGNAM",
+   "wordLogp": -20.2095,
+   "words": "AENGEKEMEGN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 96,
+   "plaintext": "AENNAKAMAMNAM",
+   "wordLogp": -20.2448,
+   "words": "AENNAKAMAMN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 97,
+   "plaintext": "AENDEKEMEKNAM",
+   "wordLogp": -20.2532,
+   "words": "AENDEKEMEKN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "K"
+   }
+  },
+  {
+   "rank": 98,
+   "plaintext": "AENNAKAMAWNAM",
+   "wordLogp": -20.2583,
+   "words": "AENNAKAMAWN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 99,
+   "plaintext": "AENDAKAMAGNAM",
+   "wordLogp": -20.2798,
+   "words": "A END AKA MAG NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 100,
+   "plaintext": "AENDEKEMEVNAM",
+   "wordLogp": -20.2806,
+   "words": "AENDEKEMEVN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "V"
+   }
+  },
+  {
+   "rank": 101,
+   "plaintext": "AENNAKAMAFNAM",
+   "wordLogp": -20.3083,
+   "words": "AENNAKAMAFN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "N",
+    "K": "K",
+    "M": "M",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 102,
+   "plaintext": "AENGAKAMAHNAM",
+   "wordLogp": -20.3227,
+   "words": "AENGAKAMAHN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 103,
+   "plaintext": "AENGEKEMEPNAM",
+   "wordLogp": -20.3305,
+   "words": "AENGEKEMEPN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 104,
+   "plaintext": "AENGAKAMASNAM",
+   "wordLogp": -20.3422,
+   "words": "AENGAKAMASN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 105,
+   "plaintext": "AENDAKAMAMNAM",
+   "wordLogp": -20.4173,
+   "words": "AENDAKAMAMN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 106,
+   "plaintext": "AENDAKAMAWNAM",
+   "wordLogp": -20.4308,
+   "words": "AENDAKAMAWN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 107,
+   "plaintext": "AENGAKAMAXNAM",
+   "wordLogp": -20.4374,
+   "words": "A ENG AKA MAX NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 108,
+   "plaintext": "AENGAKAMACNAM",
+   "wordLogp": -20.4484,
+   "words": "A ENG AKA MAC NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 109,
+   "plaintext": "AENGAKAMADNAM",
+   "wordLogp": -20.4725,
+   "words": "AENGAKAMADN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 110,
+   "plaintext": "AENGAKAMALNAM",
+   "wordLogp": -20.507,
+   "words": "AENGAKAMALN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 111,
+   "plaintext": "AENTAKAMAKNAM",
+   "wordLogp": -20.5375,
+   "words": "AENTAKAMAKN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "K"
+   }
+  },
+  {
+   "rank": 112,
+   "plaintext": "AENGEKEMEKNAM",
+   "wordLogp": -20.5725,
+   "words": "AENGEKEMEKN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "K"
+   }
+  },
+  {
+   "rank": 113,
+   "plaintext": "AENGAKAMAUNAM",
+   "wordLogp": -20.6733,
+   "words": "AENGAKAMAUN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "U"
+   }
+  },
+  {
+   "rank": 114,
+   "plaintext": "AENGAKAMAMNAM",
+   "wordLogp": -20.7367,
+   "words": "AENGAKAMAMN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 115,
+   "plaintext": "AENGAKAMAWNAM",
+   "wordLogp": -20.7501,
+   "words": "AENGAKAMAWN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 116,
+   "plaintext": "AENGAKAMAGNAM",
+   "wordLogp": -20.7919,
+   "words": "AENGAKAMAGN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 117,
+   "plaintext": "AENTEKEMEXNAM",
+   "wordLogp": -20.7992,
+   "words": "AENTEKEMEXN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 118,
+   "plaintext": "AENDAKAMAKNAM",
+   "wordLogp": -20.8356,
+   "words": "AENDAKAMAKN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "K"
+   }
+  },
+  {
+   "rank": 119,
+   "plaintext": "AENDEKEMEXNAM",
+   "wordLogp": -21.0973,
+   "words": "AENDEKEMEXN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 120,
+   "plaintext": "AENDAKAMAJNAM",
+   "wordLogp": -21.1202,
+   "words": "A END AKA MAJ NAM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "K",
+    "M": "M",
+    "[": "J"
+   }
+  },
+  {
+   "rank": 121,
+   "plaintext": "AENGAKAMAKNAM",
+   "wordLogp": -21.155,
+   "words": "AENGAKAMAKN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "K"
+   }
+  },
+  {
+   "rank": 122,
+   "plaintext": "AENTAKAMAJNAM",
+   "wordLogp": -21.3164,
+   "words": "AENTAKAMAJN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "T",
+    "K": "K",
+    "M": "M",
+    "[": "J"
+   }
+  },
+  {
+   "rank": 123,
+   "plaintext": "AENGEKEMEXNAM",
+   "wordLogp": -21.4166,
+   "words": "AENGEKEMEXN AM",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 124,
+   "plaintext": "AENGAKAMAJNAM",
+   "wordLogp": -21.9339,
+   "words": "AENGAKAMAJN AM",
+   "unknown": 1,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "E",
+    "N": "N",
+    "z": "G",
+    "K": "K",
+    "M": "M",
+    "[": "J"
+   }
+  }
+ ]
+}

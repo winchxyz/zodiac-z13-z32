@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:20:33.068Z",
+ "label": "scr02_12",
+ "cipher": {
+  "id": "scr02",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr02.txt",
+  "text": "0[EMAAMK0zN0N",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   12
+  ],
+  "isomorphAfterSlips": "abcdeedfagha*"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 259144,
+  "scored": 245445,
+  "keptAtLeastStreamMin": 102,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 14934,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1712,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 102,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 8,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 3,
+  "3": 66,
+  "4": 32,
+  "5": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.652035633559675,
+  "topShare": 0.11176125463681041,
+  "top10Share": 0.5913306696752518,
+  "effectiveNumberExpEntropy": 98.29497569281938,
+  "effectiveNumberInverseSimpson": 20.288865793386737,
+  "unscoredMassBoundRelative": 0.006739450676643706,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 12,
+   "maxWordLogp": -15.266763462405612,
+   "massEstimateRelative": 0.000004424176132441556,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.002339705962108306
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 4,
+   "-17.75": 8,
+   "-17.50": 23,
+   "-17.25": 15,
+   "-17.00": 51,
+   "-16.75": 100,
+   "-16.50": 90,
+   "-16.25": 149,
+   "-16.00": 162,
+   "-15.75": 245,
+   "-15.50": 307,
+   "-15.25": 493,
+   "-15.00": 635,
+   "-14.75": 819,
+   "-14.50": 999,
+   "-14.25": 1256,
+   "-14.00": 1555,
+   "-13.75": 1806,
+   "-13.50": 2026,
+   "-13.25": 2503,
+   "-13.00": 2827,
+   "-12.75": 3371,
+   "-12.50": 3865,
+   "-12.25": 4468,
+   "-12.00": 5151,
+   "-11.75": 5725,
+   "-11.50": 6518,
+   "-11.25": 7155,
+   "-11.00": 7716,
+   "-10.75": 8367,
+   "-10.50": 8798,
+   "-10.25": 9340,
+   "-10.00": 9781,
+   "-9.75": 10199,
+   "-9.50": 10577,
+   "-9.25": 10884,
+   "-9.00": 11037,
+   "-8.75": 11253,
+   "-8.50": 11341,
+   "-8.25": 10909,
+   "-8.00": 10803,
+   "-7.75": 10217,
+   "-7.50": 9804,
+   "-7.25": 9131,
+   "-7.00": 8252,
+   "-6.75": 7448,
+   "-6.50": 6454,
+   "-6.25": 5585,
+   "-6.00": 4671,
+   "-5.75": 3750,
+   "-5.50": 3104,
+   "-5.25": 2291,
+   "-5.00": 1722,
+   "-4.75": 1276,
+   "-4.50": 830,
+   "-4.25": 535,
+   "-4.00": 305,
+   "-3.75": 200,
+   "-3.50": 107,
+   "-3.25": 73,
+   "-3.00": 29,
+   "-2.75": 14,
+   "-2.50": 11,
+   "-2.25": 2,
+   "-1.75": 2
+  },
+  "exactScored": {
+   "-18.75": 40,
+   "-18.50": 256,
+   "-18.25": 833,
+   "-18.00": 1623,
+   "-17.75": 3292,
+   "-17.50": 5705,
+   "-17.25": 8262,
+   "-17.00": 10816,
+   "-16.75": 13416,
+   "-16.50": 15796,
+   "-16.25": 16875,
+   "-16.00": 17972,
+   "-15.75": 17767,
+   "-15.50": 18066,
+   "-15.25": 17156,
+   "-15.00": 16269,
+   "-14.75": 14669,
+   "-14.50": 12696,
+   "-14.25": 10872,
+   "-14.00": 9055,
+   "-13.75": 7347,
+   "-13.50": 6119,
+   "-13.25": 4956,
+   "-13.00": 3964,
+   "-12.75": 3149,
+   "-12.50": 2396,
+   "-12.25": 1842,
+   "-12.00": 1322,
+   "-11.75": 923,
+   "-11.50": 641,
+   "-11.25": 480,
+   "-11.00": 330,
+   "-10.75": 199,
+   "-10.50": 119,
+   "-10.25": 88,
+   "-10.00": 59,
+   "-9.75": 23,
+   "-9.50": 17,
+   "-9.25": 9,
+   "-9.00": 10,
+   "-8.75": 5,
+   "-8.50": 4,
+   "-8.25": 2,
+   "-8.00": 2,
+   "-7.75": 3
+  },
+  "boundUnscored": {
+   "-18.25": 4,
+   "-17.75": 8,
+   "-17.50": 23,
+   "-17.25": 15,
+   "-17.00": 51,
+   "-16.75": 100,
+   "-16.50": 90,
+   "-16.25": 149,
+   "-16.00": 162,
+   "-15.75": 245,
+   "-15.50": 307,
+   "-15.25": 493,
+   "-15.00": 635,
+   "-14.75": 819,
+   "-14.50": 999,
+   "-14.25": 1256,
+   "-14.00": 1555,
+   "-13.75": 1806,
+   "-13.50": 2026,
+   "-13.25": 2503,
+   "-13.00": 453
+  }
+ },
+ "timeMs": {
+  "total": 2630,
+  "setup": 420
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ISFOLLOWINGIS",
+   "wordLogp": -7.6037,
+   "words": "IS FOLLOWING IS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "S",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "EMAILLICENSED",
+   "wordLogp": -7.6051,
+   "words": "EMAIL LICENSED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "M",
+    "E": "A",
+    "M": "I",
+    "A": "L",
+    "K": "C",
+    "z": "N",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THEALLARTISTS",
+   "wordLogp": -7.6583,
+   "words": "THE ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "E": "E",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "ITFOLLOWINGIS",
+   "wordLogp": -7.7625,
+   "words": "IT FOLLOWING IS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "T",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ISFOLLOWINGIN",
+   "wordLogp": -7.904,
+   "words": "IS FOLLOWING IN",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "S",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ITWASSAYINGIT",
+   "wordLogp": -8.0583,
+   "words": "IT WAS SAYING IT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "T",
+    "E": "W",
+    "M": "A",
+    "A": "S",
+    "K": "Y",
+    "z": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ITFOLLOWINGIN",
+   "wordLogp": -8.0627,
+   "words": "IT FOLLOWING IN",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "T",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ITWASSAYINGIS",
+   "wordLogp": -8.2625,
+   "words": "IT WAS SAYING IS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "T",
+    "E": "W",
+    "M": "A",
+    "A": "S",
+    "K": "Y",
+    "z": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ISFOLLOWINGIT",
+   "wordLogp": -8.4255,
+   "words": "IS FOLLOWING IT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "S",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ITWASSAYINGIN",
+   "wordLogp": -8.4316,
+   "words": "IT WAS SAYING IN",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "T",
+    "E": "W",
+    "M": "A",
+    "A": "S",
+    "K": "Y",
+    "z": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "EMAILLIKETHEY",
+   "wordLogp": -8.4826,
+   "words": "EMAIL LIKE THEY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "M",
+    "E": "A",
+    "M": "I",
+    "A": "L",
+    "K": "K",
+    "z": "T",
+    "N": "H"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ITFOLLOWINGIT",
+   "wordLogp": -8.5842,
+   "words": "IT FOLLOWING IT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "T",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ASCOMMONAREAS",
+   "wordLogp": -8.5914,
+   "words": "AS COMMON AREAS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "S",
+    "E": "C",
+    "M": "O",
+    "A": "M",
+    "K": "N",
+    "z": "R",
+    "N": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "RECALLAIRPORT",
+   "wordLogp": -8.6877,
+   "words": "RECALL AIRPORT",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "[": "E",
+    "E": "C",
+    "M": "A",
+    "A": "L",
+    "K": "I",
+    "z": "P",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "IDFOLLOWINGIS",
+   "wordLogp": -8.7244,
+   "words": "ID FOLLOWING IS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "D",
+    "E": "F",
+    "M": "O",
+    "A": "L",
+    "K": "W",
+    "z": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ATCOMMONAREAS",
+   "wordLogp": -8.7256,
+   "words": "AT COMMON AREAS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "T",
+    "E": "C",
+    "M": "O",
+    "A": "M",
+    "K": "N",
+    "z": "R",
+    "N": "E"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "EMAILLIKETHEM",
+   "wordLogp": -8.7855,
+   "words": "EMAIL LIKE THEM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "M",
+    "E": "A",
+    "M": "I",
+    "A": "L",
+    "K": "K",
+    "z": "T",
+    "N": "H"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ISBETTERINHIS",
+   "wordLogp": -8.7972,
+   "words": "IS BETTER IN HIS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "S",
+    "E": "B",
+    "M": "E",
+    "A": "T",
+    "K": "R",
+    "z": "N",
+    "N": "H"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "EATONNOVEMBER",
+   "wordLogp": -8.8281,
+   "words": "EATON NOVEMBER",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "A",
+    "E": "T",
+    "M": "O",
+    "A": "N",
+    "K": "V",
+    "z": "M",
+    "N": "B"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "TRAILLISTENTO",
+   "wordLogp": -8.8341,
+   "words": "TRAIL LISTEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "R",
+    "E": "A",
+    "M": "I",
+    "A": "L",
+    "K": "S",
+    "z": "E",
+    "N": "N"
+   }
+  }
+ ]
+}

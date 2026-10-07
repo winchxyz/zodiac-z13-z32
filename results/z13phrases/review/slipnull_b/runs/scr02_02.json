@@ -1,0 +1,546 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:19:48.459Z",
+ "label": "scr02_02",
+ "cipher": {
+  "id": "scr02",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr02.txt",
+  "text": "0[EMAAMK0zN0N",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   2
+  ],
+  "isomorphAfterSlips": "ab*deedfaghah"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 119,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 119,
+  "tasks": 119,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 13834,
+  "scored": 13356,
+  "keptAtLeastStreamMin": 18,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 998,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 147,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 18,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 11,
+  "4": 7
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.334326562847511,
+  "topShare": 0.47432324177219026,
+  "top10Share": 0.8895194847673801,
+  "effectiveNumberExpEntropy": 8.991193425289616,
+  "effectiveNumberInverseSimpson": 3.7101764760503992,
+  "unscoredMassBoundRelative": 0.001131499742507901,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00036330371230322247
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.00": 1,
+   "-16.75": 3,
+   "-16.50": 1,
+   "-16.25": 8,
+   "-16.00": 4,
+   "-15.75": 10,
+   "-15.50": 12,
+   "-15.25": 24,
+   "-15.00": 22,
+   "-14.75": 31,
+   "-14.50": 33,
+   "-14.25": 48,
+   "-14.00": 61,
+   "-13.75": 56,
+   "-13.50": 78,
+   "-13.25": 71,
+   "-13.00": 113,
+   "-12.75": 142,
+   "-12.50": 194,
+   "-12.25": 214,
+   "-12.00": 233,
+   "-11.75": 272,
+   "-11.50": 301,
+   "-11.25": 368,
+   "-11.00": 327,
+   "-10.75": 366,
+   "-10.50": 433,
+   "-10.25": 492,
+   "-10.00": 546,
+   "-9.75": 528,
+   "-9.50": 576,
+   "-9.25": 592,
+   "-9.00": 582,
+   "-8.75": 617,
+   "-8.50": 618,
+   "-8.25": 618,
+   "-8.00": 646,
+   "-7.75": 607,
+   "-7.50": 576,
+   "-7.25": 544,
+   "-7.00": 452,
+   "-6.75": 460,
+   "-6.50": 364,
+   "-6.25": 369,
+   "-6.00": 279,
+   "-5.75": 242,
+   "-5.50": 200,
+   "-5.25": 139,
+   "-5.00": 110,
+   "-4.75": 86,
+   "-4.50": 60,
+   "-4.25": 43,
+   "-4.00": 20,
+   "-3.75": 17,
+   "-3.50": 5,
+   "-3.25": 8,
+   "-3.00": 6,
+   "-2.75": 2,
+   "-2.50": 3,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-18.75": 7,
+   "-18.50": 29,
+   "-18.25": 71,
+   "-18.00": 107,
+   "-17.75": 156,
+   "-17.50": 273,
+   "-17.25": 434,
+   "-17.00": 618,
+   "-16.75": 737,
+   "-16.50": 827,
+   "-16.25": 847,
+   "-16.00": 886,
+   "-15.75": 870,
+   "-15.50": 956,
+   "-15.25": 897,
+   "-15.00": 847,
+   "-14.75": 802,
+   "-14.50": 714,
+   "-14.25": 629,
+   "-14.00": 532,
+   "-13.75": 435,
+   "-13.50": 371,
+   "-13.25": 265,
+   "-13.00": 230,
+   "-12.75": 184,
+   "-12.50": 149,
+   "-12.25": 132,
+   "-12.00": 107,
+   "-11.75": 74,
+   "-11.50": 57,
+   "-11.25": 38,
+   "-11.00": 18,
+   "-10.75": 16,
+   "-10.50": 9,
+   "-10.25": 9,
+   "-10.00": 8,
+   "-9.75": 5,
+   "-9.50": 3,
+   "-9.25": 2,
+   "-9.00": 1,
+   "-8.75": 1,
+   "-8.50": 1,
+   "-8.25": 1,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-17.00": 1,
+   "-16.75": 3,
+   "-16.50": 1,
+   "-16.25": 8,
+   "-16.00": 4,
+   "-15.75": 10,
+   "-15.50": 12,
+   "-15.25": 24,
+   "-15.00": 22,
+   "-14.75": 31,
+   "-14.50": 33,
+   "-14.25": 48,
+   "-14.00": 61,
+   "-13.75": 56,
+   "-13.50": 78,
+   "-13.25": 71,
+   "-13.00": 15
+  }
+ },
+ "timeMs": {
+  "total": 1143,
+  "setup": 412
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "THEALLARTISTS",
+   "wordLogp": -7.6583,
+   "words": "THE ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THEEFFECTDATA",
+   "wordLogp": -8.0874,
+   "words": "THE EFFECT DATA",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "M": "E",
+    "A": "F",
+    "K": "C",
+    "z": "D",
+    "N": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THEEFFECTSATA",
+   "wordLogp": -8.3676,
+   "words": "THE EFFECTS AT A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "M": "E",
+    "A": "F",
+    "K": "C",
+    "z": "S",
+    "N": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THEEFFECTGOTO",
+   "wordLogp": -8.6049,
+   "words": "THE EFFECT GO TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "M": "E",
+    "A": "F",
+    "K": "C",
+    "z": "G",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "TOCALLARTISTS",
+   "wordLogp": -8.8813,
+   "words": "TO CALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "O",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "TOPALLARTISTS",
+   "wordLogp": -9.0796,
+   "words": "TOP ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "O",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THEADDARTISTS",
+   "wordLogp": -9.2116,
+   "words": "THE ADD ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "M": "A",
+    "A": "D",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "TWOALLARTISTS",
+   "wordLogp": -9.2588,
+   "words": "TWO ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "W",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "TOFALLARTISTS",
+   "wordLogp": -9.3135,
+   "words": "TO FALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "O",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ACAREERKANSAS",
+   "wordLogp": -9.3203,
+   "words": "A CAREER KANSAS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "C",
+    "M": "R",
+    "A": "E",
+    "K": "K",
+    "z": "N",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "TOAALLARTISTS",
+   "wordLogp": -9.5745,
+   "words": "TO A ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "O",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THEEFFECTNOTO",
+   "wordLogp": -9.5821,
+   "words": "THE EFFECT NO TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "M": "E",
+    "A": "F",
+    "K": "C",
+    "z": "N",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THEEFFECTDOTO",
+   "wordLogp": -9.6294,
+   "words": "THE EFFECT DO TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "M": "E",
+    "A": "F",
+    "K": "C",
+    "z": "D",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THEARRAYTESTS",
+   "wordLogp": -9.6796,
+   "words": "THE ARRAY TESTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "M": "A",
+    "A": "R",
+    "K": "Y",
+    "z": "E",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "TOOALLARTISTS",
+   "wordLogp": -9.6864,
+   "words": "TOO ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "O",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THEEFFECTSOTO",
+   "wordLogp": -9.7627,
+   "words": "THE EFFECT SO TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "M": "E",
+    "A": "F",
+    "K": "C",
+    "z": "S",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "TOFILLINTESTS",
+   "wordLogp": -9.8334,
+   "words": "TO FILL IN TESTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "O",
+    "M": "I",
+    "A": "L",
+    "K": "N",
+    "z": "E",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THUALLARTISTS",
+   "wordLogp": -9.8573,
+   "words": "THU ALL ARTISTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "M": "A",
+    "A": "L",
+    "K": "R",
+    "z": "I",
+    "N": "S"
+   }
+  }
+ ]
+}

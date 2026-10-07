@@ -1,0 +1,602 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:11:34.062Z",
+ "label": "scr07_09",
+ "cipher": {
+  "id": "scr07",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr07.txt",
+  "text": "KMA0A0NN0M[Ez",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   9
+  ],
+  "isomorphAfterSlips": "abcdcdeed*fgh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 283616,
+  "scored": 267717,
+  "keptAtLeastStreamMin": 122,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 12298,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1446,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 122,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 6,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 8,
+  "3": 52,
+  "4": 62
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.8267948665929366,
+  "topShare": 0.11808884401298513,
+  "top10Share": 0.4746994891600607,
+  "effectiveNumberExpEntropy": 167.33248883537044,
+  "effectiveNumberInverseSimpson": 26.769245940971437,
+  "unscoredMassBoundRelative": 0.011696735679974183,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 14,
+   "maxWordLogp": -15.268601990304674,
+   "massEstimateRelative": 0.000008904653582254549,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004391530376350718
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 6,
+   "-17.50": 21,
+   "-17.25": 16,
+   "-17.00": 30,
+   "-16.75": 58,
+   "-16.50": 83,
+   "-16.25": 120,
+   "-16.00": 192,
+   "-15.75": 254,
+   "-15.50": 418,
+   "-15.25": 555,
+   "-15.00": 692,
+   "-14.75": 846,
+   "-14.50": 1070,
+   "-14.25": 1345,
+   "-14.00": 1629,
+   "-13.75": 2119,
+   "-13.50": 2648,
+   "-13.25": 3227,
+   "-13.00": 3775,
+   "-12.75": 4339,
+   "-12.50": 4982,
+   "-12.25": 5607,
+   "-12.00": 6182,
+   "-11.75": 6879,
+   "-11.50": 7583,
+   "-11.25": 8383,
+   "-11.00": 9395,
+   "-10.75": 10340,
+   "-10.50": 10930,
+   "-10.25": 11449,
+   "-10.00": 11753,
+   "-9.75": 11993,
+   "-9.50": 12046,
+   "-9.25": 12104,
+   "-9.00": 11916,
+   "-8.75": 11942,
+   "-8.50": 11835,
+   "-8.25": 11715,
+   "-8.00": 11393,
+   "-7.75": 10947,
+   "-7.50": 10549,
+   "-7.25": 9385,
+   "-7.00": 8595,
+   "-6.75": 7388,
+   "-6.50": 6319,
+   "-6.25": 5044,
+   "-6.00": 4049,
+   "-5.75": 3111,
+   "-5.50": 2263,
+   "-5.25": 1505,
+   "-5.00": 1026,
+   "-4.75": 682,
+   "-4.50": 394,
+   "-4.25": 234,
+   "-4.00": 127,
+   "-3.75": 75,
+   "-3.50": 37,
+   "-3.25": 12,
+   "-3.00": 3,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-18.75": 17,
+   "-18.50": 208,
+   "-18.25": 935,
+   "-18.00": 2360,
+   "-17.75": 4756,
+   "-17.50": 8159,
+   "-17.25": 11998,
+   "-17.00": 15598,
+   "-16.75": 19322,
+   "-16.50": 21613,
+   "-16.25": 21910,
+   "-16.00": 21734,
+   "-15.75": 20650,
+   "-15.50": 19019,
+   "-15.25": 16993,
+   "-15.00": 14725,
+   "-14.75": 12645,
+   "-14.50": 10986,
+   "-14.25": 9008,
+   "-14.00": 7312,
+   "-13.75": 6163,
+   "-13.50": 4890,
+   "-13.25": 3880,
+   "-13.00": 3253,
+   "-12.75": 2594,
+   "-12.50": 1878,
+   "-12.25": 1494,
+   "-12.00": 1156,
+   "-11.75": 793,
+   "-11.50": 522,
+   "-11.25": 384,
+   "-11.00": 251,
+   "-10.75": 166,
+   "-10.50": 119,
+   "-10.25": 77,
+   "-10.00": 53,
+   "-9.75": 44,
+   "-9.50": 23,
+   "-9.25": 9,
+   "-9.00": 8,
+   "-8.75": 6,
+   "-8.50": 3,
+   "-8.00": 3
+  },
+  "boundUnscored": {
+   "-17.75": 6,
+   "-17.50": 21,
+   "-17.25": 16,
+   "-17.00": 30,
+   "-16.75": 58,
+   "-16.50": 83,
+   "-16.25": 120,
+   "-16.00": 192,
+   "-15.75": 254,
+   "-15.50": 418,
+   "-15.25": 555,
+   "-15.00": 692,
+   "-14.75": 846,
+   "-14.50": 1070,
+   "-14.25": 1345,
+   "-14.00": 1629,
+   "-13.75": 2119,
+   "-13.50": 2648,
+   "-13.25": 3227,
+   "-13.00": 570
+  }
+ },
+ "timeMs": {
+  "total": 2709,
+  "setup": 457
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "BUTITISSIMPLY",
+   "wordLogp": -7.7546,
+   "words": "BUT IT IS SIMPLY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "B",
+    "M": "U",
+    "A": "T",
+    "N": "S",
+    "[": "P",
+    "E": "L",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "INFOFOLLOWTHE",
+   "wordLogp": -7.784,
+   "words": "INFO FOLLOW THE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "I",
+    "M": "N",
+    "A": "F",
+    "N": "L",
+    "[": "T",
+    "E": "H",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "BUTITISSIMPLE",
+   "wordLogp": -7.9967,
+   "words": "BUT IT IS SIMPLE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "B",
+    "M": "U",
+    "A": "T",
+    "N": "S",
+    "[": "P",
+    "E": "L",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "ANDIDIFFICULT",
+   "wordLogp": -8.2732,
+   "words": "AND I DIFFICULT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "A",
+    "M": "N",
+    "A": "D",
+    "N": "F",
+    "[": "U",
+    "E": "L",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "GETITISSIMPLY",
+   "wordLogp": -8.2789,
+   "words": "GET IT IS SIMPLY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "G",
+    "M": "E",
+    "A": "T",
+    "N": "S",
+    "[": "P",
+    "E": "L",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "GOTITISSIMPLY",
+   "wordLogp": -8.2907,
+   "words": "GOT IT IS SIMPLY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "G",
+    "M": "O",
+    "A": "T",
+    "N": "S",
+    "[": "P",
+    "E": "L",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "GOTITISSIMPLE",
+   "wordLogp": -8.5329,
+   "words": "GOT IT IS SIMPLE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "G",
+    "M": "O",
+    "A": "T",
+    "N": "S",
+    "[": "P",
+    "E": "L",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "OFBEBETTERAND",
+   "wordLogp": -8.5484,
+   "words": "OF BE BETTER AND",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "O",
+    "M": "F",
+    "A": "B",
+    "N": "T",
+    "[": "A",
+    "E": "N",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "BUTITISSIGNED",
+   "wordLogp": -8.5878,
+   "words": "BUT IT IS SIGNED",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "B",
+    "M": "U",
+    "A": "T",
+    "N": "S",
+    "[": "N",
+    "E": "E",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "NOTITISSIMPLY",
+   "wordLogp": -8.5917,
+   "words": "NOT IT IS SIMPLY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "N",
+    "M": "O",
+    "A": "T",
+    "N": "S",
+    "[": "P",
+    "E": "L",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "CASESELLERFOR",
+   "wordLogp": -8.6781,
+   "words": "CASE SELLER FOR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "C",
+    "M": "A",
+    "A": "S",
+    "N": "L",
+    "[": "F",
+    "E": "O",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "CASESEFFECTON",
+   "wordLogp": -8.7012,
+   "words": "CASES EFFECT ON",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "C",
+    "M": "A",
+    "A": "S",
+    "N": "F",
+    "[": "T",
+    "E": "O",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "CANONOPPOSITE",
+   "wordLogp": -8.7734,
+   "words": "CANON OPPOSITE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "C",
+    "M": "A",
+    "A": "N",
+    "N": "P",
+    "[": "I",
+    "E": "T",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "NOTITISSIMPLE",
+   "wordLogp": -8.8338,
+   "words": "NOT IT IS SIMPLE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "N",
+    "M": "O",
+    "A": "T",
+    "N": "S",
+    "[": "P",
+    "E": "L",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "BUTITISSINGLE",
+   "wordLogp": -8.856,
+   "words": "BUT IT IS SINGLE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "B",
+    "M": "U",
+    "A": "T",
+    "N": "S",
+    "[": "G",
+    "E": "L",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "FILELETTERAND",
+   "wordLogp": -8.8838,
+   "words": "FILE LETTER AND",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "F",
+    "M": "I",
+    "A": "L",
+    "N": "T",
+    "[": "A",
+    "E": "N",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "INBEBETTERFOR",
+   "wordLogp": -8.8968,
+   "words": "IN BE BETTER FOR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "I",
+    "M": "N",
+    "A": "B",
+    "N": "T",
+    "[": "F",
+    "E": "O",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "OFBEBETTERWAY",
+   "wordLogp": -8.897,
+   "words": "OF BE BETTER WAY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "O",
+    "M": "F",
+    "A": "B",
+    "N": "T",
+    "[": "W",
+    "E": "A",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "CANONOFFORTHE",
+   "wordLogp": -8.9138,
+   "words": "CANON OF FOR THE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "C",
+    "M": "A",
+    "A": "N",
+    "N": "F",
+    "[": "T",
+    "E": "H",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "INFOFOLLOWEDA",
+   "wordLogp": -8.9871,
+   "words": "INFO FOLLOWED A",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "I",
+    "M": "N",
+    "A": "F",
+    "N": "L",
+    "[": "E",
+    "E": "D",
+    "z": "A"
+   }
+  }
+ ]
+}

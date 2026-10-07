@@ -1,0 +1,604 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:26:19.106Z",
+ "label": "scr10_11",
+ "cipher": {
+  "id": "scr10",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr10.txt",
+  "text": "KENAMNzM[00A0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   11
+  ],
+  "isomorphAfterSlips": "abcdecfeghh*h"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 273081,
+  "scored": 258637,
+  "keptAtLeastStreamMin": 57,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 8183,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 807,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 57,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 36,
+  "4": 19
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.271499176313823,
+  "topShare": 0.0753121470111039,
+  "top10Share": 0.3508544884903033,
+  "effectiveNumberExpEntropy": 281.8581195376163,
+  "effectiveNumberInverseSimpson": 55.44240342548502,
+  "unscoredMassBoundRelative": 0.029586027464578148,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 12,
+   "maxWordLogp": -15.645116298712162,
+   "massEstimateRelative": 0.000006979042247528852,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.01134857253949529
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 6,
+   "-17.50": 36,
+   "-17.25": 34,
+   "-17.00": 41,
+   "-16.75": 70,
+   "-16.50": 102,
+   "-16.25": 139,
+   "-16.00": 152,
+   "-15.75": 218,
+   "-15.50": 315,
+   "-15.25": 430,
+   "-15.00": 577,
+   "-14.75": 711,
+   "-14.50": 954,
+   "-14.25": 1149,
+   "-14.00": 1556,
+   "-13.75": 1959,
+   "-13.50": 2467,
+   "-13.25": 2972,
+   "-13.00": 3577,
+   "-12.75": 4160,
+   "-12.50": 4687,
+   "-12.25": 5386,
+   "-12.00": 6137,
+   "-11.75": 6727,
+   "-11.50": 7544,
+   "-11.25": 8397,
+   "-11.00": 9240,
+   "-10.75": 9750,
+   "-10.50": 10580,
+   "-10.25": 11376,
+   "-10.00": 12028,
+   "-9.75": 12430,
+   "-9.50": 12506,
+   "-9.25": 12531,
+   "-9.00": 12328,
+   "-8.75": 12109,
+   "-8.50": 11810,
+   "-8.25": 11400,
+   "-8.00": 10903,
+   "-7.75": 10092,
+   "-7.50": 9448,
+   "-7.25": 8530,
+   "-7.00": 7500,
+   "-6.75": 6498,
+   "-6.50": 5483,
+   "-6.25": 4335,
+   "-6.00": 3360,
+   "-5.75": 2511,
+   "-5.50": 1838,
+   "-5.25": 1378,
+   "-5.00": 900,
+   "-4.75": 598,
+   "-4.50": 412,
+   "-4.25": 296,
+   "-4.00": 188,
+   "-3.75": 113,
+   "-3.50": 65,
+   "-3.25": 22,
+   "-3.00": 18,
+   "-2.75": 2
+  },
+  "exactScored": {
+   "-19.50": 3,
+   "-19.25": 9,
+   "-19.00": 65,
+   "-18.75": 299,
+   "-18.50": 1176,
+   "-18.25": 2916,
+   "-18.00": 5623,
+   "-17.75": 9182,
+   "-17.50": 13156,
+   "-17.25": 16299,
+   "-17.00": 19044,
+   "-16.75": 20291,
+   "-16.50": 20622,
+   "-16.25": 20135,
+   "-16.00": 19093,
+   "-15.75": 17492,
+   "-15.50": 15470,
+   "-15.25": 13521,
+   "-15.00": 12062,
+   "-14.75": 10204,
+   "-14.50": 8588,
+   "-14.25": 7169,
+   "-14.00": 5834,
+   "-13.75": 4844,
+   "-13.50": 3890,
+   "-13.25": 3049,
+   "-13.00": 2289,
+   "-12.75": 1856,
+   "-12.50": 1427,
+   "-12.25": 943,
+   "-12.00": 644,
+   "-11.75": 506,
+   "-11.50": 317,
+   "-11.25": 204,
+   "-11.00": 146,
+   "-10.75": 97,
+   "-10.50": 58,
+   "-10.25": 43,
+   "-10.00": 24,
+   "-9.75": 19,
+   "-9.50": 11,
+   "-9.25": 8,
+   "-9.00": 6,
+   "-8.75": 2,
+   "-8.50": 1
+  },
+  "boundUnscored": {
+   "-17.75": 6,
+   "-17.50": 36,
+   "-17.25": 34,
+   "-17.00": 41,
+   "-16.75": 70,
+   "-16.50": 102,
+   "-16.25": 139,
+   "-16.00": 152,
+   "-15.75": 218,
+   "-15.50": 315,
+   "-15.25": 430,
+   "-15.00": 577,
+   "-14.75": 711,
+   "-14.50": 954,
+   "-14.25": 1149,
+   "-14.00": 1556,
+   "-13.75": 1959,
+   "-13.50": 2467,
+   "-13.25": 2972,
+   "-13.00": 556
+  }
+ },
+ "timeMs": {
+  "total": 3905,
+  "setup": 547
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "STANDARDOFFOF",
+   "wordLogp": -8.3946,
+   "words": "STANDARD OFF OF",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "K": "S",
+    "E": "T",
+    "N": "A",
+    "A": "N",
+    "M": "D",
+    "z": "R",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ABOUTONTERROR",
+   "wordLogp": -8.5005,
+   "words": "ABOUT ON TERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "A",
+    "E": "B",
+    "N": "O",
+    "A": "U",
+    "M": "T",
+    "z": "N",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ABOUTOFTERROR",
+   "wordLogp": -8.6459,
+   "words": "ABOUT OF TERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "A",
+    "E": "B",
+    "N": "O",
+    "A": "U",
+    "M": "T",
+    "z": "F",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "NOTBETHEADDED",
+   "wordLogp": -8.7846,
+   "words": "NOT BE THE ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "N",
+    "E": "O",
+    "N": "T",
+    "A": "B",
+    "M": "E",
+    "z": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ABOUTOFTHEEYE",
+   "wordLogp": -8.7973,
+   "words": "ABOUT OF THE EYE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "A",
+    "E": "B",
+    "N": "O",
+    "A": "U",
+    "M": "T",
+    "z": "F",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "STEPHENHORROR",
+   "wordLogp": -8.8461,
+   "words": "STEPHEN HORROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "S",
+    "E": "T",
+    "N": "E",
+    "A": "P",
+    "M": "H",
+    "z": "N",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "NOTYETHEADDED",
+   "wordLogp": -8.8771,
+   "words": "NOT YET HE ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "N",
+    "E": "O",
+    "N": "T",
+    "A": "Y",
+    "M": "E",
+    "z": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THEUSERSADDED",
+   "wordLogp": -8.9041,
+   "words": "THE USERS ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "T",
+    "E": "H",
+    "N": "E",
+    "A": "U",
+    "M": "S",
+    "z": "R",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "FORMERBEADDED",
+   "wordLogp": -8.9203,
+   "words": "FORMER BE ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "F",
+    "E": "O",
+    "N": "R",
+    "A": "M",
+    "M": "E",
+    "z": "B",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "TWOPROGRESSIS",
+   "wordLogp": -9.0502,
+   "words": "TWO PROGRESS IS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "T",
+    "E": "W",
+    "N": "O",
+    "A": "P",
+    "M": "R",
+    "z": "G",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "NOTYETBEADDED",
+   "wordLogp": -9.0845,
+   "words": "NOT YET BE ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "N",
+    "E": "O",
+    "N": "T",
+    "A": "Y",
+    "M": "E",
+    "z": "B",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "CORNERBEADDED",
+   "wordLogp": -9.0973,
+   "words": "CORNER BE ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "C",
+    "E": "O",
+    "N": "R",
+    "A": "N",
+    "M": "E",
+    "z": "B",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "GREATESTOFFOF",
+   "wordLogp": -9.1195,
+   "words": "GREATEST OFF OF",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "K": "G",
+    "E": "R",
+    "N": "E",
+    "A": "A",
+    "M": "T",
+    "z": "S",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "BUILTINTHEEYE",
+   "wordLogp": -9.1706,
+   "words": "BUILT IN THE EYE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "B",
+    "E": "U",
+    "N": "I",
+    "A": "L",
+    "M": "T",
+    "z": "N",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "WHOPROGRESSIS",
+   "wordLogp": -9.2043,
+   "words": "WHO PROGRESS IS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "W",
+    "E": "H",
+    "N": "O",
+    "A": "P",
+    "M": "R",
+    "z": "G",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "OUTLETBEADDED",
+   "wordLogp": -9.2289,
+   "words": "OUTLET BE ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "O",
+    "E": "U",
+    "N": "T",
+    "A": "L",
+    "M": "E",
+    "z": "B",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "MIGHTGETADDED",
+   "wordLogp": -9.2494,
+   "words": "MIGHT GET ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "M",
+    "E": "I",
+    "N": "G",
+    "A": "H",
+    "M": "T",
+    "z": "E",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ABOUTONTHEEYE",
+   "wordLogp": -9.2728,
+   "words": "ABOUT ON THE EYE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "A",
+    "E": "B",
+    "N": "O",
+    "A": "U",
+    "M": "T",
+    "z": "N",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "BUILTINTERROR",
+   "wordLogp": -9.2739,
+   "words": "BUILT IN TERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "B",
+    "E": "U",
+    "N": "I",
+    "A": "L",
+    "M": "T",
+    "z": "N",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "THEUSEISADDED",
+   "wordLogp": -9.2778,
+   "words": "THE USE IS ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "T",
+    "E": "H",
+    "N": "E",
+    "A": "U",
+    "M": "S",
+    "z": "I",
+    "[": "A"
+   }
+  }
+ ]
+}

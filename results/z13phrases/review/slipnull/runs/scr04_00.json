@@ -1,0 +1,608 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:09:08.627Z",
+ "label": "scr04_00",
+ "cipher": {
+  "id": "scr04",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr04.txt",
+  "text": "0z0[KNN0MEAMA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   0
+  ],
+  "isomorphAfterSlips": "*bacdeeafghfh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 118,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 118,
+  "tasks": 118,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 217425,
+  "scored": 201622,
+  "keptAtLeastStreamMin": 79,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 8115,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 963,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 79,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 15,
+  "4": 64
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.844461886996611,
+  "topShare": 0.31150699948059934,
+  "top10Share": 0.6605331385509996,
+  "effectiveNumberExpEntropy": 45.48252776683116,
+  "effectiveNumberInverseSimpson": 7.412514756477896,
+  "unscoredMassBoundRelative": 0.012108808951410562,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 14,
+   "maxWordLogp": -14.908172126063022,
+   "massEstimateRelative": 0.000010882887898248557,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004021363764958146
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 1,
+   "-17.75": 10,
+   "-17.50": 18,
+   "-17.25": 33,
+   "-17.00": 63,
+   "-16.75": 73,
+   "-16.50": 126,
+   "-16.25": 143,
+   "-16.00": 271,
+   "-15.75": 341,
+   "-15.50": 429,
+   "-15.25": 611,
+   "-15.00": 816,
+   "-14.75": 998,
+   "-14.50": 1167,
+   "-14.25": 1464,
+   "-14.00": 1791,
+   "-13.75": 1948,
+   "-13.50": 2273,
+   "-13.25": 2747,
+   "-13.00": 3209,
+   "-12.75": 3709,
+   "-12.50": 4150,
+   "-12.25": 5079,
+   "-12.00": 5697,
+   "-11.75": 6277,
+   "-11.50": 6647,
+   "-11.25": 7377,
+   "-11.00": 7610,
+   "-10.75": 8221,
+   "-10.50": 8676,
+   "-10.25": 9000,
+   "-10.00": 9059,
+   "-9.75": 9187,
+   "-9.50": 9082,
+   "-9.25": 9059,
+   "-9.00": 9077,
+   "-8.75": 8936,
+   "-8.50": 8796,
+   "-8.25": 8423,
+   "-8.00": 8102,
+   "-7.75": 7580,
+   "-7.50": 6908,
+   "-7.25": 6272,
+   "-7.00": 5760,
+   "-6.75": 4780,
+   "-6.50": 3951,
+   "-6.25": 3265,
+   "-6.00": 2466,
+   "-5.75": 1876,
+   "-5.50": 1300,
+   "-5.25": 959,
+   "-5.00": 631,
+   "-4.75": 398,
+   "-4.50": 208,
+   "-4.25": 158,
+   "-4.00": 105,
+   "-3.75": 53,
+   "-3.50": 32,
+   "-3.25": 12,
+   "-3.00": 13,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-19.00": 7,
+   "-18.75": 102,
+   "-18.50": 632,
+   "-18.25": 1786,
+   "-18.00": 3555,
+   "-17.75": 5593,
+   "-17.50": 8206,
+   "-17.25": 10758,
+   "-17.00": 12774,
+   "-16.75": 13960,
+   "-16.50": 14695,
+   "-16.25": 14661,
+   "-16.00": 14146,
+   "-15.75": 13408,
+   "-15.50": 12899,
+   "-15.25": 11916,
+   "-15.00": 11053,
+   "-14.75": 9839,
+   "-14.50": 8580,
+   "-14.25": 7287,
+   "-14.00": 5930,
+   "-13.75": 4777,
+   "-13.50": 3647,
+   "-13.25": 2918,
+   "-13.00": 2115,
+   "-12.75": 1661,
+   "-12.50": 1358,
+   "-12.25": 1027,
+   "-12.00": 688,
+   "-11.75": 531,
+   "-11.50": 340,
+   "-11.25": 239,
+   "-11.00": 182,
+   "-10.75": 112,
+   "-10.50": 81,
+   "-10.25": 57,
+   "-10.00": 41,
+   "-9.75": 23,
+   "-9.50": 17,
+   "-9.25": 5,
+   "-9.00": 8,
+   "-8.75": 4,
+   "-8.25": 1,
+   "-7.75": 1,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 1,
+   "-17.75": 10,
+   "-17.50": 18,
+   "-17.25": 33,
+   "-17.00": 63,
+   "-16.75": 73,
+   "-16.50": 126,
+   "-16.25": 143,
+   "-16.00": 271,
+   "-15.75": 341,
+   "-15.50": 429,
+   "-15.25": 611,
+   "-15.00": 816,
+   "-14.75": 998,
+   "-14.50": 1167,
+   "-14.25": 1464,
+   "-14.00": 1791,
+   "-13.75": 1948,
+   "-13.50": 2273,
+   "-13.25": 2747,
+   "-13.00": 479
+  }
+ },
+ "timeMs": {
+  "total": 5229,
+  "setup": 548
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "TWENTYYEARSAS",
+   "wordLogp": -7.351,
+   "words": "TWENTY YEARS AS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "W",
+    "[": "N",
+    "K": "T",
+    "N": "Y",
+    "M": "A",
+    "E": "R",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ANDBLOODTESTS",
+   "wordLogp": -7.6011,
+   "words": "AND BLOOD TESTS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "N",
+    "[": "B",
+    "K": "L",
+    "N": "O",
+    "M": "T",
+    "E": "E",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THEBIGGESTASA",
+   "wordLogp": -8.005,
+   "words": "THE BIGGEST AS A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "H",
+    "[": "B",
+    "K": "I",
+    "N": "G",
+    "M": "S",
+    "E": "T",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "ONLYAPPLIESIS",
+   "wordLogp": -8.5235,
+   "words": "ONLY APPLIES IS",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "z": "N",
+    "[": "Y",
+    "K": "A",
+    "N": "P",
+    "M": "I",
+    "E": "E",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "THECURRENTINI",
+   "wordLogp": -8.5689,
+   "words": "THE CURRENT IN I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "H",
+    "[": "C",
+    "K": "U",
+    "N": "R",
+    "M": "N",
+    "E": "T",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ARECALLEDTODO",
+   "wordLogp": -8.5873,
+   "words": "ARE CALLED TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "R",
+    "[": "C",
+    "K": "A",
+    "N": "L",
+    "M": "D",
+    "E": "T",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "WESHALLSIGNIN",
+   "wordLogp": -8.6786,
+   "words": "WE SHALL SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "E",
+    "[": "H",
+    "K": "A",
+    "N": "L",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ITSHALLSIGNIN",
+   "wordLogp": -8.7857,
+   "words": "IT SHALL SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "T",
+    "[": "H",
+    "K": "A",
+    "N": "L",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THECALLEDTODO",
+   "wordLogp": -8.7934,
+   "words": "THE CALLED TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "H",
+    "[": "C",
+    "K": "A",
+    "N": "L",
+    "M": "D",
+    "E": "T",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "OFSMALLSIGNIN",
+   "wordLogp": -8.8626,
+   "words": "OF SMALL SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "F",
+    "[": "M",
+    "K": "A",
+    "N": "L",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "OFSKILLSTHATA",
+   "wordLogp": -8.8845,
+   "words": "OF SKILLS THAT A",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "F",
+    "[": "K",
+    "K": "I",
+    "N": "L",
+    "M": "T",
+    "E": "H",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THECURRENTANA",
+   "wordLogp": -8.9594,
+   "words": "THE CURRENT AN A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "H",
+    "[": "C",
+    "K": "U",
+    "N": "R",
+    "M": "N",
+    "E": "T",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "SEARCHHADTODO",
+   "wordLogp": -8.9662,
+   "words": "SEARCH HAD TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "E",
+    "[": "R",
+    "K": "C",
+    "N": "H",
+    "M": "D",
+    "E": "T",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THEPASSEDTODO",
+   "wordLogp": -8.9797,
+   "words": "THE PASSED TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "H",
+    "[": "P",
+    "K": "A",
+    "N": "S",
+    "M": "D",
+    "E": "T",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "OTHERSSHOWNON",
+   "wordLogp": -8.9873,
+   "words": "OTHERS SHOWN ON",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "z": "T",
+    "[": "E",
+    "K": "R",
+    "N": "S",
+    "M": "O",
+    "E": "W",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "AREPASSEDTODO",
+   "wordLogp": -9.026,
+   "words": "ARE PASSED TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "R",
+    "[": "P",
+    "K": "A",
+    "N": "S",
+    "M": "D",
+    "E": "T",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "HESHALLSIGNIN",
+   "wordLogp": -9.0594,
+   "words": "HE SHALL SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "E",
+    "[": "H",
+    "K": "A",
+    "N": "L",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "OFSHALLSIGNIN",
+   "wordLogp": -9.1149,
+   "words": "OF SHALL SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "F",
+    "[": "H",
+    "K": "A",
+    "N": "L",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "AGENCYYEARSAS",
+   "wordLogp": -9.1492,
+   "words": "AGENCY YEARS AS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "G",
+    "[": "N",
+    "K": "C",
+    "N": "Y",
+    "M": "A",
+    "E": "R",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "TOSMALLSIGNIN",
+   "wordLogp": -9.2135,
+   "words": "TO SMALL SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "O",
+    "[": "M",
+    "K": "A",
+    "N": "L",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  }
+ ]
+}

@@ -1,0 +1,223 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:10:01.875Z",
+ "label": "scr05_06",
+ "cipher": {
+  "id": "scr05",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr05.txt",
+  "text": "00MENAA[M0NzK",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   6
+  ],
+  "isomorphAfterSlips": "aabcde*fbadgh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 4,
+  "tasks": 115,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 115,
+  "tasks": 115,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 4213,
+  "scored": 4162,
+  "keptAtLeastStreamMin": 0,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 510,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 54,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 0,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {},
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.939405090416974,
+  "topShare": null,
+  "top10Share": null,
+  "effectiveNumberExpEntropy": 138.80606803052353,
+  "effectiveNumberInverseSimpson": 54.282904730535904,
+  "unscoredMassBoundRelative": 0.004862675249987064,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0016628642696501442
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-15.75": 3,
+   "-15.50": 1,
+   "-15.00": 2,
+   "-14.75": 1,
+   "-14.50": 4,
+   "-14.25": 8,
+   "-14.00": 8,
+   "-13.75": 6,
+   "-13.50": 8,
+   "-13.25": 8,
+   "-13.00": 17,
+   "-12.75": 27,
+   "-12.50": 16,
+   "-12.25": 36,
+   "-12.00": 58,
+   "-11.75": 59,
+   "-11.50": 68,
+   "-11.25": 80,
+   "-11.00": 69,
+   "-10.75": 97,
+   "-10.50": 86,
+   "-10.25": 125,
+   "-10.00": 140,
+   "-9.75": 147,
+   "-9.50": 164,
+   "-9.25": 200,
+   "-9.00": 178,
+   "-8.75": 211,
+   "-8.50": 214,
+   "-8.25": 195,
+   "-8.00": 176,
+   "-7.75": 200,
+   "-7.50": 150,
+   "-7.25": 126,
+   "-7.00": 139,
+   "-6.75": 129,
+   "-6.50": 153,
+   "-6.25": 144,
+   "-6.00": 110,
+   "-5.75": 140,
+   "-5.50": 106,
+   "-5.25": 110,
+   "-5.00": 93,
+   "-4.75": 83,
+   "-4.50": 47,
+   "-4.25": 32,
+   "-4.00": 18,
+   "-3.75": 12,
+   "-3.50": 4,
+   "-3.25": 2,
+   "-3.00": 2,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-16.75": 4,
+   "-16.50": 2,
+   "-16.25": 23,
+   "-16.00": 73,
+   "-15.75": 192,
+   "-15.50": 313,
+   "-15.25": 394,
+   "-15.00": 437,
+   "-14.75": 389,
+   "-14.50": 394,
+   "-14.25": 408,
+   "-14.00": 325,
+   "-13.75": 257,
+   "-13.50": 238,
+   "-13.25": 187,
+   "-13.00": 143,
+   "-12.75": 118,
+   "-12.50": 88,
+   "-12.25": 45,
+   "-12.00": 42,
+   "-11.75": 30,
+   "-11.50": 18,
+   "-11.25": 16,
+   "-11.00": 11,
+   "-10.75": 8,
+   "-10.50": 5,
+   "-10.25": 2
+  },
+  "boundUnscored": {
+   "-15.75": 3,
+   "-15.50": 1,
+   "-15.00": 2,
+   "-14.75": 1,
+   "-14.50": 4,
+   "-14.25": 8,
+   "-14.00": 8,
+   "-13.75": 6,
+   "-13.50": 8,
+   "-13.25": 8,
+   "-13.00": 2
+  }
+ },
+ "timeMs": {
+  "total": 1210,
+  "setup": 476
+ },
+ "violations": [],
+ "top": []
+}

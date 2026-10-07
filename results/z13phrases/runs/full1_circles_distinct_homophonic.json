@@ -1,0 +1,194 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T14:34:51.594Z",
+ "label": "full1_circles_distinct_homophonic",
+ "cipher": {
+  "id": "z13.circles_distinct",
+  "source": "data/ciphers/variants/z13.circles_distinct.txt",
+  "text": "AENz0K{M}[NAM",
+  "length": 13,
+  "symbols": 10,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcdefghijcah"
+ },
+ "options": {
+  "mode": "homophonic",
+  "topWords": 333333,
+  "wordsUsed": 323973,
+  "maxWords": 1,
+  "vocab": "full",
+  "wordList": "data/lm/words.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -1000000000,
+  "streamMin": -1000000000,
+  "threads": 1,
+  "taskDepth": 2,
+  "tasks": 30,
+  "maxSeconds": 25
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "full",
+  "dist": {
+   "mean": -10.0682,
+   "max": -4.5418,
+   "p5": -14.055,
+   "p10": -12.9851,
+   "p25": -11.4764,
+   "p50": -9.9444,
+   "p75": -8.4039,
+   "p90": -7.2578,
+   "p95": -6.6898,
+   "p99": -6.0523
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 30,
+  "tasks": 30,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 3,
+  "scored": 3,
+  "keptAtLeastStreamMin": 3,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9851,
+    "count": 3,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4764,
+    "count": 3,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.9444,
+    "count": 3,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.4039,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.2578,
+    "count": 2,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6898,
+    "count": 1,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0523,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "1": 3
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.281893623055905,
+  "topShare": 0.6412241044297579,
+  "top10Share": 1,
+  "effectiveNumberExpEntropy": 2.386207116334246,
+  "effectiveNumberInverseSimpson": 2.055248707399683,
+  "unscoredMassBoundRelative": 0,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-7.50": 1,
+   "-7.00": 1,
+   "-6.50": 1
+  },
+  "exactScored": {
+   "-7.50": 1,
+   "-7.00": 1,
+   "-6.50": 1
+  }
+ },
+ "timeMs": {
+  "total": 2909,
+  "setup": 2019
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "SLEEPLESSNESS",
+   "wordLogp": -6.4749,
+   "words": "SLEEPLESSNESS",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "S",
+    "E": "L",
+    "N": "E",
+    "z": "E",
+    "K": "L",
+    "{": "E",
+    "M": "S",
+    "}": "S",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "STEADFASTNESS",
+   "wordLogp": -6.8777,
+   "words": "STEADFASTNESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "A": "S",
+    "E": "T",
+    "N": "E",
+    "z": "A",
+    "K": "F",
+    "{": "A",
+    "M": "S",
+    "}": "T",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "TROUBLESHOOTS",
+   "wordLogp": -7.2602,
+   "words": "TROUBLESHOOTS",
+   "unknown": 0,
+   "key": {
+    "0": "B",
+    "A": "T",
+    "E": "R",
+    "N": "O",
+    "z": "U",
+    "K": "L",
+    "{": "E",
+    "M": "S",
+    "}": "H",
+    "[": "O"
+   }
+  }
+ ]
+}

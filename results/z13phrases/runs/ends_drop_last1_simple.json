@@ -1,0 +1,6482 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T15:55:17.511Z",
+ "label": "ends_drop_last1_simple",
+ "cipher": {
+  "id": "z13.canonical",
+  "source": "data/ciphers/variants/z13.canonical.txt",
+  "text": "AENz0K0M0[NA",
+  "length": 12,
+  "symbols": 8,
+  "range": [
+   0,
+   12
+  ],
+  "slips": [],
+  "isomorphAfterSlips": "abcdefegehca"
+ },
+ "options": {
+  "mode": "simple",
+  "topWords": 60006,
+  "wordsUsed": 58333,
+  "maxWords": 5,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.1913,
+  "streamMin": -10.6155,
+  "threads": 4,
+  "taskDepth": 2,
+  "tasks": 115,
+  "maxSeconds": 551
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 12,
+  "vocab": "common",
+  "dist": {
+   "mean": -9.2353,
+   "max": -4.3479,
+   "p5": -13.2889,
+   "p10": -12.1913,
+   "p25": -10.6155,
+   "p50": -8.9891,
+   "p75": -7.5702,
+   "p90": -6.5656,
+   "p95": -6.1295,
+   "p99": -5.0892
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 115,
+  "tasks": 115,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 41640940,
+  "scored": 7130583,
+  "keptAtLeastStreamMin": 590,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.1913,
+    "count": 6234,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -10.6155,
+    "count": 590,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -8.9891,
+    "count": 43,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -7.5702,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -6.5656,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.1295,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -5.0892,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 11,
+  "3": 10,
+  "4": 22
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.413497619037565,
+  "topShare": 0.21768616795661147,
+  "top10Share": 0.594529213219242,
+  "effectiveNumberExpEntropy": 82.2296703360497,
+  "effectiveNumberInverseSimpson": 14.104796560323487,
+  "unscoredMassBoundRelative": 57.56348393361202,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 34508,
+   "maxWordLogp": -13.022998138364603,
+   "massEstimateRelative": 0.0007602269387361924,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 3.478877472738286
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-25.75": 2,
+   "-25.50": 1,
+   "-25.25": 5,
+   "-25.00": 8,
+   "-24.75": 31,
+   "-24.50": 70,
+   "-24.25": 125,
+   "-24.00": 263,
+   "-23.75": 457,
+   "-23.50": 868,
+   "-23.25": 1616,
+   "-23.00": 2985,
+   "-22.75": 4970,
+   "-22.50": 8446,
+   "-22.25": 13369,
+   "-22.00": 22182,
+   "-21.75": 34494,
+   "-21.50": 52604,
+   "-21.25": 76033,
+   "-21.00": 104669,
+   "-20.75": 142255,
+   "-20.50": 188158,
+   "-20.25": 245702,
+   "-20.00": 313917,
+   "-19.75": 391132,
+   "-19.50": 475068,
+   "-19.25": 564805,
+   "-19.00": 657984,
+   "-18.75": 753125,
+   "-18.50": 849527,
+   "-18.25": 945697,
+   "-18.00": 1039477,
+   "-17.75": 1131698,
+   "-17.50": 1216149,
+   "-17.25": 1288605,
+   "-17.00": 1349090,
+   "-16.75": 1393336,
+   "-16.50": 1427021,
+   "-16.25": 1437505,
+   "-16.00": 1439187,
+   "-15.75": 1426825,
+   "-15.50": 1413160,
+   "-15.25": 1389874,
+   "-15.00": 1362946,
+   "-14.75": 1326228,
+   "-14.50": 1285593,
+   "-14.25": 1243256,
+   "-14.00": 1198017,
+   "-13.75": 1149531,
+   "-13.50": 1100243,
+   "-13.25": 1046723,
+   "-13.00": 992379,
+   "-12.75": 934127,
+   "-12.50": 872413,
+   "-12.25": 810557,
+   "-12.00": 741462,
+   "-11.75": 677052,
+   "-11.50": 610031,
+   "-11.25": 551477,
+   "-11.00": 495642,
+   "-10.75": 444329,
+   "-10.50": 397858,
+   "-10.25": 355115,
+   "-10.00": 314189,
+   "-9.75": 279397,
+   "-9.50": 245056,
+   "-9.25": 214550,
+   "-9.00": 186493,
+   "-8.75": 161413,
+   "-8.50": 140254,
+   "-8.25": 120054,
+   "-8.00": 102879,
+   "-7.75": 86763,
+   "-7.50": 74062,
+   "-7.25": 62703,
+   "-7.00": 52830,
+   "-6.75": 44236,
+   "-6.50": 36683,
+   "-6.25": 30081,
+   "-6.00": 24575,
+   "-5.75": 19197,
+   "-5.50": 14789,
+   "-5.25": 11308,
+   "-5.00": 7915,
+   "-4.75": 5534,
+   "-4.50": 3684,
+   "-4.25": 2259,
+   "-4.00": 1243,
+   "-3.75": 670,
+   "-3.50": 337,
+   "-3.25": 207,
+   "-3.00": 70,
+   "-2.75": 23,
+   "-2.50": 10,
+   "-2.25": 2
+  },
+  "exactScored": {
+   "-23.00": 5,
+   "-22.75": 9,
+   "-22.50": 41,
+   "-22.25": 118,
+   "-22.00": 270,
+   "-21.75": 667,
+   "-21.50": 1392,
+   "-21.25": 2853,
+   "-21.00": 5983,
+   "-20.75": 11711,
+   "-20.50": 22086,
+   "-20.25": 39600,
+   "-20.00": 65908,
+   "-19.75": 105036,
+   "-19.50": 161523,
+   "-19.25": 235602,
+   "-19.00": 334152,
+   "-18.75": 443117,
+   "-18.50": 545766,
+   "-18.25": 617380,
+   "-18.00": 653013,
+   "-17.75": 630161,
+   "-17.50": 582921,
+   "-17.25": 510755,
+   "-17.00": 434995,
+   "-16.75": 361072,
+   "-16.50": 296944,
+   "-16.25": 241116,
+   "-16.00": 192892,
+   "-15.75": 152208,
+   "-15.50": 118937,
+   "-15.25": 91566,
+   "-15.00": 70264,
+   "-14.75": 52888,
+   "-14.50": 40104,
+   "-14.25": 29503,
+   "-14.00": 21723,
+   "-13.75": 16087,
+   "-13.50": 11739,
+   "-13.25": 8389,
+   "-13.00": 6077,
+   "-12.75": 4201,
+   "-12.50": 2991,
+   "-12.25": 2132,
+   "-12.00": 1391,
+   "-11.75": 1039,
+   "-11.50": 729,
+   "-11.25": 487,
+   "-11.00": 328,
+   "-10.75": 229,
+   "-10.50": 150,
+   "-10.25": 118,
+   "-10.00": 69,
+   "-9.75": 51,
+   "-9.50": 37,
+   "-9.25": 15,
+   "-9.00": 19,
+   "-8.75": 10,
+   "-8.50": 4,
+   "-8.25": 4,
+   "-8.00": 1,
+   "-7.75": 3,
+   "-7.50": 1,
+   "-7.25": 1
+  },
+  "boundUnscored": {
+   "-25.75": 2,
+   "-25.50": 1,
+   "-25.25": 5,
+   "-25.00": 8,
+   "-24.75": 31,
+   "-24.50": 70,
+   "-24.25": 125,
+   "-24.00": 263,
+   "-23.75": 457,
+   "-23.50": 868,
+   "-23.25": 1616,
+   "-23.00": 2985,
+   "-22.75": 4970,
+   "-22.50": 8446,
+   "-22.25": 13369,
+   "-22.00": 22182,
+   "-21.75": 34494,
+   "-21.50": 52604,
+   "-21.25": 76033,
+   "-21.00": 104669,
+   "-20.75": 142255,
+   "-20.50": 188158,
+   "-20.25": 245702,
+   "-20.00": 313917,
+   "-19.75": 391132,
+   "-19.50": 475068,
+   "-19.25": 564805,
+   "-19.00": 657984,
+   "-18.75": 753125,
+   "-18.50": 849527,
+   "-18.25": 945697,
+   "-18.00": 1039477,
+   "-17.75": 1131698,
+   "-17.50": 1216149,
+   "-17.25": 1288605,
+   "-17.00": 1349090,
+   "-16.75": 1393336,
+   "-16.50": 1427021,
+   "-16.25": 1437505,
+   "-16.00": 1439187,
+   "-15.75": 1426825,
+   "-15.50": 1413160,
+   "-15.25": 1389874,
+   "-15.00": 1362946,
+   "-14.75": 1326228,
+   "-14.50": 1285593,
+   "-14.25": 1243256,
+   "-14.00": 1198017,
+   "-13.75": 1149531,
+   "-13.50": 1100243,
+   "-13.25": 1046723,
+   "-13.00": 992379,
+   "-12.75": 934127,
+   "-12.50": 872413,
+   "-12.25": 196406
+  }
+ },
+ "timeMs": {
+  "total": 451911,
+  "setup": 355
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "THOSEWERENOT",
+   "wordLogp": -7.0757,
+   "words": "THOSE WERE NOT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "H",
+    "N": "O",
+    "z": "S",
+    "K": "W",
+    "M": "R",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "PHONEDEVELOP",
+   "wordLogp": -7.3958,
+   "words": "PHONE DEVELOP",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "E": "H",
+    "N": "O",
+    "z": "N",
+    "K": "D",
+    "M": "V",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "OFTHESENEWTO",
+   "wordLogp": -7.626,
+   "words": "OF THESE NEW TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "N",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "ADEFINITIVEA",
+   "wordLogp": -7.7087,
+   "words": "A DEFINITIVE A",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "A",
+    "E": "D",
+    "N": "E",
+    "z": "F",
+    "K": "N",
+    "M": "T",
+    "[": "V"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "OFTHESEVENTO",
+   "wordLogp": -7.7279,
+   "words": "OF THE SEVEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "OFTHENEVERTO",
+   "wordLogp": -7.9369,
+   "words": "OF THE NEVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "N",
+    "M": "V",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "FRONTSTATEOF",
+   "wordLogp": -8.0095,
+   "words": "FRONT STATE OF",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "N",
+    "K": "S",
+    "M": "A",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "OFTHESEMENTO",
+   "wordLogp": -8.0203,
+   "words": "OF THESE MEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "OFTHESEKEYTO",
+   "wordLogp": -8.1729,
+   "words": "OF THESE KEY TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "K",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THECANADAGET",
+   "wordLogp": -8.2441,
+   "words": "THE CANADA GET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "OFTHENEWERTO",
+   "wordLogp": -8.2723,
+   "words": "OF THE NEWER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "N",
+    "M": "W",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "OFTHEGENESTO",
+   "wordLogp": -8.2779,
+   "words": "OF THE GENES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "G",
+    "M": "N",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "SCRIPTPAPERS",
+   "wordLogp": -8.3508,
+   "words": "SCRIPT PAPERS",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "S",
+    "E": "C",
+    "N": "R",
+    "z": "I",
+    "K": "T",
+    "M": "A",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "OFTHESEWEBTO",
+   "wordLogp": -8.4009,
+   "words": "OF THESE WEB TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "W",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THECANADASET",
+   "wordLogp": -8.5304,
+   "words": "THE CANADA SET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ANDWEREHELDA",
+   "wordLogp": -8.5513,
+   "words": "AND WERE HELD A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "N",
+    "N": "D",
+    "z": "W",
+    "K": "R",
+    "M": "H",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "SINCEHEMEANS",
+   "wordLogp": -8.6116,
+   "words": "SINCE HE MEANS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "I",
+    "N": "N",
+    "z": "C",
+    "K": "H",
+    "M": "M",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SUPREMEHELPS",
+   "wordLogp": -8.6554,
+   "words": "SUPREME HELPS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "U",
+    "N": "P",
+    "z": "R",
+    "K": "M",
+    "M": "H",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "OFTHEREBELTO",
+   "wordLogp": -8.6858,
+   "words": "OF THE REBEL TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "B",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "AGENTSTOTHEA",
+   "wordLogp": -8.6992,
+   "words": "AGENTS TO THE A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "A",
+    "E": "G",
+    "N": "E",
+    "z": "N",
+    "K": "S",
+    "M": "O",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 21,
+   "plaintext": "OFTHEMEVENTO",
+   "wordLogp": -8.7271,
+   "words": "OF THEM EVEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "M",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 22,
+   "plaintext": "ASTHERECENTA",
+   "wordLogp": -8.7317,
+   "words": "AS THE RECENT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "S",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "C",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 23,
+   "plaintext": "CRIMEGENETIC",
+   "wordLogp": -8.7456,
+   "words": "CRIME GENETIC",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "C",
+    "E": "R",
+    "N": "I",
+    "z": "M",
+    "K": "G",
+    "M": "N",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 24,
+   "plaintext": "OFTHELEVERTO",
+   "wordLogp": -8.7495,
+   "words": "OF THE LEVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "L",
+    "M": "V",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 25,
+   "plaintext": "OFTHESEWERTO",
+   "wordLogp": -8.7551,
+   "words": "OF THE SEWER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "W",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 26,
+   "plaintext": "INTHEDESERTI",
+   "wordLogp": -8.7652,
+   "words": "IN THE DESERT I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 27,
+   "plaintext": "SOTHEYEVENTS",
+   "wordLogp": -8.7893,
+   "words": "SO THEY EVENTS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "O",
+    "N": "T",
+    "z": "H",
+    "K": "Y",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 28,
+   "plaintext": "PROBEDEVELOP",
+   "wordLogp": -8.7893,
+   "words": "PROBE DEVELOP",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "E": "R",
+    "N": "O",
+    "z": "B",
+    "K": "D",
+    "M": "V",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 29,
+   "plaintext": "TWICEBENEFIT",
+   "wordLogp": -8.8024,
+   "words": "TWICE BENEFIT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "W",
+    "N": "I",
+    "z": "C",
+    "K": "B",
+    "M": "N",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 30,
+   "plaintext": "SUNCIVILIANS",
+   "wordLogp": -8.8498,
+   "words": "SUN CIVILIANS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "S",
+    "E": "U",
+    "N": "N",
+    "z": "C",
+    "K": "V",
+    "M": "L",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 31,
+   "plaintext": "INTHESELECTI",
+   "wordLogp": -8.8542,
+   "words": "IN THE SELECT I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "L",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 32,
+   "plaintext": "OFTHESELEDTO",
+   "wordLogp": -8.86,
+   "words": "OF THESE LED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "L",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 33,
+   "plaintext": "THECANADALET",
+   "wordLogp": -8.8711,
+   "words": "THE CANADA LET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 34,
+   "plaintext": "CHILEGENERIC",
+   "wordLogp": -8.9069,
+   "words": "CHILE GENERIC",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "C",
+    "E": "H",
+    "N": "I",
+    "z": "L",
+    "K": "G",
+    "M": "N",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 35,
+   "plaintext": "FAILEDEVENIF",
+   "wordLogp": -8.9214,
+   "words": "FAILED EVEN IF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "F",
+    "E": "A",
+    "N": "I",
+    "z": "L",
+    "K": "D",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 36,
+   "plaintext": "OFTHEJEWELTO",
+   "wordLogp": -8.9241,
+   "words": "OF THE JEWEL TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "J",
+    "M": "W",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 37,
+   "plaintext": "THECANADAYET",
+   "wordLogp": -8.9361,
+   "words": "THE CANADA YET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 38,
+   "plaintext": "DIEGOCOLORED",
+   "wordLogp": -8.9534,
+   "words": "DIEGO COLORED",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "D",
+    "E": "I",
+    "N": "E",
+    "z": "G",
+    "K": "C",
+    "M": "L",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 39,
+   "plaintext": "ABILENEMEDIA",
+   "wordLogp": -8.9544,
+   "words": "ABILENE MEDIA",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "B",
+    "N": "I",
+    "z": "L",
+    "K": "N",
+    "M": "M",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 40,
+   "plaintext": "SOURCECACTUS",
+   "wordLogp": -8.9615,
+   "words": "SOURCE CACTUS",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "A": "S",
+    "E": "O",
+    "N": "U",
+    "z": "R",
+    "K": "E",
+    "M": "A",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 41,
+   "plaintext": "ANTHESELECTA",
+   "wordLogp": -8.9743,
+   "words": "AN THE SELECT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "L",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 42,
+   "plaintext": "AMTHESELECTA",
+   "wordLogp": -8.9812,
+   "words": "AM THE SELECT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "M",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "L",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 43,
+   "plaintext": "ISTHERECENTI",
+   "wordLogp": -8.9875,
+   "words": "IS THE RECENT I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "S",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "C",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 44,
+   "plaintext": "ABOVEHERETOA",
+   "wordLogp": -9.0169,
+   "words": "ABOVE HERE TO A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "B",
+    "N": "O",
+    "z": "V",
+    "K": "H",
+    "M": "R",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 45,
+   "plaintext": "ONTHESEKEYTO",
+   "wordLogp": -9.0685,
+   "words": "ON THESE KEY TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "K",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 46,
+   "plaintext": "SINCEREMEANS",
+   "wordLogp": -9.104,
+   "words": "SINCERE MEANS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "I",
+    "N": "N",
+    "z": "C",
+    "K": "R",
+    "M": "M",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 47,
+   "plaintext": "CHILEGENETIC",
+   "wordLogp": -9.1077,
+   "words": "CHILE GENETIC",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "C",
+    "E": "H",
+    "N": "I",
+    "z": "L",
+    "K": "G",
+    "M": "N",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 48,
+   "plaintext": "ALERTSTOTHEA",
+   "wordLogp": -9.1091,
+   "words": "ALERTS TO THE A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "A",
+    "E": "L",
+    "N": "E",
+    "z": "R",
+    "K": "S",
+    "M": "O",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 49,
+   "plaintext": "OFTHEMEVERTO",
+   "wordLogp": -9.1376,
+   "words": "OF THEM EVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "M",
+    "M": "V",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 50,
+   "plaintext": "OFTENINANDTO",
+   "wordLogp": -9.1573,
+   "words": "OFTEN IN AND TO",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "E",
+    "K": "I",
+    "M": "A",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 51,
+   "plaintext": "ORTHESEVENTO",
+   "wordLogp": -9.165,
+   "words": "OR THE SEVEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "R",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 52,
+   "plaintext": "DUETOCOLORED",
+   "wordLogp": -9.1722,
+   "words": "DUE TO COLORED",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "D",
+    "E": "U",
+    "N": "E",
+    "z": "T",
+    "K": "C",
+    "M": "L",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 53,
+   "plaintext": "SOTHEDEFECTS",
+   "wordLogp": -9.1971,
+   "words": "SO THE DEFECTS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "O",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "F",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 54,
+   "plaintext": "SPACEHEREWAS",
+   "wordLogp": -9.2012,
+   "words": "SPACE HERE WAS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "P",
+    "N": "A",
+    "z": "C",
+    "K": "H",
+    "M": "R",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 55,
+   "plaintext": "SHEJAVAGAMES",
+   "wordLogp": -9.2015,
+   "words": "SHE JAVA GAMES",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "S",
+    "E": "H",
+    "N": "E",
+    "z": "J",
+    "K": "V",
+    "M": "G",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 56,
+   "plaintext": "ONTHEREBELTO",
+   "wordLogp": -9.2017,
+   "words": "ON THE REBEL TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "B",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 57,
+   "plaintext": "SELFINITIALS",
+   "wordLogp": -9.2116,
+   "words": "SELF INITIALS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "S",
+    "E": "E",
+    "N": "L",
+    "z": "F",
+    "K": "N",
+    "M": "T",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 58,
+   "plaintext": "PROSEDEVELOP",
+   "wordLogp": -9.2488,
+   "words": "PROSE DEVELOP",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "E": "R",
+    "N": "O",
+    "z": "S",
+    "K": "D",
+    "M": "V",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 59,
+   "plaintext": "FROMELEVENOF",
+   "wordLogp": -9.2614,
+   "words": "FROM ELEVEN OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "M",
+    "K": "L",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 60,
+   "plaintext": "ONTHELEVERTO",
+   "wordLogp": -9.2654,
+   "words": "ON THE LEVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "L",
+    "M": "V",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 61,
+   "plaintext": "ONTHESEWERTO",
+   "wordLogp": -9.271,
+   "words": "ON THE SEWER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "W",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 62,
+   "plaintext": "OUTHEREYESTO",
+   "wordLogp": -9.2861,
+   "words": "OUT HER EYES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "U",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "Y",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 63,
+   "plaintext": "DOESAMANAGED",
+   "wordLogp": -9.2932,
+   "words": "DOES A MANAGED",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "D",
+    "E": "O",
+    "N": "E",
+    "z": "S",
+    "K": "M",
+    "M": "N",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 64,
+   "plaintext": "ONTHESEWEBTO",
+   "wordLogp": -9.2965,
+   "words": "ON THESE WEB TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "W",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 65,
+   "plaintext": "DIEGOHONORED",
+   "wordLogp": -9.3026,
+   "words": "DIEGO HONORED",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "D",
+    "E": "I",
+    "N": "E",
+    "z": "G",
+    "K": "H",
+    "M": "N",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 66,
+   "plaintext": "SONCIVILIANS",
+   "wordLogp": -9.3052,
+   "words": "SON CIVILIANS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "S",
+    "E": "O",
+    "N": "N",
+    "z": "C",
+    "K": "V",
+    "M": "L",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 67,
+   "plaintext": "OFTHEKEYEDTO",
+   "wordLogp": -9.3109,
+   "words": "OF THE KEYED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "K",
+    "M": "Y",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 68,
+   "plaintext": "ONTHEFEVERTO",
+   "wordLogp": -9.326,
+   "words": "ON THE FEVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "F",
+    "M": "V",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 69,
+   "plaintext": "SAINTETOTHIS",
+   "wordLogp": -9.3333,
+   "words": "SAINTE TO THIS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "A",
+    "N": "I",
+    "z": "N",
+    "K": "E",
+    "M": "O",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 70,
+   "plaintext": "OFTHESEDECTO",
+   "wordLogp": -9.3374,
+   "words": "OF THESE DEC TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "D",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 71,
+   "plaintext": "OFTHEMEYERTO",
+   "wordLogp": -9.3447,
+   "words": "OF THE MEYER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "M",
+    "M": "Y",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 72,
+   "plaintext": "OFTHEBELEDTO",
+   "wordLogp": -9.3533,
+   "words": "OF THE BE LED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "B",
+    "M": "L",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 73,
+   "plaintext": "ANDGOTOHOLDA",
+   "wordLogp": -9.3657,
+   "words": "AND GO TO HOLD A",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "A",
+    "E": "N",
+    "N": "D",
+    "z": "G",
+    "K": "T",
+    "M": "H",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 74,
+   "plaintext": "THEANDNONGET",
+   "wordLogp": -9.3676,
+   "words": "THE AND NON GET",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "A",
+    "K": "D",
+    "M": "O",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 75,
+   "plaintext": "THECANADAPET",
+   "wordLogp": -9.3691,
+   "words": "THE CANADA PET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 76,
+   "plaintext": "SITUELEMENTS",
+   "wordLogp": -9.3764,
+   "words": "SITU ELEMENTS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "I",
+    "N": "T",
+    "z": "U",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 77,
+   "plaintext": "OFTHEWEBERTO",
+   "wordLogp": -9.3805,
+   "words": "OF THE WEBER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "W",
+    "M": "B",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 78,
+   "plaintext": "OFTHESEREDTO",
+   "wordLogp": -9.3913,
+   "words": "OF THESE RED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "R",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 79,
+   "plaintext": "OFTHERENEWTO",
+   "wordLogp": -9.3921,
+   "words": "OF THE RENEW TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "N",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 80,
+   "plaintext": "FROMITISINOF",
+   "wordLogp": -9.3938,
+   "words": "FROM IT IS IN OF",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "M",
+    "K": "T",
+    "M": "S",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 81,
+   "plaintext": "THECANADAMET",
+   "wordLogp": -9.401,
+   "words": "THE CANADA MET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 82,
+   "plaintext": "ONTHEFEWERTO",
+   "wordLogp": -9.422,
+   "words": "ON THE FEWER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "F",
+    "M": "W",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 83,
+   "plaintext": "FLOWEREYESOF",
+   "wordLogp": -9.4246,
+   "words": "FLOWER EYES OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "F",
+    "E": "L",
+    "N": "O",
+    "z": "W",
+    "K": "R",
+    "M": "Y",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 84,
+   "plaintext": "THEPANAMAGET",
+   "wordLogp": -9.4257,
+   "words": "THE PANAMA GET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "P",
+    "K": "N",
+    "M": "M",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 85,
+   "plaintext": "OKINAWARADIO",
+   "wordLogp": -9.4258,
+   "words": "OKINAWA RADIO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "O",
+    "E": "K",
+    "N": "I",
+    "z": "N",
+    "K": "W",
+    "M": "R",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 86,
+   "plaintext": "IFTHERECENTI",
+   "wordLogp": -9.4356,
+   "words": "IF THE RECENT I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "C",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 87,
+   "plaintext": "SINCEWEMEANS",
+   "wordLogp": -9.4383,
+   "words": "SINCE WE MEANS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "I",
+    "N": "N",
+    "z": "C",
+    "K": "W",
+    "M": "M",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 88,
+   "plaintext": "ONTHEJEWELTO",
+   "wordLogp": -9.44,
+   "words": "ON THE JEWEL TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "J",
+    "M": "W",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 89,
+   "plaintext": "THEBIKINIGET",
+   "wordLogp": -9.4423,
+   "words": "THE BIKINI GET",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "B",
+    "K": "K",
+    "M": "N",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 90,
+   "plaintext": "AGENTSTITLEA",
+   "wordLogp": -9.4468,
+   "words": "AGENTS TITLE A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "A",
+    "E": "G",
+    "N": "E",
+    "z": "N",
+    "K": "S",
+    "M": "I",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 91,
+   "plaintext": "OFTHEDEWEYTO",
+   "wordLogp": -9.4472,
+   "words": "OF THE DEWEY TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "W",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 92,
+   "plaintext": "OFTHEWEREATO",
+   "wordLogp": -9.4495,
+   "words": "OF THE WERE A TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "W",
+    "M": "R",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 93,
+   "plaintext": "OFTHEYEVENTO",
+   "wordLogp": -9.4537,
+   "words": "OF THEY EVEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "Y",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 94,
+   "plaintext": "OFTHEYEVERTO",
+   "wordLogp": -9.4697,
+   "words": "OF THEY EVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "Y",
+    "M": "V",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 95,
+   "plaintext": "AUDIOTOHOLDA",
+   "wordLogp": -9.4848,
+   "words": "AUDIO TO HOLD A",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "A",
+    "E": "U",
+    "N": "D",
+    "z": "I",
+    "K": "T",
+    "M": "H",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 96,
+   "plaintext": "YOUCANADABUY",
+   "wordLogp": -9.5055,
+   "words": "YOU CANADA BUY",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "Y",
+    "E": "O",
+    "N": "U",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 97,
+   "plaintext": "TRAVELEYESAT",
+   "wordLogp": -9.5161,
+   "words": "TRAVEL EYES AT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "R",
+    "N": "A",
+    "z": "V",
+    "K": "L",
+    "M": "Y",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 98,
+   "plaintext": "READISIMILAR",
+   "wordLogp": -9.5163,
+   "words": "READ I SIMILAR",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "R",
+    "E": "E",
+    "N": "A",
+    "z": "D",
+    "K": "S",
+    "M": "M",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 99,
+   "plaintext": "SEARCHCOCKAS",
+   "wordLogp": -9.5184,
+   "words": "SEARCH COCK AS",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "A": "S",
+    "E": "E",
+    "N": "A",
+    "z": "R",
+    "K": "H",
+    "M": "O",
+    "[": "K"
+   }
+  },
+  {
+   "rank": 100,
+   "plaintext": "FROMASAWAYOF",
+   "wordLogp": -9.5204,
+   "words": "FROM AS A WAY OF",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "M",
+    "K": "S",
+    "M": "W",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 101,
+   "plaintext": "DUETOHONORED",
+   "wordLogp": -9.5215,
+   "words": "DUE TO HONORED",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "D",
+    "E": "U",
+    "N": "E",
+    "z": "T",
+    "K": "H",
+    "M": "N",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 102,
+   "plaintext": "ALONEHERETOA",
+   "wordLogp": -9.5215,
+   "words": "ALONE HERE TO A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "L",
+    "N": "O",
+    "z": "N",
+    "K": "H",
+    "M": "R",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 103,
+   "plaintext": "ORTHESENEWTO",
+   "wordLogp": -9.5264,
+   "words": "OR THESE NEW TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "R",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "N",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 104,
+   "plaintext": "INTHEDEFECTI",
+   "wordLogp": -9.5299,
+   "words": "IN THE DEFECT I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "F",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 105,
+   "plaintext": "ONTHEDEFERTO",
+   "wordLogp": -9.5338,
+   "words": "ON THE DEFER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "F",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 106,
+   "plaintext": "YOUDELETEBUY",
+   "wordLogp": -9.5429,
+   "words": "YOU DELETE BUY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "Y",
+    "E": "O",
+    "N": "U",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 107,
+   "plaintext": "INTHEDEFEATI",
+   "wordLogp": -9.5467,
+   "words": "IN THE DEFEAT I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "F",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 108,
+   "plaintext": "OFTHANAWAYTO",
+   "wordLogp": -9.552,
+   "words": "OF THAN A WAY TO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "N",
+    "M": "W",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 109,
+   "plaintext": "ADOBEHERETOA",
+   "wordLogp": -9.5546,
+   "words": "ADOBE HERE TO A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "D",
+    "N": "O",
+    "z": "B",
+    "K": "H",
+    "M": "R",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 110,
+   "plaintext": "STAGEHEREWAS",
+   "wordLogp": -9.5611,
+   "words": "STAGE HERE WAS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "T",
+    "N": "A",
+    "z": "G",
+    "K": "H",
+    "M": "R",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 111,
+   "plaintext": "OFTHESEPERTO",
+   "wordLogp": -9.5632,
+   "words": "OF THESE PER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "P",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 112,
+   "plaintext": "PRONEDEVELOP",
+   "wordLogp": -9.5695,
+   "words": "PRONE DEVELOP",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "E": "R",
+    "N": "O",
+    "z": "N",
+    "K": "D",
+    "M": "V",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 113,
+   "plaintext": "TOUSEHEREBUT",
+   "wordLogp": -9.5785,
+   "words": "TO USE HERE BUT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "O",
+    "N": "U",
+    "z": "S",
+    "K": "H",
+    "M": "R",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 114,
+   "plaintext": "SENDTOTITANS",
+   "wordLogp": -9.5801,
+   "words": "SEND TO TITANS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "E",
+    "N": "N",
+    "z": "D",
+    "K": "O",
+    "M": "I",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 115,
+   "plaintext": "ABOVEWERETOA",
+   "wordLogp": -9.5823,
+   "words": "ABOVE WERE TO A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "B",
+    "N": "O",
+    "z": "V",
+    "K": "W",
+    "M": "R",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 116,
+   "plaintext": "SCALEHEREWAS",
+   "wordLogp": -9.5825,
+   "words": "SCALE HERE WAS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "C",
+    "N": "A",
+    "z": "L",
+    "K": "H",
+    "M": "R",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 117,
+   "plaintext": "INTHEREPEATI",
+   "wordLogp": -9.5978,
+   "words": "IN THE REPEAT I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "P",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 118,
+   "plaintext": "ROADISIMILAR",
+   "wordLogp": -9.6036,
+   "words": "ROAD I SIMILAR",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "R",
+    "E": "O",
+    "N": "A",
+    "z": "D",
+    "K": "S",
+    "M": "M",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 119,
+   "plaintext": "FROMAJAPANOF",
+   "wordLogp": -9.6117,
+   "words": "FROM A JAPAN OF",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "M",
+    "K": "J",
+    "M": "P",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 120,
+   "plaintext": "LOANIDIGITAL",
+   "wordLogp": -9.6163,
+   "words": "LOAN I DIGITAL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "L",
+    "E": "O",
+    "N": "A",
+    "z": "N",
+    "K": "D",
+    "M": "G",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 121,
+   "plaintext": "SHAREDEVENAS",
+   "wordLogp": -9.6191,
+   "words": "SHARED EVEN AS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "H",
+    "N": "A",
+    "z": "R",
+    "K": "D",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 122,
+   "plaintext": "OFTHEPEREZTO",
+   "wordLogp": -9.6205,
+   "words": "OF THE PEREZ TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "P",
+    "M": "R",
+    "[": "Z"
+   }
+  },
+  {
+   "rank": 123,
+   "plaintext": "PROWEDEVELOP",
+   "wordLogp": -9.6238,
+   "words": "PRO WE DEVELOP",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "E": "R",
+    "N": "O",
+    "z": "W",
+    "K": "D",
+    "M": "V",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 124,
+   "plaintext": "FLOWEREVENOF",
+   "wordLogp": -9.6291,
+   "words": "FLOWER EVEN OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "F",
+    "E": "L",
+    "N": "O",
+    "z": "W",
+    "K": "R",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 125,
+   "plaintext": "CLIVEGENERIC",
+   "wordLogp": -9.6322,
+   "words": "CLIVE GENERIC",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "C",
+    "E": "L",
+    "N": "I",
+    "z": "V",
+    "K": "G",
+    "M": "N",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 126,
+   "plaintext": "THISNONANDIT",
+   "wordLogp": -9.6359,
+   "words": "THIS NON AND IT",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "T",
+    "E": "H",
+    "N": "I",
+    "z": "S",
+    "K": "O",
+    "M": "A",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 127,
+   "plaintext": "AUGVISITINGA",
+   "wordLogp": -9.6372,
+   "words": "AUG VISITING A",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "A",
+    "E": "U",
+    "N": "G",
+    "z": "V",
+    "K": "S",
+    "M": "T",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 128,
+   "plaintext": "FROMASADAYOF",
+   "wordLogp": -9.6392,
+   "words": "FROM AS A DAY OF",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "M",
+    "K": "S",
+    "M": "D",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 129,
+   "plaintext": "THECANADAWET",
+   "wordLogp": -9.6479,
+   "words": "THE CANADA WET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 130,
+   "plaintext": "THEANDNONSET",
+   "wordLogp": -9.6538,
+   "words": "THE AND NON SET",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "A",
+    "K": "D",
+    "M": "O",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 131,
+   "plaintext": "HITSELEVENTH",
+   "wordLogp": -9.6876,
+   "words": "HITS ELEVENTH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "H",
+    "E": "I",
+    "N": "T",
+    "z": "S",
+    "K": "L",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 132,
+   "plaintext": "PLACEHEREMAP",
+   "wordLogp": -9.6896,
+   "words": "PLACE HERE MAP",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "E": "L",
+    "N": "A",
+    "z": "C",
+    "K": "H",
+    "M": "R",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 133,
+   "plaintext": "CHINESEMEDIC",
+   "wordLogp": -9.6918,
+   "words": "CHINESE MEDIC",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "C",
+    "E": "H",
+    "N": "I",
+    "z": "N",
+    "K": "S",
+    "M": "M",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 134,
+   "plaintext": "IFTHENEWESTI",
+   "wordLogp": -9.6962,
+   "words": "IF THE NEWEST I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "N",
+    "M": "W",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 135,
+   "plaintext": "AMTHERECENTA",
+   "wordLogp": -9.6985,
+   "words": "AM THE RECENT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "M",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "C",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 136,
+   "plaintext": "OFTHESEWEDTO",
+   "wordLogp": -9.7011,
+   "words": "OF THESE WED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "W",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 137,
+   "plaintext": "THEPANAMASET",
+   "wordLogp": -9.712,
+   "words": "THE PANAMA SET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "P",
+    "K": "N",
+    "M": "M",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 138,
+   "plaintext": "INTHEFEWESTI",
+   "wordLogp": -9.7135,
+   "words": "IN THE FEWEST I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "F",
+    "M": "W",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 139,
+   "plaintext": "SOTHEREVENTS",
+   "wordLogp": -9.7142,
+   "words": "S OTHER EVENTS",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "O",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 140,
+   "plaintext": "OFTENINANYTO",
+   "wordLogp": -9.7143,
+   "words": "OFTEN IN ANY TO",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "E",
+    "K": "I",
+    "M": "A",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 141,
+   "plaintext": "GUNWEREBEING",
+   "wordLogp": -9.7144,
+   "words": "GUN WERE BEING",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "G",
+    "E": "U",
+    "N": "N",
+    "z": "W",
+    "K": "R",
+    "M": "B",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 142,
+   "plaintext": "ORTHEGENESTO",
+   "wordLogp": -9.7149,
+   "words": "OR THE GENES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "R",
+    "N": "T",
+    "z": "H",
+    "K": "G",
+    "M": "N",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 143,
+   "plaintext": "OUTBAHAMASTO",
+   "wordLogp": -9.7283,
+   "words": "OUT BAHAMAS TO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "O",
+    "E": "U",
+    "N": "T",
+    "z": "B",
+    "K": "H",
+    "M": "M",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 144,
+   "plaintext": "THEBIKINISET",
+   "wordLogp": -9.7286,
+   "words": "THE BIKINI SET",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "B",
+    "K": "K",
+    "M": "N",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 145,
+   "plaintext": "ORTHEYEVENTO",
+   "wordLogp": -9.7291,
+   "words": "OR THEY EVEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "R",
+    "N": "T",
+    "z": "H",
+    "K": "Y",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 146,
+   "plaintext": "OFTHESEBEDTO",
+   "wordLogp": -9.7457,
+   "words": "OF THESE BED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "B",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 147,
+   "plaintext": "ONTHESELEDTO",
+   "wordLogp": -9.7556,
+   "words": "ON THESE LED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "L",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 148,
+   "plaintext": "SATOELEMENTS",
+   "wordLogp": -9.7561,
+   "words": "SATO ELEMENTS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "A",
+    "N": "T",
+    "z": "O",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 149,
+   "plaintext": "CHINESERELIC",
+   "wordLogp": -9.7656,
+   "words": "CHINESE RELIC",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "C",
+    "E": "H",
+    "N": "I",
+    "z": "N",
+    "K": "S",
+    "M": "R",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 150,
+   "plaintext": "SHELBYBABIES",
+   "wordLogp": -9.7704,
+   "words": "SHELBY BABIES",
+   "unknown": 0,
+   "key": {
+    "0": "B",
+    "A": "S",
+    "E": "H",
+    "N": "E",
+    "z": "L",
+    "K": "Y",
+    "M": "A",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 151,
+   "plaintext": "OFTHEBENEWTO",
+   "wordLogp": -9.7749,
+   "words": "OF THE BE NEW TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "B",
+    "M": "N",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 152,
+   "plaintext": "OFTHERECENTO",
+   "wordLogp": -9.782,
+   "words": "OF THE RECENT O",
+   "unknown": 1,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "C",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 153,
+   "plaintext": "ACTIONOFOUTA",
+   "wordLogp": -9.7985,
+   "words": "ACTION OF OUT A",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "A",
+    "E": "C",
+    "N": "T",
+    "z": "I",
+    "K": "N",
+    "M": "F",
+    "[": "U"
+   }
+  },
+  {
+   "rank": 154,
+   "plaintext": "THECANADAJET",
+   "wordLogp": -9.8046,
+   "words": "THE CANADA JET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "J"
+   }
+  },
+  {
+   "rank": 155,
+   "plaintext": "ANYCEMETERYA",
+   "wordLogp": -9.8142,
+   "words": "ANY CEMETERY A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "N",
+    "N": "Y",
+    "z": "C",
+    "K": "M",
+    "M": "T",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 156,
+   "plaintext": "SOTHEREPEATS",
+   "wordLogp": -9.8182,
+   "words": "SO THE REPEATS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "O",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "P",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 157,
+   "plaintext": "THECANADABET",
+   "wordLogp": -9.824,
+   "words": "THE CANADA BET",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "T",
+    "E": "H",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 158,
+   "plaintext": "ONTHEKEYEDTO",
+   "wordLogp": -9.8269,
+   "words": "ON THE KEYED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "K",
+    "M": "Y",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 159,
+   "plaintext": "OFTHEREYESTO",
+   "wordLogp": -9.8275,
+   "words": "OF THE REYES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "Y",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 160,
+   "plaintext": "FROMASALADOF",
+   "wordLogp": -9.8292,
+   "words": "FROM A SALAD OF",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "M",
+    "K": "S",
+    "M": "L",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 161,
+   "plaintext": "OUTHERENEWTO",
+   "wordLogp": -9.8299,
+   "words": "OUT HERE NEW TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "U",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "N",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 162,
+   "plaintext": "CLIVEGENETIC",
+   "wordLogp": -9.833,
+   "words": "CLIVE GENETIC",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "C",
+    "E": "L",
+    "N": "I",
+    "z": "V",
+    "K": "G",
+    "M": "N",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 163,
+   "plaintext": "ASONEHERETOA",
+   "wordLogp": -9.8488,
+   "words": "AS ONE HERE TO A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "S",
+    "N": "O",
+    "z": "N",
+    "K": "H",
+    "M": "R",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 164,
+   "plaintext": "THOSEWEREGOT",
+   "wordLogp": -9.8501,
+   "words": "THOSE WERE GOT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "H",
+    "N": "O",
+    "z": "S",
+    "K": "W",
+    "M": "R",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 165,
+   "plaintext": "OFTHESEBEATO",
+   "wordLogp": -9.8502,
+   "words": "OF THESE BE A TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "B",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 166,
+   "plaintext": "GUINEVEREBIG",
+   "wordLogp": -9.8605,
+   "words": "GUINEVERE BIG",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "G",
+    "E": "U",
+    "N": "I",
+    "z": "N",
+    "K": "V",
+    "M": "R",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 167,
+   "plaintext": "ONTHEMEYERTO",
+   "wordLogp": -9.8607,
+   "words": "ON THE MEYER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "M",
+    "M": "Y",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 168,
+   "plaintext": "ADTHESELECTA",
+   "wordLogp": -9.8647,
+   "words": "AD THE SELECT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "D",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "L",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 169,
+   "plaintext": "ONTHEBELEDTO",
+   "wordLogp": -9.8692,
+   "words": "ON THE BE LED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "B",
+    "M": "L",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 170,
+   "plaintext": "ONTHESEFEWTO",
+   "wordLogp": -9.8737,
+   "words": "ON THESE FEW TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "F",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 171,
+   "plaintext": "OFTHESEDEVTO",
+   "wordLogp": -9.8779,
+   "words": "OF THESE DEV TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "D",
+    "[": "V"
+   }
+  },
+  {
+   "rank": 172,
+   "plaintext": "SPENTATITLES",
+   "wordLogp": -9.8814,
+   "words": "SPENT A TITLES",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "P",
+    "N": "E",
+    "z": "N",
+    "K": "A",
+    "M": "I",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 173,
+   "plaintext": "OFTHEMEYESTO",
+   "wordLogp": -9.882,
+   "words": "OF THEM EYES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "M",
+    "M": "Y",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 174,
+   "plaintext": "SOTHEREGENTS",
+   "wordLogp": -9.8877,
+   "words": "SO THE REGENTS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "O",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "G",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 175,
+   "plaintext": "GROWACATALOG",
+   "wordLogp": -9.8932,
+   "words": "GROW A CATALOG",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "G",
+    "E": "R",
+    "N": "O",
+    "z": "W",
+    "K": "C",
+    "M": "T",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 176,
+   "plaintext": "FLOWNINANYOF",
+   "wordLogp": -9.8948,
+   "words": "FLOWN IN ANY OF",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "F",
+    "E": "L",
+    "N": "O",
+    "z": "W",
+    "K": "I",
+    "M": "A",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 177,
+   "plaintext": "ONTHEWEBERTO",
+   "wordLogp": -9.8964,
+   "words": "ON THE WEBER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "W",
+    "M": "B",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 178,
+   "plaintext": "ARTSELEMENTA",
+   "wordLogp": -9.9007,
+   "words": "ARTS ELEMENT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "R",
+    "N": "T",
+    "z": "S",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 179,
+   "plaintext": "EQUITYTOTRUE",
+   "wordLogp": -9.9106,
+   "words": "EQUITY TO TRUE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "E",
+    "E": "Q",
+    "N": "U",
+    "z": "I",
+    "K": "Y",
+    "M": "O",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 180,
+   "plaintext": "SOLDINITIALS",
+   "wordLogp": -9.9129,
+   "words": "SOLD INITIALS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "S",
+    "E": "O",
+    "N": "L",
+    "z": "D",
+    "K": "N",
+    "M": "T",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 181,
+   "plaintext": "TOARENEWEDAT",
+   "wordLogp": -9.915,
+   "words": "TO A RENEWED AT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "O",
+    "N": "A",
+    "z": "R",
+    "K": "N",
+    "M": "W",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 182,
+   "plaintext": "ORTHESEMENTO",
+   "wordLogp": -9.9207,
+   "words": "OR THESE MEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "R",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 183,
+   "plaintext": "FROMINITISOF",
+   "wordLogp": -9.9227,
+   "words": "FROM IN IT IS OF",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "M",
+    "K": "N",
+    "M": "T",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 184,
+   "plaintext": "TOUSEWEREPUT",
+   "wordLogp": -9.9243,
+   "words": "TO USE WERE PUT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "O",
+    "N": "U",
+    "z": "S",
+    "K": "W",
+    "M": "R",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 185,
+   "plaintext": "SWEATYTITLES",
+   "wordLogp": -9.926,
+   "words": "SWEATY TITLES",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "W",
+    "N": "E",
+    "z": "A",
+    "K": "Y",
+    "M": "I",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 186,
+   "plaintext": "FROMANAVALOF",
+   "wordLogp": -9.9332,
+   "words": "FROM A NAVAL OF",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "M",
+    "K": "N",
+    "M": "V",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 187,
+   "plaintext": "AUTOELEMENTA",
+   "wordLogp": -9.9351,
+   "words": "AUTO ELEMENT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "U",
+    "N": "T",
+    "z": "O",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 188,
+   "plaintext": "SPACENEVERAS",
+   "wordLogp": -9.9376,
+   "words": "SPACE NEVER AS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "P",
+    "N": "A",
+    "z": "C",
+    "K": "N",
+    "M": "V",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 189,
+   "plaintext": "ONTHEYEVERTO",
+   "wordLogp": -9.944,
+   "words": "ON THEY EVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "Y",
+    "M": "V",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 190,
+   "plaintext": "IFTHEDESERTI",
+   "wordLogp": -9.9452,
+   "words": "IF THE DESERT I",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 191,
+   "plaintext": "ASTHEREDELTA",
+   "wordLogp": -9.9463,
+   "words": "AS THERE DELTA",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "S",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "D",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 192,
+   "plaintext": "OFTRIVIAINTO",
+   "wordLogp": -9.9475,
+   "words": "OF TRIVIA INTO",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "R",
+    "K": "V",
+    "M": "A",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 193,
+   "plaintext": "OFTHESEDELTO",
+   "wordLogp": -9.9542,
+   "words": "OF THESE DEL TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "D",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 194,
+   "plaintext": "ONTHEMEVERTO",
+   "wordLogp": -9.9549,
+   "words": "ON THEM EVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "M",
+    "M": "V",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 195,
+   "plaintext": "FROZENEYESOF",
+   "wordLogp": -9.9551,
+   "words": "FROZEN EYES OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "Z",
+    "K": "N",
+    "M": "Y",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 196,
+   "plaintext": "OFSEACANALSO",
+   "wordLogp": -9.9551,
+   "words": "OF SEA CAN ALSO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "O",
+    "E": "F",
+    "N": "S",
+    "z": "E",
+    "K": "C",
+    "M": "N",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 197,
+   "plaintext": "DOITASAVALID",
+   "wordLogp": -9.9585,
+   "words": "DO IT AS A VALID",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "D",
+    "E": "O",
+    "N": "I",
+    "z": "T",
+    "K": "S",
+    "M": "V",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 198,
+   "plaintext": "OFTHEDESERTO",
+   "wordLogp": -9.959,
+   "words": "OF THE DESERTO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 199,
+   "plaintext": "AMTHENEWESTA",
+   "wordLogp": -9.9591,
+   "words": "AM THE NEWEST A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "M",
+    "N": "T",
+    "z": "H",
+    "K": "N",
+    "M": "W",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 200,
+   "plaintext": "ONTHEDEWEYTO",
+   "wordLogp": -9.9632,
+   "words": "ON THE DEWEY TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "W",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 201,
+   "plaintext": "PHONEWERETOP",
+   "wordLogp": -9.9652,
+   "words": "PHONE WERE TOP",
+   "unknown": 0
+  },
+  {
+   "rank": 202,
+   "plaintext": "ONTHEWEREATO",
+   "wordLogp": -9.9655,
+   "words": "ON THE WERE A TO",
+   "unknown": 0
+  },
+  {
+   "rank": 203,
+   "plaintext": "FROMACANALOF",
+   "wordLogp": -9.9658,
+   "words": "FROM A CANAL OF",
+   "unknown": 0
+  },
+  {
+   "rank": 204,
+   "plaintext": "DOESILIMITED",
+   "wordLogp": -9.9715,
+   "words": "DOES I LIMITED",
+   "unknown": 0
+  },
+  {
+   "rank": 205,
+   "plaintext": "ASTHECEMENTA",
+   "wordLogp": -9.9791,
+   "words": "AS THE CEMENT A",
+   "unknown": 0
+  },
+  {
+   "rank": 206,
+   "plaintext": "RIOCANADAFOR",
+   "wordLogp": -9.9795,
+   "words": "RIO CANADA FOR",
+   "unknown": 0
+  },
+  {
+   "rank": 207,
+   "plaintext": "SOTHEREJECTS",
+   "wordLogp": -9.9832,
+   "words": "SO THE REJECTS",
+   "unknown": 0
+  },
+  {
+   "rank": 208,
+   "plaintext": "THOSEWERELOT",
+   "wordLogp": -9.9847,
+   "words": "THOSE WERE LOT",
+   "unknown": 0
+  },
+  {
+   "rank": 209,
+   "plaintext": "GUIDEWEREBIG",
+   "wordLogp": -9.9862,
+   "words": "GUIDE WERE BIG",
+   "unknown": 0
+  },
+  {
+   "rank": 210,
+   "plaintext": "OFTHEBEKEYTO",
+   "wordLogp": -9.9876,
+   "words": "OF THE BE KEY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 211,
+   "plaintext": "SKETCHCYCLES",
+   "wordLogp": -9.9896,
+   "words": "SKETCH CYCLES",
+   "unknown": 0
+  },
+  {
+   "rank": 212,
+   "plaintext": "SHAPEDEVENAS",
+   "wordLogp": -9.9912,
+   "words": "SHAPED EVEN AS",
+   "unknown": 0
+  },
+  {
+   "rank": 213,
+   "plaintext": "OFTHEIEVENTO",
+   "wordLogp": -9.9941,
+   "words": "OF THE I EVEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 214,
+   "plaintext": "SPACEWEREHAS",
+   "wordLogp": -9.9942,
+   "words": "SPACE WERE HAS",
+   "unknown": 0
+  },
+  {
+   "rank": 215,
+   "plaintext": "THEANDNONLET",
+   "wordLogp": -9.9945,
+   "words": "THE AND NON LET",
+   "unknown": 0
+  },
+  {
+   "rank": 216,
+   "plaintext": "OFTHEAEVENTO",
+   "wordLogp": -10.0054,
+   "words": "OF THE A EVEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 217,
+   "plaintext": "ASTHEDEFECTA",
+   "wordLogp": -10.006,
+   "words": "AS THE DEFECT A",
+   "unknown": 0
+  },
+  {
+   "rank": 218,
+   "plaintext": "OUTCARAVANTO",
+   "wordLogp": -10.0063,
+   "words": "OUT CARAVAN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 219,
+   "plaintext": "SATHEREVENTS",
+   "wordLogp": -10.0075,
+   "words": "SATHER EVENTS",
+   "unknown": 0
+  },
+  {
+   "rank": 220,
+   "plaintext": "AUTRESELECTA",
+   "wordLogp": -10.0166,
+   "words": "AUTRE SELECT A",
+   "unknown": 0
+  },
+  {
+   "rank": 221,
+   "plaintext": "FROMAWAYASOF",
+   "wordLogp": -10.0216,
+   "words": "FROM A WAY AS OF",
+   "unknown": 0
+  },
+  {
+   "rank": 222,
+   "plaintext": "FROMATAWAYOF",
+   "wordLogp": -10.0248,
+   "words": "FROM AT A WAY OF",
+   "unknown": 0
+  },
+  {
+   "rank": 223,
+   "plaintext": "IFTHESELECTI",
+   "wordLogp": -10.0342,
+   "words": "IF THE SELECT I",
+   "unknown": 0
+  },
+  {
+   "rank": 224,
+   "plaintext": "OFTHEMENEWTO",
+   "wordLogp": -10.0367,
+   "words": "OF THE ME NEW TO",
+   "unknown": 0
+  },
+  {
+   "rank": 225,
+   "plaintext": "SIENADAMAGES",
+   "wordLogp": -10.0368,
+   "words": "SIENA DAMAGES",
+   "unknown": 0
+  },
+  {
+   "rank": 226,
+   "plaintext": "ACOMEHERETOA",
+   "wordLogp": -10.0375,
+   "words": "A COME HERE TO A",
+   "unknown": 0
+  },
+  {
+   "rank": 227,
+   "plaintext": "OCTBAHAMASTO",
+   "wordLogp": -10.0379,
+   "words": "OCT BAHAMAS TO",
+   "unknown": 0
+  },
+  {
+   "rank": 228,
+   "plaintext": "OFTHENEWESTO",
+   "wordLogp": -10.0426,
+   "words": "OF THE NEWEST O",
+   "unknown": 1
+  },
+  {
+   "rank": 229,
+   "plaintext": "ADMIRERFROMA",
+   "wordLogp": -10.0518,
+   "words": "ADMIRER FROM A",
+   "unknown": 0
+  },
+  {
+   "rank": 230,
+   "plaintext": "THEPANAMALET",
+   "wordLogp": -10.0527,
+   "words": "THE PANAMA LET",
+   "unknown": 0
+  },
+  {
+   "rank": 231,
+   "plaintext": "SINCEREJEANS",
+   "wordLogp": -10.0537,
+   "words": "SINCERE JEANS",
+   "unknown": 0
+  },
+  {
+   "rank": 232,
+   "plaintext": "SPACEGENEWAS",
+   "wordLogp": -10.0547,
+   "words": "SPACE GENE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 233,
+   "plaintext": "OKINAWARATIO",
+   "wordLogp": -10.0574,
+   "words": "OKINAWA RATIO",
+   "unknown": 0
+  },
+  {
+   "rank": 234,
+   "plaintext": "THEANDNONYET",
+   "wordLogp": -10.0596,
+   "words": "THE AND NON YET",
+   "unknown": 0
+  },
+  {
+   "rank": 235,
+   "plaintext": "SUITEWEREHIS",
+   "wordLogp": -10.0598,
+   "words": "SUITE WERE HIS",
+   "unknown": 0
+  },
+  {
+   "rank": 236,
+   "plaintext": "CHIMEGENERIC",
+   "wordLogp": -10.064,
+   "words": "CHIME GENERIC",
+   "unknown": 0
+  },
+  {
+   "rank": 237,
+   "plaintext": "THISELEVENIT",
+   "wordLogp": -10.0683,
+   "words": "THIS ELEVEN IT",
+   "unknown": 0
+  },
+  {
+   "rank": 238,
+   "plaintext": "THEBIKINILET",
+   "wordLogp": -10.0692,
+   "words": "THE BIKINI LET",
+   "unknown": 0
+  },
+  {
+   "rank": 239,
+   "plaintext": "ORTHESEKEYTO",
+   "wordLogp": -10.0733,
+   "words": "OR THESE KEY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 240,
+   "plaintext": "SETCANADAITS",
+   "wordLogp": -10.083,
+   "words": "SET CANADA ITS",
+   "unknown": 0
+  },
+  {
+   "rank": 241,
+   "plaintext": "OFTHEWEREITO",
+   "wordLogp": -10.0839,
+   "words": "OF THE WERE I TO",
+   "unknown": 0
+  },
+  {
+   "rank": 242,
+   "plaintext": "PMONEDEVELOP",
+   "wordLogp": -10.0842,
+   "words": "PM ONE DEVELOP",
+   "unknown": 0
+  },
+  {
+   "rank": 243,
+   "plaintext": "OUTRENEWEDTO",
+   "wordLogp": -10.0877,
+   "words": "OUT RENEWED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 244,
+   "plaintext": "OUTHENEVERTO",
+   "wordLogp": -10.0888,
+   "words": "OUT HE NEVER TO",
+   "unknown": 0
+  },
+  {
+   "rank": 245,
+   "plaintext": "OFTHECERESTO",
+   "wordLogp": -10.0954,
+   "words": "OF THE CERES TO",
+   "unknown": 0
+  },
+  {
+   "rank": 246,
+   "plaintext": "SUPREMELEAPS",
+   "wordLogp": -10.0973,
+   "words": "SUPREME LEAPS",
+   "unknown": 0
+  },
+  {
+   "rank": 247,
+   "plaintext": "GUITARASABIG",
+   "wordLogp": -10.0974,
+   "words": "GUITAR AS A BIG",
+   "unknown": 0
+  },
+  {
+   "rank": 248,
+   "plaintext": "ACTIONOROUTA",
+   "wordLogp": -10.0984,
+   "words": "ACTION OR OUT A",
+   "unknown": 0
+  },
+  {
+   "rank": 249,
+   "plaintext": "OFTHEIEVERTO",
+   "wordLogp": -10.1003,
+   "words": "OF THE I EVER TO",
+   "unknown": 0
+  },
+  {
+   "rank": 250,
+   "plaintext": "GUIDEHEREBIG",
+   "wordLogp": -10.1016,
+   "words": "GUIDE HERE BIG",
+   "unknown": 0
+  },
+  {
+   "rank": 251,
+   "plaintext": "OFTHEKEYESTO",
+   "wordLogp": -10.1017,
+   "words": "OF THE KEYES TO",
+   "unknown": 0
+  },
+  {
+   "rank": 252,
+   "plaintext": "FROMAWAYATOF",
+   "wordLogp": -10.1035,
+   "words": "FROM AWAY AT OF",
+   "unknown": 0
+  },
+  {
+   "rank": 253,
+   "plaintext": "NOISEWEBEGIN",
+   "wordLogp": -10.1037,
+   "words": "NOISE WE BEGIN",
+   "unknown": 0
+  },
+  {
+   "rank": 254,
+   "plaintext": "NURSEWELEARN",
+   "wordLogp": -10.1064,
+   "words": "NURSE WE LEARN",
+   "unknown": 0
+  },
+  {
+   "rank": 255,
+   "plaintext": "SATWEBEVENTS",
+   "wordLogp": -10.1081,
+   "words": "SAT WEB EVENTS",
+   "unknown": 0
+  },
+  {
+   "rank": 256,
+   "plaintext": "FROMAPAGANOF",
+   "wordLogp": -10.1084,
+   "words": "FROM A PAGAN OF",
+   "unknown": 0
+  },
+  {
+   "rank": 257,
+   "plaintext": "NAOMISILICON",
+   "wordLogp": -10.1095,
+   "words": "NAOMI SILICON",
+   "unknown": 0
+  },
+  {
+   "rank": 258,
+   "plaintext": "THEPANAMAYET",
+   "wordLogp": -10.1177,
+   "words": "THE PANAMA YET",
+   "unknown": 0
+  },
+  {
+   "rank": 259,
+   "plaintext": "OUTFARAWAYTO",
+   "wordLogp": -10.1188,
+   "words": "OUT FAR AWAY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 260,
+   "plaintext": "OUTANDNINETO",
+   "wordLogp": -10.1254,
+   "words": "OUT AND NINE TO",
+   "unknown": 0
+  },
+  {
+   "rank": 261,
+   "plaintext": "DUECIVILIZED",
+   "wordLogp": -10.1263,
+   "words": "DUE CIVILIZED",
+   "unknown": 0
+  },
+  {
+   "rank": 262,
+   "plaintext": "DIEWASAMAZED",
+   "wordLogp": -10.1297,
+   "words": "DIE WAS AMAZED",
+   "unknown": 0
+  },
+  {
+   "rank": 263,
+   "plaintext": "TRIKEBENEFIT",
+   "wordLogp": -10.1299,
+   "words": "TRIKE BENEFIT",
+   "unknown": 0
+  },
+  {
+   "rank": 264,
+   "plaintext": "SCAREMEHEWAS",
+   "wordLogp": -10.1304,
+   "words": "SCARE ME HE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 265,
+   "plaintext": "THEBIKINIYET",
+   "wordLogp": -10.1343,
+   "words": "THE BIKINI YET",
+   "unknown": 0
+  },
+  {
+   "rank": 266,
+   "plaintext": "OFTHESEPENTO",
+   "wordLogp": -10.1353,
+   "words": "OF THESE PEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 267,
+   "plaintext": "ONTHEPEREZTO",
+   "wordLogp": -10.1364,
+   "words": "ON THE PEREZ TO",
+   "unknown": 0
+  },
+  {
+   "rank": 268,
+   "plaintext": "OFTHESEBENTO",
+   "wordLogp": -10.1385,
+   "words": "OF THESE BEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 269,
+   "plaintext": "OFTHESELEGTO",
+   "wordLogp": -10.1387,
+   "words": "OF THESE LEG TO",
+   "unknown": 0
+  },
+  {
+   "rank": 270,
+   "plaintext": "OFTHESEDERTO",
+   "wordLogp": -10.1428,
+   "words": "OF THESE DER TO",
+   "unknown": 0
+  },
+  {
+   "rank": 271,
+   "plaintext": "FROMATADAYOF",
+   "wordLogp": -10.1436,
+   "words": "FROM AT A DAY OF",
+   "unknown": 0
+  },
+  {
+   "rank": 272,
+   "plaintext": "THEWAYASAGET",
+   "wordLogp": -10.1445,
+   "words": "THE WAY AS A GET",
+   "unknown": 0
+  },
+  {
+   "rank": 273,
+   "plaintext": "ASTHEREJECTA",
+   "wordLogp": -10.1492,
+   "words": "AS THE REJECT A",
+   "unknown": 0
+  },
+  {
+   "rank": 274,
+   "plaintext": "SUPREMEHEAPS",
+   "wordLogp": -10.155,
+   "words": "SUPREME HEAPS",
+   "unknown": 0
+  },
+  {
+   "rank": 275,
+   "plaintext": "SUITENEVERIS",
+   "wordLogp": -10.158,
+   "words": "SUITE NEVER IS",
+   "unknown": 0
+  },
+  {
+   "rank": 276,
+   "plaintext": "SURVEYEDEARS",
+   "wordLogp": -10.1594,
+   "words": "SURVEYED EARS",
+   "unknown": 0
+  },
+  {
+   "rank": 277,
+   "plaintext": "FROMADAYATOF",
+   "wordLogp": -10.1629,
+   "words": "FROM A DAY AT OF",
+   "unknown": 0
+  },
+  {
+   "rank": 278,
+   "plaintext": "STEPBYBABIES",
+   "wordLogp": -10.1678,
+   "words": "STEP BY BABIES",
+   "unknown": 0
+  },
+  {
+   "rank": 279,
+   "plaintext": "SLAVEHEREWAS",
+   "wordLogp": -10.1708,
+   "words": "SLAVE HERE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 280,
+   "plaintext": "DONSEVEREAND",
+   "wordLogp": -10.1722,
+   "words": "DON SEVERE AND",
+   "unknown": 0
+  },
+  {
+   "rank": 281,
+   "plaintext": "TWOSEVERENOT",
+   "wordLogp": -10.1731,
+   "words": "TWO SEVERE NOT",
+   "unknown": 0
+  },
+  {
+   "rank": 282,
+   "plaintext": "OFSEAMAYALSO",
+   "wordLogp": -10.1743,
+   "words": "OF SEA MAY ALSO",
+   "unknown": 0
+  },
+  {
+   "rank": 283,
+   "plaintext": "TOUSEWEREBUT",
+   "wordLogp": -10.1749,
+   "words": "TO USE WERE BUT",
+   "unknown": 0
+  },
+  {
+   "rank": 284,
+   "plaintext": "TERMSISASORT",
+   "wordLogp": -10.1799,
+   "words": "TERMS IS A SORT",
+   "unknown": 0
+  },
+  {
+   "rank": 285,
+   "plaintext": "THUCANADABUT",
+   "wordLogp": -10.182,
+   "words": "THU CANADA BUT",
+   "unknown": 0
+  },
+  {
+   "rank": 286,
+   "plaintext": "THEJAPANASET",
+   "wordLogp": -10.1836,
+   "words": "THE JAPAN A SET",
+   "unknown": 0
+  },
+  {
+   "rank": 287,
+   "plaintext": "TOSWEDENEAST",
+   "wordLogp": -10.1871,
+   "words": "TO SWEDEN EAST",
+   "unknown": 0
+  },
+  {
+   "rank": 288,
+   "plaintext": "DREWAMANAGED",
+   "wordLogp": -10.1879,
+   "words": "DREW A MANAGED",
+   "unknown": 0
+  },
+  {
+   "rank": 289,
+   "plaintext": "SENCIVILIANS",
+   "wordLogp": -10.1887,
+   "words": "SEN CIVILIANS",
+   "unknown": 0
+  },
+  {
+   "rank": 290,
+   "plaintext": "OFTHEREKEYTO",
+   "wordLogp": -10.191,
+   "words": "OF THERE KEY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 291,
+   "plaintext": "YERSTATUTORY",
+   "wordLogp": -10.1918,
+   "words": "YER STATUTORY",
+   "unknown": 0
+  },
+  {
+   "rank": 292,
+   "plaintext": "OFTHEBEYERTO",
+   "wordLogp": -10.1954,
+   "words": "OF THE BEYER TO",
+   "unknown": 0
+  },
+  {
+   "rank": 293,
+   "plaintext": "OFTHERELEDTO",
+   "wordLogp": -10.1984,
+   "words": "OF THERE LED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 294,
+   "plaintext": "FROMIVISITOF",
+   "wordLogp": -10.2002,
+   "words": "FROM I VISIT OF",
+   "unknown": 0
+  },
+  {
+   "rank": 295,
+   "plaintext": "ANTHEDESERTA",
+   "wordLogp": -10.2012,
+   "words": "AN THE DESERT A",
+   "unknown": 0
+  },
+  {
+   "rank": 296,
+   "plaintext": "INEACHCYCLEI",
+   "wordLogp": -10.2019,
+   "words": "IN EACH CYCLE I",
+   "unknown": 0
+  },
+  {
+   "rank": 297,
+   "plaintext": "THISEVENEDIT",
+   "wordLogp": -10.2026,
+   "words": "THIS EVEN EDIT",
+   "unknown": 0
+  },
+  {
+   "rank": 298,
+   "plaintext": "CLIMAXARABIC",
+   "wordLogp": -10.2081,
+   "words": "CLIMAX ARABIC",
+   "unknown": 0
+  },
+  {
+   "rank": 299,
+   "plaintext": "AMTHEDESERTA",
+   "wordLogp": -10.2081,
+   "words": "AM THE DESERT A",
+   "unknown": 0
+  },
+  {
+   "rank": 300,
+   "plaintext": "THEFARASAGET",
+   "wordLogp": -10.2088,
+   "words": "THE FAR AS A GET",
+   "unknown": 0
+  },
+  {
+   "rank": 301,
+   "plaintext": "OFTHEREWEBTO",
+   "wordLogp": -10.2117,
+   "words": "OF THERE WEB TO",
+   "unknown": 0
+  },
+  {
+   "rank": 302,
+   "plaintext": "NOISEPETERIN",
+   "wordLogp": -10.2128,
+   "words": "NOISE PETER IN",
+   "unknown": 0
+  },
+  {
+   "rank": 303,
+   "plaintext": "WHOUSESISNOW",
+   "wordLogp": -10.2138,
+   "words": "WHO USES IS NOW",
+   "unknown": 0
+  },
+  {
+   "rank": 304,
+   "plaintext": "PLANTSTOTRAP",
+   "wordLogp": -10.2146,
+   "words": "PLANTS TO TRAP",
+   "unknown": 0
+  },
+  {
+   "rank": 305,
+   "plaintext": "OFTHESEVERTO",
+   "wordLogp": -10.2154,
+   "words": "OF THE SEVER TO",
+   "unknown": 0
+  },
+  {
+   "rank": 306,
+   "plaintext": "DELICACYCOLD",
+   "wordLogp": -10.2169,
+   "words": "DELICACY COLD",
+   "unknown": 0
+  },
+  {
+   "rank": 307,
+   "plaintext": "ABOUTITSTWOA",
+   "wordLogp": -10.2176,
+   "words": "ABOUT ITS TWO A",
+   "unknown": 0
+  },
+  {
+   "rank": 308,
+   "plaintext": "OFTHELEWESTO",
+   "wordLogp": -10.2187,
+   "words": "OF THE LEWES TO",
+   "unknown": 0
+  },
+  {
+   "rank": 309,
+   "plaintext": "AWIDEVENEZIA",
+   "wordLogp": -10.2197,
+   "words": "A WIDE VENEZIA",
+   "unknown": 0
+  },
+  {
+   "rank": 310,
+   "plaintext": "SOTHEMEVENTS",
+   "wordLogp": -10.2201,
+   "words": "SO THEM EVENTS",
+   "unknown": 0
+  },
+  {
+   "rank": 311,
+   "plaintext": "SUEJAVAGAMES",
+   "wordLogp": -10.2212,
+   "words": "SUE JAVA GAMES",
+   "unknown": 0
+  },
+  {
+   "rank": 312,
+   "plaintext": "ATIMEVENEZIA",
+   "wordLogp": -10.2215,
+   "words": "A TIME VENEZIA",
+   "unknown": 0
+  },
+  {
+   "rank": 313,
+   "plaintext": "INTHEREJECTI",
+   "wordLogp": -10.2255,
+   "words": "IN THE REJECT I",
+   "unknown": 0
+  },
+  {
+   "rank": 314,
+   "plaintext": "THISEVEREDIT",
+   "wordLogp": -10.2272,
+   "words": "THIS EVER EDIT",
+   "unknown": 0
+  },
+  {
+   "rank": 315,
+   "plaintext": "TRENDSDIDGET",
+   "wordLogp": -10.2272,
+   "words": "TRENDS DID GET",
+   "unknown": 0
+  },
+  {
+   "rank": 316,
+   "plaintext": "TRICEBENEFIT",
+   "wordLogp": -10.2305,
+   "words": "TRICE BENEFIT",
+   "unknown": 0
+  },
+  {
+   "rank": 317,
+   "plaintext": "ONTHESEDECTO",
+   "wordLogp": -10.2331,
+   "words": "ON THESE DEC TO",
+   "unknown": 0
+  },
+  {
+   "rank": 318,
+   "plaintext": "ANDHEREZELDA",
+   "wordLogp": -10.2335,
+   "words": "AND HERE ZELDA",
+   "unknown": 0
+  },
+  {
+   "rank": 319,
+   "plaintext": "LIANESEVERAL",
+   "wordLogp": -10.2346,
+   "words": "LIANE SEVERAL",
+   "unknown": 0
+  },
+  {
+   "rank": 320,
+   "plaintext": "ISTHECEMENTI",
+   "wordLogp": -10.2348,
+   "words": "IS THE CEMENT I",
+   "unknown": 0
+  },
+  {
+   "rank": 321,
+   "plaintext": "CANDELETEINC",
+   "wordLogp": -10.2351,
+   "words": "CAN DELETE INC",
+   "unknown": 0
+  },
+  {
+   "rank": 322,
+   "plaintext": "OFTHEAEVERTO",
+   "wordLogp": -10.2379,
+   "words": "OF THE A EVER TO",
+   "unknown": 0
+  },
+  {
+   "rank": 323,
+   "plaintext": "TOUSEWERECUT",
+   "wordLogp": -10.2384,
+   "words": "TO USE WERE CUT",
+   "unknown": 0
+  },
+  {
+   "rank": 324,
+   "plaintext": "OFTHELEVENTO",
+   "wordLogp": -10.2385,
+   "words": "OF THE LEVEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 325,
+   "plaintext": "DIETAMANAGED",
+   "wordLogp": -10.2395,
+   "words": "DIET A MANAGED",
+   "unknown": 0
+  },
+  {
+   "rank": 326,
+   "plaintext": "MYPROTOCOLPM",
+   "wordLogp": -10.2404,
+   "words": "MY PROTOCOL PM",
+   "unknown": 0
+  },
+  {
+   "rank": 327,
+   "plaintext": "BREASTSUSWEB",
+   "wordLogp": -10.242,
+   "words": "BREASTS US WEB",
+   "unknown": 0
+  },
+  {
+   "rank": 328,
+   "plaintext": "RUEDAMANAGER",
+   "wordLogp": -10.2428,
+   "words": "RUEDA MANAGER",
+   "unknown": 0
+  },
+  {
+   "rank": 329,
+   "plaintext": "IFTHERENEXTI",
+   "wordLogp": -10.2448,
+   "words": "IF THERE NEXT I",
+   "unknown": 0
+  },
+  {
+   "rank": 330,
+   "plaintext": "OURCANADAPRO",
+   "wordLogp": -10.2469,
+   "words": "OUR CANADA PRO",
+   "unknown": 0
+  },
+  {
+   "rank": 331,
+   "plaintext": "BREASTSISWEB",
+   "wordLogp": -10.2477,
+   "words": "BREASTS IS WEB",
+   "unknown": 0
+  },
+  {
+   "rank": 332,
+   "plaintext": "SINCEREBEANS",
+   "wordLogp": -10.2479,
+   "words": "SINCERE BEANS",
+   "unknown": 0
+  },
+  {
+   "rank": 333,
+   "plaintext": "TOICEBENEFIT",
+   "wordLogp": -10.2481,
+   "words": "TO ICE BENEFIT",
+   "unknown": 0
+  },
+  {
+   "rank": 334,
+   "plaintext": "ORTHANAWAYTO",
+   "wordLogp": -10.2501,
+   "words": "OR THAN A WAY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 335,
+   "plaintext": "FLOWAVATAROF",
+   "wordLogp": -10.2502,
+   "words": "FLOW AVATAR OF",
+   "unknown": 0
+  },
+  {
+   "rank": 336,
+   "plaintext": "ANDWEBEHELDA",
+   "wordLogp": -10.2537,
+   "words": "AND WE BE HELD A",
+   "unknown": 0
+  },
+  {
+   "rank": 337,
+   "plaintext": "ISTHEDEFECTI",
+   "wordLogp": -10.2618,
+   "words": "IS THE DEFECT I",
+   "unknown": 0
+  },
+  {
+   "rank": 338,
+   "plaintext": "POINTATSTRIP",
+   "wordLogp": -10.2624,
+   "words": "POINT AT STRIP",
+   "unknown": 0
+  },
+  {
+   "rank": 339,
+   "plaintext": "CHIMEGENETIC",
+   "wordLogp": -10.2649,
+   "words": "CHIME GENETIC",
+   "unknown": 0
+  },
+  {
+   "rank": 340,
+   "plaintext": "WROTEMEBELOW",
+   "wordLogp": -10.2649,
+   "words": "WROTE ME BELOW",
+   "unknown": 0
+  },
+  {
+   "rank": 341,
+   "plaintext": "AOTHEREVENTA",
+   "wordLogp": -10.2664,
+   "words": "A OTHER EVENT A",
+   "unknown": 0
+  },
+  {
+   "rank": 342,
+   "plaintext": "FROMADAYASOF",
+   "wordLogp": -10.2669,
+   "words": "FROM A DAY AS OF",
+   "unknown": 0
+  },
+  {
+   "rank": 343,
+   "plaintext": "SHAREGENEWAS",
+   "wordLogp": -10.2671,
+   "words": "SHARE GENE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 344,
+   "plaintext": "HATSELEVENTH",
+   "wordLogp": -10.268,
+   "words": "HATS ELEVENTH",
+   "unknown": 0
+  },
+  {
+   "rank": 345,
+   "plaintext": "FROMABADASOF",
+   "wordLogp": -10.2685,
+   "words": "FROM A BAD AS OF",
+   "unknown": 0
+  },
+  {
+   "rank": 346,
+   "plaintext": "SATIELEMENTS",
+   "wordLogp": -10.2688,
+   "words": "SAT I ELEMENTS",
+   "unknown": 0
+  },
+  {
+   "rank": 347,
+   "plaintext": "ANYSEVERELYA",
+   "wordLogp": -10.2727,
+   "words": "ANY SEVERELY A",
+   "unknown": 0
+  },
+  {
+   "rank": 348,
+   "plaintext": "ICEDATABASEI",
+   "wordLogp": -10.2729,
+   "words": "ICE DATABASE I",
+   "unknown": 0
+  },
+  {
+   "rank": 349,
+   "plaintext": "TRADESEVENAT",
+   "wordLogp": -10.2733,
+   "words": "TRADES EVEN AT",
+   "unknown": 0
+  },
+  {
+   "rank": 350,
+   "plaintext": "SNAKEHEREWAS",
+   "wordLogp": -10.2742,
+   "words": "SNAKE HERE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 351,
+   "plaintext": "LIANEFEDERAL",
+   "wordLogp": -10.2759,
+   "words": "LIANE FEDERAL",
+   "unknown": 0
+  },
+  {
+   "rank": 352,
+   "plaintext": "ISTHEDEFEATI",
+   "wordLogp": -10.2786,
+   "words": "IS THE DEFEAT I",
+   "unknown": 0
+  },
+  {
+   "rank": 353,
+   "plaintext": "OUTWERELEDTO",
+   "wordLogp": -10.2791,
+   "words": "OUT WERE LED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 354,
+   "plaintext": "OFTHESEMEDTO",
+   "wordLogp": -10.282,
+   "words": "OF THESE MED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 355,
+   "plaintext": "ASTHEYEVENTA",
+   "wordLogp": -10.2823,
+   "words": "AS THEY EVENT A",
+   "unknown": 0
+  },
+  {
+   "rank": 356,
+   "plaintext": "ONTHESEREDTO",
+   "wordLogp": -10.2869,
+   "words": "ON THESE RED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 357,
+   "plaintext": "PROCANADATOP",
+   "wordLogp": -10.2888,
+   "words": "PRO CANADA TOP",
+   "unknown": 0
+  },
+  {
+   "rank": 358,
+   "plaintext": "SHEDATAGAMES",
+   "wordLogp": -10.2904,
+   "words": "SHE DATA GAMES",
+   "unknown": 0
+  },
+  {
+   "rank": 359,
+   "plaintext": "AMOVEHERETOA",
+   "wordLogp": -10.2934,
+   "words": "A MOVE HERE TO A",
+   "unknown": 0
+  },
+  {
+   "rank": 360,
+   "plaintext": "STAGENEVERAS",
+   "wordLogp": -10.2975,
+   "words": "STAGE NEVER AS",
+   "unknown": 0
+  },
+  {
+   "rank": 361,
+   "plaintext": "IDAHOMOLOKAI",
+   "wordLogp": -10.2985,
+   "words": "IDAHO MOLOKAI",
+   "unknown": 0
+  },
+  {
+   "rank": 362,
+   "plaintext": "SIDEATAWARDS",
+   "wordLogp": -10.2989,
+   "words": "SIDE AT AWARDS",
+   "unknown": 0
+  },
+  {
+   "rank": 363,
+   "plaintext": "ANDSOTOHOLDA",
+   "wordLogp": -10.2992,
+   "words": "AND SO TO HOLD A",
+   "unknown": 0
+  },
+  {
+   "rank": 364,
+   "plaintext": "TOSCENELEAST",
+   "wordLogp": -10.2999,
+   "words": "TO SCENE LEAST",
+   "unknown": 0
+  },
+  {
+   "rank": 365,
+   "plaintext": "ORTHESEWEBTO",
+   "wordLogp": -10.3013,
+   "words": "OR THESE WEB TO",
+   "unknown": 0
+  },
+  {
+   "rank": 366,
+   "plaintext": "LEAFIDIGITAL",
+   "wordLogp": -10.3051,
+   "words": "LEAF I DIGITAL",
+   "unknown": 0
+  },
+  {
+   "rank": 367,
+   "plaintext": "SOLEINITIALS",
+   "wordLogp": -10.3057,
+   "words": "SOLE INITIALS",
+   "unknown": 0
+  },
+  {
+   "rank": 368,
+   "plaintext": "UPONEHEREYOU",
+   "wordLogp": -10.3102,
+   "words": "UP ONE HERE YOU",
+   "unknown": 0
+  },
+  {
+   "rank": 369,
+   "plaintext": "THUCANADAOUT",
+   "wordLogp": -10.3117,
+   "words": "THU CANADA OUT",
+   "unknown": 0
+  },
+  {
+   "rank": 370,
+   "plaintext": "OUTWENEVERTO",
+   "wordLogp": -10.3142,
+   "words": "OUT WE NEVER TO",
+   "unknown": 0
+  },
+  {
+   "rank": 371,
+   "plaintext": "SHEMIDIFILES",
+   "wordLogp": -10.3155,
+   "words": "SHE MIDI FILES",
+   "unknown": 0
+  },
+  {
+   "rank": 372,
+   "plaintext": "OFTHESEKENTO",
+   "wordLogp": -10.3156,
+   "words": "OF THESE KEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 373,
+   "plaintext": "OFTHESEBEGTO",
+   "wordLogp": -10.3159,
+   "words": "OF THESE BEG TO",
+   "unknown": 0
+  },
+  {
+   "rank": 374,
+   "plaintext": "OFTHEGENEATO",
+   "wordLogp": -10.3161,
+   "words": "OF THE GENE A TO",
+   "unknown": 0
+  },
+  {
+   "rank": 375,
+   "plaintext": "USONEHEREYOU",
+   "wordLogp": -10.3183,
+   "words": "US ONE HERE YOU",
+   "unknown": 0
+  },
+  {
+   "rank": 376,
+   "plaintext": "SCALENEVERAS",
+   "wordLogp": -10.3189,
+   "words": "SCALE NEVER AS",
+   "unknown": 0
+  },
+  {
+   "rank": 377,
+   "plaintext": "SERVOCOLOURS",
+   "wordLogp": -10.3199,
+   "words": "SERVO COLOURS",
+   "unknown": 0
+  },
+  {
+   "rank": 378,
+   "plaintext": "DRIVESEYELID",
+   "wordLogp": -10.3213,
+   "words": "DRIVES EYELID",
+   "unknown": 0
+  },
+  {
+   "rank": 379,
+   "plaintext": "SIDEANAWARDS",
+   "wordLogp": -10.3231,
+   "words": "SIDE AN AWARDS",
+   "unknown": 0
+  },
+  {
+   "rank": 380,
+   "plaintext": "THECANADAVET",
+   "wordLogp": -10.3291,
+   "words": "THE CANADA VET",
+   "unknown": 0
+  },
+  {
+   "rank": 381,
+   "plaintext": "THEWAYASANET",
+   "wordLogp": -10.3292,
+   "words": "THE WAY AS A NET",
+   "unknown": 0
+  },
+  {
+   "rank": 382,
+   "plaintext": "ISTHEREPEATI",
+   "wordLogp": -10.3296,
+   "words": "IS THE REPEAT I",
+   "unknown": 0
+  },
+  {
+   "rank": 383,
+   "plaintext": "FROMANAWAYOF",
+   "wordLogp": -10.3335,
+   "words": "FROM AN A WAY OF",
+   "unknown": 0
+  },
+  {
+   "rank": 384,
+   "plaintext": "AUDIOTOHONDA",
+   "wordLogp": -10.3375,
+   "words": "AUDIO TO HONDA",
+   "unknown": 0
+  },
+  {
+   "rank": 385,
+   "plaintext": "OCTHEREYESTO",
+   "wordLogp": -10.3383,
+   "words": "OCT HER EYES TO",
+   "unknown": 0
+  },
+  {
+   "rank": 386,
+   "plaintext": "ONTHEREYESTO",
+   "wordLogp": -10.3434,
+   "words": "ON THE REYES TO",
+   "unknown": 0
+  },
+  {
+   "rank": 387,
+   "plaintext": "OFTHELEGERTO",
+   "wordLogp": -10.3444,
+   "words": "OF THE LEGER TO",
+   "unknown": 0
+  },
+  {
+   "rank": 388,
+   "plaintext": "FLOWNINANDOF",
+   "wordLogp": -10.3483,
+   "words": "FLOWN IN AND OF",
+   "unknown": 0
+  },
+  {
+   "rank": 389,
+   "plaintext": "SLIDEPETERIS",
+   "wordLogp": -10.3493,
+   "words": "SLIDE PETER IS",
+   "unknown": 0
+  },
+  {
+   "rank": 390,
+   "plaintext": "OFTHESEREGTO",
+   "wordLogp": -10.3498,
+   "words": "OF THESE REG TO",
+   "unknown": 0
+  },
+  {
+   "rank": 391,
+   "plaintext": "SATKEYEVENTS",
+   "wordLogp": -10.3498,
+   "words": "SAT KEY EVENTS",
+   "unknown": 0
+  },
+  {
+   "rank": 392,
+   "plaintext": "ACODEHERETOA",
+   "wordLogp": -10.3521,
+   "words": "A CODE HERE TO A",
+   "unknown": 0
+  },
+  {
+   "rank": 393,
+   "plaintext": "FROMEYELETOF",
+   "wordLogp": -10.3539,
+   "words": "FROM EYELET OF",
+   "unknown": 0
+  },
+  {
+   "rank": 394,
+   "plaintext": "STAGEWEREHAS",
+   "wordLogp": -10.3541,
+   "words": "STAGE WERE HAS",
+   "unknown": 0
+  },
+  {
+   "rank": 395,
+   "plaintext": "OUTHEREKEYTO",
+   "wordLogp": -10.3558,
+   "words": "OUT HERE KEY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 396,
+   "plaintext": "OFTHEGENEITO",
+   "wordLogp": -10.3563,
+   "words": "OF THE GENE I TO",
+   "unknown": 0
+  },
+  {
+   "rank": 397,
+   "plaintext": "ORTHEJEWELTO",
+   "wordLogp": -10.3612,
+   "words": "OR THE JEWEL TO",
+   "unknown": 0
+  },
+  {
+   "rank": 398,
+   "plaintext": "ALICEVENEZIA",
+   "wordLogp": -10.3623,
+   "words": "ALICE VENEZIA",
+   "unknown": 0
+  },
+  {
+   "rank": 399,
+   "plaintext": "OUTHERELEDTO",
+   "wordLogp": -10.3633,
+   "words": "OUT HERE LED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 400,
+   "plaintext": "THECIVILIGET",
+   "wordLogp": -10.3642,
+   "words": "THE CIVIL I GET",
+   "unknown": 0
+  },
+  {
+   "rank": 401,
+   "plaintext": "SCAREMETEXAS",
+   "wordLogp": -10.3652,
+   "words": "SCARE ME TEXAS",
+   "unknown": 0
+  },
+  {
+   "rank": 402,
+   "plaintext": "STEJAVAGAMES",
+   "wordLogp": -10.3663,
+   "words": "STE JAVA GAMES",
+   "unknown": 0
+  },
+  {
+   "rank": 403,
+   "plaintext": "SOTHEAEVENTS",
+   "wordLogp": -10.3666,
+   "words": "SO THE A EVENTS",
+   "unknown": 0
+  },
+  {
+   "rank": 404,
+   "plaintext": "OFTHESEREPTO",
+   "wordLogp": -10.3706,
+   "words": "OF THESE REP TO",
+   "unknown": 0
+  },
+  {
+   "rank": 405,
+   "plaintext": "SHADOWOFORAS",
+   "wordLogp": -10.3708,
+   "words": "SHADOW OF OR AS",
+   "unknown": 0
+  },
+  {
+   "rank": 406,
+   "plaintext": "ABOVEWERENOA",
+   "wordLogp": -10.3709,
+   "words": "ABOVE WERE NO A",
+   "unknown": 0
+  },
+  {
+   "rank": 407,
+   "plaintext": "ISTHERENEXTI",
+   "wordLogp": -10.3721,
+   "words": "IS THERE NEXT I",
+   "unknown": 0
+  },
+  {
+   "rank": 408,
+   "plaintext": "CANBEHEREINC",
+   "wordLogp": -10.3744,
+   "words": "CAN BE HERE INC",
+   "unknown": 0
+  },
+  {
+   "rank": 409,
+   "plaintext": "ARTIESELECTA",
+   "wordLogp": -10.3748,
+   "words": "ARTIE SELECT A",
+   "unknown": 0
+  },
+  {
+   "rank": 410,
+   "plaintext": "SCALEWEREHAS",
+   "wordLogp": -10.3755,
+   "words": "SCALE WERE HAS",
+   "unknown": 0
+  },
+  {
+   "rank": 411,
+   "plaintext": "OUTHEREWEBTO",
+   "wordLogp": -10.3765,
+   "words": "OUT HERE WEB TO",
+   "unknown": 0
+  },
+  {
+   "rank": 412,
+   "plaintext": "SLIDEWEREHIS",
+   "wordLogp": -10.3797,
+   "words": "SLIDE WERE HIS",
+   "unknown": 0
+  },
+  {
+   "rank": 413,
+   "plaintext": "TWOCANADAHOT",
+   "wordLogp": -10.3812,
+   "words": "TWO CANADA HOT",
+   "unknown": 0
+  },
+  {
+   "rank": 414,
+   "plaintext": "SOTHERECENTS",
+   "wordLogp": -10.3827,
+   "words": "SO THERE CENTS",
+   "unknown": 0
+  },
+  {
+   "rank": 415,
+   "plaintext": "ANDWEREZELDA",
+   "wordLogp": -10.3835,
+   "words": "AND WERE ZELDA",
+   "unknown": 0
+  },
+  {
+   "rank": 416,
+   "plaintext": "THEMALAGASET",
+   "wordLogp": -10.3838,
+   "words": "THE MALAGA SET",
+   "unknown": 0
+  },
+  {
+   "rank": 417,
+   "plaintext": "SINCEWEJEANS",
+   "wordLogp": -10.388,
+   "words": "SINCE WE JEANS",
+   "unknown": 0
+  },
+  {
+   "rank": 418,
+   "plaintext": "RYANISIMILAR",
+   "wordLogp": -10.3881,
+   "words": "RYAN I SIMILAR",
+   "unknown": 0
+  },
+  {
+   "rank": 419,
+   "plaintext": "OFTHEAEYESTO",
+   "wordLogp": -10.3896,
+   "words": "OF THE A EYES TO",
+   "unknown": 0
+  },
+  {
+   "rank": 420,
+   "plaintext": "ONTHESEFEBTO",
+   "wordLogp": -10.3901,
+   "words": "ON THESE FEB TO",
+   "unknown": 0
+  },
+  {
+   "rank": 421,
+   "plaintext": "THEFARASANET",
+   "wordLogp": -10.3935,
+   "words": "THE FAR AS A NET",
+   "unknown": 0
+  },
+  {
+   "rank": 422,
+   "plaintext": "SPACEMEHEWAS",
+   "wordLogp": -10.3955,
+   "words": "SPACE ME HE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 423,
+   "plaintext": "THEMAWAYASET",
+   "wordLogp": -10.3964,
+   "words": "THEM AWAY A SET",
+   "unknown": 0
+  },
+  {
+   "rank": 424,
+   "plaintext": "OFTHANADAYTO",
+   "wordLogp": -10.3965,
+   "words": "OF THAN A DAY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 425,
+   "plaintext": "OCTRENEWEDTO",
+   "wordLogp": -10.3974,
+   "words": "OCT RENEWED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 426,
+   "plaintext": "OFTHESEDENTO",
+   "wordLogp": -10.3984,
+   "words": "OF THESE DEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 427,
+   "plaintext": "SAINTETCTHIS",
+   "wordLogp": -10.3984,
+   "words": "SAINT ETC THIS",
+   "unknown": 0
+  },
+  {
+   "rank": 428,
+   "plaintext": "SOTHEIEVENTS",
+   "wordLogp": -10.4013,
+   "words": "SO THE I EVENTS",
+   "unknown": 0
+  },
+  {
+   "rank": 429,
+   "plaintext": "OUTHASAWAYTO",
+   "wordLogp": -10.4055,
+   "words": "OUT HAS A WAY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 430,
+   "plaintext": "SHEDATAPAGES",
+   "wordLogp": -10.4068,
+   "words": "SHE DATA PAGES",
+   "unknown": 0
+  },
+  {
+   "rank": 431,
+   "plaintext": "OFTASKSUSETO",
+   "wordLogp": -10.4084,
+   "words": "OF TASKS USE TO",
+   "unknown": 0
+  },
+  {
+   "rank": 432,
+   "plaintext": "OFTHEREPELTO",
+   "wordLogp": -10.4092,
+   "words": "OF THE REPEL TO",
+   "unknown": 0
+  },
+  {
+   "rank": 433,
+   "plaintext": "ERICANATALIE",
+   "wordLogp": -10.4135,
+   "words": "ERICA NATALIE",
+   "unknown": 0
+  },
+  {
+   "rank": 434,
+   "plaintext": "THECANALASET",
+   "wordLogp": -10.4148,
+   "words": "THE CANAL A SET",
+   "unknown": 0
+  },
+  {
+   "rank": 435,
+   "plaintext": "SINCEBEMEANS",
+   "wordLogp": -10.4163,
+   "words": "SINCE BE MEANS",
+   "unknown": 0
+  },
+  {
+   "rank": 436,
+   "plaintext": "OFTHELEBENTO",
+   "wordLogp": -10.4168,
+   "words": "OF THE LEBEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 437,
+   "plaintext": "STAYEDEVENAS",
+   "wordLogp": -10.4184,
+   "words": "STAYED EVEN AS",
+   "unknown": 0
+  },
+  {
+   "rank": 438,
+   "plaintext": "IFYOULUXURYI",
+   "wordLogp": -10.4192,
+   "words": "IF YOU LUXURY I",
+   "unknown": 0
+  },
+  {
+   "rank": 439,
+   "plaintext": "YETHADAPARTY",
+   "wordLogp": -10.4213,
+   "words": "YET HAD A PARTY",
+   "unknown": 0
+  },
+  {
+   "rank": 440,
+   "plaintext": "TWOCANADAGOT",
+   "wordLogp": -10.4219,
+   "words": "TWO CANADA GOT",
+   "unknown": 0
+  },
+  {
+   "rank": 441,
+   "plaintext": "AUTHOROFOCTA",
+   "wordLogp": -10.4221,
+   "words": "AUTHOR OF OCT A",
+   "unknown": 0
+  },
+  {
+   "rank": 442,
+   "plaintext": "SLAYEREVENAS",
+   "wordLogp": -10.4234,
+   "words": "SLAYER EVEN AS",
+   "unknown": 0
+  },
+  {
+   "rank": 443,
+   "plaintext": "OFTHEIEYESTO",
+   "wordLogp": -10.4243,
+   "words": "OF THE I EYES TO",
+   "unknown": 0
+  },
+  {
+   "rank": 444,
+   "plaintext": "SCAREDEVENAS",
+   "wordLogp": -10.4245,
+   "words": "SCARED EVEN AS",
+   "unknown": 0
+  },
+  {
+   "rank": 445,
+   "plaintext": "OCTFARAWAYTO",
+   "wordLogp": -10.4285,
+   "words": "OCT FAR AWAY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 446,
+   "plaintext": "SWITCHCOCKIS",
+   "wordLogp": -10.4297,
+   "words": "SWITCH COCK IS",
+   "unknown": 0
+  },
+  {
+   "rank": 447,
+   "plaintext": "ASTHEDECENTA",
+   "wordLogp": -10.4313,
+   "words": "AS THE DECENT A",
+   "unknown": 0
+  },
+  {
+   "rank": 448,
+   "plaintext": "OFTHEPERESTO",
+   "wordLogp": -10.4335,
+   "words": "OF THE PERES TO",
+   "unknown": 0
+  },
+  {
+   "rank": 449,
+   "plaintext": "OFTHESEREVTO",
+   "wordLogp": -10.4338,
+   "words": "OF THESE REV TO",
+   "unknown": 0
+  },
+  {
+   "rank": 450,
+   "plaintext": "OUTINANENDTO",
+   "wordLogp": -10.4342,
+   "words": "OUT IN AN END TO",
+   "unknown": 0
+  },
+  {
+   "rank": 451,
+   "plaintext": "SCALEGENEWAS",
+   "wordLogp": -10.436,
+   "words": "SCALE GENE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 452,
+   "plaintext": "OFTHEMEREATO",
+   "wordLogp": -10.4465,
+   "words": "OF THE MERE A TO",
+   "unknown": 0
+  },
+  {
+   "rank": 453,
+   "plaintext": "TRIPEBENEFIT",
+   "wordLogp": -10.4468,
+   "words": "TRIPE BENEFIT",
+   "unknown": 0
+  },
+  {
+   "rank": 454,
+   "plaintext": "ENTRADAWASTE",
+   "wordLogp": -10.4519,
+   "words": "ENTRADA WASTE",
+   "unknown": 0
+  },
+  {
+   "rank": 455,
+   "plaintext": "FROMANADAYOF",
+   "wordLogp": -10.4523,
+   "words": "FROM AN A DAY OF",
+   "unknown": 0
+  },
+  {
+   "rank": 456,
+   "plaintext": "DUEWASAMAZED",
+   "wordLogp": -10.4556,
+   "words": "DUE WAS AMAZED",
+   "unknown": 0
+  },
+  {
+   "rank": 457,
+   "plaintext": "OFTHEJEREZTO",
+   "wordLogp": -10.4562,
+   "words": "OF THE JEREZ TO",
+   "unknown": 0
+  },
+  {
+   "rank": 458,
+   "plaintext": "AITHESELECTA",
+   "wordLogp": -10.4572,
+   "words": "A I THE SELECT A",
+   "unknown": 0
+  },
+  {
+   "rank": 459,
+   "plaintext": "SOTHEDEFEATS",
+   "wordLogp": -10.4575,
+   "words": "SO THE DEFEATS",
+   "unknown": 0
+  },
+  {
+   "rank": 460,
+   "plaintext": "FRIDAYATASIF",
+   "wordLogp": -10.4586,
+   "words": "FRIDAY AT AS IF",
+   "unknown": 0
+  },
+  {
+   "rank": 461,
+   "plaintext": "ONTHESEPERTO",
+   "wordLogp": -10.4588,
+   "words": "ON THESE PER TO",
+   "unknown": 0
+  },
+  {
+   "rank": 462,
+   "plaintext": "RHODEGENEFOR",
+   "wordLogp": -10.459,
+   "words": "RHODE GENE FOR",
+   "unknown": 0
+  },
+  {
+   "rank": 463,
+   "plaintext": "YOUCANADAGUY",
+   "wordLogp": -10.4632,
+   "words": "YOU CANADA GUY",
+   "unknown": 0
+  },
+  {
+   "rank": 464,
+   "plaintext": "PLACEWEREMAP",
+   "wordLogp": -10.4637,
+   "words": "PLACE WERE MAP",
+   "unknown": 0
+  },
+  {
+   "rank": 465,
+   "plaintext": "ASITEVENEZIA",
+   "wordLogp": -10.4706,
+   "words": "A SITE VENEZIA",
+   "unknown": 0
+  },
+  {
+   "rank": 466,
+   "plaintext": "WHOCANADALOW",
+   "wordLogp": -10.4708,
+   "words": "WHO CANADA LOW",
+   "unknown": 0
+  },
+  {
+   "rank": 467,
+   "plaintext": "SPACEBETEXAS",
+   "wordLogp": -10.4722,
+   "words": "SPACE BE TEXAS",
+   "unknown": 0
+  },
+  {
+   "rank": 468,
+   "plaintext": "ASTHEBEKEPTA",
+   "wordLogp": -10.4734,
+   "words": "AS THE BE KEPT A",
+   "unknown": 0
+  },
+  {
+   "rank": 469,
+   "plaintext": "ONTHEDESERTO",
+   "wordLogp": -10.4749,
+   "words": "ON THE DESERTO",
+   "unknown": 0
+  },
+  {
+   "rank": 470,
+   "plaintext": "AEMPIRICISMA",
+   "wordLogp": -10.4776,
+   "words": "A EMPIRICISM A",
+   "unknown": 0
+  },
+  {
+   "rank": 471,
+   "plaintext": "SLIDENEVERIS",
+   "wordLogp": -10.4779,
+   "words": "SLIDE NEVER IS",
+   "unknown": 0
+  },
+  {
+   "rank": 472,
+   "plaintext": "SAIDELEVENIS",
+   "wordLogp": -10.4784,
+   "words": "SAID ELEVEN IS",
+   "unknown": 0
+  },
+  {
+   "rank": 473,
+   "plaintext": "TROJANASALOT",
+   "wordLogp": -10.4792,
+   "words": "TROJAN AS A LOT",
+   "unknown": 0
+  },
+  {
+   "rank": 474,
+   "plaintext": "OFSPIRITINSO",
+   "wordLogp": -10.4801,
+   "words": "OF SPIRIT IN SO",
+   "unknown": 0
+  },
+  {
+   "rank": 475,
+   "plaintext": "ASTHERENEXTA",
+   "wordLogp": -10.4801,
+   "words": "AS THERE NEXT A",
+   "unknown": 0
+  },
+  {
+   "rank": 476,
+   "plaintext": "STUDIOIVIRUS",
+   "wordLogp": -10.4818,
+   "words": "STUDIO I VIRUS",
+   "unknown": 0
+  },
+  {
+   "rank": 477,
+   "plaintext": "HITSAMARANTH",
+   "wordLogp": -10.4846,
+   "words": "HITS AMARANTH",
+   "unknown": 0
+  },
+  {
+   "rank": 478,
+   "plaintext": "SKATEHEREWAS",
+   "wordLogp": -10.4858,
+   "words": "SKATE HERE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 479,
+   "plaintext": "OFTHEMEREITO",
+   "wordLogp": -10.4867,
+   "words": "OF THE MERE I TO",
+   "unknown": 0
+  },
+  {
+   "rank": 480,
+   "plaintext": "ANSWEREDELSA",
+   "wordLogp": -10.4907,
+   "words": "ANSWERED ELSA",
+   "unknown": 0
+  },
+  {
+   "rank": 481,
+   "plaintext": "THEANDNONPET",
+   "wordLogp": -10.4925,
+   "words": "THE AND NON PET",
+   "unknown": 0
+  },
+  {
+   "rank": 482,
+   "plaintext": "ALONEWERETOA",
+   "wordLogp": -10.4931,
+   "words": "ALONE WERE TO A",
+   "unknown": 0
+  },
+  {
+   "rank": 483,
+   "plaintext": "MYPHOTOSOFPM",
+   "wordLogp": -10.4953,
+   "words": "MY PHOTOS OF PM",
+   "unknown": 0
+  },
+  {
+   "rank": 484,
+   "plaintext": "YOUDELETEGUY",
+   "wordLogp": -10.5006,
+   "words": "YOU DELETE GUY",
+   "unknown": 0
+  },
+  {
+   "rank": 485,
+   "plaintext": "MEPROTOCOLPM",
+   "wordLogp": -10.5008,
+   "words": "ME PROTOCOL PM",
+   "unknown": 0
+  },
+  {
+   "rank": 486,
+   "plaintext": "DOECIVILIZED",
+   "wordLogp": -10.5009,
+   "words": "DOE CIVILIZED",
+   "unknown": 0
+  },
+  {
+   "rank": 487,
+   "plaintext": "ANDVILIFIEDA",
+   "wordLogp": -10.5011,
+   "words": "AND VILIFIED A",
+   "unknown": 0
+  },
+  {
+   "rank": 488,
+   "plaintext": "SIEJAVAGAMES",
+   "wordLogp": -10.5026,
+   "words": "SIE JAVA GAMES",
+   "unknown": 0
+  },
+  {
+   "rank": 489,
+   "plaintext": "SCALEPETERAS",
+   "wordLogp": -10.5035,
+   "words": "SCALE PETER AS",
+   "unknown": 0
+  },
+  {
+   "rank": 490,
+   "plaintext": "ONTHEBEKEYTO",
+   "wordLogp": -10.5035,
+   "words": "ON THE BE KEY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 491,
+   "plaintext": "SOLVECEREALS",
+   "wordLogp": -10.5046,
+   "words": "SOLVE CEREALS",
+   "unknown": 0
+  },
+  {
+   "rank": 492,
+   "plaintext": "OKINAWAMARIO",
+   "wordLogp": -10.5046,
+   "words": "OKINAWA MARIO",
+   "unknown": 0
+  },
+  {
+   "rank": 493,
+   "plaintext": "SMITHWHYHEIS",
+   "wordLogp": -10.5053,
+   "words": "SMITH WHY HE IS",
+   "unknown": 0
+  },
+  {
+   "rank": 494,
+   "plaintext": "SATUELEMENTS",
+   "wordLogp": -10.5058,
+   "words": "SATU ELEMENTS",
+   "unknown": 0
+  },
+  {
+   "rank": 495,
+   "plaintext": "OUTBIKINISTO",
+   "wordLogp": -10.5062,
+   "words": "OUT BIKINIS TO",
+   "unknown": 0
+  },
+  {
+   "rank": 496,
+   "plaintext": "FROMASALAWOF",
+   "wordLogp": -10.5064,
+   "words": "FROM AS A LAW OF",
+   "unknown": 0
+  },
+  {
+   "rank": 497,
+   "plaintext": "OFTHESEGENTO",
+   "wordLogp": -10.5101,
+   "words": "OF THESE GEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 498,
+   "plaintext": "OWNDATAHASNO",
+   "wordLogp": -10.5102,
+   "words": "OWN DATA HAS NO",
+   "unknown": 0
+  },
+  {
+   "rank": 499,
+   "plaintext": "AGELIMITIDEA",
+   "wordLogp": -10.5148,
+   "words": "AGE LIMIT IDEA",
+   "unknown": 0
+  },
+  {
+   "rank": 500,
+   "plaintext": "YOUSEVEREBUY",
+   "wordLogp": -10.5157,
+   "words": "YOU SEVERE BUY",
+   "unknown": 0
+  },
+  {
+   "rank": 501,
+   "plaintext": "OURDATAMACRO",
+   "wordLogp": -10.5175,
+   "words": "OUR DATA MACRO",
+   "unknown": 0
+  },
+  {
+   "rank": 502,
+   "plaintext": "OFTHESEGELTO",
+   "wordLogp": -10.5192,
+   "words": "OF THESE GEL TO",
+   "unknown": 0
+  },
+  {
+   "rank": 503,
+   "plaintext": "FOILEDEVENIF",
+   "wordLogp": -10.5193,
+   "words": "FOILED EVEN IF",
+   "unknown": 0
+  },
+  {
+   "rank": 504,
+   "plaintext": "THEANDNONMET",
+   "wordLogp": -10.5245,
+   "words": "THE AND NON MET",
+   "unknown": 0
+  },
+  {
+   "rank": 505,
+   "plaintext": "SINCEHEJEANS",
+   "wordLogp": -10.5246,
+   "words": "SINCE HE JEANS",
+   "unknown": 0
+  },
+  {
+   "rank": 506,
+   "plaintext": "TOHEARAYACHT",
+   "wordLogp": -10.5253,
+   "words": "TO HEAR A YACHT",
+   "unknown": 0
+  },
+  {
+   "rank": 507,
+   "plaintext": "THAMESEVENAT",
+   "wordLogp": -10.5257,
+   "words": "THAMES EVEN AT",
+   "unknown": 0
+  },
+  {
+   "rank": 508,
+   "plaintext": "OUTPAJAMASTO",
+   "wordLogp": -10.5257,
+   "words": "OUT PAJAMAS TO",
+   "unknown": 0
+  },
+  {
+   "rank": 509,
+   "plaintext": "ADOBEWERETOA",
+   "wordLogp": -10.5261,
+   "words": "ADOBE WERE TO A",
+   "unknown": 0
+  },
+  {
+   "rank": 510,
+   "plaintext": "ORTHEMEVENTO",
+   "wordLogp": -10.5279,
+   "words": "OR THEM EVEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 511,
+   "plaintext": "OFSHAMANALSO",
+   "wordLogp": -10.5336,
+   "words": "OF SHAMAN ALSO",
+   "unknown": 0
+  },
+  {
+   "rank": 512,
+   "plaintext": "OFTRIVIAISTO",
+   "wordLogp": -10.5359,
+   "words": "OF TRIVIA IS TO",
+   "unknown": 0
+  },
+  {
+   "rank": 513,
+   "plaintext": "CHINESEAERIC",
+   "wordLogp": -10.5374,
+   "words": "CHINESE A ERIC",
+   "unknown": 0
+  },
+  {
+   "rank": 514,
+   "plaintext": "SUNHEREMEANS",
+   "wordLogp": -10.5399,
+   "words": "SUN HERE MEANS",
+   "unknown": 0
+  },
+  {
+   "rank": 515,
+   "plaintext": "SPACEMETERAS",
+   "wordLogp": -10.5421,
+   "words": "SPACE METER AS",
+   "unknown": 0
+  },
+  {
+   "rank": 516,
+   "plaintext": "WHOUSESASLOW",
+   "wordLogp": -10.5438,
+   "words": "WHO USES A SLOW",
+   "unknown": 0
+  },
+  {
+   "rank": 517,
+   "plaintext": "SHADOWOFONAS",
+   "wordLogp": -10.5465,
+   "words": "SHADOW OF ON AS",
+   "unknown": 0
+  },
+  {
+   "rank": 518,
+   "plaintext": "DONEMYMUMAND",
+   "wordLogp": -10.5481,
+   "words": "DONE MY MUM AND",
+   "unknown": 0
+  },
+  {
+   "rank": 519,
+   "plaintext": "OFTHEREMENTO",
+   "wordLogp": -10.5492,
+   "words": "OF THERE MEN TO",
+   "unknown": 0
+  },
+  {
+   "rank": 520,
+   "plaintext": "THEANYNONGET",
+   "wordLogp": -10.5509,
+   "words": "THE ANY NON GET",
+   "unknown": 0
+  },
+  {
+   "rank": 521,
+   "plaintext": "OFSHENEVERSO",
+   "wordLogp": -10.5509,
+   "words": "OF SHE NEVER SO",
+   "unknown": 0
+  },
+  {
+   "rank": 522,
+   "plaintext": "ONTHEREKEYTO",
+   "wordLogp": -10.5528,
+   "words": "ON THERE KEY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 523,
+   "plaintext": "OFSPACANALSO",
+   "wordLogp": -10.5546,
+   "words": "OF SPA CAN ALSO",
+   "unknown": 0
+  },
+  {
+   "rank": 524,
+   "plaintext": "YETHASAPARTY",
+   "wordLogp": -10.5553,
+   "words": "YET HAS A PARTY",
+   "unknown": 0
+  },
+  {
+   "rank": 525,
+   "plaintext": "OFDRAMACANDO",
+   "wordLogp": -10.5561,
+   "words": "OF DRAMA CAN DO",
+   "unknown": 0
+  },
+  {
+   "rank": 526,
+   "plaintext": "TWOCANADALOT",
+   "wordLogp": -10.5565,
+   "words": "TWO CANADA LOT",
+   "unknown": 0
+  },
+  {
+   "rank": 527,
+   "plaintext": "ARETOGOHOMEA",
+   "wordLogp": -10.5565,
+   "words": "ARE TO GO HOME A",
+   "unknown": 0
+  },
+  {
+   "rank": 528,
+   "plaintext": "UPONADATAYOU",
+   "wordLogp": -10.5567,
+   "words": "UPON A DATA YOU",
+   "unknown": 0
+  },
+  {
+   "rank": 529,
+   "plaintext": "OFTEAMAWAYTO",
+   "wordLogp": -10.5575,
+   "words": "OF TEAM A WAY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 530,
+   "plaintext": "ONTHERELEDTO",
+   "wordLogp": -10.5602,
+   "words": "ON THERE LED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 531,
+   "plaintext": "OFTHERESEXTO",
+   "wordLogp": -10.5609,
+   "words": "OF THERE SEX TO",
+   "unknown": 0
+  },
+  {
+   "rank": 532,
+   "plaintext": "INTHEBELEFTI",
+   "wordLogp": -10.5613,
+   "words": "IN THE BE LEFT I",
+   "unknown": 0
+  },
+  {
+   "rank": 533,
+   "plaintext": "SKINAVATARIS",
+   "wordLogp": -10.564,
+   "words": "SKIN AVATAR IS",
+   "unknown": 0
+  },
+  {
+   "rank": 534,
+   "plaintext": "OFTHEREBEATO",
+   "wordLogp": -10.565,
+   "words": "OF THERE BE A TO",
+   "unknown": 0
+  },
+  {
+   "rank": 535,
+   "plaintext": "TUNERORPRINT",
+   "wordLogp": -10.5651,
+   "words": "TUNER OR PRINT",
+   "unknown": 0
+  },
+  {
+   "rank": 536,
+   "plaintext": "AFILEVENEZIA",
+   "wordLogp": -10.5654,
+   "words": "A FILE VENEZIA",
+   "unknown": 0
+  },
+  {
+   "rank": 537,
+   "plaintext": "DIEGOTOMOVED",
+   "wordLogp": -10.5658,
+   "words": "DIEGO TO MOVED",
+   "unknown": 0
+  },
+  {
+   "rank": 538,
+   "plaintext": "THEBIKINIPET",
+   "wordLogp": -10.5673,
+   "words": "THE BIKINI PET",
+   "unknown": 0
+  },
+  {
+   "rank": 539,
+   "plaintext": "INTHEBEKEPTI",
+   "wordLogp": -10.5733,
+   "words": "IN THE BE KEPT I",
+   "unknown": 0
+  },
+  {
+   "rank": 540,
+   "plaintext": "ONTHEREWEBTO",
+   "wordLogp": -10.5735,
+   "words": "ON THERE WEB TO",
+   "unknown": 0
+  },
+  {
+   "rank": 541,
+   "plaintext": "ONTHEBEFEDTO",
+   "wordLogp": -10.5742,
+   "words": "ON THE BE FED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 542,
+   "plaintext": "OUTHADAWAYTO",
+   "wordLogp": -10.5758,
+   "words": "OUT HAD A WAY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 543,
+   "plaintext": "SMILEPETERIS",
+   "wordLogp": -10.5761,
+   "words": "SMILE PETER IS",
+   "unknown": 0
+  },
+  {
+   "rank": 544,
+   "plaintext": "TOSHIPIFIRST",
+   "wordLogp": -10.5764,
+   "words": "TO SHIP I FIRST",
+   "unknown": 0
+  },
+  {
+   "rank": 545,
+   "plaintext": "SPACEDEVENAS",
+   "wordLogp": -10.5799,
+   "words": "SPACED EVEN AS",
+   "unknown": 0
+  },
+  {
+   "rank": 546,
+   "plaintext": "SITREPEVENTS",
+   "wordLogp": -10.5804,
+   "words": "SITREP EVENTS",
+   "unknown": 0
+  },
+  {
+   "rank": 547,
+   "plaintext": "ADTHERECENTA",
+   "wordLogp": -10.582,
+   "words": "AD THE RECENT A",
+   "unknown": 0
+  },
+  {
+   "rank": 548,
+   "plaintext": "SINCEWEBEANS",
+   "wordLogp": -10.5822,
+   "words": "SINCE WE BEANS",
+   "unknown": 0
+  },
+  {
+   "rank": 549,
+   "plaintext": "TWICEPEREDIT",
+   "wordLogp": -10.5834,
+   "words": "TWICE PER EDIT",
+   "unknown": 0
+  },
+  {
+   "rank": 550,
+   "plaintext": "APERITIFIDEA",
+   "wordLogp": -10.5856,
+   "words": "APERITIF IDEA",
+   "unknown": 0
+  },
+  {
+   "rank": 551,
+   "plaintext": "THOSEWEREDOT",
+   "wordLogp": -10.587,
+   "words": "THOSE WERE DOT",
+   "unknown": 0
+  },
+  {
+   "rank": 552,
+   "plaintext": "OFTHISIDINTO",
+   "wordLogp": -10.5883,
+   "words": "OF THIS ID INTO",
+   "unknown": 0
+  },
+  {
+   "rank": 553,
+   "plaintext": "OCTWERELEDTO",
+   "wordLogp": -10.5888,
+   "words": "OCT WERE LED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 554,
+   "plaintext": "ARTWESELECTA",
+   "wordLogp": -10.589,
+   "words": "ART WE SELECT A",
+   "unknown": 0
+  },
+  {
+   "rank": 555,
+   "plaintext": "THEYAMADAGET",
+   "wordLogp": -10.5893,
+   "words": "THE YAMADA GET",
+   "unknown": 0
+  },
+  {
+   "rank": 556,
+   "plaintext": "TOXINANDNEXT",
+   "wordLogp": -10.5893,
+   "words": "TOXIN AND NEXT",
+   "unknown": 0
+  },
+  {
+   "rank": 557,
+   "plaintext": "STAKEHEREWAS",
+   "wordLogp": -10.5913,
+   "words": "STAKE HERE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 558,
+   "plaintext": "SOTHEREBEATS",
+   "wordLogp": -10.5916,
+   "words": "SO THERE BEATS",
+   "unknown": 0
+  },
+  {
+   "rank": 559,
+   "plaintext": "ASTYLELOLITA",
+   "wordLogp": -10.5928,
+   "words": "A STYLE LOLITA",
+   "unknown": 0
+  },
+  {
+   "rank": 560,
+   "plaintext": "SAIDTVTOTHIS",
+   "wordLogp": -10.5928,
+   "words": "SAID TV TO THIS",
+   "unknown": 0
+  },
+  {
+   "rank": 561,
+   "plaintext": "FORSTATETURF",
+   "wordLogp": -10.5954,
+   "words": "FOR STATE TURF",
+   "unknown": 0
+  },
+  {
+   "rank": 562,
+   "plaintext": "IFTHEREBESTI",
+   "wordLogp": -10.5964,
+   "words": "IF THERE BEST I",
+   "unknown": 0
+  },
+  {
+   "rank": 563,
+   "plaintext": "CLIMAXABASIC",
+   "wordLogp": -10.5965,
+   "words": "CLIMAX A BASIC",
+   "unknown": 0
+  },
+  {
+   "rank": 564,
+   "plaintext": "ONTHESEWEDTO",
+   "wordLogp": -10.5967,
+   "words": "ON THESE WED TO",
+   "unknown": 0
+  },
+  {
+   "rank": 565,
+   "plaintext": "OKINAWAPATIO",
+   "wordLogp": -10.5975,
+   "words": "OKINAWA PATIO",
+   "unknown": 0
+  },
+  {
+   "rank": 566,
+   "plaintext": "THEBIKINIMET",
+   "wordLogp": -10.5992,
+   "words": "THE BIKINI MET",
+   "unknown": 0
+  },
+  {
+   "rank": 567,
+   "plaintext": "OFTHESERECTO",
+   "wordLogp": -10.5994,
+   "words": "OF THESE REC TO",
+   "unknown": 0
+  },
+  {
+   "rank": 568,
+   "plaintext": "ONTHEWEREITO",
+   "wordLogp": -10.5998,
+   "words": "ON THE WERE I TO",
+   "unknown": 0
+  },
+  {
+   "rank": 569,
+   "plaintext": "OUTCIVILINTO",
+   "wordLogp": -10.5999,
+   "words": "OUT CIVIL INTO",
+   "unknown": 0
+  },
+  {
+   "rank": 570,
+   "plaintext": "FRONTATITSOF",
+   "wordLogp": -10.6,
+   "words": "FRONT AT ITS OF",
+   "unknown": 0
+  },
+  {
+   "rank": 571,
+   "plaintext": "STEFANAGAMES",
+   "wordLogp": -10.6009,
+   "words": "STEFAN A GAMES",
+   "unknown": 0
+  },
+  {
+   "rank": 572,
+   "plaintext": "INTHEWEREATI",
+   "wordLogp": -10.6009,
+   "words": "IN THE WERE AT I",
+   "unknown": 0
+  },
+  {
+   "rank": 573,
+   "plaintext": "OUTGAYANALTO",
+   "wordLogp": -10.6017,
+   "words": "OUT GAY ANAL TO",
+   "unknown": 0
+  },
+  {
+   "rank": 574,
+   "plaintext": "THEDAYASAGET",
+   "wordLogp": -10.6023,
+   "words": "THE DAY AS A GET",
+   "unknown": 0
+  },
+  {
+   "rank": 575,
+   "plaintext": "AUGLIMITINGA",
+   "wordLogp": -10.6031,
+   "words": "AUG LIMITING A",
+   "unknown": 0
+  },
+  {
+   "rank": 576,
+   "plaintext": "NEARIFITISAN",
+   "wordLogp": -10.6046,
+   "words": "NEAR IF IT IS AN",
+   "unknown": 0
+  },
+  {
+   "rank": 577,
+   "plaintext": "KNOWIFITISOK",
+   "wordLogp": -10.605,
+   "words": "KNOW IF IT IS OK",
+   "unknown": 0
+  },
+  {
+   "rank": 578,
+   "plaintext": "SLATEHEREWAS",
+   "wordLogp": -10.6061,
+   "words": "SLATE HERE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 579,
+   "plaintext": "SKIRTATOTHIS",
+   "wordLogp": -10.6062,
+   "words": "SKIRT A TO THIS",
+   "unknown": 0
+  },
+  {
+   "rank": 580,
+   "plaintext": "SMILEWEREHIS",
+   "wordLogp": -10.6065,
+   "words": "SMILE WERE HIS",
+   "unknown": 0
+  },
+  {
+   "rank": 581,
+   "plaintext": "SPACEBEHEWAS",
+   "wordLogp": -10.6072,
+   "words": "SPACE BE HE WAS",
+   "unknown": 0
+  },
+  {
+   "rank": 582,
+   "plaintext": "RHODESEVENOR",
+   "wordLogp": -10.6075,
+   "words": "RHODE SEVEN OR",
+   "unknown": 0
+  },
+  {
+   "rank": 583,
+   "plaintext": "ERIKANATALIE",
+   "wordLogp": -10.6088,
+   "words": "ERIKA NATALIE",
+   "unknown": 0
+  },
+  {
+   "rank": 584,
+   "plaintext": "THEINANONGET",
+   "wordLogp": -10.6095,
+   "words": "THE IN A NON GET",
+   "unknown": 0
+  },
+  {
+   "rank": 585,
+   "plaintext": "OFTHEMEKEYTO",
+   "wordLogp": -10.6103,
+   "words": "OF THE ME KEY TO",
+   "unknown": 0
+  },
+  {
+   "rank": 586,
+   "plaintext": "ONTHECERESTO",
+   "wordLogp": -10.6113,
+   "words": "ON THE CERES TO",
+   "unknown": 0
+  },
+  {
+   "rank": 587,
+   "plaintext": "OFTHEREVELTO",
+   "wordLogp": -10.6134,
+   "words": "OF THE REVEL TO",
+   "unknown": 0
+  },
+  {
+   "rank": 588,
+   "plaintext": "ASIDEVENEZIA",
+   "wordLogp": -10.6138,
+   "words": "ASIDE VENEZIA",
+   "unknown": 0
+  },
+  {
+   "rank": 589,
+   "plaintext": "SITEAWAYARTS",
+   "wordLogp": -10.6147,
+   "words": "SITE AWAY ARTS",
+   "unknown": 0
+  },
+  {
+   "rank": 590,
+   "plaintext": "SHIPAVATARIS",
+   "wordLogp": -10.6151,
+   "words": "SHIP AVATAR IS",
+   "unknown": 0
+  }
+ ]
+}

@@ -1,0 +1,595 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:27:20.709Z",
+ "label": "eng01_03",
+ "cipher": {
+  "id": "eng01",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng01.txt",
+  "text": "abcdefghechef",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*efghechef"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 147810,
+  "scored": 135483,
+  "keptAtLeastStreamMin": 102,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 6342,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 956,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 102,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 6,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 1,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 12,
+  "3": 43,
+  "4": 47
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.04165470922581,
+  "topShare": 0.857592305096918,
+  "top10Share": 0.9248283256604922,
+  "effectiveNumberExpEntropy": 2.9456973100554205,
+  "effectiveNumberInverseSimpson": 1.3582839275547356,
+  "unscoredMassBoundRelative": 0.0014873463266744727,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 10,
+   "maxWordLogp": -15.796023185609851,
+   "massEstimateRelative": 3.908535932213266e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00043325324584624016
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 2,
+   "-18.25": 13,
+   "-18.00": 26,
+   "-17.75": 39,
+   "-17.50": 55,
+   "-17.25": 95,
+   "-17.00": 96,
+   "-16.75": 84,
+   "-16.50": 165,
+   "-16.25": 247,
+   "-16.00": 251,
+   "-15.75": 338,
+   "-15.50": 443,
+   "-15.25": 527,
+   "-15.00": 680,
+   "-14.75": 808,
+   "-14.50": 954,
+   "-14.25": 1056,
+   "-14.00": 1262,
+   "-13.75": 1432,
+   "-13.50": 1668,
+   "-13.25": 1790,
+   "-13.00": 2008,
+   "-12.75": 2332,
+   "-12.50": 2544,
+   "-12.25": 2824,
+   "-12.00": 2977,
+   "-11.75": 3416,
+   "-11.50": 3745,
+   "-11.25": 3831,
+   "-11.00": 4335,
+   "-10.75": 4566,
+   "-10.50": 4872,
+   "-10.25": 5212,
+   "-10.00": 5521,
+   "-9.75": 5557,
+   "-9.50": 5799,
+   "-9.25": 5914,
+   "-9.00": 6194,
+   "-8.75": 6279,
+   "-8.50": 6272,
+   "-8.25": 6303,
+   "-8.00": 6059,
+   "-7.75": 5920,
+   "-7.50": 5407,
+   "-7.25": 5045,
+   "-7.00": 4504,
+   "-6.75": 3789,
+   "-6.50": 3319,
+   "-6.25": 2692,
+   "-6.00": 2222,
+   "-5.75": 1814,
+   "-5.50": 1351,
+   "-5.25": 1019,
+   "-5.00": 673,
+   "-4.75": 553,
+   "-4.50": 354,
+   "-4.25": 210,
+   "-4.00": 130,
+   "-3.75": 110,
+   "-3.50": 53,
+   "-3.25": 35,
+   "-3.00": 16,
+   "-2.75": 2,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.75": 1,
+   "-19.50": 2,
+   "-19.25": 3,
+   "-19.00": 10,
+   "-18.75": 61,
+   "-18.50": 257,
+   "-18.25": 853,
+   "-18.00": 1983,
+   "-17.75": 3699,
+   "-17.50": 5531,
+   "-17.25": 7365,
+   "-17.00": 8805,
+   "-16.75": 9892,
+   "-16.50": 10060,
+   "-16.25": 10290,
+   "-16.00": 10010,
+   "-15.75": 9282,
+   "-15.50": 8624,
+   "-15.25": 7759,
+   "-15.00": 7146,
+   "-14.75": 6198,
+   "-14.50": 5329,
+   "-14.25": 4477,
+   "-14.00": 3721,
+   "-13.75": 3151,
+   "-13.50": 2395,
+   "-13.25": 1962,
+   "-13.00": 1641,
+   "-12.75": 1187,
+   "-12.50": 935,
+   "-12.25": 758,
+   "-12.00": 587,
+   "-11.75": 427,
+   "-11.50": 299,
+   "-11.25": 211,
+   "-11.00": 176,
+   "-10.75": 130,
+   "-10.50": 83,
+   "-10.25": 59,
+   "-10.00": 37,
+   "-9.75": 34,
+   "-9.50": 20,
+   "-9.25": 9,
+   "-9.00": 11,
+   "-8.75": 5,
+   "-8.50": 2,
+   "-8.25": 3,
+   "-8.00": 2,
+   "-6.25": 1
+  },
+  "boundUnscored": {
+   "-18.50": 2,
+   "-18.25": 13,
+   "-18.00": 26,
+   "-17.75": 39,
+   "-17.50": 55,
+   "-17.25": 95,
+   "-17.00": 96,
+   "-16.75": 84,
+   "-16.50": 165,
+   "-16.25": 247,
+   "-16.00": 251,
+   "-15.75": 338,
+   "-15.50": 443,
+   "-15.25": 527,
+   "-15.00": 680,
+   "-14.75": 808,
+   "-14.50": 954,
+   "-14.25": 1056,
+   "-14.00": 1262,
+   "-13.75": 1432,
+   "-13.50": 1668,
+   "-13.25": 1790,
+   "-13.00": 296
+  }
+ },
+ "timeMs": {
+  "total": 5952,
+  "setup": 473
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "MATTERWHETHER",
+   "wordLogp": -6.1084,
+   "words": "MATTER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "A",
+    "c": "T",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "MOTHERWHETHER",
+   "wordLogp": -7.8146,
+   "words": "MOTHER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "O",
+    "c": "T",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "FATHERWHETHER",
+   "wordLogp": -7.8782,
+   "words": "FATHER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "A",
+    "c": "T",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "POTTERWHETHER",
+   "wordLogp": -8.1734,
+   "words": "POTTER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "O",
+    "c": "T",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "INMOREFORMORE",
+   "wordLogp": -8.1757,
+   "words": "IN MORE FOR MORE",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "M",
+    "e": "R",
+    "f": "E",
+    "g": "F",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ISMOREFORMORE",
+   "wordLogp": -8.1877,
+   "words": "IS MORE FOR MORE",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "S",
+    "c": "M",
+    "e": "R",
+    "f": "E",
+    "g": "F",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "LATTERWHETHER",
+   "wordLogp": -8.4314,
+   "words": "LATTER WHETHER",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "A",
+    "c": "T",
+    "e": "E",
+    "f": "R",
+    "g": "W",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "CALLSTHISLIST",
+   "wordLogp": -8.474,
+   "words": "CALLS THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "A",
+    "c": "L",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "RULESTHISLIST",
+   "wordLogp": -8.5315,
+   "words": "RULES THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "U",
+    "c": "L",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "BACKINWHICHIN",
+   "wordLogp": -8.5762,
+   "words": "BACK IN WHICH IN",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "A",
+    "c": "C",
+    "e": "I",
+    "f": "N",
+    "g": "W",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "BYMOREFORMORE",
+   "wordLogp": -8.6063,
+   "words": "BY MORE FOR MORE",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "Y",
+    "c": "M",
+    "e": "R",
+    "f": "E",
+    "g": "F",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "MAKINGLINKING",
+   "wordLogp": -8.6141,
+   "words": "MAKING LINKING",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "A",
+    "c": "K",
+    "e": "N",
+    "f": "G",
+    "g": "L",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ITMOREFORMORE",
+   "wordLogp": -8.7174,
+   "words": "IT MORE FOR MORE",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "T",
+    "c": "M",
+    "e": "R",
+    "f": "E",
+    "g": "F",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "CELLSTHISLIST",
+   "wordLogp": -8.8676,
+   "words": "CELLS THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "E",
+    "c": "L",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "WALESTHISLIST",
+   "wordLogp": -8.8714,
+   "words": "WALES THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "A",
+    "c": "L",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "COACHESTHATHE",
+   "wordLogp": -8.8745,
+   "words": "COACHES THAT HE",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "O",
+    "c": "A",
+    "e": "H",
+    "f": "E",
+    "g": "S",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "FALLSTHISLIST",
+   "wordLogp": -8.8971,
+   "words": "FALLS THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "A",
+    "c": "L",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ASMOREFORMORE",
+   "wordLogp": -8.9081,
+   "words": "AS MORE FOR MORE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "S",
+    "c": "M",
+    "e": "R",
+    "f": "E",
+    "g": "F",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ATMOREFORMORE",
+   "wordLogp": -8.9126,
+   "words": "AT MORE FOR MORE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "T",
+    "c": "M",
+    "e": "R",
+    "f": "E",
+    "g": "F",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "TAKINGLINKING",
+   "wordLogp": -8.936,
+   "words": "TAKING LINKING",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "A",
+    "c": "K",
+    "e": "N",
+    "f": "G",
+    "g": "L",
+    "h": "I"
+   }
+  }
+ ]
+}

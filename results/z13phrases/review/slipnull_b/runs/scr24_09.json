@@ -1,0 +1,599 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:39:30.964Z",
+ "label": "scr24_09",
+ "cipher": {
+  "id": "scr24",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr24.txt",
+  "text": "zAKN[0N00AEMM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   9
+  ],
+  "isomorphAfterSlips": "abcdefdff*ghh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 112087,
+  "scored": 107593,
+  "keptAtLeastStreamMin": 156,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 6816,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 935,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 156,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 25,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 20,
+  "3": 122,
+  "4": 14
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.359549536734142,
+  "topShare": 0.11405919226066373,
+  "top10Share": 0.47312018475337536,
+  "effectiveNumberExpEntropy": 75.54000994728969,
+  "effectiveNumberInverseSimpson": 29.544543386553535,
+  "unscoredMassBoundRelative": 0.0011274118747312968,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 3,
+   "maxWordLogp": -16.555718722911365,
+   "massEstimateRelative": 1.1356285336516299e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0004484043749834807
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.00": 5,
+   "-16.75": 8,
+   "-16.50": 17,
+   "-16.25": 18,
+   "-16.00": 56,
+   "-15.75": 108,
+   "-15.50": 120,
+   "-15.25": 109,
+   "-15.00": 120,
+   "-14.75": 159,
+   "-14.50": 248,
+   "-14.25": 333,
+   "-14.00": 530,
+   "-13.75": 729,
+   "-13.50": 850,
+   "-13.25": 918,
+   "-13.00": 1006,
+   "-12.75": 1087,
+   "-12.50": 1226,
+   "-12.25": 1527,
+   "-12.00": 1883,
+   "-11.75": 2249,
+   "-11.50": 2534,
+   "-11.25": 2859,
+   "-11.00": 3243,
+   "-10.75": 3304,
+   "-10.50": 3421,
+   "-10.25": 3784,
+   "-10.00": 4287,
+   "-9.75": 4487,
+   "-9.50": 4804,
+   "-9.25": 5470,
+   "-9.00": 5737,
+   "-8.75": 5852,
+   "-8.50": 5943,
+   "-8.25": 5900,
+   "-8.00": 5605,
+   "-7.75": 5341,
+   "-7.50": 4904,
+   "-7.25": 4359,
+   "-7.00": 3917,
+   "-6.75": 3104,
+   "-6.50": 2469,
+   "-6.25": 2092,
+   "-6.00": 1553,
+   "-5.75": 1324,
+   "-5.50": 893,
+   "-5.25": 624,
+   "-5.00": 388,
+   "-4.75": 257,
+   "-4.50": 146,
+   "-4.25": 93,
+   "-4.00": 41,
+   "-3.75": 20,
+   "-3.50": 15,
+   "-3.25": 7,
+   "-3.00": 4
+  },
+  "exactScored": {
+   "-19.00": 3,
+   "-18.75": 21,
+   "-18.50": 118,
+   "-18.25": 318,
+   "-18.00": 742,
+   "-17.75": 1671,
+   "-17.50": 2724,
+   "-17.25": 3945,
+   "-17.00": 5138,
+   "-16.75": 6216,
+   "-16.50": 7122,
+   "-16.25": 7899,
+   "-16.00": 8195,
+   "-15.75": 8071,
+   "-15.50": 7938,
+   "-15.25": 7127,
+   "-15.00": 6259,
+   "-14.75": 5448,
+   "-14.50": 4871,
+   "-14.25": 4457,
+   "-14.00": 3857,
+   "-13.75": 3358,
+   "-13.50": 2734,
+   "-13.25": 2219,
+   "-13.00": 1748,
+   "-12.75": 1319,
+   "-12.50": 1049,
+   "-12.25": 871,
+   "-12.00": 611,
+   "-11.75": 463,
+   "-11.50": 309,
+   "-11.25": 239,
+   "-11.00": 154,
+   "-10.75": 104,
+   "-10.50": 52,
+   "-10.25": 52,
+   "-10.00": 29,
+   "-9.75": 22,
+   "-9.50": 22,
+   "-9.25": 29,
+   "-9.00": 27,
+   "-8.75": 14,
+   "-8.50": 10,
+   "-8.25": 10,
+   "-8.00": 3,
+   "-7.75": 3,
+   "-7.50": 2
+  },
+  "boundUnscored": {
+   "-17.00": 5,
+   "-16.75": 8,
+   "-16.50": 17,
+   "-16.25": 18,
+   "-16.00": 56,
+   "-15.75": 108,
+   "-15.50": 120,
+   "-15.25": 109,
+   "-15.00": 120,
+   "-14.75": 159,
+   "-14.50": 248,
+   "-14.25": 333,
+   "-14.00": 530,
+   "-13.75": 729,
+   "-13.50": 850,
+   "-13.25": 918,
+   "-13.00": 166
+  }
+ },
+ "timeMs": {
+  "total": 2110,
+  "setup": 499
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "FORANDADDRESS",
+   "wordLogp": -7.3024,
+   "words": "FOR AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "F",
+    "A": "O",
+    "K": "R",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "YOUANDADDRESS",
+   "wordLogp": -7.4868,
+   "words": "YOU AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "Y",
+    "A": "O",
+    "K": "U",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "BUYANDADDRESS",
+   "wordLogp": -7.599,
+   "words": "BUY AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "B",
+    "A": "U",
+    "K": "Y",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "HOWARDADDRESS",
+   "wordLogp": -7.6989,
+   "words": "HOWARD ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "H",
+    "A": "O",
+    "K": "W",
+    "N": "A",
+    "[": "R",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "OUTANDADDRESS",
+   "wordLogp": -7.7443,
+   "words": "OUT AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "O",
+    "A": "U",
+    "K": "T",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "POLANDADDRESS",
+   "wordLogp": -7.7803,
+   "words": "POLAND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "P",
+    "A": "O",
+    "K": "L",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "TOWARDADDRESS",
+   "wordLogp": -7.8373,
+   "words": "TOWARD ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "T",
+    "A": "O",
+    "K": "W",
+    "N": "A",
+    "[": "R",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "OURANDADDRESS",
+   "wordLogp": -7.9751,
+   "words": "OUR AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "O",
+    "A": "U",
+    "K": "R",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "TOPANDADDRESS",
+   "wordLogp": -8.0133,
+   "words": "TOP AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "T",
+    "A": "O",
+    "K": "P",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "WIZARDADDRESS",
+   "wordLogp": -8.014,
+   "words": "WIZARD ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "W",
+    "A": "I",
+    "K": "Z",
+    "N": "A",
+    "[": "R",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "HIMANDADDRESS",
+   "wordLogp": -8.0345,
+   "words": "HIM AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "H",
+    "A": "I",
+    "K": "M",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "CONTESTSSMALL",
+   "wordLogp": -8.1276,
+   "words": "CONTESTS SMALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "C",
+    "A": "O",
+    "K": "N",
+    "N": "T",
+    "[": "E",
+    "E": "A",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "TWOANDADDRESS",
+   "wordLogp": -8.1358,
+   "words": "TWO AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "T",
+    "A": "W",
+    "K": "O",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "CONTESTSSHALL",
+   "wordLogp": -8.1632,
+   "words": "CONTESTS SHALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "C",
+    "A": "O",
+    "K": "N",
+    "N": "T",
+    "[": "E",
+    "E": "A",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "OILANDADDRESS",
+   "wordLogp": -8.1653,
+   "words": "OIL AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "O",
+    "A": "I",
+    "K": "L",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "CONTESTSSTILL",
+   "wordLogp": -8.1667,
+   "words": "CONTESTS STILL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "C",
+    "A": "O",
+    "K": "N",
+    "N": "T",
+    "[": "E",
+    "E": "I",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "TRYANDADDRESS",
+   "wordLogp": -8.2325,
+   "words": "TRY AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "T",
+    "A": "R",
+    "K": "Y",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "BUTANDADDRESS",
+   "wordLogp": -8.2484,
+   "words": "BUT AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "B",
+    "A": "U",
+    "K": "T",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "CONTESTSSTAFF",
+   "wordLogp": -8.2659,
+   "words": "CONTESTS STAFF",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "C",
+    "A": "O",
+    "K": "N",
+    "N": "T",
+    "[": "E",
+    "E": "A",
+    "M": "F"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "HOTANDADDRESS",
+   "wordLogp": -8.2687,
+   "words": "HOT AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "H",
+    "A": "O",
+    "K": "T",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  }
+ ]
+}

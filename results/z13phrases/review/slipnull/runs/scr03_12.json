@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:09:01.729Z",
+ "label": "scr03_12",
+ "cipher": {
+  "id": "scr03",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr03.txt",
+  "text": "0[N0KzNAA0MEM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   12
+  ],
+  "isomorphAfterSlips": "abcadecffagh*"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 149387,
+  "scored": 137912,
+  "keptAtLeastStreamMin": 146,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 10206,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1348,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 146,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 92,
+  "4": 51,
+  "5": 2
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.879402300168054,
+  "topShare": 0.1093879754327175,
+  "top10Share": 0.2970238884267535,
+  "effectiveNumberExpEntropy": 278.96266887783344,
+  "effectiveNumberInverseSimpson": 52.14792367252008,
+  "unscoredMassBoundRelative": 0.009529168235109216,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 9,
+   "maxWordLogp": -16.463258954645518,
+   "massEstimateRelative": 7.410485736181554e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0030069795992621637
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 7,
+   "-18.00": 13,
+   "-17.75": 24,
+   "-17.50": 54,
+   "-17.25": 60,
+   "-17.00": 84,
+   "-16.75": 93,
+   "-16.50": 113,
+   "-16.25": 160,
+   "-16.00": 164,
+   "-15.75": 269,
+   "-15.50": 302,
+   "-15.25": 454,
+   "-15.00": 584,
+   "-14.75": 701,
+   "-14.50": 881,
+   "-14.25": 1072,
+   "-14.00": 1267,
+   "-13.75": 1408,
+   "-13.50": 1583,
+   "-13.25": 1873,
+   "-13.00": 1984,
+   "-12.75": 2401,
+   "-12.50": 2694,
+   "-12.25": 2999,
+   "-12.00": 3254,
+   "-11.75": 3750,
+   "-11.50": 4044,
+   "-11.25": 4438,
+   "-11.00": 4647,
+   "-10.75": 4914,
+   "-10.50": 5340,
+   "-10.25": 5439,
+   "-10.00": 5527,
+   "-9.75": 5745,
+   "-9.50": 5812,
+   "-9.25": 5751,
+   "-9.00": 6048,
+   "-8.75": 5863,
+   "-8.50": 5882,
+   "-8.25": 5821,
+   "-8.00": 5573,
+   "-7.75": 5207,
+   "-7.50": 5096,
+   "-7.25": 4627,
+   "-7.00": 4136,
+   "-6.75": 3861,
+   "-6.50": 3316,
+   "-6.25": 2998,
+   "-6.00": 2601,
+   "-5.75": 2059,
+   "-5.50": 1643,
+   "-5.25": 1315,
+   "-5.00": 975,
+   "-4.75": 752,
+   "-4.50": 568,
+   "-4.25": 398,
+   "-4.00": 279,
+   "-3.75": 185,
+   "-3.50": 132,
+   "-3.25": 74,
+   "-3.00": 40,
+   "-2.75": 21,
+   "-2.50": 9,
+   "-2.25": 3
+  },
+  "exactScored": {
+   "-19.00": 2,
+   "-18.75": 34,
+   "-18.50": 209,
+   "-18.25": 607,
+   "-18.00": 1336,
+   "-17.75": 2485,
+   "-17.50": 3682,
+   "-17.25": 4997,
+   "-17.00": 6633,
+   "-16.75": 7714,
+   "-16.50": 8517,
+   "-16.25": 9083,
+   "-16.00": 9286,
+   "-15.75": 9176,
+   "-15.50": 9104,
+   "-15.25": 8866,
+   "-15.00": 8208,
+   "-14.75": 7858,
+   "-14.50": 7069,
+   "-14.25": 6166,
+   "-14.00": 5143,
+   "-13.75": 4386,
+   "-13.50": 3645,
+   "-13.25": 3037,
+   "-13.00": 2542,
+   "-12.75": 2066,
+   "-12.50": 1580,
+   "-12.25": 1345,
+   "-12.00": 941,
+   "-11.75": 625,
+   "-11.50": 469,
+   "-11.25": 329,
+   "-11.00": 235,
+   "-10.75": 153,
+   "-10.50": 114,
+   "-10.25": 93,
+   "-10.00": 58,
+   "-9.75": 54,
+   "-9.50": 22,
+   "-9.25": 16,
+   "-9.00": 13,
+   "-8.75": 11,
+   "-8.50": 2,
+   "-8.00": 1
+  },
+  "boundUnscored": {
+   "-18.25": 7,
+   "-18.00": 13,
+   "-17.75": 24,
+   "-17.50": 54,
+   "-17.25": 60,
+   "-17.00": 84,
+   "-16.75": 93,
+   "-16.50": 113,
+   "-16.25": 160,
+   "-16.00": 164,
+   "-15.75": 269,
+   "-15.50": 302,
+   "-15.25": 454,
+   "-15.00": 584,
+   "-14.75": 701,
+   "-14.50": 881,
+   "-14.25": 1072,
+   "-14.00": 1267,
+   "-13.75": 1408,
+   "-13.50": 1583,
+   "-13.25": 1873,
+   "-13.00": 309
+  }
+ },
+ "timeMs": {
+  "total": 2094,
+  "setup": 471
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "THATSMALLTOWN",
+   "wordLogp": -7.8404,
+   "words": "THAT SMALL TOWN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "S",
+    "z": "M",
+    "A": "L",
+    "M": "O",
+    "E": "W"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THATCLASSTIME",
+   "wordLogp": -8.3454,
+   "words": "THAT CLASS TIME",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "C",
+    "z": "L",
+    "A": "S",
+    "M": "I",
+    "E": "M"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THETIMESSTORE",
+   "wordLogp": -8.423,
+   "words": "THE TIMES STORE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "E",
+    "K": "I",
+    "z": "M",
+    "A": "S",
+    "M": "O",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THATWEALLTIME",
+   "wordLogp": -8.5511,
+   "words": "THAT WE ALL TIME",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "W",
+    "z": "E",
+    "A": "L",
+    "M": "I",
+    "E": "M"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ITOIMPOSSIBLE",
+   "wordLogp": -8.5717,
+   "words": "I TO IMPOSSIBLE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "T",
+    "N": "O",
+    "K": "M",
+    "z": "P",
+    "A": "S",
+    "M": "B",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "CONCERNSSCALE",
+   "wordLogp": -8.6296,
+   "words": "CONCERNS SCALE",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "[": "O",
+    "N": "N",
+    "K": "E",
+    "z": "R",
+    "A": "S",
+    "M": "A",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THETIMESSTOCK",
+   "wordLogp": -8.6411,
+   "words": "THE TIMES STOCK",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "E",
+    "K": "I",
+    "z": "M",
+    "A": "S",
+    "M": "O",
+    "E": "C"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THATSMALLTEXT",
+   "wordLogp": -8.6516,
+   "words": "THAT SMALL TEXT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "S",
+    "z": "M",
+    "A": "L",
+    "M": "E",
+    "E": "X"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THETIMESSTART",
+   "wordLogp": -8.6781,
+   "words": "THE TIMES START",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "E",
+    "K": "I",
+    "z": "M",
+    "A": "S",
+    "M": "A",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THATSMALLTOBE",
+   "wordLogp": -8.6932,
+   "words": "THAT SMALL TO BE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "S",
+    "z": "M",
+    "A": "L",
+    "M": "O",
+    "E": "B"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THETYPESSTORE",
+   "wordLogp": -8.6932,
+   "words": "THE TYPES STORE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "E",
+    "K": "Y",
+    "z": "P",
+    "A": "S",
+    "M": "O",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THETIMESSTUDY",
+   "wordLogp": -8.7027,
+   "words": "THE TIMES STUDY",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "E",
+    "K": "I",
+    "z": "M",
+    "A": "S",
+    "M": "U",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THETIMESSTAFF",
+   "wordLogp": -8.7068,
+   "words": "THE TIMES STAFF",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "E",
+    "K": "I",
+    "z": "M",
+    "A": "S",
+    "M": "A",
+    "E": "F"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THETIMESSTORY",
+   "wordLogp": -8.7461,
+   "words": "THE TIMES STORY",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "E",
+    "K": "I",
+    "z": "M",
+    "A": "S",
+    "M": "O",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THATCLASSTOBE",
+   "wordLogp": -8.7576,
+   "words": "THAT CLASS TO BE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "C",
+    "z": "L",
+    "A": "S",
+    "M": "O",
+    "E": "B"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THATOFALLTIME",
+   "wordLogp": -8.8299,
+   "words": "THAT OF ALL TIME",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "O",
+    "z": "F",
+    "A": "L",
+    "M": "I",
+    "E": "M"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "THETYPESSTILL",
+   "wordLogp": -8.8778,
+   "words": "THE TYPES STILL",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "E",
+    "K": "Y",
+    "z": "P",
+    "A": "S",
+    "M": "I",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THETIMESSTYLE",
+   "wordLogp": -8.8829,
+   "words": "THE TIMES STYLE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "E",
+    "K": "I",
+    "z": "M",
+    "A": "S",
+    "M": "Y",
+    "E": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THETYPESSTOCK",
+   "wordLogp": -8.9113,
+   "words": "THE TYPES STOCK",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "E",
+    "K": "Y",
+    "z": "P",
+    "A": "S",
+    "M": "O",
+    "E": "C"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ATEACHERRANGE",
+   "wordLogp": -8.9159,
+   "words": "A TEACHER RANGE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "T",
+    "N": "E",
+    "K": "C",
+    "z": "H",
+    "A": "R",
+    "M": "N",
+    "E": "G"
+   }
+  }
+ ]
+}

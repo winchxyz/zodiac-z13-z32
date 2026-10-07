@@ -1,0 +1,7 @@
+# lead/skeptic audit, 2026-10-07. Run from the repository root.
+node tools/lead_skeptic_check.js --null 20 --seed 777 --out results/lead/skeptic/smoke.json   # smoke, deleted
+node tools/run_slot.js --label lead-skeptic -- node tools/lead_skeptic_check.js --null 10000 --seed 777 --h1top 2000 --h1sample 2000 --fits <scratch>/keyprior/z13_homo_fits_top500k.tsv --dump --out results/lead/skeptic/check.json
+node tools/lead_skeptic_homophones.js --chars 300000 --stride 3 --seed 99 --out results/lead/skeptic/homophones_smoke.json   # smoke, deleted
+node tools/run_slot.js --label lead-skeptic -- node tools/lead_skeptic_homophones.js --chars 30000000 --stride 2 --seed 99 --out results/lead/skeptic/homophones.json
+python tools/lead_skeptic_keys.py > results/lead/skeptic/keys.json
+python tools/lead_skeptic_family.py > results/lead/skeptic/family.json

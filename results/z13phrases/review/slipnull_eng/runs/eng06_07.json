@@ -1,0 +1,608 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:33:29.179Z",
+ "label": "eng06_07",
+ "cipher": {
+  "id": "eng06",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng06.txt",
+  "text": "abccdbcefgehh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abccdbc*fgehh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 372714,
+  "scored": 345803,
+  "keptAtLeastStreamMin": 90,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 16970,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1639,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 90,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 7,
+  "3": 54,
+  "4": 29
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.033327949340814,
+  "topShare": 0.09112974897918918,
+  "top10Share": 0.3309422439746594,
+  "effectiveNumberExpEntropy": 522.0385044599303,
+  "effectiveNumberInverseSimpson": 55.46869783571255,
+  "unscoredMassBoundRelative": 0.031853545977603925,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 26,
+   "maxWordLogp": -15.530900309432937,
+   "massEstimateRelative": 0.000009266445396735865,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.01047237666337031
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 2,
+   "-18.00": 20,
+   "-17.75": 45,
+   "-17.50": 67,
+   "-17.25": 100,
+   "-17.00": 119,
+   "-16.75": 204,
+   "-16.50": 220,
+   "-16.25": 318,
+   "-16.00": 426,
+   "-15.75": 478,
+   "-15.50": 735,
+   "-15.25": 938,
+   "-15.00": 1259,
+   "-14.75": 1705,
+   "-14.50": 2103,
+   "-14.25": 2520,
+   "-14.00": 2888,
+   "-13.75": 3475,
+   "-13.50": 3978,
+   "-13.25": 4527,
+   "-13.00": 5324,
+   "-12.75": 6132,
+   "-12.50": 7120,
+   "-12.25": 8145,
+   "-12.00": 9026,
+   "-11.75": 10206,
+   "-11.50": 11163,
+   "-11.25": 12263,
+   "-11.00": 13011,
+   "-10.75": 13710,
+   "-10.50": 14152,
+   "-10.25": 14598,
+   "-10.00": 15036,
+   "-9.75": 15337,
+   "-9.50": 15607,
+   "-9.25": 16002,
+   "-9.00": 16204,
+   "-8.75": 15870,
+   "-8.50": 15793,
+   "-8.25": 15340,
+   "-8.00": 14713,
+   "-7.75": 13748,
+   "-7.50": 12857,
+   "-7.25": 11560,
+   "-7.00": 10114,
+   "-6.75": 8466,
+   "-6.50": 6730,
+   "-6.25": 5343,
+   "-6.00": 4202,
+   "-5.75": 3050,
+   "-5.50": 2160,
+   "-5.25": 1563,
+   "-5.00": 925,
+   "-4.75": 526,
+   "-4.50": 301,
+   "-4.25": 159,
+   "-4.00": 74,
+   "-3.75": 39,
+   "-3.50": 12,
+   "-3.25": 4,
+   "-3.00": 1,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-19.25": 2,
+   "-19.00": 9,
+   "-18.75": 116,
+   "-18.50": 544,
+   "-18.25": 1458,
+   "-18.00": 3591,
+   "-17.75": 6278,
+   "-17.50": 9870,
+   "-17.25": 14573,
+   "-17.00": 18571,
+   "-16.75": 22409,
+   "-16.50": 24685,
+   "-16.25": 26475,
+   "-16.00": 26781,
+   "-15.75": 25872,
+   "-15.50": 24536,
+   "-15.25": 22767,
+   "-15.00": 20606,
+   "-14.75": 17997,
+   "-14.50": 15367,
+   "-14.25": 12947,
+   "-14.00": 10666,
+   "-13.75": 8886,
+   "-13.50": 7174,
+   "-13.25": 5848,
+   "-13.00": 4604,
+   "-12.75": 3658,
+   "-12.50": 2818,
+   "-12.25": 2064,
+   "-12.00": 1538,
+   "-11.75": 1159,
+   "-11.50": 691,
+   "-11.25": 469,
+   "-11.00": 306,
+   "-10.75": 179,
+   "-10.50": 116,
+   "-10.25": 56,
+   "-10.00": 53,
+   "-9.75": 27,
+   "-9.50": 14,
+   "-9.25": 12,
+   "-9.00": 6,
+   "-8.75": 2,
+   "-8.50": 2,
+   "-8.25": 1
+  },
+  "boundUnscored": {
+   "-18.25": 2,
+   "-18.00": 20,
+   "-17.75": 45,
+   "-17.50": 67,
+   "-17.25": 100,
+   "-17.00": 119,
+   "-16.75": 204,
+   "-16.50": 220,
+   "-16.25": 318,
+   "-16.00": 426,
+   "-15.75": 478,
+   "-15.50": 735,
+   "-15.25": 938,
+   "-15.00": 1259,
+   "-14.75": 1705,
+   "-14.50": 2103,
+   "-14.25": 2520,
+   "-14.00": 2888,
+   "-13.75": 3475,
+   "-13.50": 3978,
+   "-13.25": 4527,
+   "-13.00": 784
+  }
+ },
+ "timeMs": {
+  "total": 3965,
+  "setup": 454
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "WILLMILWAUKEE",
+   "wordLogp": -8.0737,
+   "words": "WILL MILWAUKEE",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "I",
+    "c": "L",
+    "d": "M",
+    "f": "A",
+    "g": "U",
+    "e": "K",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "FREECREDITALL",
+   "wordLogp": -8.2621,
+   "words": "FREE CREDIT ALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "C",
+    "f": "I",
+    "g": "T",
+    "e": "A",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "BILLMILWAUKEE",
+   "wordLogp": -8.3952,
+   "words": "BILL MILWAUKEE",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "I",
+    "c": "L",
+    "d": "M",
+    "f": "A",
+    "g": "U",
+    "e": "K",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "HILLMILWAUKEE",
+   "wordLogp": -8.51,
+   "words": "HILL MILWAUKEE",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "I",
+    "c": "L",
+    "d": "M",
+    "f": "A",
+    "g": "U",
+    "e": "K",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "FREEPRESSWILL",
+   "wordLogp": -8.7296,
+   "words": "FREE PRESS WILL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "P",
+    "f": "S",
+    "g": "W",
+    "e": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "HILLBILLYFREE",
+   "wordLogp": -8.7619,
+   "words": "HILLBILLY FREE",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "I",
+    "c": "L",
+    "d": "B",
+    "f": "Y",
+    "g": "F",
+    "e": "R",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "FREEAREASWILL",
+   "wordLogp": -8.7661,
+   "words": "FREE AREAS WILL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "A",
+    "f": "S",
+    "g": "W",
+    "e": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "GREENREADFULL",
+   "wordLogp": -8.7869,
+   "words": "GREEN READ FULL",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "R",
+    "c": "E",
+    "d": "N",
+    "f": "D",
+    "g": "F",
+    "e": "U",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "HARRYARESTILL",
+   "wordLogp": -8.8148,
+   "words": "HARRY ARE STILL",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "A",
+    "c": "R",
+    "d": "Y",
+    "f": "S",
+    "g": "T",
+    "e": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "FREEGREATWILL",
+   "wordLogp": -8.9383,
+   "words": "FREE GREAT WILL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "G",
+    "f": "T",
+    "g": "W",
+    "e": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "FREECREDITADD",
+   "wordLogp": -8.98,
+   "words": "FREE CREDIT ADD",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "C",
+    "f": "I",
+    "g": "T",
+    "e": "A",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "HAPPYAPROCESS",
+   "wordLogp": -9.0358,
+   "words": "HAPPY A PROCESS",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "A",
+    "c": "P",
+    "d": "Y",
+    "f": "O",
+    "g": "C",
+    "e": "E",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "CATTHATWEWILL",
+   "wordLogp": -9.1402,
+   "words": "CAT THAT WE WILL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "A",
+    "c": "T",
+    "d": "H",
+    "f": "E",
+    "g": "W",
+    "e": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "SATTHATWEWILL",
+   "wordLogp": -9.1441,
+   "words": "SAT THAT WE WILL",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "A",
+    "c": "T",
+    "d": "H",
+    "f": "E",
+    "g": "W",
+    "e": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "CARRYARESTILL",
+   "wordLogp": -9.1477,
+   "words": "CARRY ARE STILL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "A",
+    "c": "R",
+    "d": "Y",
+    "f": "S",
+    "g": "T",
+    "e": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "BILLWILLAGREE",
+   "wordLogp": -9.1511,
+   "words": "BILL WILL AGREE",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "I",
+    "c": "L",
+    "d": "W",
+    "f": "A",
+    "g": "G",
+    "e": "R",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "BARRYARESTILL",
+   "wordLogp": -9.2095,
+   "words": "BARRY ARE STILL",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "A",
+    "c": "R",
+    "d": "Y",
+    "f": "S",
+    "g": "T",
+    "e": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "CREEKREADFULL",
+   "wordLogp": -9.2134,
+   "words": "CREEK READ FULL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "R",
+    "c": "E",
+    "d": "K",
+    "f": "D",
+    "g": "F",
+    "e": "U",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "FALLSALLTHREE",
+   "wordLogp": -9.2238,
+   "words": "FALLS ALL THREE",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "A",
+    "c": "L",
+    "d": "S",
+    "f": "T",
+    "g": "H",
+    "e": "R",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "FREEGREENWILL",
+   "wordLogp": -9.2262,
+   "words": "FREE GREEN WILL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "G",
+    "f": "N",
+    "g": "W",
+    "e": "I",
+    "h": "L"
+   }
+  }
+ ]
+}

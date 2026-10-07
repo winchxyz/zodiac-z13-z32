@@ -1,0 +1,111 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:45:48.335Z",
+ "argv": "--ciphers z13.bracket_is_perp --keys union --null 10000 --null-kind permute --threads 1 --seed 1970 --stat word --out results/keyprior/word_parts/fullpin_word_z13.bracket_is_perp_union.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 0.688,
+ "results": [
+  {
+   "cipher": "z13.bracket_is_perp",
+   "key": "union",
+   "text": "AENz0K0M0tNAM",
+   "pinnedSymbols": "AENzKMt",
+   "nPinned": 7,
+   "nFree": 1,
+   "carriedOver": "WEED?S?H?REWH",
+   "real": {
+    "best": {
+     "plaintext": "WEEDSSSHSREWH",
+     "words": "WEEDS SSHSREWH",
+     "wordLogp": -17.86135888591576,
+     "unknownWords": [
+      "SSHSREWH"
+     ],
+     "ngram5": -72.66002130508423
+    },
+    "score": -17.80690512447996,
+    "top5": [
+     {
+      "plaintext": "WEEDSSSHSREWH",
+      "score": -17.80690512447996
+     },
+     {
+      "plaintext": "WEEDESEHEREWH",
+      "score": -17.843868203487716
+     },
+     {
+      "plaintext": "WEEDISIHIREWH",
+      "score": -18.158239439051616
+     },
+     {
+      "plaintext": "WEEDTSTHTREWH",
+      "score": -18.26346225294145
+     },
+     {
+      "plaintext": "WEEDASAHAREWH",
+      "score": -18.32744304240961
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -18.918763020924082,
+     "sd": 1.4616483487046,
+     "min": -24.93219432369199,
+     "q05": -21.51893887058225,
+     "q25": -19.786922426376012,
+     "median": -18.824645602993854,
+     "q75": -17.938506693992284,
+     "q95": -16.71769020095792,
+     "q99": -15.698970624255253,
+     "max": -13.533897982202607
+    },
+    "topNull": [
+     {
+      "index": 3844,
+      "score": -13.533897982202607,
+      "plaintext": "OFTOININIITON"
+     },
+     {
+      "index": 7865,
+      "score": -13.70155430150435,
+      "plaintext": "ELSENINENOSEE"
+     },
+     {
+      "index": 625,
+      "score": -13.846352682303557,
+      "plaintext": "ISINSISTSAIIT"
+     },
+     {
+      "index": 1087,
+      "score": -13.88070949433095,
+      "plaintext": "ALETONONOCEAN"
+     },
+     {
+      "index": 816,
+      "score": -14.022251210770449,
+      "plaintext": "EITHERELEOTEL"
+     }
+    ]
+   },
+   "test": {
+    "ge": 2156,
+    "n": 10000,
+    "p": 0.2156784321567843,
+    "percentile": 78.44,
+    "z": 0.7606876834838668
+   }
+  }
+ ]
+}

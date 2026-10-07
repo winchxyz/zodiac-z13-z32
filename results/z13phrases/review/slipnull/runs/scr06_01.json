@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:10:23.641Z",
+ "label": "scr06_01",
+ "cipher": {
+  "id": "scr06",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr06.txt",
+  "text": "MAKN00ME[N0Az",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*cdeeafgdebh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 315629,
+  "scored": 296606,
+  "keptAtLeastStreamMin": 97,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 15739,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1781,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 97,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 64,
+  "4": 26,
+  "5": 6
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.043559534521888,
+  "topShare": 0.04876906211865729,
+  "top10Share": 0.22243259484144448,
+  "effectiveNumberExpEntropy": 816.7705426933942,
+  "effectiveNumberInverseSimpson": 126.70201774606807,
+  "unscoredMassBoundRelative": 0.023053588795590208,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 16,
+   "maxWordLogp": -15.519396175201013,
+   "massEstimateRelative": 0.00000730779738733173,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.007468961585605306
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 2,
+   "-18.00": 19,
+   "-17.75": 34,
+   "-17.50": 49,
+   "-17.25": 74,
+   "-17.00": 79,
+   "-16.75": 146,
+   "-16.50": 151,
+   "-16.25": 169,
+   "-16.00": 236,
+   "-15.75": 408,
+   "-15.50": 510,
+   "-15.25": 689,
+   "-15.00": 956,
+   "-14.75": 1262,
+   "-14.50": 1464,
+   "-14.25": 1825,
+   "-14.00": 2066,
+   "-13.75": 2473,
+   "-13.50": 2727,
+   "-13.25": 3105,
+   "-13.00": 3634,
+   "-12.75": 4392,
+   "-12.50": 5133,
+   "-12.25": 6132,
+   "-12.00": 7114,
+   "-11.75": 7994,
+   "-11.50": 8690,
+   "-11.25": 9655,
+   "-11.00": 10429,
+   "-10.75": 10918,
+   "-10.50": 11581,
+   "-10.25": 12051,
+   "-10.00": 12432,
+   "-9.75": 12862,
+   "-9.50": 13203,
+   "-9.25": 13245,
+   "-9.00": 13466,
+   "-8.75": 13451,
+   "-8.50": 13433,
+   "-8.25": 13287,
+   "-8.00": 13166,
+   "-7.75": 12278,
+   "-7.50": 11605,
+   "-7.25": 10214,
+   "-7.00": 9163,
+   "-6.75": 8050,
+   "-6.50": 6829,
+   "-6.25": 5579,
+   "-6.00": 4528,
+   "-5.75": 3671,
+   "-5.50": 2693,
+   "-5.25": 1992,
+   "-5.00": 1458,
+   "-4.75": 1038,
+   "-4.50": 771,
+   "-4.25": 448,
+   "-4.00": 289,
+   "-3.75": 172,
+   "-3.50": 75,
+   "-3.25": 30,
+   "-3.00": 20,
+   "-2.75": 6,
+   "-2.50": 5,
+   "-2.25": 3
+  },
+  "exactScored": {
+   "-19.25": 3,
+   "-19.00": 11,
+   "-18.75": 111,
+   "-18.50": 429,
+   "-18.25": 1168,
+   "-18.00": 2546,
+   "-17.75": 4806,
+   "-17.50": 7771,
+   "-17.25": 11276,
+   "-17.00": 14214,
+   "-16.75": 17551,
+   "-16.50": 20081,
+   "-16.25": 21282,
+   "-16.00": 22220,
+   "-15.75": 21834,
+   "-15.50": 21491,
+   "-15.25": 19973,
+   "-15.00": 18186,
+   "-14.75": 16430,
+   "-14.50": 14414,
+   "-14.25": 12543,
+   "-14.00": 10407,
+   "-13.75": 8722,
+   "-13.50": 7048,
+   "-13.25": 5591,
+   "-13.00": 4350,
+   "-12.75": 3335,
+   "-12.50": 2502,
+   "-12.25": 1887,
+   "-12.00": 1406,
+   "-11.75": 941,
+   "-11.50": 699,
+   "-11.25": 457,
+   "-11.00": 338,
+   "-10.75": 217,
+   "-10.50": 132,
+   "-10.25": 87,
+   "-10.00": 75,
+   "-9.75": 32,
+   "-9.50": 19,
+   "-9.25": 12,
+   "-9.00": 4,
+   "-8.75": 3,
+   "-8.50": 2
+  },
+  "boundUnscored": {
+   "-18.25": 2,
+   "-18.00": 19,
+   "-17.75": 34,
+   "-17.50": 49,
+   "-17.25": 74,
+   "-17.00": 79,
+   "-16.75": 146,
+   "-16.50": 151,
+   "-16.25": 169,
+   "-16.00": 236,
+   "-15.75": 408,
+   "-15.50": 510,
+   "-15.25": 689,
+   "-15.00": 956,
+   "-14.75": 1262,
+   "-14.50": 1464,
+   "-14.25": 1825,
+   "-14.00": 2066,
+   "-13.75": 2473,
+   "-13.50": 2727,
+   "-13.25": 3105,
+   "-13.00": 579
+  }
+ },
+ "timeMs": {
+  "total": 4237,
+  "setup": 784
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "MAYSEEMTOSEND",
+   "wordLogp": -8.3554,
+   "words": "MAY SEEM TO SEND",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "M",
+    "K": "Y",
+    "N": "S",
+    "E": "T",
+    "[": "O",
+    "A": "N",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ANTENNAFRENCH",
+   "wordLogp": -8.4933,
+   "words": "ANTENNA FRENCH",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "A",
+    "K": "T",
+    "N": "E",
+    "E": "F",
+    "[": "R",
+    "A": "C",
+    "z": "H"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "TIMESSTORESIN",
+   "wordLogp": -8.6388,
+   "words": "TIMES STORES IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "T",
+    "K": "M",
+    "N": "E",
+    "E": "O",
+    "[": "R",
+    "A": "I",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "TIMESSTAGESOF",
+   "wordLogp": -8.6579,
+   "words": "TIMES STAGES OF",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "T",
+    "K": "M",
+    "N": "E",
+    "E": "A",
+    "[": "G",
+    "A": "O",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "EARTHHEALTHOF",
+   "wordLogp": -8.674,
+   "words": "EARTH HEALTH OF",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "E",
+    "K": "R",
+    "N": "T",
+    "E": "A",
+    "[": "L",
+    "A": "O",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ACROSSACLOSED",
+   "wordLogp": -8.8658,
+   "words": "ACROSS A CLOSED",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "A",
+    "K": "R",
+    "N": "O",
+    "E": "C",
+    "[": "L",
+    "A": "E",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "EARTHHEALTHIN",
+   "wordLogp": -8.9061,
+   "words": "EARTH HEALTH IN",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "E",
+    "K": "R",
+    "N": "T",
+    "E": "A",
+    "[": "L",
+    "A": "I",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THEROOTSGROUP",
+   "wordLogp": -8.9141,
+   "words": "THE ROOTS GROUP",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "T",
+    "K": "E",
+    "N": "R",
+    "E": "S",
+    "[": "G",
+    "A": "U",
+    "z": "P"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "NOAREENTIRELY",
+   "wordLogp": -8.9678,
+   "words": "NO ARE ENTIRELY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "K": "A",
+    "N": "R",
+    "E": "T",
+    "[": "I",
+    "A": "L",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "COSTAACERTAIN",
+   "wordLogp": -9.0068,
+   "words": "COSTA A CERTAIN",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "C",
+    "K": "S",
+    "N": "T",
+    "E": "E",
+    "[": "R",
+    "A": "I",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ISCALLINGALSO",
+   "wordLogp": -9.0192,
+   "words": "IS CALLING ALSO",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "I",
+    "K": "C",
+    "N": "A",
+    "E": "N",
+    "[": "G",
+    "A": "S",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TIMESSTYLESOF",
+   "wordLogp": -9.0509,
+   "words": "TIMES STYLES OF",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "T",
+    "K": "M",
+    "N": "E",
+    "E": "Y",
+    "[": "L",
+    "A": "O",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "OFWAYYOUMAYBE",
+   "wordLogp": -9.0856,
+   "words": "OF WAY YOU MAY BE",
+   "unknown": 0,
+   "key": {
+    "0": "Y",
+    "M": "O",
+    "K": "W",
+    "N": "A",
+    "E": "U",
+    "[": "M",
+    "A": "B",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "EARTHHEALTHIS",
+   "wordLogp": -9.1413,
+   "words": "EARTH HEALTH IS",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "E",
+    "K": "R",
+    "N": "T",
+    "E": "A",
+    "[": "L",
+    "A": "I",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "KEYBOOKSABOUT",
+   "wordLogp": -9.1569,
+   "words": "KEY BOOKS ABOUT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "K",
+    "K": "Y",
+    "N": "B",
+    "E": "S",
+    "[": "A",
+    "A": "U",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "OFSUPPORTUPIN",
+   "wordLogp": -9.1639,
+   "words": "OF SUPPORT UP IN",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "M": "O",
+    "K": "S",
+    "N": "U",
+    "E": "R",
+    "[": "T",
+    "A": "I",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "TOCALLTHEALSO",
+   "wordLogp": -9.1938,
+   "words": "TO CALL THE ALSO",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "T",
+    "K": "C",
+    "N": "A",
+    "E": "H",
+    "[": "E",
+    "A": "S",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "TYPESSTORESIN",
+   "wordLogp": -9.2014,
+   "words": "TYPES STORES IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "T",
+    "K": "P",
+    "N": "E",
+    "E": "O",
+    "[": "R",
+    "A": "I",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ISFALLINGALSO",
+   "wordLogp": -9.2047,
+   "words": "IS FALLING ALSO",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "I",
+    "K": "F",
+    "N": "A",
+    "E": "N",
+    "[": "G",
+    "A": "S",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "HOMESSHARESOF",
+   "wordLogp": -9.213,
+   "words": "HOMES SHARES OF",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "H",
+    "K": "M",
+    "N": "E",
+    "E": "A",
+    "[": "R",
+    "A": "O",
+    "z": "F"
+   }
+  }
+ ]
+}

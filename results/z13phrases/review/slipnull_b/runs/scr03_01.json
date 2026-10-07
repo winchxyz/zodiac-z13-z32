@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:20:45.901Z",
+ "label": "scr03_01",
+ "cipher": {
+  "id": "scr03",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr03.txt",
+  "text": "0MNAKM00[EAzN",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*cdebaafgdhc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 256599,
+  "scored": 241552,
+  "keptAtLeastStreamMin": 136,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 13279,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1584,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 136,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 5,
+  "3": 49,
+  "4": 82
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.811013286032928,
+  "topShare": 0.047458458452984485,
+  "top10Share": 0.3080989282004268,
+  "effectiveNumberExpEntropy": 297.42727833556864,
+  "effectiveNumberInverseSimpson": 72.64264259272582,
+  "unscoredMassBoundRelative": 0.01067488504707363,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 13,
+   "maxWordLogp": -13.54726752123122,
+   "massEstimateRelative": 0.00018554548748341926,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0036814964320034966
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 3,
+   "-18.00": 8,
+   "-17.75": 23,
+   "-17.50": 30,
+   "-17.25": 42,
+   "-17.00": 58,
+   "-16.75": 71,
+   "-16.50": 111,
+   "-16.25": 163,
+   "-16.00": 238,
+   "-15.75": 273,
+   "-15.50": 349,
+   "-15.25": 500,
+   "-15.00": 666,
+   "-14.75": 872,
+   "-14.50": 1084,
+   "-14.25": 1415,
+   "-14.00": 1694,
+   "-13.75": 1966,
+   "-13.50": 2308,
+   "-13.25": 2711,
+   "-13.00": 3117,
+   "-12.75": 3520,
+   "-12.50": 4232,
+   "-12.25": 4603,
+   "-12.00": 5361,
+   "-11.75": 5722,
+   "-11.50": 6535,
+   "-11.25": 7233,
+   "-11.00": 7908,
+   "-10.75": 8751,
+   "-10.50": 9094,
+   "-10.25": 9410,
+   "-10.00": 9796,
+   "-9.75": 10115,
+   "-9.50": 10288,
+   "-9.25": 10661,
+   "-9.00": 10988,
+   "-8.75": 11097,
+   "-8.50": 11304,
+   "-8.25": 10934,
+   "-8.00": 10889,
+   "-7.75": 10411,
+   "-7.50": 9947,
+   "-7.25": 8954,
+   "-7.00": 8214,
+   "-6.75": 7099,
+   "-6.50": 6147,
+   "-6.25": 5103,
+   "-6.00": 4072,
+   "-5.75": 3326,
+   "-5.50": 2488,
+   "-5.25": 1765,
+   "-5.00": 1144,
+   "-4.75": 791,
+   "-4.50": 459,
+   "-4.25": 268,
+   "-4.00": 137,
+   "-3.75": 74,
+   "-3.50": 34,
+   "-3.25": 13,
+   "-3.00": 5,
+   "-2.75": 4,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.50": 4,
+   "-19.25": 15,
+   "-19.00": 50,
+   "-18.75": 108,
+   "-18.50": 280,
+   "-18.25": 669,
+   "-18.00": 1674,
+   "-17.75": 3625,
+   "-17.50": 6048,
+   "-17.25": 8881,
+   "-17.00": 11065,
+   "-16.75": 13166,
+   "-16.50": 14857,
+   "-16.25": 16332,
+   "-16.00": 17226,
+   "-15.75": 17408,
+   "-15.50": 17312,
+   "-15.25": 16872,
+   "-15.00": 16148,
+   "-14.75": 14610,
+   "-14.50": 12936,
+   "-14.25": 11027,
+   "-14.00": 9114,
+   "-13.75": 7409,
+   "-13.50": 5953,
+   "-13.25": 4838,
+   "-13.00": 3692,
+   "-12.75": 2767,
+   "-12.50": 2105,
+   "-12.25": 1578,
+   "-12.00": 1106,
+   "-11.75": 848,
+   "-11.50": 570,
+   "-11.25": 416,
+   "-11.00": 269,
+   "-10.75": 190,
+   "-10.50": 111,
+   "-10.25": 102,
+   "-10.00": 60,
+   "-9.75": 37,
+   "-9.50": 27,
+   "-9.25": 13,
+   "-9.00": 18,
+   "-8.75": 6,
+   "-8.50": 7,
+   "-8.25": 3
+  },
+  "boundUnscored": {
+   "-18.25": 3,
+   "-18.00": 8,
+   "-17.75": 23,
+   "-17.50": 30,
+   "-17.25": 42,
+   "-17.00": 58,
+   "-16.75": 71,
+   "-16.50": 111,
+   "-16.25": 163,
+   "-16.00": 238,
+   "-15.75": 273,
+   "-15.50": 349,
+   "-15.25": 500,
+   "-15.00": 666,
+   "-14.75": 872,
+   "-14.50": 1084,
+   "-14.25": 1415,
+   "-14.00": 1694,
+   "-13.75": 1966,
+   "-13.50": 2308,
+   "-13.25": 2711,
+   "-13.00": 462
+  }
+ },
+ "timeMs": {
+  "total": 3035,
+  "setup": 596
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "OFTHEBOOKWHAT",
+   "wordLogp": -8.1347,
+   "words": "OF THE BOOK WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "T",
+    "A": "H",
+    "K": "E",
+    "M": "B",
+    "[": "K",
+    "E": "W",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "DATEANDDIRECT",
+   "wordLogp": -8.1352,
+   "words": "DATE AND DIRECT",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "N": "T",
+    "A": "E",
+    "K": "A",
+    "M": "N",
+    "[": "I",
+    "E": "R",
+    "z": "C"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "OFHISBOOKWITH",
+   "wordLogp": -8.1763,
+   "words": "OF HIS BOOK WITH",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "H",
+    "A": "I",
+    "K": "S",
+    "M": "B",
+    "[": "K",
+    "E": "W",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "OFTHELOOKWHAT",
+   "wordLogp": -8.3863,
+   "words": "OF THE LOOK WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "T",
+    "A": "H",
+    "K": "E",
+    "M": "L",
+    "[": "K",
+    "E": "W",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "OFTHEDOORWHAT",
+   "wordLogp": -8.4048,
+   "words": "OF THE DOOR WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "T",
+    "A": "H",
+    "K": "E",
+    "M": "D",
+    "[": "R",
+    "E": "W",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "OFTHEROOMWHAT",
+   "wordLogp": -8.4074,
+   "words": "OF THE ROOM WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "T",
+    "A": "H",
+    "K": "E",
+    "M": "R",
+    "[": "M",
+    "E": "W",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "OFHISROOMWITH",
+   "wordLogp": -8.4183,
+   "words": "OF HIS ROOM WITH",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "H",
+    "A": "I",
+    "K": "S",
+    "M": "R",
+    "[": "M",
+    "E": "W",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "EMPLOYEESCLIP",
+   "wordLogp": -8.4375,
+   "words": "EMPLOYEES CLIP",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "P",
+    "A": "L",
+    "K": "O",
+    "M": "Y",
+    "[": "S",
+    "E": "C",
+    "z": "I"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "OFTHEGOODWHAT",
+   "wordLogp": -8.4393,
+   "words": "OF THE GOOD WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "T",
+    "A": "H",
+    "K": "E",
+    "M": "G",
+    "[": "D",
+    "E": "W",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "LIFEVILLAGEOF",
+   "wordLogp": -8.4923,
+   "words": "LIFE VILLAGE OF",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "N": "F",
+    "A": "E",
+    "K": "V",
+    "M": "I",
+    "[": "A",
+    "E": "G",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SCRIPTSSENIOR",
+   "wordLogp": -8.5509,
+   "words": "SCRIPTS SENIOR",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "R",
+    "A": "I",
+    "K": "P",
+    "M": "T",
+    "[": "E",
+    "E": "N",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "OFTHEFOODWHAT",
+   "wordLogp": -8.5533,
+   "words": "OF THE FOOD WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "T",
+    "A": "H",
+    "K": "E",
+    "M": "F",
+    "[": "D",
+    "E": "W",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "OFTHEPOORWHAT",
+   "wordLogp": -8.6434,
+   "words": "OF THE POOR WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "T",
+    "A": "H",
+    "K": "E",
+    "M": "P",
+    "[": "R",
+    "E": "W",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ONTHEBOOKWHAT",
+   "wordLogp": -8.6506,
+   "words": "ON THE BOOK WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "T",
+    "A": "H",
+    "K": "E",
+    "M": "B",
+    "[": "K",
+    "E": "W",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "ONHISBOOKWITH",
+   "wordLogp": -8.6688,
+   "words": "ON HIS BOOK WITH",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "H",
+    "A": "I",
+    "K": "S",
+    "M": "B",
+    "[": "K",
+    "E": "W",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "LIFEWILLUSEOF",
+   "wordLogp": -8.7495,
+   "words": "LIFE WILL USE OF",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "N": "F",
+    "A": "E",
+    "K": "W",
+    "M": "I",
+    "[": "U",
+    "E": "S",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "MAYICOMMUNITY",
+   "wordLogp": -8.7826,
+   "words": "MAY I COMMUNITY",
+   "unknown": 0,
+   "key": {
+    "0": "M",
+    "N": "Y",
+    "A": "I",
+    "K": "C",
+    "M": "O",
+    "[": "U",
+    "E": "N",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SITEWASSILENT",
+   "wordLogp": -8.8254,
+   "words": "SITE WAS SILENT",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "T",
+    "A": "E",
+    "K": "W",
+    "M": "A",
+    "[": "I",
+    "E": "L",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "OFTHEPOOLWHAT",
+   "wordLogp": -8.8361,
+   "words": "OF THE POOL WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "T",
+    "A": "H",
+    "K": "E",
+    "M": "P",
+    "[": "L",
+    "E": "W",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "OFTHEMOONWHAT",
+   "wordLogp": -8.8658,
+   "words": "OF THE MOON WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "T",
+    "A": "H",
+    "K": "E",
+    "M": "M",
+    "[": "N",
+    "E": "W",
+    "z": "A"
+   }
+  }
+ ]
+}

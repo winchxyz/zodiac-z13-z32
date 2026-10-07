@@ -1,0 +1,111 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:46:54.270Z",
+ "argv": "--ciphers z13.reversed --keys union --null 10000 --null-kind permute --threads 1 --seed 1970 --stat word --out results/keyprior/word_parts/fullpin_word_z13.reversed_union.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 7.749,
+ "results": [
+  {
+   "cipher": "z13.reversed",
+   "key": "union",
+   "text": "MAN[0M0K0zNEA",
+   "pinnedSymbols": "MANKzE",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "HWE??H?S?DEEW",
+   "real": {
+    "best": {
+     "plaintext": "HWEEEHESEDEEW",
+     "words": "HWEEEHESEDEEW",
+     "wordLogp": -18.25004157558408,
+     "unknownWords": [
+      "HWEEEHESEDEEW"
+     ],
+     "ngram5": -62.45840263366699
+    },
+    "score": -18.25004157558408,
+    "top5": [
+     {
+      "plaintext": "HWEEEHESEDEEW",
+      "score": -18.25004157558408
+     },
+     {
+      "plaintext": "HWETEHESEDEEW",
+      "score": -18.389906258735326
+     },
+     {
+      "plaintext": "HWEAEHESEDEEW",
+      "score": -18.44418189063993
+     },
+     {
+      "plaintext": "HWEOEHESEDEEW",
+      "score": -18.472951502952245
+     },
+     {
+      "plaintext": "HWENEHESEDEEW",
+      "score": -18.515538544807104
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -18.204994165651257,
+     "sd": 1.645170179005424,
+     "min": -24.914984555396703,
+     "q05": -21.032856555137304,
+     "q25": -19.21189531818357,
+     "median": -18.147528849436394,
+     "q75": -17.150760149091006,
+     "q95": -15.556596312203268,
+     "q99": -14.44284791240123,
+     "max": -11.148211404581932
+    },
+    "topNull": [
+     {
+      "index": 441,
+      "score": -11.148211404581932,
+      "plaintext": "DELTADATAELSE"
+     },
+     {
+      "index": 4029,
+      "score": -11.657769485595686,
+      "plaintext": "SAINTSTATEIFA"
+     },
+     {
+      "index": 2185,
+      "score": -12.0626346437923,
+      "plaintext": "ISASSISTSOAKS"
+     },
+     {
+      "index": 2570,
+      "score": -12.627357131025676,
+      "plaintext": "ISASSISTSEAAS"
+     },
+     {
+      "index": 6559,
+      "score": -12.825349234689003,
+      "plaintext": "WETHEWEREYTHE"
+     }
+    ]
+   },
+   "test": {
+    "ge": 5281,
+    "n": 10000,
+    "p": 0.5281471852814719,
+    "percentile": 47.19,
+    "z": -0.027381611037988217
+   }
+  }
+ ]
+}

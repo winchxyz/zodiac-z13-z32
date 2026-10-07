@@ -1,0 +1,440 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:15:26.940Z",
+ "label": "z13_none",
+ "cipher": {
+  "id": "z13",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\z13.txt",
+  "text": "AENz0K0M0[NAM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcdefegehcag"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 10454,
+  "scored": 9900,
+  "keptAtLeastStreamMin": 11,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 688,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 87,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 11,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 2,
+  "4": 9
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.174521582717174,
+  "topShare": 0.3913150813909933,
+  "top10Share": 0.7858400057386458,
+  "effectiveNumberExpEntropy": 20.429159050814178,
+  "effectiveNumberInverseSimpson": 5.690477253511835,
+  "unscoredMassBoundRelative": 0.009076770347502367,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.003205644992524197
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 2,
+   "-17.50": 1,
+   "-17.00": 5,
+   "-16.75": 1,
+   "-16.50": 1,
+   "-16.25": 5,
+   "-16.00": 8,
+   "-15.75": 11,
+   "-15.50": 14,
+   "-15.25": 22,
+   "-15.00": 24,
+   "-14.75": 33,
+   "-14.50": 29,
+   "-14.25": 49,
+   "-14.00": 66,
+   "-13.75": 76,
+   "-13.50": 89,
+   "-13.25": 94,
+   "-13.00": 109,
+   "-12.75": 149,
+   "-12.50": 145,
+   "-12.25": 181,
+   "-12.00": 216,
+   "-11.75": 232,
+   "-11.50": 255,
+   "-11.25": 303,
+   "-11.00": 351,
+   "-10.75": 381,
+   "-10.50": 400,
+   "-10.25": 393,
+   "-10.00": 412,
+   "-9.75": 424,
+   "-9.50": 423,
+   "-9.25": 436,
+   "-9.00": 420,
+   "-8.75": 417,
+   "-8.50": 378,
+   "-8.25": 387,
+   "-8.00": 416,
+   "-7.75": 376,
+   "-7.50": 371,
+   "-7.25": 404,
+   "-7.00": 342,
+   "-6.75": 326,
+   "-6.50": 277,
+   "-6.25": 248,
+   "-6.00": 185,
+   "-5.75": 160,
+   "-5.50": 142,
+   "-5.25": 92,
+   "-5.00": 66,
+   "-4.75": 36,
+   "-4.50": 37,
+   "-4.25": 13,
+   "-4.00": 14,
+   "-3.75": 2,
+   "-3.50": 4,
+   "-3.25": 1
+  },
+  "exactScored": {
+   "-19.00": 1,
+   "-18.75": 1,
+   "-18.50": 7,
+   "-18.25": 24,
+   "-18.00": 72,
+   "-17.75": 128,
+   "-17.50": 191,
+   "-17.25": 282,
+   "-17.00": 399,
+   "-16.75": 516,
+   "-16.50": 631,
+   "-16.25": 730,
+   "-16.00": 769,
+   "-15.75": 720,
+   "-15.50": 695,
+   "-15.25": 636,
+   "-15.00": 590,
+   "-14.75": 534,
+   "-14.50": 515,
+   "-14.25": 486,
+   "-14.00": 411,
+   "-13.75": 342,
+   "-13.50": 277,
+   "-13.25": 221,
+   "-13.00": 199,
+   "-12.75": 131,
+   "-12.50": 113,
+   "-12.25": 76,
+   "-12.00": 66,
+   "-11.75": 40,
+   "-11.50": 33,
+   "-11.25": 25,
+   "-11.00": 15,
+   "-10.75": 10,
+   "-10.50": 2,
+   "-10.25": 1,
+   "-10.00": 5,
+   "-9.75": 1,
+   "-9.50": 3,
+   "-9.25": 1,
+   "-8.75": 1
+  },
+  "boundUnscored": {
+   "-18.00": 2,
+   "-17.50": 1,
+   "-17.00": 5,
+   "-16.75": 1,
+   "-16.50": 1,
+   "-16.25": 5,
+   "-16.00": 8,
+   "-15.75": 11,
+   "-15.50": 14,
+   "-15.25": 22,
+   "-15.00": 24,
+   "-14.75": 33,
+   "-14.50": 29,
+   "-14.25": 49,
+   "-14.00": 66,
+   "-13.75": 76,
+   "-13.50": 89,
+   "-13.25": 94,
+   "-13.00": 24
+  }
+ },
+ "timeMs": {
+  "total": 1959,
+  "setup": 515
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "INTHEDESERTIS",
+   "wordLogp": -8.582,
+   "words": "IN THE DESERT IS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "N",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CHIEFOFAFRICA",
+   "wordLogp": -9.2244,
+   "words": "CHIEF OF AFRICA",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "A": "C",
+    "E": "H",
+    "N": "I",
+    "z": "E",
+    "K": "O",
+    "M": "A",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "IFTHERENEXTIN",
+   "wordLogp": -9.3416,
+   "words": "IF THERE NEXT IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "N",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "FRONTSTATEOFA",
+   "wordLogp": -9.4583,
+   "words": "FRONT STATE OF A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "F",
+    "E": "R",
+    "N": "O",
+    "z": "N",
+    "K": "S",
+    "M": "A",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ISTHERENEXTIN",
+   "wordLogp": -9.4689,
+   "words": "IS THERE NEXT IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "S",
+    "N": "T",
+    "z": "H",
+    "K": "R",
+    "M": "N",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "OFTHESENEXTON",
+   "wordLogp": -9.5487,
+   "words": "OF THESE NEXT ON",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "N",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "IFTHEDESERTIS",
+   "wordLogp": -9.762,
+   "words": "IF THE DESERT IS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "D",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "OFTHESERENTOR",
+   "wordLogp": -9.8018,
+   "words": "OF THESE RENT OR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "F",
+    "N": "T",
+    "z": "H",
+    "K": "S",
+    "M": "R",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "PATHELEMENTPM",
+   "wordLogp": -9.8311,
+   "words": "PATH ELEMENT PM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "E": "A",
+    "N": "T",
+    "z": "H",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "FRIDAYATAGIFT",
+   "wordLogp": -9.8572,
+   "words": "FRIDAY AT A GIFT",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "F",
+    "E": "R",
+    "N": "I",
+    "z": "D",
+    "K": "Y",
+    "M": "T",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ANDHEREYESDAY",
+   "wordLogp": -9.8595,
+   "words": "AND HER EYES DAY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "N",
+    "N": "D",
+    "z": "H",
+    "K": "R",
+    "M": "Y",
+    "[": "S"
+   }
+  }
+ ]
+}

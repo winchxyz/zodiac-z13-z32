@@ -1,0 +1,605 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:39:16.613Z",
+ "label": "scr24_03",
+ "cipher": {
+  "id": "scr24",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr24.txt",
+  "text": "zAKN[0N00AEMM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*efdffbghh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 64072,
+  "scored": 61131,
+  "keptAtLeastStreamMin": 54,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 3792,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 553,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 54,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 3,
+  "3": 25,
+  "4": 25,
+  "5": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.681977873773719,
+  "topShare": 0.5866306289239807,
+  "top10Share": 0.8711512146936874,
+  "effectiveNumberExpEntropy": 7.758321564206104,
+  "effectiveNumberInverseSimpson": 2.6216240632799614,
+  "unscoredMassBoundRelative": 0.0015501470504533901,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 1,
+   "maxWordLogp": -16.993264647418517,
+   "massEstimateRelative": 4.8832979857379026e-8,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0005572334649674356
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 1,
+   "-17.50": 4,
+   "-17.25": 4,
+   "-17.00": 8,
+   "-16.75": 11,
+   "-16.50": 8,
+   "-16.25": 23,
+   "-16.00": 20,
+   "-15.75": 38,
+   "-15.50": 63,
+   "-15.25": 75,
+   "-15.00": 136,
+   "-14.75": 177,
+   "-14.50": 220,
+   "-14.25": 275,
+   "-14.00": 351,
+   "-13.75": 401,
+   "-13.50": 493,
+   "-13.25": 526,
+   "-13.00": 688,
+   "-12.75": 693,
+   "-12.50": 948,
+   "-12.25": 1052,
+   "-12.00": 1409,
+   "-11.75": 1570,
+   "-11.50": 1766,
+   "-11.25": 1780,
+   "-11.00": 1877,
+   "-10.75": 1968,
+   "-10.50": 2096,
+   "-10.25": 2165,
+   "-10.00": 2252,
+   "-9.75": 2433,
+   "-9.50": 2736,
+   "-9.25": 2718,
+   "-9.00": 2867,
+   "-8.75": 2894,
+   "-8.50": 2877,
+   "-8.25": 2853,
+   "-8.00": 2752,
+   "-7.75": 2681,
+   "-7.50": 2452,
+   "-7.25": 2257,
+   "-7.00": 2033,
+   "-6.75": 1812,
+   "-6.50": 1552,
+   "-6.25": 1278,
+   "-6.00": 1100,
+   "-5.75": 859,
+   "-5.50": 695,
+   "-5.25": 554,
+   "-5.00": 401,
+   "-4.75": 343,
+   "-4.50": 297,
+   "-4.25": 211,
+   "-4.00": 145,
+   "-3.75": 86,
+   "-3.50": 52,
+   "-3.25": 32,
+   "-3.00": 4
+  },
+  "exactScored": {
+   "-19.00": 2,
+   "-18.75": 29,
+   "-18.50": 163,
+   "-18.25": 395,
+   "-18.00": 777,
+   "-17.75": 1316,
+   "-17.50": 1764,
+   "-17.25": 2606,
+   "-17.00": 3007,
+   "-16.75": 3624,
+   "-16.50": 4101,
+   "-16.25": 4463,
+   "-16.00": 4585,
+   "-15.75": 4568,
+   "-15.50": 4144,
+   "-15.25": 3828,
+   "-15.00": 3394,
+   "-14.75": 2989,
+   "-14.50": 2697,
+   "-14.25": 2348,
+   "-14.00": 2026,
+   "-13.75": 1747,
+   "-13.50": 1450,
+   "-13.25": 1129,
+   "-13.00": 974,
+   "-12.75": 743,
+   "-12.50": 591,
+   "-12.25": 459,
+   "-12.00": 341,
+   "-11.75": 249,
+   "-11.50": 164,
+   "-11.25": 129,
+   "-11.00": 113,
+   "-10.75": 71,
+   "-10.50": 45,
+   "-10.25": 34,
+   "-10.00": 21,
+   "-9.75": 19,
+   "-9.50": 12,
+   "-9.25": 5,
+   "-9.00": 3,
+   "-8.75": 2,
+   "-8.50": 1,
+   "-8.25": 1,
+   "-7.50": 1,
+   "-7.00": 1
+  },
+  "boundUnscored": {
+   "-17.75": 1,
+   "-17.50": 4,
+   "-17.25": 4,
+   "-17.00": 8,
+   "-16.75": 11,
+   "-16.50": 8,
+   "-16.25": 23,
+   "-16.00": 20,
+   "-15.75": 38,
+   "-15.50": 63,
+   "-15.25": 75,
+   "-15.00": 136,
+   "-14.75": 177,
+   "-14.50": 220,
+   "-14.25": 275,
+   "-14.00": 351,
+   "-13.75": 401,
+   "-13.50": 493,
+   "-13.25": 526,
+   "-13.00": 107
+  }
+ },
+ "timeMs": {
+  "total": 2327,
+  "setup": 510
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "FRIENDADDRESS",
+   "wordLogp": -6.9136,
+   "words": "FRIEND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "F",
+    "A": "R",
+    "K": "I",
+    "[": "N",
+    "N": "A",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "GROUNDADDRESS",
+   "wordLogp": -7.4063,
+   "words": "GROUND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "G",
+    "A": "R",
+    "K": "O",
+    "[": "N",
+    "N": "A",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "TRYANDADDRESS",
+   "wordLogp": -8.2325,
+   "words": "TRY AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "T",
+    "A": "R",
+    "K": "Y",
+    "[": "N",
+    "N": "A",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "INHAVEBEENALL",
+   "wordLogp": -8.4639,
+   "words": "IN HAVE BEEN ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "I",
+    "A": "N",
+    "K": "H",
+    "[": "V",
+    "N": "B",
+    "E": "A",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "INHAVEBEENTOO",
+   "wordLogp": -8.5603,
+   "words": "IN HAVE BEEN TOO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "I",
+    "A": "N",
+    "K": "H",
+    "[": "V",
+    "N": "B",
+    "E": "T",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "PROANDADDRESS",
+   "wordLogp": -8.5733,
+   "words": "PRO AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "P",
+    "A": "R",
+    "K": "O",
+    "[": "N",
+    "N": "A",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ONHAVEBEENALL",
+   "wordLogp": -8.779,
+   "words": "ON HAVE BEEN ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "O",
+    "A": "N",
+    "K": "H",
+    "[": "V",
+    "N": "B",
+    "E": "A",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "FRIANDADDRESS",
+   "wordLogp": -8.8567,
+   "words": "FRI AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "F",
+    "A": "R",
+    "K": "I",
+    "[": "N",
+    "N": "A",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THERISKSSHALL",
+   "wordLogp": -8.8959,
+   "words": "THE RISKS SHALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "T",
+    "A": "H",
+    "K": "E",
+    "[": "I",
+    "N": "K",
+    "E": "A",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ANDTHEBEENTOO",
+   "wordLogp": -9.0485,
+   "words": "AND THE BEEN TOO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "A",
+    "A": "N",
+    "K": "D",
+    "[": "H",
+    "N": "B",
+    "E": "T",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "INHAVEBEENOFF",
+   "wordLogp": -9.081,
+   "words": "IN HAVE BEEN OFF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "I",
+    "A": "N",
+    "K": "H",
+    "[": "V",
+    "N": "B",
+    "E": "O",
+    "M": "F"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ORFINDADDRESS",
+   "wordLogp": -9.0967,
+   "words": "OR FIND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "O",
+    "A": "R",
+    "K": "F",
+    "[": "N",
+    "N": "A",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "BOUGHTITTOSEE",
+   "wordLogp": -9.1959,
+   "words": "BOUGHT IT TO SEE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "B",
+    "A": "O",
+    "K": "U",
+    "[": "H",
+    "N": "I",
+    "E": "S",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ORMONDADDRESS",
+   "wordLogp": -9.2395,
+   "words": "ORMOND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "O",
+    "A": "R",
+    "K": "M",
+    "[": "N",
+    "N": "A",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "OFTIMESEEFULL",
+   "wordLogp": -9.2771,
+   "words": "OF TIME SEE FULL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "O",
+    "A": "F",
+    "K": "T",
+    "[": "M",
+    "N": "S",
+    "E": "U",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "OFPAGESEEFULL",
+   "wordLogp": -9.2855,
+   "words": "OF PAGE SEE FULL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "O",
+    "A": "F",
+    "K": "P",
+    "[": "G",
+    "N": "S",
+    "E": "U",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "INHAVESEENALL",
+   "wordLogp": -9.3095,
+   "words": "IN HAVE SEEN ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "I",
+    "A": "N",
+    "K": "H",
+    "[": "V",
+    "N": "S",
+    "E": "A",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "FAMILYBYYAHOO",
+   "wordLogp": -9.3412,
+   "words": "FAMILY BY YAHOO",
+   "unknown": 0,
+   "key": {
+    "0": "Y",
+    "z": "F",
+    "A": "A",
+    "K": "M",
+    "[": "L",
+    "N": "B",
+    "E": "H",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ANHAVEBEENTOO",
+   "wordLogp": -9.3581,
+   "words": "AN HAVE BEEN TOO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "A",
+    "A": "N",
+    "K": "H",
+    "[": "V",
+    "N": "B",
+    "E": "T",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ORCOLDADDRESS",
+   "wordLogp": -9.4185,
+   "words": "OR COLD ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "O",
+    "A": "R",
+    "K": "C",
+    "[": "L",
+    "N": "A",
+    "E": "E",
+    "M": "S"
+   }
+  }
+ ]
+}

@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:31:48.507Z",
+ "label": "scr17_09",
+ "cipher": {
+  "id": "scr17",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr17.txt",
+  "text": "0AM00AzEKN[NM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   9
+  ],
+  "isomorphAfterSlips": "abcaabdef*hgc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 225209,
+  "scored": 211563,
+  "keptAtLeastStreamMin": 310,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 11111,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1979,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 310,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 25,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 1,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 37,
+  "4": 272,
+  "5": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -5.918496872100719,
+  "topShare": 0.4611340062108139,
+  "top10Share": 0.6737393346591459,
+  "effectiveNumberExpEntropy": 27.907849477045595,
+  "effectiveNumberInverseSimpson": 4.545799555664302,
+  "unscoredMassBoundRelative": 0.0012399444785807256,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 11,
+   "maxWordLogp": -15.019180107516247,
+   "massEstimateRelative": 0.0000011848905488822224,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00042509732668729493
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 3,
+   "-17.75": 6,
+   "-17.50": 40,
+   "-17.25": 43,
+   "-17.00": 70,
+   "-16.75": 107,
+   "-16.50": 118,
+   "-16.25": 152,
+   "-16.00": 203,
+   "-15.75": 272,
+   "-15.50": 338,
+   "-15.25": 491,
+   "-15.00": 627,
+   "-14.75": 824,
+   "-14.50": 919,
+   "-14.25": 1129,
+   "-14.00": 1505,
+   "-13.75": 1833,
+   "-13.50": 2135,
+   "-13.25": 2420,
+   "-13.00": 2750,
+   "-12.75": 3149,
+   "-12.50": 3665,
+   "-12.25": 4120,
+   "-12.00": 4577,
+   "-11.75": 5231,
+   "-11.50": 5539,
+   "-11.25": 6245,
+   "-11.00": 6743,
+   "-10.75": 7108,
+   "-10.50": 7770,
+   "-10.25": 8113,
+   "-10.00": 8613,
+   "-9.75": 8830,
+   "-9.50": 9101,
+   "-9.25": 9156,
+   "-9.00": 9154,
+   "-8.75": 9296,
+   "-8.50": 9210,
+   "-8.25": 8999,
+   "-8.00": 8551,
+   "-7.75": 8378,
+   "-7.50": 7718,
+   "-7.25": 7287,
+   "-7.00": 6576,
+   "-6.75": 6110,
+   "-6.50": 5329,
+   "-6.25": 4628,
+   "-6.00": 4115,
+   "-5.75": 3641,
+   "-5.50": 3035,
+   "-5.25": 2561,
+   "-5.00": 2007,
+   "-4.75": 1597,
+   "-4.50": 1138,
+   "-4.25": 833,
+   "-4.00": 515,
+   "-3.75": 291,
+   "-3.50": 157,
+   "-3.25": 77,
+   "-3.00": 45,
+   "-2.75": 13,
+   "-2.50": 2,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-18.75": 39,
+   "-18.50": 235,
+   "-18.25": 666,
+   "-18.00": 1489,
+   "-17.75": 3078,
+   "-17.50": 4958,
+   "-17.25": 7267,
+   "-17.00": 9172,
+   "-16.75": 11057,
+   "-16.50": 12485,
+   "-16.25": 13845,
+   "-16.00": 15342,
+   "-15.75": 15747,
+   "-15.50": 16009,
+   "-15.25": 15717,
+   "-15.00": 15040,
+   "-14.75": 14104,
+   "-14.50": 12002,
+   "-14.25": 9732,
+   "-14.00": 7753,
+   "-13.75": 6127,
+   "-13.50": 4528,
+   "-13.25": 3608,
+   "-13.00": 2735,
+   "-12.75": 2050,
+   "-12.50": 1609,
+   "-12.25": 1284,
+   "-12.00": 957,
+   "-11.75": 710,
+   "-11.50": 545,
+   "-11.25": 416,
+   "-11.00": 371,
+   "-10.75": 262,
+   "-10.50": 136,
+   "-10.25": 124,
+   "-10.00": 93,
+   "-9.75": 67,
+   "-9.50": 60,
+   "-9.25": 50,
+   "-9.00": 34,
+   "-8.75": 25,
+   "-8.50": 11,
+   "-8.25": 11,
+   "-8.00": 6,
+   "-7.75": 3,
+   "-7.50": 3,
+   "-6.50": 1
+  },
+  "boundUnscored": {
+   "-18.00": 3,
+   "-17.75": 6,
+   "-17.50": 40,
+   "-17.25": 43,
+   "-17.00": 70,
+   "-16.75": 107,
+   "-16.50": 118,
+   "-16.25": 152,
+   "-16.00": 203,
+   "-15.75": 272,
+   "-15.50": 338,
+   "-15.25": 491,
+   "-15.00": 627,
+   "-14.75": 824,
+   "-14.50": 919,
+   "-14.25": 1129,
+   "-14.00": 1505,
+   "-13.75": 1833,
+   "-13.50": 2135,
+   "-13.25": 2420,
+   "-13.00": 411
+  }
+ },
+ "timeMs": {
+  "total": 2895,
+  "setup": 446
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "AREAAROUNDTHE",
+   "wordLogp": -6.2547,
+   "words": "AREA AROUND THE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "R",
+    "M": "E",
+    "z": "O",
+    "E": "U",
+    "K": "N",
+    "[": "T",
+    "N": "H"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THATTHEWORLDA",
+   "wordLogp": -7.2597,
+   "words": "THAT THE WORLD A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "W",
+    "K": "O",
+    "[": "L",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THATTHISPAGEA",
+   "wordLogp": -7.3264,
+   "words": "THAT THIS PAGE A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "I",
+    "E": "S",
+    "K": "P",
+    "[": "G",
+    "N": "E"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THATTHEPLASMA",
+   "wordLogp": -7.4015,
+   "words": "THAT THE PLASMA",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "P",
+    "K": "L",
+    "[": "S",
+    "N": "M"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "THATTHEYFINDA",
+   "wordLogp": -7.5027,
+   "words": "THAT THEY FIND A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "Y",
+    "K": "F",
+    "[": "N",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "THATTHEIROWNA",
+   "wordLogp": -7.6998,
+   "words": "THAT THEIR OWN A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "I",
+    "K": "R",
+    "[": "W",
+    "N": "N"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THATTHISBOOKA",
+   "wordLogp": -7.7084,
+   "words": "THAT THIS BOOK A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "I",
+    "E": "S",
+    "K": "B",
+    "[": "O",
+    "N": "K"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THATTHERUSSIA",
+   "wordLogp": -7.7675,
+   "words": "THAT THE RUSSIA",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "R",
+    "K": "U",
+    "[": "S",
+    "N": "I"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THATTHEUSINGA",
+   "wordLogp": -7.8552,
+   "words": "THAT THE USING A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "U",
+    "K": "S",
+    "[": "N",
+    "N": "G"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THATTHEYSENDA",
+   "wordLogp": -7.8976,
+   "words": "THAT THEY SEND A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "Y",
+    "K": "S",
+    "[": "N",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THATTHEYMEDIA",
+   "wordLogp": -7.9354,
+   "words": "THAT THEY MEDIA",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "Y",
+    "K": "M",
+    "[": "D",
+    "N": "I"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THATTHEBUILDA",
+   "wordLogp": -7.9524,
+   "words": "THAT THE BUILD A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "B",
+    "K": "U",
+    "[": "L",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THATTHEGROUPA",
+   "wordLogp": -7.9962,
+   "words": "THAT THE GROUP A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "G",
+    "K": "R",
+    "[": "U",
+    "N": "P"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THATTHEYSAIDA",
+   "wordLogp": -8.018,
+   "words": "THAT THEY SAID A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "Y",
+    "K": "S",
+    "[": "I",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THATTHEYKNOWA",
+   "wordLogp": -8.0286,
+   "words": "THAT THEY KNOW A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "Y",
+    "K": "K",
+    "[": "O",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THATTHEFIELDA",
+   "wordLogp": -8.0372,
+   "words": "THAT THE FIELD A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "F",
+    "K": "I",
+    "[": "L",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "THATTHISFORMA",
+   "wordLogp": -8.0703,
+   "words": "THAT THIS FORM A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "I",
+    "E": "S",
+    "K": "F",
+    "[": "R",
+    "N": "M"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THATTHEBOARDA",
+   "wordLogp": -8.1123,
+   "words": "THAT THE BOARD A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "B",
+    "K": "O",
+    "[": "R",
+    "N": "D"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THATTHEMUSICA",
+   "wordLogp": -8.1132,
+   "words": "THAT THE MUSIC A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "M",
+    "K": "U",
+    "[": "I",
+    "N": "C"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "THATTHEYCHINA",
+   "wordLogp": -8.1756,
+   "words": "THAT THEY CHINA",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "Y",
+    "K": "C",
+    "[": "I",
+    "N": "N"
+   }
+  }
+ ]
+}

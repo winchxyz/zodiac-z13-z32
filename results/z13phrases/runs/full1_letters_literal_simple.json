@@ -1,0 +1,126 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T14:35:09.276Z",
+ "label": "full1_letters_literal_simple",
+ "cipher": {
+  "id": "z13.canonical",
+  "source": "data/ciphers/variants/z13.canonical.txt",
+  "text": "AENz0K0M0[NAM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcdefegehcag"
+ },
+ "options": {
+  "mode": "simple",
+  "topWords": 333333,
+  "wordsUsed": 323973,
+  "maxWords": 1,
+  "vocab": "full",
+  "wordList": "data/lm/words.tsv",
+  "pin": "A=A,E=E,N=N,K=K,M=M",
+  "forbid": "",
+  "tlow": -1000000000,
+  "streamMin": -1000000000,
+  "threads": 1,
+  "taskDepth": 5,
+  "tasks": 0,
+  "maxSeconds": 25
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "full",
+  "dist": {
+   "mean": -10.0682,
+   "max": -4.5418,
+   "p5": -14.055,
+   "p10": -12.9851,
+   "p25": -11.4764,
+   "p50": -9.9444,
+   "p75": -8.4039,
+   "p90": -7.2578,
+   "p95": -6.6898,
+   "p99": -6.0523
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 0,
+  "tasks": 0,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 0,
+  "scored": 0,
+  "keptAtLeastStreamMin": 0,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9851,
+    "count": 0,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4764,
+    "count": 0,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.9444,
+    "count": 0,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.4039,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.2578,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6898,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0523,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {},
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": null,
+  "topShare": null,
+  "top10Share": null,
+  "effectiveNumberExpEntropy": 1,
+  "effectiveNumberInverseSimpson": null,
+  "unscoredMassBoundRelative": null,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {},
+  "exactScored": {}
+ },
+ "timeMs": {
+  "total": 2014,
+  "setup": 1981
+ },
+ "violations": [],
+ "top": []
+}

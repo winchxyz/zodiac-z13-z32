@@ -1,0 +1,614 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:21:37.607Z",
+ "label": "scr04_01",
+ "cipher": {
+  "id": "scr04",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr04.txt",
+  "text": "00M0NzANK[MAE",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*bacdecfgbeh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 277595,
+  "scored": 256952,
+  "keptAtLeastStreamMin": 107,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 13722,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1610,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 107,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 6,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 8,
+  "3": 41,
+  "4": 58
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.747750639347506,
+  "topShare": 0.10757613084804266,
+  "top10Share": 0.47653861417381305,
+  "effectiveNumberExpEntropy": 154.28163788094625,
+  "effectiveNumberInverseSimpson": 28.379053542147986,
+  "unscoredMassBoundRelative": 0.012659701098740577,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 19,
+   "maxWordLogp": -14.836222085597164,
+   "massEstimateRelative": 0.000011971147731394484,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004141016523930678
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 2,
+   "-18.25": 7,
+   "-18.00": 22,
+   "-17.75": 31,
+   "-17.50": 68,
+   "-17.25": 96,
+   "-17.00": 113,
+   "-16.75": 134,
+   "-16.50": 179,
+   "-16.25": 241,
+   "-16.00": 335,
+   "-15.75": 446,
+   "-15.50": 622,
+   "-15.25": 795,
+   "-15.00": 969,
+   "-14.75": 1278,
+   "-14.50": 1562,
+   "-14.25": 1887,
+   "-14.00": 2242,
+   "-13.75": 2560,
+   "-13.50": 2892,
+   "-13.25": 3564,
+   "-13.00": 3878,
+   "-12.75": 4432,
+   "-12.50": 5071,
+   "-12.25": 5801,
+   "-12.00": 6496,
+   "-11.75": 7242,
+   "-11.50": 7928,
+   "-11.25": 8575,
+   "-11.00": 9093,
+   "-10.75": 9664,
+   "-10.50": 10297,
+   "-10.25": 10732,
+   "-10.00": 10778,
+   "-9.75": 11041,
+   "-9.50": 11027,
+   "-9.25": 11216,
+   "-9.00": 11284,
+   "-8.75": 11204,
+   "-8.50": 10938,
+   "-8.25": 10622,
+   "-8.00": 10477,
+   "-7.75": 10030,
+   "-7.50": 9495,
+   "-7.25": 8438,
+   "-7.00": 7790,
+   "-6.75": 6915,
+   "-6.50": 5833,
+   "-6.25": 5055,
+   "-6.00": 4140,
+   "-5.75": 3329,
+   "-5.50": 2610,
+   "-5.25": 1941,
+   "-5.00": 1354,
+   "-4.75": 1036,
+   "-4.50": 676,
+   "-4.25": 482,
+   "-4.00": 291,
+   "-3.75": 172,
+   "-3.50": 87,
+   "-3.25": 47,
+   "-3.00": 22,
+   "-2.75": 5,
+   "-2.50": 1,
+   "-2.25": 5
+  },
+  "exactScored": {
+   "-19.25": 3,
+   "-19.00": 11,
+   "-18.75": 69,
+   "-18.50": 286,
+   "-18.25": 898,
+   "-18.00": 2091,
+   "-17.75": 3883,
+   "-17.50": 6657,
+   "-17.25": 9465,
+   "-17.00": 12658,
+   "-16.75": 15426,
+   "-16.50": 17496,
+   "-16.25": 19365,
+   "-16.00": 19736,
+   "-15.75": 19857,
+   "-15.50": 18890,
+   "-15.25": 17300,
+   "-15.00": 15922,
+   "-14.75": 13954,
+   "-14.50": 11989,
+   "-14.25": 10260,
+   "-14.00": 8649,
+   "-13.75": 7183,
+   "-13.50": 5826,
+   "-13.25": 4717,
+   "-13.00": 3608,
+   "-12.75": 2848,
+   "-12.50": 2300,
+   "-12.25": 1698,
+   "-12.00": 1201,
+   "-11.75": 844,
+   "-11.50": 626,
+   "-11.25": 402,
+   "-11.00": 279,
+   "-10.75": 194,
+   "-10.50": 129,
+   "-10.25": 94,
+   "-10.00": 52,
+   "-9.75": 31,
+   "-9.50": 13,
+   "-9.25": 18,
+   "-9.00": 5,
+   "-8.75": 10,
+   "-8.50": 5,
+   "-8.25": 1,
+   "-8.00": 2,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-18.50": 2,
+   "-18.25": 7,
+   "-18.00": 22,
+   "-17.75": 31,
+   "-17.50": 68,
+   "-17.25": 96,
+   "-17.00": 113,
+   "-16.75": 134,
+   "-16.50": 179,
+   "-16.25": 241,
+   "-16.00": 335,
+   "-15.75": 446,
+   "-15.50": 622,
+   "-15.25": 795,
+   "-15.00": 969,
+   "-14.75": 1278,
+   "-14.50": 1562,
+   "-14.25": 1887,
+   "-14.00": 2242,
+   "-13.75": 2560,
+   "-13.50": 2892,
+   "-13.25": 3564,
+   "-13.00": 598
+  }
+ },
+ "timeMs": {
+  "total": 3569,
+  "setup": 463
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "SUBSEQUENTBUY",
+   "wordLogp": -7.716,
+   "words": "SUBSEQUENT BUY",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "B",
+    "N": "E",
+    "z": "Q",
+    "A": "U",
+    "K": "N",
+    "[": "T",
+    "E": "Y"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ASIASUBSCRIBE",
+   "wordLogp": -7.7802,
+   "words": "ASIA SUBSCRIBE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "I",
+    "N": "S",
+    "z": "U",
+    "A": "B",
+    "K": "C",
+    "[": "R",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "OHIOSUBSCRIBE",
+   "wordLogp": -7.8132,
+   "words": "OHIO SUBSCRIBE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "I",
+    "N": "S",
+    "z": "U",
+    "A": "B",
+    "K": "C",
+    "[": "R",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "ANDASLISTEDIN",
+   "wordLogp": -8.1531,
+   "words": "AND AS LISTED IN",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "D",
+    "N": "S",
+    "z": "L",
+    "A": "I",
+    "K": "T",
+    "[": "E",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "SEASONCOMPACT",
+   "wordLogp": -8.2597,
+   "words": "SEASON COMPACT",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "A",
+    "N": "O",
+    "z": "N",
+    "A": "C",
+    "K": "M",
+    "[": "P",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "OFTOCHECKITEM",
+   "wordLogp": -8.2764,
+   "words": "OF TO CHECK ITEM",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "T",
+    "N": "C",
+    "z": "H",
+    "A": "E",
+    "K": "K",
+    "[": "I",
+    "E": "M"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "TOITSUBSCRIBE",
+   "wordLogp": -8.3397,
+   "words": "TO IT SUBSCRIBE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "N": "S",
+    "z": "U",
+    "A": "B",
+    "K": "C",
+    "[": "R",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THATISRICHARD",
+   "wordLogp": -8.3612,
+   "words": "THAT IS RICHARD",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "N": "I",
+    "z": "S",
+    "A": "R",
+    "K": "C",
+    "[": "H",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THATISNICEAND",
+   "wordLogp": -8.3637,
+   "words": "THAT IS NICE AND",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "N": "I",
+    "z": "S",
+    "A": "N",
+    "K": "C",
+    "[": "E",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "AREALSOLIKEOF",
+   "wordLogp": -8.5356,
+   "words": "ARE ALSO LIKE OF",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "E",
+    "N": "L",
+    "z": "S",
+    "A": "O",
+    "K": "I",
+    "[": "K",
+    "E": "F"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ONTOCHECKITEM",
+   "wordLogp": -8.5729,
+   "words": "ON TO CHECK ITEM",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "T",
+    "N": "C",
+    "z": "H",
+    "A": "E",
+    "K": "K",
+    "[": "I",
+    "E": "M"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THATINRICHARD",
+   "wordLogp": -8.5847,
+   "words": "THAT IN RICHARD",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "N": "I",
+    "z": "N",
+    "A": "R",
+    "K": "C",
+    "[": "H",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ORNOTBETURNED",
+   "wordLogp": -8.6019,
+   "words": "OR NOT BE TURNED",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "N",
+    "N": "T",
+    "z": "B",
+    "A": "E",
+    "K": "U",
+    "[": "R",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ORTOCHECKITEM",
+   "wordLogp": -8.6379,
+   "words": "OR TO CHECK ITEM",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "T",
+    "N": "C",
+    "z": "H",
+    "A": "E",
+    "K": "K",
+    "[": "I",
+    "E": "M"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "OFNOTBETURNED",
+   "wordLogp": -8.6584,
+   "words": "OF NOT BE TURNED",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "N",
+    "N": "T",
+    "z": "B",
+    "A": "E",
+    "K": "U",
+    "[": "R",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "CANCERDEMANDS",
+   "wordLogp": -8.6617,
+   "words": "CANCER DEMANDS",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "M": "N",
+    "N": "E",
+    "z": "R",
+    "A": "D",
+    "K": "M",
+    "[": "A",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "AREANDINTHEIR",
+   "wordLogp": -8.6796,
+   "words": "ARE AND IN THEIR",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "E",
+    "N": "N",
+    "z": "D",
+    "A": "I",
+    "K": "T",
+    "[": "H",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THATSENSORAND",
+   "wordLogp": -8.7275,
+   "words": "THAT SENSOR AND",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "N": "S",
+    "z": "E",
+    "A": "N",
+    "K": "O",
+    "[": "R",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "SUBSEQUENTBUG",
+   "wordLogp": -8.7312,
+   "words": "SUBSEQUENT BUG",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "B",
+    "N": "E",
+    "z": "Q",
+    "A": "U",
+    "K": "N",
+    "[": "T",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "SEASONTODEATH",
+   "wordLogp": -8.8211,
+   "words": "SEASON TO DEATH",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "A",
+    "N": "O",
+    "z": "N",
+    "A": "T",
+    "K": "D",
+    "[": "E",
+    "E": "H"
+   }
+  }
+ ]
+}

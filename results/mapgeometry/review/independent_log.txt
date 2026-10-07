@@ -1,0 +1,71 @@
+[run_slot] slot-1 acquired after 630s: python results/mapgeometry/review/independent.py --trials 20000
+1. independent geodesy (ECEF-ENU azimuth, Andoyer-Lambert distance) vs attacker (Vincenty)
+  LHR             az  319.604 (att  319.604, diff -0.000)  d   19.327 mi (att   19.327, diff -0.000)
+  BRS             az  318.193 (att  318.193, diff -0.000)  d   22.634 mi (att   22.634, diff -0.000)
+  LB              az  339.917 (att  339.917, diff -0.000)  d   50.095 mi (att   50.095, diff -0.000)
+  STINE           az  257.914 (att  257.914, diff +0.000)  d   30.390 mi (att   30.390, diff -0.000)
+  RADETICH        az  255.075 (att  255.075, diff +0.000)  d   29.468 mi (att   29.468, diff -0.000)
+  JOHNS_VERNALIS  az  116.556 (att  116.556, diff -0.000)  d   38.442 mi (att   38.442, diff -0.000)
+  JOHNS_PATTERSON az  123.105 (att  123.105, diff -0.000)  d   51.271 mi (att   51.271, diff -0.000)
+  BATES           az  135.351 (att  135.351, diff -0.000)  d  370.155 mi (att  370.155, diff -0.000)
+  NAPA_PHONE      az  325.012 (att  325.012, diff -0.000)  d   35.331 mi (att   35.331, diff -0.000)
+  VALLEJO_PHONE   az  311.246 (att  311.246, diff -0.000)  d   23.495 mi (att   23.495, diff -0.000)
+  CHRONICLE       az  255.848 (att  255.848, diff +0.000)  d   27.799 mi (att   27.799, diff -0.000)
+  PUC             az  329.016 (att  329.016, diff -0.000)  d   55.403 mi (att   55.403, diff -0.000)
+  LASS            az   54.391 (att   54.391, diff +0.000)  d  130.479 mi (att  130.480, diff -0.000)
+  INGLESIDE       az  249.759 (att  249.759, diff +0.000)  d   31.070 mi (att   31.070, diff -0.000)
+  DMW_PT          az  316.848 (att  316.848, diff -0.000)  d   21.608 mi (att   21.608, diff -0.000)
+  PRAETORIAN_PT   az  179.521 (att  179.521, diff +0.000)  d    1.014 mi (att    1.014, diff -0.000)
+  SOUTH_TAHOE_MS  az   54.752 (att   54.752, diff +0.000)  d  127.924 mi (att  127.924, diff -0.000)
+  LAKE_SPAULDING  az   34.216 (att   34.216, diff +0.000)  d  121.138 mi (att  121.138, diff -0.000)
+2. LHR sensitivity: {
+ "decl_15.00": {
+  "ccw_rad": 0.9668480882212235,
+  "err_deg": -1.8994646277139395
+ },
+ "decl_16.50": {
+  "ccw_rad": 0.9930280270011383,
+  "err_deg": -0.39946462771393954
+ },
+ "decl_16.88": {
+  "ccw_rad": 0.9996602781587167,
+  "err_deg": -0.019464627713944083
+ },
+ "decl_17.00": {
+  "ccw_rad": 1.00175467326111,
+  "err_deg": 0.10053537228606046
+ },
+ "decl_17.50": {
+  "ccw_rad": 1.0104813195210816,
+  "err_deg": 0.6005353722860605
+ },
+ "lateral_mi_per_deg_at_LHR": 0.3373277547243195,
+ "bearing_change_deg_per_0.1mi_lateral": 0.29644759021304024
+}
+3. 4 sites                                A attacker-narrowest: zero magN, k 1..6, n int, 6.4     pts   144 obs 0.128 mi (LHR) | U: p<=obs 0.0032 p<=.25 0.0112 p<=.5 0.0411 | R: p<=obs 0.0024 p<=.25 0.0094 p<=.5 0.0371
+3. 4 sites                                B zero magN, k 0..6, n int, 6.4                         pts   156 obs 0.128 mi (LHR) | U: p<=obs 0.0034 p<=.25 0.0118 p<=.5 0.0442 | R: p<=obs 0.0025 p<=.25 0.0102 p<=.5 0.0404
+3. 4 sites                                C zeros magN/trueN, k 0..6, n int, 6.4                  pts   312 obs 0.128 mi (LHR) | U: p<=obs 0.0056 p<=.25 0.0208 p<=.5 0.0728 | R: p<=obs 0.0048 p<=.25 0.0177 p<=.5 0.0674
+3. 4 sites                                D zeros magN/trueN/magE/trueE, k 0..6, n int, 6.4       pts   624 obs 0.128 mi (LHR) | U: p<=obs 0.0099 p<=.25 0.0339 p<=.5 0.1176 | R: p<=obs 0.0115 p<=.25 0.0336 p<=.5 0.1164
+3. 4 sites                                E as D + half-inch n + scale 7.0                        pts  2496 obs 0.128 mi (LHR) | U: p<=obs 0.0396 p<=.25 0.1262 p<=.5 0.3668 | R: p<=obs 0.0387 p<=.25 0.1201 p<=.5 0.3547
+3. 4 sites                                F as E + half-step k                                    pts  4800 obs 0.128 mi (LHR) | U: p<=obs 0.0744 p<=.25 0.2329 p<=.5 0.6164 | R: p<=obs 0.0735 p<=.25 0.2275 p<=.5 0.6003
+3. 6 sites (+Vallejo phone, Chronicle)    A attacker-narrowest: zero magN, k 1..6, n int, 6.4     pts   144 obs 0.128 mi (LHR) | U: p<=obs 0.0042 p<=.25 0.0165 p<=.5 0.0643 | R: p<=obs 0.0038 p<=.25 0.0153 p<=.5 0.0614
+3. 6 sites (+Vallejo phone, Chronicle)    B zero magN, k 0..6, n int, 6.4                         pts   156 obs 0.128 mi (LHR) | U: p<=obs 0.0043 p<=.25 0.0178 p<=.5 0.0692 | R: p<=obs 0.0041 p<=.25 0.0165 p<=.5 0.0672
+3. 6 sites (+Vallejo phone, Chronicle)    C zeros magN/trueN, k 0..6, n int, 6.4                  pts   312 obs 0.128 mi (LHR) | U: p<=obs 0.0088 p<=.25 0.0308 p<=.5 0.1102 | R: p<=obs 0.0080 p<=.25 0.0295 p<=.5 0.1077
+3. 6 sites (+Vallejo phone, Chronicle)    D zeros magN/trueN/magE/trueE, k 0..6, n int, 6.4       pts   624 obs 0.128 mi (LHR) | U: p<=obs 0.0163 p<=.25 0.0517 p<=.5 0.1726 | R: p<=obs 0.0163 p<=.25 0.0529 p<=.5 0.1804
+3. 6 sites (+Vallejo phone, Chronicle)    E as D + half-inch n + scale 7.0                        pts  2496 obs 0.128 mi (LHR) | U: p<=obs 0.0549 p<=.25 0.1774 p<=.5 0.4995 | R: p<=obs 0.0578 p<=.25 0.1794 p<=.5 0.4827
+3. 6 sites (+Vallejo phone, Chronicle)    F as E + half-step k                                    pts  4800 obs 0.128 mi (LHR) | U: p<=obs 0.1071 p<=.25 0.3207 p<=.5 0.7618 | R: p<=obs 0.1111 p<=.25 0.3332 p<=.5 0.7907
+4. paper reach from the summit (in): {"bar_label_6.4": {"west": 5.703376205787781, "east": 1.157556270096463, "north": 2.4919614147909965, "south": 5.783762057877813}, "ruler_photo": {"west": 5.567408195356581, "east": 1.1299602256960504, "north": 2.4325532636512195, "south": 5.645877655474362}}
+   Foxon (12 in, 3 rad) polar axis true E                     ccw, scale 6.4        -> bearing  278.1,  76.8 mi, on mailed map: False
+   Foxon (12 in, 3 rad) polar axis true E                     ccw, scale paper 7.01 -> bearing  278.1,  84.1 mi, on mailed map: False
+   Foxon (12 in, 3 rad) polar axis mag E                      ccw, scale 6.4        -> bearing  295.0,  76.8 mi, on mailed map: False
+   Foxon (12 in, 3 rad) polar axis mag E                      ccw, scale paper 7.01 -> bearing  295.0,  84.1 mi, on mailed map: False
+   Foxon (12 in, 3 rad) polar axis map-right (printed sheet)  ccw, scale 6.4        -> bearing  273.6,  76.8 mi, on mailed map: False
+   Foxon (12 in, 3 rad) polar axis map-right (printed sheet)  ccw, scale paper 7.01 -> bearing  273.6,  84.1 mi, on mailed map: False
+   Foxon (3 in, 0 rad) polar axis true E                     ccw, scale 6.4        -> bearing   90.0,  19.2 mi, on mailed map: False
+   Foxon (3 in, 0 rad) polar axis true E                     ccw, scale paper 7.01 -> bearing   90.0,  21.0 mi, on mailed map: False
+   Foxon (3 in, 0 rad) polar axis mag E                      ccw, scale 6.4        -> bearing  106.9,  19.2 mi, on mailed map: False
+   Foxon (3 in, 0 rad) polar axis mag E                      ccw, scale paper 7.01 -> bearing  106.9,  21.0 mi, on mailed map: False
+   Foxon (3 in, 0 rad) polar axis map-right (printed sheet)  ccw, scale 6.4        -> bearing   85.4,  19.2 mi, on mailed map: False
+   Foxon (3 in, 0 rad) polar axis map-right (printed sheet)  ccw, scale paper 7.01 -> bearing   85.4,  21.0 mi, on mailed map: False
+5. Penn watch face with LB at 12:00 and BRS exactly at 9:00: {"twelve_true_bearing": 324.97, "radius_mi": 25.92476749766572, "mtd_clock": 6.996438721738695, "mtd_clock_hm": "6:60", "angle_mtd_to_9oclock_deg": 60.10683834783915, "vs_one_radian_deg": 2.811058834756828}
+wrote independent.json

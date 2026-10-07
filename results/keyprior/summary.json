@@ -1,0 +1,2300 @@
+{
+ "task": "keyprior",
+ "files": [
+  "calib_z340w13_ownkey.json",
+  "calib_z340w13_ownkey.log",
+  "calib_z340w13_z408key.json",
+  "calib_z340w13_z408key.log",
+  "calib_z408w13_ownkey.json",
+  "calib_z408w13_ownkey.log",
+  "calib_z408w13_z340key.json",
+  "calib_z408w13_z340key.log",
+  "calib_z408w32_z340key.log",
+  "commands.log",
+  "condnull_objective.json",
+  "condnull_word.json",
+  "construction.json",
+  "enum_z13_names_pin_z340.json",
+  "enum_z13_names_pin_z340.log",
+  "enum_z13_names_pin_z408.json",
+  "enum_z13_names_pin_z408.log",
+  "enum_z13_words_pin_z340.json",
+  "enum_z13_words_pin_z340.log",
+  "enum_z13_words_pin_z340_t2.json",
+  "enum_z13_words_pin_z340_t2.log",
+  "enum_z13_words_pin_z408.json",
+  "enum_z13_words_pin_z408.log",
+  "enum_z13_words_pin_z408_t2.json",
+  "enum_z13_words_pin_z408_t2.log",
+  "fullpin_z13_circles_permute.json",
+  "fullpin_z13_circles_permute.log",
+  "fullpin_z13_iid.json",
+  "fullpin_z13_iid.log",
+  "fullpin_z13_permute.json",
+  "fullpin_z13_permute.log",
+  "fullpin_z13_permute_word.json",
+  "fullpin_z13_permute_word.log",
+  "fullpin_z32_permute.json",
+  "fullpin_z32_permute.log",
+  "h1_z13.json",
+  "h1_z13_word.json",
+  "joint_synthetic.json",
+  "joint_synthetic.log",
+  "joint_z13_z32.json",
+  "joint_z13_z32.log",
+  "queue1.sh",
+  "queue2a.sh",
+  "queue2b.sh",
+  "queue3.sh",
+  "queue4.sh",
+  "summary.json",
+  "word_parts",
+  "z13_homophonic_count_20k_4w.json",
+  "z13_homophonic_fits.log",
+  "z13_homophonic_fits_20k_4w.json",
+  "z13subsets_words_top500k_z340.json",
+  "z13subsets_words_top500k_z340.log",
+  "z13subsets_words_top500k_z408.json",
+  "z13subsets_words_top500k_z408.log",
+  "z13subsets_words_v1_asymmetricFW.json",
+  "z13subsets_words_v1_asymmetricFW.log",
+  "z32subsets_z340.json",
+  "z32subsets_z340.log",
+  "z32subsets_z408.json",
+  "z32subsets_z408.log"
+ ],
+ "fullpin_z13_permute": {
+  "statistic": "objective",
+  "null": {
+   "kind": "permute",
+   "n": 10000,
+   "seed": 1970,
+   "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+  },
+  "rows": [
+   {
+    "cipher": "z13.canonical",
+    "key": "z408",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "WEED?S?H??EWH",
+    "realScore": -70.912,
+    "realBest": "WEEDASAHAVEWH",
+    "realBestWords": "WEED AS A HAVE WH",
+    "nullN": 10000,
+    "nullMean": -84.125,
+    "nullSd": 8.909,
+    "nullMax": -55.248,
+    "p": 0.05419458054194581,
+    "percentile": 94.59,
+    "z": 1.4830045647850603
+   },
+   {
+    "cipher": "z13.canonical",
+    "key": "z340",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "DREA?A?O??EDO",
+    "realScore": -62.053,
+    "realBest": "DREATATOTHEDO",
+    "realBestWords": "DREATA TO THE DO",
+    "nullN": 10000,
+    "nullMean": -83.237,
+    "nullSd": 8.158,
+    "nullMax": -54.782,
+    "p": 0.0007999200079992001,
+    "percentile": 99.92999999999999,
+    "z": 2.5966403041396684
+   },
+   {
+    "cipher": "z13.canonical",
+    "key": "union",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "WEED?S?H??EWH",
+    "realScore": -70.912,
+    "realBest": "WEEDASAHAVEWH",
+    "realBestWords": "WEED AS A HAVE WH",
+    "nullN": 10000,
+    "nullMean": -82.785,
+    "nullSd": 8.497,
+    "nullMax": -55.891,
+    "p": 0.07039296070392961,
+    "percentile": 92.97,
+    "z": 1.397316376136568
+   },
+   {
+    "cipher": "z13.bracket_is_perp",
+    "key": "z408",
+    "nPinned": 7,
+    "nFree": 1,
+    "carriedOver": "WEED?S?H?REWH",
+    "realScore": -71.044,
+    "realBest": "WEEDESEHEREWH",
+    "realBestWords": "WEED ESEHEREWH",
+    "nullN": 10000,
+    "nullMean": -91.807,
+    "nullSd": 10.37,
+    "nullMax": -63.239,
+    "p": 0.0084991500849915,
+    "percentile": 99.16,
+    "z": 2.002263496187775
+   },
+   {
+    "cipher": "z13.bracket_is_perp",
+    "key": "z340",
+    "nPinned": 7,
+    "nFree": 1,
+    "carriedOver": "DREA?A?O?LEDO",
+    "realScore": -74.299,
+    "realBest": "DREANANONLEDO",
+    "realBestWords": "DREANANONLE DO",
+    "nullN": 10000,
+    "nullMean": -90.787,
+    "nullSd": 9.5,
+    "nullMax": -65.011,
+    "p": 0.028997100289971003,
+    "percentile": 97.11,
+    "z": 1.7354650350178025
+   },
+   {
+    "cipher": "z13.bracket_is_perp",
+    "key": "union",
+    "nPinned": 7,
+    "nFree": 1,
+    "carriedOver": "WEED?S?H?REWH",
+    "realScore": -71.044,
+    "realBest": "WEEDESEHEREWH",
+    "realBestWords": "WEED ESEHEREWH",
+    "nullN": 10000,
+    "nullMean": -90.252,
+    "nullSd": 9.8,
+    "nullMax": -59.553,
+    "p": 0.012598740125987402,
+    "percentile": 98.75,
+    "z": 1.9600279924164552
+   },
+   {
+    "cipher": "z13.crosshair_null",
+    "key": "z408",
+    "nPinned": 5,
+    "nFree": 2,
+    "carriedOver": "WEE?S?H??EWH",
+    "realScore": -63.6,
+    "realBest": "WEETSTHTHEWH",
+    "realBestWords": "WEETSTHTHEWH",
+    "nullN": 10000,
+    "nullMean": -74.178,
+    "nullSd": 7.833,
+    "nullMax": -52.518,
+    "p": 0.07189281071892811,
+    "percentile": 92.82000000000001,
+    "z": 1.3504124411640883
+   },
+   {
+    "cipher": "z13.crosshair_null",
+    "key": "z340",
+    "nPinned": 5,
+    "nFree": 2,
+    "carriedOver": "DRE?A?O??EDO",
+    "realScore": -55.943,
+    "realBest": "DRETATOTHEDO",
+    "realBestWords": "DRETA TO THE DO",
+    "nullN": 10000,
+    "nullMean": -73.422,
+    "nullSd": 7.077,
+    "nullMax": -52.729,
+    "p": 0.0022997700229977,
+    "percentile": 99.78,
+    "z": 2.4695770290161128
+   },
+   {
+    "cipher": "z13.crosshair_null",
+    "key": "union",
+    "nPinned": 5,
+    "nFree": 2,
+    "carriedOver": "WEE?S?H??EWH",
+    "realScore": -63.6,
+    "realBest": "WEETSTHTHEWH",
+    "realBestWords": "WEETSTHTHEWH",
+    "nullN": 10000,
+    "nullMean": -73.089,
+    "nullSd": 7.457,
+    "nullMax": -53.682,
+    "p": 0.0913908609139086,
+    "percentile": 90.86999999999999,
+    "z": 1.272627931913696
+   },
+   {
+    "cipher": "z13.reversed",
+    "key": "z408",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "HWE??H?S?DEEW",
+    "realScore": -71.482,
+    "realBest": "HWEREHESEDEEW",
+    "realBestWords": "HWEREHESEDEEW",
+    "nullN": 10000,
+    "nullMean": -84.43,
+    "nullSd": 9.239,
+    "nullMax": -57.779,
+    "p": 0.06029397060293971,
+    "percentile": 93.97999999999999,
+    "z": 1.4013499279290829
+   },
+   {
+    "cipher": "z13.reversed",
+    "key": "z340",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "ODE??O?A?AERD",
+    "realScore": -75.98,
+    "realBest": "ODERNONANAERD",
+    "realBestWords": "ODER NON ANAERD",
+    "nullN": 10000,
+    "nullMean": -83.242,
+    "nullSd": 8.452,
+    "nullMax": -57.067,
+    "p": 0.2034796520347965,
+    "percentile": 79.66,
+    "z": 0.859226531524342
+   },
+   {
+    "cipher": "z13.reversed",
+    "key": "union",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "HWE??H?S?DEEW",
+    "realScore": -71.482,
+    "realBest": "HWEREHESEDEEW",
+    "realBestWords": "HWEREHESEDEEW",
+    "nullN": 10000,
+    "nullMean": -83.211,
+    "nullSd": 8.876,
+    "nullMax": -57.293,
+    "p": 0.07939206079392061,
+    "percentile": 92.07,
+    "z": 1.3213583190300677
+   }
+  ]
+ },
+ "fullpin_z13_iid": {
+  "statistic": "objective",
+  "null": {
+   "kind": "iid",
+   "n": 10000,
+   "seed": 1971,
+   "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+  },
+  "rows": [
+   {
+    "cipher": "z13.canonical",
+    "key": "z408",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "WEED?S?H??EWH",
+    "realScore": -70.912,
+    "realBest": "WEEDASAHAVEWH",
+    "realBestWords": "WEED AS A HAVE WH",
+    "nullN": 10000,
+    "nullMean": -84.453,
+    "nullSd": 9.07,
+    "nullMax": -57.002,
+    "p": 0.047595240475952406,
+    "percentile": 95.25,
+    "z": 1.4928770114073502
+   },
+   {
+    "cipher": "z13.canonical",
+    "key": "z340",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "DREA?A?O??EDO",
+    "realScore": -62.053,
+    "realBest": "DREATATOTHEDO",
+    "realBestWords": "DREATA TO THE DO",
+    "nullN": 10000,
+    "nullMean": -83.406,
+    "nullSd": 8.283,
+    "nullMax": -55.338,
+    "p": 0.0006999300069993001,
+    "percentile": 99.94,
+    "z": 2.577825916654639
+   },
+   {
+    "cipher": "z13.canonical",
+    "key": "union",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "WEED?S?H??EWH",
+    "realScore": -70.912,
+    "realBest": "WEEDASAHAVEWH",
+    "realBestWords": "WEED AS A HAVE WH",
+    "nullN": 10000,
+    "nullMean": -83.358,
+    "nullSd": 8.747,
+    "nullMax": -52.701,
+    "p": 0.06229377062293771,
+    "percentile": 93.78,
+    "z": 1.4229176935811279
+   },
+   {
+    "cipher": "z13.bracket_is_perp",
+    "key": "z408",
+    "nPinned": 7,
+    "nFree": 1,
+    "carriedOver": "WEED?S?H?REWH",
+    "realScore": -71.044,
+    "realBest": "WEEDESEHEREWH",
+    "realBestWords": "WEED ESEHEREWH",
+    "nullN": 10000,
+    "nullMean": -92.309,
+    "nullSd": 10.548,
+    "nullMax": -62.06,
+    "p": 0.007699230076992301,
+    "percentile": 99.24,
+    "z": 2.0159963074348
+   },
+   {
+    "cipher": "z13.bracket_is_perp",
+    "key": "z340",
+    "nPinned": 7,
+    "nFree": 1,
+    "carriedOver": "DREA?A?O?LEDO",
+    "realScore": -74.299,
+    "realBest": "DREANANONLEDO",
+    "realBestWords": "DREANANONLE DO",
+    "nullN": 10000,
+    "nullMean": -90.941,
+    "nullSd": 9.615,
+    "nullMax": -63.628,
+    "p": 0.029497050294970503,
+    "percentile": 97.06,
+    "z": 1.7309058977855951
+   },
+   {
+    "cipher": "z13.bracket_is_perp",
+    "key": "union",
+    "nPinned": 7,
+    "nFree": 1,
+    "carriedOver": "WEED?S?H?REWH",
+    "realScore": -71.044,
+    "realBest": "WEEDESEHEREWH",
+    "realBestWords": "WEED ESEHEREWH",
+    "nullN": 10000,
+    "nullMean": -90.88,
+    "nullSd": 10.152,
+    "nullMax": -60.36,
+    "p": 0.0108989101089891,
+    "percentile": 98.92,
+    "z": 1.9539208078797634
+   },
+   {
+    "cipher": "z13.crosshair_null",
+    "key": "z408",
+    "nPinned": 5,
+    "nFree": 2,
+    "carriedOver": "WEE?S?H??EWH",
+    "realScore": -63.6,
+    "realBest": "WEETSTHTHEWH",
+    "realBestWords": "WEETSTHTHEWH",
+    "nullN": 10000,
+    "nullMean": -74.436,
+    "nullSd": 8.009,
+    "nullMax": -51.616,
+    "p": 0.07139286071392861,
+    "percentile": 92.86999999999999,
+    "z": 1.3529414518998912
+   },
+   {
+    "cipher": "z13.crosshair_null",
+    "key": "z340",
+    "nPinned": 5,
+    "nFree": 2,
+    "carriedOver": "DRE?A?O??EDO",
+    "realScore": -55.943,
+    "realBest": "DRETATOTHEDO",
+    "realBestWords": "DRETA TO THE DO",
+    "nullN": 10000,
+    "nullMean": -73.476,
+    "nullSd": 7.146,
+    "nullMax": -51.016,
+    "p": 0.0018998100189981002,
+    "percentile": 99.82,
+    "z": 2.4536158270113386
+   },
+   {
+    "cipher": "z13.crosshair_null",
+    "key": "union",
+    "nPinned": 5,
+    "nFree": 2,
+    "carriedOver": "WEE?S?H??EWH",
+    "realScore": -63.6,
+    "realBest": "WEETSTHTHEWH",
+    "realBestWords": "WEETSTHTHEWH",
+    "nullN": 10000,
+    "nullMean": -73.551,
+    "nullSd": 7.689,
+    "nullMax": -51.618,
+    "p": 0.0837916208379162,
+    "percentile": 91.63,
+    "z": 1.2942346927799497
+   },
+   {
+    "cipher": "z13.reversed",
+    "key": "z408",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "HWE??H?S?DEEW",
+    "realScore": -71.482,
+    "realBest": "HWEREHESEDEEW",
+    "realBestWords": "HWEREHESEDEEW",
+    "nullN": 10000,
+    "nullMean": -84.821,
+    "nullSd": 9.485,
+    "nullMax": -56.775,
+    "p": 0.06009399060093991,
+    "percentile": 94,
+    "z": 1.4062881726526477
+   },
+   {
+    "cipher": "z13.reversed",
+    "key": "z340",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "ODE??O?A?AERD",
+    "realScore": -75.98,
+    "realBest": "ODERNONANAERD",
+    "realBestWords": "ODER NON ANAERD",
+    "nullN": 10000,
+    "nullMean": -83.628,
+    "nullSd": 8.632,
+    "nullMax": -57.539,
+    "p": 0.1922807719228077,
+    "percentile": 80.78,
+    "z": 0.8860493469976217
+   },
+   {
+    "cipher": "z13.reversed",
+    "key": "union",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "HWE??H?S?DEEW",
+    "realScore": -71.482,
+    "realBest": "HWEREHESEDEEW",
+    "realBestWords": "HWEREHESEDEEW",
+    "nullN": 10000,
+    "nullMean": -83.623,
+    "nullSd": 8.97,
+    "nullMax": -54.844,
+    "p": 0.0684931506849315,
+    "percentile": 93.16,
+    "z": 1.3534627475622303
+   }
+  ]
+ },
+ "fullpin_z13_circles_permute": {
+  "statistic": "objective",
+  "null": {
+   "kind": "permute",
+   "n": 1000,
+   "seed": 1970,
+   "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+  },
+  "rows": [
+   {
+    "cipher": "z13.circles_distinct",
+    "key": "z408",
+    "nPinned": 6,
+    "nFree": 4,
+    "carriedOver": "WEED?S?H??EWH",
+    "realScore": -56.222,
+    "realBest": "WEEDASTHEREWH",
+    "realBestWords": "WEED AS THERE WH",
+    "nullN": 1000,
+    "nullMean": -71.341,
+    "nullSd": 8.27,
+    "nullMax": -49.627,
+    "p": 0.01898101898101898,
+    "percentile": 98.2,
+    "z": 1.8280655205432046
+   },
+   {
+    "cipher": "z13.circles_distinct",
+    "key": "z340",
+    "nPinned": 6,
+    "nFree": 4,
+    "carriedOver": "DREA?A?O??EDO",
+    "realScore": -52.031,
+    "realBest": "DREAMANOTHEDO",
+    "realBestWords": "DREAM A NO THE DO",
+    "nullN": 1000,
+    "nullMean": -70.904,
+    "nullSd": 7.385,
+    "nullMax": -51.942,
+    "p": 0.001998001998001998,
+    "percentile": 99.9,
+    "z": 2.5556079453248506
+   }
+  ]
+ },
+ "fullpin_z13_permute_word": {
+  "statistic": "word",
+  "null": {
+   "kind": "permute",
+   "n": 10000,
+   "seed": 1970,
+   "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+  },
+  "rows": [
+   {
+    "cipher": "z13.canonical",
+    "key": "z408",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "WEED?S?H??EWH",
+    "realScore": -17.24,
+    "realBest": "WEEDASAHAVEWH",
+    "realBestWords": "WEED AS A HAVE WH",
+    "nullN": 10000,
+    "nullMean": -18.365,
+    "nullSd": 1.743,
+    "nullMax": -11.316,
+    "p": 0.25377462253774624,
+    "percentile": 74.63,
+    "z": 0.6457177710604132
+   },
+   {
+    "cipher": "z13.canonical",
+    "key": "z340",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "DREA?A?O??EDO",
+    "realScore": -14.594,
+    "realBest": "DREADADODGEDO",
+    "realBestWords": "DREAD A DODGE DO",
+    "nullN": 10000,
+    "nullMean": -18.232,
+    "nullSd": 1.474,
+    "nullMax": -10.874,
+    "p": 0.0103989601039896,
+    "percentile": 98.97,
+    "z": 2.4674697959372756
+   },
+   {
+    "cipher": "z13.canonical",
+    "key": "union",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "WEED?S?H??EWH",
+    "realScore": -17.24,
+    "realBest": "WEEDASAHAVEWH",
+    "realBestWords": "WEED AS A HAVE WH",
+    "nullN": 10000,
+    "nullMean": -18.14,
+    "nullSd": 1.689,
+    "nullMax": -11.393,
+    "p": 0.28957104289571045,
+    "percentile": 71.05,
+    "z": 0.5325967170411039
+   },
+   {
+    "cipher": "z13.bracket_is_perp",
+    "key": "z408",
+    "nPinned": 7,
+    "nFree": 1,
+    "carriedOver": "WEED?S?H?REWH",
+    "realScore": -17.807,
+    "realBest": "WEEDSSSHSREWH",
+    "realBestWords": "WEEDS SSHSREWH",
+    "nullN": 10000,
+    "nullMean": -19.138,
+    "nullSd": 1.515,
+    "nullMax": -12.705,
+    "p": 0.1810818918108189,
+    "percentile": 81.89999999999999,
+    "z": 0.878701940029787
+   },
+   {
+    "cipher": "z13.bracket_is_perp",
+    "key": "z340",
+    "nPinned": 7,
+    "nFree": 1,
+    "carriedOver": "DREA?A?O?LEDO",
+    "realScore": -17.103,
+    "realBest": "DREAMAMOMLEDO",
+    "realBestWords": "DREAM AMOMLEDO",
+    "nullN": 10000,
+    "nullMean": -18.971,
+    "nullSd": 1.233,
+    "nullMax": -13.715,
+    "p": 0.06429357064293571,
+    "percentile": 93.58,
+    "z": 1.514638504783192
+   },
+   {
+    "cipher": "z13.bracket_is_perp",
+    "key": "union",
+    "nPinned": 7,
+    "nFree": 1,
+    "carriedOver": "WEED?S?H?REWH",
+    "realScore": -17.807,
+    "realBest": "WEEDSSSHSREWH",
+    "realBestWords": "WEEDS SSHSREWH",
+    "nullN": 10000,
+    "nullMean": -18.919,
+    "nullSd": 1.462,
+    "nullMax": -13.534,
+    "p": 0.2156784321567843,
+    "percentile": 78.44,
+    "z": 0.7606876834838668
+   },
+   {
+    "cipher": "z13.crosshair_null",
+    "key": "z408",
+    "nPinned": 5,
+    "nFree": 2,
+    "carriedOver": "WEE?S?H??EWH",
+    "realScore": -16.26,
+    "realBest": "WEEESEHEEEWH",
+    "realBestWords": "WEEESEHEEEWH",
+    "nullN": 10000,
+    "nullMean": -16.854,
+    "nullSd": 1.667,
+    "nullMax": -9.901,
+    "p": 0.3651634836516348,
+    "percentile": 63.49,
+    "z": 0.3561637667138707
+   },
+   {
+    "cipher": "z13.crosshair_null",
+    "key": "z340",
+    "nPinned": 5,
+    "nFree": 2,
+    "carriedOver": "DRE?A?O??EDO",
+    "realScore": -14.263,
+    "realBest": "DRETATOTHEDO",
+    "realBestWords": "DRETA TO THE DO",
+    "nullN": 10000,
+    "nullMean": -16.73,
+    "nullSd": 1.399,
+    "nullMax": -10.11,
+    "p": 0.050594940505949405,
+    "percentile": 94.95,
+    "z": 1.7637193595871254
+   },
+   {
+    "cipher": "z13.crosshair_null",
+    "key": "union",
+    "nPinned": 5,
+    "nFree": 2,
+    "carriedOver": "WEE?S?H??EWH",
+    "realScore": -16.26,
+    "realBest": "WEEESEHEEEWH",
+    "realBestWords": "WEEESEHEEEWH",
+    "nullN": 10000,
+    "nullMean": -16.648,
+    "nullSd": 1.618,
+    "nullMax": -10.088,
+    "p": 0.40535946405359463,
+    "percentile": 59.47,
+    "z": 0.23946735404457722
+   },
+   {
+    "cipher": "z13.reversed",
+    "key": "z408",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "HWE??H?S?DEEW",
+    "realScore": -18.25,
+    "realBest": "HWEEEHESEDEEW",
+    "realBestWords": "HWEEEHESEDEEW",
+    "nullN": 10000,
+    "nullMean": -18.382,
+    "nullSd": 1.694,
+    "nullMax": -11.866,
+    "p": 0.48425157484251574,
+    "percentile": 51.580000000000005,
+    "z": 0.0780296367961069
+   },
+   {
+    "cipher": "z13.reversed",
+    "key": "z340",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "ODE??O?A?AERD",
+    "realScore": -17.509,
+    "realBest": "ODERTOTATAERD",
+    "realBestWords": "ODER TO TATAERD",
+    "nullN": 10000,
+    "nullMean": -18.208,
+    "nullSd": 1.441,
+    "nullMax": -11.764,
+    "p": 0.3050694930506949,
+    "percentile": 69.5,
+    "z": 0.4855684910250876
+   },
+   {
+    "cipher": "z13.reversed",
+    "key": "union",
+    "nPinned": 6,
+    "nFree": 2,
+    "carriedOver": "HWE??H?S?DEEW",
+    "realScore": -18.25,
+    "realBest": "HWEEEHESEDEEW",
+    "realBestWords": "HWEEEHESEDEEW",
+    "nullN": 10000,
+    "nullMean": -18.205,
+    "nullSd": 1.645,
+    "nullMax": -11.148,
+    "p": 0.5281471852814719,
+    "percentile": 47.19,
+    "z": -0.027381611037988217
+   }
+  ]
+ },
+ "fullpin_z32_permute": {
+  "statistic": "objective",
+  "null": {
+   "kind": "permute",
+   "n": 1000,
+   "seed": 1970,
+   "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+  },
+  "rows": [
+   {
+    "cipher": "z32.canonical",
+    "key": "z408",
+    "nPinned": 25,
+    "nFree": 4,
+    "carriedOver": "?IF?LNI?WHDA?NGOAOESNBXLT?ETDIEI",
+    "realScore": -301.838,
+    "realBest": "HIFULNINWHDAINGOAOESNBXLTHETDIEI",
+    "realBestWords": "HIFULNINWHDA IN GOAOESNBXL THE TDIEI",
+    "nullN": 1000,
+    "nullMean": -278.993,
+    "nullSd": 24.382,
+    "nullMax": -212.55,
+    "p": 0.8301698301698301,
+    "percentile": 17.000000000000004,
+    "z": -0.9369977522845915
+   },
+   {
+    "cipher": "z32.canonical",
+    "key": "z340",
+    "nPinned": 27,
+    "nFree": 2,
+    "carriedOver": "YNSETAI?DOBP?AORTRDFNOPTIYRGAIWN",
+    "realScore": -318.271,
+    "realBest": "YNSETAINDOBPRAORTRDFNOPTIYRGAIWN",
+    "realBestWords": "YNSETAINDOBPRA OR TRDFNOPTIYRGAIWN",
+    "nullN": 1000,
+    "nullMean": -297.585,
+    "nullSd": 24.759,
+    "nullMax": -227.952,
+    "p": 0.8011988011988012,
+    "percentile": 19.899999999999995,
+    "z": -0.8354900291909005
+   },
+   {
+    "cipher": "z32.canonical",
+    "key": "union",
+    "nPinned": 27,
+    "nFree": 2,
+    "carriedOver": "YIFELNI?WHDA?NGOAOESNBXLTYETDIEI",
+    "realScore": -312.653,
+    "realBest": "YIFELNINWHDAINGOAOESNBXLTYETDIEI",
+    "realBestWords": "YIFELNINWHDA IN GOAOESNBXLT YET DIE I",
+    "nullN": 1000,
+    "nullMean": -292.985,
+    "nullSd": 25.714,
+    "nullMax": -214.841,
+    "p": 0.7862137862137862,
+    "percentile": 21.4,
+    "z": -0.7648964259071696
+   },
+   {
+    "cipher": "z32.t2_is_perp",
+    "key": "z408",
+    "nPinned": 26,
+    "nFree": 3,
+    "carriedOver": "?IF?LNIRWHDA?NGOAOESNBXLT?ETDIEI",
+    "realScore": -317.662,
+    "realBest": "HIFULNIRWHDAINGOAOESNBXLTHETDIEI",
+    "realBestWords": "HIFULNIRWHDA IN GOAOESNBXL THE TDIEI",
+    "nullN": 1000,
+    "nullMean": -290.177,
+    "nullSd": 25.769,
+    "nullMax": -218.769,
+    "p": 0.8601398601398601,
+    "percentile": 14.000000000000002,
+    "z": -1.0665863303428973
+   },
+   {
+    "cipher": "z32.t2_is_perp",
+    "key": "z340",
+    "nPinned": 28,
+    "nFree": 1,
+    "carriedOver": "YNSETAILDOBP?AORTRDFNOPTIYRGAIWN",
+    "realScore": -321.212,
+    "realBest": "YNSETAILDOBPRAORTRDFNOPTIYRGAIWN",
+    "realBestWords": "YNSETAILDOBPRA OR TRDFNOPTIYRGAIWN",
+    "nullN": 1000,
+    "nullMean": -308.556,
+    "nullSd": 26.403,
+    "nullMax": -234.087,
+    "p": 0.7082917082917083,
+    "percentile": 29.200000000000003,
+    "z": -0.4793241447180107
+   },
+   {
+    "cipher": "z32.t2_is_perp",
+    "key": "union",
+    "nPinned": 28,
+    "nFree": 1,
+    "carriedOver": "YIFELNIRWHDA?NGOAOESNBXLTYETDIEI",
+    "realScore": -329.004,
+    "realBest": "YIFELNIRWHDAINGOAOESNBXLTYETDIEI",
+    "realBestWords": "YIFELNIRWHDA IN GOAOESNBXLT YET DIE I",
+    "nullN": 1000,
+    "nullMean": -303.561,
+    "nullSd": 26.631,
+    "nullMax": -220.984,
+    "p": 0.8191808191808192,
+    "percentile": 18.100000000000005,
+    "z": -0.9553525958199253
+   },
+   {
+    "cipher": "z32.bar_is_serif_I",
+    "key": "z408",
+    "nPinned": 26,
+    "nFree": 3,
+    "carriedOver": "?IFTLNI?WHDA?NGOAOESNBXLT?ETDIEI",
+    "realScore": -317.017,
+    "realBest": "HIFTLNINWHDAINGOAOESNBXLTHETDIEI",
+    "realBestWords": "HIFTLNINWHDA IN GOAOESNBXL THE TDIEI",
+    "nullN": 1000,
+    "nullMean": -288.547,
+    "nullSd": 25.469,
+    "nullMax": -213.613,
+    "p": 0.8731268731268731,
+    "percentile": 12.7,
+    "z": -1.1178194265650792
+   },
+   {
+    "cipher": "z32.bar_is_serif_I",
+    "key": "z340",
+    "nPinned": 26,
+    "nFree": 3,
+    "carriedOver": "YNS?TAI?DOBP?AORTRDFNOPTIYRGAIWN",
+    "realScore": -317.167,
+    "realBest": "YNSSTAINDOBPRAORTRDFNOPTIYRGAIWN",
+    "realBestWords": "YNSSTAINDOBPRA OR TRDFNOPTIYRGAIWN",
+    "nullN": 1000,
+    "nullMean": -287.964,
+    "nullSd": 23.966,
+    "nullMax": -219.777,
+    "p": 0.8781218781218781,
+    "percentile": 12.2,
+    "z": -1.2185439033527128
+   },
+   {
+    "cipher": "z32.bar_is_serif_I",
+    "key": "union",
+    "nPinned": 27,
+    "nFree": 2,
+    "carriedOver": "YIFTLNI?WHDA?NGOAOESNBXLTYETDIEI",
+    "realScore": -326.366,
+    "realBest": "YIFTLNINWHDAINGOAOESNBXLTYETDIEI",
+    "realBestWords": "YIFTLNINWHDA IN GOAOESNBXLT YET DIE I",
+    "nullN": 1000,
+    "nullMean": -293.575,
+    "nullSd": 25.603,
+    "nullMax": -216.057,
+    "p": 0.8981018981018981,
+    "percentile": 10.199999999999998,
+    "z": -1.2807240188256235
+   },
+   {
+    "cipher": "z32.bar_I_and_t2_perp",
+    "key": "z408",
+    "nPinned": 27,
+    "nFree": 2,
+    "carriedOver": "?IFTLNIRWHDA?NGOAOESNBXLT?ETDIEI",
+    "realScore": -332.279,
+    "realBest": "HIFTLNIRWHDAINGOAOESNBXLTHETDIEI",
+    "realBestWords": "HIFTLNIRWHDA IN GOAOESNBXL THE TDIEI",
+    "nullN": 1000,
+    "nullMean": -299.544,
+    "nullSd": 26.811,
+    "nullMax": -222.195,
+    "p": 0.8901098901098901,
+    "percentile": 10.999999999999998,
+    "z": -1.2209374503415114
+   },
+   {
+    "cipher": "z32.bar_I_and_t2_perp",
+    "key": "z340",
+    "nPinned": 27,
+    "nFree": 2,
+    "carriedOver": "YNS?TAILDOBP?AORTRDFNOPTIYRGAIWN",
+    "realScore": -321.212,
+    "realBest": "YNSETAILDOBPRAORTRDFNOPTIYRGAIWN",
+    "realBestWords": "YNSETAILDOBPRA OR TRDFNOPTIYRGAIWN",
+    "nullN": 1000,
+    "nullMean": -299.102,
+    "nullSd": 25.647,
+    "nullMax": -229.434,
+    "p": 0.8121878121878122,
+    "percentile": 18.799999999999994,
+    "z": -0.8621122157261252
+   },
+   {
+    "cipher": "z32.bar_I_and_t2_perp",
+    "key": "union",
+    "nPinned": 28,
+    "nFree": 1,
+    "carriedOver": "YIFTLNIRWHDA?NGOAOESNBXLTYETDIEI",
+    "realScore": -341.628,
+    "realBest": "YIFTLNIRWHDAINGOAOESNBXLTYETDIEI",
+    "realBestWords": "YIFTLNIRWHDA IN GOAOESNBXLT YET DIE I",
+    "nullN": 1000,
+    "nullMean": -304.097,
+    "nullSd": 26.524,
+    "nullMax": -222.132,
+    "p": 0.9140859140859141,
+    "percentile": 8.599999999999996,
+    "z": -1.4149968505823884
+   },
+   {
+    "cipher": "z32.triangles_merged",
+    "key": "z408",
+    "nPinned": 24,
+    "nFree": 4,
+    "carriedOver": "?IF?LNI?WHDI?NGOAOESNBXLT?ETDIEI",
+    "realScore": -301.76,
+    "realBest": "HIFULNINWHDIANGOAOESNBXLTHETDIEI",
+    "realBestWords": "HIFULNINWHDI ANGOAOESNBXL THE TDIEI",
+    "nullN": 1000,
+    "nullMean": -278.893,
+    "nullSd": 24.716,
+    "nullMax": -207.996,
+    "p": 0.8241758241758241,
+    "percentile": 17.600000000000005,
+    "z": -0.9251916301282573
+   },
+   {
+    "cipher": "z32.triangles_merged",
+    "key": "z340",
+    "nPinned": 26,
+    "nFree": 2,
+    "carriedOver": "YNSETAI?DOBN?AORTRDFNOPTIYRGAIWN",
+    "realScore": -314.24,
+    "realBest": "YNSETAINDOBNIAORTRDFNOPTIYRGAIWN",
+    "realBestWords": "YNSETAINDOBNIA OR TRDFNOPTIYRGAIWN",
+    "nullN": 1000,
+    "nullMean": -297.451,
+    "nullSd": 24.848,
+    "nullMax": -225.391,
+    "p": 0.7462537462537463,
+    "percentile": 25.4,
+    "z": -0.6756538673356643
+   },
+   {
+    "cipher": "z32.triangles_merged",
+    "key": "union",
+    "nPinned": 26,
+    "nFree": 2,
+    "carriedOver": "YIFELNI?WHDI?NGOAOESNBXLTYETDIEI",
+    "realScore": -312.598,
+    "realBest": "YIFELNINWHDIANGOAOESNBXLTYETDIEI",
+    "realBestWords": "YIFELNINWHDIA NGOAOESNBXLT YET DIE I",
+    "nullN": 1000,
+    "nullMean": -293.224,
+    "nullSd": 25.343,
+    "nullMax": -227.181,
+    "p": 0.7842157842157842,
+    "percentile": 21.599999999999998,
+    "z": -0.7644908924269063
+   },
+   {
+    "cipher": "z32.tau_distinct",
+    "key": "z408",
+    "nPinned": 24,
+    "nFree": 5,
+    "carriedOver": "?IF?LNI?WHDA?NGOAOESNB?LT?ETDIEI",
+    "realScore": -261.413,
+    "realBest": "HIFULNINWHDAINGOAOESNBELTHETDIEI",
+    "realBestWords": "HIFULNINWHDA IN GOAOESNBEL THE TDIEI",
+    "nullN": 0,
+    "nullMean": null,
+    "nullSd": null,
+    "nullMax": null,
+    "p": null,
+    "percentile": null,
+    "z": null
+   },
+   {
+    "cipher": "z32.tau_distinct",
+    "key": "z340",
+    "nPinned": 26,
+    "nFree": 3,
+    "carriedOver": "YNSETAI?DOBP?AORTRDFNO?TIYRGAIWN",
+    "realScore": -312.427,
+    "realBest": "YNSETAINDOBPRAORTRDFNONTIYRGAIWN",
+    "realBestWords": "YNSETA IN DOBPRAORTRDF NON TIYRGAIWN",
+    "nullN": 1000,
+    "nullMean": -286.414,
+    "nullSd": 23.81,
+    "nullMax": -221.983,
+    "p": 0.8701298701298701,
+    "percentile": 13,
+    "z": -1.0925022963840778
+   },
+   {
+    "cipher": "z32.tau_distinct",
+    "key": "union",
+    "nPinned": 26,
+    "nFree": 3,
+    "carriedOver": "YIFELNI?WHDA?NGOAOESNB?LTYETDIEI",
+    "realScore": -269.162,
+    "realBest": "YIFELNINWHDAINGOAOESNBELTYETDIEI",
+    "realBestWords": "YIFELNINWHDA IN GOAOESN BELT YET DIE I",
+    "nullN": 1000,
+    "nullMean": -282.21,
+    "nullSd": 24.617,
+    "nullMax": -211.692,
+    "p": 0.3166833166833167,
+    "percentile": 68.39999999999999,
+    "z": 0.5300282081933915
+   },
+   {
+    "cipher": "z32.reversed",
+    "key": "z408",
+    "nPinned": 25,
+    "nFree": 4,
+    "carriedOver": "IEIDTE?TLXBNSEOAOGN?ADHW?INL?FI?",
+    "realScore": -321.556,
+    "realBest": "IEIDTENTLXBNSEOAOGNEADHWAINLYFIN",
+    "realBestWords": "IEIDTENTLXBNSEOA OGNEADHWAINLYF IN",
+    "nullN": 1000,
+    "nullMean": -278.133,
+    "nullSd": 24.18,
+    "nullMax": -209.958,
+    "p": 0.961038961038961,
+    "percentile": 3.9000000000000035,
+    "z": -1.795774391048677
+   },
+   {
+    "cipher": "z32.reversed",
+    "key": "z340",
+    "nPinned": 27,
+    "nFree": 2,
+    "carriedOver": "NWIAGRYITPONFDRTROA?PBOD?IATESNY",
+    "realScore": -280.62,
+    "realBest": "NWIAGRYITPONFDRTROAMPBODYIATESNY",
+    "realBestWords": "NWIAGRYITPONFDRTRO AMP BODY IATESNY",
+    "nullN": 1000,
+    "nullMean": -296.361,
+    "nullSd": 25.018,
+    "nullMax": -225.846,
+    "p": 0.2817182817182817,
+    "percentile": 71.89999999999999,
+    "z": 0.6292034770368683
+   },
+   {
+    "cipher": "z32.reversed",
+    "key": "union",
+    "nPinned": 27,
+    "nFree": 2,
+    "carriedOver": "IEIDTEYTLXBNSEOAOGN?ADHW?INLEFIY",
+    "realScore": -358.117,
+    "realBest": "IEIDTEYTLXBNSEOAOGNEADHWAINLEFIY",
+    "realBestWords": "IEIDTEYTLXBNSEOA OGNEADHWAINLEFIY",
+    "nullN": 1000,
+    "nullMean": -292.567,
+    "nullSd": 24.773,
+    "nullMax": -229.969,
+    "p": 0.994005994005994,
+    "percentile": 0.6000000000000005,
+    "z": -2.6460044655932395
+   }
+  ]
+ },
+ "calib_z340w13_z408key": {
+  "windows": 70,
+  "eligible": 70,
+  "null": {
+   "kind": "permute",
+   "n": 1000,
+   "seed": 77
+  },
+  "pSummary": {
+   "fracLE01": 0.04285714285714286,
+   "fracLE05": 0.08571428571428572,
+   "fracLE10": 0.21428571428571427,
+   "fracLE50": 0.5285714285714286,
+   "median": 0.43456543456543456,
+   "ksD": 0.18051948051948055,
+   "ksCritical05": 0.16255109086947755
+  },
+  "minP": 0.003996003996003996
+ },
+ "calib_z408w13_z340key": {
+  "windows": 87,
+  "eligible": 87,
+  "null": {
+   "kind": "permute",
+   "n": 1000,
+   "seed": 78
+  },
+  "pSummary": {
+   "fracLE01": 0,
+   "fracLE05": 0,
+   "fracLE10": 0.034482758620689655,
+   "fracLE50": 0.4827586206896552,
+   "median": 0.5214785214785215,
+   "ksD": 0.07548773066014436,
+   "ksCritical05": 0.1458073047379401
+  },
+  "minP": 0.06293706293706294
+ },
+ "calib_z408w13_ownkey": {
+  "windows": 40,
+  "eligible": 396,
+  "null": {
+   "kind": "permute",
+   "n": 1000,
+   "seed": 79
+  },
+  "pSummary": {
+   "fracLE01": 0.8,
+   "fracLE05": 0.95,
+   "fracLE10": 0.95,
+   "fracLE50": 1,
+   "median": 0.001998001998001998,
+   "ksD": 0.901048951048951,
+   "ksCritical05": 0.2150348808914498
+  },
+  "minP": 0.000999000999000999
+ },
+ "calib_z340w13_ownkey": {
+  "windows": 40,
+  "eligible": 328,
+  "null": {
+   "kind": "permute",
+   "n": 1000,
+   "seed": 80
+  },
+  "pSummary": {
+   "fracLE01": 0.925,
+   "fracLE05": 0.975,
+   "fracLE10": 0.975,
+   "fracLE50": 1,
+   "median": 0.000999000999000999,
+   "ksD": 0.956018981018981,
+   "ksCritical05": 0.2150348808914498
+  },
+  "minP": 0.000999000999000999
+ },
+ "h1_z13": {
+  "top": {
+   "summary": {
+    "n": 2000,
+    "finite": 2000,
+    "mean": -62.310965557679964,
+    "sd": 5.376205855025876,
+    "min": -82.38910720722649,
+    "q05": -70.67214321358449,
+    "q25": -65.80053434534406,
+    "median": -62.80459387576617,
+    "q75": -58.668121329460405,
+    "q95": -53.074337462681214,
+    "q99": -48.90107655201375,
+    "max": -47.035090814084086
+   },
+   "observedPlacement": [
+    {
+     "key": "z408",
+     "score": -70.91,
+     "fractionOfH1AtOrBelow": 0.0485
+    },
+    {
+     "key": "z340",
+     "score": -62.05,
+     "fractionOfH1AtOrBelow": 0.56
+    }
+   ]
+  },
+  "sample": {
+   "summary": {
+    "n": 2000,
+    "finite": 2000,
+    "mean": -67.8916828642464,
+    "sd": 5.191896109825468,
+    "min": -92.93020347737658,
+    "q05": -76.62659580504672,
+    "q25": -70.98250879386792,
+    "median": -67.63331023308623,
+    "q75": -64.6536000606935,
+    "q95": -60.22189987447457,
+    "q99": -54.92205196197099,
+    "max": -49.42614987307013
+   },
+   "observedPlacement": [
+    {
+     "key": "z408",
+     "score": -70.91,
+     "fractionOfH1AtOrBelow": 0.254
+    },
+    {
+     "key": "z340",
+     "score": -62.05,
+     "fractionOfH1AtOrBelow": 0.8845
+    }
+   ]
+  }
+ },
+ "h1_z13_word": {
+  "top": {
+   "summary": {
+    "n": 2000,
+    "finite": 2000,
+    "mean": -11.369450191522093,
+    "sd": 0.9551946725941158,
+    "min": -14.943805796361215,
+    "q05": -13.060060131553161,
+    "q25": -11.877252565770341,
+    "median": -11.30289978171468,
+    "q75": -10.75930397564434,
+    "q95": -9.898274799996088,
+    "q99": -9.35626741110456,
+    "max": -8.081914920478038
+   },
+   "observedPlacement": [
+    {
+     "key": "z408",
+     "score": -17.24,
+     "fractionOfH1AtOrBelow": 0
+    },
+    {
+     "key": "z340",
+     "score": -14.59,
+     "fractionOfH1AtOrBelow": 0.0025
+    }
+   ]
+  },
+  "sample": {
+   "summary": {
+    "n": 2000,
+    "finite": 2000,
+    "mean": -13.541528112172664,
+    "sd": 1.0449174078049521,
+    "min": -16.747400904039946,
+    "q05": -14.968865895200727,
+    "q25": -14.277599602022459,
+    "median": -13.668995694176148,
+    "q75": -12.945220987129316,
+    "q95": -11.657530123082719,
+    "q99": -10.56025765046696,
+    "max": -9.788554053730758
+   },
+   "observedPlacement": [
+    {
+     "key": "z408",
+     "score": -17.24,
+     "fractionOfH1AtOrBelow": 0
+    },
+    {
+     "key": "z340",
+     "score": -14.59,
+     "fractionOfH1AtOrBelow": 0.1395
+    }
+   ]
+  }
+ },
+ "condnull_objective": {
+  "z408": {
+   "realLetters": "WEEDSH",
+   "real": {
+    "score": -70.91229754828076,
+    "plaintext": "WEEDASAHAVEWH"
+   },
+   "arrangementP": 0.09418282548476455,
+   "arrangementN": 360,
+   "condNisE_P": 0.11429523492169277,
+   "englishFreqP": 0.048317227590803064
+  },
+  "z340": {
+   "realLetters": "DREAAO",
+   "real": {
+    "score": -62.052837855154664,
+    "plaintext": "DREATATOTHEDO"
+   },
+   "arrangementP": 0.00554016620498615,
+   "arrangementN": 360,
+   "condNisE_P": 0.00433188937020993,
+   "englishFreqP": 0.0023325558147284237
+  }
+ },
+ "condnull_word": {
+  "z408": {
+   "realLetters": "WEEDSH",
+   "real": {
+    "score": -17.240242540965436,
+    "plaintext": "WEEDASAHAVEWH"
+   },
+   "arrangementP": 0.31301939058171746,
+   "arrangementN": 360,
+   "condNisE_P": 0.46617794068643786,
+   "englishFreqP": 0.299566811062979
+  },
+  "z340": {
+   "realLetters": "DREAAO",
+   "real": {
+    "score": -14.59439243784138,
+    "plaintext": "DREADADODGEDO"
+   },
+   "arrangementP": 0.036011080332409975,
+   "arrangementN": 360,
+   "condNisE_P": 0.02999000333222259,
+   "englishFreqP": 0.017994001999333556
+  }
+ },
+ "enumerate_full_pins": {
+  "words_z408": {
+   "consistent": 562,
+   "allVocab": 5,
+   "top": [
+    [
+     "WEEDASAHAVEWH",
+     -17.27,
+     "WEED AS A HAVE WH"
+    ],
+    [
+     "WEEDSSSHSEEWH",
+     -17.63,
+     "WEEDS SSHSEEWH"
+    ],
+    [
+     "WEEDESEHEEEWH",
+     -17.67,
+     "WEED ESEHEEEWH"
+    ],
+    [
+     "WEEDSSSHSTEWH",
+     -17.77,
+     "WEEDS SSHSTEWH"
+    ],
+    [
+     "WEEDESEHETEWH",
+     -17.81,
+     "WEED ESEHETEWH"
+    ]
+   ]
+  },
+  "words_z340": {
+   "consistent": 676,
+   "allVocab": 42,
+   "top": [
+    [
+     "DREAMAMOMWEDO",
+     -14.61,
+     "DREAM A MOM WE DO"
+    ],
+    [
+     "DREADADODGEDO",
+     -15.28,
+     "DREAD A DODGE DO"
+    ],
+    [
+     "DREATATOTHEDO",
+     -15.36,
+     "DREATA TO THE DO"
+    ],
+    [
+     "DREAMAMOMSEDO",
+     -16.22,
+     "DREAM A MOM SEDO"
+    ],
+    [
+     "DREAMAMOMMEDO",
+     -16.22,
+     "DREAM A MOM ME DO"
+    ]
+   ]
+  },
+  "words_z408_t2": {
+   "consistent": 23,
+   "allVocab": 0,
+   "top": [
+    [
+     "WEEDSSSHSREWH",
+     -17.97,
+     "WEEDS SSHSREWH"
+    ],
+    [
+     "WEEDESEHEREWH",
+     -18.01,
+     "WEED ESEHEREWH"
+    ],
+    [
+     "WEEDTSTHTREWH",
+     -18.43,
+     "WEED TSTHTREWH"
+    ],
+    [
+     "WEEDASAHAREWH",
+     -18.6,
+     "WEED ASAHAREWH"
+    ],
+    [
+     "WEEDOSOHOREWH",
+     -18.68,
+     "WEED OSOHOREWH"
+    ]
+   ]
+  },
+  "words_z340_t2": {
+   "consistent": 26,
+   "allVocab": 0,
+   "top": [
+    [
+     "DREAMAMOMLEDO",
+     -17.31,
+     "DREAM AMOMLEDO"
+    ],
+    [
+     "DREAEAEOELEDO",
+     -17.93,
+     "DREAEAEOELE DO"
+    ],
+    [
+     "DREADADODLEDO",
+     -18.03,
+     "DREAD ADODLEDO"
+    ],
+    [
+     "DREATATOTLEDO",
+     -18.35,
+     "DREATATOTLE DO"
+    ],
+    [
+     "DREAAAAOALEDO",
+     -18.44,
+     "DREAAAAO ALEDO"
+    ]
+   ]
+  },
+  "names_z408": {
+   "fits": 0,
+   "top": []
+  },
+  "names_z340": {
+   "fits": 24,
+   "top": [
+    [
+     "DREAMAmOMIEDO",
+     3.2471227967531314e-15
+    ],
+    [
+     "dREALALOLMEDO",
+     1.4541864468217129e-15
+    ],
+    [
+     "DREANANONAeDO",
+     1.7748099574833206e-16
+    ],
+    [
+     "DREAMAmOMAEDO",
+     1.088586692825422e-16
+    ],
+    [
+     "dREALALOLVEDO",
+     9.710275784646227e-17
+    ]
+   ]
+  }
+ },
+ "z13subsets_words_top500k_z340": {
+  "fits": {
+   "file": "<scratch>/keyprior/z13_homo_fits_top500k.tsv",
+   "kind": "words",
+   "n": 500000,
+   "scoreQuantiles": {
+    "top": -7.8137388939704255,
+    "rank1000": -11.496906085765024,
+    "rank10000": -13.048380221685031,
+    "median": -15.736072492608086
+   }
+  },
+  "null": {
+   "kind": "permute",
+   "n": 1000,
+   "seed": 13
+  },
+  "note": "symmetric pooled ranks",
+  "perKey": {
+   "z340": {
+    "realLetters": "DREAAOL",
+    "familywiseAll": {
+     "best": {
+      "minP": 0.001998001998001998,
+      "argSubset": "ENzM",
+      "familywiseP": 0.12887112887112886,
+      "nullsAtLeastAsExtreme": 128
+     },
+     "count@rank1000": {
+      "minP": 0.003996003996003996,
+      "argSubset": "ENzM",
+      "familywiseP": 0.13486513486513488,
+      "nullsAtLeastAsExtreme": 134
+     },
+     "count@rank10000": {
+      "minP": 0.001998001998001998,
+      "argSubset": "ENzM",
+      "familywiseP": 0.08891108891108891,
+      "nullsAtLeastAsExtreme": 88
+     },
+     "count@rank100000": {
+      "minP": 0.001998001998001998,
+      "argSubset": "ENzK",
+      "familywiseP": 0.0919080919080919,
+      "nullsAtLeastAsExtreme": 91
+     }
+    },
+    "smallestP": [
+     {
+      "subset": "ENzM",
+      "k": 4,
+      "realBest": -9.553638972834802,
+      "realBestFit": "TREATYTOTHETO",
+      "p": 0.001998001998001998
+     },
+     {
+      "subset": "AENzKM",
+      "k": 6,
+      "realBest": -15.09160840882196,
+      "realBestFit": "DREADADODGEDO",
+      "p": 0.003996003996003996
+     },
+     {
+      "subset": "EzM",
+      "k": 3,
+      "realBest": -9.553638972834802,
+      "realBestFit": "TREATYTOTHETO",
+      "p": 0.005994005994005994
+     },
+     {
+      "subset": "ENz",
+      "k": 3,
+      "realBest": -9.553638972834802,
+      "realBestFit": "TREATYTOTHETO",
+      "p": 0.006993006993006993
+     },
+     {
+      "subset": "NzM",
+      "k": 3,
+      "realBest": -9.553638972834802,
+      "realBestFit": "TREATYTOTHETO",
+      "p": 0.007992007992007992
+     }
+    ]
+   }
+  }
+ },
+ "z13subsets_words_top500k_z408": {
+  "fits": {
+   "file": "<scratch>/keyprior/z13_homo_fits_top500k.tsv",
+   "kind": "words",
+   "n": 500000,
+   "scoreQuantiles": {
+    "top": -7.8137388939704255,
+    "rank1000": -11.496906085765024,
+    "rank10000": -13.048380221685031,
+    "median": -15.736072492608086
+   }
+  },
+  "null": {
+   "kind": "permute",
+   "n": 1000,
+   "seed": 13
+  },
+  "note": "symmetric pooled ranks",
+  "perKey": {
+   "z408": {
+    "realLetters": "WEEDSHR",
+    "familywiseAll": {
+     "best": {
+      "minP": 0.003996003996003996,
+      "argSubset": "ENzK",
+      "familywiseP": 0.21878121878121878,
+      "nullsAtLeastAsExtreme": 218
+     },
+     "count@rank1000": {
+      "minP": 0.004995004995004995,
+      "argSubset": "ENz",
+      "familywiseP": 0.13386613386613386,
+      "nullsAtLeastAsExtreme": 133
+     },
+     "count@rank10000": {
+      "minP": 0.002997002997002997,
+      "argSubset": "ENz",
+      "familywiseP": 0.0999000999000999,
+      "nullsAtLeastAsExtreme": 99
+     },
+     "count@rank100000": {
+      "minP": 0.002997002997002997,
+      "argSubset": "NK[",
+      "familywiseP": 0.11588411588411589,
+      "nullsAtLeastAsExtreme": 115
+     }
+    },
+    "smallestP": [
+     {
+      "subset": "ENzK",
+      "k": 4,
+      "realBest": -11.144282187318097,
+      "realBestFit": "NEEDASATALENT",
+      "p": 0.003996003996003996
+     },
+     {
+      "subset": "ENz[",
+      "k": 4,
+      "realBest": -11.723606429381977,
+      "realBestFit": "SEEDELETEREST",
+      "p": 0.00999000999000999
+     },
+     {
+      "subset": "ENz",
+      "k": 3,
+      "realBest": -9.942591214484734,
+      "realBestFit": "NEEDTOTOTHENO",
+      "p": 0.01098901098901099
+     },
+     {
+      "subset": "ENzK[",
+      "k": 5,
+      "realBest": -13.475291461814033,
+      "realBestFit": "SEEDOSOTOREST",
+      "p": 0.012987012987012988
+     },
+     {
+      "subset": "AENzK",
+      "k": 5,
+      "realBest": -14.264415520375518,
+      "realBestFit": "WEEDASASANEWS",
+      "p": 0.013986013986013986
+     }
+    ]
+   }
+  }
+ },
+ "z13subsets_words_v1_asymmetricFW": {
+  "fits": {
+   "file": "<scratch>/keyprior/z13_homo_fits.tsv",
+   "kind": "words",
+   "n": 4151724,
+   "scoreQuantiles": {
+    "top": -7.8137388939704255,
+    "rank1000": -11.496906085765024,
+    "rank10000": -13.048380221685031,
+    "median": -18.302029816165092
+   }
+  },
+  "null": {
+   "kind": "permute",
+   "n": 5000,
+   "seed": 13
+  },
+  "note": "v1: per-subset p valid; family-wise p used asymmetric tie handling, superseded",
+  "perKey": {
+   "z408": {
+    "realLetters": "WEEDSHR",
+    "familywiseAll": {
+     "best": {
+      "minP": 0.0065986802639472104,
+      "argSubset": "ENzK",
+      "familywiseP": 0.3251349730053989
+     },
+     "count@rank1000": {
+      "minP": 0.003199360127974405,
+      "argSubset": "ENz",
+      "familywiseP": 0.09658068386322735
+     },
+     "count@rank10000": {
+      "minP": 0.001999600079984003,
+      "argSubset": "ENz",
+      "familywiseP": 0.07538492301539693
+     },
+     "count@rank100000": {
+      "minP": 0.0015996800639872025,
+      "argSubset": "ENzK[",
+      "familywiseP": 0.0623875224955009
+     }
+    },
+    "smallestP": [
+     {
+      "subset": "ENzK",
+      "k": 4,
+      "realBest": -11.144282187318097,
+      "realBestFit": "NEEDASATALENT",
+      "p": 0.0065986802639472104
+     },
+     {
+      "subset": "ENzK[",
+      "k": 5,
+      "realBest": -13.475291461814033,
+      "realBestFit": "SEEDOSOTOREST",
+      "p": 0.01199760047990402
+     },
+     {
+      "subset": "ENz",
+      "k": 3,
+      "realBest": -9.942591214484734,
+      "realBestFit": "NEEDTOTOTHENO",
+      "p": 0.01219756048790242
+     },
+     {
+      "subset": "ENz[",
+      "k": 4,
+      "realBest": -11.723606429381977,
+      "realBestFit": "SEEDELETEREST",
+      "p": 0.014397120575884824
+     },
+     {
+      "subset": "AENzK",
+      "k": 5,
+      "realBest": -14.264415520375518,
+      "realBestFit": "WEEDASASANEWS",
+      "p": 0.016396720655868825
+     }
+    ]
+   },
+   "z340": {
+    "realLetters": "DREAAOL",
+    "familywiseAll": {
+     "best": {
+      "minP": 0.0001999600079984003,
+      "argSubset": "ENzM",
+      "familywiseP": 0.0001999600079984003
+     },
+     "count@rank1000": {
+      "minP": 0.003999200159968006,
+      "argSubset": "ENzM",
+      "familywiseP": 0.11457708458308338
+     },
+     "count@rank10000": {
+      "minP": 0.002599480103979204,
+      "argSubset": "ENz",
+      "familywiseP": 0.09738052389522095
+     },
+     "count@rank100000": {
+      "minP": 0.001799640071985603,
+      "argSubset": "ENzK",
+      "familywiseP": 0.07038592281543692
+     }
+    },
+    "smallestP": [
+     {
+      "subset": "ENzM",
+      "k": 4,
+      "realBest": -9.553638972834802,
+      "realBestFit": "TREATYTOTHETO",
+      "p": 0.0001999600079984003
+     },
+     {
+      "subset": "AENzKM",
+      "k": 6,
+      "realBest": -15.09160840882196,
+      "realBestFit": "DREADADODGEDO",
+      "p": 0.004199160167966407
+     },
+     {
+      "subset": "AENzM",
+      "k": 5,
+      "realBest": -12.98056744733079,
+      "realBestFit": "DREAMSMOMWEDO",
+      "p": 0.004599080183963208
+     },
+     {
+      "subset": "EzM",
+      "k": 3,
+      "realBest": -9.553638972834802,
+      "realBestFit": "TREATYTOTHETO",
+      "p": 0.005398920215956809
+     },
+     {
+      "subset": "NzM",
+      "k": 3,
+      "realBest": -9.553638972834802,
+      "realBestFit": "TREATYTOTHETO",
+      "p": 0.005598880223955209
+     }
+    ]
+   },
+   "union": {
+    "realLetters": "WEEDSHR",
+    "familywiseAll": {
+     "best": {
+      "minP": 0.005598880223955209,
+      "argSubset": "ENzK",
+      "familywiseP": 0.28534293141371725
+     },
+     "count@rank1000": {
+      "minP": 0.0027994401119776045,
+      "argSubset": "ENz",
+      "familywiseP": 0.08758248350329934
+     },
+     "count@rank10000": {
+      "minP": 0.0011997600479904018,
+      "argSubset": "ENz",
+      "familywiseP": 0.04619076184763048
+     },
+     "count@rank100000": {
+      "minP": 0.0013997200559888023,
+      "argSubset": "ENzK[",
+      "familywiseP": 0.05318936212757448
+     }
+    },
+    "smallestP": [
+     {
+      "subset": "ENzK",
+      "k": 4,
+      "realBest": -11.144282187318097,
+      "realBestFit": "NEEDASATALENT",
+      "p": 0.005598880223955209
+     },
+     {
+      "subset": "ENzK[",
+      "k": 5,
+      "realBest": -13.475291461814033,
+      "realBestFit": "SEEDOSOTOREST",
+      "p": 0.009398120375924815
+     },
+     {
+      "subset": "ENz[",
+      "k": 4,
+      "realBest": -11.723606429381977,
+      "realBestFit": "SEEDELETEREST",
+      "p": 0.010997800439912017
+     },
+     {
+      "subset": "ENz",
+      "k": 3,
+      "realBest": -9.942591214484734,
+      "realBestFit": "NEEDTOTOTHENO",
+      "p": 0.013797240551889621
+     },
+     {
+      "subset": "AENzK",
+      "k": 5,
+      "realBest": -14.264415520375518,
+      "realBestFit": "WEEDASASANEWS",
+      "p": 0.017196560687862426
+     }
+    ]
+   }
+  }
+ },
+ "z32subsets_z408": {
+  "design": "real key: 30 random k-subsets per k; null: 500 permute keys, one random k-subset each; pMean = permutation test of mean(real) - mean(null); pMaxOfR = P(max of 30 null draws >= real max) by bootstrap",
+  "solver": {
+   "restarts": 2,
+   "iters": 40000,
+   "itersPerK": {
+    "8": 50000,
+    "16": 25000,
+    "22": 12000
+   },
+   "objective": "solvercore runRestart: 5-gram joint + entropy 0.5 + 1.0 x wordfast (inner loop), greedy polish"
+  },
+  "perK": {
+   "8": {
+    "realMean": -162.73129987119995,
+    "realMax": -148.47597500832066,
+    "realBest": "HEFREDINANDANDTOWORSTANDTHESMILE",
+    "nullMean": -159.6336153750299,
+    "nullSd": 9.438542389726013,
+    "nullMax": -141.4278095947549,
+    "pMean": 0.9516048395160484,
+    "pMaxOfR": 0.9115088491150884
+   },
+   "16": {
+    "realMean": -221.5749712285584,
+    "realMax": -182.50541208721242,
+    "realBest": "HEFINDITWASANDGOARESNELLTHETDREE",
+    "nullMean": -202.28919405890903,
+    "nullSd": 16.449871555235614,
+    "nullMax": -160.6592231821286,
+    "pMean": 1,
+    "pMaxOfR": 0.9408059194080592
+   },
+   "22": {
+    "realMean": -269.261123687158,
+    "realMax": -237.99167217614047,
+    "realBest": "SIFULNINWHDAINGODOESNBILLSETDIEI",
+    "nullMean": -250.1468219667552,
+    "nullSd": 21.428106758938224,
+    "nullMax": -184.03722557821771,
+    "pMean": 1,
+    "pMaxOfR": 1
+   }
+  }
+ },
+ "z32subsets_z340": {
+  "design": "real key: 30 random k-subsets per k; null: 500 permute keys, one random k-subset each; pMean = permutation test of mean(real) - mean(null); pMaxOfR = P(max of 30 null draws >= real max) by bootstrap",
+  "solver": {
+   "restarts": 2,
+   "iters": 40000,
+   "itersPerK": {
+    "8": 50000,
+    "16": 25000,
+    "24": 12000
+   },
+   "objective": "solvercore runRestart: 5-gram joint + entropy 0.5 + 1.0 x wordfast (inner loop), greedy polish"
+  },
+  "perK": {
+   "8": {
+    "realMean": -161.4931034769342,
+    "realMax": -144.19471178331722,
+    "realBest": "ENINTHISTOBETHEREADFROMTHEREDOWN",
+    "nullMean": -157.84739761235946,
+    "nullSd": 8.02456434666431,
+    "nullMax": -140.95993804669286,
+    "pMean": 0.9893010698930107,
+    "pMaxOfR": 0.3838616138386161
+   },
+   "16": {
+    "realMean": -211.14453870562278,
+    "realMax": -180.97285348277916,
+    "realBest": "ENSESANDDOUSEAORTRAINOFTHERGRINN",
+    "nullMean": -202.98263449688142,
+    "nullSd": 16.289451753172884,
+    "nullMax": -161.61250980669453,
+    "pMean": 0.9949005099490051,
+    "pMaxOfR": 0.9423057694230577
+   },
+   "24": {
+    "realMean": -284.90398383915266,
+    "realMax": -258.4372092942791,
+    "realBest": "YNSETRIEDOFPERORTRIFNOPTIYRGAIWN",
+    "nullMean": -267.7621543496618,
+    "nullSd": 22.812183675747065,
+    "nullMax": -213.2275804547979,
+    "pMean": 1,
+    "pMaxOfR": 1
+   }
+  }
+ },
+ "joint_z13_z32": {
+  "solver": {
+   "restarts": 4,
+   "iters": 120000,
+   "T0": 8,
+   "objective": "sum of the anneal.js objectives of both ciphers under one key (links tie symbols)"
+  },
+  "null": {
+   "n": 300,
+   "kind": "A-side shared symbols linked to random B symbols with the same occurrence count as the real partner"
+  },
+  "power": null,
+  "problems": [
+   {
+    "name": "z13.canonical+z32.canonical",
+    "shared": "AEzM[",
+    "indep": -184.28914548074124,
+    "joint": -196.82995157275846,
+    "penaltyReal": 12.54080609201722,
+    "nullJointMean": -196.13843289080094,
+    "nullJointSd": 4.810150163163683,
+    "nullJointMax": -183.65445764005847,
+    "p": 0.5282392026578073,
+    "jointA": "REDANDNONEDRO",
+    "jointB": "HISFATHEROVERTHEMANDTHEOTHERANDI",
+    "truthScore": null,
+    "truthRecovered": null
+   }
+  ]
+ },
+ "joint_synthetic": {
+  "solver": {
+   "restarts": 4,
+   "iters": 120000,
+   "T0": 8,
+   "objective": "sum of the anneal.js objectives of both ciphers under one key (links tie symbols)"
+  },
+  "null": {
+   "n": 30,
+   "kind": "A-side shared symbols linked to random B symbols with the same occurrence count as the real partner"
+  },
+  "power": {
+   "n": 5,
+   "pValues": [
+    0.7741935483870968,
+    0.16129032258064516,
+    0.41935483870967744,
+    0.41935483870967744,
+    0.06451612903225806
+   ],
+   "detectedAt05": 0,
+   "truthBeatsJoint": 0
+  },
+  "problems": [
+   {
+    "name": "syn0",
+    "shared": "Kgl",
+    "indep": -173.19655669667304,
+    "joint": -187.51279304152865,
+    "penaltyReal": 14.31623634485561,
+    "nullJointMean": -185.02145734386258,
+    "nullJointSd": 3.303166931430399,
+    "nullJointMax": -178.4147630602919,
+    "p": 0.7741935483870968,
+    "jointA": "BELIKETHESURE",
+    "jointB": "EALLTHEREDTHEFOLLOWEDTHEPASSINGL",
+    "truthScore": -251.23511240195504,
+    "truthRecovered": false
+   },
+   {
+    "name": "syn1",
+    "shared": "*bmMo|",
+    "indep": -187.5757409128156,
+    "joint": -184.16553060222034,
+    "penaltyReal": -3.410210310595261,
+    "nullJointMean": -188.42842559487923,
+    "nullJointSd": 4.400285699479904,
+    "nullJointMax": -178.56336698333166,
+    "p": 0.16129032258064516,
+    "jointA": "GLENTHEREDTHE",
+    "jointB": "COVERTHEHADANDTHEOFTHEWILLNOTTHE",
+    "truthScore": -223.3267251892566,
+    "truthRecovered": false
+   },
+   {
+    "name": "syn2",
+    "shared": "G-MP",
+    "indep": -179.31026733811046,
+    "joint": -182.80033092598256,
+    "penaltyReal": 3.4900635878721005,
+    "nullJointMean": -183.0434241317881,
+    "nullJointSd": 4.021530405939719,
+    "nullJointMax": -172.66833307663262,
+    "p": 0.41935483870967744,
+    "jointA": "ATHEPRESSWARM",
+    "jointB": "MATTERANDTHINGTHEYWEREABOUTTHEST",
+    "truthScore": -217.79909360279325,
+    "truthRecovered": false
+   },
+   {
+    "name": "syn3",
+    "shared": "dWN1",
+    "indep": -177.25806532149784,
+    "joint": -183.24647408524112,
+    "penaltyReal": 5.98840876374328,
+    "nullJointMean": -183.3765309842581,
+    "nullJointSd": 4.090858434039526,
+    "nullJointMax": -175.9107525922273,
+    "p": 0.41935483870967744,
+    "jointA": "TOTHEDISTAKEN",
+    "jointB": "CALLTHATHEREOVERANDTOTHEWOULDBEI",
+    "truthScore": -195.3900622419883,
+    "truthRecovered": false
+   },
+   {
+    "name": "syn4",
+    "shared": "[q~psk",
+    "indep": -190.82307467791622,
+    "joint": -176.54027717563872,
+    "penaltyReal": -14.282797502277504,
+    "nullJointMean": -185.0790719923525,
+    "nullJointSd": 4.2192370482057235,
+    "nullJointMax": -174.30184750246977,
+    "p": 0.06451612903225806,
+    "jointA": "HAVINGOFTHEIT",
+    "jointB": "RIVERANDTHEWASHINGTHEREDWITHOUTI",
+    "truthScore": -209.21413219624066,
+    "truthRecovered": false
+   }
+  ]
+ },
+ "construction": {
+  "perKey": {
+   "z408": {
+    "familySameLetterPairs": {
+     "observed": 1,
+     "nullMean": 1.195,
+     "p": 0.7168141592920354
+    },
+    "mirrorPairsSameLetter": {
+     "observed": 0,
+     "nullMean": 0.424,
+     "p": 1.0
+    },
+    "letterGlyphOwnLetter": {
+     "observed": 1,
+     "nullMean": 0.982,
+     "p": 0.6364181790910455
+    },
+    "letterGlyphMaxOffsetCount": {
+     "observed": 4,
+     "nullMean": 3.319,
+     "p": 0.33558322083895803
+    },
+    "upperGlyphLetterFreqMinusRest": {
+     "observed": 0.010505546533479834,
+     "nullMean": 0.0,
+     "p": 0.13104344782760863
+    },
+    "firstAppearanceVsAlphabet_written": {
+     "observed": 0.21634284110670784,
+     "nullMean": 0.001,
+     "p": 0.05997001499250375
+    },
+    "firstAppearanceVsAlphabetAbs_written": {
+     "observed": 0.21634284110670784,
+     "nullMean": 0.109,
+     "p": 0.11294352823588207
+    }
+   },
+   "z340": {
+    "familySameLetterPairs": {
+     "observed": 3,
+     "nullMean": 2.578,
+     "p": 0.4687265636718164
+    },
+    "mirrorPairsSameLetter": {
+     "observed": 1,
+     "nullMean": 0.439,
+     "p": 0.36258187090645466
+    },
+    "letterGlyphOwnLetter": {
+     "observed": 2,
+     "nullMean": 0.918,
+     "p": 0.2352882355882206
+    },
+    "letterGlyphMaxOffsetCount": {
+     "observed": 2,
+     "nullMean": 3.221,
+     "p": 1.0
+    },
+    "upperGlyphLetterFreqMinusRest": {
+     "observed": 0.003564907684479965,
+     "nullMean": -0.0,
+     "p": 0.31953402329883507
+    },
+    "firstAppearanceVsAlphabet_written": {
+     "observed": 0.17834592751647746,
+     "nullMean": -0.002,
+     "p": 0.07146426786606697
+    },
+    "firstAppearanceVsAlphabetAbs_written": {
+     "observed": 0.17834592751647746,
+     "nullMean": 0.102,
+     "p": 0.15742128935532235
+    },
+    "firstAppearanceVsAlphabet_reading": {
+     "observed": 0.009646171693297474,
+     "nullMean": 0.003,
+     "p": 0.48075962018990503
+    },
+    "firstAppearanceVsAlphabetAbs_reading": {
+     "observed": 0.009646171693297474,
+     "nullMean": 0.1,
+     "p": 0.9395302348825587
+    }
+   }
+  },
+  "crossKey": {
+   "nShared": 47,
+   "sameLetter": {
+    "observed": 5,
+    "nullMean": 2.637,
+    "p": 0.11869406529673517
+   },
+   "sameVowelClass": {
+    "observed": 19,
+    "nullMean": 24.756,
+    "p": 0.983900804959752
+   },
+   "englishFreqSpearman": {
+    "observed": -0.0813622968920666,
+    "nullMean": -0.005,
+    "p": 0.7061469265367316
+   },
+   "alphabetIndexSpearman": {
+    "observed": -0.002324637054059046,
+    "nullMean": 0.002,
+    "p": 0.504247876061969
+   },
+   "shiftMaxCount": {
+    "observed": 7,
+    "nullMean": 4.926,
+    "p": 0.05434728263586821
+   },
+   "shiftHistogramTop": {
+    "13": 7,
+    "8": 5,
+    "3": 5,
+    "0": 5,
+    "19": 4
+   },
+   "familyPairsSameLetterInBothKeys": [
+    {
+     "family": "square",
+     "pair": "#%",
+     "z408": "L",
+     "z340": "T"
+    }
+   ],
+   "pairsSameLetterInBothKeys": {
+    "observed": 4,
+    "nullMean": 2.389,
+    "p": 0.21489255372313842
+   },
+   "pairsSameLetterInBothKeysList": [
+    "#%",
+    "EZ",
+    "Pk",
+    "TX"
+   ]
+  },
+  "predictions": {
+   "z13": {
+    "pairsSameLetterInBothKeysPresent": [],
+    "familyMembersPresent": {
+     "open_circle": [
+      "z",
+      "0"
+     ]
+    },
+    "mirrorPairsPresent": []
+   },
+   "z32": {
+    "pairsSameLetterInBothKeysPresent": [
+     "#%",
+     "Pk",
+     "TX"
+    ],
+    "familyMembersPresent": {
+     "open_circle": [
+      "6",
+      "z"
+     ],
+     "triangle": [
+      "8",
+      "9"
+     ],
+     "square": [
+      "#",
+      "%"
+     ]
+    },
+    "mirrorPairsPresent": [
+     "Ff",
+     "Jj"
+    ]
+   }
+  }
+ }
+}

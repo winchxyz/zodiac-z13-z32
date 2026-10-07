@@ -1,0 +1,606 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:26:00.951Z",
+ "label": "scr10_07",
+ "cipher": {
+  "id": "scr10",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr10.txt",
+  "text": "KENAMNzM[00A0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abcdecf*ghhdh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 106614,
+  "scored": 103115,
+  "keptAtLeastStreamMin": 80,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 5762,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 779,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 80,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 4,
+  "3": 51,
+  "4": 25
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.209681388629754,
+  "topShare": 0.0773408846048164,
+  "top10Share": 0.31656675116328553,
+  "effectiveNumberExpEntropy": 227.59402263219357,
+  "effectiveNumberInverseSimpson": 60.624975770122305,
+  "unscoredMassBoundRelative": 0.006216205039806448,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0025825776031640057
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 3,
+   "-17.50": 2,
+   "-17.25": 5,
+   "-17.00": 10,
+   "-16.75": 12,
+   "-16.50": 15,
+   "-16.25": 17,
+   "-16.00": 46,
+   "-15.75": 41,
+   "-15.50": 68,
+   "-15.25": 65,
+   "-15.00": 101,
+   "-14.75": 164,
+   "-14.50": 227,
+   "-14.25": 277,
+   "-14.00": 364,
+   "-13.75": 489,
+   "-13.50": 644,
+   "-13.25": 800,
+   "-13.00": 931,
+   "-12.75": 1056,
+   "-12.50": 1262,
+   "-12.25": 1511,
+   "-12.00": 1689,
+   "-11.75": 1939,
+   "-11.50": 2245,
+   "-11.25": 2611,
+   "-11.00": 2863,
+   "-10.75": 3286,
+   "-10.50": 3725,
+   "-10.25": 4015,
+   "-10.00": 4296,
+   "-9.75": 4491,
+   "-9.50": 4557,
+   "-9.25": 4756,
+   "-9.00": 4713,
+   "-8.75": 5063,
+   "-8.50": 4989,
+   "-8.25": 4979,
+   "-8.00": 4990,
+   "-7.75": 4640,
+   "-7.50": 4379,
+   "-7.25": 4201,
+   "-7.00": 3805,
+   "-6.75": 3238,
+   "-6.50": 2849,
+   "-6.25": 2385,
+   "-6.00": 1979,
+   "-5.75": 1556,
+   "-5.50": 1190,
+   "-5.25": 963,
+   "-5.00": 611,
+   "-4.75": 480,
+   "-4.50": 322,
+   "-4.25": 269,
+   "-4.00": 171,
+   "-3.75": 112,
+   "-3.50": 73,
+   "-3.25": 41,
+   "-3.00": 23,
+   "-2.75": 7,
+   "-2.50": 3
+  },
+  "exactScored": {
+   "-19.75": 3,
+   "-19.50": 4,
+   "-19.25": 8,
+   "-19.00": 25,
+   "-18.75": 129,
+   "-18.50": 387,
+   "-18.25": 862,
+   "-18.00": 1585,
+   "-17.75": 2343,
+   "-17.50": 3208,
+   "-17.25": 4019,
+   "-17.00": 4830,
+   "-16.75": 5581,
+   "-16.50": 6404,
+   "-16.25": 6837,
+   "-16.00": 7231,
+   "-15.75": 7371,
+   "-15.50": 7266,
+   "-15.25": 6739,
+   "-15.00": 6364,
+   "-14.75": 5807,
+   "-14.50": 5113,
+   "-14.25": 4270,
+   "-14.00": 3685,
+   "-13.75": 2883,
+   "-13.50": 2332,
+   "-13.25": 1804,
+   "-13.00": 1471,
+   "-12.75": 1090,
+   "-12.50": 925,
+   "-12.25": 716,
+   "-12.00": 547,
+   "-11.75": 367,
+   "-11.50": 296,
+   "-11.25": 172,
+   "-11.00": 153,
+   "-10.75": 90,
+   "-10.50": 57,
+   "-10.25": 48,
+   "-10.00": 32,
+   "-9.75": 23,
+   "-9.50": 16,
+   "-9.25": 9,
+   "-9.00": 9,
+   "-8.75": 3,
+   "-8.50": 1
+  },
+  "boundUnscored": {
+   "-17.75": 3,
+   "-17.50": 2,
+   "-17.25": 5,
+   "-17.00": 10,
+   "-16.75": 12,
+   "-16.50": 15,
+   "-16.25": 17,
+   "-16.00": 46,
+   "-15.75": 41,
+   "-15.50": 68,
+   "-15.25": 65,
+   "-15.00": 101,
+   "-14.75": 164,
+   "-14.50": 227,
+   "-14.25": 277,
+   "-14.00": 364,
+   "-13.75": 489,
+   "-13.50": 644,
+   "-13.25": 800,
+   "-13.00": 149
+  }
+ },
+ "timeMs": {
+  "total": 8623,
+  "setup": 467
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "LIFEOFCLASSES",
+   "wordLogp": -8.3213,
+   "words": "LIFE OF CLASSES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "L",
+    "E": "I",
+    "N": "F",
+    "A": "E",
+    "M": "O",
+    "z": "C",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "BRIEFINGADDED",
+   "wordLogp": -8.5981,
+   "words": "BRIEFING ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "B",
+    "E": "R",
+    "N": "I",
+    "A": "E",
+    "M": "F",
+    "z": "N",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ACTOFTHEERROR",
+   "wordLogp": -8.6181,
+   "words": "ACT OF THE ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "A",
+    "E": "C",
+    "N": "T",
+    "A": "O",
+    "M": "F",
+    "z": "H",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "BITOFTHEERROR",
+   "wordLogp": -8.7165,
+   "words": "BIT OF THE ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "B",
+    "E": "I",
+    "N": "T",
+    "A": "O",
+    "M": "F",
+    "z": "H",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "LINEANYLOSSES",
+   "wordLogp": -8.7855,
+   "words": "LINE ANY LOSSES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "L",
+    "E": "I",
+    "N": "N",
+    "A": "E",
+    "M": "A",
+    "z": "Y",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "OFTENTHEADDED",
+   "wordLogp": -8.8405,
+   "words": "OFTEN THE ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "O",
+    "E": "F",
+    "N": "T",
+    "A": "E",
+    "M": "N",
+    "z": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "INTEXTCLASSES",
+   "wordLogp": -8.9093,
+   "words": "IN TEXT CLASSES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "I",
+    "E": "N",
+    "N": "T",
+    "A": "E",
+    "M": "X",
+    "z": "C",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "JUNEANYLOSSES",
+   "wordLogp": -8.9133,
+   "words": "JUNE ANY LOSSES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "J",
+    "E": "U",
+    "N": "N",
+    "A": "E",
+    "M": "A",
+    "z": "Y",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "BUTOFTHEERROR",
+   "wordLogp": -8.9169,
+   "words": "BUT OF THE ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "B",
+    "E": "U",
+    "N": "T",
+    "A": "O",
+    "M": "F",
+    "z": "H",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "LINEANDLOSSES",
+   "wordLogp": -8.9349,
+   "words": "LINE AND LOSSES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "L",
+    "E": "I",
+    "N": "N",
+    "A": "E",
+    "M": "A",
+    "z": "D",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "PUTONTHEERROR",
+   "wordLogp": -8.9804,
+   "words": "PUT ON THE ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "P",
+    "E": "U",
+    "N": "T",
+    "A": "O",
+    "M": "N",
+    "z": "H",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "DONEINCLASSES",
+   "wordLogp": -8.9841,
+   "words": "DONE IN CLASSES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "D",
+    "E": "O",
+    "N": "N",
+    "A": "E",
+    "M": "I",
+    "z": "C",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "WIFEOFCLASSES",
+   "wordLogp": -8.9962,
+   "words": "WIFE OF CLASSES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "W",
+    "E": "I",
+    "N": "F",
+    "A": "E",
+    "M": "O",
+    "z": "C",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "DANCINGGREECE",
+   "wordLogp": -9.0476,
+   "words": "DANCING GREECE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "D",
+    "E": "A",
+    "N": "N",
+    "A": "C",
+    "M": "I",
+    "z": "G",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "NOTESTHEADDED",
+   "wordLogp": -9.0543,
+   "words": "NOTES THE ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "N",
+    "E": "O",
+    "N": "T",
+    "A": "E",
+    "M": "S",
+    "z": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THEIRELANDDID",
+   "wordLogp": -9.077,
+   "words": "THE IRELAND DID",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "T",
+    "E": "H",
+    "N": "E",
+    "A": "I",
+    "M": "R",
+    "z": "L",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "INPEOPLEADDED",
+   "wordLogp": -9.0896,
+   "words": "IN PEOPLE ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "I",
+    "E": "N",
+    "N": "P",
+    "A": "E",
+    "M": "O",
+    "z": "L",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "BYPEOPLEADDED",
+   "wordLogp": -9.1025,
+   "words": "BY PEOPLE ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "B",
+    "E": "Y",
+    "N": "P",
+    "A": "E",
+    "M": "O",
+    "z": "L",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "LIFEOFGLASSES",
+   "wordLogp": -9.1293,
+   "words": "LIFE OF GLASSES",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "L",
+    "E": "I",
+    "N": "F",
+    "A": "E",
+    "M": "O",
+    "z": "G",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "BUTONTHEERROR",
+   "wordLogp": -9.1312,
+   "words": "BUT ON THE ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "B",
+    "E": "U",
+    "N": "T",
+    "A": "O",
+    "M": "N",
+    "z": "H",
+    "[": "E"
+   }
+  }
+ ]
+}

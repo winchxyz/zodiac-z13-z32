@@ -1,0 +1,614 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:36:45.809Z",
+ "label": "scr22_01",
+ "cipher": {
+  "id": "scr22",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr22.txt",
+  "text": "K0MN0EM[Az0AN",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*cdbecfghbgd"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 543840,
+  "scored": 502410,
+  "keptAtLeastStreamMin": 267,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 27539,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 3444,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 267,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 9,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 14,
+  "3": 137,
+  "4": 116
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.510828711800746,
+  "topShare": 0.04193019525653416,
+  "top10Share": 0.2583999489333988,
+  "effectiveNumberExpEntropy": 575.0174229593435,
+  "effectiveNumberInverseSimpson": 104.62954215078105,
+  "unscoredMassBoundRelative": 0.014724604722013599,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 40,
+   "maxWordLogp": -15.796291836949308,
+   "massEstimateRelative": 0.000003304869074130895,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004714604974854086
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 3,
+   "-18.25": 5,
+   "-18.00": 27,
+   "-17.75": 48,
+   "-17.50": 103,
+   "-17.25": 178,
+   "-17.00": 237,
+   "-16.75": 304,
+   "-16.50": 397,
+   "-16.25": 602,
+   "-16.00": 711,
+   "-15.75": 938,
+   "-15.50": 1202,
+   "-15.25": 1609,
+   "-15.00": 1977,
+   "-14.75": 2484,
+   "-14.50": 3188,
+   "-14.25": 3870,
+   "-14.00": 4408,
+   "-13.75": 5304,
+   "-13.50": 5881,
+   "-13.25": 6796,
+   "-13.00": 7710,
+   "-12.75": 8682,
+   "-12.50": 9616,
+   "-12.25": 10956,
+   "-12.00": 12240,
+   "-11.75": 13872,
+   "-11.50": 15496,
+   "-11.25": 16703,
+   "-11.00": 18001,
+   "-10.75": 19205,
+   "-10.50": 19886,
+   "-10.25": 20868,
+   "-10.00": 21277,
+   "-9.75": 21643,
+   "-9.50": 21582,
+   "-9.25": 21851,
+   "-9.00": 21819,
+   "-8.75": 22336,
+   "-8.50": 21920,
+   "-8.25": 21782,
+   "-8.00": 21483,
+   "-7.75": 20621,
+   "-7.50": 19252,
+   "-7.25": 17890,
+   "-7.00": 16020,
+   "-6.75": 14035,
+   "-6.50": 12048,
+   "-6.25": 9600,
+   "-6.00": 7587,
+   "-5.75": 5763,
+   "-5.50": 4181,
+   "-5.25": 2866,
+   "-5.00": 1930,
+   "-4.75": 1231,
+   "-4.50": 729,
+   "-4.25": 424,
+   "-4.00": 223,
+   "-3.75": 121,
+   "-3.50": 72,
+   "-3.25": 22,
+   "-3.00": 19,
+   "-2.75": 2,
+   "-2.50": 4
+  },
+  "exactScored": {
+   "-19.75": 3,
+   "-19.50": 16,
+   "-19.25": 40,
+   "-19.00": 86,
+   "-18.75": 285,
+   "-18.50": 978,
+   "-18.25": 2440,
+   "-18.00": 5374,
+   "-17.75": 9631,
+   "-17.50": 15301,
+   "-17.25": 22124,
+   "-17.00": 28461,
+   "-16.75": 33020,
+   "-16.50": 36104,
+   "-16.25": 37510,
+   "-16.00": 36775,
+   "-15.75": 35214,
+   "-15.50": 33493,
+   "-15.25": 31182,
+   "-15.00": 28446,
+   "-14.75": 25789,
+   "-14.50": 22593,
+   "-14.25": 19428,
+   "-14.00": 16207,
+   "-13.75": 13322,
+   "-13.50": 10865,
+   "-13.25": 8949,
+   "-13.00": 7103,
+   "-12.75": 5647,
+   "-12.50": 4344,
+   "-12.25": 3362,
+   "-12.00": 2507,
+   "-11.75": 1791,
+   "-11.50": 1298,
+   "-11.25": 881,
+   "-11.00": 622,
+   "-10.75": 394,
+   "-10.50": 290,
+   "-10.25": 190,
+   "-10.00": 125,
+   "-9.75": 86,
+   "-9.50": 57,
+   "-9.25": 28,
+   "-9.00": 21,
+   "-8.75": 14,
+   "-8.50": 6,
+   "-8.25": 5,
+   "-8.00": 3
+  },
+  "boundUnscored": {
+   "-18.50": 3,
+   "-18.25": 5,
+   "-18.00": 27,
+   "-17.75": 48,
+   "-17.50": 103,
+   "-17.25": 178,
+   "-17.00": 237,
+   "-16.75": 304,
+   "-16.50": 397,
+   "-16.25": 602,
+   "-16.00": 711,
+   "-15.75": 938,
+   "-15.50": 1202,
+   "-15.25": 1609,
+   "-15.00": 1977,
+   "-14.75": 2484,
+   "-14.50": 3188,
+   "-14.25": 3870,
+   "-14.00": 4408,
+   "-13.75": 5304,
+   "-13.50": 5881,
+   "-13.25": 6796,
+   "-13.00": 1158
+  }
+ },
+ "timeMs": {
+  "total": 11627,
+  "setup": 434
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "PRESIDENTHITS",
+   "wordLogp": -7.8883,
+   "words": "PRESIDENT HITS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "P",
+    "M": "E",
+    "N": "S",
+    "E": "D",
+    "[": "N",
+    "A": "T",
+    "z": "H"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CONTAINERPART",
+   "wordLogp": -7.9658,
+   "words": "CONTAINER PART",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "K": "C",
+    "M": "N",
+    "N": "T",
+    "E": "I",
+    "[": "E",
+    "A": "R",
+    "z": "P"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THEYAREINMANY",
+   "wordLogp": -7.9792,
+   "words": "THEY ARE IN MANY",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "K": "T",
+    "M": "E",
+    "N": "Y",
+    "E": "R",
+    "[": "I",
+    "A": "N",
+    "z": "M"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "GOODAMOUNTAND",
+   "wordLogp": -8.0466,
+   "words": "GOOD AMOUNT AND",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "K": "G",
+    "M": "O",
+    "N": "D",
+    "E": "M",
+    "[": "U",
+    "A": "N",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "PARTNERSOFNOT",
+   "wordLogp": -8.1243,
+   "words": "PARTNERS OF NOT",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "K": "P",
+    "M": "R",
+    "N": "T",
+    "E": "E",
+    "[": "S",
+    "A": "O",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "PRESIDENTKITS",
+   "wordLogp": -8.1787,
+   "words": "PRESIDENT KITS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "P",
+    "M": "E",
+    "N": "S",
+    "E": "D",
+    "[": "N",
+    "A": "T",
+    "z": "K"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "OFANEGATIVEIN",
+   "wordLogp": -8.186,
+   "words": "OF A NEGATIVE IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "O",
+    "M": "A",
+    "N": "N",
+    "E": "G",
+    "[": "T",
+    "A": "I",
+    "z": "V"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "WHENTHEBOSTON",
+   "wordLogp": -8.2249,
+   "words": "WHEN THE BOSTON",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "K": "W",
+    "M": "E",
+    "N": "N",
+    "E": "H",
+    "[": "B",
+    "A": "O",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "PRESIDENTBITS",
+   "wordLogp": -8.2596,
+   "words": "PRESIDENT BITS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "P",
+    "M": "E",
+    "N": "S",
+    "E": "D",
+    "[": "N",
+    "A": "T",
+    "z": "B"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "UNIONLISTENTO",
+   "wordLogp": -8.3601,
+   "words": "UNION LISTEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "K": "U",
+    "M": "I",
+    "N": "O",
+    "E": "L",
+    "[": "S",
+    "A": "T",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "USERTHEDOCTOR",
+   "wordLogp": -8.3677,
+   "words": "USER THE DOCTOR",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "K": "U",
+    "M": "E",
+    "N": "R",
+    "E": "H",
+    "[": "D",
+    "A": "O",
+    "z": "C"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "GOODSTOBEUSED",
+   "wordLogp": -8.421,
+   "words": "GOODS TO BE USED",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "G",
+    "M": "O",
+    "N": "D",
+    "E": "T",
+    "[": "B",
+    "A": "E",
+    "z": "U"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "PRESIDENTFITS",
+   "wordLogp": -8.4475,
+   "words": "PRESIDENT FITS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "P",
+    "M": "E",
+    "N": "S",
+    "E": "D",
+    "[": "N",
+    "A": "T",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "WHENTHELISTIN",
+   "wordLogp": -8.4526,
+   "words": "WHEN THE LIST IN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "K": "W",
+    "M": "E",
+    "N": "N",
+    "E": "H",
+    "[": "L",
+    "A": "I",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "TOUSEHUNDREDS",
+   "wordLogp": -8.5237,
+   "words": "TO USE HUNDREDS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "T",
+    "M": "U",
+    "N": "S",
+    "E": "H",
+    "[": "N",
+    "A": "D",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "WHENTHEMOSTON",
+   "wordLogp": -8.5266,
+   "words": "WHEN THE MOST ON",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "K": "W",
+    "M": "E",
+    "N": "N",
+    "E": "H",
+    "[": "M",
+    "A": "O",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ONANEGATIVEIN",
+   "wordLogp": -8.5586,
+   "words": "ON A NEGATIVE IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "O",
+    "M": "A",
+    "N": "N",
+    "E": "G",
+    "[": "T",
+    "A": "I",
+    "z": "V"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "PHONETOMAKEAN",
+   "wordLogp": -8.5661,
+   "words": "PHONE TO MAKE AN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "P",
+    "M": "O",
+    "N": "N",
+    "E": "T",
+    "[": "M",
+    "A": "A",
+    "z": "K"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "WHENAMERICAIN",
+   "wordLogp": -8.6231,
+   "words": "WHEN AMERICA IN",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "K": "W",
+    "M": "E",
+    "N": "N",
+    "E": "M",
+    "[": "R",
+    "A": "I",
+    "z": "C"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "CAUSEHUNDREDS",
+   "wordLogp": -8.6239,
+   "words": "CAUSE HUNDREDS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "C",
+    "M": "U",
+    "N": "S",
+    "E": "H",
+    "[": "N",
+    "A": "D",
+    "z": "R"
+   }
+  }
+ ]
+}

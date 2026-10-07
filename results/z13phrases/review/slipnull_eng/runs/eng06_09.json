@@ -1,0 +1,384 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:33:32.656Z",
+ "label": "eng06_09",
+ "cipher": {
+  "id": "eng06",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng06.txt",
+  "text": "abccdbcefgehh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   9
+  ],
+  "isomorphAfterSlips": "abccdbcef*ehh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 45972,
+  "scored": 42795,
+  "keptAtLeastStreamMin": 8,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 2138,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 234,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 8,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 5,
+  "4": 3
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.14139968758091,
+  "topShare": 0.10134983597106978,
+  "top10Share": 0.28427505870256187,
+  "effectiveNumberExpEntropy": 291.283053494725,
+  "effectiveNumberInverseSimpson": 54.60752023294419,
+  "unscoredMassBoundRelative": 0.048229960074683435,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.016735012008827575
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 3,
+   "-17.75": 6,
+   "-17.50": 9,
+   "-17.25": 11,
+   "-17.00": 16,
+   "-16.75": 21,
+   "-16.50": 28,
+   "-16.25": 26,
+   "-16.00": 47,
+   "-15.75": 48,
+   "-15.50": 79,
+   "-15.25": 101,
+   "-15.00": 146,
+   "-14.75": 181,
+   "-14.50": 240,
+   "-14.25": 279,
+   "-14.00": 359,
+   "-13.75": 401,
+   "-13.50": 505,
+   "-13.25": 553,
+   "-13.00": 696,
+   "-12.75": 818,
+   "-12.50": 902,
+   "-12.25": 1035,
+   "-12.00": 1221,
+   "-11.75": 1337,
+   "-11.50": 1375,
+   "-11.25": 1548,
+   "-11.00": 1641,
+   "-10.75": 1713,
+   "-10.50": 1889,
+   "-10.25": 1896,
+   "-10.00": 1973,
+   "-9.75": 1945,
+   "-9.50": 1974,
+   "-9.25": 1829,
+   "-9.00": 1933,
+   "-8.75": 1914,
+   "-8.50": 1863,
+   "-8.25": 1885,
+   "-8.00": 1751,
+   "-7.75": 1642,
+   "-7.50": 1529,
+   "-7.25": 1464,
+   "-7.00": 1198,
+   "-6.75": 938,
+   "-6.50": 809,
+   "-6.25": 627,
+   "-6.00": 502,
+   "-5.75": 382,
+   "-5.50": 264,
+   "-5.25": 187,
+   "-5.00": 114,
+   "-4.75": 72,
+   "-4.50": 25,
+   "-4.25": 15,
+   "-4.00": 4,
+   "-3.75": 2,
+   "-3.50": 1
+  },
+  "exactScored": {
+   "-19.00": 2,
+   "-18.75": 17,
+   "-18.50": 80,
+   "-18.25": 191,
+   "-18.00": 446,
+   "-17.75": 892,
+   "-17.50": 1344,
+   "-17.25": 1835,
+   "-17.00": 2358,
+   "-16.75": 2695,
+   "-16.50": 3048,
+   "-16.25": 3182,
+   "-16.00": 3307,
+   "-15.75": 3168,
+   "-15.50": 3069,
+   "-15.25": 2712,
+   "-15.00": 2465,
+   "-14.75": 2228,
+   "-14.50": 1864,
+   "-14.25": 1612,
+   "-14.00": 1333,
+   "-13.75": 1079,
+   "-13.50": 885,
+   "-13.25": 739,
+   "-13.00": 555,
+   "-12.75": 426,
+   "-12.50": 353,
+   "-12.25": 256,
+   "-12.00": 214,
+   "-11.75": 144,
+   "-11.50": 115,
+   "-11.25": 75,
+   "-11.00": 42,
+   "-10.75": 29,
+   "-10.50": 16,
+   "-10.25": 7,
+   "-10.00": 8,
+   "-9.75": 3,
+   "-9.25": 1
+  },
+  "boundUnscored": {
+   "-18.00": 3,
+   "-17.75": 6,
+   "-17.50": 9,
+   "-17.25": 11,
+   "-17.00": 16,
+   "-16.75": 21,
+   "-16.50": 28,
+   "-16.25": 26,
+   "-16.00": 47,
+   "-15.75": 48,
+   "-15.50": 79,
+   "-15.25": 101,
+   "-15.00": 146,
+   "-14.75": 181,
+   "-14.50": 240,
+   "-14.25": 279,
+   "-14.00": 359,
+   "-13.75": 401,
+   "-13.50": 505,
+   "-13.25": 553,
+   "-13.00": 118
+  }
+ },
+ "timeMs": {
+  "total": 1503,
+  "setup": 520
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "FREECREATEALL",
+   "wordLogp": -9.1356,
+   "words": "FREE CREATE ALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "C",
+    "e": "A",
+    "f": "T",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "FREEGREATWALL",
+   "wordLogp": -9.5339,
+   "words": "FREE GREAT WALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "G",
+    "e": "A",
+    "f": "T",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "FREEBREASTALL",
+   "wordLogp": -9.6312,
+   "words": "FREE BREAST ALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "B",
+    "e": "A",
+    "f": "S",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "GETTHETOCROSS",
+   "wordLogp": -9.7007,
+   "words": "GET THE TO CROSS",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "E",
+    "c": "T",
+    "d": "H",
+    "e": "O",
+    "f": "C",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "FREEGREATCALL",
+   "wordLogp": -9.7705,
+   "words": "FREE GREAT CALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "G",
+    "e": "A",
+    "f": "T",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "FREEAREITWILL",
+   "wordLogp": -9.8407,
+   "words": "FREE ARE IT WILL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "A",
+    "e": "I",
+    "f": "T",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "FREEDREAMSALL",
+   "wordLogp": -9.847,
+   "words": "FREE DREAMS ALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "D",
+    "e": "A",
+    "f": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "GETTHETAKEALL",
+   "wordLogp": -9.8563,
+   "words": "GET THE TAKE ALL",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "E",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "K",
+    "h": "L"
+   }
+  }
+ ]
+}

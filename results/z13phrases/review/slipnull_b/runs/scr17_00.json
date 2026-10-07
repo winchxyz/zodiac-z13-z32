@@ -1,0 +1,607 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:31:22.540Z",
+ "label": "scr17_00",
+ "cipher": {
+  "id": "scr17",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr17.txt",
+  "text": "0AM00AzEKN[NM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   0
+  ],
+  "isomorphAfterSlips": "*bcaabdefghgc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 118,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 118,
+  "tasks": 118,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 180755,
+  "scored": 169651,
+  "keptAtLeastStreamMin": 43,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 9554,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 960,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 43,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 17,
+  "4": 26
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.355341101124589,
+  "topShare": 0.051785323278117946,
+  "top10Share": 0.29841332547691346,
+  "effectiveNumberExpEntropy": 566.6470516219017,
+  "effectiveNumberInverseSimpson": 83.14901983124608,
+  "unscoredMassBoundRelative": 0.02758802140232165,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 8,
+   "maxWordLogp": -15.956335364133409,
+   "massEstimateRelative": 0.000006430084543113611,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.008808157099006798
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 4,
+   "-18.00": 15,
+   "-17.75": 17,
+   "-17.50": 34,
+   "-17.25": 50,
+   "-17.00": 63,
+   "-16.75": 80,
+   "-16.50": 107,
+   "-16.25": 169,
+   "-16.00": 210,
+   "-15.75": 265,
+   "-15.50": 314,
+   "-15.25": 432,
+   "-15.00": 527,
+   "-14.75": 643,
+   "-14.50": 841,
+   "-14.25": 1057,
+   "-14.00": 1180,
+   "-13.75": 1377,
+   "-13.50": 1594,
+   "-13.25": 1819,
+   "-13.00": 2052,
+   "-12.75": 2251,
+   "-12.50": 2738,
+   "-12.25": 3010,
+   "-12.00": 3585,
+   "-11.75": 3924,
+   "-11.50": 4392,
+   "-11.25": 5038,
+   "-11.00": 5427,
+   "-10.75": 5952,
+   "-10.50": 6136,
+   "-10.25": 6769,
+   "-10.00": 6849,
+   "-9.75": 7096,
+   "-9.50": 7164,
+   "-9.25": 7249,
+   "-9.00": 7547,
+   "-8.75": 7640,
+   "-8.50": 7798,
+   "-8.25": 7776,
+   "-8.00": 7934,
+   "-7.75": 7513,
+   "-7.50": 7159,
+   "-7.25": 6669,
+   "-7.00": 5987,
+   "-6.75": 5317,
+   "-6.50": 4384,
+   "-6.25": 3644,
+   "-6.00": 2946,
+   "-5.75": 2366,
+   "-5.50": 1796,
+   "-5.25": 1349,
+   "-5.00": 933,
+   "-4.75": 667,
+   "-4.50": 410,
+   "-4.25": 240,
+   "-4.00": 129,
+   "-3.75": 68,
+   "-3.50": 31,
+   "-3.25": 7,
+   "-3.00": 10,
+   "-2.75": 3,
+   "-2.50": 2
+  },
+  "exactScored": {
+   "-19.50": 2,
+   "-19.25": 9,
+   "-19.00": 31,
+   "-18.75": 91,
+   "-18.50": 254,
+   "-18.25": 639,
+   "-18.00": 1383,
+   "-17.75": 2534,
+   "-17.50": 3863,
+   "-17.25": 5752,
+   "-17.00": 7269,
+   "-16.75": 8633,
+   "-16.50": 10245,
+   "-16.25": 11198,
+   "-16.00": 11660,
+   "-15.75": 11917,
+   "-15.50": 12014,
+   "-15.25": 11743,
+   "-15.00": 11530,
+   "-14.75": 10591,
+   "-14.50": 9628,
+   "-14.25": 8360,
+   "-14.00": 6942,
+   "-13.75": 5607,
+   "-13.50": 4439,
+   "-13.25": 3337,
+   "-13.00": 2578,
+   "-12.75": 2029,
+   "-12.50": 1526,
+   "-12.25": 1158,
+   "-12.00": 904,
+   "-11.75": 607,
+   "-11.50": 430,
+   "-11.25": 277,
+   "-11.00": 188,
+   "-10.75": 95,
+   "-10.50": 84,
+   "-10.25": 40,
+   "-10.00": 30,
+   "-9.75": 20,
+   "-9.50": 4,
+   "-9.25": 4,
+   "-9.00": 3,
+   "-8.75": 3
+  },
+  "boundUnscored": {
+   "-18.25": 4,
+   "-18.00": 15,
+   "-17.75": 17,
+   "-17.50": 34,
+   "-17.25": 50,
+   "-17.00": 63,
+   "-16.75": 80,
+   "-16.50": 107,
+   "-16.25": 169,
+   "-16.00": 210,
+   "-15.75": 265,
+   "-15.50": 314,
+   "-15.25": 432,
+   "-15.00": 527,
+   "-14.75": 643,
+   "-14.50": 841,
+   "-14.25": 1057,
+   "-14.00": 1180,
+   "-13.75": 1377,
+   "-13.50": 1594,
+   "-13.25": 1819,
+   "-13.00": 306
+  }
+ },
+ "timeMs": {
+  "total": 3307,
+  "setup": 392
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "STREETALSOFOR",
+   "wordLogp": -8.6411,
+   "words": "STREET ALSO FOR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "M": "R",
+    "z": "A",
+    "E": "L",
+    "K": "S",
+    "N": "O",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "DOESSOMUCHTHE",
+   "wordLogp": -8.6996,
+   "words": "DOES SO MUCH THE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "O",
+    "M": "E",
+    "z": "M",
+    "E": "U",
+    "K": "C",
+    "N": "H",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "STREETINCOLOR",
+   "wordLogp": -8.7319,
+   "words": "STREET IN COLOR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "M": "R",
+    "z": "I",
+    "E": "N",
+    "K": "C",
+    "N": "O",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "TOALLOWTHESEA",
+   "wordLogp": -8.7547,
+   "words": "TO ALLOW THE SEA",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "O",
+    "M": "A",
+    "z": "W",
+    "E": "T",
+    "K": "H",
+    "N": "E",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "DATEEACHVISIT",
+   "wordLogp": -8.9011,
+   "words": "DATE EACH VISIT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "M": "T",
+    "z": "C",
+    "E": "H",
+    "K": "V",
+    "N": "I",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "WEOFFERWITHTO",
+   "wordLogp": -8.9792,
+   "words": "WE OFFER WITH TO",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "A": "E",
+    "M": "O",
+    "z": "R",
+    "E": "W",
+    "K": "I",
+    "N": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THATTHERISKSA",
+   "wordLogp": -9.0128,
+   "words": "THAT THE RISKS A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "E",
+    "E": "R",
+    "K": "I",
+    "N": "S",
+    "[": "K"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THATTHISWEREA",
+   "wordLogp": -9.1117,
+   "words": "THAT THIS WERE A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "H",
+    "M": "A",
+    "z": "I",
+    "E": "S",
+    "K": "W",
+    "N": "E",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "TOACCOUNTSISA",
+   "wordLogp": -9.1941,
+   "words": "TO ACCOUNTS IS A",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "A": "O",
+    "M": "A",
+    "z": "U",
+    "E": "N",
+    "K": "T",
+    "N": "S",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "POSTTOANGELES",
+   "wordLogp": -9.2345,
+   "words": "POST TO ANGELES",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "O",
+    "M": "S",
+    "z": "A",
+    "E": "N",
+    "K": "G",
+    "N": "E",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "STREETIFYOUOR",
+   "wordLogp": -9.3487,
+   "words": "STREET IF YOU OR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "M": "R",
+    "z": "I",
+    "E": "F",
+    "K": "Y",
+    "N": "O",
+    "[": "U"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "STREETBYCOLOR",
+   "wordLogp": -9.4438,
+   "words": "STREET BY COLOR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "M": "R",
+    "z": "B",
+    "E": "Y",
+    "K": "C",
+    "N": "O",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "RATEEACHVISIT",
+   "wordLogp": -9.4641,
+   "words": "RATE EACH VISIT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "M": "T",
+    "z": "C",
+    "E": "H",
+    "K": "V",
+    "N": "I",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "STUFFTHEDOYOU",
+   "wordLogp": -9.4896,
+   "words": "STUFF THE DO YOU",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "A": "T",
+    "M": "U",
+    "z": "H",
+    "E": "E",
+    "K": "D",
+    "N": "O",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "GOESSOMUCHTHE",
+   "wordLogp": -9.5085,
+   "words": "GOES SO MUCH THE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "O",
+    "M": "E",
+    "z": "M",
+    "E": "U",
+    "K": "C",
+    "N": "H",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "BOTHHOMEVISIT",
+   "wordLogp": -9.5184,
+   "words": "BOTH HOME VISIT",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "A": "O",
+    "M": "T",
+    "z": "M",
+    "E": "E",
+    "K": "V",
+    "N": "I",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "FINDDISPLAYAN",
+   "wordLogp": -9.546,
+   "words": "FIND DISPLAY AN",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "A": "I",
+    "M": "N",
+    "z": "S",
+    "E": "P",
+    "K": "L",
+    "N": "A",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "COSTTOANGELES",
+   "wordLogp": -9.5649,
+   "words": "COST TO ANGELES",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "O",
+    "M": "S",
+    "z": "A",
+    "E": "N",
+    "K": "G",
+    "N": "E",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "PRESSRALPHTHE",
+   "wordLogp": -9.5749,
+   "words": "PRESS RALPH THE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "R",
+    "M": "E",
+    "z": "A",
+    "E": "L",
+    "K": "P",
+    "N": "H",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "STREETANDOFOR",
+   "wordLogp": -9.5845,
+   "words": "STREET AND OF OR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "M": "R",
+    "z": "A",
+    "E": "N",
+    "K": "D",
+    "N": "O",
+    "[": "F"
+   }
+  }
+ ]
+}

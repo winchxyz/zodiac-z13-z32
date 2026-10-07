@@ -1,0 +1,613 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:19:24.540Z",
+ "label": "scr12_04",
+ "cipher": {
+  "id": "scr12",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr12.txt",
+  "text": "[AEzNMA00MK0N",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   4
+  ],
+  "isomorphAfterSlips": "abcd*fbggfhge"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 393734,
+  "scored": 364210,
+  "keptAtLeastStreamMin": 196,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 16049,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1924,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 196,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 7,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 9,
+  "3": 91,
+  "4": 96
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.577543998337991,
+  "topShare": 0.16532586225765625,
+  "top10Share": 0.45306629882934535,
+  "effectiveNumberExpEntropy": 160.33298784413097,
+  "effectiveNumberInverseSimpson": 23.890492330515702,
+  "unscoredMassBoundRelative": 0.012235428824087062,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 28,
+   "maxWordLogp": -15.450937016463506,
+   "massEstimateRelative": 0.0000032984501133232765,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00414353801854953
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 3,
+   "-18.25": 6,
+   "-18.00": 12,
+   "-17.75": 26,
+   "-17.50": 68,
+   "-17.25": 97,
+   "-17.00": 117,
+   "-16.75": 195,
+   "-16.50": 214,
+   "-16.25": 335,
+   "-16.00": 500,
+   "-15.75": 708,
+   "-15.50": 881,
+   "-15.25": 1153,
+   "-15.00": 1390,
+   "-14.75": 1714,
+   "-14.50": 2085,
+   "-14.25": 2437,
+   "-14.00": 3197,
+   "-13.75": 3744,
+   "-13.50": 4523,
+   "-13.25": 5231,
+   "-13.00": 5904,
+   "-12.75": 6533,
+   "-12.50": 7538,
+   "-12.25": 8488,
+   "-12.00": 9452,
+   "-11.75": 10370,
+   "-11.50": 11462,
+   "-11.25": 12124,
+   "-11.00": 12796,
+   "-10.75": 13162,
+   "-10.50": 14146,
+   "-10.25": 15228,
+   "-10.00": 15518,
+   "-9.75": 15825,
+   "-9.50": 16021,
+   "-9.25": 15912,
+   "-9.00": 16006,
+   "-8.75": 15939,
+   "-8.50": 15748,
+   "-8.25": 15807,
+   "-8.00": 15390,
+   "-7.75": 14900,
+   "-7.50": 13779,
+   "-7.25": 12393,
+   "-7.00": 11097,
+   "-6.75": 9642,
+   "-6.50": 7947,
+   "-6.25": 6788,
+   "-6.00": 5292,
+   "-5.75": 4117,
+   "-5.50": 3142,
+   "-5.25": 2328,
+   "-5.00": 1656,
+   "-4.75": 1122,
+   "-4.50": 673,
+   "-4.25": 406,
+   "-4.00": 235,
+   "-3.75": 100,
+   "-3.50": 65,
+   "-3.25": 29,
+   "-3.00": 12,
+   "-2.75": 6
+  },
+  "exactScored": {
+   "-19.25": 5,
+   "-19.00": 6,
+   "-18.75": 47,
+   "-18.50": 276,
+   "-18.25": 1142,
+   "-18.00": 3231,
+   "-17.75": 6491,
+   "-17.50": 10910,
+   "-17.25": 15496,
+   "-17.00": 19739,
+   "-16.75": 24054,
+   "-16.50": 27419,
+   "-16.25": 29331,
+   "-16.00": 29771,
+   "-15.75": 28938,
+   "-15.50": 27401,
+   "-15.25": 24261,
+   "-15.00": 21680,
+   "-14.75": 18742,
+   "-14.50": 15731,
+   "-14.25": 12915,
+   "-14.00": 10102,
+   "-13.75": 8061,
+   "-13.50": 6487,
+   "-13.25": 5165,
+   "-13.00": 4241,
+   "-12.75": 3375,
+   "-12.50": 2582,
+   "-12.25": 1845,
+   "-12.00": 1389,
+   "-11.75": 1123,
+   "-11.50": 740,
+   "-11.25": 491,
+   "-11.00": 311,
+   "-10.75": 233,
+   "-10.50": 146,
+   "-10.25": 97,
+   "-10.00": 86,
+   "-9.75": 56,
+   "-9.50": 37,
+   "-9.25": 20,
+   "-9.00": 15,
+   "-8.75": 12,
+   "-8.50": 4,
+   "-8.25": 1,
+   "-8.00": 3,
+   "-7.75": 1,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-18.50": 3,
+   "-18.25": 6,
+   "-18.00": 12,
+   "-17.75": 26,
+   "-17.50": 68,
+   "-17.25": 97,
+   "-17.00": 117,
+   "-16.75": 195,
+   "-16.50": 214,
+   "-16.25": 335,
+   "-16.00": 500,
+   "-15.75": 708,
+   "-15.50": 881,
+   "-15.25": 1153,
+   "-15.00": 1390,
+   "-14.75": 1714,
+   "-14.50": 2085,
+   "-14.25": 2437,
+   "-14.00": 3197,
+   "-13.75": 3744,
+   "-13.50": 4523,
+   "-13.25": 5231,
+   "-13.00": 888
+  }
+ },
+ "timeMs": {
+  "total": 6220,
+  "setup": 484
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "SAIDTHATTHETO",
+   "wordLogp": -7.3592,
+   "words": "SAID THAT THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "S",
+    "A": "A",
+    "E": "I",
+    "z": "D",
+    "M": "H",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "FINDALITTLETO",
+   "wordLogp": -7.7311,
+   "words": "FIND A LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "F",
+    "A": "I",
+    "E": "N",
+    "z": "D",
+    "M": "L",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "VIRGINIAANDAS",
+   "wordLogp": -7.871,
+   "words": "VIRGINIA AND AS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "V",
+    "A": "I",
+    "E": "R",
+    "z": "G",
+    "M": "N",
+    "K": "D",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "VIRGINIAANDAT",
+   "wordLogp": -7.9057,
+   "words": "VIRGINIA AND AT",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "V",
+    "A": "I",
+    "E": "R",
+    "z": "G",
+    "M": "N",
+    "K": "D",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "VICTORIAAREAS",
+   "wordLogp": -7.9658,
+   "words": "VICTORIA AREAS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "V",
+    "A": "I",
+    "E": "C",
+    "z": "T",
+    "M": "R",
+    "K": "E",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "FIRSTLITTLETO",
+   "wordLogp": -8.2097,
+   "words": "FIRST LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "F",
+    "A": "I",
+    "E": "R",
+    "z": "S",
+    "M": "L",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "WAYSTHATTHETO",
+   "wordLogp": -8.3318,
+   "words": "WAYS THAT THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "W",
+    "A": "A",
+    "E": "Y",
+    "z": "S",
+    "M": "H",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "DAYSTHATTHETO",
+   "wordLogp": -8.4648,
+   "words": "DAYS THAT THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "D",
+    "A": "A",
+    "E": "Y",
+    "z": "S",
+    "M": "H",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "UNITEDNEEDLES",
+   "wordLogp": -8.4768,
+   "words": "UNITED NEEDLES",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "U",
+    "A": "N",
+    "E": "I",
+    "z": "T",
+    "M": "D",
+    "K": "L",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "MAILTHATTHETO",
+   "wordLogp": -8.489,
+   "words": "MAIL THAT THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "M",
+    "A": "A",
+    "E": "I",
+    "z": "L",
+    "M": "H",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "BACKTHATTHETO",
+   "wordLogp": -8.522,
+   "words": "BACK THAT THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "B",
+    "A": "A",
+    "E": "C",
+    "z": "K",
+    "M": "H",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "VIRGINIAANDAM",
+   "wordLogp": -8.5384,
+   "words": "VIRGINIA AND AM",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "V",
+    "A": "I",
+    "E": "R",
+    "z": "G",
+    "M": "N",
+    "K": "D",
+    "N": "M"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "EACHCLASSLIST",
+   "wordLogp": -8.5396,
+   "words": "EACH CLASS LIST",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "E",
+    "A": "A",
+    "E": "C",
+    "z": "H",
+    "M": "L",
+    "K": "I",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "CARDTHATTHETO",
+   "wordLogp": -8.5507,
+   "words": "CARD THAT THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "C",
+    "A": "A",
+    "E": "R",
+    "z": "D",
+    "M": "H",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "BRAINTREETHEY",
+   "wordLogp": -8.6001,
+   "words": "BRAINTREE THEY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "B",
+    "A": "R",
+    "E": "A",
+    "z": "I",
+    "M": "T",
+    "K": "H",
+    "N": "Y"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "RIGHTLITTLETO",
+   "wordLogp": -8.6456,
+   "words": "RIGHT LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "R",
+    "A": "I",
+    "E": "G",
+    "z": "H",
+    "M": "L",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "SINCELITTLETO",
+   "wordLogp": -8.6467,
+   "words": "SINCE LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "S",
+    "A": "I",
+    "E": "N",
+    "z": "C",
+    "M": "L",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "MANYTHATTHETO",
+   "wordLogp": -8.6506,
+   "words": "MANY THAT THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "M",
+    "A": "A",
+    "E": "N",
+    "z": "Y",
+    "M": "H",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "LANDTHATTHETO",
+   "wordLogp": -8.658,
+   "words": "LAND THAT THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "L",
+    "A": "A",
+    "E": "N",
+    "z": "D",
+    "M": "H",
+    "K": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "LAWSTHATTHETO",
+   "wordLogp": -8.6618,
+   "words": "LAWS THAT THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "L",
+    "A": "A",
+    "E": "W",
+    "z": "S",
+    "M": "H",
+    "K": "E",
+    "N": "O"
+   }
+  }
+ ]
+}

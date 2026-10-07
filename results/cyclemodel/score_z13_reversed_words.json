@@ -1,0 +1,3439 @@
+{
+ "tool": "tools/cyclemodel_score.js",
+ "created": "2026-10-07T14:50:09.937Z",
+ "command": "node tools/cyclemodel_score.js --cipher data/ciphers/variants/z13.reversed.txt --in results/cyclemodel/enum_z13_reversed_simple.tsv --in results/cyclemodel/enum_z13_reversed_homophonic.tsv --track 4,8 --top 60 --out results/cyclemodel/score_z13_reversed_words.json",
+ "cipher": {
+  "source": "data/ciphers/variants/z13.reversed.txt",
+  "text": "MAN[0M0K0zNEA",
+  "isomorph": "abcdeaefegchb",
+  "rows": "13"
+ },
+ "inputs": [
+  "results/cyclemodel/enum_z13_reversed_simple.tsv",
+  "results/cyclemodel/enum_z13_reversed_homophonic.tsv"
+ ],
+ "model": "results/cyclemodel/fit.json",
+ "hyp": {
+  "kind": "homophonic",
+  "S": [
+   20,
+   26,
+   30,
+   35,
+   40,
+   45,
+   50,
+   54,
+   58,
+   63,
+   68
+  ],
+  "regimes": [
+   "z408p12",
+   "z340",
+   "z408p3"
+  ]
+ },
+ "counts": {
+  "read": 5116222,
+  "droppedBelowLmWindow": 369390,
+  "lmWindow": 12,
+  "maxLM": -8.15512988771881,
+  "candidates": 4094575,
+  "skipped": 0,
+  "inconsistentWithIsomorph": 0,
+  "simpleFits": 628926,
+  "approximatedPatterns": 4274
+ },
+ "evidence": {
+  "note": "log10 sum over the listed candidates of 10^lm * L_H(P); comparable between hypotheses on the same list (same normalisation)",
+  "simple": -7.931279890100634,
+  "homophonicSmallS": -9.732480485190058,
+  "homophonicZodiacSize": -11.69945620389058,
+  "homophonicMixture": -9.991672031007115,
+  "perRegime": {
+   "z408p12": -10.073828537770828,
+   "z340": -10.07915808727366,
+   "z408p3": -9.859794643394011
+  },
+  "lmOnly": -7.282147898791539
+ },
+ "concentration": {
+  "lm": {
+   "top1": 0.134,
+   "top10": 0.3965,
+   "top100": 0.7094,
+   "effectiveN": 33.7
+  },
+  "post": {
+   "top1": 0.1172,
+   "top10": 0.4671,
+   "top100": 0.7486,
+   "effectiveN": 29.4
+  },
+  "postComb": {
+   "top1": 0.2957,
+   "top10": 0.7141,
+   "top100": 0.9045,
+   "effectiveN": 7.4
+  }
+ },
+ "lmTopMoves": [
+  {
+   "k": 10,
+   "meanLog10RankChange": 0.263,
+   "stillInTopK": 6
+  },
+  {
+   "k": 100,
+   "meanLog10RankChange": 0.447,
+   "stillInTopK": 43
+  },
+  {
+   "k": 1000,
+   "meanLog10RankChange": 0.434,
+   "stillInTopK": 485
+  }
+ ],
+ "letterPosterior": {
+  "lm": [
+   {
+    "position": 4,
+    "symbol": "0",
+    "letters": {
+     "E": 0.3698,
+     "T": 0.2463,
+     "A": 0.1989,
+     "I": 0.0688,
+     "O": 0.0612,
+     "S": 0.0204,
+     "R": 0.0191,
+     "N": 0.0077
+    }
+   },
+   {
+    "position": 8,
+    "symbol": "0",
+    "letters": {
+     "E": 0.3698,
+     "T": 0.2463,
+     "A": 0.1989,
+     "I": 0.0688,
+     "O": 0.0612,
+     "S": 0.0204,
+     "R": 0.0191,
+     "N": 0.0077
+    }
+   }
+  ],
+  "post": [
+   {
+    "position": 4,
+    "symbol": "0",
+    "letters": {
+     "T": 0.3661,
+     "E": 0.2039,
+     "A": 0.1819,
+     "I": 0.0787,
+     "O": 0.066,
+     "S": 0.0218,
+     "P": 0.0182,
+     "R": 0.0166,
+     "N": 0.0164,
+     "B": 0.0135,
+     "M": 0.007
+    }
+   },
+   {
+    "position": 8,
+    "symbol": "0",
+    "letters": {
+     "T": 0.3661,
+     "E": 0.2039,
+     "A": 0.1819,
+     "I": 0.0787,
+     "O": 0.066,
+     "S": 0.0218,
+     "P": 0.0182,
+     "R": 0.0166,
+     "N": 0.0164,
+     "B": 0.0135,
+     "M": 0.007
+    }
+   }
+  ],
+  "postComb": [
+   {
+    "position": 4,
+    "symbol": "0",
+    "letters": {
+     "T": 0.4688,
+     "A": 0.2807,
+     "E": 0.1479,
+     "O": 0.0699,
+     "I": 0.0137,
+     "S": 0.0087
+    }
+   },
+   {
+    "position": 8,
+    "symbol": "0",
+    "letters": {
+     "T": 0.4688,
+     "A": 0.2807,
+     "E": 0.1479,
+     "O": 0.0699,
+     "I": 0.0137,
+     "S": 0.0087
+    }
+   }
+  ]
+ },
+ "topLM": [
+  {
+   "plaintext": "STATESELEGANT",
+   "words": "STATES ELEGANT",
+   "lm": -8.155,
+   "logL": -2.768,
+   "logLzodiacSize": -4.797,
+   "logLperRegime": {
+    "z408p12": -2.79,
+    "z340": -2.845,
+    "z408p3": -2.684
+   },
+   "simpleFit": false,
+   "post": -10.923,
+   "postComb": -11.224,
+   "rankLM": 1,
+   "rankPost": 1,
+   "rankComb": 57
+  },
+  {
+   "plaintext": "HEALTHTOTRADE",
+   "words": "HEALTH TO TRADE",
+   "lm": -8.457,
+   "logL": -2.755,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.941,
+    "z340": -2.903,
+    "z408p3": -2.54
+   },
+   "simpleFit": true,
+   "post": -11.212,
+   "postComb": -8.758,
+   "rankLM": 2,
+   "rankPost": 3,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "THEDATABASEOH",
+   "words": "THE DATABASE OH",
+   "lm": -8.662,
+   "logL": -2.734,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.938,
+    "z340": -2.898,
+    "z408p3": -2.506
+   },
+   "simpleFit": true,
+   "post": -11.395,
+   "postComb": -8.962,
+   "rankLM": 3,
+   "rankPost": 5,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "CLINICINITIAL",
+   "words": "CLINIC INITIAL",
+   "lm": -8.709,
+   "logL": -3.043,
+   "logLzodiacSize": -3.885,
+   "logLperRegime": {
+    "z408p12": -5.068,
+    "z340": -2.908,
+    "z408p3": -2.832
+   },
+   "simpleFit": false,
+   "post": -11.753,
+   "postComb": -12.054,
+   "rankLM": 4,
+   "rankPost": 11,
+   "rankComb": 245
+  },
+  {
+   "plaintext": "ARESTATETHEIR",
+   "words": "ARE STATE THEIR",
+   "lm": -8.847,
+   "logL": -2.178,
+   "logLzodiacSize": -4.946,
+   "logLperRegime": {
+    "z408p12": -2.199,
+    "z340": -2.255,
+    "z408p3": -2.097
+   },
+   "simpleFit": false,
+   "post": -11.025,
+   "postComb": -11.326,
+   "rankLM": 5,
+   "rankPost": 2,
+   "rankComb": 67
+  },
+  {
+   "plaintext": "HEALTHTOTRACE",
+   "words": "HEALTH TO TRACE",
+   "lm": -8.954,
+   "logL": -2.755,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.941,
+    "z340": -2.903,
+    "z408p3": -2.54
+   },
+   "simpleFit": true,
+   "post": -11.709,
+   "postComb": -9.255,
+   "rankLM": 6,
+   "rankPost": 9,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "IDENTITYTREND",
+   "words": "IDENTITY TREND",
+   "lm": -9,
+   "logL": -2.947,
+   "logLzodiacSize": -4.957,
+   "logLperRegime": {
+    "z408p12": -3.113,
+    "z340": -3.077,
+    "z408p3": -2.749
+   },
+   "simpleFit": false,
+   "post": -11.947,
+   "postComb": -12.248,
+   "rankLM": 7,
+   "rankPost": 13,
+   "rankComb": 318
+  },
+  {
+   "plaintext": "WHITEWEREWITH",
+   "words": "WHITE WERE WITH",
+   "lm": -9.008,
+   "logL": -4.809,
+   "logLzodiacSize": -5.367,
+   "logLperRegime": {
+    "z408p12": -5.659,
+    "z340": -5.394,
+    "z408p3": -4.394
+   },
+   "simpleFit": false,
+   "post": -13.817,
+   "postComb": -14.118,
+   "rankLM": 8,
+   "rankPost": 446,
+   "rankComb": 4569
+  },
+  {
+   "plaintext": "IDENTITYTOEND",
+   "words": "IDENTITY TO END",
+   "lm": -9.073,
+   "logL": -2.947,
+   "logLzodiacSize": -4.957,
+   "logLperRegime": {
+    "z408p12": -3.113,
+    "z340": -3.077,
+    "z408p3": -2.749
+   },
+   "simpleFit": false,
+   "post": -12.019,
+   "postComb": -12.321,
+   "rankLM": 9,
+   "rankPost": 15,
+   "rankComb": 350
+  },
+  {
+   "plaintext": "ISNOTITSTANDS",
+   "words": "IS NOT IT STANDS",
+   "lm": -9.136,
+   "logL": -2.374,
+   "logLzodiacSize": -4.575,
+   "logLperRegime": {
+    "z408p12": -2.367,
+    "z340": -2.423,
+    "z408p3": -2.338
+   },
+   "simpleFit": false,
+   "post": -11.51,
+   "postComb": -11.811,
+   "rankLM": 10,
+   "rankPost": 6,
+   "rankComb": 168
+  },
+  {
+   "plaintext": "DEADADATABASE",
+   "words": "DEAD A DATABASE",
+   "lm": -9.175,
+   "logL": -4.009,
+   "logLzodiacSize": -4.186,
+   "logLperRegime": {
+    "z408p12": -6.684,
+    "z340": -4.5,
+    "z408p3": -3.582
+   },
+   "simpleFit": false,
+   "post": -13.185,
+   "postComb": -13.486,
+   "rankLM": 11,
+   "rankPost": 142,
+   "rankComb": 1950
+  },
+  {
+   "plaintext": "ALICIAINITIAL",
+   "words": "ALICIA INITIAL",
+   "lm": -9.222,
+   "logL": -4.031,
+   "logLzodiacSize": -4.569,
+   "logLperRegime": {
+    "z408p12": -6.921,
+    "z340": -4.5,
+    "z408p3": -3.607
+   },
+   "simpleFit": false,
+   "post": -13.253,
+   "postComb": -13.554,
+   "rankLM": 12,
+   "rankPost": 164,
+   "rankComb": 2173
+  },
+  {
+   "plaintext": "GETTOGOFORTHE",
+   "words": "GET TO GO FOR THE",
+   "lm": -9.274,
+   "logL": -2.37,
+   "logLzodiacSize": -4.111,
+   "logLperRegime": {
+    "z408p12": -2.53,
+    "z340": -2.547,
+    "z408p3": -2.155
+   },
+   "simpleFit": false,
+   "post": -11.644,
+   "postComb": -11.945,
+   "rankLM": 13,
+   "rankPost": 7,
+   "rankComb": 210
+  },
+  {
+   "plaintext": "WHILEWEREWITH",
+   "words": "WHILE WERE WITH",
+   "lm": -9.276,
+   "logL": -4.621,
+   "logLzodiacSize": -5.31,
+   "logLperRegime": {
+    "z408p12": -5.472,
+    "z340": -5.204,
+    "z408p3": -4.206
+   },
+   "simpleFit": false,
+   "post": -13.897,
+   "postComb": -14.198,
+   "rankLM": 14,
+   "rankPost": 512,
+   "rankComb": 5067
+  },
+  {
+   "plaintext": "DEALADATABASE",
+   "words": "DEAL A DATABASE",
+   "lm": -9.318,
+   "logL": -3.834,
+   "logLzodiacSize": -4.678,
+   "logLperRegime": {
+    "z408p12": -6.275,
+    "z340": -4.025,
+    "z408p3": -3.463
+   },
+   "simpleFit": false,
+   "post": -13.152,
+   "postComb": -13.453,
+   "rankLM": 15,
+   "rankPost": 136,
+   "rankComb": 1861
+  },
+  {
+   "plaintext": "WEAREWEREMADE",
+   "words": "WE ARE WERE MADE",
+   "lm": -9.332,
+   "logL": -3.788,
+   "logLzodiacSize": -4.423,
+   "logLperRegime": {
+    "z408p12": -5.979,
+    "z340": -3.868,
+    "z408p3": -3.454
+   },
+   "simpleFit": false,
+   "post": -13.121,
+   "postComb": -13.422,
+   "rankLM": 16,
+   "rankPost": 126,
+   "rankComb": 1789
+  },
+  {
+   "plaintext": "WHOWEWEREBOTH",
+   "words": "WHO WE WERE BOTH",
+   "lm": -9.411,
+   "logL": -3.635,
+   "logLzodiacSize": -4.499,
+   "logLperRegime": {
+    "z408p12": -3.691,
+    "z340": -3.747,
+    "z408p3": -3.504
+   },
+   "simpleFit": false,
+   "post": -13.045,
+   "postComb": -13.346,
+   "rankLM": 17,
+   "rankPost": 110,
+   "rankComb": 1603
+  },
+  {
+   "plaintext": "OFERRORFREEOF",
+   "words": "OF ERROR FREE OF",
+   "lm": -9.411,
+   "logL": -4.842,
+   "logLzodiacSize": -4.699,
+   "logLperRegime": {
+    "z408p12": -7.896,
+    "z340": -6.008,
+    "z408p3": -4.375
+   },
+   "simpleFit": false,
+   "post": -14.253,
+   "postComb": -14.554,
+   "rankLM": 18,
+   "rankPost": 933,
+   "rankComb": 7987
+  },
+  {
+   "plaintext": "LEAVELEVERAGE",
+   "words": "LEAVE LEVERAGE",
+   "lm": -9.42,
+   "logL": -4.818,
+   "logLzodiacSize": -5.881,
+   "logLperRegime": {
+    "z408p12": -6.924,
+    "z340": -4.787,
+    "z408p3": -4.535
+   },
+   "simpleFit": false,
+   "post": -14.238,
+   "postComb": -14.539,
+   "rankLM": 19,
+   "rankPost": 912,
+   "rankComb": 7836
+  },
+  {
+   "plaintext": "NOTHENEWESTTO",
+   "words": "NO THE NEWEST TO",
+   "lm": -9.443,
+   "logL": -3.871,
+   "logLzodiacSize": -5.047,
+   "logLperRegime": {
+    "z408p12": -4.686,
+    "z340": -4.418,
+    "z408p3": -3.462
+   },
+   "simpleFit": false,
+   "post": -13.314,
+   "postComb": -13.615,
+   "rankLM": 20,
+   "rankPost": 184,
+   "rankComb": 2351
+  },
+  {
+   "plaintext": "THEDATABASEAH",
+   "words": "THE DATABASE AH",
+   "lm": -9.444,
+   "logL": -4.569,
+   "logLzodiacSize": -5.096,
+   "logLperRegime": {
+    "z408p12": -6.849,
+    "z340": -6.271,
+    "z408p3": -4.096
+   },
+   "simpleFit": false,
+   "post": -14.014,
+   "postComb": -14.315,
+   "rankLM": 21,
+   "rankPost": 621,
+   "rankComb": 5890
+  },
+  {
+   "plaintext": "WEBWEWEREABLE",
+   "words": "WEB WE WERE ABLE",
+   "lm": -9.475,
+   "logL": -3.693,
+   "logLzodiacSize": -3.709,
+   "logLperRegime": {
+    "z408p12": -5.757,
+    "z340": -4.084,
+    "z408p3": -3.281
+   },
+   "simpleFit": false,
+   "post": -13.169,
+   "postComb": -13.47,
+   "rankLM": 22,
+   "rankPost": 140,
+   "rankComb": 1909
+  },
+  {
+   "plaintext": "DEANADATABASE",
+   "words": "DEAN A DATABASE",
+   "lm": -9.482,
+   "logL": -3.834,
+   "logLzodiacSize": -4.678,
+   "logLperRegime": {
+    "z408p12": -6.275,
+    "z340": -4.025,
+    "z408p3": -3.463
+   },
+   "simpleFit": false,
+   "post": -13.316,
+   "postComb": -13.617,
+   "rankLM": 23,
+   "rankPost": 185,
+   "rankComb": 2360
+  },
+  {
+   "plaintext": "HEALTHTOTEASE",
+   "words": "HEALTH TO TEASE",
+   "lm": -9.483,
+   "logL": -2.224,
+   "logLzodiacSize": -4.954,
+   "logLperRegime": {
+    "z408p12": -2.247,
+    "z340": -2.302,
+    "z408p3": -2.14
+   },
+   "simpleFit": false,
+   "post": -11.707,
+   "postComb": -12.008,
+   "rankLM": 24,
+   "rankPost": 8,
+   "rankComb": 229
+  },
+  {
+   "plaintext": "DEARADATABASE",
+   "words": "DEAR A DATABASE",
+   "lm": -9.493,
+   "logL": -3.834,
+   "logLzodiacSize": -4.678,
+   "logLperRegime": {
+    "z408p12": -6.275,
+    "z340": -4.025,
+    "z408p3": -3.463
+   },
+   "simpleFit": false,
+   "post": -13.327,
+   "postComb": -13.628,
+   "rankLM": 25,
+   "rankPost": 188,
+   "rankComb": 2395
+  },
+  {
+   "plaintext": "SKIRTSTOTHINK",
+   "words": "SKIRTS TO THINK",
+   "lm": -9.509,
+   "logL": -1.804,
+   "logLzodiacSize": -4.116,
+   "logLperRegime": {
+    "z408p12": -1.84,
+    "z340": -1.834,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -11.312,
+   "postComb": -9.803,
+   "rankLM": 26,
+   "rankPost": 4,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "WHOLEWEREBOTH",
+   "words": "WHOLE WERE BOTH",
+   "lm": -9.57,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.018,
+   "postComb": -9.87,
+   "rankLM": 27,
+   "rankPost": 14,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "WHITEWEREHIGH",
+   "words": "WHITE WERE HIGH",
+   "lm": -9.58,
+   "logL": -2.676,
+   "logLzodiacSize": -3.965,
+   "logLperRegime": {
+    "z408p12": -2.716,
+    "z340": -2.773,
+    "z408p3": -2.566
+   },
+   "simpleFit": false,
+   "post": -12.256,
+   "postComb": -12.557,
+   "rankLM": 28,
+   "rankPost": 24,
+   "rankComb": 494
+  },
+  {
+   "plaintext": "ANESTATETHEIN",
+   "words": "AN ESTATE THE IN",
+   "lm": -9.598,
+   "logL": -2.249,
+   "logLzodiacSize": -4.955,
+   "logLperRegime": {
+    "z408p12": -2.273,
+    "z340": -2.328,
+    "z408p3": -2.163
+   },
+   "simpleFit": false,
+   "post": -11.847,
+   "postComb": -12.148,
+   "rankLM": 29,
+   "rankPost": 12,
+   "rankComb": 276
+  },
+  {
+   "plaintext": "RATHEREVENTSA",
+   "words": "RATHER EVENTS A",
+   "lm": -9.599,
+   "logL": -2.833,
+   "logLzodiacSize": -4.976,
+   "logLperRegime": {
+    "z408p12": -2.926,
+    "z340": -2.913,
+    "z408p3": -2.7
+   },
+   "simpleFit": true,
+   "post": -12.432,
+   "postComb": -9.899,
+   "rankLM": 30,
+   "rankPost": 34,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "STAGESELEGANT",
+   "words": "STAGES ELEGANT",
+   "lm": -9.619,
+   "logL": -3.985,
+   "logLzodiacSize": -5.369,
+   "logLperRegime": {
+    "z408p12": -4.069,
+    "z340": -4.058,
+    "z408p3": -3.861
+   },
+   "simpleFit": false,
+   "post": -13.604,
+   "postComb": -13.905,
+   "rankLM": 31,
+   "rankPost": 288,
+   "rankComb": 3482
+  },
+  {
+   "plaintext": "LETMELEVELTHE",
+   "words": "LET ME LEVEL THE",
+   "lm": -9.625,
+   "logL": -4.941,
+   "logLzodiacSize": -5.088,
+   "logLperRegime": {
+    "z408p12": -8.289,
+    "z340": -5.918,
+    "z408p3": -4.48
+   },
+   "simpleFit": false,
+   "post": -14.567,
+   "postComb": -14.868,
+   "rankLM": 32,
+   "rankPost": 1537,
+   "rankComb": 11722
+  },
+  {
+   "plaintext": "LETCOLOROFTHE",
+   "words": "LET COLOR OF THE",
+   "lm": -9.634,
+   "logL": -2.565,
+   "logLzodiacSize": -4.843,
+   "logLperRegime": {
+    "z408p12": -2.771,
+    "z340": -2.73,
+    "z408p3": -2.335
+   },
+   "simpleFit": true,
+   "post": -12.198,
+   "postComb": -9.934,
+   "rankLM": 33,
+   "rankPost": 22,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "MEINAMAGAZINE",
+   "words": "ME IN A MAGAZINE",
+   "lm": -9.651,
+   "logL": -2.74,
+   "logLzodiacSize": -4.43,
+   "logLperRegime": {
+    "z408p12": -2.924,
+    "z340": -2.883,
+    "z408p3": -2.528
+   },
+   "simpleFit": false,
+   "post": -12.391,
+   "postComb": -12.692,
+   "rankLM": 34,
+   "rankPost": 31,
+   "rankComb": 609
+  },
+  {
+   "plaintext": "SETVISITINTHE",
+   "words": "SET VISIT IN THE",
+   "lm": -9.661,
+   "logL": -2.472,
+   "logLzodiacSize": -4.789,
+   "logLperRegime": {
+    "z408p12": -2.625,
+    "z340": -2.643,
+    "z408p3": -2.262
+   },
+   "simpleFit": false,
+   "post": -12.133,
+   "postComb": -12.434,
+   "rankLM": 35,
+   "rankPost": 17,
+   "rankComb": 410
+  },
+  {
+   "plaintext": "WHOSEWEREBOTH",
+   "words": "WHOSE WERE BOTH",
+   "lm": -9.685,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.133,
+   "postComb": -9.985,
+   "rankLM": 36,
+   "rankPost": 18,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "IDENTITYTHEAD",
+   "words": "IDENTITY THE AD",
+   "lm": -9.696,
+   "logL": -2.551,
+   "logLzodiacSize": -4.9,
+   "logLperRegime": {
+    "z408p12": -2.726,
+    "z340": -2.689,
+    "z408p3": -2.346
+   },
+   "simpleFit": true,
+   "post": -12.247,
+   "postComb": -9.996,
+   "rankLM": 37,
+   "rankPost": 23,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "LEASELEVERAGE",
+   "words": "LEASE LEVERAGE",
+   "lm": -9.702,
+   "logL": -3.478,
+   "logLzodiacSize": -4.852,
+   "logLperRegime": {
+    "z408p12": -5.595,
+    "z340": -3.451,
+    "z408p3": -3.194
+   },
+   "simpleFit": false,
+   "post": -13.18,
+   "postComb": -13.481,
+   "rankLM": 38,
+   "rankPost": 141,
+   "rankComb": 1940
+  },
+  {
+   "plaintext": "NETHONOROFTHE",
+   "words": "NET HONOR OF THE",
+   "lm": -9.73,
+   "logL": -3.145,
+   "logLzodiacSize": -5.041,
+   "logLperRegime": {
+    "z408p12": -3.344,
+    "z340": -3.305,
+    "z408p3": -2.92
+   },
+   "simpleFit": false,
+   "post": -12.874,
+   "postComb": -13.175,
+   "rankLM": 39,
+   "rankPost": 79,
+   "rankComb": 1260
+  },
+  {
+   "plaintext": "RATHERELECTRA",
+   "words": "RATHER ELECTRA",
+   "lm": -9.736,
+   "logL": -4.374,
+   "logLzodiacSize": -5.05,
+   "logLperRegime": {
+    "z408p12": -5.286,
+    "z340": -5.012,
+    "z408p3": -3.951
+   },
+   "simpleFit": false,
+   "post": -14.11,
+   "postComb": -14.411,
+   "rankLM": 40,
+   "rankPost": 744,
+   "rankComb": 6683
+  },
+  {
+   "plaintext": "THEDATABASEEH",
+   "words": "THE DATABASE EH",
+   "lm": -9.748,
+   "logL": -3.217,
+   "logLzodiacSize": -5.046,
+   "logLperRegime": {
+    "z408p12": -4.001,
+    "z340": -3.728,
+    "z408p3": -2.815
+   },
+   "simpleFit": false,
+   "post": -12.965,
+   "postComb": -13.266,
+   "rankLM": 41,
+   "rankPost": 92,
+   "rankComb": 1435
+  },
+  {
+   "plaintext": "NOTIONOFOUTTO",
+   "words": "NOTION OF OUT TO",
+   "lm": -9.75,
+   "logL": -4.309,
+   "logLzodiacSize": -4.791,
+   "logLperRegime": {
+    "z408p12": -7.307,
+    "z340": -4.866,
+    "z408p3": -3.874
+   },
+   "simpleFit": false,
+   "post": -14.059,
+   "postComb": -14.36,
+   "rankLM": 42,
+   "rankPost": 675,
+   "rankComb": 6264
+  },
+  {
+   "plaintext": "THEDATABASEUH",
+   "words": "THE DATABASE UH",
+   "lm": -9.774,
+   "logL": -2.734,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.938,
+    "z340": -2.898,
+    "z408p3": -2.506
+   },
+   "simpleFit": true,
+   "post": -12.507,
+   "postComb": -10.074,
+   "rankLM": 43,
+   "rankPost": 39,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "MEISAMAGAZINE",
+   "words": "ME IS A MAGAZINE",
+   "lm": -9.785,
+   "logL": -2.359,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.543,
+    "z340": -2.504,
+    "z408p3": -2.147
+   },
+   "simpleFit": true,
+   "post": -12.144,
+   "postComb": -10.084,
+   "rankLM": 44,
+   "rankPost": 20,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "READEREYESARE",
+   "words": "READER EYES ARE",
+   "lm": -9.818,
+   "logL": -4.725,
+   "logLzodiacSize": -5.064,
+   "logLperRegime": {
+    "z408p12": -7.92,
+    "z340": -5.553,
+    "z408p3": -4.27
+   },
+   "simpleFit": false,
+   "post": -14.544,
+   "postComb": -14.845,
+   "rankLM": 45,
+   "rankPost": 1474,
+   "rankComb": 11384
+  },
+  {
+   "plaintext": "NOTRENEWEDTWO",
+   "words": "NOT RENEWED TWO",
+   "lm": -9.841,
+   "logL": -3.941,
+   "logLzodiacSize": -5.305,
+   "logLperRegime": {
+    "z408p12": -4.024,
+    "z340": -4.014,
+    "z408p3": -3.818
+   },
+   "simpleFit": false,
+   "post": -13.782,
+   "postComb": -14.084,
+   "rankLM": 46,
+   "rankPost": 416,
+   "rankComb": 4365
+  },
+  {
+   "plaintext": "IDENTITYTHEID",
+   "words": "IDENTITY THE ID",
+   "lm": -9.845,
+   "logL": -3.834,
+   "logLzodiacSize": -4.964,
+   "logLperRegime": {
+    "z408p12": -4.877,
+    "z340": -4.572,
+    "z408p3": -3.399
+   },
+   "simpleFit": false,
+   "post": -13.679,
+   "postComb": -13.98,
+   "rankLM": 47,
+   "rankPost": 336,
+   "rankComb": 3815
+  },
+  {
+   "plaintext": "WHILEWEREHIGH",
+   "words": "WHILE WERE HIGH",
+   "lm": -9.847,
+   "logL": -2.676,
+   "logLzodiacSize": -3.965,
+   "logLperRegime": {
+    "z408p12": -2.716,
+    "z340": -2.773,
+    "z408p3": -2.566
+   },
+   "simpleFit": false,
+   "post": -12.523,
+   "postComb": -12.824,
+   "rankLM": 48,
+   "rankPost": 41,
+   "rankComb": 741
+  },
+  {
+   "plaintext": "LETDELETEDTHE",
+   "words": "LET DELETED THE",
+   "lm": -9.85,
+   "logL": -3.87,
+   "logLzodiacSize": -4.729,
+   "logLperRegime": {
+    "z408p12": -5.964,
+    "z340": -3.979,
+    "z408p3": -3.525
+   },
+   "simpleFit": false,
+   "post": -13.721,
+   "postComb": -14.022,
+   "rankLM": 49,
+   "rankPost": 372,
+   "rankComb": 4032
+  },
+  {
+   "plaintext": "WEAREWEBECAME",
+   "words": "WE ARE WE BECAME",
+   "lm": -9.859,
+   "logL": -3.394,
+   "logLzodiacSize": -4.365,
+   "logLperRegime": {
+    "z408p12": -5.532,
+    "z340": -3.395,
+    "z408p3": -3.094
+   },
+   "simpleFit": false,
+   "post": -13.253,
+   "postComb": -13.554,
+   "rankLM": 50,
+   "rankPost": 163,
+   "rankComb": 2172
+  },
+  {
+   "plaintext": "TOEDATABASETO",
+   "words": "TOE DATABASE TO",
+   "lm": -9.866,
+   "logL": -3.724,
+   "logLzodiacSize": -5.048,
+   "logLperRegime": {
+    "z408p12": -4.751,
+    "z340": -4.448,
+    "z408p3": -3.29
+   },
+   "simpleFit": false,
+   "post": -13.59,
+   "postComb": -13.891,
+   "rankLM": 51,
+   "rankPost": 280,
+   "rankComb": 3421
+  },
+  {
+   "plaintext": "HEALTHTITBABE",
+   "words": "HEALTH TIT BABE",
+   "lm": -9.867,
+   "logL": -4.007,
+   "logLzodiacSize": -5.64,
+   "logLperRegime": {
+    "z408p12": -4.175,
+    "z340": -4.141,
+    "z408p3": -3.808
+   },
+   "simpleFit": false,
+   "post": -13.874,
+   "postComb": -14.175,
+   "rankLM": 52,
+   "rankPost": 500,
+   "rankComb": 4919
+  },
+  {
+   "plaintext": "THEDATABASETH",
+   "words": "THE DATABASE TH",
+   "lm": -9.874,
+   "logL": -3.641,
+   "logLzodiacSize": -5.046,
+   "logLperRegime": {
+    "z408p12": -4.662,
+    "z340": -4.358,
+    "z408p3": -3.208
+   },
+   "simpleFit": false,
+   "post": -13.516,
+   "postComb": -13.817,
+   "rankLM": 53,
+   "rankPost": 252,
+   "rankComb": 3081
+  },
+  {
+   "plaintext": "LOANALABAMATO",
+   "words": "LOAN ALABAMA TO",
+   "lm": -9.881,
+   "logL": -3.365,
+   "logLzodiacSize": -4.619,
+   "logLperRegime": {
+    "z408p12": -5.461,
+    "z340": -3.273,
+    "z408p3": -3.12
+   },
+   "simpleFit": false,
+   "post": -13.246,
+   "postComb": -13.547,
+   "rankLM": 54,
+   "rankPost": 160,
+   "rankComb": 2149
+  },
+  {
+   "plaintext": "STORESEVENOUT",
+   "words": "STORES EVEN OUT",
+   "lm": -9.895,
+   "logL": -2.816,
+   "logLzodiacSize": -4.982,
+   "logLperRegime": {
+    "z408p12": -2.906,
+    "z340": -2.893,
+    "z408p3": -2.685
+   },
+   "simpleFit": true,
+   "post": -12.71,
+   "postComb": -10.195,
+   "rankLM": 55,
+   "rankPost": 53,
+   "rankComb": 12
+  },
+  {
+   "plaintext": "WROTEWEREYOUR",
+   "words": "WROTE WERE YOUR",
+   "lm": -9.896,
+   "logL": -2.818,
+   "logLzodiacSize": -3.889,
+   "logLperRegime": {
+    "z408p12": -2.873,
+    "z340": -2.929,
+    "z408p3": -2.689
+   },
+   "simpleFit": false,
+   "post": -12.713,
+   "postComb": -13.014,
+   "rankLM": 56,
+   "rankPost": 55,
+   "rankComb": 979
+  },
+  {
+   "plaintext": "NOTCANADAPTTO",
+   "words": "NOT CAN ADAPT TO",
+   "lm": -9.911,
+   "logL": -3.22,
+   "logLzodiacSize": -5.047,
+   "logLperRegime": {
+    "z408p12": -3.975,
+    "z340": -3.705,
+    "z408p3": -2.823
+   },
+   "simpleFit": false,
+   "post": -13.131,
+   "postComb": -13.432,
+   "rankLM": 57,
+   "rankPost": 131,
+   "rankComb": 1813
+  },
+  {
+   "plaintext": "BEALABAMAHAVE",
+   "words": "BE ALABAMA HAVE",
+   "lm": -9.917,
+   "logL": -3.588,
+   "logLzodiacSize": -3.963,
+   "logLperRegime": {
+    "z408p12": -6.134,
+    "z340": -3.892,
+    "z408p3": -3.19
+   },
+   "simpleFit": false,
+   "post": -13.505,
+   "postComb": -13.806,
+   "rankLM": 58,
+   "rankPost": 246,
+   "rankComb": 3021
+  },
+  {
+   "plaintext": "GETLOGOFORTHE",
+   "words": "GET LOGO FOR THE",
+   "lm": -9.921,
+   "logL": -2.508,
+   "logLzodiacSize": -4.301,
+   "logLperRegime": {
+    "z408p12": -2.719,
+    "z340": -2.678,
+    "z408p3": -2.275
+   },
+   "simpleFit": true,
+   "post": -12.429,
+   "postComb": -10.221,
+   "rankLM": 59,
+   "rankPost": 33,
+   "rankComb": 13
+  },
+  {
+   "plaintext": "NOTIONOFOFTWO",
+   "words": "NOTION OF OF TWO",
+   "lm": -9.924,
+   "logL": -4.749,
+   "logLzodiacSize": -5.137,
+   "logLperRegime": {
+    "z408p12": -7.009,
+    "z340": -4.806,
+    "z408p3": -4.423
+   },
+   "simpleFit": false,
+   "post": -14.673,
+   "postComb": -14.974,
+   "rankLM": 60,
+   "rankPost": 1821,
+   "rankComb": 13386
+  }
+ ],
+ "topPost": [
+  {
+   "plaintext": "STATESELEGANT",
+   "words": "STATES ELEGANT",
+   "lm": -8.155,
+   "logL": -2.768,
+   "logLzodiacSize": -4.797,
+   "logLperRegime": {
+    "z408p12": -2.79,
+    "z340": -2.845,
+    "z408p3": -2.684
+   },
+   "simpleFit": false,
+   "post": -10.923,
+   "postComb": -11.224,
+   "rankLM": 1,
+   "rankPost": 1,
+   "rankComb": 57
+  },
+  {
+   "plaintext": "ARESTATETHEIR",
+   "words": "ARE STATE THEIR",
+   "lm": -8.847,
+   "logL": -2.178,
+   "logLzodiacSize": -4.946,
+   "logLperRegime": {
+    "z408p12": -2.199,
+    "z340": -2.255,
+    "z408p3": -2.097
+   },
+   "simpleFit": false,
+   "post": -11.025,
+   "postComb": -11.326,
+   "rankLM": 5,
+   "rankPost": 2,
+   "rankComb": 67
+  },
+  {
+   "plaintext": "HEALTHTOTRADE",
+   "words": "HEALTH TO TRADE",
+   "lm": -8.457,
+   "logL": -2.755,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.941,
+    "z340": -2.903,
+    "z408p3": -2.54
+   },
+   "simpleFit": true,
+   "post": -11.212,
+   "postComb": -8.758,
+   "rankLM": 2,
+   "rankPost": 3,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "SKIRTSTOTHINK",
+   "words": "SKIRTS TO THINK",
+   "lm": -9.509,
+   "logL": -1.804,
+   "logLzodiacSize": -4.116,
+   "logLperRegime": {
+    "z408p12": -1.84,
+    "z340": -1.834,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -11.312,
+   "postComb": -9.803,
+   "rankLM": 26,
+   "rankPost": 4,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "THEDATABASEOH",
+   "words": "THE DATABASE OH",
+   "lm": -8.662,
+   "logL": -2.734,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.938,
+    "z340": -2.898,
+    "z408p3": -2.506
+   },
+   "simpleFit": true,
+   "post": -11.395,
+   "postComb": -8.962,
+   "rankLM": 3,
+   "rankPost": 5,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "ISNOTITSTANDS",
+   "words": "IS NOT IT STANDS",
+   "lm": -9.136,
+   "logL": -2.374,
+   "logLzodiacSize": -4.575,
+   "logLperRegime": {
+    "z408p12": -2.367,
+    "z340": -2.423,
+    "z408p3": -2.338
+   },
+   "simpleFit": false,
+   "post": -11.51,
+   "postComb": -11.811,
+   "rankLM": 10,
+   "rankPost": 6,
+   "rankComb": 168
+  },
+  {
+   "plaintext": "GETTOGOFORTHE",
+   "words": "GET TO GO FOR THE",
+   "lm": -9.274,
+   "logL": -2.37,
+   "logLzodiacSize": -4.111,
+   "logLperRegime": {
+    "z408p12": -2.53,
+    "z340": -2.547,
+    "z408p3": -2.155
+   },
+   "simpleFit": false,
+   "post": -11.644,
+   "postComb": -11.945,
+   "rankLM": 13,
+   "rankPost": 7,
+   "rankComb": 210
+  },
+  {
+   "plaintext": "HEALTHTOTEASE",
+   "words": "HEALTH TO TEASE",
+   "lm": -9.483,
+   "logL": -2.224,
+   "logLzodiacSize": -4.954,
+   "logLperRegime": {
+    "z408p12": -2.247,
+    "z340": -2.302,
+    "z408p3": -2.14
+   },
+   "simpleFit": false,
+   "post": -11.707,
+   "postComb": -12.008,
+   "rankLM": 24,
+   "rankPost": 8,
+   "rankComb": 229
+  },
+  {
+   "plaintext": "HEALTHTOTRACE",
+   "words": "HEALTH TO TRACE",
+   "lm": -8.954,
+   "logL": -2.755,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.941,
+    "z340": -2.903,
+    "z408p3": -2.54
+   },
+   "simpleFit": true,
+   "post": -11.709,
+   "postComb": -9.255,
+   "rankLM": 6,
+   "rankPost": 9,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "VONDIVISIONTO",
+   "words": "VON DIVISION TO",
+   "lm": -10.045,
+   "logL": -1.671,
+   "logLzodiacSize": -3.817,
+   "logLperRegime": {
+    "z408p12": -1.66,
+    "z340": -1.717,
+    "z408p3": -1.64
+   },
+   "simpleFit": false,
+   "post": -11.716,
+   "postComb": -12.017,
+   "rankLM": 78,
+   "rankPost": 10,
+   "rankComb": 232
+  },
+  {
+   "plaintext": "CLINICINITIAL",
+   "words": "CLINIC INITIAL",
+   "lm": -8.709,
+   "logL": -3.043,
+   "logLzodiacSize": -3.885,
+   "logLperRegime": {
+    "z408p12": -5.068,
+    "z340": -2.908,
+    "z408p3": -2.832
+   },
+   "simpleFit": false,
+   "post": -11.753,
+   "postComb": -12.054,
+   "rankLM": 4,
+   "rankPost": 11,
+   "rankComb": 245
+  },
+  {
+   "plaintext": "ANESTATETHEIN",
+   "words": "AN ESTATE THE IN",
+   "lm": -9.598,
+   "logL": -2.249,
+   "logLzodiacSize": -4.955,
+   "logLperRegime": {
+    "z408p12": -2.273,
+    "z340": -2.328,
+    "z408p3": -2.163
+   },
+   "simpleFit": false,
+   "post": -11.847,
+   "postComb": -12.148,
+   "rankLM": 29,
+   "rankPost": 12,
+   "rankComb": 276
+  },
+  {
+   "plaintext": "IDENTITYTREND",
+   "words": "IDENTITY TREND",
+   "lm": -9,
+   "logL": -2.947,
+   "logLzodiacSize": -4.957,
+   "logLperRegime": {
+    "z408p12": -3.113,
+    "z340": -3.077,
+    "z408p3": -2.749
+   },
+   "simpleFit": false,
+   "post": -11.947,
+   "postComb": -12.248,
+   "rankLM": 7,
+   "rankPost": 13,
+   "rankComb": 318
+  },
+  {
+   "plaintext": "WHOLEWEREBOTH",
+   "words": "WHOLE WERE BOTH",
+   "lm": -9.57,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.018,
+   "postComb": -9.87,
+   "rankLM": 27,
+   "rankPost": 14,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "IDENTITYTOEND",
+   "words": "IDENTITY TO END",
+   "lm": -9.073,
+   "logL": -2.947,
+   "logLzodiacSize": -4.957,
+   "logLperRegime": {
+    "z408p12": -3.113,
+    "z340": -3.077,
+    "z408p3": -2.749
+   },
+   "simpleFit": false,
+   "post": -12.019,
+   "postComb": -12.321,
+   "rankLM": 9,
+   "rankPost": 15,
+   "rankComb": 350
+  },
+  {
+   "plaintext": "NONCANADAINTO",
+   "words": "NON CANADA INTO",
+   "lm": -10.036,
+   "logL": -2.003,
+   "logLzodiacSize": -4.169,
+   "logLperRegime": {
+    "z408p12": -1.951,
+    "z340": -2.069,
+    "z408p3": -1.996
+   },
+   "simpleFit": false,
+   "post": -12.039,
+   "postComb": -12.34,
+   "rankLM": 77,
+   "rankPost": 16,
+   "rankComb": 359
+  },
+  {
+   "plaintext": "SETVISITINTHE",
+   "words": "SET VISIT IN THE",
+   "lm": -9.661,
+   "logL": -2.472,
+   "logLzodiacSize": -4.789,
+   "logLperRegime": {
+    "z408p12": -2.625,
+    "z340": -2.643,
+    "z408p3": -2.262
+   },
+   "simpleFit": false,
+   "post": -12.133,
+   "postComb": -12.434,
+   "rankLM": 35,
+   "rankPost": 17,
+   "rankComb": 410
+  },
+  {
+   "plaintext": "WHOSEWEREBOTH",
+   "words": "WHOSE WERE BOTH",
+   "lm": -9.685,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.133,
+   "postComb": -9.985,
+   "rankLM": 36,
+   "rankPost": 18,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "NONCANADAINFO",
+   "words": "NON CANADA INFO",
+   "lm": -10.138,
+   "logL": -2.003,
+   "logLzodiacSize": -4.169,
+   "logLperRegime": {
+    "z408p12": -1.951,
+    "z340": -2.069,
+    "z408p3": -1.996
+   },
+   "simpleFit": false,
+   "post": -12.14,
+   "postComb": -12.441,
+   "rankLM": 93,
+   "rankPost": 19,
+   "rankComb": 416
+  },
+  {
+   "plaintext": "MEISAMAGAZINE",
+   "words": "ME IS A MAGAZINE",
+   "lm": -9.785,
+   "logL": -2.359,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.543,
+    "z340": -2.504,
+    "z408p3": -2.147
+   },
+   "simpleFit": true,
+   "post": -12.144,
+   "postComb": -10.084,
+   "rankLM": 44,
+   "rankPost": 20,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "ANESTATETHEON",
+   "words": "AN ESTATE THE ON",
+   "lm": -9.938,
+   "logL": -2.249,
+   "logLzodiacSize": -4.955,
+   "logLperRegime": {
+    "z408p12": -2.273,
+    "z340": -2.328,
+    "z408p3": -2.163
+   },
+   "simpleFit": false,
+   "post": -12.187,
+   "postComb": -12.488,
+   "rankLM": 64,
+   "rankPost": 21,
+   "rankComb": 440
+  },
+  {
+   "plaintext": "LETCOLOROFTHE",
+   "words": "LET COLOR OF THE",
+   "lm": -9.634,
+   "logL": -2.565,
+   "logLzodiacSize": -4.843,
+   "logLperRegime": {
+    "z408p12": -2.771,
+    "z340": -2.73,
+    "z408p3": -2.335
+   },
+   "simpleFit": true,
+   "post": -12.198,
+   "postComb": -9.934,
+   "rankLM": 33,
+   "rankPost": 22,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "IDENTITYTHEAD",
+   "words": "IDENTITY THE AD",
+   "lm": -9.696,
+   "logL": -2.551,
+   "logLzodiacSize": -4.9,
+   "logLperRegime": {
+    "z408p12": -2.726,
+    "z340": -2.689,
+    "z408p3": -2.346
+   },
+   "simpleFit": true,
+   "post": -12.247,
+   "postComb": -9.996,
+   "rankLM": 37,
+   "rankPost": 23,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "WHITEWEREHIGH",
+   "words": "WHITE WERE HIGH",
+   "lm": -9.58,
+   "logL": -2.676,
+   "logLzodiacSize": -3.965,
+   "logLperRegime": {
+    "z408p12": -2.716,
+    "z340": -2.773,
+    "z408p3": -2.566
+   },
+   "simpleFit": false,
+   "post": -12.256,
+   "postComb": -12.557,
+   "rankLM": 28,
+   "rankPost": 24,
+   "rankComb": 494
+  },
+  {
+   "plaintext": "MOREPMPAPERTO",
+   "words": "MORE PM PAPER TO",
+   "lm": -10.964,
+   "logL": -1.348,
+   "logLzodiacSize": -2.768,
+   "logLperRegime": {
+    "z408p12": -1.396,
+    "z340": -1.387,
+    "z408p3": -1.271
+   },
+   "simpleFit": false,
+   "post": -12.311,
+   "postComb": -12.612,
+   "rankLM": 366,
+   "rankPost": 25,
+   "rankComb": 539
+  },
+  {
+   "plaintext": "REPAIRISIMPLE",
+   "words": "REPAIR I SIMPLE",
+   "lm": -10.175,
+   "logL": -2.137,
+   "logLzodiacSize": -4.183,
+   "logLperRegime": {
+    "z408p12": -2.338,
+    "z340": -2.292,
+    "z408p3": -1.914
+   },
+   "simpleFit": true,
+   "post": -12.312,
+   "postComb": -10.473,
+   "rankLM": 102,
+   "rankPost": 26,
+   "rankComb": 19
+  },
+  {
+   "plaintext": "OSCARORPRICES",
+   "words": "OSCAR OR PRICES",
+   "lm": -10.789,
+   "logL": -1.528,
+   "logLzodiacSize": -4.26,
+   "logLperRegime": {
+    "z408p12": -1.575,
+    "z340": -1.566,
+    "z408p3": -1.453
+   },
+   "simpleFit": true,
+   "post": -12.317,
+   "postComb": -11.078,
+   "rankLM": 265,
+   "rankPost": 27,
+   "rankComb": 46
+  },
+  {
+   "plaintext": "DESTODONOTSEE",
+   "words": "DES TO DO NOT SEE",
+   "lm": -10.369,
+   "logL": -1.966,
+   "logLzodiacSize": -4.919,
+   "logLperRegime": {
+    "z408p12": -1.964,
+    "z340": -2.027,
+    "z408p3": -1.914
+   },
+   "simpleFit": false,
+   "post": -12.334,
+   "postComb": -12.635,
+   "rankLM": 133,
+   "rankPost": 28,
+   "rankComb": 559
+  },
+  {
+   "plaintext": "ARESTATETHEOR",
+   "words": "ARE STATE THE OR",
+   "lm": -10.165,
+   "logL": -2.178,
+   "logLzodiacSize": -4.946,
+   "logLperRegime": {
+    "z408p12": -2.199,
+    "z340": -2.255,
+    "z408p3": -2.097
+   },
+   "simpleFit": false,
+   "post": -12.344,
+   "postComb": -12.645,
+   "rankLM": 98,
+   "rankPost": 29,
+   "rankComb": 565
+  },
+  {
+   "plaintext": "CODEACARAUDIO",
+   "words": "CODE A CAR AUDIO",
+   "lm": -10.725,
+   "logL": -1.657,
+   "logLzodiacSize": -4.251,
+   "logLperRegime": {
+    "z408p12": -1.695,
+    "z340": -1.688,
+    "z408p3": -1.596
+   },
+   "simpleFit": true,
+   "post": -12.383,
+   "postComb": -11.017,
+   "rankLM": 227,
+   "rankPost": 30,
+   "rankComb": 43
+  },
+  {
+   "plaintext": "MEINAMAGAZINE",
+   "words": "ME IN A MAGAZINE",
+   "lm": -9.651,
+   "logL": -2.74,
+   "logLzodiacSize": -4.43,
+   "logLperRegime": {
+    "z408p12": -2.924,
+    "z340": -2.883,
+    "z408p3": -2.528
+   },
+   "simpleFit": false,
+   "post": -12.391,
+   "postComb": -12.692,
+   "rankLM": 34,
+   "rankPost": 31,
+   "rankComb": 609
+  },
+  {
+   "plaintext": "FROMAFATALOUR",
+   "words": "FROM A FATAL OUR",
+   "lm": -10.674,
+   "logL": -1.72,
+   "logLzodiacSize": -4.282,
+   "logLperRegime": {
+    "z408p12": -1.76,
+    "z340": -1.753,
+    "z408p3": -1.655
+   },
+   "simpleFit": true,
+   "post": -12.394,
+   "postComb": -10.967,
+   "rankLM": 208,
+   "rankPost": 32,
+   "rankComb": 38
+  },
+  {
+   "plaintext": "GETLOGOFORTHE",
+   "words": "GET LOGO FOR THE",
+   "lm": -9.921,
+   "logL": -2.508,
+   "logLzodiacSize": -4.301,
+   "logLperRegime": {
+    "z408p12": -2.719,
+    "z340": -2.678,
+    "z408p3": -2.275
+   },
+   "simpleFit": true,
+   "post": -12.429,
+   "postComb": -10.221,
+   "rankLM": 59,
+   "rankPost": 33,
+   "rankComb": 13
+  },
+  {
+   "plaintext": "RATHEREVENTSA",
+   "words": "RATHER EVENTS A",
+   "lm": -9.599,
+   "logL": -2.833,
+   "logLzodiacSize": -4.976,
+   "logLperRegime": {
+    "z408p12": -2.926,
+    "z340": -2.913,
+    "z408p3": -2.7
+   },
+   "simpleFit": true,
+   "post": -12.432,
+   "postComb": -9.899,
+   "rankLM": 30,
+   "rankPost": 34,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "DRTHEDETECTOR",
+   "words": "DR THE DETECTOR",
+   "lm": -9.937,
+   "logL": -2.504,
+   "logLzodiacSize": -4.699,
+   "logLperRegime": {
+    "z408p12": -2.518,
+    "z340": -2.576,
+    "z408p3": -2.429
+   },
+   "simpleFit": false,
+   "post": -12.441,
+   "postComb": -12.742,
+   "rankLM": 63,
+   "rankPost": 35,
+   "rankComb": 653
+  },
+  {
+   "plaintext": "TOTHATAWAYTOO",
+   "words": "TO THAT A WAY TOO",
+   "lm": -10.573,
+   "logL": -1.879,
+   "logLzodiacSize": -4.214,
+   "logLperRegime": {
+    "z408p12": -1.769,
+    "z340": -1.963,
+    "z408p3": -1.932
+   },
+   "simpleFit": false,
+   "post": -12.452,
+   "postComb": -12.753,
+   "rankLM": 187,
+   "rankPost": 36,
+   "rankComb": 666
+  },
+  {
+   "plaintext": "WHILEWEFETISH",
+   "words": "WHILE WE FETISH",
+   "lm": -10.07,
+   "logL": -2.387,
+   "logLzodiacSize": -4.352,
+   "logLperRegime": {
+    "z408p12": -2.45,
+    "z340": -2.444,
+    "z408p3": -2.288
+   },
+   "simpleFit": true,
+   "post": -12.457,
+   "postComb": -10.369,
+   "rankLM": 80,
+   "rankPost": 37,
+   "rankComb": 16
+  },
+  {
+   "plaintext": "OHIOPOPUPWITH",
+   "words": "OHIO POP UP WITH",
+   "lm": -10.904,
+   "logL": -1.602,
+   "logLzodiacSize": -3.054,
+   "logLperRegime": {
+    "z408p12": -1.623,
+    "z340": -1.676,
+    "z408p3": -1.521
+   },
+   "simpleFit": false,
+   "post": -12.506,
+   "postComb": -12.807,
+   "rankLM": 326,
+   "rankPost": 38,
+   "rankComb": 726
+  },
+  {
+   "plaintext": "THEDATABASEUH",
+   "words": "THE DATABASE UH",
+   "lm": -9.774,
+   "logL": -2.734,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.938,
+    "z340": -2.898,
+    "z408p3": -2.506
+   },
+   "simpleFit": true,
+   "post": -12.507,
+   "postComb": -10.074,
+   "rankLM": 43,
+   "rankPost": 39,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "SONWASAGAINTO",
+   "words": "SON WAS AGAIN TO",
+   "lm": -10.554,
+   "logL": -1.959,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -2.009,
+    "z340": -2,
+    "z408p3": -1.879
+   },
+   "simpleFit": true,
+   "post": -12.513,
+   "postComb": -10.851,
+   "rankLM": 181,
+   "rankPost": 40,
+   "rankComb": 33
+  },
+  {
+   "plaintext": "WHILEWEREHIGH",
+   "words": "WHILE WERE HIGH",
+   "lm": -9.847,
+   "logL": -2.676,
+   "logLzodiacSize": -3.965,
+   "logLperRegime": {
+    "z408p12": -2.716,
+    "z340": -2.773,
+    "z408p3": -2.566
+   },
+   "simpleFit": false,
+   "post": -12.523,
+   "postComb": -12.824,
+   "rankLM": 48,
+   "rankPost": 41,
+   "rankComb": 741
+  },
+  {
+   "plaintext": "IDENTITYTREAD",
+   "words": "IDENTITY TREAD",
+   "lm": -9.974,
+   "logL": -2.551,
+   "logLzodiacSize": -4.9,
+   "logLperRegime": {
+    "z408p12": -2.726,
+    "z340": -2.689,
+    "z408p3": -2.346
+   },
+   "simpleFit": true,
+   "post": -12.525,
+   "postComb": -10.274,
+   "rankLM": 68,
+   "rankPost": 42,
+   "rankComb": 15
+  },
+  {
+   "plaintext": "WOLFEWEREALSO",
+   "words": "WOLFE WERE ALSO",
+   "lm": -10.213,
+   "logL": -2.328,
+   "logLzodiacSize": -4.202,
+   "logLperRegime": {
+    "z408p12": -2.394,
+    "z340": -2.388,
+    "z408p3": -2.223
+   },
+   "simpleFit": true,
+   "post": -12.541,
+   "postComb": -10.512,
+   "rankLM": 107,
+   "rankPost": 43,
+   "rankComb": 20
+  },
+  {
+   "plaintext": "ADAMSASISLAND",
+   "words": "ADAMS AS ISLAND",
+   "lm": -11.135,
+   "logL": -1.41,
+   "logLzodiacSize": -4.238,
+   "logLperRegime": {
+    "z408p12": -1.338,
+    "z340": -1.465,
+    "z408p3": -1.438
+   },
+   "simpleFit": false,
+   "post": -12.545,
+   "postComb": -12.846,
+   "rankLM": 497,
+   "rankPost": 44,
+   "rankComb": 765
+  },
+  {
+   "plaintext": "ADAMBABYBOARD",
+   "words": "ADAM BABY BOARD",
+   "lm": -11.511,
+   "logL": -1.044,
+   "logLzodiacSize": -2.546,
+   "logLperRegime": {
+    "z408p12": -0.982,
+    "z340": -1.117,
+    "z408p3": -1.043
+   },
+   "simpleFit": false,
+   "post": -12.554,
+   "postComb": -12.855,
+   "rankLM": 978,
+   "rankPost": 45,
+   "rankComb": 780
+  },
+  {
+   "plaintext": "CHINACASAWITH",
+   "words": "CHINA CASA WITH",
+   "lm": -10.868,
+   "logL": -1.707,
+   "logLzodiacSize": -4.341,
+   "logLperRegime": {
+    "z408p12": -1.745,
+    "z340": -1.738,
+    "z408p3": -1.646
+   },
+   "simpleFit": true,
+   "post": -12.576,
+   "postComb": -11.161,
+   "rankLM": 308,
+   "rankPost": 46,
+   "rankComb": 51
+  },
+  {
+   "plaintext": "SHAFTSTOTEACH",
+   "words": "SHAFTS TO TEACH",
+   "lm": -10.492,
+   "logL": -2.106,
+   "logLzodiacSize": -4.98,
+   "logLperRegime": {
+    "z408p12": -2.159,
+    "z340": -2.149,
+    "z408p3": -2.023
+   },
+   "simpleFit": true,
+   "post": -12.598,
+   "postComb": -10.789,
+   "rankLM": 166,
+   "rankPost": 47,
+   "rankComb": 31
+  },
+  {
+   "plaintext": "DONNADATAINTO",
+   "words": "DONNA DATA INTO",
+   "lm": -10.365,
+   "logL": -2.245,
+   "logLzodiacSize": -4.603,
+   "logLperRegime": {
+    "z408p12": -2.223,
+    "z340": -2.281,
+    "z408p3": -2.232
+   },
+   "simpleFit": false,
+   "post": -12.61,
+   "postComb": -12.911,
+   "rankLM": 131,
+   "rankPost": 48,
+   "rankComb": 845
+  },
+  {
+   "plaintext": "LETSOLOMONTHE",
+   "words": "LET SOLOMON THE",
+   "lm": -10.083,
+   "logL": -2.565,
+   "logLzodiacSize": -4.843,
+   "logLperRegime": {
+    "z408p12": -2.771,
+    "z340": -2.73,
+    "z408p3": -2.335
+   },
+   "simpleFit": true,
+   "post": -12.647,
+   "postComb": -10.382,
+   "rankLM": 83,
+   "rankPost": 49,
+   "rankComb": 17
+  },
+  {
+   "plaintext": "ASASTATETEAMS",
+   "words": "AS A STATE TEAMS",
+   "lm": -10.448,
+   "logL": -2.218,
+   "logLzodiacSize": -4.004,
+   "logLperRegime": {
+    "z408p12": -2.101,
+    "z340": -2.295,
+    "z408p3": -2.287
+   },
+   "simpleFit": false,
+   "post": -12.666,
+   "postComb": -12.967,
+   "rankLM": 154,
+   "rankPost": 50,
+   "rankComb": 907
+  },
+  {
+   "plaintext": "MEDIAMAPANDWE",
+   "words": "MEDIA MAP AND WE",
+   "lm": -10.479,
+   "logL": -2.226,
+   "logLzodiacSize": -4.281,
+   "logLperRegime": {
+    "z408p12": -2.412,
+    "z340": -2.37,
+    "z408p3": -2.013
+   },
+   "simpleFit": true,
+   "post": -12.704,
+   "postComb": -10.777,
+   "rankLM": 160,
+   "rankPost": 51,
+   "rankComb": 28
+  },
+  {
+   "plaintext": "MEDIAMAYANDWE",
+   "words": "MEDIA MAY AND WE",
+   "lm": -10.482,
+   "logL": -2.226,
+   "logLzodiacSize": -4.281,
+   "logLperRegime": {
+    "z408p12": -2.412,
+    "z340": -2.37,
+    "z408p3": -2.013
+   },
+   "simpleFit": true,
+   "post": -12.708,
+   "postComb": -10.781,
+   "rankLM": 161,
+   "rankPost": 52,
+   "rankComb": 29
+  },
+  {
+   "plaintext": "STORESEVENOUT",
+   "words": "STORES EVEN OUT",
+   "lm": -9.895,
+   "logL": -2.816,
+   "logLzodiacSize": -4.982,
+   "logLperRegime": {
+    "z408p12": -2.906,
+    "z340": -2.893,
+    "z408p3": -2.685
+   },
+   "simpleFit": true,
+   "post": -12.71,
+   "postComb": -10.195,
+   "rankLM": 55,
+   "rankPost": 53,
+   "rankComb": 12
+  },
+  {
+   "plaintext": "MEIFAMAGAZINE",
+   "words": "ME IF A MAGAZINE",
+   "lm": -10.353,
+   "logL": -2.359,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.543,
+    "z340": -2.504,
+    "z408p3": -2.147
+   },
+   "simpleFit": true,
+   "post": -12.712,
+   "postComb": -10.653,
+   "rankLM": 128,
+   "rankPost": 54,
+   "rankComb": 23
+  },
+  {
+   "plaintext": "WROTEWEREYOUR",
+   "words": "WROTE WERE YOUR",
+   "lm": -9.896,
+   "logL": -2.818,
+   "logLzodiacSize": -3.889,
+   "logLperRegime": {
+    "z408p12": -2.873,
+    "z340": -2.929,
+    "z408p3": -2.689
+   },
+   "simpleFit": false,
+   "post": -12.713,
+   "postComb": -13.014,
+   "rankLM": 56,
+   "rankPost": 55,
+   "rankComb": 979
+  },
+  {
+   "plaintext": "OWNERORARENEW",
+   "words": "OWNER OR ARE NEW",
+   "lm": -10.656,
+   "logL": -2.059,
+   "logLzodiacSize": -4.47,
+   "logLperRegime": {
+    "z408p12": -2.022,
+    "z340": -2.017,
+    "z408p3": -2.152
+   },
+   "simpleFit": false,
+   "post": -12.715,
+   "postComb": -13.016,
+   "rankLM": 202,
+   "rankPost": 56,
+   "rankComb": 983
+  },
+  {
+   "plaintext": "VANCIVILIANSA",
+   "words": "VAN CIVILIANS A",
+   "lm": -11.074,
+   "logL": -1.646,
+   "logLzodiacSize": -3.855,
+   "logLperRegime": {
+    "z408p12": -1.636,
+    "z340": -1.693,
+    "z408p3": -1.614
+   },
+   "simpleFit": false,
+   "post": -12.721,
+   "postComb": -13.022,
+   "rankLM": 442,
+   "rankPost": 57,
+   "rankComb": 993
+  },
+  {
+   "plaintext": "SAINTSTATEINA",
+   "words": "SAINT STATE IN A",
+   "lm": -10.205,
+   "logL": -2.525,
+   "logLzodiacSize": -4.786,
+   "logLperRegime": {
+    "z408p12": -2.504,
+    "z340": -2.564,
+    "z408p3": -2.509
+   },
+   "simpleFit": false,
+   "post": -12.73,
+   "postComb": -13.031,
+   "rankLM": 105,
+   "rankPost": 58,
+   "rankComb": 1012
+  },
+  {
+   "plaintext": "NONCANADAONTO",
+   "words": "NON CANADA ON TO",
+   "lm": -10.803,
+   "logL": -1.928,
+   "logLzodiacSize": -3.859,
+   "logLperRegime": {
+    "z408p12": -1.822,
+    "z340": -2.011,
+    "z408p3": -1.976
+   },
+   "simpleFit": false,
+   "post": -12.732,
+   "postComb": -13.033,
+   "rankLM": 272,
+   "rankPost": 59,
+   "rankComb": 1015
+  },
+  {
+   "plaintext": "IRWININANSWER",
+   "words": "IRWIN IN ANSWER",
+   "lm": -11.085,
+   "logL": -1.647,
+   "logLzodiacSize": -3.973,
+   "logLperRegime": {
+    "z408p12": -1.626,
+    "z340": -1.685,
+    "z408p3": -1.634
+   },
+   "simpleFit": false,
+   "post": -12.732,
+   "postComb": -13.033,
+   "rankLM": 449,
+   "rankPost": 60,
+   "rankComb": 1016
+  }
+ ],
+ "topComb": [
+  {
+   "plaintext": "HEALTHTOTRADE",
+   "words": "HEALTH TO TRADE",
+   "lm": -8.457,
+   "logL": -2.755,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.941,
+    "z340": -2.903,
+    "z408p3": -2.54
+   },
+   "simpleFit": true,
+   "post": -11.212,
+   "postComb": -8.758,
+   "rankLM": 2,
+   "rankPost": 3,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "THEDATABASEOH",
+   "words": "THE DATABASE OH",
+   "lm": -8.662,
+   "logL": -2.734,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.938,
+    "z340": -2.898,
+    "z408p3": -2.506
+   },
+   "simpleFit": true,
+   "post": -11.395,
+   "postComb": -8.962,
+   "rankLM": 3,
+   "rankPost": 5,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "HEALTHTOTRACE",
+   "words": "HEALTH TO TRACE",
+   "lm": -8.954,
+   "logL": -2.755,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.941,
+    "z340": -2.903,
+    "z408p3": -2.54
+   },
+   "simpleFit": true,
+   "post": -11.709,
+   "postComb": -9.255,
+   "rankLM": 6,
+   "rankPost": 9,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "SKIRTSTOTHINK",
+   "words": "SKIRTS TO THINK",
+   "lm": -9.509,
+   "logL": -1.804,
+   "logLzodiacSize": -4.116,
+   "logLperRegime": {
+    "z408p12": -1.84,
+    "z340": -1.834,
+    "z408p3": -1.743
+   },
+   "simpleFit": true,
+   "post": -11.312,
+   "postComb": -9.803,
+   "rankLM": 26,
+   "rankPost": 4,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "WHOLEWEREBOTH",
+   "words": "WHOLE WERE BOTH",
+   "lm": -9.57,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.018,
+   "postComb": -9.87,
+   "rankLM": 27,
+   "rankPost": 14,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "RATHEREVENTSA",
+   "words": "RATHER EVENTS A",
+   "lm": -9.599,
+   "logL": -2.833,
+   "logLzodiacSize": -4.976,
+   "logLperRegime": {
+    "z408p12": -2.926,
+    "z340": -2.913,
+    "z408p3": -2.7
+   },
+   "simpleFit": true,
+   "post": -12.432,
+   "postComb": -9.899,
+   "rankLM": 30,
+   "rankPost": 34,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "LETCOLOROFTHE",
+   "words": "LET COLOR OF THE",
+   "lm": -9.634,
+   "logL": -2.565,
+   "logLzodiacSize": -4.843,
+   "logLperRegime": {
+    "z408p12": -2.771,
+    "z340": -2.73,
+    "z408p3": -2.335
+   },
+   "simpleFit": true,
+   "post": -12.198,
+   "postComb": -9.934,
+   "rankLM": 33,
+   "rankPost": 22,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "WHOSEWEREBOTH",
+   "words": "WHOSE WERE BOTH",
+   "lm": -9.685,
+   "logL": -2.447,
+   "logLzodiacSize": -4.353,
+   "logLperRegime": {
+    "z408p12": -2.515,
+    "z340": -2.507,
+    "z408p3": -2.343
+   },
+   "simpleFit": true,
+   "post": -12.133,
+   "postComb": -9.985,
+   "rankLM": 36,
+   "rankPost": 18,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "IDENTITYTHEAD",
+   "words": "IDENTITY THE AD",
+   "lm": -9.696,
+   "logL": -2.551,
+   "logLzodiacSize": -4.9,
+   "logLperRegime": {
+    "z408p12": -2.726,
+    "z340": -2.689,
+    "z408p3": -2.346
+   },
+   "simpleFit": true,
+   "post": -12.247,
+   "postComb": -9.996,
+   "rankLM": 37,
+   "rankPost": 23,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "THEDATABASEUH",
+   "words": "THE DATABASE UH",
+   "lm": -9.774,
+   "logL": -2.734,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.938,
+    "z340": -2.898,
+    "z408p3": -2.506
+   },
+   "simpleFit": true,
+   "post": -12.507,
+   "postComb": -10.074,
+   "rankLM": 43,
+   "rankPost": 39,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "MEISAMAGAZINE",
+   "words": "ME IS A MAGAZINE",
+   "lm": -9.785,
+   "logL": -2.359,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.543,
+    "z340": -2.504,
+    "z408p3": -2.147
+   },
+   "simpleFit": true,
+   "post": -12.144,
+   "postComb": -10.084,
+   "rankLM": 44,
+   "rankPost": 20,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "STORESEVENOUT",
+   "words": "STORES EVEN OUT",
+   "lm": -9.895,
+   "logL": -2.816,
+   "logLzodiacSize": -4.982,
+   "logLperRegime": {
+    "z408p12": -2.906,
+    "z340": -2.893,
+    "z408p3": -2.685
+   },
+   "simpleFit": true,
+   "post": -12.71,
+   "postComb": -10.195,
+   "rankLM": 55,
+   "rankPost": 53,
+   "rankComb": 12
+  },
+  {
+   "plaintext": "GETLOGOFORTHE",
+   "words": "GET LOGO FOR THE",
+   "lm": -9.921,
+   "logL": -2.508,
+   "logLzodiacSize": -4.301,
+   "logLperRegime": {
+    "z408p12": -2.719,
+    "z340": -2.678,
+    "z408p3": -2.275
+   },
+   "simpleFit": true,
+   "post": -12.429,
+   "postComb": -10.221,
+   "rankLM": 59,
+   "rankPost": 33,
+   "rankComb": 13
+  },
+  {
+   "plaintext": "STAKESELEGANT",
+   "words": "STAKES ELEGANT",
+   "lm": -9.931,
+   "logL": -2.859,
+   "logLzodiacSize": -4.982,
+   "logLperRegime": {
+    "z408p12": -2.953,
+    "z340": -2.939,
+    "z408p3": -2.724
+   },
+   "simpleFit": true,
+   "post": -12.79,
+   "postComb": -10.231,
+   "rankLM": 62,
+   "rankPost": 66,
+   "rankComb": 14
+  },
+  {
+   "plaintext": "IDENTITYTREAD",
+   "words": "IDENTITY TREAD",
+   "lm": -9.974,
+   "logL": -2.551,
+   "logLzodiacSize": -4.9,
+   "logLperRegime": {
+    "z408p12": -2.726,
+    "z340": -2.689,
+    "z408p3": -2.346
+   },
+   "simpleFit": true,
+   "post": -12.525,
+   "postComb": -10.274,
+   "rankLM": 68,
+   "rankPost": 42,
+   "rankComb": 15
+  },
+  {
+   "plaintext": "WHILEWEFETISH",
+   "words": "WHILE WE FETISH",
+   "lm": -10.07,
+   "logL": -2.387,
+   "logLzodiacSize": -4.352,
+   "logLperRegime": {
+    "z408p12": -2.45,
+    "z340": -2.444,
+    "z408p3": -2.288
+   },
+   "simpleFit": true,
+   "post": -12.457,
+   "postComb": -10.369,
+   "rankLM": 80,
+   "rankPost": 37,
+   "rankComb": 16
+  },
+  {
+   "plaintext": "LETSOLOMONTHE",
+   "words": "LET SOLOMON THE",
+   "lm": -10.083,
+   "logL": -2.565,
+   "logLzodiacSize": -4.843,
+   "logLperRegime": {
+    "z408p12": -2.771,
+    "z340": -2.73,
+    "z408p3": -2.335
+   },
+   "simpleFit": true,
+   "post": -12.647,
+   "postComb": -10.382,
+   "rankLM": 83,
+   "rankPost": 49,
+   "rankComb": 17
+  },
+  {
+   "plaintext": "THEGOTOJOSEPH",
+   "words": "THE GO TO JOSEPH",
+   "lm": -10.122,
+   "logL": -2.682,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.889,
+    "z340": -2.848,
+    "z408p3": -2.453
+   },
+   "simpleFit": true,
+   "post": -12.804,
+   "postComb": -10.422,
+   "rankLM": 91,
+   "rankPost": 72,
+   "rankComb": 18
+  },
+  {
+   "plaintext": "REPAIRISIMPLE",
+   "words": "REPAIR I SIMPLE",
+   "lm": -10.175,
+   "logL": -2.137,
+   "logLzodiacSize": -4.183,
+   "logLperRegime": {
+    "z408p12": -2.338,
+    "z340": -2.292,
+    "z408p3": -1.914
+   },
+   "simpleFit": true,
+   "post": -12.312,
+   "postComb": -10.473,
+   "rankLM": 102,
+   "rankPost": 26,
+   "rankComb": 19
+  },
+  {
+   "plaintext": "WOLFEWEREALSO",
+   "words": "WOLFE WERE ALSO",
+   "lm": -10.213,
+   "logL": -2.328,
+   "logLzodiacSize": -4.202,
+   "logLperRegime": {
+    "z408p12": -2.394,
+    "z340": -2.388,
+    "z408p3": -2.223
+   },
+   "simpleFit": true,
+   "post": -12.541,
+   "postComb": -10.512,
+   "rankLM": 107,
+   "rankPost": 43,
+   "rankComb": 20
+  },
+  {
+   "plaintext": "GETLOGOSOFTHE",
+   "words": "GET LOGOS OF THE",
+   "lm": -10.285,
+   "logL": -2.508,
+   "logLzodiacSize": -4.301,
+   "logLperRegime": {
+    "z408p12": -2.719,
+    "z340": -2.678,
+    "z408p3": -2.275
+   },
+   "simpleFit": true,
+   "post": -12.793,
+   "postComb": -10.585,
+   "rankLM": 118,
+   "rankPost": 67,
+   "rankComb": 21
+  },
+  {
+   "plaintext": "LETCOLORONTHE",
+   "words": "LET COLOR ON THE",
+   "lm": -10.305,
+   "logL": -2.565,
+   "logLzodiacSize": -4.843,
+   "logLperRegime": {
+    "z408p12": -2.771,
+    "z340": -2.73,
+    "z408p3": -2.335
+   },
+   "simpleFit": true,
+   "post": -12.87,
+   "postComb": -10.605,
+   "rankLM": 122,
+   "rankPost": 78,
+   "rankComb": 22
+  },
+  {
+   "plaintext": "MEIFAMAGAZINE",
+   "words": "ME IF A MAGAZINE",
+   "lm": -10.353,
+   "logL": -2.359,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.543,
+    "z340": -2.504,
+    "z408p3": -2.147
+   },
+   "simpleFit": true,
+   "post": -12.712,
+   "postComb": -10.653,
+   "rankLM": 128,
+   "rankPost": 54,
+   "rankComb": 23
+  },
+  {
+   "plaintext": "GETLOGOSONTHE",
+   "words": "GET LOGOS ON THE",
+   "lm": -10.382,
+   "logL": -2.508,
+   "logLzodiacSize": -4.301,
+   "logLperRegime": {
+    "z408p12": -2.719,
+    "z340": -2.678,
+    "z408p3": -2.275
+   },
+   "simpleFit": true,
+   "post": -12.889,
+   "postComb": -10.681,
+   "rankLM": 137,
+   "rankPost": 80,
+   "rankComb": 24
+  },
+  {
+   "plaintext": "HOUSEHEREAUTO",
+   "words": "HOUSE HERE AUTO",
+   "lm": -10.402,
+   "logL": -2.457,
+   "logLzodiacSize": -4.481,
+   "logLperRegime": {
+    "z408p12": -2.524,
+    "z340": -2.516,
+    "z408p3": -2.354
+   },
+   "simpleFit": true,
+   "post": -12.859,
+   "postComb": -10.701,
+   "rankLM": 142,
+   "rankPost": 76,
+   "rankComb": 25
+  },
+  {
+   "plaintext": "HEALTHTVTRADE",
+   "words": "HEALTH TV TRADE",
+   "lm": -10.436,
+   "logL": -2.755,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.941,
+    "z340": -2.903,
+    "z408p3": -2.54
+   },
+   "simpleFit": true,
+   "post": -13.191,
+   "postComb": -10.737,
+   "rankLM": 150,
+   "rankPost": 144,
+   "rankComb": 26
+  },
+  {
+   "plaintext": "DOESADAMAGETO",
+   "words": "DOES A DAMAGE TO",
+   "lm": -10.46,
+   "logL": -2.485,
+   "logLzodiacSize": -4.9,
+   "logLperRegime": {
+    "z408p12": -2.669,
+    "z340": -2.631,
+    "z408p3": -2.273
+   },
+   "simpleFit": true,
+   "post": -12.946,
+   "postComb": -10.76,
+   "rankLM": 157,
+   "rankPost": 88,
+   "rankComb": 27
+  },
+  {
+   "plaintext": "MEDIAMAPANDWE",
+   "words": "MEDIA MAP AND WE",
+   "lm": -10.479,
+   "logL": -2.226,
+   "logLzodiacSize": -4.281,
+   "logLperRegime": {
+    "z408p12": -2.412,
+    "z340": -2.37,
+    "z408p3": -2.013
+   },
+   "simpleFit": true,
+   "post": -12.704,
+   "postComb": -10.777,
+   "rankLM": 160,
+   "rankPost": 51,
+   "rankComb": 28
+  },
+  {
+   "plaintext": "MEDIAMAYANDWE",
+   "words": "MEDIA MAY AND WE",
+   "lm": -10.482,
+   "logL": -2.226,
+   "logLzodiacSize": -4.281,
+   "logLperRegime": {
+    "z408p12": -2.412,
+    "z340": -2.37,
+    "z408p3": -2.013
+   },
+   "simpleFit": true,
+   "post": -12.708,
+   "postComb": -10.781,
+   "rankLM": 161,
+   "rankPost": 52,
+   "rankComb": 29
+  },
+  {
+   "plaintext": "ITEMSISUSPECT",
+   "words": "ITEMS I SUSPECT",
+   "lm": -10.489,
+   "logL": -2.588,
+   "logLzodiacSize": -4.957,
+   "logLperRegime": {
+    "z408p12": -2.805,
+    "z340": -2.763,
+    "z408p3": -2.351
+   },
+   "simpleFit": true,
+   "post": -13.076,
+   "postComb": -10.789,
+   "rankLM": 165,
+   "rankPost": 117,
+   "rankComb": 30
+  },
+  {
+   "plaintext": "SHAFTSTOTEACH",
+   "words": "SHAFTS TO TEACH",
+   "lm": -10.492,
+   "logL": -2.106,
+   "logLzodiacSize": -4.98,
+   "logLperRegime": {
+    "z408p12": -2.159,
+    "z340": -2.149,
+    "z408p3": -2.023
+   },
+   "simpleFit": true,
+   "post": -12.598,
+   "postComb": -10.789,
+   "rankLM": 166,
+   "rankPost": 47,
+   "rankComb": 31
+  },
+  {
+   "plaintext": "STYLESEVERYIT",
+   "words": "STYLES EVERY IT",
+   "lm": -10.543,
+   "logL": -2.569,
+   "logLzodiacSize": -4.263,
+   "logLperRegime": {
+    "z408p12": -2.654,
+    "z340": -2.643,
+    "z408p3": -2.444
+   },
+   "simpleFit": true,
+   "post": -13.112,
+   "postComb": -10.843,
+   "rankLM": 179,
+   "rankPost": 124,
+   "rankComb": 32
+  },
+  {
+   "plaintext": "SONWASAGAINTO",
+   "words": "SON WAS AGAIN TO",
+   "lm": -10.554,
+   "logL": -1.959,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -2.009,
+    "z340": -2,
+    "z408p3": -1.879
+   },
+   "simpleFit": true,
+   "post": -12.513,
+   "postComb": -10.851,
+   "rankLM": 181,
+   "rankPost": 40,
+   "rankComb": 33
+  },
+  {
+   "plaintext": "PLACEPEREMAIL",
+   "words": "PLACE PER EMAIL",
+   "lm": -10.565,
+   "logL": -2.36,
+   "logLzodiacSize": -4.052,
+   "logLperRegime": {
+    "z408p12": -2.432,
+    "z340": -2.425,
+    "z408p3": -2.248
+   },
+   "simpleFit": true,
+   "post": -12.925,
+   "postComb": -10.864,
+   "rankLM": 184,
+   "rankPost": 84,
+   "rankComb": 34
+  },
+  {
+   "plaintext": "METROMONOFTHE",
+   "words": "METRO MON OF THE",
+   "lm": -10.613,
+   "logL": -2.514,
+   "logLzodiacSize": -4.374,
+   "logLperRegime": {
+    "z408p12": -2.724,
+    "z340": -2.683,
+    "z408p3": -2.281
+   },
+   "simpleFit": true,
+   "post": -13.126,
+   "postComb": -10.912,
+   "rankLM": 191,
+   "rankPost": 128,
+   "rankComb": 35
+  },
+  {
+   "plaintext": "STYLESEVERYAT",
+   "words": "STYLES EVERY AT",
+   "lm": -10.636,
+   "logL": -2.569,
+   "logLzodiacSize": -4.263,
+   "logLperRegime": {
+    "z408p12": -2.654,
+    "z340": -2.643,
+    "z408p3": -2.444
+   },
+   "simpleFit": true,
+   "post": -13.205,
+   "postComb": -10.935,
+   "rankLM": 195,
+   "rankPost": 150,
+   "rankComb": 36
+  },
+  {
+   "plaintext": "AIRSTATUTORYI",
+   "words": "AIR STATUTORY I",
+   "lm": -10.64,
+   "logL": -2.099,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -2.151,
+    "z340": -2.142,
+    "z408p3": -2.016
+   },
+   "simpleFit": true,
+   "post": -12.739,
+   "postComb": -10.938,
+   "rankLM": 196,
+   "rankPost": 61,
+   "rankComb": 37
+  },
+  {
+   "plaintext": "FROMAFATALOUR",
+   "words": "FROM A FATAL OUR",
+   "lm": -10.674,
+   "logL": -1.72,
+   "logLzodiacSize": -4.282,
+   "logLperRegime": {
+    "z408p12": -1.76,
+    "z340": -1.753,
+    "z408p3": -1.655
+   },
+   "simpleFit": true,
+   "post": -12.394,
+   "postComb": -10.967,
+   "rankLM": 208,
+   "rankPost": 32,
+   "rankComb": 38
+  },
+  {
+   "plaintext": "BYTHEBEDENTRY",
+   "words": "BY THE BED ENTRY",
+   "lm": -10.674,
+   "logL": -2.388,
+   "logLzodiacSize": -3.451,
+   "logLperRegime": {
+    "z408p12": -2.493,
+    "z340": -2.482,
+    "z408p3": -2.24
+   },
+   "simpleFit": true,
+   "post": -13.062,
+   "postComb": -10.973,
+   "rankLM": 207,
+   "rankPost": 114,
+   "rankComb": 39
+  },
+  {
+   "plaintext": "HEALTHTITPAGE",
+   "words": "HEALTH TIT PAGE",
+   "lm": -10.687,
+   "logL": -2.755,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.941,
+    "z340": -2.903,
+    "z408p3": -2.54
+   },
+   "simpleFit": true,
+   "post": -13.442,
+   "postComb": -10.988,
+   "rankLM": 215,
+   "rankPost": 220,
+   "rankComb": 40
+  },
+  {
+   "plaintext": "MEDIAMAPANDHE",
+   "words": "MEDIA MAP AND HE",
+   "lm": -10.7,
+   "logL": -2.226,
+   "logLzodiacSize": -4.281,
+   "logLperRegime": {
+    "z408p12": -2.412,
+    "z340": -2.37,
+    "z408p3": -2.013
+   },
+   "simpleFit": true,
+   "post": -12.925,
+   "postComb": -10.998,
+   "rankLM": 220,
+   "rankPost": 85,
+   "rankComb": 41
+  },
+  {
+   "plaintext": "MEDIAMAYANDHE",
+   "words": "MEDIA MAY AND HE",
+   "lm": -10.703,
+   "logL": -2.226,
+   "logLzodiacSize": -4.281,
+   "logLperRegime": {
+    "z408p12": -2.412,
+    "z340": -2.37,
+    "z408p3": -2.013
+   },
+   "simpleFit": true,
+   "post": -12.929,
+   "postComb": -11.002,
+   "rankLM": 221,
+   "rankPost": 86,
+   "rankComb": 42
+  },
+  {
+   "plaintext": "CODEACARAUDIO",
+   "words": "CODE A CAR AUDIO",
+   "lm": -10.725,
+   "logL": -1.657,
+   "logLzodiacSize": -4.251,
+   "logLperRegime": {
+    "z408p12": -1.695,
+    "z340": -1.688,
+    "z408p3": -1.596
+   },
+   "simpleFit": true,
+   "post": -12.383,
+   "postComb": -11.017,
+   "rankLM": 227,
+   "rankPost": 30,
+   "rankComb": 43
+  },
+  {
+   "plaintext": "ITEMSISASPECT",
+   "words": "ITEMS IS ASPECT",
+   "lm": -10.767,
+   "logL": -2.588,
+   "logLzodiacSize": -4.957,
+   "logLperRegime": {
+    "z408p12": -2.805,
+    "z340": -2.763,
+    "z408p3": -2.351
+   },
+   "simpleFit": true,
+   "post": -13.355,
+   "postComb": -11.067,
+   "rankLM": 249,
+   "rankPost": 194,
+   "rankComb": 44
+  },
+  {
+   "plaintext": "MEDIAMAPANDBE",
+   "words": "MEDIA MAP AND BE",
+   "lm": -10.776,
+   "logL": -2.226,
+   "logLzodiacSize": -4.281,
+   "logLperRegime": {
+    "z408p12": -2.412,
+    "z340": -2.37,
+    "z408p3": -2.013
+   },
+   "simpleFit": true,
+   "post": -13.001,
+   "postComb": -11.074,
+   "rankLM": 254,
+   "rankPost": 98,
+   "rankComb": 45
+  },
+  {
+   "plaintext": "OSCARORPRICES",
+   "words": "OSCAR OR PRICES",
+   "lm": -10.789,
+   "logL": -1.528,
+   "logLzodiacSize": -4.26,
+   "logLperRegime": {
+    "z408p12": -1.575,
+    "z340": -1.566,
+    "z408p3": -1.453
+   },
+   "simpleFit": true,
+   "post": -12.317,
+   "postComb": -11.078,
+   "rankLM": 265,
+   "rankPost": 27,
+   "rankComb": 46
+  },
+  {
+   "plaintext": "MEDIAMAYANDBE",
+   "words": "MEDIA MAY AND BE",
+   "lm": -10.779,
+   "logL": -2.226,
+   "logLzodiacSize": -4.281,
+   "logLperRegime": {
+    "z408p12": -2.412,
+    "z340": -2.37,
+    "z408p3": -2.013
+   },
+   "simpleFit": true,
+   "post": -13.005,
+   "postComb": -11.078,
+   "rankLM": 259,
+   "rankPost": 102,
+   "rankComb": 47
+  },
+  {
+   "plaintext": "STARESELEGANT",
+   "words": "STARES ELEGANT",
+   "lm": -10.832,
+   "logL": -2.859,
+   "logLzodiacSize": -4.982,
+   "logLperRegime": {
+    "z408p12": -2.953,
+    "z340": -2.939,
+    "z408p3": -2.724
+   },
+   "simpleFit": true,
+   "post": -13.691,
+   "postComb": -11.133,
+   "rankLM": 286,
+   "rankPost": 342,
+   "rankComb": 48
+  },
+  {
+   "plaintext": "YETGAYANALTHE",
+   "words": "YET GAY ANAL THE",
+   "lm": -10.855,
+   "logL": -2.559,
+   "logLzodiacSize": -4.266,
+   "logLperRegime": {
+    "z408p12": -2.767,
+    "z340": -2.726,
+    "z408p3": -2.329
+   },
+   "simpleFit": true,
+   "post": -13.414,
+   "postComb": -11.155,
+   "rankLM": 295,
+   "rankPost": 215,
+   "rankComb": 49
+  },
+  {
+   "plaintext": "NETCANADAITHE",
+   "words": "NET CANADA I THE",
+   "lm": -10.861,
+   "logL": -2.758,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.963,
+    "z340": -2.923,
+    "z408p3": -2.529
+   },
+   "simpleFit": true,
+   "post": -13.618,
+   "postComb": -11.161,
+   "rankLM": 302,
+   "rankPost": 300,
+   "rankComb": 50
+  },
+  {
+   "plaintext": "CHINACASAWITH",
+   "words": "CHINA CASA WITH",
+   "lm": -10.868,
+   "logL": -1.707,
+   "logLzodiacSize": -4.341,
+   "logLperRegime": {
+    "z408p12": -1.745,
+    "z340": -1.738,
+    "z408p3": -1.646
+   },
+   "simpleFit": true,
+   "post": -12.576,
+   "postComb": -11.161,
+   "rankLM": 308,
+   "rankPost": 46,
+   "rankComb": 51
+  },
+  {
+   "plaintext": "NETDONOROFTHE",
+   "words": "NET DONOR OF THE",
+   "lm": -10.887,
+   "logL": -2.706,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.914,
+    "z340": -2.873,
+    "z408p3": -2.476
+   },
+   "simpleFit": true,
+   "post": -13.593,
+   "postComb": -11.187,
+   "rankLM": 319,
+   "rankPost": 283,
+   "rankComb": 52
+  },
+  {
+   "plaintext": "MEITAMAGAZINE",
+   "words": "ME IT A MAGAZINE",
+   "lm": -10.906,
+   "logL": -2.359,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.543,
+    "z340": -2.504,
+    "z408p3": -2.147
+   },
+   "simpleFit": true,
+   "post": -13.265,
+   "postComb": -11.205,
+   "rankLM": 328,
+   "rankPost": 166,
+   "rankComb": 53
+  },
+  {
+   "plaintext": "PLACEPETEMAIL",
+   "words": "PLACE PET EMAIL",
+   "lm": -10.91,
+   "logL": -2.36,
+   "logLzodiacSize": -4.052,
+   "logLperRegime": {
+    "z408p12": -2.432,
+    "z340": -2.425,
+    "z408p3": -2.248
+   },
+   "simpleFit": true,
+   "post": -13.27,
+   "postComb": -11.209,
+   "rankLM": 333,
+   "rankPost": 168,
+   "rankComb": 54
+  },
+  {
+   "plaintext": "WHILEWEZENITH",
+   "words": "WHILE WE ZENITH",
+   "lm": -10.916,
+   "logL": -2.387,
+   "logLzodiacSize": -4.352,
+   "logLperRegime": {
+    "z408p12": -2.45,
+    "z340": -2.444,
+    "z408p3": -2.288
+   },
+   "simpleFit": true,
+   "post": -13.303,
+   "postComb": -11.215,
+   "rankLM": 339,
+   "rankPost": 176,
+   "rankComb": 55
+  },
+  {
+   "plaintext": "NEOCANADAMORE",
+   "words": "NEO CANADA MORE",
+   "lm": -10.919,
+   "logL": -2.613,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.8,
+    "z340": -2.762,
+    "z408p3": -2.398
+   },
+   "simpleFit": true,
+   "post": -13.532,
+   "postComb": -11.218,
+   "rankLM": 340,
+   "rankPost": 255,
+   "rankComb": 56
+  },
+  {
+   "plaintext": "STATESELEGANT",
+   "words": "STATES ELEGANT",
+   "lm": -8.155,
+   "logL": -2.768,
+   "logLzodiacSize": -4.797,
+   "logLperRegime": {
+    "z408p12": -2.79,
+    "z340": -2.845,
+    "z408p3": -2.684
+   },
+   "simpleFit": false,
+   "post": -10.923,
+   "postComb": -11.224,
+   "rankLM": 1,
+   "rankPost": 1,
+   "rankComb": 57
+  },
+  {
+   "plaintext": "NOTHENEWESTDO",
+   "words": "NO THE NEWEST DO",
+   "lm": -10.937,
+   "logL": -2.857,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.95,
+    "z340": -2.936,
+    "z408p3": -2.723
+   },
+   "simpleFit": true,
+   "post": -13.794,
+   "postComb": -11.237,
+   "rankLM": 350,
+   "rankPost": 424,
+   "rankComb": 58
+  },
+  {
+   "plaintext": "IPERSISTSHELP",
+   "words": "I PERSISTS HELP",
+   "lm": -10.964,
+   "logL": -2.159,
+   "logLzodiacSize": -4.17,
+   "logLperRegime": {
+    "z408p12": -2.367,
+    "z340": -2.321,
+    "z408p3": -1.931
+   },
+   "simpleFit": true,
+   "post": -13.123,
+   "postComb": -11.262,
+   "rankLM": 367,
+   "rankPost": 127,
+   "rankComb": 59
+  },
+  {
+   "plaintext": "HEALTHTOTPAGE",
+   "words": "HEALTH TOT PAGE",
+   "lm": -10.967,
+   "logL": -2.755,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.941,
+    "z340": -2.903,
+    "z408p3": -2.54
+   },
+   "simpleFit": true,
+   "post": -13.722,
+   "postComb": -11.268,
+   "rankLM": 370,
+   "rankPost": 374,
+   "rankComb": 60
+  }
+ ],
+ "seconds": 473.042
+}

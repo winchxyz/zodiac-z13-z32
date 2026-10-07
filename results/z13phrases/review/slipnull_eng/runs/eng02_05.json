@@ -1,0 +1,613 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:29:52.922Z",
+ "label": "eng02_05",
+ "cipher": {
+  "id": "eng02",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng02.txt",
+  "text": "abcadbefddgch",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   5
+  ],
+  "isomorphAfterSlips": "abcad*efddgch"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 188210,
+  "scored": 177093,
+  "keptAtLeastStreamMin": 137,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 8961,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1265,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 137,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 9,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 2,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 1,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 9,
+  "3": 104,
+  "4": 24
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -5.94301976273658,
+  "topShare": 0.6976423630397744,
+  "top10Share": 0.9248417394153097,
+  "effectiveNumberExpEntropy": 5.015770959162075,
+  "effectiveNumberInverseSimpson": 1.9909587060477962,
+  "unscoredMassBoundRelative": 0.0010688268825280794,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 9,
+   "maxWordLogp": -16.056271217499148,
+   "massEstimateRelative": 2.130635619089869e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00036151446489516355
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 2,
+   "-18.00": 6,
+   "-17.75": 26,
+   "-17.50": 18,
+   "-17.25": 41,
+   "-17.00": 51,
+   "-16.75": 56,
+   "-16.50": 82,
+   "-16.25": 111,
+   "-16.00": 141,
+   "-15.75": 210,
+   "-15.50": 296,
+   "-15.25": 416,
+   "-15.00": 492,
+   "-14.75": 666,
+   "-14.50": 788,
+   "-14.25": 1014,
+   "-14.00": 1284,
+   "-13.75": 1495,
+   "-13.50": 1632,
+   "-13.25": 1971,
+   "-13.00": 2217,
+   "-12.75": 2657,
+   "-12.50": 3078,
+   "-12.25": 3499,
+   "-12.00": 4071,
+   "-11.75": 4591,
+   "-11.50": 5021,
+   "-11.25": 5545,
+   "-11.00": 6166,
+   "-10.75": 6425,
+   "-10.50": 6780,
+   "-10.25": 7023,
+   "-10.00": 7203,
+   "-9.75": 7247,
+   "-9.50": 7604,
+   "-9.25": 7663,
+   "-9.00": 7919,
+   "-8.75": 7997,
+   "-8.50": 8089,
+   "-8.25": 7980,
+   "-8.00": 7754,
+   "-7.75": 7368,
+   "-7.50": 6795,
+   "-7.25": 6420,
+   "-7.00": 5778,
+   "-6.75": 5151,
+   "-6.50": 4291,
+   "-6.25": 3548,
+   "-6.00": 3020,
+   "-5.75": 2351,
+   "-5.50": 1781,
+   "-5.25": 1421,
+   "-5.00": 1027,
+   "-4.75": 730,
+   "-4.50": 461,
+   "-4.25": 321,
+   "-4.00": 205,
+   "-3.75": 114,
+   "-3.50": 69,
+   "-3.25": 26,
+   "-3.00": 4,
+   "-2.75": 1,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.00": 6,
+   "-18.75": 61,
+   "-18.50": 260,
+   "-18.25": 713,
+   "-18.00": 1731,
+   "-17.75": 3072,
+   "-17.50": 5060,
+   "-17.25": 6993,
+   "-17.00": 8966,
+   "-16.75": 10423,
+   "-16.50": 11849,
+   "-16.25": 12532,
+   "-16.00": 13011,
+   "-15.75": 12995,
+   "-15.50": 13020,
+   "-15.25": 12324,
+   "-15.00": 11285,
+   "-14.75": 10038,
+   "-14.50": 8639,
+   "-14.25": 7211,
+   "-14.00": 6022,
+   "-13.75": 4773,
+   "-13.50": 3764,
+   "-13.25": 2964,
+   "-13.00": 2291,
+   "-12.75": 1770,
+   "-12.50": 1418,
+   "-12.25": 1038,
+   "-12.00": 782,
+   "-11.75": 629,
+   "-11.50": 419,
+   "-11.25": 300,
+   "-11.00": 206,
+   "-10.75": 144,
+   "-10.50": 136,
+   "-10.25": 86,
+   "-10.00": 54,
+   "-9.75": 46,
+   "-9.50": 27,
+   "-9.25": 12,
+   "-9.00": 10,
+   "-8.75": 4,
+   "-8.50": 1,
+   "-8.25": 1,
+   "-8.00": 3,
+   "-7.75": 1,
+   "-7.50": 1,
+   "-7.00": 1,
+   "-6.25": 1
+  },
+  "boundUnscored": {
+   "-18.25": 2,
+   "-18.00": 6,
+   "-17.75": 26,
+   "-17.50": 18,
+   "-17.25": 41,
+   "-17.00": 51,
+   "-16.75": 56,
+   "-16.50": 82,
+   "-16.25": 111,
+   "-16.00": 141,
+   "-15.75": 210,
+   "-15.50": 296,
+   "-15.25": 416,
+   "-15.00": 492,
+   "-14.75": 666,
+   "-14.50": 788,
+   "-14.25": 1014,
+   "-14.00": 1284,
+   "-13.75": 1495,
+   "-13.50": 1632,
+   "-13.25": 1971,
+   "-13.00": 319
+  }
+ },
+ "timeMs": {
+  "total": 2166,
+  "setup": 414
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "PEOPLEWILLNOT",
+   "wordLogp": -6.0994,
+   "words": "PEOPLE WILL NOT",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "N",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "PEOPLECALLFOR",
+   "wordLogp": -6.8903,
+   "words": "PEOPLE CALL FOR",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "F",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "PEOPLEWILLYOU",
+   "wordLogp": -7.3077,
+   "words": "PEOPLE WILL YOU",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "Y",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "PEOPLECALLYOU",
+   "wordLogp": -7.6916,
+   "words": "PEOPLE CALL YOU",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "Y",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "PEOPLEWILLFOR",
+   "wordLogp": -7.7697,
+   "words": "PEOPLE WILL FOR",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "F",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "PEOPLECALLNOW",
+   "wordLogp": -7.7958,
+   "words": "PEOPLE CALL NOW",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "N",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "CIRCLEGALLERY",
+   "wordLogp": -7.9595,
+   "words": "CIRCLE GALLERY",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "I",
+    "c": "R",
+    "d": "L",
+    "e": "G",
+    "f": "A",
+    "g": "E",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "PURPLEGALLERY",
+   "wordLogp": -8.0485,
+   "words": "PURPLE GALLERY",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "U",
+    "c": "R",
+    "d": "L",
+    "e": "G",
+    "f": "A",
+    "g": "E",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "PEOPLECALLNOT",
+   "wordLogp": -8.2864,
+   "words": "PEOPLE CALL NOT",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "N",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "CIRCLEDOLLARS",
+   "wordLogp": -8.5752,
+   "words": "CIRCLE DOLLARS",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "I",
+    "c": "R",
+    "d": "L",
+    "e": "D",
+    "f": "O",
+    "g": "A",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "INHISCLASSTHE",
+   "wordLogp": -8.6518,
+   "words": "IN HIS CLASS THE",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "H",
+    "d": "S",
+    "e": "L",
+    "f": "A",
+    "g": "T",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "PURPLEDOLLARS",
+   "wordLogp": -8.6642,
+   "words": "PURPLE DOLLARS",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "U",
+    "c": "R",
+    "d": "L",
+    "e": "D",
+    "f": "O",
+    "g": "A",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THATSTRESSCAN",
+   "wordLogp": -8.6781,
+   "words": "THAT STRESS CAN",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "A",
+    "d": "S",
+    "e": "R",
+    "f": "E",
+    "g": "C",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "CONCERTSEEING",
+   "wordLogp": -8.7838,
+   "words": "CONCERT SEEING",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "O",
+    "c": "N",
+    "d": "E",
+    "e": "T",
+    "f": "S",
+    "g": "I",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "CONCEPTSEEING",
+   "wordLogp": -8.8142,
+   "words": "CONCEPT SEEING",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "O",
+    "c": "N",
+    "d": "E",
+    "e": "T",
+    "f": "S",
+    "g": "I",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "PEOPLEBILLFOR",
+   "wordLogp": -8.8283,
+   "words": "PEOPLE BILL FOR",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "B",
+    "f": "I",
+    "g": "F",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "PEOPLEWALLSOF",
+   "wordLogp": -8.8595,
+   "words": "PEOPLE WALLS OF",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "W",
+    "f": "A",
+    "g": "S",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "INHISCROSSTHE",
+   "wordLogp": -8.8776,
+   "words": "IN HIS CROSS THE",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "N",
+    "c": "H",
+    "d": "S",
+    "e": "R",
+    "f": "O",
+    "g": "T",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "SUNSETFREEAND",
+   "wordLogp": -8.9418,
+   "words": "SUNSET FREE AND",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "U",
+    "c": "N",
+    "d": "E",
+    "e": "F",
+    "f": "R",
+    "g": "A",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "PEOPLEWILLTOA",
+   "wordLogp": -8.948,
+   "words": "PEOPLE WILL TO A",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "T",
+    "h": "A"
+   }
+  }
+ ]
+}

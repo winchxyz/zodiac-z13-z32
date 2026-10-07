@@ -1,0 +1,611 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:26:27.148Z",
+ "label": "scr11_00",
+ "cipher": {
+  "id": "scr11",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr11.txt",
+  "text": "N[0M0AEAz0MNK",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   0
+  ],
+  "isomorphAfterSlips": "*bcdcefegcdah"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 118,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 118,
+  "tasks": 118,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 207081,
+  "scored": 193447,
+  "keptAtLeastStreamMin": 158,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 12665,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1760,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 158,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 8,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 92,
+  "4": 64
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.657225790682242,
+  "topShare": 0.14952840309348445,
+  "top10Share": 0.4542439364630129,
+  "effectiveNumberExpEntropy": 159.6573971980446,
+  "effectiveNumberInverseSimpson": 26.20544940254107,
+  "unscoredMassBoundRelative": 0.006788113266471344,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 12,
+   "maxWordLogp": -15.472588212301051,
+   "massEstimateRelative": 0.000002565497580494237,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.002186340004309209
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 7,
+   "-18.00": 16,
+   "-17.75": 23,
+   "-17.50": 52,
+   "-17.25": 63,
+   "-17.00": 67,
+   "-16.75": 80,
+   "-16.50": 112,
+   "-16.25": 169,
+   "-16.00": 188,
+   "-15.75": 271,
+   "-15.50": 370,
+   "-15.25": 462,
+   "-15.00": 696,
+   "-14.75": 864,
+   "-14.50": 1070,
+   "-14.25": 1295,
+   "-14.00": 1501,
+   "-13.75": 1717,
+   "-13.50": 2012,
+   "-13.25": 2225,
+   "-13.00": 2485,
+   "-12.75": 2899,
+   "-12.50": 3236,
+   "-12.25": 3630,
+   "-12.00": 4190,
+   "-11.75": 4711,
+   "-11.50": 5217,
+   "-11.25": 5828,
+   "-11.00": 6458,
+   "-10.75": 6777,
+   "-10.50": 7263,
+   "-10.25": 7375,
+   "-10.00": 7741,
+   "-9.75": 7992,
+   "-9.50": 8193,
+   "-9.25": 8325,
+   "-9.00": 8450,
+   "-8.75": 8650,
+   "-8.50": 8737,
+   "-8.25": 8878,
+   "-8.00": 8673,
+   "-7.75": 8518,
+   "-7.50": 7979,
+   "-7.25": 7395,
+   "-7.00": 6725,
+   "-6.75": 6026,
+   "-6.50": 5108,
+   "-6.25": 4173,
+   "-6.00": 3359,
+   "-5.75": 2633,
+   "-5.50": 1981,
+   "-5.25": 1429,
+   "-5.00": 986,
+   "-4.75": 667,
+   "-4.50": 443,
+   "-4.25": 293,
+   "-4.00": 180,
+   "-3.75": 105,
+   "-3.50": 51,
+   "-3.25": 37,
+   "-3.00": 12,
+   "-2.75": 6,
+   "-2.50": 3,
+   "-2.25": 4
+  },
+  "exactScored": {
+   "-19.00": 1,
+   "-18.75": 24,
+   "-18.50": 119,
+   "-18.25": 445,
+   "-18.00": 1175,
+   "-17.75": 2519,
+   "-17.50": 4056,
+   "-17.25": 6085,
+   "-17.00": 8197,
+   "-16.75": 9978,
+   "-16.50": 11943,
+   "-16.25": 13460,
+   "-16.00": 14034,
+   "-15.75": 14344,
+   "-15.50": 14283,
+   "-15.25": 13714,
+   "-15.00": 12626,
+   "-14.75": 11397,
+   "-14.50": 10432,
+   "-14.25": 8735,
+   "-14.00": 7459,
+   "-13.75": 6111,
+   "-13.50": 5012,
+   "-13.25": 4058,
+   "-13.00": 3163,
+   "-12.75": 2606,
+   "-12.50": 1979,
+   "-12.25": 1467,
+   "-12.00": 1189,
+   "-11.75": 821,
+   "-11.50": 601,
+   "-11.25": 412,
+   "-11.00": 312,
+   "-10.75": 236,
+   "-10.50": 152,
+   "-10.25": 114,
+   "-10.00": 58,
+   "-9.75": 51,
+   "-9.50": 31,
+   "-9.25": 17,
+   "-9.00": 10,
+   "-8.75": 13,
+   "-8.50": 3,
+   "-8.25": 2,
+   "-8.00": 2,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-18.25": 7,
+   "-18.00": 16,
+   "-17.75": 23,
+   "-17.50": 52,
+   "-17.25": 63,
+   "-17.00": 67,
+   "-16.75": 80,
+   "-16.50": 112,
+   "-16.25": 169,
+   "-16.00": 188,
+   "-15.75": 271,
+   "-15.50": 370,
+   "-15.25": 462,
+   "-15.00": 696,
+   "-14.75": 864,
+   "-14.50": 1070,
+   "-14.25": 1295,
+   "-14.00": 1501,
+   "-13.75": 1717,
+   "-13.50": 2012,
+   "-13.25": 2225,
+   "-13.00": 374
+  }
+ },
+ "timeMs": {
+  "total": 2569,
+  "setup": 599
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ESTATECERTAIN",
+   "wordLogp": -7.4825,
+   "words": "ESTATE CERTAIN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "S",
+    "M": "A",
+    "A": "E",
+    "E": "C",
+    "z": "R",
+    "N": "I",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THESETITLESOF",
+   "wordLogp": -7.7882,
+   "words": "THESE TITLES OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "M": "S",
+    "A": "T",
+    "E": "I",
+    "z": "L",
+    "N": "O",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THESETITLESBY",
+   "wordLogp": -7.877,
+   "words": "THESE TITLES BY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "M": "S",
+    "A": "T",
+    "E": "I",
+    "z": "L",
+    "N": "B",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THESETITLESON",
+   "wordLogp": -8.041,
+   "words": "THESE TITLES ON",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "M": "S",
+    "A": "T",
+    "E": "I",
+    "z": "L",
+    "N": "O",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "PHOTOSISNOTBE",
+   "wordLogp": -8.1042,
+   "words": "PHOTOS IS NOT BE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "H",
+    "M": "T",
+    "A": "S",
+    "E": "I",
+    "z": "N",
+    "N": "B",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "PROMOTETHOMAS",
+   "wordLogp": -8.3124,
+   "words": "PROMOTE THOMAS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "R",
+    "M": "M",
+    "A": "T",
+    "E": "E",
+    "z": "H",
+    "N": "A",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "EDITIONOFITEM",
+   "wordLogp": -8.3157,
+   "words": "EDITION OF ITEM",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "D",
+    "M": "T",
+    "A": "O",
+    "E": "N",
+    "z": "F",
+    "N": "E",
+    "K": "M"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "PHOTODIDNOTBE",
+   "wordLogp": -8.3191,
+   "words": "PHOTO DID NOT BE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "H",
+    "M": "T",
+    "A": "D",
+    "E": "I",
+    "z": "N",
+    "N": "B",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "BUTITELECTION",
+   "wordLogp": -8.5121,
+   "words": "BUT IT ELECTION",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "U",
+    "M": "I",
+    "A": "E",
+    "E": "L",
+    "z": "C",
+    "N": "O",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THESETITLESOR",
+   "wordLogp": -8.5239,
+   "words": "THESE TITLES OR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "M": "S",
+    "A": "T",
+    "E": "I",
+    "z": "L",
+    "N": "O",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ASTATEMENTAIR",
+   "wordLogp": -8.5336,
+   "words": "A STATEMENT AIR",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "S",
+    "M": "A",
+    "A": "E",
+    "E": "M",
+    "z": "N",
+    "N": "I",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ESTATELEFTAND",
+   "wordLogp": -8.568,
+   "words": "ESTATE LEFT AND",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "S",
+    "M": "A",
+    "A": "E",
+    "E": "L",
+    "z": "F",
+    "N": "N",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ASTATECERTAIN",
+   "wordLogp": -8.6525,
+   "words": "A STATE CERTAIN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "S",
+    "M": "A",
+    "A": "E",
+    "E": "C",
+    "z": "R",
+    "N": "I",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ITAGAINIMAGES",
+   "wordLogp": -8.6581,
+   "words": "IT AGAIN IMAGES",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "T",
+    "M": "G",
+    "A": "I",
+    "E": "N",
+    "z": "M",
+    "N": "E",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "WITHTOPOFTHEM",
+   "wordLogp": -8.6853,
+   "words": "WITH TOP OF THEM",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "I",
+    "M": "H",
+    "A": "O",
+    "E": "P",
+    "z": "F",
+    "N": "E",
+    "K": "M"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THELEFTFIELDS",
+   "wordLogp": -8.6992,
+   "words": "THE LEFT FIELDS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "M": "L",
+    "A": "F",
+    "E": "T",
+    "z": "I",
+    "N": "D",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "CASESINITSELF",
+   "wordLogp": -8.7091,
+   "words": "CASES IN ITSELF",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "A",
+    "M": "E",
+    "A": "I",
+    "E": "N",
+    "z": "T",
+    "N": "L",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ASTATEMENTAUG",
+   "wordLogp": -8.7378,
+   "words": "A STATEMENT AUG",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "S",
+    "M": "A",
+    "A": "E",
+    "E": "M",
+    "z": "N",
+    "N": "U",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THEMESYSTEMOF",
+   "wordLogp": -8.7382,
+   "words": "THEME SYSTEM OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "M": "M",
+    "A": "S",
+    "E": "Y",
+    "z": "T",
+    "N": "O",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ASTATEMENTAGO",
+   "wordLogp": -8.7451,
+   "words": "A STATEMENT AGO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "S",
+    "M": "A",
+    "A": "E",
+    "E": "M",
+    "z": "N",
+    "N": "G",
+    "K": "O"
+   }
+  }
+ ]
+}

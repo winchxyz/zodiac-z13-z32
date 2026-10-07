@@ -1,0 +1,616 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:26:50.157Z",
+ "label": "scr11_07",
+ "cipher": {
+  "id": "scr11",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr11.txt",
+  "text": "N[0M0AEAz0MNK",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abcdcef*gcdah"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 294306,
+  "scored": 272280,
+  "keptAtLeastStreamMin": 266,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 16742,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2475,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 266,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 26,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 4,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 2,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 2,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 18,
+  "3": 162,
+  "4": 86
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -5.50485568130733,
+  "topShare": 0.4101400758854711,
+  "top10Share": 0.8812089753443945,
+  "effectiveNumberExpEntropy": 8.827961620987967,
+  "effectiveNumberInverseSimpson": 3.5555205905492744,
+  "unscoredMassBoundRelative": 0.0007721315814847336,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 20,
+   "maxWordLogp": -15.528308039324198,
+   "massEstimateRelative": 3.1372286876652475e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00024335758640430948
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 4,
+   "-18.00": 19,
+   "-17.75": 48,
+   "-17.50": 78,
+   "-17.25": 117,
+   "-17.00": 140,
+   "-16.75": 171,
+   "-16.50": 217,
+   "-16.25": 266,
+   "-16.00": 383,
+   "-15.75": 449,
+   "-15.50": 644,
+   "-15.25": 853,
+   "-15.00": 1099,
+   "-14.75": 1372,
+   "-14.50": 1666,
+   "-14.25": 2046,
+   "-14.00": 2413,
+   "-13.75": 2730,
+   "-13.50": 3250,
+   "-13.25": 3509,
+   "-13.00": 3873,
+   "-12.75": 4471,
+   "-12.50": 5212,
+   "-12.25": 5929,
+   "-12.00": 6621,
+   "-11.75": 7563,
+   "-11.50": 8242,
+   "-11.25": 8937,
+   "-11.00": 9537,
+   "-10.75": 10196,
+   "-10.50": 10560,
+   "-10.25": 11157,
+   "-10.00": 11173,
+   "-9.75": 11337,
+   "-9.50": 11438,
+   "-9.25": 11529,
+   "-9.00": 11494,
+   "-8.75": 11609,
+   "-8.50": 11628,
+   "-8.25": 11468,
+   "-8.00": 11309,
+   "-7.75": 10845,
+   "-7.50": 10487,
+   "-7.25": 9833,
+   "-7.00": 8752,
+   "-6.75": 7944,
+   "-6.50": 6820,
+   "-6.25": 5728,
+   "-6.00": 4715,
+   "-5.75": 3731,
+   "-5.50": 2696,
+   "-5.25": 1881,
+   "-5.00": 1373,
+   "-4.75": 977,
+   "-4.50": 625,
+   "-4.25": 418,
+   "-4.00": 305,
+   "-3.75": 180,
+   "-3.50": 106,
+   "-3.25": 66,
+   "-3.00": 41,
+   "-2.75": 18,
+   "-2.50": 7,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.25": 2,
+   "-19.00": 9,
+   "-18.75": 42,
+   "-18.50": 234,
+   "-18.25": 659,
+   "-18.00": 1649,
+   "-17.75": 3520,
+   "-17.50": 6000,
+   "-17.25": 8526,
+   "-17.00": 11397,
+   "-16.75": 14317,
+   "-16.50": 17009,
+   "-16.25": 18997,
+   "-16.00": 20119,
+   "-15.75": 20691,
+   "-15.50": 20116,
+   "-15.25": 19558,
+   "-15.00": 18158,
+   "-14.75": 16403,
+   "-14.50": 14410,
+   "-14.25": 12251,
+   "-14.00": 9954,
+   "-13.75": 8455,
+   "-13.50": 6801,
+   "-13.25": 5458,
+   "-13.00": 4371,
+   "-12.75": 3366,
+   "-12.50": 2567,
+   "-12.25": 1915,
+   "-12.00": 1418,
+   "-11.75": 1097,
+   "-11.50": 811,
+   "-11.25": 578,
+   "-11.00": 438,
+   "-10.75": 306,
+   "-10.50": 227,
+   "-10.25": 139,
+   "-10.00": 92,
+   "-9.75": 71,
+   "-9.50": 58,
+   "-9.25": 26,
+   "-9.00": 21,
+   "-8.75": 11,
+   "-8.50": 10,
+   "-8.25": 7,
+   "-8.00": 3,
+   "-7.75": 4,
+   "-7.50": 3,
+   "-7.25": 3,
+   "-7.00": 1,
+   "-6.00": 2
+  },
+  "boundUnscored": {
+   "-18.25": 4,
+   "-18.00": 19,
+   "-17.75": 48,
+   "-17.50": 78,
+   "-17.25": 117,
+   "-17.00": 140,
+   "-16.75": 171,
+   "-16.50": 217,
+   "-16.25": 266,
+   "-16.00": 383,
+   "-15.75": 449,
+   "-15.50": 644,
+   "-15.25": 853,
+   "-15.00": 1099,
+   "-14.75": 1372,
+   "-14.50": 1666,
+   "-14.25": 2046,
+   "-14.00": 2413,
+   "-13.75": 2730,
+   "-13.50": 3250,
+   "-13.25": 3509,
+   "-13.00": 552
+  }
+ },
+ "timeMs": {
+  "total": 3904,
+  "setup": 390
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "THESERVICESTO",
+   "wordLogp": -5.8919,
+   "words": "THE SERVICES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "S",
+    "A": "R",
+    "E": "V",
+    "z": "C",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THEDESIGNEDTO",
+   "wordLogp": -5.9847,
+   "words": "THE DESIGNED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "D",
+    "A": "S",
+    "E": "I",
+    "z": "N",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THESEPLACESTO",
+   "wordLogp": -6.9553,
+   "words": "THESE PLACES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "S",
+    "A": "P",
+    "E": "L",
+    "z": "C",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THESEIMAGESTO",
+   "wordLogp": -7.1071,
+   "words": "THESE IMAGES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "S",
+    "A": "I",
+    "E": "M",
+    "z": "G",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "THESEVALUESTO",
+   "wordLogp": -7.2235,
+   "words": "THESE VALUES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "S",
+    "A": "V",
+    "E": "A",
+    "z": "U",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "THENEWCLIENTS",
+   "wordLogp": -7.2424,
+   "words": "THE NEW CLIENTS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "N",
+    "A": "W",
+    "E": "C",
+    "z": "I",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THENEWPARENTS",
+   "wordLogp": -7.4163,
+   "words": "THE NEW PARENTS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "N",
+    "A": "W",
+    "E": "P",
+    "z": "R",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THEDECLAREDTO",
+   "wordLogp": -7.4261,
+   "words": "THE DECLARED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "D",
+    "A": "C",
+    "E": "L",
+    "z": "R",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THEREMINDERTO",
+   "wordLogp": -7.4796,
+   "words": "THE REMINDER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "R",
+    "A": "M",
+    "E": "I",
+    "z": "D",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THEREVIEWERTO",
+   "wordLogp": -7.6545,
+   "words": "THE REVIEWER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "R",
+    "A": "V",
+    "E": "I",
+    "z": "W",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THESEPRICESTO",
+   "wordLogp": -7.6576,
+   "words": "THESE PRICES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "S",
+    "A": "P",
+    "E": "R",
+    "z": "C",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THESEPIECESTO",
+   "wordLogp": -7.6928,
+   "words": "THESE PIECES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "S",
+    "A": "P",
+    "E": "I",
+    "z": "C",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ONESERVICESOF",
+   "wordLogp": -7.7115,
+   "words": "ONE SERVICES OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "O",
+    "[": "N",
+    "M": "S",
+    "A": "R",
+    "E": "V",
+    "z": "C",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "EDITIONWRITEA",
+   "wordLogp": -7.8368,
+   "words": "EDITION WRITE A",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "N": "E",
+    "[": "D",
+    "M": "T",
+    "A": "O",
+    "E": "N",
+    "z": "R",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "AREWELCOMEWAS",
+   "wordLogp": -7.9576,
+   "words": "ARE WELCOME WAS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "[": "R",
+    "M": "W",
+    "A": "L",
+    "E": "C",
+    "z": "M",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THEREISOVERTO",
+   "wordLogp": -7.9675,
+   "words": "THERE IS OVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "R",
+    "A": "I",
+    "E": "S",
+    "z": "V",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "EDITIONSUITES",
+   "wordLogp": -8.0437,
+   "words": "EDITION SUITES",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "N": "E",
+    "[": "D",
+    "M": "T",
+    "A": "O",
+    "E": "N",
+    "z": "U",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ECONOMYPHONES",
+   "wordLogp": -8.067,
+   "words": "ECONOMY PHONES",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "[": "C",
+    "M": "N",
+    "A": "M",
+    "E": "Y",
+    "z": "H",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ECONOMICJONES",
+   "wordLogp": -8.0863,
+   "words": "ECONOMIC JONES",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "[": "C",
+    "M": "N",
+    "A": "M",
+    "E": "I",
+    "z": "J",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "AREDESIGNEDAT",
+   "wordLogp": -8.0866,
+   "words": "ARE DESIGNED AT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "[": "R",
+    "M": "D",
+    "A": "S",
+    "E": "I",
+    "z": "N",
+    "K": "T"
+   }
+  }
+ ]
+}

@@ -1,0 +1,616 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:37:10.647Z",
+ "label": "eng09_09",
+ "cipher": {
+  "id": "eng09",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng09.txt",
+  "text": "abcdbefbgdahc",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   9
+  ],
+  "isomorphAfterSlips": "abcdbefbg*ahc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 1204317,
+  "scored": 1109868,
+  "keptAtLeastStreamMin": 155,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 27853,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2787,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 155,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 6,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 12,
+  "3": 91,
+  "4": 52
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.677024796920002,
+  "topShare": 0.10196070181857368,
+  "top10Share": 0.3488743227220408,
+  "effectiveNumberExpEntropy": 465.51346917671265,
+  "effectiveNumberInverseSimpson": 48.77172090394548,
+  "unscoredMassBoundRelative": 0.049217795904305625,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 93,
+   "maxWordLogp": -14.997043679012046,
+   "massEstimateRelative": 0.00001699351014111864,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.01574496313126172
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 5,
+   "-18.25": 39,
+   "-18.00": 135,
+   "-17.75": 229,
+   "-17.50": 312,
+   "-17.25": 376,
+   "-17.00": 488,
+   "-16.75": 580,
+   "-16.50": 820,
+   "-16.25": 1135,
+   "-16.00": 1517,
+   "-15.75": 1993,
+   "-15.50": 2801,
+   "-15.25": 3607,
+   "-15.00": 4876,
+   "-14.75": 5882,
+   "-14.50": 7402,
+   "-14.25": 8673,
+   "-14.00": 10224,
+   "-13.75": 11798,
+   "-13.50": 13414,
+   "-13.25": 15360,
+   "-13.00": 18279,
+   "-12.75": 21580,
+   "-12.50": 24538,
+   "-12.25": 27977,
+   "-12.00": 31698,
+   "-11.75": 35048,
+   "-11.50": 38249,
+   "-11.25": 40947,
+   "-11.00": 43599,
+   "-10.75": 45756,
+   "-10.50": 47086,
+   "-10.25": 48236,
+   "-10.00": 49814,
+   "-9.75": 50880,
+   "-9.50": 51734,
+   "-9.25": 52151,
+   "-9.00": 52284,
+   "-8.75": 52018,
+   "-8.50": 50793,
+   "-8.25": 48243,
+   "-8.00": 45370,
+   "-7.75": 41424,
+   "-7.50": 37932,
+   "-7.25": 33150,
+   "-7.00": 28365,
+   "-6.75": 23361,
+   "-6.50": 19382,
+   "-6.25": 15207,
+   "-6.00": 11642,
+   "-5.75": 8759,
+   "-5.50": 6159,
+   "-5.25": 4198,
+   "-5.00": 2776,
+   "-4.75": 1726,
+   "-4.50": 996,
+   "-4.25": 611,
+   "-4.00": 318,
+   "-3.75": 161,
+   "-3.50": 77,
+   "-3.25": 67,
+   "-3.00": 34,
+   "-2.75": 16,
+   "-2.50": 7,
+   "-2.25": 2,
+   "-2.00": 1
+  },
+  "exactScored": {
+   "-19.50": 3,
+   "-19.25": 9,
+   "-19.00": 70,
+   "-18.75": 513,
+   "-18.50": 2793,
+   "-18.25": 9027,
+   "-18.00": 19940,
+   "-17.75": 34462,
+   "-17.50": 53605,
+   "-17.25": 71037,
+   "-17.00": 85670,
+   "-16.75": 95269,
+   "-16.50": 97391,
+   "-16.25": 95261,
+   "-16.00": 87601,
+   "-15.75": 78120,
+   "-15.50": 67966,
+   "-15.25": 58671,
+   "-15.00": 50285,
+   "-14.75": 42186,
+   "-14.50": 35603,
+   "-14.25": 28861,
+   "-14.00": 23059,
+   "-13.75": 18199,
+   "-13.50": 14202,
+   "-13.25": 10775,
+   "-13.00": 8145,
+   "-12.75": 5939,
+   "-12.50": 4438,
+   "-12.25": 3390,
+   "-12.00": 2391,
+   "-11.75": 1700,
+   "-11.50": 1133,
+   "-11.25": 735,
+   "-11.00": 520,
+   "-10.75": 340,
+   "-10.50": 214,
+   "-10.25": 148,
+   "-10.00": 70,
+   "-9.75": 55,
+   "-9.50": 30,
+   "-9.25": 16,
+   "-9.00": 9,
+   "-8.75": 7,
+   "-8.50": 6,
+   "-8.25": 2,
+   "-8.00": 1,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-18.50": 5,
+   "-18.25": 39,
+   "-18.00": 135,
+   "-17.75": 229,
+   "-17.50": 312,
+   "-17.25": 376,
+   "-17.00": 488,
+   "-16.75": 580,
+   "-16.50": 820,
+   "-16.25": 1135,
+   "-16.00": 1517,
+   "-15.75": 1993,
+   "-15.50": 2801,
+   "-15.25": 3607,
+   "-15.00": 4876,
+   "-14.75": 5882,
+   "-14.50": 7402,
+   "-14.25": 8673,
+   "-14.00": 10224,
+   "-13.75": 11798,
+   "-13.50": 13414,
+   "-13.25": 15360,
+   "-13.00": 2783
+  }
+ },
+ "timeMs": {
+  "total": 11738,
+  "setup": 414
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "RELIEFGENERAL",
+   "wordLogp": -7.6686,
+   "words": "RELIEF GENERAL",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "E",
+    "c": "L",
+    "d": "I",
+    "e": "F",
+    "f": "G",
+    "g": "N",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CENTERMEXICAN",
+   "wordLogp": -7.9156,
+   "words": "CENTER MEXICAN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "M",
+    "g": "X",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "RELIEFCENTRAL",
+   "wordLogp": -8.1061,
+   "words": "RELIEF CENTRAL",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "E",
+    "c": "L",
+    "d": "I",
+    "e": "F",
+    "f": "C",
+    "g": "N",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "RELIEFSEVERAL",
+   "wordLogp": -8.1306,
+   "words": "RELIEF SEVERAL",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "E",
+    "c": "L",
+    "d": "I",
+    "e": "F",
+    "f": "S",
+    "g": "V",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "USERSABSOLUTE",
+   "wordLogp": -8.315,
+   "words": "USERS ABSOLUTE",
+   "unknown": 0,
+   "key": {
+    "a": "U",
+    "b": "S",
+    "c": "E",
+    "d": "R",
+    "e": "A",
+    "f": "B",
+    "g": "O",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "MOSTOFCOLUMNS",
+   "wordLogp": -8.3348,
+   "words": "MOST OF COLUMNS",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "O",
+    "c": "S",
+    "d": "T",
+    "e": "F",
+    "f": "C",
+    "g": "L",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ANDONLINECARD",
+   "wordLogp": -8.3782,
+   "words": "AND ONLINE CARD",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "O",
+    "e": "L",
+    "f": "I",
+    "g": "E",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ITEMTHATWHILE",
+   "wordLogp": -8.3823,
+   "words": "ITEM THAT WHILE",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "T",
+    "c": "E",
+    "d": "M",
+    "e": "H",
+    "f": "A",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "SEPTEMBERISUP",
+   "wordLogp": -8.4686,
+   "words": "SEPTEMBER IS UP",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "P",
+    "d": "T",
+    "e": "M",
+    "f": "B",
+    "g": "R",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ONLINEANDSOUL",
+   "wordLogp": -8.4733,
+   "words": "ONLINE AND SOUL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "N",
+    "c": "L",
+    "d": "I",
+    "e": "E",
+    "f": "A",
+    "g": "D",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ANDONLINEHARD",
+   "wordLogp": -8.5227,
+   "words": "AND ONLINE HARD",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "O",
+    "e": "L",
+    "f": "I",
+    "g": "E",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "HASMADEATTHIS",
+   "wordLogp": -8.5246,
+   "words": "HAS MADE AT THIS",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "A",
+    "c": "S",
+    "d": "M",
+    "e": "D",
+    "f": "E",
+    "g": "T",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "AREORPURCHASE",
+   "wordLogp": -8.5875,
+   "words": "ARE OR PURCHASE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "R",
+    "c": "E",
+    "d": "O",
+    "e": "P",
+    "f": "U",
+    "g": "C",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THEWHICHNOTBE",
+   "wordLogp": -8.6107,
+   "words": "THE WHICH NOT BE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "W",
+    "e": "I",
+    "f": "C",
+    "g": "N",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "LEAVETHEONLYA",
+   "wordLogp": -8.7015,
+   "words": "LEAVE THE ONLY A",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "E",
+    "c": "A",
+    "d": "V",
+    "e": "T",
+    "f": "H",
+    "g": "O",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "MOTIONGOURMET",
+   "wordLogp": -8.7017,
+   "words": "MOTION GOURMET",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "O",
+    "c": "T",
+    "d": "I",
+    "e": "N",
+    "f": "G",
+    "g": "U",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "FORGOTYOURFAR",
+   "wordLogp": -8.7388,
+   "words": "FORGOT YOUR FAR",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "R",
+    "d": "G",
+    "e": "T",
+    "f": "Y",
+    "g": "U",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "NOWFORYOURNEW",
+   "wordLogp": -8.7744,
+   "words": "NOW FOR YOUR NEW",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "W",
+    "d": "F",
+    "e": "R",
+    "f": "Y",
+    "g": "U",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "NEWJERSEYKNOW",
+   "wordLogp": -8.7779,
+   "words": "NEW JERSEY KNOW",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "E",
+    "c": "W",
+    "d": "J",
+    "e": "R",
+    "f": "S",
+    "g": "Y",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "STARTOFTHESEA",
+   "wordLogp": -8.7799,
+   "words": "START OF THE SEA",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "T",
+    "c": "A",
+    "d": "R",
+    "e": "O",
+    "f": "F",
+    "g": "H",
+    "h": "E"
+   }
+  }
+ ]
+}

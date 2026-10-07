@@ -1,0 +1,609 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:22:40.821Z",
+ "label": "scr06_03",
+ "cipher": {
+  "id": "scr06",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr06.txt",
+  "text": "zAKN0[NAE00MM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*efdbgeehh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 299369,
+  "scored": 264977,
+  "keptAtLeastStreamMin": 35,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 6793,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 686,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 35,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 14,
+  "4": 19
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.5111659845117655,
+  "topShare": 0.13211508982723133,
+  "top10Share": 0.32870988093901876,
+  "effectiveNumberExpEntropy": 385.4705338025125,
+  "effectiveNumberInverseSimpson": 41.68011534624764,
+  "unscoredMassBoundRelative": 0.12232730746413065,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 32,
+   "maxWordLogp": -15.06551472063632,
+   "massEstimateRelative": 0.00003863273860052029,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.042209519608040966
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 4,
+   "-18.00": 29,
+   "-17.75": 57,
+   "-17.50": 84,
+   "-17.25": 96,
+   "-17.00": 118,
+   "-16.75": 210,
+   "-16.50": 272,
+   "-16.25": 355,
+   "-16.00": 512,
+   "-15.75": 741,
+   "-15.50": 970,
+   "-15.25": 1262,
+   "-15.00": 1623,
+   "-14.75": 1978,
+   "-14.50": 2340,
+   "-14.25": 2906,
+   "-14.00": 3600,
+   "-13.75": 4602,
+   "-13.50": 5385,
+   "-13.25": 6190,
+   "-13.00": 7008,
+   "-12.75": 7758,
+   "-12.50": 8497,
+   "-12.25": 8852,
+   "-12.00": 9527,
+   "-11.75": 10659,
+   "-11.50": 11753,
+   "-11.25": 12874,
+   "-11.00": 13565,
+   "-10.75": 14436,
+   "-10.50": 14471,
+   "-10.25": 14495,
+   "-10.00": 14012,
+   "-9.75": 13230,
+   "-9.50": 12301,
+   "-9.25": 11369,
+   "-9.00": 10733,
+   "-8.75": 9397,
+   "-8.50": 8633,
+   "-8.25": 7786,
+   "-8.00": 7142,
+   "-7.75": 6473,
+   "-7.50": 5882,
+   "-7.25": 5306,
+   "-7.00": 4527,
+   "-6.75": 3913,
+   "-6.50": 3151,
+   "-6.25": 2390,
+   "-6.00": 1815,
+   "-5.75": 1313,
+   "-5.50": 964,
+   "-5.25": 720,
+   "-5.00": 430,
+   "-4.75": 286,
+   "-4.50": 176,
+   "-4.25": 100,
+   "-4.00": 43,
+   "-3.75": 17,
+   "-3.50": 15,
+   "-3.25": 5,
+   "-3.00": 4,
+   "-2.75": 2,
+   "-2.50": 2,
+   "-2.25": 3
+  },
+  "exactScored": {
+   "-19.50": 1,
+   "-19.25": 1,
+   "-19.00": 45,
+   "-18.75": 374,
+   "-18.50": 1503,
+   "-18.25": 3523,
+   "-18.00": 6843,
+   "-17.75": 10847,
+   "-17.50": 14299,
+   "-17.25": 16678,
+   "-17.00": 18901,
+   "-16.75": 20306,
+   "-16.50": 20484,
+   "-16.25": 20459,
+   "-16.00": 19825,
+   "-15.75": 18077,
+   "-15.50": 16598,
+   "-15.25": 14692,
+   "-15.00": 12552,
+   "-14.75": 10533,
+   "-14.50": 8675,
+   "-14.25": 6804,
+   "-14.00": 5366,
+   "-13.75": 4402,
+   "-13.50": 3488,
+   "-13.25": 2553,
+   "-13.00": 1966,
+   "-12.75": 1481,
+   "-12.50": 1092,
+   "-12.25": 795,
+   "-12.00": 579,
+   "-11.75": 440,
+   "-11.50": 278,
+   "-11.25": 183,
+   "-11.00": 125,
+   "-10.75": 90,
+   "-10.50": 51,
+   "-10.25": 23,
+   "-10.00": 21,
+   "-9.75": 11,
+   "-9.50": 8,
+   "-9.25": 3,
+   "-9.00": 1,
+   "-8.50": 1
+  },
+  "boundUnscored": {
+   "-18.25": 4,
+   "-18.00": 29,
+   "-17.75": 57,
+   "-17.50": 84,
+   "-17.25": 96,
+   "-17.00": 118,
+   "-16.75": 210,
+   "-16.50": 272,
+   "-16.25": 355,
+   "-16.00": 512,
+   "-15.75": 741,
+   "-15.50": 970,
+   "-15.25": 1262,
+   "-15.00": 1623,
+   "-14.75": 1978,
+   "-14.50": 2340,
+   "-14.25": 2906,
+   "-14.00": 3600,
+   "-13.75": 4602,
+   "-13.50": 5385,
+   "-13.25": 6190,
+   "-13.00": 1058
+  }
+ },
+ "timeMs": {
+  "total": 7492,
+  "setup": 426
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "TRANSFORMSSEE",
+   "wordLogp": -8.3902,
+   "words": "TRANSFORMS SEE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "T",
+    "A": "R",
+    "K": "A",
+    "[": "F",
+    "N": "O",
+    "E": "M",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "WITHAFRICAALL",
+   "wordLogp": -8.9325,
+   "words": "WITH AFRICA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "W",
+    "A": "I",
+    "K": "T",
+    "[": "F",
+    "N": "R",
+    "E": "C",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "STATEOFTHEEGG",
+   "wordLogp": -9.0429,
+   "words": "STATE OF THE EGG",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "S",
+    "A": "T",
+    "K": "A",
+    "[": "O",
+    "N": "F",
+    "E": "H",
+    "M": "G"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "COMPANYOFAALL",
+   "wordLogp": -9.071,
+   "words": "COMPANY OF A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "C",
+    "A": "O",
+    "K": "M",
+    "[": "N",
+    "N": "Y",
+    "E": "F",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "BEREACHEDAALL",
+   "wordLogp": -9.1626,
+   "words": "BE REACHED A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "B",
+    "A": "E",
+    "K": "R",
+    "[": "C",
+    "N": "H",
+    "E": "D",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "SITEAFRICAALL",
+   "wordLogp": -9.2524,
+   "words": "SITE AFRICA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "S",
+    "A": "I",
+    "K": "T",
+    "[": "F",
+    "N": "R",
+    "E": "C",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "TIMEAFRICAALL",
+   "wordLogp": -9.2642,
+   "words": "TIME AFRICA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "T",
+    "A": "I",
+    "K": "M",
+    "[": "F",
+    "N": "R",
+    "E": "C",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ONLISTINGSSEE",
+   "wordLogp": -9.3127,
+   "words": "ON LISTINGS SEE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "O",
+    "A": "N",
+    "K": "L",
+    "[": "T",
+    "N": "I",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "JUSTABOUTAALL",
+   "wordLogp": -9.3469,
+   "words": "JUST ABOUT A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "J",
+    "A": "U",
+    "K": "S",
+    "[": "B",
+    "N": "O",
+    "E": "T",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "FORMATIONAALL",
+   "wordLogp": -9.3894,
+   "words": "FORMATION A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "F",
+    "A": "O",
+    "K": "R",
+    "[": "T",
+    "N": "I",
+    "E": "N",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "VIEWAFRICAALL",
+   "wordLogp": -9.4553,
+   "words": "VIEW AFRICA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "V",
+    "A": "I",
+    "K": "E",
+    "[": "F",
+    "N": "R",
+    "E": "C",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "BEGRANTEDAALL",
+   "wordLogp": -9.4923,
+   "words": "BE GRANTED A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "B",
+    "A": "E",
+    "K": "G",
+    "[": "N",
+    "N": "T",
+    "E": "D",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "BECHARGEDAALL",
+   "wordLogp": -9.4966,
+   "words": "BE CHARGED A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "B",
+    "A": "E",
+    "K": "C",
+    "[": "R",
+    "N": "G",
+    "E": "D",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "PERSTUDENTTOO",
+   "wordLogp": -9.5944,
+   "words": "PER STUDENT TOO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "P",
+    "A": "E",
+    "K": "R",
+    "[": "U",
+    "N": "D",
+    "E": "N",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "COMPANYORAALL",
+   "wordLogp": -9.6106,
+   "words": "COMPANY OR A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "C",
+    "A": "O",
+    "K": "M",
+    "[": "N",
+    "N": "Y",
+    "E": "R",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "COMPAREOFAALL",
+   "wordLogp": -9.626,
+   "words": "COMPARE OF A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "C",
+    "A": "O",
+    "K": "M",
+    "[": "R",
+    "N": "E",
+    "E": "F",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "WEALTHIESTTOO",
+   "wordLogp": -9.6409,
+   "words": "WEALTHIEST TOO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "W",
+    "A": "E",
+    "K": "A",
+    "[": "H",
+    "N": "I",
+    "E": "S",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "COMMANDOFAALL",
+   "wordLogp": -9.6415,
+   "words": "COMMAND OF A ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "C",
+    "A": "O",
+    "K": "M",
+    "[": "N",
+    "N": "D",
+    "E": "F",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "HIGHAFRICAALL",
+   "wordLogp": -9.6458,
+   "words": "HIGH AFRICA ALL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "H",
+    "A": "I",
+    "K": "G",
+    "[": "F",
+    "N": "R",
+    "E": "C",
+    "M": "L"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "WITHAFRICAADD",
+   "wordLogp": -9.6504,
+   "words": "WITH AFRICA ADD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "W",
+    "A": "I",
+    "K": "T",
+    "[": "F",
+    "N": "R",
+    "E": "C",
+    "M": "D"
+   }
+  }
+ ]
+}

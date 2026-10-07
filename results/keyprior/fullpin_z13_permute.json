@@ -1,0 +1,1155 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T14:07:18.670Z",
+ "argv": "--ciphers z13.canonical,z13.bracket_is_perp,z13.crosshair_null,z13.reversed --keys z408,z340,union --null 10000 --null-kind permute --threads 4 --seed 1970 --out results/keyprior/fullpin_z13_permute.json",
+ "objective": "anneal.js objective: 5-gram joint log10 + entropy penalty 0.5 + 1.0 x wordfast log10 P (common vocab); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 19.072,
+ "results": [
+  {
+   "cipher": "z13.canonical",
+   "key": "z408",
+   "text": "AENz0K0M0[NAM",
+   "pinnedSymbols": "AENzKM",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "WEED?S?H??EWH",
+   "real": {
+    "best": {
+     "plaintext": "WEEDASAHAVEWH",
+     "words": "WEED AS A HAVE WH",
+     "wordLogp": -17.617619555789872,
+     "unknownWords": [
+      "WH"
+     ],
+     "ngram5": -51.20824909210205
+    },
+    "score": -70.91229754828076,
+    "top5": [
+     {
+      "plaintext": "WEEDASAHAVEWH",
+      "score": -70.91229754828076
+     },
+     {
+      "plaintext": "WEEDESEHEREWH",
+      "score": -71.0441514937315
+     },
+     {
+      "plaintext": "WEEDASAHAREWH",
+      "score": -71.84563223551595
+     },
+     {
+      "plaintext": "WEEDASAHATEWH",
+      "score": -72.7339464826473
+     },
+     {
+      "plaintext": "WEEDASAHANEWH",
+      "score": -72.86636273096883
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -84.12497663616702,
+     "sd": 8.9093987986485,
+     "min": -123.51305470133812,
+     "q05": -99.99893225472091,
+     "q25": -89.71962629709557,
+     "median": -83.46893355513603,
+     "q75": -77.69911171224217,
+     "q95": -70.70619978109322,
+     "q99": -66.8331139250086,
+     "max": -55.24847469513999
+    },
+    "topNull": [
+     {
+      "index": 8695,
+      "score": -55.24847469513999,
+      "plaintext": "ONTHEDERESTOR"
+     },
+     {
+      "index": 896,
+      "score": -57.911025623521724,
+      "plaintext": "AYTHETERESTAR"
+     },
+     {
+      "index": 3211,
+      "score": -59.016298902531865,
+      "plaintext": "BETHERELEFTBL"
+     },
+     {
+      "index": 952,
+      "score": -59.198768441566436,
+      "plaintext": "NGESTSTOTHENO"
+     },
+     {
+      "index": 4456,
+      "score": -59.319150859677606,
+      "plaintext": "STENTATETHESE"
+     }
+    ]
+   },
+   "test": {
+    "ge": 541,
+    "n": 10000,
+    "p": 0.05419458054194581,
+    "percentile": 94.59,
+    "z": 1.4830045647850603
+   }
+  },
+  {
+   "cipher": "z13.canonical",
+   "key": "z340",
+   "text": "AENz0K0M0[NAM",
+   "pinnedSymbols": "AENzKM",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "DREA?A?O??EDO",
+   "real": {
+    "best": {
+     "plaintext": "DREATATOTHEDO",
+     "words": "DREATA TO THE DO",
+     "wordLogp": -15.184718442360314,
+     "unknownWords": [
+      "DREATA"
+     ],
+     "ngram5": -44.80545902252197
+    },
+    "score": -62.052837855154664,
+    "top5": [
+     {
+      "plaintext": "DREATATOTHEDO",
+      "score": -62.052837855154664
+     },
+     {
+      "plaintext": "DREANANONCEDO",
+      "score": -68.10620314410926
+     },
+     {
+      "plaintext": "DREANANONEEDO",
+      "score": -70.37807493855595
+     },
+     {
+      "plaintext": "DREANANONTEDO",
+      "score": -70.43616351894089
+     },
+     {
+      "plaintext": "DREASASOSHEDO",
+      "score": -70.64959869672667
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -83.23665896946126,
+     "sd": 8.158165411102376,
+     "min": -121.10261827015363,
+     "q05": -97.34504685069115,
+     "q25": -88.59286901618034,
+     "median": -82.77084227357904,
+     "q75": -77.3530560406464,
+     "q95": -70.62514477325534,
+     "q99": -66.45755304124455,
+     "max": -54.78185097383186
+    },
+    "topNull": [
+     {
+      "index": 4697,
+      "score": -54.78185097383186,
+      "plaintext": "ROACHTHEHEARE"
+     },
+     {
+      "index": 5642,
+      "score": -59.74475778629133,
+      "plaintext": "TLEATSTOTHETO"
+     },
+     {
+      "index": 3840,
+      "score": -60.41205385150925,
+      "plaintext": "INATEREDESAID"
+     },
+     {
+      "index": 4045,
+      "score": -61.16820692161213,
+      "plaintext": "SDEITATETHESE"
+     },
+     {
+      "index": 1460,
+      "score": -61.19509905084217,
+      "plaintext": "ETSWERELEASEL"
+     }
+    ]
+   },
+   "test": {
+    "ge": 7,
+    "n": 10000,
+    "p": 0.0007999200079992001,
+    "percentile": 99.92999999999999,
+    "z": 2.5966403041396684
+   }
+  },
+  {
+   "cipher": "z13.canonical",
+   "key": "union",
+   "text": "AENz0K0M0[NAM",
+   "pinnedSymbols": "AENzKM",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "WEED?S?H??EWH",
+   "real": {
+    "best": {
+     "plaintext": "WEEDASAHAVEWH",
+     "words": "WEED AS A HAVE WH",
+     "wordLogp": -17.617619555789872,
+     "unknownWords": [
+      "WH"
+     ],
+     "ngram5": -51.20824909210205
+    },
+    "score": -70.91229754828076,
+    "top5": [
+     {
+      "plaintext": "WEEDASAHAVEWH",
+      "score": -70.91229754828076
+     },
+     {
+      "plaintext": "WEEDESEHEREWH",
+      "score": -71.0441514937315
+     },
+     {
+      "plaintext": "WEEDASAHAREWH",
+      "score": -71.84563223551595
+     },
+     {
+      "plaintext": "WEEDASAHATEWH",
+      "score": -72.7339464826473
+     },
+     {
+      "plaintext": "WEEDASAHANEWH",
+      "score": -72.86636273096883
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -82.78488974491934,
+     "sd": 8.496710121916012,
+     "min": -120.4857430860391,
+     "q05": -97.67305411126713,
+     "q25": -88.17237636087403,
+     "median": -82.2081777048379,
+     "q75": -76.75589526918034,
+     "q95": -69.80720007326957,
+     "q99": -65.88365106911952,
+     "max": -55.89115493739111
+    },
+    "topNull": [
+     {
+      "index": 3473,
+      "score": -55.89115493739111,
+      "plaintext": "AGENTSTOTHEAO"
+     },
+     {
+      "index": 4170,
+      "score": -56.81847071983511,
+      "plaintext": "OFTENONANDTOA"
+     },
+     {
+      "index": 6729,
+      "score": -59.455159315207155,
+      "plaintext": "EFTHISINISTEN"
+     },
+     {
+      "index": 6879,
+      "score": -59.5532638788834,
+      "plaintext": "RDENTOTETHERE"
+     },
+     {
+      "index": 363,
+      "score": -60.259000957500476,
+      "plaintext": "TYNAMEMOMENTO"
+     }
+    ]
+   },
+   "test": {
+    "ge": 703,
+    "n": 10000,
+    "p": 0.07039296070392961,
+    "percentile": 92.97,
+    "z": 1.397316376136568
+   }
+  },
+  {
+   "cipher": "z13.bracket_is_perp",
+   "key": "z408",
+   "text": "AENz0K0M0tNAM",
+   "pinnedSymbols": "AENzKMt",
+   "nPinned": 7,
+   "nFree": 1,
+   "carriedOver": "WEED?S?H?REWH",
+   "real": {
+    "best": {
+     "plaintext": "WEEDESEHEREWH",
+     "words": "WEED ESEHEREWH",
+     "wordLogp": -17.904035595561464,
+     "unknownWords": [
+      "ESEHEREWH"
+     ],
+     "ngram5": -47.73647737503052
+    },
+    "score": -71.0441514937315,
+    "top5": [
+     {
+      "plaintext": "WEEDESEHEREWH",
+      "score": -71.0441514937315
+     },
+     {
+      "plaintext": "WEEDASAHAREWH",
+      "score": -71.84563223551595
+     },
+     {
+      "plaintext": "WEEDOSOHOREWH",
+      "score": -78.83575601262189
+     },
+     {
+      "plaintext": "WEEDISIHIREWH",
+      "score": -80.00365050258031
+     },
+     {
+      "plaintext": "WEEDTSTHTREWH",
+      "score": -90.22822613400555
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -91.80743620061352,
+     "sd": 10.369906231829344,
+     "min": -140.4663765945833,
+     "q05": -110.28940035131077,
+     "q25": -98.39261282708745,
+     "median": -91.12916758083497,
+     "q75": -84.30067553543245,
+     "q95": -76.03449943939775,
+     "q99": -71.37753252293177,
+     "max": -63.23854532348466
+    },
+    "topNull": [
+     {
+      "index": 661,
+      "score": -63.23854532348466,
+      "plaintext": "NDEITETOTHENO"
+     },
+     {
+      "index": 6092,
+      "score": -63.475135806944984,
+      "plaintext": "OKTHEMEDESTOD"
+     },
+     {
+      "index": 8833,
+      "score": -63.807042563572985,
+      "plaintext": "NEARISITINANT"
+     },
+     {
+      "index": 1629,
+      "score": -64.51032587192836,
+      "plaintext": "ALLIEWEREALAR"
+     },
+     {
+      "index": 6917,
+      "score": -64.54112078907991,
+      "plaintext": "AONHERERESNAR"
+     }
+    ]
+   },
+   "test": {
+    "ge": 84,
+    "n": 10000,
+    "p": 0.0084991500849915,
+    "percentile": 99.16,
+    "z": 2.002263496187775
+   }
+  },
+  {
+   "cipher": "z13.bracket_is_perp",
+   "key": "z340",
+   "text": "AENz0K0M0tNAM",
+   "pinnedSymbols": "AENzKMt",
+   "nPinned": 7,
+   "nFree": 1,
+   "carriedOver": "DREA?A?O?LEDO",
+   "real": {
+    "best": {
+     "plaintext": "DREANANONLEDO",
+     "words": "DREANANONLE DO",
+     "wordLogp": -18.587459617062155,
+     "unknownWords": [
+      "DREANANONLE"
+     ],
+     "ngram5": -53.62505006790161
+    },
+    "score": -74.2988718490953,
+    "top5": [
+     {
+      "plaintext": "DREANANONLEDO",
+      "score": -74.2988718490953
+     },
+     {
+      "plaintext": "DREATATOTLEDO",
+      "score": -75.89111933520981
+     },
+     {
+      "plaintext": "DREALALOLLEDO",
+      "score": -76.26026262216824
+     },
+     {
+      "plaintext": "DREASASOSLEDO",
+      "score": -77.6330274086351
+     },
+     {
+      "plaintext": "DREARARORLEDO",
+      "score": -78.64593399935025
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -90.78653106534638,
+     "sd": 9.500427195919821,
+     "min": -128.9541047146269,
+     "q05": -107.3965852775972,
+     "q25": -97.04081061614731,
+     "median": -90.30536322979141,
+     "q75": -83.9980250718842,
+     "q95": -76.00729753434939,
+     "q99": -71.43393295311414,
+     "max": -65.01144982077149
+    },
+    "topNull": [
+     {
+      "index": 5453,
+      "score": -65.01144982077149,
+      "plaintext": "TOITEMEHEWITH"
+     },
+     {
+      "index": 5438,
+      "score": -65.20899846576843,
+      "plaintext": "INDSATALANDIL"
+     },
+     {
+      "index": 5533,
+      "score": -66.46164251592259,
+      "plaintext": "RORTHSHEHARRE"
+     },
+     {
+      "index": 4697,
+      "score": -66.53896580966908,
+      "plaintext": "ROACHTHEHUARE"
+     },
+     {
+      "index": 3393,
+      "score": -66.62213902890687,
+      "plaintext": "AASWERELEISAL"
+     }
+    ]
+   },
+   "test": {
+    "ge": 289,
+    "n": 10000,
+    "p": 0.028997100289971003,
+    "percentile": 97.11,
+    "z": 1.7354650350178025
+   }
+  },
+  {
+   "cipher": "z13.bracket_is_perp",
+   "key": "union",
+   "text": "AENz0K0M0tNAM",
+   "pinnedSymbols": "AENzKMt",
+   "nPinned": 7,
+   "nFree": 1,
+   "carriedOver": "WEED?S?H?REWH",
+   "real": {
+    "best": {
+     "plaintext": "WEEDESEHEREWH",
+     "words": "WEED ESEHEREWH",
+     "wordLogp": -17.904035595561464,
+     "unknownWords": [
+      "ESEHEREWH"
+     ],
+     "ngram5": -47.73647737503052
+    },
+    "score": -71.0441514937315,
+    "top5": [
+     {
+      "plaintext": "WEEDESEHEREWH",
+      "score": -71.0441514937315
+     },
+     {
+      "plaintext": "WEEDASAHAREWH",
+      "score": -71.84563223551595
+     },
+     {
+      "plaintext": "WEEDOSOHOREWH",
+      "score": -78.83575601262189
+     },
+     {
+      "plaintext": "WEEDISIHIREWH",
+      "score": -80.00365050258031
+     },
+     {
+      "plaintext": "WEEDTSTHTREWH",
+      "score": -90.22822613400555
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -90.25201509194588,
+     "sd": 9.799790448162742,
+     "min": -133.72257682944328,
+     "q05": -107.63024223367813,
+     "q25": -96.39451073561028,
+     "median": -89.72237671574648,
+     "q75": -83.30668176438908,
+     "q95": -75.2753994064606,
+     "q99": -70.56640999789047,
+     "max": -59.5532638788834
+    },
+    "topNull": [
+     {
+      "index": 6879,
+      "score": -59.5532638788834,
+      "plaintext": "RDENTOTETHERE"
+     },
+     {
+      "index": 363,
+      "score": -60.259000957500476,
+      "plaintext": "TYNAMEMOMENTO"
+     },
+     {
+      "index": 5809,
+      "score": -62.56423121011456,
+      "plaintext": "OLITANANATION"
+     },
+     {
+      "index": 6729,
+      "score": -63.86741061903677,
+      "plaintext": "EFTHESENEWTEN"
+     },
+     {
+      "index": 5327,
+      "score": -64.12467644168531,
+      "plaintext": "SHERANATATEST"
+     }
+    ]
+   },
+   "test": {
+    "ge": 125,
+    "n": 10000,
+    "p": 0.012598740125987402,
+    "percentile": 98.75,
+    "z": 1.9600279924164552
+   }
+  },
+  {
+   "cipher": "z13.crosshair_null",
+   "key": "z408",
+   "text": "AEN0K0M0[NAM",
+   "pinnedSymbols": "AENKM",
+   "nPinned": 5,
+   "nFree": 2,
+   "carriedOver": "WEE?S?H??EWH",
+   "real": {
+    "best": {
+     "plaintext": "WEETSTHTHEWH",
+     "words": "WEETSTHTHEWH",
+     "wordLogp": -17.348231492077815,
+     "unknownWords": [
+      "WEETSTHTHEWH"
+     ],
+     "ngram5": -42.182518005371094
+    },
+    "score": -63.600026432015355,
+    "top5": [
+     {
+      "plaintext": "WEETSTHTHEWH",
+      "score": -63.600026432015355
+     },
+     {
+      "plaintext": "WEEESEHEREWH",
+      "score": -67.93292556499735
+     },
+     {
+      "plaintext": "WEEASAHAREWH",
+      "score": -68.39749000763192
+     },
+     {
+      "plaintext": "WEEASAHAVEWH",
+      "score": -68.8803160727224
+     },
+     {
+      "plaintext": "WEEASAHATEWH",
+      "score": -69.28580425476326
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -74.17847674764494,
+     "sd": 7.833495895898812,
+     "min": -111.3396070868116,
+     "q05": -88.12190064493232,
+     "q25": -78.8945095605147,
+     "median": -73.60639410305784,
+     "q75": -68.62614521089606,
+     "q95": -62.54055177016871,
+     "q99": -58.65100564839054,
+     "max": -52.51753031769425
+    },
+    "topNull": [
+     {
+      "index": 952,
+      "score": -52.51753031769425,
+      "plaintext": "NGETSTOTHENO"
+     },
+     {
+      "index": 780,
+      "score": -53.090831331221935,
+      "plaintext": "INHERETECHIT"
+     },
+     {
+      "index": 4042,
+      "score": -53.16709894522809,
+      "plaintext": "THENONANDETA"
+     },
+     {
+      "index": 4125,
+      "score": -53.82616914741246,
+      "plaintext": "EDSTATETOSEE"
+     },
+     {
+      "index": 1626,
+      "score": -54.53487705768966,
+      "plaintext": "AGEITISIDEAS"
+     }
+    ]
+   },
+   "test": {
+    "ge": 718,
+    "n": 10000,
+    "p": 0.07189281071892811,
+    "percentile": 92.82000000000001,
+    "z": 1.3504124411640883
+   }
+  },
+  {
+   "cipher": "z13.crosshair_null",
+   "key": "z340",
+   "text": "AEN0K0M0[NAM",
+   "pinnedSymbols": "AENKM",
+   "nPinned": 5,
+   "nFree": 2,
+   "carriedOver": "DRE?A?O??EDO",
+   "real": {
+    "best": {
+     "plaintext": "DRETATOTHEDO",
+     "words": "DRETA TO THE DO",
+     "wordLogp": -14.28640898393584,
+     "unknownWords": [
+      "DRETA"
+     ],
+     "ngram5": -39.98587465286255
+    },
+    "score": -55.94327656975046,
+    "top5": [
+     {
+      "plaintext": "DRETATOTHEDO",
+      "score": -55.94327656975046
+     },
+     {
+      "plaintext": "DRENANONCEDO",
+      "score": -59.652081801287885
+     },
+     {
+      "plaintext": "DRENANONEEDO",
+      "score": -61.70791229134079
+     },
+     {
+      "plaintext": "DRENANONTEDO",
+      "score": -61.76600087172574
+     },
+     {
+      "plaintext": "DRENANONHEDO",
+      "score": -62.66902101523465
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -73.42165739089434,
+     "sd": 7.077479509965851,
+     "min": -107.58758919181331,
+     "q05": -85.71657837097766,
+     "q25": -78.07489757365417,
+     "median": -73.12458873455645,
+     "q75": -68.27704740231158,
+     "q95": -62.48157465435033,
+     "q99": -58.87295726949688,
+     "max": -52.72892695524123
+    },
+    "topNull": [
+     {
+      "index": 5604,
+      "score": -52.72892695524123,
+      "plaintext": "ANTEWERESTAR"
+     },
+     {
+      "index": 6875,
+      "score": -53.04985587462106,
+      "plaintext": "ABLEWERECLAR"
+     },
+     {
+      "index": 4268,
+      "score": -53.31541699084704,
+      "plaintext": "IATEHERESTIR"
+     },
+     {
+      "index": 5642,
+      "score": -53.55888367477967,
+      "plaintext": "TLETSTOTHETO"
+     },
+     {
+      "index": 3378,
+      "score": -53.92903559164751,
+      "plaintext": "RDINANENTIRE"
+     }
+    ]
+   },
+   "test": {
+    "ge": 22,
+    "n": 10000,
+    "p": 0.0022997700229977,
+    "percentile": 99.78,
+    "z": 2.4695770290161128
+   }
+  },
+  {
+   "cipher": "z13.crosshair_null",
+   "key": "union",
+   "text": "AEN0K0M0[NAM",
+   "pinnedSymbols": "AENKM",
+   "nPinned": 5,
+   "nFree": 2,
+   "carriedOver": "WEE?S?H??EWH",
+   "real": {
+    "best": {
+     "plaintext": "WEETSTHTHEWH",
+     "words": "WEETSTHTHEWH",
+     "wordLogp": -17.348231492077815,
+     "unknownWords": [
+      "WEETSTHTHEWH"
+     ],
+     "ngram5": -42.182518005371094
+    },
+    "score": -63.600026432015355,
+    "top5": [
+     {
+      "plaintext": "WEETSTHTHEWH",
+      "score": -63.600026432015355
+     },
+     {
+      "plaintext": "WEEESEHEREWH",
+      "score": -67.93292556499735
+     },
+     {
+      "plaintext": "WEEASAHAREWH",
+      "score": -68.39749000763192
+     },
+     {
+      "plaintext": "WEEASAHAVEWH",
+      "score": -68.8803160727224
+     },
+     {
+      "plaintext": "WEEASAHATEWH",
+      "score": -69.28580425476326
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -73.08945762334348,
+     "sd": 7.456563661193989,
+     "min": -106.85878535810524,
+     "q05": -86.12636511153411,
+     "q25": -77.76227582161548,
+     "median": -72.59980446945244,
+     "q75": -67.76462434681832,
+     "q95": -61.820287262083326,
+     "q99": -58.53903542584811,
+     "max": -53.68166770883161
+    },
+    "topNull": [
+     {
+      "index": 9325,
+      "score": -53.68166770883161,
+      "plaintext": "SNOTATETHOSE"
+     },
+     {
+      "index": 6338,
+      "score": -53.75566044099915,
+      "plaintext": "ITHERERETHIR"
+     },
+     {
+      "index": 4882,
+      "score": -54.38312041875892,
+      "plaintext": "POSTSTATESPA"
+     },
+     {
+      "index": 1630,
+      "score": -54.58708287708012,
+      "plaintext": "EASTATETOSEE"
+     },
+     {
+      "index": 7388,
+      "score": -54.633530998332716,
+      "plaintext": "ATHEREGETHAG"
+     }
+    ]
+   },
+   "test": {
+    "ge": 913,
+    "n": 10000,
+    "p": 0.0913908609139086,
+    "percentile": 90.86999999999999,
+    "z": 1.272627931913696
+   }
+  },
+  {
+   "cipher": "z13.reversed",
+   "key": "z408",
+   "text": "MAN[0M0K0zNEA",
+   "pinnedSymbols": "MANKzE",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "HWE??H?S?DEEW",
+   "real": {
+    "best": {
+     "plaintext": "HWEREHESEDEEW",
+     "words": "HWEREHESEDEEW",
+     "wordLogp": -18.589632840308813,
+     "unknownWords": [
+      "HWEREHESEDEEW"
+     ],
+     "ngram5": -47.42872381210327
+    },
+    "score": -71.48216256762535,
+    "top5": [
+     {
+      "plaintext": "HWEREHESEDEEW",
+      "score": -71.48216256762535
+     },
+     {
+      "plaintext": "HWEVEHESEDEEW",
+      "score": -76.71749958659203
+     },
+     {
+      "plaintext": "HWERAHASADEEW",
+      "score": -78.77578184271843
+     },
+     {
+      "plaintext": "HWEBEHESEDEEW",
+      "score": -78.94137296343834
+     },
+     {
+      "plaintext": "HWEDAHASADEEW",
+      "score": -79.30383536482843
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -84.42965395438442,
+     "sd": 9.23929928472105,
+     "min": -125.0234122398148,
+     "q05": -101.20761586454014,
+     "q25": -90.22190499640625,
+     "median": -83.43011845376591,
+     "q75": -77.82104456170217,
+     "q95": -70.8150467105518,
+     "q99": -66.91388058238992,
+     "max": -57.77942848268491
+    },
+    "topNull": [
+     {
+      "index": 4473,
+      "score": -57.77942848268491,
+      "plaintext": "ANESTATETHENN"
+     },
+     {
+      "index": 9565,
+      "score": -59.057251390703314,
+      "plaintext": "HETHEHESETTLE"
+     },
+     {
+      "index": 9972,
+      "score": -59.555726587063155,
+      "plaintext": "SPENTSTOTHEDP"
+     },
+     {
+      "index": 9629,
+      "score": -60.0100677829828,
+      "plaintext": "HEAVEHERETAPE"
+     },
+     {
+      "index": 402,
+      "score": -60.21639381566487,
+      "plaintext": "RFTHERECENTEF"
+     }
+    ]
+   },
+   "test": {
+    "ge": 602,
+    "n": 10000,
+    "p": 0.06029397060293971,
+    "percentile": 93.97999999999999,
+    "z": 1.4013499279290829
+   }
+  },
+  {
+   "cipher": "z13.reversed",
+   "key": "z340",
+   "text": "MAN[0M0K0zNEA",
+   "pinnedSymbols": "MANKzE",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "ODE??O?A?AERD",
+   "real": {
+    "best": {
+     "plaintext": "ODERNONANAERD",
+     "words": "ODER NON ANAERD",
+     "wordLogp": -18.403917885945425,
+     "unknownWords": [
+      "ANAERD"
+     ],
+     "ngram5": -54.49543905258179
+    },
+    "score": -75.98015670065729,
+    "top5": [
+     {
+      "plaintext": "ODERNONANAERD",
+      "score": -75.98015670065729
+     },
+     {
+      "plaintext": "ODEINONANAERD",
+      "score": -76.23136807706456
+     },
+     {
+      "plaintext": "ODEANONANAERD",
+      "score": -77.62793633605035
+     },
+     {
+      "plaintext": "ODEONONANAERD",
+      "score": -77.85173722992064
+     },
+     {
+      "plaintext": "ODEDNONANAERD",
+      "score": -77.94317016268762
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -83.24191741104562,
+     "sd": 8.451508937352457,
+     "min": -117.07100666787724,
+     "q05": -98.0259209079175,
+     "q25": -88.89770506773309,
+     "median": -82.67472327973942,
+     "q75": -77.28569077095929,
+     "q95": -70.26985967364124,
+     "q99": -66.11710796448341,
+     "max": -57.06714762858604
+    },
+    "topNull": [
+     {
+      "index": 8053,
+      "score": -57.06714762858604,
+      "plaintext": "RATHEREPEATLA"
+     },
+     {
+      "index": 7323,
+      "score": -57.11508072220228,
+      "plaintext": "RATHERERECTIA"
+     },
+     {
+      "index": 6418,
+      "score": -57.13032201934767,
+      "plaintext": "WSTHEWERESTIS"
+     },
+     {
+      "index": 1218,
+      "score": -57.816017589488936,
+      "plaintext": "METHEMEREDTOE"
+     },
+     {
+      "index": 5604,
+      "score": -58.20771683863853,
+      "plaintext": "RATHEREWEATNA"
+     }
+    ]
+   },
+   "test": {
+    "ge": 2034,
+    "n": 10000,
+    "p": 0.2034796520347965,
+    "percentile": 79.66,
+    "z": 0.859226531524342
+   }
+  },
+  {
+   "cipher": "z13.reversed",
+   "key": "union",
+   "text": "MAN[0M0K0zNEA",
+   "pinnedSymbols": "MANKzE",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "HWE??H?S?DEEW",
+   "real": {
+    "best": {
+     "plaintext": "HWEREHESEDEEW",
+     "words": "HWEREHESEDEEW",
+     "wordLogp": -18.589632840308813,
+     "unknownWords": [
+      "HWEREHESEDEEW"
+     ],
+     "ngram5": -47.42872381210327
+    },
+    "score": -71.48216256762535,
+    "top5": [
+     {
+      "plaintext": "HWEREHESEDEEW",
+      "score": -71.48216256762535
+     },
+     {
+      "plaintext": "HWEVEHESEDEEW",
+      "score": -76.71749958659203
+     },
+     {
+      "plaintext": "HWERAHASADEEW",
+      "score": -78.77578184271843
+     },
+     {
+      "plaintext": "HWEBEHESEDEEW",
+      "score": -78.94137296343834
+     },
+     {
+      "plaintext": "HWEDAHASADEEW",
+      "score": -79.30383536482843
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -83.2108608189224,
+     "sd": 8.87624354604011,
+     "min": -123.24699029589684,
+     "q05": -99.03445304658513,
+     "q25": -88.82277650626905,
+     "median": -82.46589475063493,
+     "q75": -76.89128936555485,
+     "q95": -70.10484429225184,
+     "q99": -65.71853130829811,
+     "max": -57.293290124756695
+    },
+    "topNull": [
+     {
+      "index": 3946,
+      "score": -57.293290124756695,
+      "plaintext": "RSTHERERESTAS"
+     },
+     {
+      "index": 4993,
+      "score": -57.67127408171437,
+      "plaintext": "ROTHEREMEETSO"
+     },
+     {
+      "index": 8645,
+      "score": -58.75209158235356,
+      "plaintext": "RATHERESEETRA"
+     },
+     {
+      "index": 7124,
+      "score": -58.94319562491057,
+      "plaintext": "TRASHTHEHEAIR"
+     },
+     {
+      "index": 132,
+      "score": -59.10755307467346,
+      "plaintext": "ANESTATSTHEON"
+     }
+    ]
+   },
+   "test": {
+    "ge": 793,
+    "n": 10000,
+    "p": 0.07939206079392061,
+    "percentile": 92.07,
+    "z": 1.3213583190300677
+   }
+  }
+ ]
+}

@@ -1,0 +1,607 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:30:32.275Z",
+ "label": "eng03_04",
+ "cipher": {
+  "id": "eng03",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng03.txt",
+  "text": "abcdefcgehhca",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   4
+  ],
+  "isomorphAfterSlips": "abcd*fcgehhca"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 207542,
+  "scored": 193045,
+  "keptAtLeastStreamMin": 147,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 13634,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1634,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 147,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 8,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 75,
+  "4": 72
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.716028209872821,
+  "topShare": 0.07625639894872241,
+  "top10Share": 0.4373721063666412,
+  "effectiveNumberExpEntropy": 185.27062360958286,
+  "effectiveNumberInverseSimpson": 39.59142385534058,
+  "unscoredMassBoundRelative": 0.008264305228908534,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 13,
+   "maxWordLogp": -15.576735492506707,
+   "massEstimateRelative": 0.00000224541274118659,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0027225128840401773
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 7,
+   "-17.75": 21,
+   "-17.50": 37,
+   "-17.25": 56,
+   "-17.00": 71,
+   "-16.75": 104,
+   "-16.50": 120,
+   "-16.25": 178,
+   "-16.00": 232,
+   "-15.75": 317,
+   "-15.50": 410,
+   "-15.25": 540,
+   "-15.00": 677,
+   "-14.75": 818,
+   "-14.50": 1083,
+   "-14.25": 1348,
+   "-14.00": 1554,
+   "-13.75": 1909,
+   "-13.50": 2149,
+   "-13.25": 2462,
+   "-13.00": 2617,
+   "-12.75": 2976,
+   "-12.50": 3346,
+   "-12.25": 4039,
+   "-12.00": 4528,
+   "-11.75": 5178,
+   "-11.50": 5698,
+   "-11.25": 6260,
+   "-11.00": 6774,
+   "-10.75": 7011,
+   "-10.50": 7329,
+   "-10.25": 7600,
+   "-10.00": 7889,
+   "-9.75": 7784,
+   "-9.50": 8120,
+   "-9.25": 8131,
+   "-9.00": 8396,
+   "-8.75": 8310,
+   "-8.50": 8429,
+   "-8.25": 8172,
+   "-8.00": 8159,
+   "-7.75": 7756,
+   "-7.50": 7447,
+   "-7.25": 6972,
+   "-7.00": 6426,
+   "-6.75": 5740,
+   "-6.50": 4852,
+   "-6.25": 4260,
+   "-6.00": 3543,
+   "-5.75": 2859,
+   "-5.50": 2199,
+   "-5.25": 1606,
+   "-5.00": 1194,
+   "-4.75": 761,
+   "-4.50": 484,
+   "-4.25": 288,
+   "-4.00": 172,
+   "-3.75": 83,
+   "-3.50": 41,
+   "-3.25": 16,
+   "-3.00": 3
+  },
+  "exactScored": {
+   "-19.25": 3,
+   "-19.00": 6,
+   "-18.75": 32,
+   "-18.50": 118,
+   "-18.25": 596,
+   "-18.00": 1535,
+   "-17.75": 2988,
+   "-17.50": 4963,
+   "-17.25": 7323,
+   "-17.00": 9648,
+   "-16.75": 11539,
+   "-16.50": 12553,
+   "-16.25": 13536,
+   "-16.00": 13636,
+   "-15.75": 13497,
+   "-15.50": 12779,
+   "-15.25": 11976,
+   "-15.00": 11146,
+   "-14.75": 10169,
+   "-14.50": 9030,
+   "-14.25": 8147,
+   "-14.00": 7114,
+   "-13.75": 6346,
+   "-13.50": 5497,
+   "-13.25": 4591,
+   "-13.00": 3679,
+   "-12.75": 2797,
+   "-12.50": 2233,
+   "-12.25": 1639,
+   "-12.00": 1170,
+   "-11.75": 841,
+   "-11.50": 629,
+   "-11.25": 440,
+   "-11.00": 271,
+   "-10.75": 181,
+   "-10.50": 137,
+   "-10.25": 90,
+   "-10.00": 51,
+   "-9.75": 42,
+   "-9.50": 32,
+   "-9.25": 18,
+   "-9.00": 11,
+   "-8.75": 7,
+   "-8.50": 2,
+   "-8.25": 4,
+   "-8.00": 3
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 7,
+   "-17.75": 21,
+   "-17.50": 37,
+   "-17.25": 56,
+   "-17.00": 71,
+   "-16.75": 104,
+   "-16.50": 120,
+   "-16.25": 178,
+   "-16.00": 232,
+   "-15.75": 317,
+   "-15.50": 410,
+   "-15.25": 540,
+   "-15.00": 677,
+   "-14.75": 818,
+   "-14.50": 1083,
+   "-14.25": 1348,
+   "-14.00": 1554,
+   "-13.75": 1909,
+   "-13.50": 2149,
+   "-13.25": 2462,
+   "-13.00": 403
+  }
+ },
+ "timeMs": {
+  "total": 7455,
+  "setup": 421
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "WHODONOTALLOW",
+   "wordLogp": -7.8338,
+   "words": "WHO DO NOT ALLOW",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "H",
+    "c": "O",
+    "d": "D",
+    "f": "N",
+    "g": "T",
+    "e": "A",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "DUETOBECALLED",
+   "wordLogp": -7.8673,
+   "words": "DUE TO BE CALLED",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "U",
+    "c": "E",
+    "d": "T",
+    "f": "B",
+    "g": "C",
+    "e": "A",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THEFIXEDASSET",
+   "wordLogp": -7.9165,
+   "words": "THE FIXED ASSET",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "F",
+    "f": "X",
+    "g": "D",
+    "e": "A",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THEGENERALLET",
+   "wordLogp": -8.0077,
+   "words": "THE GENERAL LET",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "G",
+    "f": "N",
+    "g": "R",
+    "e": "A",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "WHOISNOTALLOW",
+   "wordLogp": -8.0608,
+   "words": "WHO IS NOT ALLOW",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "H",
+    "c": "O",
+    "d": "I",
+    "f": "N",
+    "g": "T",
+    "e": "A",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "DUETOBELOGGED",
+   "wordLogp": -8.1334,
+   "words": "DUE TO BE LOGGED",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "U",
+    "c": "E",
+    "d": "T",
+    "f": "B",
+    "g": "L",
+    "e": "O",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "DUETOBEFILLED",
+   "wordLogp": -8.2393,
+   "words": "DUE TO BE FILLED",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "U",
+    "c": "E",
+    "d": "T",
+    "f": "B",
+    "g": "F",
+    "e": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "DUETOBEPASSED",
+   "wordLogp": -8.3078,
+   "words": "DUE TO BE PASSED",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "U",
+    "c": "E",
+    "d": "T",
+    "f": "B",
+    "g": "P",
+    "e": "A",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THEFEDERALLET",
+   "wordLogp": -8.3562,
+   "words": "THE FEDERAL LET",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "F",
+    "f": "D",
+    "g": "R",
+    "e": "A",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "DOESSHECALLED",
+   "wordLogp": -8.555,
+   "words": "DOES SHE CALLED",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "O",
+    "c": "E",
+    "d": "S",
+    "f": "H",
+    "g": "C",
+    "e": "A",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THEPAGEWASSET",
+   "wordLogp": -8.5626,
+   "words": "THE PAGE WAS SET",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "P",
+    "f": "G",
+    "g": "W",
+    "e": "A",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "DOESTHECALLED",
+   "wordLogp": -8.5969,
+   "words": "DOES THE CALLED",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "O",
+    "c": "E",
+    "d": "S",
+    "f": "H",
+    "g": "C",
+    "e": "A",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "DUETOBEMISSED",
+   "wordLogp": -8.6097,
+   "words": "DUE TO BE MISSED",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "U",
+    "c": "E",
+    "d": "T",
+    "f": "B",
+    "g": "M",
+    "e": "I",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "FLOWPROCESSOF",
+   "wordLogp": -8.6685,
+   "words": "FLOW PROCESS OF",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "L",
+    "c": "O",
+    "d": "W",
+    "f": "R",
+    "g": "C",
+    "e": "E",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "DUETOBEKILLED",
+   "wordLogp": -8.6834,
+   "words": "DUE TO BE KILLED",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "U",
+    "c": "E",
+    "d": "T",
+    "f": "B",
+    "g": "K",
+    "e": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THOSEWOMENNOT",
+   "wordLogp": -8.712,
+   "words": "THOSE WOMEN NOT",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "O",
+    "d": "S",
+    "f": "W",
+    "g": "M",
+    "e": "E",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "FROMSHOWALLOF",
+   "wordLogp": -8.7601,
+   "words": "FROM SHOW ALL OF",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "O",
+    "d": "M",
+    "f": "H",
+    "g": "W",
+    "e": "A",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THEFRIENDSSET",
+   "wordLogp": -8.7606,
+   "words": "THE FRIENDS SET",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "F",
+    "f": "I",
+    "g": "N",
+    "e": "D",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THEMODELISSET",
+   "wordLogp": -8.8024,
+   "words": "THE MODEL IS SET",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "M",
+    "f": "D",
+    "g": "L",
+    "e": "I",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "THECAMERASSET",
+   "wordLogp": -8.8056,
+   "words": "THE CAMERAS SET",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "C",
+    "f": "M",
+    "g": "R",
+    "e": "A",
+    "h": "S"
+   }
+  }
+ ]
+}

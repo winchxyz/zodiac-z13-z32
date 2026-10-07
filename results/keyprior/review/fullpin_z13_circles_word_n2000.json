@@ -1,0 +1,204 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T17:03:54.356Z",
+ "argv": "--ciphers z13.circles_distinct --keys z408,z340 --null 2000 --null-kind permute --threads 4 --seed 1970 --max-free 4 --stat word --out results/keyprior/review/fullpin_z13_circles_word_n2000.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 2000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 1095.287,
+ "results": [
+  {
+   "cipher": "z13.circles_distinct",
+   "key": "z408",
+   "text": "AENz0K{M}[NAM",
+   "pinnedSymbols": "AENzKM",
+   "nPinned": 6,
+   "nFree": 4,
+   "carriedOver": "WEED?S?H??EWH",
+   "real": {
+    "best": {
+     "plaintext": "WEEDISTHENEWH",
+     "words": "WEED IS THE NEW H",
+     "wordLogp": -14.692971907481482,
+     "unknownWords": [
+      "H"
+     ],
+     "ngram5": -43.014851570129395
+    },
+    "score": -14.941829040804405,
+    "top5": [
+     {
+      "plaintext": "WEEDISTHENEWH",
+      "score": -14.941829040804405
+     },
+     {
+      "plaintext": "WEEDSSCHEMEWH",
+      "score": -15.19392930496888
+     },
+     {
+      "plaintext": "WEEDASTHENEWH",
+      "score": -15.26277081097148
+     },
+     {
+      "plaintext": "WEEDISTHEREWH",
+      "score": -15.49656849441055
+     },
+     {
+      "plaintext": "WEEDUSTHENEWH",
+      "score": -15.524865642439778
+     }
+    ]
+   },
+   "null": {
+    "n": 2000,
+    "kind": "permute",
+    "summary": {
+     "n": 2000,
+     "finite": 2000,
+     "mean": -17.05578595259903,
+     "sd": 2.3397252099326424,
+     "min": -24.146347851905492,
+     "q05": -20.877742858085302,
+     "q25": -18.6808309270474,
+     "median": -17.106902444438724,
+     "q75": -15.393627484352706,
+     "q95": -13.328246918897774,
+     "q99": -11.668757425492831,
+     "max": -8.658101454896272
+    },
+    "topNull": [
+     {
+      "index": 1170,
+      "score": -8.658101454896272,
+      "plaintext": "THENEWSSHEETS"
+     },
+     {
+      "index": 1566,
+      "score": -9.736810634955502,
+      "plaintext": "TOAWHATESTATE"
+     },
+     {
+      "index": 447,
+      "score": -10.135001666177605,
+      "plaintext": "AREASMADEREAD"
+     },
+     {
+      "index": 780,
+      "score": -10.602360830098005,
+      "plaintext": "INHOURSTHEHIT"
+     },
+     {
+      "index": 33,
+      "score": -10.69701270206426,
+      "plaintext": "EARNPLEASUREA"
+     }
+    ]
+   },
+   "test": {
+    "ge": 398,
+    "n": 2000,
+    "p": 0.19940029985007496,
+    "percentile": 80.1,
+    "z": 0.9035064899161742
+   }
+  },
+  {
+   "cipher": "z13.circles_distinct",
+   "key": "z340",
+   "text": "AENz0K{M}[NAM",
+   "pinnedSymbols": "AENzKM",
+   "nPinned": 6,
+   "nFree": 4,
+   "carriedOver": "DREA?A?O??EDO",
+   "real": {
+    "best": {
+     "plaintext": "DREAMATORPEDO",
+     "words": "DREAM A TORPEDO",
+     "wordLogp": -12.178355477406356,
+     "unknownWords": [],
+     "ngram5": -49.308595180511475
+    },
+    "score": -11.719912595532819,
+    "top5": [
+     {
+      "plaintext": "DREAMATORPEDO",
+      "score": -11.719912595532819
+     },
+     {
+      "plaintext": "DREAMATOTHEDO",
+      "score": -11.736828672626606
+     },
+     {
+      "plaintext": "DREAMAGOTHEDO",
+      "score": -12.054806030854794
+     },
+     {
+      "plaintext": "DREAMAHOUSEDO",
+      "score": -12.091685725471592
+     },
+     {
+      "plaintext": "DREAMAMOVIEDO",
+      "score": -12.256067898149405
+     }
+    ]
+   },
+   "null": {
+    "n": 2000,
+    "kind": "permute",
+    "summary": {
+     "n": 2000,
+     "finite": 2000,
+     "mean": -16.886324090111614,
+     "sd": 2.09896726921729,
+     "min": -22.215917320403722,
+     "q05": -20.097746701392797,
+     "q25": -18.447410435847512,
+     "median": -16.931167021733707,
+     "q75": -15.447019612855076,
+     "q95": -13.33595188544139,
+     "q99": -11.675114246515223,
+     "max": -9.973389801327498
+    },
+    "topNull": [
+     {
+      "index": 227,
+      "score": -9.973389801327498,
+      "plaintext": "DELIVERYBALDY"
+     },
+     {
+      "index": 1896,
+      "score": -10.07910549657164,
+      "plaintext": "ENTTRANSLATES"
+     },
+     {
+      "index": 426,
+      "score": -10.09008398276346,
+      "plaintext": "PRINTTOSTRIPS"
+     },
+     {
+      "index": 1385,
+      "score": -10.172017878698679,
+      "plaintext": "ISELEVENTHEIN"
+     },
+     {
+      "index": 1959,
+      "score": -10.194587090982637,
+      "plaintext": "ONIALIENATION"
+     }
+    ]
+   },
+   "test": {
+    "ge": 23,
+    "n": 2000,
+    "p": 0.01199400299850075,
+    "percentile": 98.85000000000001,
+    "z": 2.461406411785241
+   }
+  }
+ ]
+}

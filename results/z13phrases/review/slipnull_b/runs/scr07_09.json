@@ -1,0 +1,342 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:23:51.298Z",
+ "label": "scr07_09",
+ "cipher": {
+  "id": "scr07",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr07.txt",
+  "text": "0M[KM0E0NzNAA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   9
+  ],
+  "isomorphAfterSlips": "abcdbaeaf*fhh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 31121,
+  "scored": 27886,
+  "keptAtLeastStreamMin": 5,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 866,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 100,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 5,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 4,
+  "4": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.384839979868492,
+  "topShare": 0.26170999586976473,
+  "top10Share": 0.44560322596223295,
+  "effectiveNumberExpEntropy": 69.16938102424959,
+  "effectiveNumberInverseSimpson": 12.25788628252852,
+  "unscoredMassBoundRelative": 0.08602293674154046,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 1,
+   "maxWordLogp": -17.392582432868753,
+   "massEstimateRelative": 9.823303156600105e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.028132525811698766
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 1,
+   "-17.75": 1,
+   "-17.50": 6,
+   "-17.25": 11,
+   "-17.00": 17,
+   "-16.75": 22,
+   "-16.50": 45,
+   "-16.25": 52,
+   "-16.00": 67,
+   "-15.75": 74,
+   "-15.50": 100,
+   "-15.25": 105,
+   "-15.00": 124,
+   "-14.75": 191,
+   "-14.50": 226,
+   "-14.25": 289,
+   "-14.00": 377,
+   "-13.75": 429,
+   "-13.50": 461,
+   "-13.25": 533,
+   "-13.00": 579,
+   "-12.75": 594,
+   "-12.50": 731,
+   "-12.25": 801,
+   "-12.00": 847,
+   "-11.75": 951,
+   "-11.50": 1080,
+   "-11.25": 1152,
+   "-11.00": 1170,
+   "-10.75": 1240,
+   "-10.50": 1296,
+   "-10.25": 1302,
+   "-10.00": 1322,
+   "-9.75": 1319,
+   "-9.50": 1334,
+   "-9.25": 1337,
+   "-9.00": 1254,
+   "-8.75": 1184,
+   "-8.50": 1158,
+   "-8.25": 1069,
+   "-8.00": 976,
+   "-7.75": 897,
+   "-7.50": 845,
+   "-7.25": 704,
+   "-7.00": 591,
+   "-6.75": 540,
+   "-6.50": 463,
+   "-6.25": 350,
+   "-6.00": 243,
+   "-5.75": 198,
+   "-5.50": 153,
+   "-5.25": 120,
+   "-5.00": 70,
+   "-4.75": 41,
+   "-4.50": 36,
+   "-4.25": 17,
+   "-4.00": 9,
+   "-3.75": 8,
+   "-3.50": 2,
+   "-3.25": 3,
+   "-3.00": 2,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-19.25": 2,
+   "-19.00": 7,
+   "-18.75": 33,
+   "-18.50": 124,
+   "-18.25": 292,
+   "-18.00": 583,
+   "-17.75": 910,
+   "-17.50": 1384,
+   "-17.25": 1678,
+   "-17.00": 1962,
+   "-16.75": 2133,
+   "-16.50": 2175,
+   "-16.25": 2172,
+   "-16.00": 2112,
+   "-15.75": 1923,
+   "-15.50": 1782,
+   "-15.25": 1640,
+   "-15.00": 1342,
+   "-14.75": 1111,
+   "-14.50": 942,
+   "-14.25": 765,
+   "-14.00": 681,
+   "-13.75": 526,
+   "-13.50": 410,
+   "-13.25": 291,
+   "-13.00": 240,
+   "-12.75": 179,
+   "-12.50": 116,
+   "-12.25": 125,
+   "-12.00": 72,
+   "-11.75": 58,
+   "-11.50": 34,
+   "-11.25": 28,
+   "-11.00": 17,
+   "-10.75": 17,
+   "-10.50": 8,
+   "-10.25": 7,
+   "-10.00": 2,
+   "-9.75": 2,
+   "-9.00": 1
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 1,
+   "-17.75": 1,
+   "-17.50": 6,
+   "-17.25": 11,
+   "-17.00": 17,
+   "-16.75": 22,
+   "-16.50": 45,
+   "-16.25": 52,
+   "-16.00": 67,
+   "-15.75": 74,
+   "-15.50": 100,
+   "-15.25": 105,
+   "-15.00": 124,
+   "-14.75": 191,
+   "-14.50": 226,
+   "-14.25": 289,
+   "-14.00": 377,
+   "-13.75": 429,
+   "-13.50": 461,
+   "-13.25": 533,
+   "-13.00": 103
+  }
+ },
+ "timeMs": {
+  "total": 1444,
+  "setup": 464
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ENGINEREADALL",
+   "wordLogp": -8.967,
+   "words": "ENGINE READ ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "R",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ENGINEYEARALL",
+   "wordLogp": -9.5303,
+   "words": "ENGINE YEAR ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "Y",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ENGINEREALALL",
+   "wordLogp": -9.7344,
+   "words": "ENGINE REAL ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "R",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "SERIESUSATALL",
+   "wordLogp": -9.8538,
+   "words": "SERIES US AT ALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "I",
+    "E": "U",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ENGINETEAMALL",
+   "wordLogp": -9.8575,
+   "words": "ENGINE TEAM ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "T",
+    "N": "A",
+    "A": "L"
+   }
+  }
+ ]
+}

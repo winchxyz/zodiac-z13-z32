@@ -1,0 +1,609 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:39:34.908Z",
+ "label": "scr24_11",
+ "cipher": {
+  "id": "scr24",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr24.txt",
+  "text": "zAKN[0N00AEMM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   11
+  ],
+  "isomorphAfterSlips": "abcdefdffbg*h"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 175899,
+  "scored": 166790,
+  "keptAtLeastStreamMin": 68,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 7220,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 840,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 68,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 5,
+  "3": 31,
+  "4": 32
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.084096064265811,
+  "topShare": 0.11150107031680412,
+  "top10Share": 0.4587727879156362,
+  "effectiveNumberExpEntropy": 137.26778589209056,
+  "effectiveNumberInverseSimpson": 28.121480325343487,
+  "unscoredMassBoundRelative": 0.012118999466093943,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 8,
+   "maxWordLogp": -15.638884343916317,
+   "massEstimateRelative": 0.000007445140524244306,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004257597427566845
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 1,
+   "-18.25": 5,
+   "-18.00": 6,
+   "-17.75": 13,
+   "-17.50": 25,
+   "-17.25": 23,
+   "-17.00": 44,
+   "-16.75": 65,
+   "-16.50": 64,
+   "-16.25": 121,
+   "-16.00": 155,
+   "-15.75": 185,
+   "-15.50": 225,
+   "-15.25": 347,
+   "-15.00": 405,
+   "-14.75": 539,
+   "-14.50": 617,
+   "-14.25": 759,
+   "-14.00": 884,
+   "-13.75": 1206,
+   "-13.50": 1412,
+   "-13.25": 1729,
+   "-13.00": 1956,
+   "-12.75": 2159,
+   "-12.50": 2516,
+   "-12.25": 2986,
+   "-12.00": 3438,
+   "-11.75": 3812,
+   "-11.50": 4234,
+   "-11.25": 4788,
+   "-11.00": 5147,
+   "-10.75": 5814,
+   "-10.50": 6214,
+   "-10.25": 6469,
+   "-10.00": 6883,
+   "-9.75": 7345,
+   "-9.50": 7583,
+   "-9.25": 8083,
+   "-9.00": 8054,
+   "-8.75": 8181,
+   "-8.50": 8182,
+   "-8.25": 8278,
+   "-8.00": 8066,
+   "-7.75": 7664,
+   "-7.50": 7271,
+   "-7.25": 6458,
+   "-7.00": 5752,
+   "-6.75": 4820,
+   "-6.50": 3957,
+   "-6.25": 3103,
+   "-6.00": 2407,
+   "-5.75": 1754,
+   "-5.50": 1234,
+   "-5.25": 861,
+   "-5.00": 635,
+   "-4.75": 365,
+   "-4.50": 260,
+   "-4.25": 124,
+   "-4.00": 80,
+   "-3.75": 46,
+   "-3.50": 38,
+   "-3.25": 23,
+   "-3.00": 19,
+   "-2.75": 9,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-18.75": 4,
+   "-18.50": 89,
+   "-18.25": 335,
+   "-18.00": 1039,
+   "-17.75": 2363,
+   "-17.50": 4178,
+   "-17.25": 6253,
+   "-17.00": 8322,
+   "-16.75": 10483,
+   "-16.50": 12260,
+   "-16.25": 13227,
+   "-16.00": 13409,
+   "-15.75": 13368,
+   "-15.50": 12509,
+   "-15.25": 11476,
+   "-15.00": 10536,
+   "-14.75": 9134,
+   "-14.50": 7611,
+   "-14.25": 6580,
+   "-14.00": 5491,
+   "-13.75": 4310,
+   "-13.50": 3443,
+   "-13.25": 2789,
+   "-13.00": 2143,
+   "-12.75": 1575,
+   "-12.50": 1159,
+   "-12.25": 787,
+   "-12.00": 576,
+   "-11.75": 383,
+   "-11.50": 285,
+   "-11.25": 209,
+   "-11.00": 160,
+   "-10.75": 96,
+   "-10.50": 74,
+   "-10.25": 47,
+   "-10.00": 28,
+   "-9.75": 25,
+   "-9.50": 11,
+   "-9.25": 9,
+   "-9.00": 9,
+   "-8.75": 1,
+   "-8.50": 1,
+   "-8.25": 3
+  },
+  "boundUnscored": {
+   "-18.50": 1,
+   "-18.25": 5,
+   "-18.00": 6,
+   "-17.75": 13,
+   "-17.50": 25,
+   "-17.25": 23,
+   "-17.00": 44,
+   "-16.75": 65,
+   "-16.50": 64,
+   "-16.25": 121,
+   "-16.00": 155,
+   "-15.75": 185,
+   "-15.50": 225,
+   "-15.25": 347,
+   "-15.00": 405,
+   "-14.75": 539,
+   "-14.50": 617,
+   "-14.25": 759,
+   "-14.00": 884,
+   "-13.75": 1206,
+   "-13.50": 1412,
+   "-13.25": 1729,
+   "-13.00": 279
+  }
+ },
+ "timeMs": {
+  "total": 2177,
+  "setup": 410
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ANDTHETEENSEX",
+   "wordLogp": -8.0368,
+   "words": "AND THE TEEN SEX",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "A",
+    "A": "N",
+    "K": "D",
+    "N": "T",
+    "[": "H",
+    "E": "S",
+    "M": "X"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CONTESTSSOUTH",
+   "wordLogp": -8.0688,
+   "words": "CONTESTS SOUTH",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "C",
+    "A": "O",
+    "K": "N",
+    "N": "T",
+    "[": "E",
+    "E": "U",
+    "M": "H"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "TRYANDADDRESS",
+   "wordLogp": -8.2325,
+   "words": "TRY AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "T",
+    "A": "R",
+    "K": "Y",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "CONTESTSSOUND",
+   "wordLogp": -8.4464,
+   "words": "CONTESTS SOUND",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "C",
+    "A": "O",
+    "K": "N",
+    "N": "T",
+    "[": "E",
+    "E": "U",
+    "M": "D"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "PROANDADDRESS",
+   "wordLogp": -8.5733,
+   "words": "PRO AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "P",
+    "A": "R",
+    "K": "O",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "TOSIGNINNORTH",
+   "wordLogp": -8.7792,
+   "words": "TO SIGN IN NORTH",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "z": "T",
+    "A": "O",
+    "K": "S",
+    "N": "I",
+    "[": "G",
+    "E": "R",
+    "M": "H"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ANDTHETEENFOR",
+   "wordLogp": -8.7864,
+   "words": "AND THE TEEN FOR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "A",
+    "A": "N",
+    "K": "D",
+    "N": "T",
+    "[": "H",
+    "E": "F",
+    "M": "R"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ANDTHETEENBOY",
+   "wordLogp": -8.8058,
+   "words": "AND THE TEEN BOY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "A",
+    "A": "N",
+    "K": "D",
+    "N": "T",
+    "[": "H",
+    "E": "B",
+    "M": "Y"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ANDTHETEENSOF",
+   "wordLogp": -8.8066,
+   "words": "AND THE TEENS OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "A",
+    "A": "N",
+    "K": "D",
+    "N": "T",
+    "[": "H",
+    "E": "S",
+    "M": "F"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ANDTHETEENSTO",
+   "wordLogp": -8.809,
+   "words": "AND THE TEENS TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "A",
+    "A": "N",
+    "K": "D",
+    "N": "T",
+    "[": "H",
+    "E": "S",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "FRIANDADDRESS",
+   "wordLogp": -8.8567,
+   "words": "FRI AND ADDRESS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "F",
+    "A": "R",
+    "K": "I",
+    "N": "A",
+    "[": "N",
+    "E": "E",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "CONTESTSSOLID",
+   "wordLogp": -8.8733,
+   "words": "CONTESTS SOLID",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "C",
+    "A": "O",
+    "K": "N",
+    "N": "T",
+    "[": "E",
+    "E": "L",
+    "M": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "CONTESTSSORRY",
+   "wordLogp": -8.895,
+   "words": "CONTESTS SORRY",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "C",
+    "A": "O",
+    "K": "N",
+    "N": "T",
+    "[": "E",
+    "E": "R",
+    "M": "Y"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "HASENDEDDAILY",
+   "wordLogp": -8.9275,
+   "words": "HAS ENDED DAILY",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "z": "H",
+    "A": "A",
+    "K": "S",
+    "N": "E",
+    "[": "N",
+    "E": "I",
+    "M": "Y"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "DESIGNINNEWTO",
+   "wordLogp": -9.0005,
+   "words": "DESIGN IN NEW TO",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "z": "D",
+    "A": "E",
+    "K": "S",
+    "N": "I",
+    "[": "G",
+    "E": "W",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "DESIGNINNEVER",
+   "wordLogp": -9.0118,
+   "words": "DESIGN IN NEVER",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "z": "D",
+    "A": "E",
+    "K": "S",
+    "N": "I",
+    "[": "G",
+    "E": "V",
+    "M": "R"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ANDTHETEENGAY",
+   "wordLogp": -9.0546,
+   "words": "AND THE TEEN GAY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "A",
+    "A": "N",
+    "K": "D",
+    "N": "T",
+    "[": "H",
+    "E": "G",
+    "M": "Y"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "CONTESTSSOYOU",
+   "wordLogp": -9.0696,
+   "words": "CONTESTS SO YOU",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "C",
+    "A": "O",
+    "K": "N",
+    "N": "T",
+    "[": "E",
+    "E": "Y",
+    "M": "U"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "DESIGNINNEWOF",
+   "wordLogp": -9.1052,
+   "words": "DESIGN IN NEW OF",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "z": "D",
+    "A": "E",
+    "K": "S",
+    "N": "I",
+    "[": "G",
+    "E": "W",
+    "M": "F"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "CONTESTSSOFAR",
+   "wordLogp": -9.1258,
+   "words": "CONTESTS SO FAR",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "C",
+    "A": "O",
+    "K": "N",
+    "N": "T",
+    "[": "E",
+    "E": "F",
+    "M": "R"
+   }
+  }
+ ]
+}

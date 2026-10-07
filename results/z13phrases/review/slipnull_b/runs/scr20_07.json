@@ -1,0 +1,606 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:34:52.167Z",
+ "label": "scr20_07",
+ "cipher": {
+  "id": "scr20",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr20.txt",
+  "text": "AM00NK[NzMA0E",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abccdef*gbach"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 232062,
+  "scored": 209733,
+  "keptAtLeastStreamMin": 77,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 9483,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1032,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 77,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 16,
+  "3": 48,
+  "4": 13
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.985310274762982,
+  "topShare": 0.2504843392179228,
+  "top10Share": 0.5361545033004361,
+  "effectiveNumberExpEntropy": 108.86924215068257,
+  "effectiveNumberInverseSimpson": 13.190696984631716,
+  "unscoredMassBoundRelative": 0.023663530959012802,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 20,
+   "maxWordLogp": -14.637943988666231,
+   "massEstimateRelative": 0.000028451181608180635,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00774341577442224
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 1,
+   "-17.75": 17,
+   "-17.50": 42,
+   "-17.25": 70,
+   "-17.00": 123,
+   "-16.75": 174,
+   "-16.50": 170,
+   "-16.25": 215,
+   "-16.00": 302,
+   "-15.75": 395,
+   "-15.50": 603,
+   "-15.25": 864,
+   "-15.00": 1126,
+   "-14.75": 1389,
+   "-14.50": 1771,
+   "-14.25": 2050,
+   "-14.00": 2580,
+   "-13.75": 2795,
+   "-13.50": 3242,
+   "-13.25": 3763,
+   "-13.00": 4286,
+   "-12.75": 4998,
+   "-12.50": 5538,
+   "-12.25": 6413,
+   "-12.00": 6947,
+   "-11.75": 7672,
+   "-11.50": 8343,
+   "-11.25": 8799,
+   "-11.00": 9178,
+   "-10.75": 9398,
+   "-10.50": 9772,
+   "-10.25": 9750,
+   "-10.00": 9816,
+   "-9.75": 9743,
+   "-9.50": 9398,
+   "-9.25": 9433,
+   "-9.00": 9185,
+   "-8.75": 9056,
+   "-8.50": 8728,
+   "-8.25": 8525,
+   "-8.00": 8047,
+   "-7.75": 7194,
+   "-7.50": 6348,
+   "-7.25": 5591,
+   "-7.00": 4795,
+   "-6.75": 3792,
+   "-6.50": 2996,
+   "-6.25": 2125,
+   "-6.00": 1582,
+   "-5.75": 1063,
+   "-5.50": 740,
+   "-5.25": 476,
+   "-5.00": 279,
+   "-4.75": 157,
+   "-4.50": 90,
+   "-4.25": 58,
+   "-4.00": 23,
+   "-3.75": 23,
+   "-3.50": 11,
+   "-3.00": 2
+  },
+  "exactScored": {
+   "-19.50": 1,
+   "-19.25": 2,
+   "-19.00": 6,
+   "-18.75": 88,
+   "-18.50": 438,
+   "-18.25": 1518,
+   "-18.00": 2908,
+   "-17.75": 4787,
+   "-17.50": 7066,
+   "-17.25": 9754,
+   "-17.00": 12292,
+   "-16.75": 13824,
+   "-16.50": 15156,
+   "-16.25": 16145,
+   "-16.00": 15717,
+   "-15.75": 15103,
+   "-15.50": 14237,
+   "-15.25": 13512,
+   "-15.00": 11961,
+   "-14.75": 10532,
+   "-14.50": 9066,
+   "-14.25": 7460,
+   "-14.00": 6018,
+   "-13.75": 4956,
+   "-13.50": 3984,
+   "-13.25": 3243,
+   "-13.00": 2507,
+   "-12.75": 2075,
+   "-12.50": 1573,
+   "-12.25": 1168,
+   "-12.00": 828,
+   "-11.75": 594,
+   "-11.50": 390,
+   "-11.25": 254,
+   "-11.00": 202,
+   "-10.75": 135,
+   "-10.50": 84,
+   "-10.25": 58,
+   "-10.00": 32,
+   "-9.75": 23,
+   "-9.50": 17,
+   "-9.25": 6,
+   "-9.00": 6,
+   "-8.75": 2,
+   "-8.50": 3,
+   "-8.25": 1,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-18.00": 1,
+   "-17.75": 17,
+   "-17.50": 42,
+   "-17.25": 70,
+   "-17.00": 123,
+   "-16.75": 174,
+   "-16.50": 170,
+   "-16.25": 215,
+   "-16.00": 302,
+   "-15.75": 395,
+   "-15.50": 603,
+   "-15.25": 864,
+   "-15.00": 1126,
+   "-14.75": 1389,
+   "-14.50": 1771,
+   "-14.25": 2050,
+   "-14.00": 2580,
+   "-13.75": 2795,
+   "-13.50": 3242,
+   "-13.25": 3763,
+   "-13.00": 637
+  }
+ },
+ "timeMs": {
+  "total": 3044,
+  "setup": 550
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "RUSSIANCOURSE",
+   "wordLogp": -7.5865,
+   "words": "RUSSIAN COURSE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "R",
+    "M": "U",
+    "N": "I",
+    "K": "A",
+    "[": "N",
+    "z": "O",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TREESUPPORTED",
+   "wordLogp": -8.1625,
+   "words": "TREE SUPPORTED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "M": "R",
+    "N": "S",
+    "K": "U",
+    "[": "P",
+    "z": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "BILLYPOSSIBLE",
+   "wordLogp": -8.2606,
+   "words": "BILLY POSSIBLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "B",
+    "M": "I",
+    "N": "Y",
+    "K": "P",
+    "[": "O",
+    "z": "S",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "NOTTAKEAMONTH",
+   "wordLogp": -8.4191,
+   "words": "NOT TAKE A MONTH",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "N",
+    "M": "O",
+    "N": "A",
+    "K": "K",
+    "[": "E",
+    "z": "M",
+    "E": "H"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ROLLSTHEWORLD",
+   "wordLogp": -8.4586,
+   "words": "ROLLS THE WORLD",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "R",
+    "M": "O",
+    "N": "S",
+    "K": "T",
+    "[": "H",
+    "z": "W",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "BALLPRINTABLE",
+   "wordLogp": -8.5303,
+   "words": "BALL PRINTABLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "B",
+    "M": "A",
+    "N": "P",
+    "K": "R",
+    "[": "I",
+    "z": "T",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "PILLSMULTIPLE",
+   "wordLogp": -8.5672,
+   "words": "PILLS MULTIPLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "P",
+    "M": "I",
+    "N": "S",
+    "K": "M",
+    "[": "U",
+    "z": "T",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "BALLSTOENABLE",
+   "wordLogp": -8.8429,
+   "words": "BALLS TO ENABLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "B",
+    "M": "A",
+    "N": "S",
+    "K": "T",
+    "[": "O",
+    "z": "N",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "BALLSPORTABLE",
+   "wordLogp": -8.848,
+   "words": "BALLS PORTABLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "B",
+    "M": "A",
+    "N": "S",
+    "K": "P",
+    "[": "O",
+    "z": "T",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "SATTHEREWASTO",
+   "wordLogp": -8.86,
+   "words": "SAT THERE WAS TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "M": "A",
+    "N": "H",
+    "K": "E",
+    "[": "R",
+    "z": "W",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "BILLAPOSSIBLE",
+   "wordLogp": -8.9004,
+   "words": "BILL A POSSIBLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "B",
+    "M": "I",
+    "N": "A",
+    "K": "P",
+    "[": "O",
+    "z": "S",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "SMOOTHITEMSON",
+   "wordLogp": -8.9285,
+   "words": "SMOOTH ITEMS ON",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "S",
+    "M": "M",
+    "N": "T",
+    "K": "H",
+    "[": "I",
+    "z": "E",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "CALLINGORACLE",
+   "wordLogp": -8.9683,
+   "words": "CALLING ORACLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "C",
+    "M": "A",
+    "N": "I",
+    "K": "N",
+    "[": "G",
+    "z": "R",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "MAPPINGSTAMPS",
+   "wordLogp": -9.0194,
+   "words": "MAPPING STAMPS",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "M",
+    "M": "A",
+    "N": "I",
+    "K": "N",
+    "[": "G",
+    "z": "T",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "CUTTOPRODUCTS",
+   "wordLogp": -9.0335,
+   "words": "CUT TO PRODUCTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "C",
+    "M": "U",
+    "N": "O",
+    "K": "P",
+    "[": "R",
+    "z": "D",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "BALLISCAPABLE",
+   "wordLogp": -9.0404,
+   "words": "BALL IS CAPABLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "B",
+    "M": "A",
+    "N": "I",
+    "K": "S",
+    "[": "C",
+    "z": "P",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "PUTTHINGSUPTO",
+   "wordLogp": -9.1012,
+   "words": "PUT THINGS UP TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "P",
+    "M": "U",
+    "N": "H",
+    "K": "I",
+    "[": "N",
+    "z": "S",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ITSSUBJECTISA",
+   "wordLogp": -9.19,
+   "words": "ITS SUBJECT IS A",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "I",
+    "M": "T",
+    "N": "U",
+    "K": "B",
+    "[": "J",
+    "z": "C",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "NETTOPATIENTS",
+   "wordLogp": -9.226,
+   "words": "NET TO PATIENTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "N",
+    "M": "E",
+    "N": "O",
+    "K": "P",
+    "[": "A",
+    "z": "I",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "SPEEDGROUPSEX",
+   "wordLogp": -9.2654,
+   "words": "SPEED GROUP SEX",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "M": "P",
+    "N": "D",
+    "K": "G",
+    "[": "R",
+    "z": "U",
+    "E": "X"
+   }
+  }
+ ]
+}

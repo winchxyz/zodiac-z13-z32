@@ -1,0 +1,608 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:33:19.699Z",
+ "label": "eng06_05",
+ "cipher": {
+  "id": "eng06",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng06.txt",
+  "text": "abccdbcefgehh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   5
+  ],
+  "isomorphAfterSlips": "abccd*cefgehh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 391417,
+  "scored": 353969,
+  "keptAtLeastStreamMin": 101,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 16331,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1828,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 101,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 32,
+  "4": 67
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.932163674213738,
+  "topShare": 0.0629452954391674,
+  "top10Share": 0.3459687470620019,
+  "effectiveNumberExpEntropy": 423.71164561390196,
+  "effectiveNumberInverseSimpson": 65.48076558847887,
+  "unscoredMassBoundRelative": 0.035114970049667724,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 35,
+   "maxWordLogp": -15.27004301200632,
+   "massEstimateRelative": 0.000009812917641645264,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.01109390975737192
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 14,
+   "-18.00": 55,
+   "-17.75": 62,
+   "-17.50": 106,
+   "-17.25": 215,
+   "-17.00": 231,
+   "-16.75": 284,
+   "-16.50": 344,
+   "-16.25": 456,
+   "-16.00": 593,
+   "-15.75": 836,
+   "-15.50": 1133,
+   "-15.25": 1421,
+   "-15.00": 1840,
+   "-14.75": 2353,
+   "-14.50": 2914,
+   "-14.25": 3510,
+   "-14.00": 4079,
+   "-13.75": 4674,
+   "-13.50": 5266,
+   "-13.25": 6068,
+   "-13.00": 6874,
+   "-12.75": 7808,
+   "-12.50": 8626,
+   "-12.25": 9766,
+   "-12.00": 10668,
+   "-11.75": 11665,
+   "-11.50": 12736,
+   "-11.25": 13965,
+   "-11.00": 14686,
+   "-10.75": 15205,
+   "-10.50": 15788,
+   "-10.25": 15788,
+   "-10.00": 16127,
+   "-9.75": 15913,
+   "-9.50": 15749,
+   "-9.25": 15597,
+   "-9.00": 15389,
+   "-8.75": 15096,
+   "-8.50": 14675,
+   "-8.25": 14294,
+   "-8.00": 13313,
+   "-7.75": 12284,
+   "-7.50": 11497,
+   "-7.25": 10258,
+   "-7.00": 8712,
+   "-6.75": 7410,
+   "-6.50": 6288,
+   "-6.25": 4958,
+   "-6.00": 3919,
+   "-5.75": 3100,
+   "-5.50": 2386,
+   "-5.25": 1629,
+   "-5.00": 1121,
+   "-4.75": 699,
+   "-4.50": 427,
+   "-4.25": 249,
+   "-4.00": 141,
+   "-3.75": 86,
+   "-3.50": 43,
+   "-3.25": 21,
+   "-3.00": 7
+  },
+  "exactScored": {
+   "-19.50": 11,
+   "-19.25": 19,
+   "-19.00": 44,
+   "-18.75": 164,
+   "-18.50": 625,
+   "-18.25": 1890,
+   "-18.00": 4522,
+   "-17.75": 8427,
+   "-17.50": 12833,
+   "-17.25": 17462,
+   "-17.00": 22010,
+   "-16.75": 25076,
+   "-16.50": 26834,
+   "-16.25": 27051,
+   "-16.00": 27076,
+   "-15.75": 25439,
+   "-15.50": 23832,
+   "-15.25": 21912,
+   "-15.00": 19203,
+   "-14.75": 16793,
+   "-14.50": 14205,
+   "-14.25": 11833,
+   "-14.00": 9601,
+   "-13.75": 7897,
+   "-13.50": 6643,
+   "-13.25": 5451,
+   "-13.00": 4423,
+   "-12.75": 3571,
+   "-12.50": 2614,
+   "-12.25": 1944,
+   "-12.00": 1434,
+   "-11.75": 981,
+   "-11.50": 762,
+   "-11.25": 533,
+   "-11.00": 303,
+   "-10.75": 201,
+   "-10.50": 135,
+   "-10.25": 79,
+   "-10.00": 58,
+   "-9.75": 30,
+   "-9.50": 23,
+   "-9.25": 10,
+   "-9.00": 4,
+   "-8.75": 4,
+   "-8.50": 6,
+   "-8.25": 1
+  },
+  "boundUnscored": {
+   "-18.25": 14,
+   "-18.00": 55,
+   "-17.75": 62,
+   "-17.50": 106,
+   "-17.25": 215,
+   "-17.00": 231,
+   "-16.75": 284,
+   "-16.50": 344,
+   "-16.25": 456,
+   "-16.00": 593,
+   "-15.75": 836,
+   "-15.50": 1133,
+   "-15.25": 1421,
+   "-15.00": 1840,
+   "-14.75": 2353,
+   "-14.50": 2914,
+   "-14.25": 3510,
+   "-14.00": 4079,
+   "-13.75": 4674,
+   "-13.50": 5266,
+   "-13.25": 6068,
+   "-13.00": 994
+  }
+ },
+ "timeMs": {
+  "total": 3368,
+  "setup": 392
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "BUTTHATAREALL",
+   "wordLogp": -8.1332,
+   "words": "BUT THAT ARE ALL",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "U",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "R",
+    "g": "E",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "NOTTHATAREALL",
+   "wordLogp": -8.2956,
+   "words": "NOT THAT ARE ALL",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "R",
+    "g": "E",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "OUTTHATAREALL",
+   "wordLogp": -8.3387,
+   "words": "OUT THAT ARE ALL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "U",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "R",
+    "g": "E",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "ALOOKFORTHREE",
+   "wordLogp": -8.3734,
+   "words": "A LOOK FOR THREE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "L",
+    "c": "O",
+    "d": "K",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "AGOODFORTHREE",
+   "wordLogp": -8.3954,
+   "words": "A GOOD FOR THREE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "G",
+    "c": "O",
+    "d": "D",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "HOTTESTANDALL",
+   "wordLogp": -8.4019,
+   "words": "HOTTEST AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "T",
+    "d": "E",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "TISSUESANDALL",
+   "wordLogp": -8.4117,
+   "words": "TISSUES AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "I",
+    "c": "S",
+    "d": "U",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "BUTTHATASMALL",
+   "wordLogp": -8.5327,
+   "words": "BUT THAT A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "U",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "FREETHEANDALL",
+   "wordLogp": -8.6208,
+   "words": "FREE THE AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "T",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "NOTTHATASMALL",
+   "wordLogp": -8.6951,
+   "words": "NOT THAT A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "OUTTHATASMALL",
+   "wordLogp": -8.7381,
+   "words": "OUT THAT A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "U",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "FREETHEASMALL",
+   "wordLogp": -8.8456,
+   "words": "FREE THE A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "T",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "BUTTHATANDALL",
+   "wordLogp": -8.855,
+   "words": "BUT THAT AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "U",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "RUBBERBANDALL",
+   "wordLogp": -8.8821,
+   "words": "RUBBER BAND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "U",
+    "c": "B",
+    "d": "E",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "BLOODFORTHREE",
+   "wordLogp": -8.8825,
+   "words": "BLOOD FOR THREE",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "L",
+    "c": "O",
+    "d": "D",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "FREEUSEITWILL",
+   "wordLogp": -9.023,
+   "words": "FREE USE IT WILL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "d": "U",
+    "e": "I",
+    "f": "T",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "HOTTESTASMALL",
+   "wordLogp": -9.0464,
+   "words": "HOTTEST A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "T",
+    "d": "E",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "MATTERTOCROSS",
+   "wordLogp": -9.0556,
+   "words": "MATTER TO CROSS",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "A",
+    "c": "T",
+    "d": "E",
+    "e": "O",
+    "f": "C",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "OUTTHATANDALL",
+   "wordLogp": -9.0605,
+   "words": "OUT THAT AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "U",
+    "c": "T",
+    "d": "H",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "AGOODWORKFREE",
+   "wordLogp": -9.0862,
+   "words": "A GOOD WORK FREE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "G",
+    "c": "O",
+    "d": "D",
+    "e": "R",
+    "f": "K",
+    "g": "F",
+    "h": "E"
+   }
+  }
+ ]
+}

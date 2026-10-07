@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:24:05.544Z",
+ "label": "scr08_01",
+ "cipher": {
+  "id": "scr08",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr08.txt",
+  "text": "A0M0M[AN0EzKN",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*cbcdaebfghe"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 179471,
+  "scored": 166769,
+  "keptAtLeastStreamMin": 79,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 10328,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1124,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 79,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 4,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 7,
+  "3": 47,
+  "4": 25
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.836730115150171,
+  "topShare": 0.3442905937645046,
+  "top10Share": 0.6158153406597147,
+  "effectiveNumberExpEntropy": 59.99949580498261,
+  "effectiveNumberInverseSimpson": 7.572022288379484,
+  "unscoredMassBoundRelative": 0.00956097590150946,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 11,
+   "maxWordLogp": -15.77666179019451,
+   "massEstimateRelative": 0.0000027622833275791393,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0031989502460469522
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 13,
+   "-17.75": 19,
+   "-17.50": 36,
+   "-17.25": 35,
+   "-17.00": 53,
+   "-16.75": 74,
+   "-16.50": 110,
+   "-16.25": 162,
+   "-16.00": 206,
+   "-15.75": 272,
+   "-15.50": 335,
+   "-15.25": 463,
+   "-15.00": 606,
+   "-14.75": 819,
+   "-14.50": 934,
+   "-14.25": 1077,
+   "-14.00": 1368,
+   "-13.75": 1611,
+   "-13.50": 1932,
+   "-13.25": 2173,
+   "-13.00": 2504,
+   "-12.75": 2796,
+   "-12.50": 3213,
+   "-12.25": 3487,
+   "-12.00": 3993,
+   "-11.75": 4624,
+   "-11.50": 4989,
+   "-11.25": 5543,
+   "-11.00": 5952,
+   "-10.75": 6300,
+   "-10.50": 6911,
+   "-10.25": 6980,
+   "-10.00": 7034,
+   "-9.75": 6914,
+   "-9.50": 7093,
+   "-9.25": 7184,
+   "-9.00": 7129,
+   "-8.75": 7337,
+   "-8.50": 7290,
+   "-8.25": 7383,
+   "-8.00": 7095,
+   "-7.75": 6979,
+   "-7.50": 6666,
+   "-7.25": 6116,
+   "-7.00": 5425,
+   "-6.75": 4835,
+   "-6.50": 3951,
+   "-6.25": 3204,
+   "-6.00": 2385,
+   "-5.75": 1825,
+   "-5.50": 1351,
+   "-5.25": 950,
+   "-5.00": 639,
+   "-4.75": 423,
+   "-4.50": 265,
+   "-4.25": 161,
+   "-4.00": 118,
+   "-3.75": 52,
+   "-3.50": 31,
+   "-3.25": 27,
+   "-3.00": 8,
+   "-2.75": 5,
+   "-2.50": 4,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.00": 17,
+   "-18.75": 56,
+   "-18.50": 185,
+   "-18.25": 535,
+   "-18.00": 1312,
+   "-17.75": 2524,
+   "-17.50": 3983,
+   "-17.25": 5834,
+   "-17.00": 7591,
+   "-16.75": 9348,
+   "-16.50": 10604,
+   "-16.25": 11569,
+   "-16.00": 12195,
+   "-15.75": 12096,
+   "-15.50": 11960,
+   "-15.25": 11235,
+   "-15.00": 10590,
+   "-14.75": 9453,
+   "-14.50": 8517,
+   "-14.25": 7350,
+   "-14.00": 5988,
+   "-13.75": 5247,
+   "-13.50": 4309,
+   "-13.25": 3454,
+   "-13.00": 2759,
+   "-12.75": 2228,
+   "-12.50": 1641,
+   "-12.25": 1279,
+   "-12.00": 904,
+   "-11.75": 695,
+   "-11.50": 446,
+   "-11.25": 304,
+   "-11.00": 205,
+   "-10.75": 114,
+   "-10.50": 72,
+   "-10.25": 68,
+   "-10.00": 36,
+   "-9.75": 24,
+   "-9.50": 15,
+   "-9.25": 11,
+   "-9.00": 8,
+   "-8.75": 3,
+   "-8.50": 1,
+   "-8.25": 3,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 13,
+   "-17.75": 19,
+   "-17.50": 36,
+   "-17.25": 35,
+   "-17.00": 53,
+   "-16.75": 74,
+   "-16.50": 110,
+   "-16.25": 162,
+   "-16.00": 206,
+   "-15.75": 272,
+   "-15.50": 335,
+   "-15.25": 463,
+   "-15.00": 606,
+   "-14.75": 819,
+   "-14.50": 934,
+   "-14.25": 1077,
+   "-14.00": 1368,
+   "-13.75": 1611,
+   "-13.50": 1932,
+   "-13.25": 2173,
+   "-13.00": 403
+  }
+ },
+ "timeMs": {
+  "total": 2100,
+  "setup": 404
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "HEOROTHERWISE",
+   "wordLogp": -7.2998,
+   "words": "HE OR OTHERWISE",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "H",
+    "M": "O",
+    "[": "T",
+    "N": "E",
+    "E": "W",
+    "z": "I",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "SURPRISEPHONE",
+   "wordLogp": -8.0007,
+   "words": "SURPRISE PHONE",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "S",
+    "M": "R",
+    "[": "I",
+    "N": "E",
+    "E": "H",
+    "z": "O",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "SURPRISEPLACE",
+   "wordLogp": -8.0657,
+   "words": "SURPRISE PLACE",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "S",
+    "M": "R",
+    "[": "I",
+    "N": "E",
+    "E": "L",
+    "z": "A",
+    "K": "C"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THEREDTHROUGH",
+   "wordLogp": -8.1216,
+   "words": "THE RED THROUGH",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "T",
+    "M": "E",
+    "[": "D",
+    "N": "H",
+    "E": "O",
+    "z": "U",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "THEREATHROUGH",
+   "wordLogp": -8.3619,
+   "words": "THERE A THROUGH",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "T",
+    "M": "E",
+    "[": "A",
+    "N": "H",
+    "E": "O",
+    "z": "U",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "HIOROTHERWISE",
+   "wordLogp": -8.6642,
+   "words": "HI OR OTHERWISE",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "H",
+    "M": "O",
+    "[": "T",
+    "N": "E",
+    "E": "W",
+    "z": "I",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "FUNANDFEATURE",
+   "wordLogp": -8.7004,
+   "words": "FUN AND FEATURE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "F",
+    "M": "N",
+    "[": "D",
+    "N": "E",
+    "E": "T",
+    "z": "U",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "MENANDMEASURE",
+   "wordLogp": -8.7326,
+   "words": "MEN AND MEASURE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "M",
+    "M": "N",
+    "[": "D",
+    "N": "E",
+    "E": "S",
+    "z": "U",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THERESTHROUGH",
+   "wordLogp": -8.7916,
+   "words": "THERES THROUGH",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "T",
+    "M": "E",
+    "[": "S",
+    "N": "H",
+    "E": "O",
+    "z": "U",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ADDEDSAFETYOF",
+   "wordLogp": -8.8436,
+   "words": "ADDED SAFETY OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "M": "D",
+    "[": "S",
+    "N": "F",
+    "E": "T",
+    "z": "Y",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ADDEDCAMEFROM",
+   "wordLogp": -8.8572,
+   "words": "ADDED CAME FROM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "M": "D",
+    "[": "C",
+    "N": "M",
+    "E": "F",
+    "z": "R",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TIEREDTHROUGH",
+   "wordLogp": -8.9034,
+   "words": "TIERED THROUGH",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "T",
+    "M": "E",
+    "[": "D",
+    "N": "H",
+    "E": "O",
+    "z": "U",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "HEOROTHERSIDE",
+   "wordLogp": -8.9091,
+   "words": "HE OR OTHER SIDE",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "H",
+    "M": "O",
+    "[": "T",
+    "N": "E",
+    "E": "S",
+    "z": "I",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THEREITHROUGH",
+   "wordLogp": -8.9095,
+   "words": "THERE I THROUGH",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "T",
+    "M": "E",
+    "[": "I",
+    "N": "H",
+    "E": "O",
+    "z": "U",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "MANANDMEASURE",
+   "wordLogp": -8.9345,
+   "words": "MAN AND MEASURE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "M",
+    "M": "N",
+    "[": "D",
+    "N": "E",
+    "E": "S",
+    "z": "U",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ADDEDLATERNOT",
+   "wordLogp": -8.9949,
+   "words": "ADDED LATER NOT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "M": "D",
+    "[": "L",
+    "N": "T",
+    "E": "R",
+    "z": "N",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "SURPRISEPMTHE",
+   "wordLogp": -9.0051,
+   "words": "SURPRISE PM THE",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "S",
+    "M": "R",
+    "[": "I",
+    "N": "E",
+    "E": "M",
+    "z": "T",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SURPRISEPLATE",
+   "wordLogp": -9.0249,
+   "words": "SURPRISE PLATE",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "S",
+    "M": "R",
+    "[": "I",
+    "N": "E",
+    "E": "L",
+    "z": "A",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "SPIRITSUREYOU",
+   "wordLogp": -9.0374,
+   "words": "SPIRIT SURE YOU",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "S",
+    "M": "I",
+    "[": "T",
+    "N": "U",
+    "E": "E",
+    "z": "Y",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "HEDIDTHEIMAGE",
+   "wordLogp": -9.0662,
+   "words": "HE DID THE IMAGE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "H",
+    "M": "D",
+    "[": "T",
+    "N": "E",
+    "E": "M",
+    "z": "A",
+    "K": "G"
+   }
+  }
+ ]
+}

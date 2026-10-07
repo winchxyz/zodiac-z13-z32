@@ -1,0 +1,113 @@
+{
+ "tool": "tools/keyprior_joint.js",
+ "created": "2026-10-07T16:45:05.665Z",
+ "argv": "--a z13.canonical --b z32.canonical --null 1 --restarts 16 --iters 120000 --threads 4 --seed 1332 --out results/keyprior/review/joint_convergence.json",
+ "solver": {
+  "restarts": 16,
+  "iters": 120000,
+  "T0": 8,
+  "objective": "sum of the anneal.js objectives of both ciphers under one key (links tie symbols)"
+ },
+ "null": {
+  "n": 1,
+  "kind": "A-side shared symbols linked to random B symbols with the same occurrence count as the real partner"
+ },
+ "seconds": 8.204,
+ "problems": [
+  {
+   "name": "z13.canonical+z32.canonical",
+   "a": "AENz0K0M0[NAM",
+   "b": "C9J|#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "sharedSymbols": "AEzM[",
+   "nLinks": 5,
+   "independent": {
+    "score": -181.7379696166633,
+    "ptA": "OFTHEWERESTOR",
+    "ptB": "ORANDTHATTHENTHETHISPRESSOFTHEIR",
+    "restartScores": [
+     -204.5009564598979,
+     -191.50653202476434,
+     -184.28914548074124,
+     -203.4590637976891,
+     -184.54971957709336,
+     -186.2016926237296,
+     -197.96796491869446,
+     -196.31183680410572,
+     -196.98948023650948,
+     -194.2629763320167,
+     -193.80621519915513,
+     -181.7379696166633,
+     -184.55165086913263,
+     -199.17894360736523,
+     -200.48308156924537,
+     -193.68512056563432
+    ]
+   },
+   "joint": {
+    "score": -196.82995157275846,
+    "scoreA": -62.49751872887225,
+    "scoreB": -134.3324328438862,
+    "ptA": "REDANDNONEDRO",
+    "ptB": "HISFATHEROVERTHEMANDTHEOTHERANDI",
+    "wordsA": "RED AND NON EDRO",
+    "wordsB": "HIS FATHER OVER THEM AND THE OTHER AND I",
+    "restartScores": [
+     -196.82995157275846,
+     -206.77585229304805,
+     -198.00173565328151,
+     -213.7150006765557,
+     -205.50382647818066,
+     -206.04227914981803,
+     -205.38542851493926,
+     -203.527938319425,
+     -199.74710160178404,
+     -208.32490321021564,
+     -209.945813087295,
+     -209.27009992230734,
+     -208.42345508251833,
+     -210.55396600528098,
+     -199.35246692352996,
+     -204.09508497114433
+    ]
+   },
+   "penaltyReal": 15.091981956095168,
+   "null": {
+    "n": 1,
+    "summary": {
+     "n": 1,
+     "finite": 1,
+     "mean": -186.19261387994834,
+     "sd": 0,
+     "min": -186.19261387994834,
+     "q05": -186.19261387994834,
+     "q25": -186.19261387994834,
+     "median": -186.19261387994834,
+     "q75": -186.19261387994834,
+     "q95": -186.19261387994834,
+     "q99": -186.19261387994834,
+     "max": -186.19261387994834
+    },
+    "penaltySummary": {
+     "n": 1,
+     "finite": 1,
+     "mean": 4.454644263285047,
+     "sd": 0,
+     "min": 4.454644263285047,
+     "q05": 4.454644263285047,
+     "q25": 4.454644263285047,
+     "median": 4.454644263285047,
+     "q75": 4.454644263285047,
+     "q95": 4.454644263285047,
+     "q99": 4.454644263285047,
+     "max": 4.454644263285047
+    }
+   },
+   "test": {
+    "ge": 1,
+    "n": 1,
+    "p": 1,
+    "percentile": 0
+   }
+  }
+ ]
+}

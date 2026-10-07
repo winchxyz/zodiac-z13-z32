@@ -1,0 +1,495 @@
+{
+ "tool": "tools/cyclemodel_hyp.js",
+ "created": "2026-10-07T16:05:19.048Z",
+ "epsSlip": 0.021917808219178082,
+ "z13_keyModel": {
+  "prior": "uniform over {simple substitution, homophonic S<=45, homophonic S>=50}; within homophonic uniform over S grid and the three regimes",
+  "log10Evidence": {
+   "simple": -6.978,
+   "small": -7.947,
+   "zodiacSize": -9.919
+  },
+  "posterior": {
+   "simple": 0.902,
+   "small": 0.097,
+   "zodiacSize": 0.001
+  },
+  "regimeLog10Evidence": {
+   "z408p12": -8.186,
+   "z340": -8.207,
+   "z408p3": -8.144
+  },
+  "bySlog10Evidence": {
+   "S15": {
+    "z408p12": -7.325,
+    "z340": -7.346,
+    "z408p3": -7.326
+   },
+   "S20": {
+    "z408p12": -7.661,
+    "z340": -7.69,
+    "z408p3": -7.638
+   },
+   "S26": {
+    "z408p12": -8.229,
+    "z340": -8.239,
+    "z408p3": -8.097
+   },
+   "S30": {
+    "z408p12": -8.678,
+    "z340": -8.669,
+    "z408p3": -8.427
+   },
+   "S35": {
+    "z408p12": -9.229,
+    "z340": -9.21,
+    "z408p3": -8.813
+   },
+   "S40": {
+    "z408p12": -9.687,
+    "z340": -9.665,
+    "z408p3": -9.112
+   },
+   "S45": {
+    "z408p12": -10.013,
+    "z340": -9.983,
+    "z408p3": -9.308
+   },
+   "S50": {
+    "z408p12": -10.221,
+    "z340": -10.185,
+    "z408p3": -9.433
+   },
+   "S54": {
+    "z408p12": -10.333,
+    "z340": -10.297,
+    "z408p3": -9.507
+   },
+   "S58": {
+    "z408p12": -10.42,
+    "z340": -10.385,
+    "z408p3": -9.567
+   },
+   "S63": {
+    "z408p12": -10.511,
+    "z340": -10.481,
+    "z408p3": -9.633
+   },
+   "S68": {
+    "z408p12": -10.592,
+    "z340": -10.568,
+    "z408p3": -9.691
+   }
+  },
+  "passingWindows": 126,
+  "windows": 114121426,
+  "effWindows": {
+   "S30/z408p12": 11.901,
+   "S30/z340": 12.334,
+   "S30/z408p3": 16.573,
+   "S63/z408p12": 4.991,
+   "S63/z340": 4.425,
+   "S63/z408p3": 14.965,
+   "simple": 12
+  }
+ },
+ "z13_circles": {
+  "note": "BF = ratio of marginal likelihoods of the scan reading under each explanation; distinct still needs the visual factor V, null the prior pi_null of the null process, slip the factor q",
+  "byKeyModel": {
+   "simple": {
+    "log10E_same": -6.978,
+    "log10BF_distinct_vs_same_beforeVisualFactor": 2.019,
+    "log10BF_null_vs_same_beforeNullPrior": 2.786,
+    "breakEvenPiNull": 0.002,
+    "log10BF_slip_vs_same_per_q": -0.157,
+    "breakEvenQslip": 1.436
+   },
+   "small": {
+    "log10E_same": -7.947,
+    "log10BF_distinct_vs_same_beforeVisualFactor": 2.788,
+    "log10BF_null_vs_same_beforeNullPrior": 3.093,
+    "breakEvenPiNull": 0.001,
+    "log10BF_slip_vs_same_per_q": 0.097,
+    "breakEvenQslip": 0.8
+   },
+   "zodiacSize": {
+    "log10E_same": -9.919,
+    "log10BF_distinct_vs_same_beforeVisualFactor": 3.83,
+    "log10BF_null_vs_same_beforeNullPrior": 3.882,
+    "breakEvenPiNull": 0,
+    "log10BF_slip_vs_same_per_q": 0.61,
+    "breakEvenQslip": 0.246
+   },
+   "homophonicAll": {
+    "log10E_same": -8.178,
+    "log10BF_distinct_vs_same_beforeVisualFactor": 2.82,
+    "log10BF_null_vs_same_beforeNullPrior": 3.11,
+    "breakEvenPiNull": 0.001,
+    "log10BF_slip_vs_same_per_q": 0.104,
+    "breakEvenQslip": 0.787
+   }
+  }
+ },
+ "z13_posteriors": [
+  {
+   "keyPrior": "uniform",
+   "setting": {
+    "name": "sceptical of alternatives",
+    "V": 0.01,
+    "piNull": 0.0001,
+    "q": 0.03
+   },
+   "explanation": {
+    "same": 0.371,
+    "distinct": 0.596,
+    "null": 0.025,
+    "slip": 0.008
+   },
+   "keyModel": {
+    "simple": 0.711,
+    "small": 0.262,
+    "zodiacSize": 0.027
+   },
+   "joint": {
+    "simple/distinct": 0.349,
+    "simple/same": 0.334,
+    "small/distinct": 0.22,
+    "small/same": 0.036,
+    "zodiacSize/distinct": 0.026,
+    "simple/null": 0.02
+   }
+  },
+  {
+   "keyPrior": "uniform",
+   "setting": {
+    "name": "moderate",
+    "V": 0.1,
+    "piNull": 0.001,
+    "q": 0.1
+   },
+   "explanation": {
+    "same": 0.056,
+    "distinct": 0.902,
+    "null": 0.038,
+    "slip": 0.004
+   },
+   "keyModel": {
+    "simple": 0.614,
+    "small": 0.346,
+    "zodiacSize": 0.04
+   },
+   "joint": {
+    "simple/distinct": 0.529,
+    "small/distinct": 0.333,
+    "simple/same": 0.051,
+    "zodiacSize/distinct": 0.039,
+    "simple/null": 0.031,
+    "small/null": 0.007
+   }
+  },
+  {
+   "keyPrior": "uniform",
+   "setting": {
+    "name": "generous to alternatives",
+    "V": 0.5,
+    "piNull": 0.01,
+    "q": 0.3
+   },
+   "explanation": {
+    "same": 0.011,
+    "distinct": 0.909,
+    "null": 0.077,
+    "slip": 0.003
+   },
+   "keyModel": {
+    "simple": 0.608,
+    "small": 0.351,
+    "zodiacSize": 0.04
+   },
+   "joint": {
+    "simple/distinct": 0.533,
+    "small/distinct": 0.336,
+    "simple/null": 0.062,
+    "zodiacSize/distinct": 0.039,
+    "small/null": 0.014,
+    "simple/same": 0.01
+   }
+  },
+  {
+   "keyPrior": "zodiacHabit",
+   "setting": {
+    "name": "sceptical of alternatives",
+    "V": 0.01,
+    "piNull": 0.0001,
+    "q": 0.03
+   },
+   "explanation": {
+    "same": 0.353,
+    "distinct": 0.615,
+    "null": 0.024,
+    "slip": 0.008
+   },
+   "keyModel": {
+    "simple": 0.675,
+    "small": 0.249,
+    "zodiacSize": 0.076
+   },
+   "joint": {
+    "simple/distinct": 0.332,
+    "simple/same": 0.318,
+    "small/distinct": 0.209,
+    "zodiacSize/distinct": 0.074,
+    "small/same": 0.034,
+    "simple/null": 0.019
+   }
+  },
+  {
+   "keyPrior": "zodiacHabit",
+   "setting": {
+    "name": "moderate",
+    "V": 0.1,
+    "piNull": 0.001,
+    "q": 0.1
+   },
+   "explanation": {
+    "same": 0.052,
+    "distinct": 0.908,
+    "null": 0.036,
+    "slip": 0.004
+   },
+   "keyModel": {
+    "simple": 0.569,
+    "small": 0.321,
+    "zodiacSize": 0.11
+   },
+   "joint": {
+    "simple/distinct": 0.49,
+    "small/distinct": 0.309,
+    "zodiacSize/distinct": 0.109,
+    "simple/same": 0.047,
+    "simple/null": 0.029,
+    "small/null": 0.006
+   }
+  },
+  {
+   "keyPrior": "zodiacHabit",
+   "setting": {
+    "name": "generous to alternatives",
+    "V": 0.5,
+    "piNull": 0.01,
+    "q": 0.3
+   },
+   "explanation": {
+    "same": 0.01,
+    "distinct": 0.914,
+    "null": 0.073,
+    "slip": 0.002
+   },
+   "keyModel": {
+    "simple": 0.563,
+    "small": 0.325,
+    "zodiacSize": 0.112
+   },
+   "joint": {
+    "simple/distinct": 0.494,
+    "small/distinct": 0.311,
+    "zodiacSize/distinct": 0.11,
+    "simple/null": 0.058,
+    "small/null": 0.013,
+    "simple/same": 0.009
+   }
+  }
+ ],
+ "z13_letterAtCircle": {
+  "position": 4,
+  "byGroup": {
+   "mixtureAll": {
+    "O": 0.3251,
+    "E": 0.3011,
+    "I": 0.1145,
+    "T": 0.0973,
+    "N": 0.088,
+    "A": 0.0601,
+    "Y": 0.0117
+   },
+   "simple": {
+    "E": 0.6667,
+    "O": 0.25,
+    "A": 0.0833
+   },
+   "regime_z408p12": {
+    "O": 0.316,
+    "E": 0.2859,
+    "I": 0.1265,
+    "T": 0.1146,
+    "N": 0.0977,
+    "A": 0.0557
+   },
+   "regime_z340": {
+    "O": 0.3342,
+    "E": 0.3037,
+    "I": 0.1059,
+    "T": 0.0906,
+    "N": 0.0837,
+    "A": 0.061,
+    "Y": 0.0179
+   },
+   "regime_z408p3": {
+    "O": 0.3254,
+    "E": 0.3127,
+    "I": 0.1109,
+    "T": 0.0874,
+    "N": 0.0829,
+    "A": 0.0634,
+    "Y": 0.0138
+   },
+   "zodiacSize": {
+    "E": 0.3823,
+    "O": 0.3173,
+    "N": 0.0688,
+    "I": 0.0683,
+    "A": 0.0583,
+    "T": 0.0489,
+    "Y": 0.0479,
+    "D": 0.0083
+   },
+   "smallKey": {
+    "O": 0.3251,
+    "E": 0.3005,
+    "I": 0.1148,
+    "T": 0.0977,
+    "N": 0.0882,
+    "A": 0.0601,
+    "Y": 0.0114
+   }
+  }
+ },
+ "z13_letterAtBracket": {
+  "position": 9,
+  "byGroup": {
+   "mixtureAll": {
+    "R": 0.2049,
+    "N": 0.1559,
+    "C": 0.1413,
+    "H": 0.0975,
+    "T": 0.0827,
+    "U": 0.0822,
+    "S": 0.0761,
+    "A": 0.052,
+    "O": 0.0338,
+    "M": 0.0322,
+    "P": 0.0279,
+    "E": 0.0122
+   },
+   "simple": {
+    "R": 0.3333,
+    "C": 0.1667,
+    "N": 0.1667,
+    "M": 0.0833,
+    "P": 0.0833,
+    "T": 0.0833,
+    "U": 0.0833
+   },
+   "regime_z408p12": {
+    "R": 0.1973,
+    "N": 0.1483,
+    "C": 0.1357,
+    "H": 0.1147,
+    "S": 0.0848,
+    "T": 0.082,
+    "U": 0.0792,
+    "A": 0.0561,
+    "O": 0.0413,
+    "M": 0.0309,
+    "P": 0.0262
+   },
+   "regime_z340": {
+    "R": 0.2094,
+    "N": 0.1602,
+    "C": 0.1438,
+    "H": 0.0908,
+    "T": 0.0841,
+    "U": 0.084,
+    "S": 0.0729,
+    "A": 0.0455,
+    "M": 0.0327,
+    "O": 0.0291,
+    "P": 0.0279,
+    "E": 0.0179
+   },
+   "regime_z408p3": {
+    "R": 0.2078,
+    "N": 0.1591,
+    "C": 0.1442,
+    "H": 0.0876,
+    "U": 0.0834,
+    "T": 0.0822,
+    "S": 0.0711,
+    "A": 0.0537,
+    "M": 0.033,
+    "O": 0.0312,
+    "P": 0.0294,
+    "E": 0.0153
+   },
+   "zodiacSize": {
+    "R": 0.2832,
+    "C": 0.1625,
+    "N": 0.1332,
+    "S": 0.0663,
+    "A": 0.0629,
+    "T": 0.0609,
+    "H": 0.0574,
+    "E": 0.0551,
+    "U": 0.0444,
+    "P": 0.0369,
+    "O": 0.0161,
+    "M": 0.0121,
+    "D": 0.0072
+   },
+   "smallKey": {
+    "R": 0.2043,
+    "N": 0.1561,
+    "C": 0.1411,
+    "H": 0.0978,
+    "T": 0.0829,
+    "U": 0.0825,
+    "S": 0.0762,
+    "A": 0.0519,
+    "O": 0.034,
+    "M": 0.0324,
+    "P": 0.0278,
+    "E": 0.0119
+   }
+  }
+ },
+ "z13_otherVariants": {
+  "z13.crosshair_null": {
+   "simple": {
+    "log10E": -7.212,
+    "log10BF_vs_canonical": -0.234
+   },
+   "small": {
+    "log10E": -8.326,
+    "log10BF_vs_canonical": -0.378
+   },
+   "zodiacSize": {
+    "log10E": -10.221,
+    "log10BF_vs_canonical": -0.302
+   }
+  },
+  "z13.reversed": {
+   "simple": {
+    "log10E": -7.279,
+    "log10BF_vs_canonical": -0.301
+   },
+   "small": {
+    "log10E": -8.289,
+    "log10BF_vs_canonical": -0.341
+   },
+   "zodiacSize": {
+    "log10E": -10.019,
+    "log10BF_vs_canonical": -0.1
+   }
+  }
+ }
+}

@@ -1,0 +1,615 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:13:32.180Z",
+ "label": "scr10_01",
+ "cipher": {
+  "id": "scr10",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr10.txt",
+  "text": "[0MM0NzEAKN0A",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*ccbdefghdbg"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 418438,
+  "scored": 389395,
+  "keptAtLeastStreamMin": 141,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 23742,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2710,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 141,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 5,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 15,
+  "3": 87,
+  "4": 39
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.588268126927597,
+  "topShare": 0.3003598419554495,
+  "top10Share": 0.5356043319841656,
+  "effectiveNumberExpEntropy": 138.93774952743772,
+  "effectiveNumberInverseSimpson": 10.067528645606856,
+  "unscoredMassBoundRelative": 0.012337001052101195,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 27,
+   "maxWordLogp": -15.047383797235542,
+   "massEstimateRelative": 0.000006613100117840584,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.003962218863410556
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 1,
+   "-18.25": 8,
+   "-18.00": 22,
+   "-17.75": 65,
+   "-17.50": 106,
+   "-17.25": 91,
+   "-17.00": 171,
+   "-16.75": 242,
+   "-16.50": 293,
+   "-16.25": 430,
+   "-16.00": 545,
+   "-15.75": 680,
+   "-15.50": 844,
+   "-15.25": 1014,
+   "-15.00": 1328,
+   "-14.75": 1628,
+   "-14.50": 2114,
+   "-14.25": 2760,
+   "-14.00": 3195,
+   "-13.75": 3738,
+   "-13.50": 4247,
+   "-13.25": 4721,
+   "-13.00": 5312,
+   "-12.75": 5899,
+   "-12.50": 6886,
+   "-12.25": 7896,
+   "-12.00": 9022,
+   "-11.75": 10149,
+   "-11.50": 11299,
+   "-11.25": 12842,
+   "-11.00": 14051,
+   "-10.75": 15175,
+   "-10.50": 15989,
+   "-10.25": 16378,
+   "-10.00": 17000,
+   "-9.75": 16945,
+   "-9.50": 17281,
+   "-9.25": 17739,
+   "-9.00": 18197,
+   "-8.75": 18119,
+   "-8.50": 18714,
+   "-8.25": 18871,
+   "-8.00": 18058,
+   "-7.75": 17057,
+   "-7.50": 15784,
+   "-7.25": 14422,
+   "-7.00": 12451,
+   "-6.75": 10249,
+   "-6.50": 8235,
+   "-6.25": 6394,
+   "-6.00": 4657,
+   "-5.75": 3295,
+   "-5.50": 2239,
+   "-5.25": 1465,
+   "-5.00": 920,
+   "-4.75": 567,
+   "-4.50": 307,
+   "-4.25": 177,
+   "-4.00": 83,
+   "-3.75": 41,
+   "-3.50": 18,
+   "-3.25": 5,
+   "-3.00": 2,
+   "-2.75": 3,
+   "-2.50": 1,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.50": 4,
+   "-19.25": 2,
+   "-19.00": 8,
+   "-18.75": 100,
+   "-18.50": 603,
+   "-18.25": 1898,
+   "-18.00": 3811,
+   "-17.75": 6606,
+   "-17.50": 10650,
+   "-17.25": 15105,
+   "-17.00": 19824,
+   "-16.75": 24108,
+   "-16.50": 26803,
+   "-16.25": 28689,
+   "-16.00": 29481,
+   "-15.75": 28658,
+   "-15.50": 27506,
+   "-15.25": 25399,
+   "-15.00": 23327,
+   "-14.75": 20552,
+   "-14.50": 17944,
+   "-14.25": 15308,
+   "-14.00": 12413,
+   "-13.75": 10205,
+   "-13.50": 8529,
+   "-13.25": 7100,
+   "-13.00": 5847,
+   "-12.75": 4882,
+   "-12.50": 3971,
+   "-12.25": 3034,
+   "-12.00": 2215,
+   "-11.75": 1621,
+   "-11.50": 1117,
+   "-11.25": 741,
+   "-11.00": 500,
+   "-10.75": 325,
+   "-10.50": 194,
+   "-10.25": 126,
+   "-10.00": 71,
+   "-9.75": 57,
+   "-9.50": 24,
+   "-9.25": 15,
+   "-9.00": 8,
+   "-8.75": 5,
+   "-8.50": 4,
+   "-8.25": 1,
+   "-8.00": 3,
+   "-7.25": 1
+  },
+  "boundUnscored": {
+   "-18.50": 1,
+   "-18.25": 8,
+   "-18.00": 22,
+   "-17.75": 65,
+   "-17.50": 106,
+   "-17.25": 91,
+   "-17.00": 171,
+   "-16.75": 242,
+   "-16.50": 293,
+   "-16.25": 430,
+   "-16.00": 545,
+   "-15.75": 680,
+   "-15.50": 844,
+   "-15.25": 1014,
+   "-15.00": 1328,
+   "-14.75": 1628,
+   "-14.50": 2114,
+   "-14.25": 2760,
+   "-14.00": 3195,
+   "-13.75": 3738,
+   "-13.50": 4247,
+   "-13.25": 4721,
+   "-13.00": 800
+  }
+ },
+ "timeMs": {
+  "total": 16731,
+  "setup": 769
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "WILLNOTBEDONE",
+   "wordLogp": -7.1106,
+   "words": "WILL NOT BE DONE",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "W",
+    "M": "L",
+    "N": "O",
+    "z": "T",
+    "E": "B",
+    "A": "E",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CURRENTSYDNEY",
+   "wordLogp": -7.8684,
+   "words": "CURRENT SYDNEY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "C",
+    "M": "R",
+    "N": "N",
+    "z": "T",
+    "E": "S",
+    "A": "Y",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ANDDIRECTORIT",
+   "wordLogp": -7.8946,
+   "words": "AND DIRECTOR IT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "A",
+    "M": "D",
+    "N": "R",
+    "z": "E",
+    "E": "C",
+    "A": "T",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "COMMENTSYDNEY",
+   "wordLogp": -7.9953,
+   "words": "COMMENT SYDNEY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "C",
+    "M": "M",
+    "N": "N",
+    "z": "T",
+    "E": "S",
+    "A": "Y",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "COMMONWITHNOT",
+   "wordLogp": -8.2449,
+   "words": "COMMON WITH NOT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "C",
+    "M": "M",
+    "N": "N",
+    "z": "W",
+    "E": "I",
+    "A": "T",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "FREEISLANDSIN",
+   "wordLogp": -8.4025,
+   "words": "FREE ISLANDS IN",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "F",
+    "M": "E",
+    "N": "S",
+    "z": "L",
+    "E": "A",
+    "A": "N",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "COMMONSITENOT",
+   "wordLogp": -8.4107,
+   "words": "COMMON SITE NOT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "C",
+    "M": "M",
+    "N": "N",
+    "z": "S",
+    "E": "I",
+    "A": "T",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "HIDDENPARTNER",
+   "wordLogp": -8.4152,
+   "words": "HIDDEN PARTNER",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "M": "D",
+    "N": "N",
+    "z": "P",
+    "E": "A",
+    "A": "R",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "WILLNOTBEGONE",
+   "wordLogp": -8.4226,
+   "words": "WILL NOT BE GONE",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "W",
+    "M": "L",
+    "N": "O",
+    "z": "T",
+    "E": "B",
+    "A": "E",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "MINNESOTAUSEA",
+   "wordLogp": -8.5004,
+   "words": "MINNESOTA USE A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "M",
+    "M": "N",
+    "N": "S",
+    "z": "O",
+    "E": "T",
+    "A": "A",
+    "K": "U"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "RUSSIACONTAIN",
+   "wordLogp": -8.5047,
+   "words": "RUSSIA CONTAIN",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "R",
+    "M": "S",
+    "N": "A",
+    "z": "C",
+    "E": "O",
+    "A": "N",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "BUTTONCASINOS",
+   "wordLogp": -8.6185,
+   "words": "BUTTON CASINOS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "B",
+    "M": "T",
+    "N": "N",
+    "z": "C",
+    "E": "A",
+    "A": "S",
+    "K": "I"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "SUPPORTAMFROM",
+   "wordLogp": -8.6982,
+   "words": "SUPPORT AM FROM",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "S",
+    "M": "P",
+    "N": "R",
+    "z": "T",
+    "E": "A",
+    "A": "M",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ISAANOTHERONE",
+   "wordLogp": -8.747,
+   "words": "IS A ANOTHER ONE",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "I",
+    "M": "A",
+    "N": "O",
+    "z": "T",
+    "E": "H",
+    "A": "E",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "INAANOTHERONE",
+   "wordLogp": -8.7925,
+   "words": "IN A ANOTHER ONE",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "I",
+    "M": "A",
+    "N": "O",
+    "z": "T",
+    "E": "H",
+    "A": "E",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "FULLSERVICESI",
+   "wordLogp": -8.7955,
+   "words": "FULL SERVICES I",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "F",
+    "M": "L",
+    "N": "E",
+    "z": "R",
+    "E": "V",
+    "A": "I",
+    "K": "C"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "WELLSERVICESI",
+   "wordLogp": -8.8079,
+   "words": "WELL SERVICES I",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "W",
+    "M": "L",
+    "N": "E",
+    "z": "R",
+    "E": "V",
+    "A": "I",
+    "K": "C"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "WILLSERVICESI",
+   "wordLogp": -8.8419,
+   "words": "WILL SERVICES I",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "W",
+    "M": "L",
+    "N": "E",
+    "z": "R",
+    "E": "V",
+    "A": "I",
+    "K": "C"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "POSSIBLETOBIT",
+   "wordLogp": -8.8454,
+   "words": "POSSIBLE TO BIT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "P",
+    "M": "S",
+    "N": "B",
+    "z": "L",
+    "E": "E",
+    "A": "T",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "FULLRANGECARE",
+   "wordLogp": -8.8924,
+   "words": "FULL RANGE CARE",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "[": "F",
+    "M": "L",
+    "N": "A",
+    "z": "N",
+    "E": "G",
+    "A": "E",
+    "K": "C"
+   }
+  }
+ ]
+}

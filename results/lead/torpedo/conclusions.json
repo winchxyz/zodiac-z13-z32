@@ -1,0 +1,24 @@
+{
+ "task": "torpedo: look-elsewhere and context analysis of the DREAM A TORPEDO / DR EAT A TORPEDO reading of Z13 under the Z340 key",
+ "date": "2026-10-07",
+ "files": {
+  "facts.json": "step 1, primary-source facts (letter, Garlick, Marsh)",
+  "theme_lists.json": "a-priori theme word lists (tools/lead_torpedo_lists.js)",
+  "real.json, real_circles_z340_top20000.tsv, counts.json": "step 2 and step 4 for the real keys (all 456,976 / 676 completions scored)",
+  "null.jsonl, summary.json, summary.log": "step 3 and 4: 10,000 permuted + 10,000 glyph-stratified Z340 null keys (the same keys as results/keyprior/review/review_family.js)",
+  "fit.json": "fluency-free check: how often a random key's template admits a theme word (100,000 keys per null)",
+  "twocircle.json": "the three two-circle-symbol readings (P46 is the one DR EAT A TORPEDO needs)",
+  "validate.json, validate_fluent.json": "checks that the fast prefilter lost nothing that matters",
+  "keys.json": "step 5, key-construction facts and multiplicity arithmetic",
+  "headline.json, derived.json": "the numbers quoted below"
+ },
+ "verdicts": {
+  "step1_facts": "The question about the last cipher and 'My name is' come directly before Z13; the bomb text starts in the paragraph right after it (first mention on the sixth handwritten line below the cipher) and page 2 is a bomb diagram. TORPEDO does not occur in the letter. Garlick's 2020 PDF (DREATATOTPEDO, read as Dr. eat a torpedo) went offline within a day and is not archived; the 2025 video is Oranchak's episode 23 (2025-04-08). Marsh (ACA president, Colorado School of Mines mathematician, PhD 1954) was called Dr. in the press, so the title fits him; whether DR means him is the hypothesis itself.",
+  "step2_rank": "Among all 456,976 three-distinct-circle completions under the Z340 pins, DREAM A TORPEDO ranks 3rd by the bigram word model, 14th by the 6-gram model and 1st by the mean of both ranks; DR EAT A TORPEDO (DREATATORPEDO) ranks 348th (the word model prefers DREATA + TORPEDO) and Garlick's DREATATOTPEDO 53,682nd. 26 completions contain TORPEDO; bomb words of 4+ letters in the top 10,000 are only TORPEDO, ATOM, NOOSE and BOMBED.",
+  "step3_lookelsewhere": "Random keys as fluent as the real one (any completion scoring at least DREAM A TORPEDO) occur 1.5% (permuted) / 2.0% (stratified) of the time; among those, 5.2% / 1.5% also have a theme word of 7+ letters and 9.8% / 5.5% have a 'narrow striking' word at that fluency. So the content adds a likelihood ratio of roughly 10-20 (narrow) to 19-66 (7+ letters, few events) inside this one reading, and about 2-4 (narrow) to 3.5-14 (7+ letters) after allowing for the five circle readings and the two keys an analyst would have tried. TORPEDO is the 7-letter weapon word random templates admit most often (137 and 326 per 100,000 keys), because ?O??EDO only needs A=D, N=E, M=O.",
+  "step3_garlick_level": "At the fluency of DR EAT A TORPEDO itself, 19-25% of random keys have a completion at least that fluent and 2.5% / 3.4% have a narrow striking word at that level; under the post-hoc two-circle partition {4,6}{8} that the reading needs, it ranks 25th of 17,576 and 0.46-0.48% of random keys do as well with a striking word.",
+  "step4_canonical": "Under the one-circle reading that every transcription uses, the best of 676 completions is DREAM A MOM WE DO; there is no weapon word above rank 320 (AXE at 321) and nothing meaningful. Garlick's DREATATOTPEDO ranks 174 of 676. Random keys beat the real canonical best 0.9% / 1.1% of the time (this reproduces the keyprior word p = 0.0105 exactly for the permuted keys).",
+  "step5_reuse_prior": "Zodiac did not reuse keys: Z408 and Z340 share 47 symbols but agree on 5 (2.64 expected, p = 0.12); he moved even the crosshair from D to A; capital-letter glyphs decode to themselves no more than chance (1 of 25, 2 of 24). DREAM A TORPEDO would need new glyphs for M, T, R and P although the Z340 key already had symbols for all four; new glyphs restricted to the letters the Z340 key lacks (J K Q X Z) give nothing readable. Z32, two months later, shows no Z340-key signal (keyprior p ~ 0.8). The only a-priori point for reuse is the 'have you cracked the last cipher' line just before Z13.",
+  "overall": "No good news of substance. The TORPEDO content is a modest coincidence on top of the fluency signal already counted by keyprior (worth a factor of about 2-4 after look-elsewhere for the broad notion of 'striking', more only if one defines the category as 'weapon word of 7+ letters' after seeing it). It exists only under a three-circle reading no transcription supports; the reading people actually propose (DR EAT A TORPEDO) needs two different circle glyphs to both be T and is only moderately fluent; the canonical reading gives nothing. With dozens of tests in the project, the lead stays weak."
+ }
+}

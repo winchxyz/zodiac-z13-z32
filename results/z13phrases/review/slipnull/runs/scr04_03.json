@@ -1,0 +1,279 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:09:16.689Z",
+ "label": "scr04_03",
+ "cipher": {
+  "id": "scr04",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr04.txt",
+  "text": "0z0[KNN0MEAMA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "aba*deeafghfh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 4,
+  "tasks": 118,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 118,
+  "tasks": 118,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 9901,
+  "scored": 9264,
+  "keptAtLeastStreamMin": 2,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 369,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 46,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 2,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 1,
+  "4": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.665044454691277,
+  "topShare": 0.4429110720414914,
+  "top10Share": 0.513586417645689,
+  "effectiveNumberExpEntropy": 22.01757662752324,
+  "effectiveNumberInverseSimpson": 4.783812226403866,
+  "unscoredMassBoundRelative": 0.03229117788237449,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.010897456453204139
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.00": 4,
+   "-16.75": 2,
+   "-16.50": 4,
+   "-16.25": 1,
+   "-16.00": 7,
+   "-15.75": 11,
+   "-15.50": 11,
+   "-15.25": 21,
+   "-15.00": 37,
+   "-14.75": 45,
+   "-14.50": 54,
+   "-14.25": 59,
+   "-14.00": 72,
+   "-13.75": 88,
+   "-13.50": 89,
+   "-13.25": 115,
+   "-13.00": 112,
+   "-12.75": 144,
+   "-12.50": 178,
+   "-12.25": 233,
+   "-12.00": 268,
+   "-11.75": 255,
+   "-11.50": 301,
+   "-11.25": 325,
+   "-11.00": 360,
+   "-10.75": 369,
+   "-10.50": 385,
+   "-10.25": 404,
+   "-10.00": 423,
+   "-9.75": 419,
+   "-9.50": 439,
+   "-9.25": 463,
+   "-9.00": 437,
+   "-8.75": 456,
+   "-8.50": 414,
+   "-8.25": 392,
+   "-8.00": 420,
+   "-7.75": 360,
+   "-7.50": 290,
+   "-7.25": 297,
+   "-7.00": 255,
+   "-6.75": 214,
+   "-6.50": 170,
+   "-6.25": 126,
+   "-6.00": 102,
+   "-5.75": 85,
+   "-5.50": 52,
+   "-5.25": 47,
+   "-5.00": 35,
+   "-4.75": 24,
+   "-4.50": 8,
+   "-4.25": 8,
+   "-4.00": 5,
+   "-3.75": 3,
+   "-3.50": 2,
+   "-3.00": 1
+  },
+  "exactScored": {
+   "-19.00": 1,
+   "-18.75": 8,
+   "-18.50": 48,
+   "-18.25": 109,
+   "-18.00": 243,
+   "-17.75": 336,
+   "-17.50": 426,
+   "-17.25": 534,
+   "-17.00": 581,
+   "-16.75": 595,
+   "-16.50": 649,
+   "-16.25": 559,
+   "-16.00": 589,
+   "-15.75": 586,
+   "-15.50": 567,
+   "-15.25": 595,
+   "-15.00": 506,
+   "-14.75": 489,
+   "-14.50": 409,
+   "-14.25": 298,
+   "-14.00": 250,
+   "-13.75": 191,
+   "-13.50": 180,
+   "-13.25": 134,
+   "-13.00": 86,
+   "-12.75": 70,
+   "-12.50": 59,
+   "-12.25": 52,
+   "-12.00": 26,
+   "-11.75": 32,
+   "-11.50": 19,
+   "-11.25": 18,
+   "-11.00": 6,
+   "-10.75": 7,
+   "-10.25": 3,
+   "-10.00": 2,
+   "-9.25": 1
+  },
+  "boundUnscored": {
+   "-17.00": 4,
+   "-16.75": 2,
+   "-16.50": 4,
+   "-16.25": 1,
+   "-16.00": 7,
+   "-15.75": 11,
+   "-15.50": 11,
+   "-15.25": 21,
+   "-15.00": 37,
+   "-14.75": 45,
+   "-14.50": 54,
+   "-14.25": 59,
+   "-14.00": 72,
+   "-13.75": 88,
+   "-13.50": 89,
+   "-13.25": 115,
+   "-13.00": 17
+  }
+ },
+ "timeMs": {
+  "total": 1172,
+  "setup": 477
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ENERGYYEARSAS",
+   "wordLogp": -9.0187,
+   "words": "ENERGY YEARS AS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "N",
+    "K": "G",
+    "N": "Y",
+    "M": "A",
+    "E": "R",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "SOSMALLSIGNIN",
+   "wordLogp": -9.8158,
+   "words": "SO SMALL SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "O",
+    "K": "A",
+    "N": "L",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  }
+ ]
+}

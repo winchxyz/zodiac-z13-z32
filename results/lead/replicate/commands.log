@@ -1,0 +1,12 @@
+# lead/replicate, 2026-10-07. Run from the repository root (Git Bash). Heavy runs through tools/run_slot.js, 4 threads max.
+# 17:33Z  prereg written and hashed (prereg.sha256) before any statistic was computed
+node tools/lead_replicate_bench.js                       # speed check on random letters only (no Z13 key letters)
+node tools/run_slot.js --label lead-replicate -- node tools/lead_replicate_validate.js --n676 200 --ncircles 20 --ncircles-word 5 --seed 4242 --out results/lead/replicate/validate.json   # PASS, max |diff| 3.6e-15
+node tools/run_slot.js --label lead-replicate-z340 -- node tools/lead_replicate_run.js --key z340 --draws 10000 --threads 4 --out results/lead/replicate/nulls_z340.json   # 1561 s
+node tools/run_slot.js --label lead-replicate-z408 -- node tools/lead_replicate_run.js --key z408 --draws 10000 --threads 4 --out results/lead/replicate/nulls_z408.json   # 696 s (negative control)
+node tools/lead_replicate_classes.js                     # letters per glyph class -> classes.json
+node tools/run_slot.js --label lead-replicate-power -- node tools/lead_replicate_power.js --max 2000 --seed 99 --nulls <scratch>/nulls_z340_snapshot.json --out results/lead/replicate/power.json   # snapshot = nulls_z340.json after perm+class (same raw .f64 files)
+node tools/lead_replicate_multiplicity.js --survey       # key-name survey (led to the exclusion list, see report deviations)
+node tools/lead_replicate_multiplicity.js --lead 0.0051 --lead 0.0102 --lead 0.0096 --lead 0.0147 --lead 0.0392 --out results/lead/replicate/multiplicity.json
+node tools/lead_replicate_windowbest.js --top 5          # best completions of the top unrelated windows -> windows_best.json
+node tools/lead_replicate_report.js                      # summary.json + tables.md

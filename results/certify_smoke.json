@@ -1,0 +1,132 @@
+{
+  "task": "certify (foundation reconciliation before the attack phase)",
+  "date": "2026-10-07",
+  "machine_note": "Shared 20-core machine with other agents running; wall times vary several-fold between runs.",
+  "tests": [
+    {
+      "name": "certify_ciphers.py",
+      "cmd": "python tools/certify_ciphers.py",
+      "passed": true,
+      "result": "All four files: ascii = rows, length, isomorph, per-symbol count/positions and cross-cipher flags recomputed; 0 problems. Only change needed: new in_z32 flags in z13.json and in_z13 flags in z32.json. z408.json/z340.json ascii equal Oranchak visualizer files; AZdecrypt Zodiac 408.txt differs only at 105 (I vs !), documented."
+    },
+    {
+      "name": "anneal Z408 from scratch (must solve)",
+      "cmd": "node tools/anneal.js --cipher data/ciphers/z408.json --restarts 36 --seed 408 --top 5 --out results/certify_smoke_z408.json",
+      "passed": true,
+      "result": {
+        "cipher": "Z408",
+        "restarts": 36,
+        "distinct_solutions": 8,
+        "best_score": -2104.765,
+        "best_hits": 29,
+        "best_hit_fraction": 0.806,
+        "wall_seconds": 144.1,
+        "best_words": "I LIKE KILLING PEOPLE BECAUSE IT IS SO MUCH FUN IT I A MORE FUN THAN KILLING WILD GE ME IN THE FORREST BECAUSE MAN IS THE MOAT DANGER OUEENAMAL OF ALL TO KILL S",
+        "best_accuracy": 0.9632,
+        "known_plaintext_consistent_with_one_key": false
+      },
+      "note": "Accuracy is letter agreement with the Hardens plaintext; the ceiling for any single consistent key is 98.0% because of 8 enciphering slips. The best key scores higher than the published key, as in tools/selftest.js."
+    },
+    {
+      "name": "anneal Z340 with its read_order (should solve)",
+      "cmd": "node tools/anneal.js --cipher data/ciphers/z340.json --restarts 36 --seed 340 --top 5 --out results/certify_smoke_z340.json",
+      "passed": true,
+      "result": {
+        "cipher": "Z340",
+        "restarts": 36,
+        "distinct_solutions": 11,
+        "best_score": -1722.877,
+        "best_hits": 26,
+        "best_hit_fraction": 0.722,
+        "wall_seconds": 6.8,
+        "best_words": "I HOPE YOU ARE HATING LOTS OF FAN IN TRYING TO CATCH ME THAT WASNT ME ON THE TT SHOW WHICH BRING OUP A POINT ABOUT ME I AM NOT AFRAID OF THE GAS CHAMBER BECAASE",
+        "best_accuracy": 0.9706,
+        "known_plaintext_consistent_with_one_key": true
+      }
+    },
+    {
+      "name": "enumerate Z13, bounded words run",
+      "cmd": "node tools/enumerate.js words --cipher data/ciphers/z13.json --mode simple --top-words 20000 --max-words 4 --top 30 --max-seconds 120 --out results/certify_smoke_z13_words.json",
+      "passed": true,
+      "result": {
+        "complete": true,
+        "consistent_strings": 625218,
+        "all_vocabulary_words": 356547,
+        "wall_seconds": 3.9,
+        "top5": [
+          "A DEFINITIVE AT",
+          "ON THE DEFEAT OF",
+          "IN THE DESERT IS",
+          "ON THE DEFECT OF",
+          "OF THESE NEWTON"
+        ]
+      },
+      "note": "Matches the solver agent's figure (625,218 strings for 20k words, up to 4 words). Shows how many readable fits Z13 admits."
+    },
+    {
+      "name": "anneal Z32 short run (parser/plumbing check only)",
+      "cmd": "node tools/anneal.js --cipher data/ciphers/z32.json --mode homophonic --restarts 40 --wordweight 1 --per-restart 3 --top 8 --seed 32 --out results/certify_smoke_z32.json",
+      "passed": true,
+      "result": {
+        "cipher": "Z32",
+        "restarts": 40,
+        "distinct_solutions": 79,
+        "best_score": -130.334,
+        "best_hits": 1,
+        "best_hit_fraction": 0.025,
+        "wall_seconds": 3.7,
+        "best_words": "SESSION OF THE MORE THAT WOULD STRANGE"
+      },
+      "note": "Not a solution attempt: 40 restarts give dozens of different English-looking keys, which illustrates that Z32 is far below unicity distance."
+    },
+    {
+      "name": "published proposals re-checked against the canonical files (cipher.js check, homophonic)",
+      "passed": true,
+      "result": [
+        {
+          "plaintext": "INTHREEANDTHREEEIGHTHSRADIANSTEN",
+          "homophonic_fit": true,
+          "conflicting_symbols": []
+        },
+        {
+          "plaintext": "OKAYISEVENINSSOUTHOFDIABLOMTPEAK",
+          "homophonic_fit": true,
+          "conflicting_symbols": []
+        },
+        {
+          "plaintext": "ESTIMATEFOURRADIANSANDFIVEINCHES",
+          "homophonic_fit": true,
+          "conflicting_symbols": []
+        },
+        {
+          "plaintext": "THREERADIANSFROMMOUNTAREATWOINCH",
+          "homophonic_fit": true,
+          "conflicting_symbols": []
+        },
+        {
+          "plaintext": "ALFREDENEUMAN",
+          "homophonic_fit": false,
+          "conflicting_symbols": [
+            "N"
+          ]
+        },
+        {
+          "plaintext": "DREATATOTPEDO",
+          "homophonic_fit": true,
+          "conflicting_symbols": []
+        },
+        {
+          "plaintext": "MARVINMERRILL",
+          "homophonic_fit": false,
+          "conflicting_symbols": [
+            "0",
+            "A",
+            "M",
+            "N"
+          ]
+        }
+      ],
+      "note": "Agrees with the fits_pattern judgements in the Z13/Z32 literature reports."
+    }
+  ]
+}

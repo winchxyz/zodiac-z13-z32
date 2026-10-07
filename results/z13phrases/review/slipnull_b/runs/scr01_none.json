@@ -1,0 +1,314 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:17:19.339Z",
+ "label": "scr01_none",
+ "cipher": {
+  "id": "scr01",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr01.txt",
+  "text": "NzKNAME0A[0M0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcadefgdhgeg"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 10369,
+  "scored": 9809,
+  "keptAtLeastStreamMin": 4,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 502,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 69,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 4,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 2,
+  "4": 2
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.383644639038279,
+  "topShare": 0.3517012705137455,
+  "top10Share": 0.6962056434734177,
+  "effectiveNumberExpEntropy": 17.79156051562467,
+  "effectiveNumberInverseSimpson": 5.424575784158509,
+  "unscoredMassBoundRelative": 0.014850212424227559,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0045185344438114965
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 1,
+   "-16.75": 3,
+   "-16.25": 7,
+   "-16.00": 7,
+   "-15.75": 20,
+   "-15.50": 30,
+   "-15.25": 26,
+   "-15.00": 35,
+   "-14.75": 39,
+   "-14.50": 54,
+   "-14.25": 46,
+   "-14.00": 54,
+   "-13.75": 63,
+   "-13.50": 68,
+   "-13.25": 86,
+   "-13.00": 131,
+   "-12.75": 109,
+   "-12.50": 141,
+   "-12.25": 153,
+   "-12.00": 200,
+   "-11.75": 207,
+   "-11.50": 228,
+   "-11.25": 256,
+   "-11.00": 281,
+   "-10.75": 270,
+   "-10.50": 272,
+   "-10.25": 348,
+   "-10.00": 328,
+   "-9.75": 347,
+   "-9.50": 387,
+   "-9.25": 379,
+   "-9.00": 408,
+   "-8.75": 445,
+   "-8.50": 468,
+   "-8.25": 480,
+   "-8.00": 554,
+   "-7.75": 499,
+   "-7.50": 432,
+   "-7.25": 447,
+   "-7.00": 382,
+   "-6.75": 335,
+   "-6.50": 285,
+   "-6.25": 265,
+   "-6.00": 190,
+   "-5.75": 173,
+   "-5.50": 124,
+   "-5.25": 94,
+   "-5.00": 57,
+   "-4.75": 58,
+   "-4.50": 39,
+   "-4.25": 18,
+   "-4.00": 15,
+   "-3.75": 13,
+   "-3.50": 5,
+   "-3.25": 3,
+   "-3.00": 4
+  },
+  "exactScored": {
+   "-18.75": 2,
+   "-18.50": 23,
+   "-18.25": 89,
+   "-18.00": 163,
+   "-17.75": 282,
+   "-17.50": 365,
+   "-17.25": 420,
+   "-17.00": 562,
+   "-16.75": 630,
+   "-16.50": 658,
+   "-16.25": 607,
+   "-16.00": 654,
+   "-15.75": 639,
+   "-15.50": 588,
+   "-15.25": 537,
+   "-15.00": 584,
+   "-14.75": 574,
+   "-14.50": 470,
+   "-14.25": 412,
+   "-14.00": 333,
+   "-13.75": 298,
+   "-13.50": 217,
+   "-13.25": 172,
+   "-13.00": 144,
+   "-12.75": 102,
+   "-12.50": 101,
+   "-12.25": 39,
+   "-12.00": 32,
+   "-11.75": 37,
+   "-11.50": 24,
+   "-11.25": 21,
+   "-11.00": 13,
+   "-10.75": 7,
+   "-10.50": 3,
+   "-10.25": 2,
+   "-10.00": 2,
+   "-9.50": 1,
+   "-9.25": 1,
+   "-9.00": 1
+  },
+  "boundUnscored": {
+   "-17.75": 1,
+   "-16.75": 3,
+   "-16.25": 7,
+   "-16.00": 7,
+   "-15.75": 20,
+   "-15.50": 30,
+   "-15.25": 26,
+   "-15.00": 35,
+   "-14.75": 39,
+   "-14.50": 54,
+   "-14.25": 46,
+   "-14.00": 54,
+   "-13.75": 63,
+   "-13.50": 68,
+   "-13.25": 86,
+   "-13.00": 21
+  }
+ },
+ "timeMs": {
+  "total": 1739,
+  "setup": 557
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "EXTENSIONDOSO",
+   "wordLogp": -8.8375,
+   "words": "EXTENSION DO SO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "N": "E",
+    "z": "X",
+    "K": "T",
+    "A": "N",
+    "M": "S",
+    "E": "I",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "EXCEPTASPOSTS",
+   "wordLogp": -9.0317,
+   "words": "EXCEPT AS POSTS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "E",
+    "z": "X",
+    "K": "C",
+    "A": "P",
+    "M": "T",
+    "E": "A",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ANDATRUETHERE",
+   "wordLogp": -9.4771,
+   "words": "AND A TRUE THERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "z": "N",
+    "K": "D",
+    "A": "T",
+    "M": "R",
+    "E": "U",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "CZECHISTHATIT",
+   "wordLogp": -9.7928,
+   "words": "CZECH IS THAT IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "C",
+    "z": "Z",
+    "K": "E",
+    "A": "H",
+    "M": "I",
+    "E": "S",
+    "[": "A"
+   }
+  }
+ ]
+}

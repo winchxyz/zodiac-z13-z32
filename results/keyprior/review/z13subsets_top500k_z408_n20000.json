@@ -1,0 +1,3296 @@
+{
+ "tool": "tools/keyprior_z13subsets.js",
+ "created": "2026-10-07T16:40:37.426Z",
+ "argv": "--fits <scratch>/keyprior/z13_homo_fits_top500k.tsv --kind words --keys z408 --null 20000 --with-t2 --threads 4 --seed 13 --out results/keyprior/review/z13subsets_top500k_z408_n20000.json",
+ "fits": {
+  "file": "<scratch>/keyprior/z13_homo_fits_top500k.tsv",
+  "kind": "words",
+  "n": 500000,
+  "scoreQuantiles": {
+   "top": -7.8137388939704255,
+   "rank1000": -11.496906085765024,
+   "rank10000": -13.048380221685031,
+   "median": -15.736072492608086
+  }
+ },
+ "thresholds": [
+  {
+   "rank": 1000,
+   "score": -11.496906085765024
+  },
+  {
+   "rank": 10000,
+   "score": -13.048380221685031
+  },
+  {
+   "rank": 100000,
+   "score": -14.884959551705169
+  }
+ ],
+ "null": {
+  "kind": "permute",
+  "n": 20000,
+  "seed": 13
+ },
+ "note": "'[' is pinned to the letter of the plain upside-down T 't' when --with-t2 is given (z13.bracket_is_perp hypothesis)",
+ "seconds": 282.226,
+ "results": [
+  {
+   "key": "z408",
+   "realLetters": "WEEDSHR",
+   "symbols": "AENzKM[",
+   "familywise": {
+    "best": {
+     "all": {
+      "minP": 0.005149742512874356,
+      "argSubset": "ENzK",
+      "familywiseP": 0.2609369531523424,
+      "nullsAtLeastAsExtreme": 5218
+     },
+     "k=1": {
+      "minP": 0.2199890005499725,
+      "argSubset": "N",
+      "familywiseP": 0.7534623268836558,
+      "nullsAtLeastAsExtreme": 15069
+     },
+     "k=2": {
+      "minP": 0.12094395280235988,
+      "argSubset": "EN",
+      "familywiseP": 0.8599570021498925,
+      "nullsAtLeastAsExtreme": 17199
+     },
+     "k=3": {
+      "minP": 0.01239938003099845,
+      "argSubset": "ENz",
+      "familywiseP": 0.27938603069846507,
+      "nullsAtLeastAsExtreme": 5587
+     },
+     "k=4": {
+      "minP": 0.005149742512874356,
+      "argSubset": "ENzK",
+      "familywiseP": 0.12289385530723464,
+      "nullsAtLeastAsExtreme": 2457
+     },
+     "k=5": {
+      "minP": 0.008499575021248937,
+      "argSubset": "ENzK[",
+      "familywiseP": 0.11564421778911055,
+      "nullsAtLeastAsExtreme": 2312
+     },
+     "k=6": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     },
+     "k=7": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     }
+    },
+    "count@rank1000": {
+     "all": {
+      "minP": 0.0025498725063746812,
+      "argSubset": "ENz",
+      "familywiseP": 0.08009599520024,
+      "nullsAtLeastAsExtreme": 1601
+     },
+     "k=1": {
+      "minP": 0.07234638268086596,
+      "argSubset": "K",
+      "familywiseP": 0.2287385630718464,
+      "nullsAtLeastAsExtreme": 4574
+     },
+     "k=2": {
+      "minP": 0.04909754512274386,
+      "argSubset": "Nz",
+      "familywiseP": 0.4894255287235638,
+      "nullsAtLeastAsExtreme": 9788
+     },
+     "k=3": {
+      "minP": 0.0025498725063746812,
+      "argSubset": "ENz",
+      "familywiseP": 0.0543972801359932,
+      "nullsAtLeastAsExtreme": 1087
+     },
+     "k=4": {
+      "minP": 0.007249637518124094,
+      "argSubset": "ENzK",
+      "familywiseP": 0.08274586270686465,
+      "nullsAtLeastAsExtreme": 1654
+     },
+     "k=5": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     },
+     "k=6": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     },
+     "k=7": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     }
+    },
+    "count@rank10000": {
+     "all": {
+      "minP": 0.0014499275036248187,
+      "argSubset": "ENz",
+      "familywiseP": 0.06004699765011749,
+      "nullsAtLeastAsExtreme": 1200
+     },
+     "k=1": {
+      "minP": 0.05849707514624269,
+      "argSubset": "[",
+      "familywiseP": 0.09254537273136343,
+      "nullsAtLeastAsExtreme": 1850
+     },
+     "k=2": {
+      "minP": 0.007749612519374031,
+      "argSubset": "N[",
+      "familywiseP": 0.09299535023248838,
+      "nullsAtLeastAsExtreme": 1859
+     },
+     "k=3": {
+      "minP": 0.0014499275036248187,
+      "argSubset": "ENz",
+      "familywiseP": 0.033248337583120846,
+      "nullsAtLeastAsExtreme": 664
+     },
+     "k=4": {
+      "minP": 0.0034498275086245686,
+      "argSubset": "ENz[",
+      "familywiseP": 0.07234638268086596,
+      "nullsAtLeastAsExtreme": 1446
+     },
+     "k=5": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     },
+     "k=6": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     },
+     "k=7": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     }
+    },
+    "count@rank100000": {
+     "all": {
+      "minP": 0.0011499425028748563,
+      "argSubset": "ENz[",
+      "familywiseP": 0.05009749512524374,
+      "nullsAtLeastAsExtreme": 1001
+     },
+     "k=1": {
+      "minP": 0.05849707514624269,
+      "argSubset": "[",
+      "familywiseP": 0.05849707514624269,
+      "nullsAtLeastAsExtreme": 1169
+     },
+     "k=2": {
+      "minP": 0.004849757512124394,
+      "argSubset": "Ez",
+      "familywiseP": 0.040197990100494976,
+      "nullsAtLeastAsExtreme": 803
+     },
+     "k=3": {
+      "minP": 0.0023998800059997,
+      "argSubset": "NK[",
+      "familywiseP": 0.0599970001499925,
+      "nullsAtLeastAsExtreme": 1199
+     },
+     "k=4": {
+      "minP": 0.0011499425028748563,
+      "argSubset": "ENz[",
+      "familywiseP": 0.02944852757362132,
+      "nullsAtLeastAsExtreme": 588
+     },
+     "k=5": {
+      "minP": 0.0012499375031248437,
+      "argSubset": "ENzK[",
+      "familywiseP": 0.017649117544122794,
+      "nullsAtLeastAsExtreme": 352
+     },
+     "k=6": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     },
+     "k=7": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     }
+    }
+   },
+   "subsets": [
+    {
+     "subset": "[",
+     "k": 1,
+     "realBest": -8.58199499666502,
+     "realBestFit": "INTHEDESERTIS",
+     "nullMeanFinite": -9.144319923607805,
+     "nullFiniteFraction": 1,
+     "p": 0.2456877156142193,
+     "count@rank1000": {
+      "real": 72,
+      "nullMean": 52.75795,
+      "p": 0.2070396480175991
+     },
+     "count@rank10000": {
+      "real": 924,
+      "nullMean": 517.7285,
+      "p": 0.05849707514624269
+     },
+     "count@rank100000": {
+      "real": 9382,
+      "nullMean": 5136.585,
+      "p": 0.05849707514624269
+     }
+    },
+    {
+     "subset": "A",
+     "k": 1,
+     "realBest": -10.67248393025783,
+     "realBestFit": "WHOTODONOTOWN",
+     "nullMeanFinite": -9.335555679650014,
+     "nullFiniteFraction": 1,
+     "p": 0.9052547372631369,
+     "count@rank1000": {
+      "real": 8,
+      "nullMean": 71.31065,
+      "p": 0.9248537573121344
+     },
+     "count@rank10000": {
+      "real": 108,
+      "nullMean": 700.22215,
+      "p": 0.8530573471326434
+     },
+     "count@rank100000": {
+      "real": 1056,
+      "nullMean": 6982.5777,
+      "p": 0.8711064446777661
+     }
+    },
+    {
+     "subset": "E",
+     "k": 1,
+     "realBest": -8.770747844394307,
+     "realBestFit": "LEBANONENABLE",
+     "nullMeanFinite": -9.176508926319384,
+     "nullFiniteFraction": 1,
+     "p": 0.35058247087645616,
+     "count@rank1000": {
+      "real": 66,
+      "nullMean": 57.78045,
+      "p": 0.36673166341682917
+     },
+     "count@rank10000": {
+      "real": 695,
+      "nullMean": 575.34595,
+      "p": 0.2926353682315884
+     },
+     "count@rank100000": {
+      "real": 8330,
+      "nullMean": 5816.87985,
+      "p": 0.25523723813809307
+     }
+    },
+    {
+     "subset": "K",
+     "k": 1,
+     "realBest": -8.901002404720963,
+     "realBestFit": "OFTHESENEWTON",
+     "nullMeanFinite": -9.222400542499738,
+     "nullFiniteFraction": 1,
+     "p": 0.32823358832058397,
+     "count@rank1000": {
+      "real": 125,
+      "nullMean": 48.6743,
+      "p": 0.07234638268086596
+     },
+     "count@rank10000": {
+      "real": 988,
+      "nullMean": 487.42735,
+      "p": 0.07234638268086596
+     },
+     "count@rank100000": {
+      "real": 9609,
+      "nullMean": 4966.89435,
+      "p": 0.07234638268086596
+     }
+    },
+    {
+     "subset": "M",
+     "k": 1,
+     "realBest": -9.786712483498913,
+     "realBestFit": "THOSEBEHEMOTH",
+     "nullMeanFinite": -9.43022397983701,
+     "nullFiniteFraction": 1,
+     "p": 0.7630118494075296,
+     "count@rank1000": {
+      "real": 29,
+      "nullMean": 67.60845,
+      "p": 0.6909154542272886
+     },
+     "count@rank10000": {
+      "real": 151,
+      "nullMean": 679.02875,
+      "p": 0.7616119194040298
+     },
+     "count@rank100000": {
+      "real": 1490,
+      "nullMean": 6677.57285,
+      "p": 0.7799110044497775
+     }
+    },
+    {
+     "subset": "N",
+     "k": 1,
+     "realBest": -8.310430927107696,
+     "realBestFit": "ADEFINITIVEAT",
+     "nullMeanFinite": -9.4047435320898,
+     "nullFiniteFraction": 1,
+     "p": 0.2199890005499725,
+     "count@rank1000": {
+      "real": 175,
+      "nullMean": 75.5948,
+      "p": 0.20113994300284985
+     },
+     "count@rank10000": {
+      "real": 1934,
+      "nullMean": 763.92695,
+      "p": 0.13009349532523373
+     },
+     "count@rank100000": {
+      "real": 20605,
+      "nullMean": 7623.49375,
+      "p": 0.13009349532523373
+     }
+    },
+    {
+     "subset": "z",
+     "k": 1,
+     "realBest": -9.627741710695869,
+     "realBestFit": "INNDIVISIONIS",
+     "nullMeanFinite": -9.216729963825625,
+     "nullFiniteFraction": 1,
+     "p": 0.8349082545872706,
+     "count@rank1000": {
+      "real": 57,
+      "nullMean": 50.5106,
+      "p": 0.42842857857107147
+     },
+     "count@rank10000": {
+      "real": 705,
+      "nullMean": 508.57565,
+      "p": 0.29738513074346284
+     },
+     "count@rank100000": {
+      "real": 6760,
+      "nullMean": 5183.5446,
+      "p": 0.3551822408879556
+     }
+    },
+    {
+     "subset": "A[",
+     "k": 2,
+     "realBest": -12.423335223746056,
+     "realBestFit": "WHOTOHONOROWN",
+     "nullMeanFinite": -11.279381239654603,
+     "nullFiniteFraction": 0.9812,
+     "p": 0.8019099045047747,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 3.8088,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 36.58555,
+      "p": 0.8374581270936453
+     },
+     "count@rank100000": {
+      "real": 55,
+      "nullMean": 359.64235,
+      "p": 0.7929103544822759
+     }
+    },
+    {
+     "subset": "AE",
+     "k": 2,
+     "realBest": -11.241895048529747,
+     "realBestFit": "WEESTATETHEWE",
+     "nullMeanFinite": -11.008433244366376,
+     "nullFiniteFraction": 0.6606,
+     "p": 0.3799310034498275,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 3.98125,
+      "p": 0.4007799610019499
+     },
+     "count@rank10000": {
+      "real": 11,
+      "nullMean": 39.31075,
+      "p": 0.4325783710814459
+     },
+     "count@rank100000": {
+      "real": 173,
+      "nullMean": 395.46985,
+      "p": 0.4512274386280686
+     }
+    },
+    {
+     "subset": "AK",
+     "k": 2,
+     "realBest": -11.864204311656454,
+     "realBestFit": "WHOHASANADOWN",
+     "nullMeanFinite": -11.35113145885293,
+     "nullFiniteFraction": 0.98285,
+     "p": 0.6870156492175391,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 3.4428,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 13,
+      "nullMean": 34.10835,
+      "p": 0.5106744662766861
+     },
+     "count@rank100000": {
+      "real": 96,
+      "nullMean": 344.74945,
+      "p": 0.6581670916454178
+     }
+    },
+    {
+     "subset": "AM",
+     "k": 2,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -11.645421020054949,
+     "nullFiniteFraction": 0.7868,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 4.7365,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 46.88975,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 460.1551,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AN",
+     "k": 2,
+     "realBest": -11.241895048529747,
+     "realBestFit": "WEESTATETHEWE",
+     "nullMeanFinite": -11.684863797657586,
+     "nullFiniteFraction": 0.918,
+     "p": 0.3936803159842008,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 5.42385,
+      "p": 0.4672766361681916
+     },
+     "count@rank10000": {
+      "real": 18,
+      "nullMean": 53.80805,
+      "p": 0.4213789310534473
+     },
+     "count@rank100000": {
+      "real": 162,
+      "nullMean": 536.3755,
+      "p": 0.4542272886355682
+     }
+    },
+    {
+     "subset": "Az",
+     "k": 2,
+     "realBest": -12.35272308140142,
+     "realBestFit": "WHODOSONOTOWN",
+     "nullMeanFinite": -11.377272620092988,
+     "nullFiniteFraction": 0.97935,
+     "p": 0.7501124943752813,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 3.62045,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 6,
+      "nullMean": 35.6545,
+      "p": 0.6688165591720414
+     },
+     "count@rank100000": {
+      "real": 114,
+      "nullMean": 362.4408,
+      "p": 0.5860706964651767
+     }
+    },
+    {
+     "subset": "E[",
+     "k": 2,
+     "realBest": -11.192295338377585,
+     "realBestFit": "REALAVATARART",
+     "nullMeanFinite": -10.913259202690732,
+     "nullFiniteFraction": 1,
+     "p": 0.5969701514924254,
+     "count@rank1000": {
+      "real": 4,
+      "nullMean": 3.0949,
+      "p": 0.30988450577471127
+     },
+     "count@rank10000": {
+      "real": 41,
+      "nullMean": 29.67005,
+      "p": 0.2950852457377131
+     },
+     "count@rank100000": {
+      "real": 577,
+      "nullMean": 299.61585,
+      "p": 0.12219389030548472
+     }
+    },
+    {
+     "subset": "EK",
+     "k": 2,
+     "realBest": -10.769318311143685,
+     "realBestFit": "NEARASADAYAND",
+     "nullMeanFinite": -11.067191444198306,
+     "nullFiniteFraction": 1,
+     "p": 0.39448027598620067,
+     "count@rank1000": {
+      "real": 3,
+      "nullMean": 2.8471,
+      "p": 0.33803309834508277
+     },
+     "count@rank10000": {
+      "real": 56,
+      "nullMean": 28.24925,
+      "p": 0.15394230288485575
+     },
+     "count@rank100000": {
+      "real": 788,
+      "nullMean": 292.52845,
+      "p": 0.044947752612369385
+     }
+    },
+    {
+     "subset": "EM",
+     "k": 2,
+     "realBest": -10.195237199686442,
+     "realBestFit": "TELHEREHEALTH",
+     "nullMeanFinite": -11.425018572650396,
+     "nullFiniteFraction": 0.99785,
+     "p": 0.2143892805359732,
+     "count@rank1000": {
+      "real": 3,
+      "nullMean": 3.95645,
+      "p": 0.3608319584020799
+     },
+     "count@rank10000": {
+      "real": 14,
+      "nullMean": 39.02115,
+      "p": 0.4704264786760662
+     },
+     "count@rank100000": {
+      "real": 106,
+      "nullMean": 388.4538,
+      "p": 0.5869206539673016
+     }
+    },
+    {
+     "subset": "EN",
+     "k": 2,
+     "realBest": -9.563684672507847,
+     "realBestFit": "SEESTATETHESE",
+     "nullMeanFinite": -11.422390326087386,
+     "nullFiniteFraction": 0.96335,
+     "p": 0.12094395280235988,
+     "count@rank1000": {
+      "real": 22,
+      "nullMean": 4.15795,
+      "p": 0.05639718014099295
+     },
+     "count@rank10000": {
+      "real": 219,
+      "nullMean": 42.5194,
+      "p": 0.04794760261986901
+     },
+     "count@rank100000": {
+      "real": 2138,
+      "nullMean": 426.21285,
+      "p": 0.038348082595870206
+     }
+    },
+    {
+     "subset": "Ez",
+     "k": 2,
+     "realBest": -9.942591214484734,
+     "realBestFit": "NEEDTOTOTHENO",
+     "nullMeanFinite": -11.05366057530622,
+     "nullFiniteFraction": 0.99715,
+     "p": 0.1463426828658567,
+     "count@rank1000": {
+      "real": 10,
+      "nullMean": 2.8801,
+      "p": 0.061396930153492325
+     },
+     "count@rank10000": {
+      "real": 148,
+      "nullMean": 29.1148,
+      "p": 0.008899555022248887
+     },
+     "count@rank100000": {
+      "real": 1249,
+      "nullMean": 302.14485,
+      "p": 0.004849757512124394
+     }
+    },
+    {
+     "subset": "K[",
+     "k": 2,
+     "realBest": -10.962275354246426,
+     "realBestFit": "OFTHESEPERTOP",
+     "nullMeanFinite": -11.177009041931354,
+     "nullFiniteFraction": 0.99965,
+     "p": 0.41787910604469775,
+     "count@rank1000": {
+      "real": 3,
+      "nullMean": 2.6192,
+      "p": 0.3390830458477076
+     },
+     "count@rank10000": {
+      "real": 85,
+      "nullMean": 25.60295,
+      "p": 0.03774811259437028
+     },
+     "count@rank100000": {
+      "real": 768,
+      "nullMean": 260.9271,
+      "p": 0.014299285035748212
+     }
+    },
+    {
+     "subset": "KM",
+     "k": 2,
+     "realBest": -11.57759647992387,
+     "realBestFit": "CHINESEHERICH",
+     "nullMeanFinite": -11.749419959304966,
+     "nullFiniteFraction": 0.98855,
+     "p": 0.4711264436778161,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 3.2382,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 11,
+      "nullMean": 32.85815,
+      "p": 0.45592720363981803
+     },
+     "count@rank100000": {
+      "real": 163,
+      "nullMean": 332.54005,
+      "p": 0.432328383580821
+     }
+    },
+    {
+     "subset": "M[",
+     "k": 2,
+     "realBest": -11.57759647992387,
+     "realBestFit": "CHINESEHERICH",
+     "nullMeanFinite": -11.564794404779798,
+     "nullFiniteFraction": 0.9898,
+     "p": 0.5565221738913054,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 3.7068,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 5,
+      "nullMean": 35.62835,
+      "p": 0.6815659217039148
+     },
+     "count@rank100000": {
+      "real": 102,
+      "nullMean": 348.66785,
+      "p": 0.6292685365731714
+     }
+    },
+    {
+     "subset": "N[",
+     "k": 2,
+     "realBest": -9.77164034467925,
+     "realBestFit": "ARECANADAREAD",
+     "nullMeanFinite": -11.43087935140381,
+     "nullFiniteFraction": 0.9882,
+     "p": 0.14169291535423229,
+     "count@rank1000": {
+      "real": 17,
+      "nullMean": 3.80765,
+      "p": 0.056847157642117896
+     },
+     "count@rank10000": {
+      "real": 266,
+      "nullMean": 38.1104,
+      "p": 0.007749612519374031
+     },
+     "count@rank100000": {
+      "real": 2728,
+      "nullMean": 377.5291,
+      "p": 0.007749612519374031
+     }
+    },
+    {
+     "subset": "NK",
+     "k": 2,
+     "realBest": -9.753721307869567,
+     "realBestFit": "TREATSTOTHETO",
+     "nullMeanFinite": -11.298255239216688,
+     "nullFiniteFraction": 0.9967,
+     "p": 0.1239438028098595,
+     "count@rank1000": {
+      "real": 21,
+      "nullMean": 3.79635,
+      "p": 0.050997450127493626
+     },
+     "count@rank10000": {
+      "real": 226,
+      "nullMean": 37.7374,
+      "p": 0.020748962551872405
+     },
+     "count@rank100000": {
+      "real": 2150,
+      "nullMean": 379.33925,
+      "p": 0.011149442527873607
+     }
+    },
+    {
+     "subset": "NM",
+     "k": 2,
+     "realBest": -11.624909657752212,
+     "realBestFit": "THEDATAHATETH",
+     "nullMeanFinite": -11.645467073724253,
+     "nullFiniteFraction": 0.96905,
+     "p": 0.5133243337833109,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 5.2269,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 9,
+      "nullMean": 52.9667,
+      "p": 0.5352732363381831
+     },
+     "count@rank100000": {
+      "real": 276,
+      "nullMean": 522.7803,
+      "p": 0.39318034098295085
+     }
+    },
+    {
+     "subset": "Nz",
+     "k": 2,
+     "realBest": -9.942591214484734,
+     "realBestFit": "NEEDTOTOTHENO",
+     "nullMeanFinite": -11.366592288965707,
+     "nullFiniteFraction": 0.9851,
+     "p": 0.15434228288585572,
+     "count@rank1000": {
+      "real": 19,
+      "nullMean": 4.0053,
+      "p": 0.04909754512274386
+     },
+     "count@rank10000": {
+      "real": 204,
+      "nullMean": 39.0071,
+      "p": 0.04214789260536973
+     },
+     "count@rank100000": {
+      "real": 1762,
+      "nullMean": 389.97765,
+      "p": 0.0423978801059947
+     }
+    },
+    {
+     "subset": "z[",
+     "k": 2,
+     "realBest": -11.406616228302067,
+     "realBestFit": "READAVATARART",
+     "nullMeanFinite": -11.109193842518058,
+     "nullFiniteFraction": 1,
+     "p": 0.591970401479926,
+     "count@rank1000": {
+      "real": 2,
+      "nullMean": 2.7202,
+      "p": 0.46207689615519226
+     },
+     "count@rank10000": {
+      "real": 42,
+      "nullMean": 26.9519,
+      "p": 0.21623918804059797
+     },
+     "count@rank100000": {
+      "real": 564,
+      "nullMean": 271.70135,
+      "p": 0.08129593520323984
+     }
+    },
+    {
+     "subset": "zK",
+     "k": 2,
+     "realBest": -11.11216663502189,
+     "realBestFit": "USEDASAPAGEUP",
+     "nullMeanFinite": -11.220544474921299,
+     "nullFiniteFraction": 1,
+     "p": 0.45242737863106847,
+     "count@rank1000": {
+      "real": 3,
+      "nullMean": 2.465,
+      "p": 0.2849357532123394
+     },
+     "count@rank10000": {
+      "real": 39,
+      "nullMean": 24.5887,
+      "p": 0.18269086545672716
+     },
+     "count@rank100000": {
+      "real": 546,
+      "nullMean": 259.2988,
+      "p": 0.09389530523473827
+     }
+    },
+    {
+     "subset": "zM",
+     "k": 2,
+     "realBest": -10.205284875313914,
+     "realBestFit": "AWIDENEHEMIAH",
+     "nullMeanFinite": -11.372885986960155,
+     "nullFiniteFraction": 0.9963,
+     "p": 0.20093995300234987,
+     "count@rank1000": {
+      "real": 3,
+      "nullMean": 3.5271,
+      "p": 0.3323833808309585
+     },
+     "count@rank10000": {
+      "real": 18,
+      "nullMean": 34.80895,
+      "p": 0.48887555622218887
+     },
+     "count@rank100000": {
+      "real": 104,
+      "nullMean": 346.15215,
+      "p": 0.6347182640867957
+     }
+    },
+    {
+     "subset": "AE[",
+     "k": 3,
+     "realBest": -12.577115725408259,
+     "realBestFit": "WELLASAEARLWE",
+     "nullMeanFinite": -12.960680465546519,
+     "nullFiniteFraction": 0.6246,
+     "p": 0.24783760811959402,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.20565,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 2.01375,
+      "p": 0.3181340932953352
+     },
+     "count@rank100000": {
+      "real": 8,
+      "nullMean": 20.3798,
+      "p": 0.3790310484475776
+     }
+    },
+    {
+     "subset": "AEK",
+     "k": 3,
+     "realBest": -12.577115725408259,
+     "realBestFit": "WELLASAEARLWE",
+     "nullMeanFinite": -12.997881967650969,
+     "nullFiniteFraction": 0.639,
+     "p": 0.23733813309334534,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.20245,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 1.9796,
+      "p": 0.2312884355782211
+     },
+     "count@rank100000": {
+      "real": 13,
+      "nullMean": 20.0228,
+      "p": 0.32103394830258486
+     }
+    },
+    {
+     "subset": "AEM",
+     "k": 3,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -13.144170612990903,
+     "nullFiniteFraction": 0.4805,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.26775,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.58505,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 25.85185,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEN",
+     "k": 3,
+     "realBest": -11.241895048529747,
+     "realBestFit": "WEESTATETHEWE",
+     "nullMeanFinite": -12.891383378096242,
+     "nullFiniteFraction": 0.3784,
+     "p": 0.06184690765461727,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.285,
+      "p": 0.07934603269836508
+     },
+     "count@rank10000": {
+      "real": 8,
+      "nullMean": 2.8321,
+      "p": 0.0744462776861157
+     },
+     "count@rank100000": {
+      "real": 83,
+      "nullMean": 28.359,
+      "p": 0.07944602769861507
+     }
+    },
+    {
+     "subset": "AEz",
+     "k": 3,
+     "realBest": -14.017108396933851,
+     "realBestFit": "WEEDATASANEWS",
+     "nullMeanFinite": -12.996207132437585,
+     "nullFiniteFraction": 0.59725,
+     "p": 0.4526773661316934,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.2026,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.0208,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 14,
+      "nullMean": 20.73835,
+      "p": 0.287935603219839
+     }
+    },
+    {
+     "subset": "AK[",
+     "k": 3,
+     "realBest": -12.577115725408259,
+     "realBestFit": "WELLASAEARLWE",
+     "nullMeanFinite": -13.333497746156208,
+     "nullFiniteFraction": 0.9271,
+     "p": 0.2743362831858407,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.19315,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 1.789,
+      "p": 0.3872806359682016
+     },
+     "count@rank100000": {
+      "real": 7,
+      "nullMean": 17.92985,
+      "p": 0.4767761611919404
+     }
+    },
+    {
+     "subset": "AKM",
+     "k": 3,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -13.536906810439053,
+     "nullFiniteFraction": 0.6853,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.21365,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.2023,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 22.35295,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AM[",
+     "k": 3,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -13.390344374039138,
+     "nullFiniteFraction": 0.64695,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.26385,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.4441,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 23.72785,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AN[",
+     "k": 3,
+     "realBest": -14.409103331610355,
+     "realBestFit": "WHENPIPEPREWE",
+     "nullMeanFinite": -13.434240992956074,
+     "nullFiniteFraction": 0.69935,
+     "p": 0.4821258937053147,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.28275,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.7575,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 4,
+      "nullMean": 26.7825,
+      "p": 0.41472926353682316
+     }
+    },
+    {
+     "subset": "ANK",
+     "k": 3,
+     "realBest": -12.594369811599499,
+     "realBestFit": "WEEKASASANEWS",
+     "nullMeanFinite": -13.421043196197258,
+     "nullFiniteFraction": 0.7855,
+     "p": 0.24533773311334434,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.2691,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 2.65265,
+      "p": 0.24068796560171993
+     },
+     "count@rank100000": {
+      "real": 20,
+      "nullMean": 26.3015,
+      "p": 0.2600869956502175
+     }
+    },
+    {
+     "subset": "ANM",
+     "k": 3,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -13.16961230564781,
+     "nullFiniteFraction": 0.4378,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.3517,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 3.5834,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 35.66855,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANz",
+     "k": 3,
+     "realBest": -14.017108396933851,
+     "realBestFit": "WEEDATASANEWS",
+     "nullMeanFinite": -13.455680497285105,
+     "nullFiniteFraction": 0.71715,
+     "p": 0.4409279536023199,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.30605,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.8442,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 14,
+      "nullMean": 28.1018,
+      "p": 0.29113544322783863
+     }
+    },
+    {
+     "subset": "Az[",
+     "k": 3,
+     "realBest": -13.442681685275193,
+     "realBestFit": "WHODOHONOROWN",
+     "nullMeanFinite": -13.27376503195944,
+     "nullFiniteFraction": 0.8995,
+     "p": 0.49817509124543774,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.19055,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 1.8718,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 7,
+      "nullMean": 18.78945,
+      "p": 0.4905754712264387
+     }
+    },
+    {
+     "subset": "AzK",
+     "k": 3,
+     "realBest": -12.35272308140142,
+     "realBestFit": "WHODOSONOTOWN",
+     "nullMeanFinite": -13.38456946915192,
+     "nullFiniteFraction": 0.9057,
+     "p": 0.21733913304334784,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1697,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 1.67445,
+      "p": 0.2571871406429678
+     },
+     "count@rank100000": {
+      "real": 10,
+      "nullMean": 17.79405,
+      "p": 0.40012999350032497
+     }
+    },
+    {
+     "subset": "AzM",
+     "k": 3,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -13.388400112637019,
+     "nullFiniteFraction": 0.6723,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.2406,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.3229,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 23.2903,
+      "p": 1
+     }
+    },
+    {
+     "subset": "EK[",
+     "k": 3,
+     "realBest": -12.577115725408259,
+     "realBestFit": "WELLASAEARLWE",
+     "nullMeanFinite": -13.086643346048293,
+     "nullFiniteFraction": 0.98265,
+     "p": 0.32283385830708466,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1597,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 1.4688,
+      "p": 0.2909854507274636
+     },
+     "count@rank100000": {
+      "real": 46,
+      "nullMean": 15.37715,
+      "p": 0.07254637268136593
+     }
+    },
+    {
+     "subset": "EKM",
+     "k": 3,
+     "realBest": -12.975799396748815,
+     "realBestFit": "TELLESEHEALTH",
+     "nullMeanFinite": -13.499393591238782,
+     "nullFiniteFraction": 0.8972,
+     "p": 0.3289835508224589,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1995,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 1.93755,
+      "p": 0.23968801559922004
+     },
+     "count@rank100000": {
+      "real": 6,
+      "nullMean": 19.83985,
+      "p": 0.4615269236538173
+     }
+    },
+    {
+     "subset": "EM[",
+     "k": 3,
+     "realBest": -14.566940942063983,
+     "realBestFit": "PEAKGOGHGRAPH",
+     "nullMeanFinite": -13.334308601832884,
+     "nullFiniteFraction": 0.88625,
+     "p": 0.6841657917104145,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.2159,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 1.9949,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 3,
+      "nullMean": 20.14295,
+      "p": 0.5930203489825508
+     }
+    },
+    {
+     "subset": "EN[",
+     "k": 3,
+     "realBest": -11.451975270247578,
+     "realBestFit": "SEETOGOTOREST",
+     "nullMeanFinite": -13.32554574166954,
+     "nullFiniteFraction": 0.8408,
+     "p": 0.09679516024198791,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.2167,
+      "p": 0.09984500774961252
+     },
+     "count@rank10000": {
+      "real": 19,
+      "nullMean": 2.1104,
+      "p": 0.025748712564371782
+     },
+     "count@rank100000": {
+      "real": 206,
+      "nullMean": 21.20825,
+      "p": 0.013499325033748313
+     }
+    },
+    {
+     "subset": "ENK",
+     "k": 3,
+     "realBest": -11.144282187318097,
+     "realBestFit": "NEEDASATALENT",
+     "nullMeanFinite": -13.29075819991459,
+     "nullFiniteFraction": 0.88165,
+     "p": 0.06844657767111645,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.2114,
+      "p": 0.10164491775411229
+     },
+     "count@rank10000": {
+      "real": 23,
+      "nullMean": 2.112,
+      "p": 0.013099345032748363
+     },
+     "count@rank100000": {
+      "real": 236,
+      "nullMean": 21.51315,
+      "p": 0.009449527523623819
+     }
+    },
+    {
+     "subset": "ENM",
+     "k": 3,
+     "realBest": -13.280998887435558,
+     "realBestFit": "SEEHEREHEMESH",
+     "nullMeanFinite": -13.400268180179134,
+     "nullFiniteFraction": 0.72475,
+     "p": 0.335833208339583,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.28335,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.8779,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 5,
+      "nullMean": 28.78655,
+      "p": 0.4084295785210739
+     }
+    },
+    {
+     "subset": "ENz",
+     "k": 3,
+     "realBest": -9.942591214484734,
+     "realBestFit": "NEEDTOTOTHENO",
+     "nullMeanFinite": -13.297010281424892,
+     "nullFiniteFraction": 0.77015,
+     "p": 0.01239938003099845,
+     "count@rank1000": {
+      "real": 8,
+      "nullMean": 0.2218,
+      "p": 0.0025498725063746812
+     },
+     "count@rank10000": {
+      "real": 77,
+      "nullMean": 2.1716,
+      "p": 0.0014499275036248187
+     },
+     "count@rank100000": {
+      "real": 471,
+      "nullMean": 21.9089,
+      "p": 0.0035498225088745564
+     }
+    },
+    {
+     "subset": "Ez[",
+     "k": 3,
+     "realBest": -11.406616228302067,
+     "realBestFit": "READAVATARART",
+     "nullMeanFinite": -13.087185428270049,
+     "nullFiniteFraction": 0.97035,
+     "p": 0.08814559272036399,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.163,
+      "p": 0.10039498025098745
+     },
+     "count@rank10000": {
+      "real": 10,
+      "nullMean": 1.55495,
+      "p": 0.02069896505174741
+     },
+     "count@rank100000": {
+      "real": 83,
+      "nullMean": 15.8658,
+      "p": 0.011149442527873607
+     }
+    },
+    {
+     "subset": "EzK",
+     "k": 3,
+     "realBest": -11.144282187318097,
+     "realBestFit": "NEEDASATALENT",
+     "nullMeanFinite": -13.244963731106765,
+     "nullFiniteFraction": 0.96865,
+     "p": 0.055347232638368084,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.14535,
+      "p": 0.08659567021648917
+     },
+     "count@rank10000": {
+      "real": 10,
+      "nullMean": 1.4268,
+      "p": 0.021248937553122346
+     },
+     "count@rank100000": {
+      "real": 122,
+      "nullMean": 15.39245,
+      "p": 0.005249737513124344
+     }
+    },
+    {
+     "subset": "EzM",
+     "k": 3,
+     "realBest": -14.501947049108248,
+     "realBestFit": "AENDASAHANNAH",
+     "nullMeanFinite": -13.337088850004292,
+     "nullFiniteFraction": 0.8881,
+     "p": 0.6733163341832908,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.20555,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.005,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 20.20475,
+      "p": 0.6503174841257937
+     }
+    },
+    {
+     "subset": "KM[",
+     "k": 3,
+     "realBest": -11.57759647992387,
+     "realBestFit": "CHINESEHERICH",
+     "nullMeanFinite": -13.524784612261788,
+     "nullFiniteFraction": 0.8485,
+     "p": 0.08869556522173891,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1841,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 1.78095,
+      "p": 0.32348382580870955
+     },
+     "count@rank100000": {
+      "real": 11,
+      "nullMean": 18.1017,
+      "p": 0.33328333583320835
+     }
+    },
+    {
+     "subset": "NK[",
+     "k": 3,
+     "realBest": -11.431636950960282,
+     "realBestFit": "THESESEVERETV",
+     "nullMeanFinite": -13.41729100994503,
+     "nullFiniteFraction": 0.8973,
+     "p": 0.08064596770161492,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.2058,
+      "p": 0.08864556772161392
+     },
+     "count@rank10000": {
+      "real": 32,
+      "nullMean": 1.9336,
+      "p": 0.004599770011499425
+     },
+     "count@rank100000": {
+      "real": 232,
+      "nullMean": 19.0832,
+      "p": 0.0023998800059997
+     }
+    },
+    {
+     "subset": "NKM",
+     "k": 3,
+     "realBest": -13.376653367758642,
+     "realBestFit": "THEMASAHATETH",
+     "nullMeanFinite": -13.559293298714076,
+     "nullFiniteFraction": 0.81295,
+     "p": 0.3606819659017049,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.26635,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.58545,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 33,
+      "nullMean": 25.8469,
+      "p": 0.19074046297685116
+     }
+    },
+    {
+     "subset": "NM[",
+     "k": 3,
+     "realBest": -12.527621480980905,
+     "realBestFit": "AREHEREHEREAH",
+     "nullMeanFinite": -13.533588714632328,
+     "nullFiniteFraction": 0.75785,
+     "p": 0.20548972551372433,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.27055,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 4,
+      "nullMean": 2.64675,
+      "p": 0.15219239038048096
+     },
+     "count@rank100000": {
+      "real": 40,
+      "nullMean": 26.28,
+      "p": 0.15949202539873006
+     }
+    },
+    {
+     "subset": "Nz[",
+     "k": 3,
+     "realBest": -11.723606429381977,
+     "realBestFit": "SEEDELETEREST",
+     "nullMeanFinite": -13.397595122101347,
+     "nullFiniteFraction": 0.88755,
+     "p": 0.12579371031448427,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.2223,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 12,
+      "nullMean": 2.05715,
+      "p": 0.04229788510574471
+     },
+     "count@rank100000": {
+      "real": 176,
+      "nullMean": 19.9468,
+      "p": 0.008749562521873906
+     }
+    },
+    {
+     "subset": "NzK",
+     "k": 3,
+     "realBest": -11.11216663502189,
+     "realBestFit": "USEDASAPAGEUP",
+     "nullMeanFinite": -13.41800729604829,
+     "nullFiniteFraction": 0.89255,
+     "p": 0.060296985150742465,
+     "count@rank1000": {
+      "real": 3,
+      "nullMean": 0.2083,
+      "p": 0.016849157542122895
+     },
+     "count@rank10000": {
+      "real": 15,
+      "nullMean": 1.9053,
+      "p": 0.023998800059997
+     },
+     "count@rank100000": {
+      "real": 177,
+      "nullMean": 19.39645,
+      "p": 0.01159942002899855
+     }
+    },
+    {
+     "subset": "NzM",
+     "k": 3,
+     "realBest": -11.624909657752212,
+     "realBestFit": "THEDATAHATETH",
+     "nullMeanFinite": -13.41334351789643,
+     "nullFiniteFraction": 0.7957,
+     "p": 0.10984450777461127,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.29255,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 2.7243,
+      "p": 0.33088345582720863
+     },
+     "count@rank100000": {
+      "real": 21,
+      "nullMean": 26.5287,
+      "p": 0.2617869106544673
+     }
+    },
+    {
+     "subset": "zK[",
+     "k": 3,
+     "realBest": -12.374109707587486,
+     "realBestFit": "FOODASAFAROFF",
+     "nullMeanFinite": -13.258726574241583,
+     "nullFiniteFraction": 0.9659,
+     "p": 0.22108894555272238,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1388,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 1.32395,
+      "p": 0.24598770061496925
+     },
+     "count@rank100000": {
+      "real": 54,
+      "nullMean": 13.9189,
+      "p": 0.04189790510474476
+     }
+    },
+    {
+     "subset": "zKM",
+     "k": 3,
+     "realBest": -12.718843305157712,
+     "realBestFit": "AANDASAHANNAH",
+     "nullMeanFinite": -13.521127288426388,
+     "nullFiniteFraction": 0.87175,
+     "p": 0.26948652567371634,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1727,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 1.72515,
+      "p": 0.33528323583820807
+     },
+     "count@rank100000": {
+      "real": 6,
+      "nullMean": 17.71785,
+      "p": 0.4456277186140693
+     }
+    },
+    {
+     "subset": "zM[",
+     "k": 3,
+     "realBest": -13.425625534597735,
+     "realBestFit": "ANDDATAHARDAH",
+     "nullMeanFinite": -13.345460539257378,
+     "nullFiniteFraction": 0.9017,
+     "p": 0.4726763661816909,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.19175,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 1.8588,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 4,
+      "nullMean": 18.46165,
+      "p": 0.5816709164541773
+     }
+    },
+    {
+     "subset": "AEK[",
+     "k": 4,
+     "realBest": -12.577115725408259,
+     "realBestFit": "WELLASAEARLWE",
+     "nullMeanFinite": -14.502409197382818,
+     "nullFiniteFraction": 0.44075,
+     "p": 0.036148192590370484,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0118,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 0.1034,
+      "p": 0.060696965151742416
+     },
+     "count@rank100000": {
+      "real": 3,
+      "nullMean": 1.06165,
+      "p": 0.11484425778711065
+     }
+    },
+    {
+     "subset": "AEKM",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.48443147944535,
+     "nullFiniteFraction": 0.30495,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0124,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.11775,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.2912,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEM[",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.391249098193137,
+     "nullFiniteFraction": 0.28115,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01395,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1264,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.3128,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEN[",
+     "k": 4,
+     "realBest": -14.666794705075947,
+     "realBestFit": "WEEKPIPEPREWE",
+     "nullMeanFinite": -14.255503408930803,
+     "nullFiniteFraction": 0.2279,
+     "p": 0.12924353782310885,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01375,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.14245,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.4103,
+      "p": 0.14139293035348233
+     }
+    },
+    {
+     "subset": "AENK",
+     "k": 4,
+     "realBest": -12.594369811599499,
+     "realBestFit": "WEEKASASANEWS",
+     "nullMeanFinite": -14.247640331703439,
+     "nullFiniteFraction": 0.2491,
+     "p": 0.030348482575871208,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0149,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 0.14215,
+      "p": 0.047847607619619016
+     },
+     "count@rank100000": {
+      "real": 6,
+      "nullMean": 1.429,
+      "p": 0.06169691515424229
+     }
+    },
+    {
+     "subset": "AENM",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.086774525123205,
+     "nullFiniteFraction": 0.14405,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0149,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.15815,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.7483,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENz",
+     "k": 4,
+     "realBest": -14.017108396933851,
+     "realBestFit": "WEEDATASANEWS",
+     "nullMeanFinite": -14.175069235897839,
+     "nullFiniteFraction": 0.1885,
+     "p": 0.07874606269686515,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0181,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1536,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 12,
+      "nullMean": 1.52105,
+      "p": 0.028748562571871406
+     }
+    },
+    {
+     "subset": "AEz[",
+     "k": 4,
+     "realBest": -15.130619760670754,
+     "realBestFit": "WEADDADSDRAWS",
+     "nullMeanFinite": -14.492839267145486,
+     "nullFiniteFraction": 0.4,
+     "p": 0.2530373481325934,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00955,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1007,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.05805,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEzK",
+     "k": 4,
+     "realBest": -14.264415520375518,
+     "realBestFit": "WEEDASASANEWS",
+     "nullMeanFinite": -14.557034271222042,
+     "nullFiniteFraction": 0.42665,
+     "p": 0.16199190040497974,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00945,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.09465,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.03075,
+      "p": 0.2336383180840958
+     }
+    },
+    {
+     "subset": "AEzM",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.416691239816018,
+     "nullFiniteFraction": 0.2791,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01355,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.12515,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.3051,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AKM[",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.620620486017094,
+     "nullFiniteFraction": 0.36485,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0138,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.11755,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.2016,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANK[",
+     "k": 4,
+     "realBest": -16.41128843880676,
+     "realBestFit": "WHEATSTETREWE",
+     "nullMeanFinite": -14.646025366281759,
+     "nullFiniteFraction": 0.40525,
+     "p": 0.4016299185040748,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0145,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.13585,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.33815,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANKM",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.48507418492012,
+     "nullFiniteFraction": 0.2579,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01825,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.18165,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.72715,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANM[",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.395850800580059,
+     "nullFiniteFraction": 0.20855,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01645,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1602,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.55255,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANz[",
+     "k": 4,
+     "realBest": -16.037492494183766,
+     "realBestFit": "WEEDPIPEPREWE",
+     "nullMeanFinite": -14.484181381228183,
+     "nullFiniteFraction": 0.347,
+     "p": 0.30608469576521175,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01865,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1597,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.4355,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANzK",
+     "k": 4,
+     "realBest": -14.264415520375518,
+     "realBestFit": "WEEDASASANEWS",
+     "nullMeanFinite": -14.639391068551825,
+     "nullFiniteFraction": 0.39635,
+     "p": 0.13699315034248288,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01465,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1298,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.3764,
+      "p": 0.20028998550072497
+     }
+    },
+    {
+     "subset": "ANzM",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.40158106283521,
+     "nullFiniteFraction": 0.2388,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.02205,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.18825,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.805,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AzK[",
+     "k": 4,
+     "realBest": -15.096498789771085,
+     "realBestFit": "WINDASAEARNWE",
+     "nullMeanFinite": -14.72932810372782,
+     "nullFiniteFraction": 0.5558,
+     "p": 0.3079346032698365,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.08885,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.93085,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AzKM",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.6331991330686,
+     "nullFiniteFraction": 0.37785,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01085,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.10865,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.1544,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AzM[",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.562456597567307,
+     "nullFiniteFraction": 0.36985,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01335,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.11785,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.19605,
+      "p": 1
+     }
+    },
+    {
+     "subset": "EKM[",
+     "k": 4,
+     "realBest": -16.074372502757154,
+     "realBestFit": "HEARASAHARAHH",
+     "nullMeanFinite": -14.643128637698123,
+     "nullFiniteFraction": 0.513,
+     "p": 0.4577271136443178,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01235,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1042,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.06395,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ENK[",
+     "k": 4,
+     "realBest": -12.921557308254172,
+     "realBestFit": "SEENASATAREST",
+     "nullMeanFinite": -14.606340568125571,
+     "nullFiniteFraction": 0.50245,
+     "p": 0.05104744762761862,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01295,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 0.10615,
+      "p": 0.05904704764761762
+     },
+     "count@rank100000": {
+      "real": 23,
+      "nullMean": 1.08105,
+      "p": 0.004199790010499475
+     }
+    },
+    {
+     "subset": "ENKM",
+     "k": 4,
+     "realBest": -14.699593993222845,
+     "realBestFit": "TEENASAHATETH",
+     "nullMeanFinite": -14.581990711251546,
+     "nullFiniteFraction": 0.39725,
+     "p": 0.18444077796110195,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01505,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1461,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.44105,
+      "p": 0.20663966801659917
+     }
+    },
+    {
+     "subset": "ENM[",
+     "k": 4,
+     "realBest": -15.817689773084677,
+     "realBestFit": "TEEWEREHERETH",
+     "nullMeanFinite": -14.508455920771516,
+     "nullFiniteFraction": 0.3557,
+     "p": 0.29218539073046346,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0145,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.14385,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.4501,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ENz[",
+     "k": 4,
+     "realBest": -11.723606429381977,
+     "realBestFit": "SEEDELETEREST",
+     "nullMeanFinite": -14.531310542084263,
+     "nullFiniteFraction": 0.4299,
+     "p": 0.012649367531623419,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0133,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 5,
+      "nullMean": 0.1136,
+      "p": 0.0034498275086245686
+     },
+     "count@rank100000": {
+      "real": 42,
+      "nullMean": 1.1377,
+      "p": 0.0011499425028748563
+     }
+    },
+    {
+     "subset": "ENzK",
+     "k": 4,
+     "realBest": -11.144282187318097,
+     "realBestFit": "NEEDASATALENT",
+     "nullMeanFinite": -14.663412831561704,
+     "nullFiniteFraction": 0.47835,
+     "p": 0.005149742512874356,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.0116,
+      "p": 0.007249637518124094
+     },
+     "count@rank10000": {
+      "real": 4,
+      "nullMean": 0.1038,
+      "p": 0.006049697515124244
+     },
+     "count@rank100000": {
+      "real": 42,
+      "nullMean": 1.1005,
+      "p": 0.0017499125043747813
+     }
+    },
+    {
+     "subset": "ENzM",
+     "k": 4,
+     "realBest": -15.281684474744507,
+     "realBestFit": "TEEDATAHATETH",
+     "nullMeanFinite": -14.521662071460442,
+     "nullFiniteFraction": 0.35385,
+     "p": 0.23063846807659616,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0153,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1426,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.45705,
+      "p": 1
+     }
+    },
+    {
+     "subset": "EzK[",
+     "k": 4,
+     "realBest": -13.475291461814033,
+     "realBestFit": "SEEDOSOTOREST",
+     "nullMeanFinite": -14.725418798051972,
+     "nullFiniteFraction": 0.65575,
+     "p": 0.09414529273536323,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0092,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.07685,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 8,
+      "nullMean": 0.8279,
+      "p": 0.015099245037748113
+     }
+    },
+    {
+     "subset": "EzKM",
+     "k": 4,
+     "realBest": -14.501947049108248,
+     "realBestFit": "AENDASAHANNAH",
+     "nullMeanFinite": -14.672948320717664,
+     "nullFiniteFraction": 0.5182,
+     "p": 0.20758962051897406,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00995,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.10135,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.0757,
+      "p": 0.2625868706564672
+     }
+    },
+    {
+     "subset": "EzM[",
+     "k": 4,
+     "realBest": -16.260954497286818,
+     "realBestFit": "HEADASAHARAHH",
+     "nullMeanFinite": -14.616399287727194,
+     "nullFiniteFraction": 0.515,
+     "p": 0.4885755712214389,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0108,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.10515,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.06675,
+      "p": 1
+     }
+    },
+    {
+     "subset": "NKM[",
+     "k": 4,
+     "realBest": -14.03833877575443,
+     "realBestFit": "THERESEHERETH",
+     "nullMeanFinite": -14.638842147983613,
+     "nullFiniteFraction": 0.39445,
+     "p": 0.11574421278936053,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.018,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1405,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 1.362,
+      "p": 0.1328933553322334
+     }
+    },
+    {
+     "subset": "NzK[",
+     "k": 4,
+     "realBest": -13.440569719703047,
+     "realBestFit": "SHEDOSOTOREST",
+     "nullMeanFinite": -14.667607960183801,
+     "nullFiniteFraction": 0.4921,
+     "p": 0.08224588770561472,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0139,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.10845,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 17,
+      "nullMean": 1.0202,
+      "p": 0.007799610019499025
+     }
+    },
+    {
+     "subset": "NzKM",
+     "k": 4,
+     "realBest": -14.0939453760232,
+     "realBestFit": "USEDASAHAVEUH",
+     "nullMeanFinite": -14.642285780940565,
+     "nullFiniteFraction": 0.4141,
+     "p": 0.12754362281885906,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01395,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1303,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.3221,
+      "p": 0.207989600519974
+     }
+    },
+    {
+     "subset": "NzM[",
+     "k": 4,
+     "realBest": -13.75637938819915,
+     "realBestFit": "THEDATAHARETH",
+     "nullMeanFinite": -14.59613258132863,
+     "nullFiniteFraction": 0.39205,
+     "p": 0.09709514524273787,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01625,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.14235,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.3795,
+      "p": 0.2073396330183491
+     }
+    },
+    {
+     "subset": "zKM[",
+     "k": 4,
+     "realBest": -15.419455831195418,
+     "realBestFit": "SLIDESEHERISH",
+     "nullMeanFinite": -14.707636652762536,
+     "nullFiniteFraction": 0.50245,
+     "p": 0.3313334333283336,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0106,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.09435,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.981,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEKM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.096125981012893,
+     "nullFiniteFraction": 0.0935,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0007,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00615,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.06765,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENK[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.022400995217328,
+     "nullFiniteFraction": 0.08165,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00075,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0072,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.07525,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENKM",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.9600755230738,
+     "nullFiniteFraction": 0.055,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.001,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0084,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0905,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.844242376310914,
+     "nullFiniteFraction": 0.0459,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0008,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.007,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.07525,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENz[",
+     "k": 5,
+     "realBest": -16.037492494183766,
+     "realBestFit": "WEEDPIPEPREWE",
+     "nullMeanFinite": -14.903556990326793,
+     "nullFiniteFraction": 0.06365,
+     "p": 0.05234738263086846,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00135,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0085,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0808,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENzK",
+     "k": 5,
+     "realBest": -14.264415520375518,
+     "realBestFit": "WEEDASASANEWS",
+     "nullMeanFinite": -15.034653047469815,
+     "nullFiniteFraction": 0.0768,
+     "p": 0.016599170041497927,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00085,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0067,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 0.0738,
+      "p": 0.027248637568121594
+     }
+    },
+    {
+     "subset": "AENzM",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.896250663486683,
+     "nullFiniteFraction": 0.04575,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00085,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00735,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.08955,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEzK[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.232131462738117,
+     "nullFiniteFraction": 0.1249,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0006,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0047,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0522,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEzKM",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.125019316566151,
+     "nullFiniteFraction": 0.0956,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00055,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0049,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.067,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEzM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.095866977273577,
+     "nullFiniteFraction": 0.08585,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00065,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00595,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.06875,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANKM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.097428476423067,
+     "nullFiniteFraction": 0.06885,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0012,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0095,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0728,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANzK[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.128178041844075,
+     "nullFiniteFraction": 0.09845,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00085,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00725,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.07155,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANzKM",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.078308769228375,
+     "nullFiniteFraction": 0.07345,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0009,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0093,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0909,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANzM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.053450258082284,
+     "nullFiniteFraction": 0.0627,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00065,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0079,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0788,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AzKM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.172391453982128,
+     "nullFiniteFraction": 0.1041,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00075,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00665,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.06495,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ENKM[",
+     "k": 5,
+     "realBest": -16.116634261318026,
+     "realBestFit": "TEENESEHERETH",
+     "nullMeanFinite": -15.14037172488169,
+     "nullFiniteFraction": 0.10665,
+     "p": 0.088045597720114,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0013,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0084,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0734,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ENzK[",
+     "k": 5,
+     "realBest": -13.475291461814033,
+     "realBestFit": "SEEDOSOTOREST",
+     "nullMeanFinite": -15.18833236568967,
+     "nullFiniteFraction": 0.12475,
+     "p": 0.008499575021248937,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0013,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0065,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 5,
+      "nullMean": 0.05995,
+      "p": 0.0012499375031248437
+     }
+    },
+    {
+     "subset": "ENzKM",
+     "k": 5,
+     "realBest": -16.180729675747045,
+     "realBestFit": "SEEDOSOHOMESH",
+     "nullMeanFinite": -15.185957386630974,
+     "nullFiniteFraction": 0.10745,
+     "p": 0.09114544272786361,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0006,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00635,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.07185,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ENzM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.072766603009226,
+     "nullFiniteFraction": 0.08835,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00075,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0072,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0798,
+      "p": 1
+     }
+    },
+    {
+     "subset": "EzKM[",
+     "k": 5,
+     "realBest": -16.260954497286818,
+     "realBestFit": "HEADASAHARAHH",
+     "nullMeanFinite": -15.260822390403677,
+     "nullFiniteFraction": 0.14,
+     "p": 0.12599370031498425,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0003,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00495,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.05795,
+      "p": 1
+     }
+    },
+    {
+     "subset": "NzKM[",
+     "k": 5,
+     "realBest": -15.694611802238335,
+     "realBestFit": "USEDASAHAREUH",
+     "nullMeanFinite": -15.180309918774004,
+     "nullFiniteFraction": 0.10565,
+     "p": 0.06474676266186691,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00145,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00775,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.072,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENKM[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.324483946905444,
+     "nullFiniteFraction": 0.0106,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00005,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0004,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.00385,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENzK[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.325777747702476,
+     "nullFiniteFraction": 0.012,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00005,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0004,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0039,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENzKM",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.38868722545684,
+     "nullFiniteFraction": 0.01035,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0003,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0035,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENzM[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.280820786881327,
+     "nullFiniteFraction": 0.0086,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00015,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0046,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEzKM[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.367488698010924,
+     "nullFiniteFraction": 0.01405,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00015,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0039,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANzKM[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.320224613030604,
+     "nullFiniteFraction": 0.01135,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0001,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0007,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0041,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ENzKM[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.359641580129807,
+     "nullFiniteFraction": 0.01475,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00015,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00035,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.00415,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENzKM[",
+     "k": 7,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.458133211742734,
+     "nullFiniteFraction": 0.00125,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00005,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.00025,
+      "p": 1
+     }
+    }
+   ]
+  }
+ ]
+}

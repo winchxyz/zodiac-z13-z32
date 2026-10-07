@@ -1,0 +1,603 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:25:30.354Z",
+ "label": "scr10_03",
+ "cipher": {
+  "id": "scr10",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr10.txt",
+  "text": "KENAMNzM[00A0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*ecfeghhdh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 257813,
+  "scored": 244980,
+  "keptAtLeastStreamMin": 35,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 6902,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 617,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 35,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 5,
+  "3": 18,
+  "4": 12
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.4452608234157855,
+  "topShare": 0.08183511170632163,
+  "top10Share": 0.37519882110889696,
+  "effectiveNumberExpEntropy": 283.1408210431579,
+  "effectiveNumberInverseSimpson": 48.37978268133992,
+  "unscoredMassBoundRelative": 0.03921832287868763,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 11,
+   "maxWordLogp": -15.409339726965678,
+   "massEstimateRelative": 0.000017830611035992322,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.015060177068318924
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 1,
+   "-17.50": 33,
+   "-17.25": 38,
+   "-17.00": 47,
+   "-16.75": 72,
+   "-16.50": 99,
+   "-16.25": 117,
+   "-16.00": 125,
+   "-15.75": 170,
+   "-15.50": 283,
+   "-15.25": 375,
+   "-15.00": 497,
+   "-14.75": 590,
+   "-14.50": 819,
+   "-14.25": 1062,
+   "-14.00": 1401,
+   "-13.75": 1791,
+   "-13.50": 2190,
+   "-13.25": 2644,
+   "-13.00": 3078,
+   "-12.75": 3650,
+   "-12.50": 4094,
+   "-12.25": 4804,
+   "-12.00": 5427,
+   "-11.75": 6218,
+   "-11.50": 6965,
+   "-11.25": 7702,
+   "-11.00": 8583,
+   "-10.75": 9181,
+   "-10.50": 10103,
+   "-10.25": 10719,
+   "-10.00": 11330,
+   "-9.75": 11478,
+   "-9.50": 11770,
+   "-9.25": 11804,
+   "-9.00": 11421,
+   "-8.75": 11238,
+   "-8.50": 10718,
+   "-8.25": 10319,
+   "-8.00": 10007,
+   "-7.75": 9487,
+   "-7.50": 9073,
+   "-7.25": 8385,
+   "-7.00": 7553,
+   "-6.75": 6560,
+   "-6.50": 5728,
+   "-6.25": 4730,
+   "-6.00": 3759,
+   "-5.75": 2875,
+   "-5.50": 2120,
+   "-5.25": 1534,
+   "-5.00": 1088,
+   "-4.75": 717,
+   "-4.50": 504,
+   "-4.25": 316,
+   "-4.00": 199,
+   "-3.75": 111,
+   "-3.50": 72,
+   "-3.25": 26,
+   "-3.00": 11,
+   "-2.75": 2
+  },
+  "exactScored": {
+   "-19.50": 2,
+   "-19.25": 8,
+   "-19.00": 59,
+   "-18.75": 289,
+   "-18.50": 1061,
+   "-18.25": 2698,
+   "-18.00": 5322,
+   "-17.75": 8718,
+   "-17.50": 12521,
+   "-17.25": 15556,
+   "-17.00": 18044,
+   "-16.75": 19336,
+   "-16.50": 19823,
+   "-16.25": 19211,
+   "-16.00": 18352,
+   "-15.75": 16661,
+   "-15.50": 15157,
+   "-15.25": 13072,
+   "-15.00": 11495,
+   "-14.75": 9750,
+   "-14.50": 8141,
+   "-14.25": 6667,
+   "-14.00": 5367,
+   "-13.75": 4369,
+   "-13.50": 3415,
+   "-13.25": 2614,
+   "-13.00": 1985,
+   "-12.75": 1577,
+   "-12.50": 1165,
+   "-12.25": 825,
+   "-12.00": 559,
+   "-11.75": 420,
+   "-11.50": 261,
+   "-11.25": 166,
+   "-11.00": 116,
+   "-10.75": 67,
+   "-10.50": 55,
+   "-10.25": 33,
+   "-10.00": 15,
+   "-9.75": 9,
+   "-9.50": 8,
+   "-9.25": 5,
+   "-9.00": 4,
+   "-8.75": 2
+  },
+  "boundUnscored": {
+   "-17.75": 1,
+   "-17.50": 33,
+   "-17.25": 38,
+   "-17.00": 47,
+   "-16.75": 72,
+   "-16.50": 99,
+   "-16.25": 117,
+   "-16.00": 125,
+   "-15.75": 170,
+   "-15.50": 283,
+   "-15.25": 375,
+   "-15.00": 497,
+   "-14.75": 590,
+   "-14.50": 819,
+   "-14.25": 1062,
+   "-14.00": 1401,
+   "-13.75": 1791,
+   "-13.50": 2190,
+   "-13.25": 2644,
+   "-13.00": 479
+  }
+ },
+ "timeMs": {
+  "total": 3022,
+  "setup": 412
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "BRINGINGADDED",
+   "wordLogp": -8.5323,
+   "words": "BRINGING ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "B",
+    "E": "R",
+    "N": "I",
+    "M": "G",
+    "z": "N",
+    "[": "A",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "STANDARDINNON",
+   "wordLogp": -8.61,
+   "words": "STANDARD IN NON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "K": "S",
+    "E": "T",
+    "N": "A",
+    "M": "D",
+    "z": "R",
+    "[": "I",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ABOUTOFTHEEYE",
+   "wordLogp": -8.7973,
+   "words": "ABOUT OF THE EYE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "A",
+    "E": "B",
+    "N": "O",
+    "M": "T",
+    "z": "F",
+    "[": "H",
+    "A": "Y"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "SWINGINGADDED",
+   "wordLogp": -8.8552,
+   "words": "SWINGING ADDED",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "K": "S",
+    "E": "W",
+    "N": "I",
+    "M": "G",
+    "z": "N",
+    "[": "A",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "CREATESTAFFOF",
+   "wordLogp": -8.9605,
+   "words": "CREATE STAFF OF",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "K": "C",
+    "E": "R",
+    "N": "E",
+    "M": "T",
+    "z": "S",
+    "[": "A",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "SWINGINGERROR",
+   "wordLogp": -8.9773,
+   "words": "SWINGING ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "S",
+    "E": "W",
+    "N": "I",
+    "M": "G",
+    "z": "N",
+    "[": "E",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "TWOPROGRESSIS",
+   "wordLogp": -9.0502,
+   "words": "TWO PROGRESS IS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "T",
+    "E": "W",
+    "N": "O",
+    "M": "R",
+    "z": "G",
+    "[": "E",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "POINTINTHEEYE",
+   "wordLogp": -9.1318,
+   "words": "POINT IN THE EYE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "P",
+    "E": "O",
+    "N": "I",
+    "M": "T",
+    "z": "N",
+    "[": "H",
+    "A": "Y"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "BUILTINTHEEYE",
+   "wordLogp": -9.1706,
+   "words": "BUILT IN THE EYE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "B",
+    "E": "U",
+    "N": "I",
+    "M": "T",
+    "z": "N",
+    "[": "H",
+    "A": "Y"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "WHOPROGRESSIS",
+   "wordLogp": -9.2043,
+   "words": "WHO PROGRESS IS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "K": "W",
+    "E": "H",
+    "N": "O",
+    "M": "R",
+    "z": "G",
+    "[": "E",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THATMAYMIRROR",
+   "wordLogp": -9.2442,
+   "words": "THAT MAY MIRROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "T",
+    "E": "H",
+    "N": "A",
+    "M": "M",
+    "z": "Y",
+    "[": "I",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ABOUTONTHEEYE",
+   "wordLogp": -9.2728,
+   "words": "ABOUT ON THE EYE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "A",
+    "E": "B",
+    "N": "O",
+    "M": "T",
+    "z": "N",
+    "[": "H",
+    "A": "Y"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "BUILTINTERROR",
+   "wordLogp": -9.2739,
+   "words": "BUILT IN TERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "B",
+    "E": "U",
+    "N": "I",
+    "M": "T",
+    "z": "N",
+    "[": "E",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THATSAYSERROR",
+   "wordLogp": -9.3048,
+   "words": "THAT SAYS ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "T",
+    "E": "H",
+    "N": "A",
+    "M": "S",
+    "z": "Y",
+    "[": "E",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "GREATESTINNON",
+   "wordLogp": -9.3686,
+   "words": "GREATEST IN NON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "K": "G",
+    "E": "R",
+    "N": "E",
+    "M": "T",
+    "z": "S",
+    "[": "I",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "STANDANDERROR",
+   "wordLogp": -9.3977,
+   "words": "STAND AND ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "S",
+    "E": "T",
+    "N": "A",
+    "M": "D",
+    "z": "N",
+    "[": "E",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "CREATESTUFFOF",
+   "wordLogp": -9.4634,
+   "words": "CREATE STUFF OF",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "K": "C",
+    "E": "R",
+    "N": "E",
+    "M": "T",
+    "z": "S",
+    "[": "U",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "STANDARDOFFIF",
+   "wordLogp": -9.4864,
+   "words": "STANDARD OFF IF",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "K": "S",
+    "E": "T",
+    "N": "A",
+    "M": "D",
+    "z": "R",
+    "[": "O",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "GUARDANDERROR",
+   "wordLogp": -9.4917,
+   "words": "GUARD AND ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "K": "G",
+    "E": "U",
+    "N": "A",
+    "M": "D",
+    "z": "N",
+    "[": "E",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ABOUTOFTHEEVE",
+   "wordLogp": -9.5197,
+   "words": "ABOUT OF THE EVE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "A",
+    "E": "B",
+    "N": "O",
+    "M": "T",
+    "z": "F",
+    "[": "H",
+    "A": "V"
+   }
+  }
+ ]
+}

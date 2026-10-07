@@ -1,0 +1,612 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:32:19.235Z",
+ "label": "scr18_05",
+ "cipher": {
+  "id": "scr18",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr18.txt",
+  "text": "A0EN0MMK[0NAz",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   5
+  ],
+  "isomorphAfterSlips": "abcdb*efgbdah"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 358976,
+  "scored": 330509,
+  "keptAtLeastStreamMin": 139,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 15276,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1829,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 139,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 7,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 5,
+  "3": 88,
+  "4": 46
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.7348401636744555,
+  "topShare": 0.07261200452443548,
+  "top10Share": 0.3649759484022682,
+  "effectiveNumberExpEntropy": 256.3610120970126,
+  "effectiveNumberInverseSimpson": 50.791940270713056,
+  "unscoredMassBoundRelative": 0.016946572152541976,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 25,
+   "maxWordLogp": -15.233382257275615,
+   "massEstimateRelative": 0.00000759029211664908,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.005476571239015223
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 4,
+   "-18.25": 14,
+   "-18.00": 24,
+   "-17.75": 60,
+   "-17.50": 99,
+   "-17.25": 93,
+   "-17.00": 134,
+   "-16.75": 183,
+   "-16.50": 259,
+   "-16.25": 345,
+   "-16.00": 472,
+   "-15.75": 674,
+   "-15.50": 821,
+   "-15.25": 1051,
+   "-15.00": 1401,
+   "-14.75": 1782,
+   "-14.50": 2158,
+   "-14.25": 2599,
+   "-14.00": 3020,
+   "-13.75": 3679,
+   "-13.50": 4047,
+   "-13.25": 4723,
+   "-13.00": 5258,
+   "-12.75": 6054,
+   "-12.50": 6782,
+   "-12.25": 7632,
+   "-12.00": 8668,
+   "-11.75": 9781,
+   "-11.50": 10587,
+   "-11.25": 11341,
+   "-11.00": 12244,
+   "-10.75": 12897,
+   "-10.50": 13324,
+   "-10.25": 13811,
+   "-10.00": 14135,
+   "-9.75": 14000,
+   "-9.50": 14323,
+   "-9.25": 14508,
+   "-9.00": 14359,
+   "-8.75": 14184,
+   "-8.50": 13951,
+   "-8.25": 13743,
+   "-8.00": 13117,
+   "-7.75": 12466,
+   "-7.50": 11625,
+   "-7.25": 10904,
+   "-7.00": 9827,
+   "-6.75": 8693,
+   "-6.50": 7590,
+   "-6.25": 6334,
+   "-6.00": 5156,
+   "-5.75": 3985,
+   "-5.50": 3172,
+   "-5.25": 2310,
+   "-5.00": 1604,
+   "-4.75": 1104,
+   "-4.50": 743,
+   "-4.25": 463,
+   "-4.00": 312,
+   "-3.75": 178,
+   "-3.50": 99,
+   "-3.25": 52,
+   "-3.00": 15,
+   "-2.75": 3
+  },
+  "exactScored": {
+   "-19.50": 2,
+   "-19.25": 1,
+   "-19.00": 13,
+   "-18.75": 76,
+   "-18.50": 454,
+   "-18.25": 1433,
+   "-18.00": 3259,
+   "-17.75": 5831,
+   "-17.50": 9392,
+   "-17.25": 13497,
+   "-17.00": 17292,
+   "-16.75": 20610,
+   "-16.50": 22980,
+   "-16.25": 24233,
+   "-16.00": 25171,
+   "-15.75": 24915,
+   "-15.50": 23956,
+   "-15.25": 22564,
+   "-15.00": 20903,
+   "-14.75": 17973,
+   "-14.50": 15449,
+   "-14.25": 13000,
+   "-14.00": 10652,
+   "-13.75": 8589,
+   "-13.50": 6854,
+   "-13.25": 5381,
+   "-13.00": 4193,
+   "-12.75": 3176,
+   "-12.50": 2416,
+   "-12.25": 1803,
+   "-12.00": 1316,
+   "-11.75": 1031,
+   "-11.50": 655,
+   "-11.25": 496,
+   "-11.00": 301,
+   "-10.75": 208,
+   "-10.50": 156,
+   "-10.25": 98,
+   "-10.00": 65,
+   "-9.75": 47,
+   "-9.50": 22,
+   "-9.25": 17,
+   "-9.00": 9,
+   "-8.75": 10,
+   "-8.50": 6,
+   "-8.25": 2,
+   "-8.00": 2
+  },
+  "boundUnscored": {
+   "-18.50": 4,
+   "-18.25": 14,
+   "-18.00": 24,
+   "-17.75": 60,
+   "-17.50": 99,
+   "-17.25": 93,
+   "-17.00": 134,
+   "-16.75": 183,
+   "-16.50": 259,
+   "-16.25": 345,
+   "-16.00": 472,
+   "-15.75": 674,
+   "-15.50": 821,
+   "-15.25": 1051,
+   "-15.00": 1401,
+   "-14.75": 1782,
+   "-14.50": 2158,
+   "-14.25": 2599,
+   "-14.00": 3020,
+   "-13.75": 3679,
+   "-13.50": 4047,
+   "-13.25": 4723,
+   "-13.00": 825
+  }
+ },
+ "timeMs": {
+  "total": 5896,
+  "setup": 524
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ORDERNATUREOF",
+   "wordLogp": -7.8738,
+   "words": "ORDER NATURE OF",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "O",
+    "E": "D",
+    "N": "E",
+    "M": "A",
+    "K": "T",
+    "[": "U",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TIMEINSOCIETY",
+   "wordLogp": -7.8757,
+   "words": "TIME IN SOCIETY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "T",
+    "E": "M",
+    "N": "E",
+    "M": "S",
+    "K": "O",
+    "[": "C",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "TELDESIGNEDTO",
+   "wordLogp": -8.1464,
+   "words": "TEL DESIGNED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "L",
+    "N": "D",
+    "M": "I",
+    "K": "G",
+    "[": "N",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "EASTALLOCATED",
+   "wordLogp": -8.1662,
+   "words": "EAST ALLOCATED",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "S",
+    "N": "T",
+    "M": "L",
+    "K": "O",
+    "[": "C",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ONLINEASENIOR",
+   "wordLogp": -8.2954,
+   "words": "ONLINE A SENIOR",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "O",
+    "E": "L",
+    "N": "I",
+    "M": "A",
+    "K": "S",
+    "[": "E",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "TELSERVICESTO",
+   "wordLogp": -8.2969,
+   "words": "TEL SERVICES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "L",
+    "N": "S",
+    "M": "V",
+    "K": "I",
+    "[": "C",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "NEWSERVICESNO",
+   "wordLogp": -8.3024,
+   "words": "NEW SERVICES NO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "N",
+    "E": "W",
+    "N": "S",
+    "M": "V",
+    "K": "I",
+    "[": "C",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "REVIEWSTHEIRA",
+   "wordLogp": -8.3598,
+   "words": "REVIEWS THEIR A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "R",
+    "E": "V",
+    "N": "I",
+    "M": "S",
+    "K": "T",
+    "[": "H",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "RESPECTIVEPRO",
+   "wordLogp": -8.4099,
+   "words": "RESPECTIVE PRO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "R",
+    "E": "S",
+    "N": "P",
+    "M": "T",
+    "K": "I",
+    "[": "V",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "STRATEGICTASK",
+   "wordLogp": -8.4936,
+   "words": "STRATEGIC TASK",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "R",
+    "N": "A",
+    "M": "G",
+    "K": "I",
+    "[": "C",
+    "z": "K"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "TEADESIGNEDTO",
+   "wordLogp": -8.5462,
+   "words": "TEA DESIGNED TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "A",
+    "N": "D",
+    "M": "I",
+    "K": "G",
+    "[": "N",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TENSERVICESTO",
+   "wordLogp": -8.5658,
+   "words": "TEN SERVICES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "N",
+    "N": "S",
+    "M": "V",
+    "K": "I",
+    "[": "C",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "WESTERNARETWO",
+   "wordLogp": -8.5746,
+   "words": "WESTERN ARE TWO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "W",
+    "E": "S",
+    "N": "T",
+    "M": "N",
+    "K": "A",
+    "[": "R",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "LOANOFTHEONLY",
+   "wordLogp": -8.593,
+   "words": "LOAN OF THE ONLY",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "L",
+    "E": "A",
+    "N": "N",
+    "M": "T",
+    "K": "H",
+    "[": "E",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "TOBROWSENORTH",
+   "wordLogp": -8.6059,
+   "words": "TO BROWSE NORTH",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "T",
+    "E": "B",
+    "N": "R",
+    "M": "S",
+    "K": "E",
+    "[": "N",
+    "z": "H"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ORFIRSTPERIOD",
+   "wordLogp": -8.6255,
+   "words": "OR FIRST PERIOD",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "O",
+    "E": "F",
+    "N": "I",
+    "M": "T",
+    "K": "P",
+    "[": "E",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ENGINESDANIEL",
+   "wordLogp": -8.6874,
+   "words": "ENGINES DANIEL",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "E",
+    "E": "G",
+    "N": "I",
+    "M": "S",
+    "K": "D",
+    "[": "A",
+    "z": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "TEASERVICESTO",
+   "wordLogp": -8.6967,
+   "words": "TEA SERVICES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "A",
+    "N": "S",
+    "M": "V",
+    "K": "I",
+    "[": "C",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "BETWEENVIEWBY",
+   "wordLogp": -8.7099,
+   "words": "BETWEEN VIEW BY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "B",
+    "E": "T",
+    "N": "W",
+    "M": "N",
+    "K": "V",
+    "[": "I",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ORDERFIGUREOF",
+   "wordLogp": -8.7125,
+   "words": "ORDER FIGURE OF",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "O",
+    "E": "D",
+    "N": "E",
+    "M": "I",
+    "K": "G",
+    "[": "U",
+    "z": "F"
+   }
+  }
+ ]
+}

@@ -1,0 +1,613 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:33:14.918Z",
+ "label": "eng06_03",
+ "cipher": {
+  "id": "eng06",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng06.txt",
+  "text": "abccdbcefgehh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*dbcefgehh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 696637,
+  "scored": 656908,
+  "keptAtLeastStreamMin": 283,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 33987,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 4002,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 283,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 17,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 12,
+  "3": 140,
+  "4": 131
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.354545999284809,
+  "topShare": 0.09228389407838312,
+  "top10Share": 0.3487409345391183,
+  "effectiveNumberExpEntropy": 332.61923385040694,
+  "effectiveNumberInverseSimpson": 52.47112964534777,
+  "unscoredMassBoundRelative": 0.009852663104326892,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 38,
+   "maxWordLogp": -14.19602929851047,
+   "massEstimateRelative": 0.00002152065332269635,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.003352304223911354
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 20,
+   "-17.75": 41,
+   "-17.50": 106,
+   "-17.25": 138,
+   "-17.00": 187,
+   "-16.75": 261,
+   "-16.50": 328,
+   "-16.25": 413,
+   "-16.00": 535,
+   "-15.75": 676,
+   "-15.50": 939,
+   "-15.25": 1296,
+   "-15.00": 1791,
+   "-14.75": 2403,
+   "-14.50": 3084,
+   "-14.25": 3611,
+   "-14.00": 4463,
+   "-13.75": 5226,
+   "-13.50": 5993,
+   "-13.25": 6965,
+   "-13.00": 8170,
+   "-12.75": 9622,
+   "-12.50": 11074,
+   "-12.25": 12974,
+   "-12.00": 14748,
+   "-11.75": 16615,
+   "-11.50": 18286,
+   "-11.25": 20517,
+   "-11.00": 22302,
+   "-10.75": 23698,
+   "-10.50": 25006,
+   "-10.25": 26361,
+   "-10.00": 27878,
+   "-9.75": 28673,
+   "-9.50": 29495,
+   "-9.25": 30332,
+   "-9.00": 30536,
+   "-8.75": 31009,
+   "-8.50": 31337,
+   "-8.25": 30758,
+   "-8.00": 29190,
+   "-7.75": 28067,
+   "-7.50": 26182,
+   "-7.25": 24075,
+   "-7.00": 21435,
+   "-6.75": 18489,
+   "-6.50": 15325,
+   "-6.25": 12297,
+   "-6.00": 9775,
+   "-5.75": 7378,
+   "-5.50": 5497,
+   "-5.25": 3881,
+   "-5.00": 2724,
+   "-4.75": 1855,
+   "-4.50": 1148,
+   "-4.25": 664,
+   "-4.00": 385,
+   "-3.75": 203,
+   "-3.50": 115,
+   "-3.25": 48,
+   "-3.00": 19,
+   "-2.75": 13,
+   "-2.50": 3,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.50": 3,
+   "-19.25": 3,
+   "-19.00": 28,
+   "-18.75": 175,
+   "-18.50": 922,
+   "-18.25": 2702,
+   "-18.00": 5911,
+   "-17.75": 11387,
+   "-17.50": 17601,
+   "-17.25": 25466,
+   "-17.00": 32977,
+   "-16.75": 39528,
+   "-16.50": 45186,
+   "-16.25": 48296,
+   "-16.00": 50023,
+   "-15.75": 50070,
+   "-15.50": 48562,
+   "-15.25": 45655,
+   "-15.00": 40728,
+   "-14.75": 35603,
+   "-14.50": 30472,
+   "-14.25": 26010,
+   "-14.00": 20905,
+   "-13.75": 17490,
+   "-13.50": 14174,
+   "-13.25": 11487,
+   "-13.00": 8974,
+   "-12.75": 7215,
+   "-12.50": 5319,
+   "-12.25": 4068,
+   "-12.00": 3041,
+   "-11.75": 2227,
+   "-11.50": 1551,
+   "-11.25": 1104,
+   "-11.00": 731,
+   "-10.75": 469,
+   "-10.50": 319,
+   "-10.25": 170,
+   "-10.00": 147,
+   "-9.75": 85,
+   "-9.50": 42,
+   "-9.25": 23,
+   "-9.00": 19,
+   "-8.75": 16,
+   "-8.50": 9,
+   "-8.25": 8,
+   "-8.00": 6,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 20,
+   "-17.75": 41,
+   "-17.50": 106,
+   "-17.25": 138,
+   "-17.00": 187,
+   "-16.75": 261,
+   "-16.50": 328,
+   "-16.25": 413,
+   "-16.00": 535,
+   "-15.75": 676,
+   "-15.50": 939,
+   "-15.25": 1296,
+   "-15.00": 1791,
+   "-14.75": 2403,
+   "-14.50": 3084,
+   "-14.25": 3611,
+   "-14.00": 4463,
+   "-13.75": 5226,
+   "-13.50": 5993,
+   "-13.25": 6965,
+   "-13.00": 1252
+  }
+ },
+ "timeMs": {
+  "total": 6131,
+  "setup": 517
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "OTHERTHISWILL",
+   "wordLogp": -7.3894,
+   "words": "OTHER THIS WILL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "T",
+    "c": "H",
+    "d": "R",
+    "e": "I",
+    "f": "S",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CRITERIAOFALL",
+   "wordLogp": -7.7613,
+   "words": "CRITERIA OF ALL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "R",
+    "c": "I",
+    "d": "E",
+    "e": "A",
+    "f": "O",
+    "g": "F",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "WORKFOREXCESS",
+   "wordLogp": -7.7738,
+   "words": "WORK FOR EXCESS",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "O",
+    "c": "R",
+    "d": "F",
+    "e": "E",
+    "f": "X",
+    "g": "C",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "MOREFOREXCESS",
+   "wordLogp": -7.8343,
+   "words": "MORE FOR EXCESS",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "O",
+    "c": "R",
+    "d": "F",
+    "e": "E",
+    "f": "X",
+    "g": "C",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "CRITERIASMALL",
+   "wordLogp": -7.851,
+   "words": "CRITERIA SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "R",
+    "c": "I",
+    "d": "E",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "CRITERIASHALL",
+   "wordLogp": -7.8866,
+   "words": "CRITERIA SHALL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "R",
+    "c": "I",
+    "d": "E",
+    "e": "A",
+    "f": "S",
+    "g": "H",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "CRITERIASTAFF",
+   "wordLogp": -7.9893,
+   "words": "CRITERIA STAFF",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "R",
+    "c": "I",
+    "d": "E",
+    "e": "A",
+    "f": "S",
+    "g": "T",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "OTHERTHANCALL",
+   "wordLogp": -8.0006,
+   "words": "OTHER THAN CALL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "T",
+    "c": "H",
+    "d": "R",
+    "e": "A",
+    "f": "N",
+    "g": "C",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "CRITERIATOALL",
+   "wordLogp": -8.0152,
+   "words": "CRITERIA TO ALL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "R",
+    "c": "I",
+    "d": "E",
+    "e": "A",
+    "f": "T",
+    "g": "O",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THEIRHEADSALL",
+   "wordLogp": -8.12,
+   "words": "THEIR HEADS ALL",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "R",
+    "e": "A",
+    "f": "D",
+    "g": "S",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "HARDWAREGUESS",
+   "wordLogp": -8.1371,
+   "words": "HARDWARE GUESS",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "A",
+    "c": "R",
+    "d": "W",
+    "e": "E",
+    "f": "G",
+    "g": "U",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "FORSTORAGEALL",
+   "wordLogp": -8.1427,
+   "words": "FOR STORAGE ALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "R",
+    "d": "T",
+    "e": "A",
+    "f": "G",
+    "g": "E",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "WHENTHEANDALL",
+   "wordLogp": -8.1622,
+   "words": "WHEN THE AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "H",
+    "c": "E",
+    "d": "T",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "WORKFORASMALL",
+   "wordLogp": -8.2129,
+   "words": "WORK FOR A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "O",
+    "c": "R",
+    "d": "F",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "PREPAREITWILL",
+   "wordLogp": -8.2136,
+   "words": "PREPARE IT WILL",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "E",
+    "d": "A",
+    "e": "I",
+    "f": "T",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "CRITERIATOADD",
+   "wordLogp": -8.2668,
+   "words": "CRITERIA TO ADD",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "R",
+    "c": "I",
+    "d": "E",
+    "e": "A",
+    "f": "T",
+    "g": "O",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ANDSENDITWILL",
+   "wordLogp": -8.277,
+   "words": "AND SEND IT WILL",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "E",
+    "e": "I",
+    "f": "T",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "OTHERTHISBILL",
+   "wordLogp": -8.3593,
+   "words": "OTHER THIS BILL",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "T",
+    "c": "H",
+    "d": "R",
+    "e": "I",
+    "f": "S",
+    "g": "B",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "CRITERIAGLASS",
+   "wordLogp": -8.3667,
+   "words": "CRITERIA GLASS",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "R",
+    "c": "I",
+    "d": "E",
+    "e": "A",
+    "f": "G",
+    "g": "L",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "WHENTHEASMALL",
+   "wordLogp": -8.387,
+   "words": "WHEN THE A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "H",
+    "c": "E",
+    "d": "T",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  }
+ ]
+}

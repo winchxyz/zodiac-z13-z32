@@ -1,0 +1,24 @@
+{
+ "note": "Self-test inputs fetched 2026-10-07 by the toolkit agent because data/ciphers/z408.json and z340.json did not exist yet. Not canonical; never copied into data/ciphers/.",
+ "files": {
+  "az_Zodiac_408.txt": "https://raw.githubusercontent.com/doranchak/azdecrypt/main/AZdecrypt/Ciphers/Zodiac%20ciphers/Zodiac%20408.txt",
+  "az_Zodiac_408_solved.txt": "https://raw.githubusercontent.com/doranchak/azdecrypt/main/AZdecrypt/Ciphers/Zodiac%20ciphers/Zodiac%20408%20solved.txt",
+  "az_Zodiac_340.txt": "https://raw.githubusercontent.com/doranchak/azdecrypt/main/AZdecrypt/Ciphers/Zodiac%20ciphers/Zodiac%20340.txt",
+  "az_Zodiac_340_solved.txt": "https://raw.githubusercontent.com/doranchak/azdecrypt/main/AZdecrypt/Ciphers/Zodiac%20ciphers/Zodiac%20340%20solved.txt (plaintext in READING order, not aligned with the transposed ciphertext)",
+  "az_Zodiac_32.txt": "https://raw.githubusercontent.com/doranchak/azdecrypt/main/AZdecrypt/Ciphers/Zodiac%20ciphers/Zodiac%2032.txt",
+  "viz_z408.txt": "https://raw.githubusercontent.com/doranchak/zodiac-cipher-key-visualizer/HEAD/z408.txt",
+  "viz_z408-pt.txt": "https://raw.githubusercontent.com/doranchak/zodiac-cipher-key-visualizer/HEAD/z408-pt.txt",
+  "viz_z340.txt": "https://raw.githubusercontent.com/doranchak/zodiac-cipher-key-visualizer/HEAD/z340.txt",
+  "viz_z340-pt.txt": "https://raw.githubusercontent.com/doranchak/zodiac-cipher-key-visualizer/HEAD/z340-pt.txt",
+  "viz_z340-untransposed.txt": "https://raw.githubusercontent.com/doranchak/zodiac-cipher-key-visualizer/HEAD/z340-untransposed.txt",
+  "viz_z340-untransposed-pt.txt": "https://raw.githubusercontent.com/doranchak/zodiac-cipher-key-visualizer/HEAD/z340-untransposed-pt.txt"
+ },
+ "derived": {
+  "z408_selftest.json": "viz_z408.txt + viz_z408-pt.txt (aligned plaintext); plaintext_alt_azdecrypt = az_Zodiac_408_solved.txt. Built by selftest_make_json.js.",
+  "z340_untransposed_selftest.json": "viz_z340-untransposed.txt + viz_z340-untransposed-pt.txt. Built by selftest_make_json.js."
+ },
+ "checks": {
+  "z408": "The two Z408 ciphertexts differ only at 0-based index 105 ('!' in the visualizer, 'I' in AZdecrypt). Each plaintext is homophonically consistent with its own ciphertext. The plaintexts differ at indices 41, 105, 264 and 352: symbol '7' is decoded S (visualizer) or A (AZdecrypt), and index 105 is O or T.",
+  "z340": "viz_z340-untransposed-pt.txt is homophonically consistent with viz_z340-untransposed.txt (63 symbols). selftest_derive_z340_order.js shows that section 1 (rows 1-9) equals the period-19 toroidal diagonal reading (k-th symbol at row k mod 9, column 2k mod 17) exactly. Section 2 (rows 10-18) differs at 81 positions, consistent with the irregularities in section 2 described in the published solution (arXiv:2403.17350), so no read order is derived here; the canonical one belongs in data/ciphers/z340.json."
+ }
+}

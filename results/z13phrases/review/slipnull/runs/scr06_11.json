@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:11:06.829Z",
+ "label": "scr06_11",
+ "cipher": {
+  "id": "scr06",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr06.txt",
+  "text": "MAKN00ME[N0Az",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   11
+  ],
+  "isomorphAfterSlips": "abcdeeafgde*h"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 317320,
+  "scored": 298529,
+  "keptAtLeastStreamMin": 100,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 14716,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1677,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 100,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 63,
+  "4": 30,
+  "5": 6
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.951888207484533,
+  "topShare": 0.10948868019207081,
+  "top10Share": 0.33922375417327066,
+  "effectiveNumberExpEntropy": 384.22028223239613,
+  "effectiveNumberInverseSimpson": 47.278646120713084,
+  "unscoredMassBoundRelative": 0.01843903123663491,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 17,
+   "maxWordLogp": -16.032846520475854,
+   "massEstimateRelative": 0.000005685803246598213,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00622038576261899
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 15,
+   "-17.75": 30,
+   "-17.50": 43,
+   "-17.25": 84,
+   "-17.00": 80,
+   "-16.75": 138,
+   "-16.50": 142,
+   "-16.25": 167,
+   "-16.00": 259,
+   "-15.75": 370,
+   "-15.50": 436,
+   "-15.25": 609,
+   "-15.00": 899,
+   "-14.75": 1170,
+   "-14.50": 1399,
+   "-14.25": 1699,
+   "-14.00": 2106,
+   "-13.75": 2509,
+   "-13.50": 2793,
+   "-13.25": 3266,
+   "-13.00": 3820,
+   "-12.75": 4712,
+   "-12.50": 5218,
+   "-12.25": 6263,
+   "-12.00": 7267,
+   "-11.75": 8124,
+   "-11.50": 8903,
+   "-11.25": 9895,
+   "-11.00": 10538,
+   "-10.75": 11113,
+   "-10.50": 11765,
+   "-10.25": 12243,
+   "-10.00": 12630,
+   "-9.75": 13162,
+   "-9.50": 13640,
+   "-9.25": 13313,
+   "-9.00": 13664,
+   "-8.75": 13622,
+   "-8.50": 13790,
+   "-8.25": 13343,
+   "-8.00": 12697,
+   "-7.75": 11972,
+   "-7.50": 11522,
+   "-7.25": 10196,
+   "-7.00": 8902,
+   "-6.75": 7842,
+   "-6.50": 6633,
+   "-6.25": 5432,
+   "-6.00": 4523,
+   "-5.75": 3601,
+   "-5.50": 2686,
+   "-5.25": 1981,
+   "-5.00": 1375,
+   "-4.75": 1006,
+   "-4.50": 726,
+   "-4.25": 389,
+   "-4.00": 266,
+   "-3.75": 168,
+   "-3.50": 71,
+   "-3.25": 47,
+   "-3.00": 34,
+   "-2.75": 5,
+   "-2.50": 4,
+   "-2.25": 3
+  },
+  "exactScored": {
+   "-19.25": 4,
+   "-19.00": 17,
+   "-18.75": 125,
+   "-18.50": 415,
+   "-18.25": 1224,
+   "-18.00": 2650,
+   "-17.75": 4911,
+   "-17.50": 8057,
+   "-17.25": 11941,
+   "-17.00": 15255,
+   "-16.75": 18695,
+   "-16.50": 21494,
+   "-16.25": 22598,
+   "-16.00": 22940,
+   "-15.75": 22129,
+   "-15.50": 21400,
+   "-15.25": 19794,
+   "-15.00": 17789,
+   "-14.75": 15680,
+   "-14.50": 13855,
+   "-14.25": 11957,
+   "-14.00": 9971,
+   "-13.75": 8269,
+   "-13.50": 6624,
+   "-13.25": 5294,
+   "-13.00": 4053,
+   "-12.75": 3157,
+   "-12.50": 2320,
+   "-12.25": 1810,
+   "-12.00": 1302,
+   "-11.75": 868,
+   "-11.50": 634,
+   "-11.25": 450,
+   "-11.00": 304,
+   "-10.75": 198,
+   "-10.50": 126,
+   "-10.25": 80,
+   "-10.00": 60,
+   "-9.75": 33,
+   "-9.50": 15,
+   "-9.25": 17,
+   "-9.00": 7,
+   "-8.75": 3,
+   "-8.50": 2,
+   "-8.25": 1,
+   "-8.00": 1
+  },
+  "boundUnscored": {
+   "-18.00": 15,
+   "-17.75": 30,
+   "-17.50": 43,
+   "-17.25": 84,
+   "-17.00": 80,
+   "-16.75": 138,
+   "-16.50": 142,
+   "-16.25": 167,
+   "-16.00": 259,
+   "-15.75": 370,
+   "-15.50": 436,
+   "-15.25": 609,
+   "-15.00": 899,
+   "-14.75": 1170,
+   "-14.50": 1399,
+   "-14.25": 1699,
+   "-14.00": 2106,
+   "-13.75": 2509,
+   "-13.50": 2793,
+   "-13.25": 3266,
+   "-13.00": 577
+  }
+ },
+ "timeMs": {
+  "total": 2671,
+  "setup": 438
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "AREONNATIONAL",
+   "wordLogp": -7.9125,
+   "words": "ARE ON NATIONAL",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "A",
+    "A": "R",
+    "K": "E",
+    "N": "O",
+    "E": "T",
+    "[": "I",
+    "z": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "FORALLFINALLY",
+   "wordLogp": -8.21,
+   "words": "FOR ALL FINALLY",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "F",
+    "A": "O",
+    "K": "R",
+    "N": "A",
+    "E": "I",
+    "[": "N",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "MAYSEEMTOSEND",
+   "wordLogp": -8.3554,
+   "words": "MAY SEEM TO SEND",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "M",
+    "A": "A",
+    "K": "Y",
+    "N": "S",
+    "E": "T",
+    "[": "O",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "MAYSEEMTOSELL",
+   "wordLogp": -8.4758,
+   "words": "MAY SEEM TO SELL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "M",
+    "A": "A",
+    "K": "Y",
+    "N": "S",
+    "E": "T",
+    "[": "O",
+    "z": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "BYWILLBEFILED",
+   "wordLogp": -8.5807,
+   "words": "BY WILL BE FILED",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "B",
+    "A": "Y",
+    "K": "W",
+    "N": "I",
+    "E": "E",
+    "[": "F",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "TIMESSTORESIN",
+   "wordLogp": -8.6388,
+   "words": "TIMES STORES IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "T",
+    "A": "I",
+    "K": "M",
+    "N": "E",
+    "E": "O",
+    "[": "R",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "TIMESSTAGESOF",
+   "wordLogp": -8.6579,
+   "words": "TIMES STAGES OF",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "T",
+    "A": "I",
+    "K": "M",
+    "N": "E",
+    "E": "A",
+    "[": "G",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "OFSUPPORTUPON",
+   "wordLogp": -8.7762,
+   "words": "OF SUPPORT UPON",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "M": "O",
+    "A": "F",
+    "K": "S",
+    "N": "U",
+    "E": "R",
+    "[": "T",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "APRONNATIONAL",
+   "wordLogp": -8.8244,
+   "words": "APRON NATIONAL",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "A",
+    "A": "P",
+    "K": "R",
+    "N": "O",
+    "E": "T",
+    "[": "I",
+    "z": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "TIMESSTORESOF",
+   "wordLogp": -8.8389,
+   "words": "TIMES STORES OF",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "T",
+    "A": "I",
+    "K": "M",
+    "N": "E",
+    "E": "O",
+    "[": "R",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THEROOTSGROUP",
+   "wordLogp": -8.9141,
+   "words": "THE ROOTS GROUP",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "T",
+    "A": "H",
+    "K": "E",
+    "N": "R",
+    "E": "S",
+    "[": "G",
+    "z": "P"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "NOAREENTIRELY",
+   "wordLogp": -8.9678,
+   "words": "NO ARE ENTIRELY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "A": "O",
+    "K": "A",
+    "N": "R",
+    "E": "T",
+    "[": "I",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "MAYSEEMTOSEEK",
+   "wordLogp": -8.9863,
+   "words": "MAY SEEM TO SEEK",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "M",
+    "A": "A",
+    "K": "Y",
+    "N": "S",
+    "E": "T",
+    "[": "O",
+    "z": "K"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "HIMATTHEWATER",
+   "wordLogp": -8.988,
+   "words": "HIM AT THE WATER",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "H",
+    "A": "I",
+    "K": "M",
+    "N": "A",
+    "E": "E",
+    "[": "W",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "COSTAACERTAIN",
+   "wordLogp": -9.0068,
+   "words": "COSTA A CERTAIN",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "C",
+    "A": "O",
+    "K": "S",
+    "N": "T",
+    "E": "E",
+    "[": "R",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THEROOTACROSS",
+   "wordLogp": -9.0159,
+   "words": "THE ROOT ACROSS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "T",
+    "A": "H",
+    "K": "E",
+    "N": "R",
+    "E": "A",
+    "[": "C",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ISCALLINGALSO",
+   "wordLogp": -9.0192,
+   "words": "IS CALLING ALSO",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "I",
+    "A": "S",
+    "K": "C",
+    "N": "A",
+    "E": "N",
+    "[": "G",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ADSONNATIONAL",
+   "wordLogp": -9.0257,
+   "words": "ADS ON NATIONAL",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "A",
+    "A": "D",
+    "K": "S",
+    "N": "O",
+    "E": "T",
+    "[": "I",
+    "z": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "TIMESSTYLESOF",
+   "wordLogp": -9.0509,
+   "words": "TIMES STYLES OF",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "T",
+    "A": "I",
+    "K": "M",
+    "N": "E",
+    "E": "Y",
+    "[": "L",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "EARTHHELPTHEM",
+   "wordLogp": -9.0514,
+   "words": "EARTH HELP THEM",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "E",
+    "A": "A",
+    "K": "R",
+    "N": "T",
+    "E": "L",
+    "[": "P",
+    "z": "M"
+   }
+  }
+ ]
+}

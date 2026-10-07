@@ -1,0 +1,608 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:34:23.514Z",
+ "label": "eng07_03",
+ "cipher": {
+  "id": "eng07",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng07.txt",
+  "text": "abcdefghchcfd",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*efghchcfd"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 238022,
+  "scored": 222613,
+  "keptAtLeastStreamMin": 71,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 12479,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1331,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 71,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 43,
+  "4": 26
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.158625213243554,
+  "topShare": 0.10278740425115787,
+  "top10Share": 0.2646993888098408,
+  "effectiveNumberExpEntropy": 537.3451451203551,
+  "effectiveNumberInverseSimpson": 63.208097915947015,
+  "unscoredMassBoundRelative": 0.024338828381855915,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 13,
+   "maxWordLogp": -15.711700184097769,
+   "massEstimateRelative": 0.00000753848655088043,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.008207318442434011
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 1,
+   "-17.75": 2,
+   "-17.50": 20,
+   "-17.25": 32,
+   "-17.00": 47,
+   "-16.75": 90,
+   "-16.50": 158,
+   "-16.25": 205,
+   "-16.00": 219,
+   "-15.75": 317,
+   "-15.50": 412,
+   "-15.25": 569,
+   "-15.00": 695,
+   "-14.75": 874,
+   "-14.50": 1050,
+   "-14.25": 1386,
+   "-14.00": 1763,
+   "-13.75": 2121,
+   "-13.50": 2345,
+   "-13.25": 2647,
+   "-13.00": 3030,
+   "-12.75": 3456,
+   "-12.50": 3798,
+   "-12.25": 4412,
+   "-12.00": 5113,
+   "-11.75": 5728,
+   "-11.50": 6409,
+   "-11.25": 7080,
+   "-11.00": 7694,
+   "-10.75": 8390,
+   "-10.50": 8757,
+   "-10.25": 9331,
+   "-10.00": 9445,
+   "-9.75": 9648,
+   "-9.50": 9430,
+   "-9.25": 9545,
+   "-9.00": 9411,
+   "-8.75": 9322,
+   "-8.50": 9410,
+   "-8.25": 9575,
+   "-8.00": 9681,
+   "-7.75": 9373,
+   "-7.50": 8966,
+   "-7.25": 8424,
+   "-7.00": 7790,
+   "-6.75": 6932,
+   "-6.50": 5863,
+   "-6.25": 4744,
+   "-6.00": 3578,
+   "-5.75": 2828,
+   "-5.50": 2108,
+   "-5.25": 1497,
+   "-5.00": 906,
+   "-4.75": 618,
+   "-4.50": 390,
+   "-4.25": 187,
+   "-4.00": 113,
+   "-3.75": 48,
+   "-3.50": 23,
+   "-3.25": 10,
+   "-3.00": 1,
+   "-2.75": 3,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-19.00": 1,
+   "-18.75": 18,
+   "-18.50": 127,
+   "-18.25": 568,
+   "-18.00": 1576,
+   "-17.75": 2849,
+   "-17.50": 4875,
+   "-17.25": 7227,
+   "-17.00": 9773,
+   "-16.75": 12255,
+   "-16.50": 14125,
+   "-16.25": 15502,
+   "-16.00": 16576,
+   "-15.75": 17220,
+   "-15.50": 17060,
+   "-15.25": 16154,
+   "-15.00": 14840,
+   "-14.75": 12999,
+   "-14.50": 11561,
+   "-14.25": 10007,
+   "-14.00": 8088,
+   "-13.75": 6577,
+   "-13.50": 5221,
+   "-13.25": 4304,
+   "-13.00": 3346,
+   "-12.75": 2600,
+   "-12.50": 2075,
+   "-12.25": 1551,
+   "-12.00": 1106,
+   "-11.75": 832,
+   "-11.50": 595,
+   "-11.25": 392,
+   "-11.00": 214,
+   "-10.75": 154,
+   "-10.50": 88,
+   "-10.25": 67,
+   "-10.00": 30,
+   "-9.75": 24,
+   "-9.50": 16,
+   "-9.25": 11,
+   "-9.00": 6,
+   "-8.75": 1,
+   "-8.25": 1
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 1,
+   "-17.75": 2,
+   "-17.50": 20,
+   "-17.25": 32,
+   "-17.00": 47,
+   "-16.75": 90,
+   "-16.50": 158,
+   "-16.25": 205,
+   "-16.00": 219,
+   "-15.75": 317,
+   "-15.50": 412,
+   "-15.25": 569,
+   "-15.00": 695,
+   "-14.75": 874,
+   "-14.50": 1050,
+   "-14.25": 1386,
+   "-14.00": 1763,
+   "-13.75": 2121,
+   "-13.50": 2345,
+   "-13.25": 2647,
+   "-13.00": 455
+  }
+ },
+ "timeMs": {
+  "total": 6048,
+  "setup": 427
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "MUSICTHISISTO",
+   "wordLogp": -8.1467,
+   "words": "MUSIC THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "U",
+    "c": "S",
+    "e": "C",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "d": "O"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "BASEDTHISISTO",
+   "wordLogp": -8.7236,
+   "words": "BASED THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "A",
+    "c": "S",
+    "e": "D",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "d": "O"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "AREALSOBEBEST",
+   "wordLogp": -8.7771,
+   "words": "ARE ALSO BE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "R",
+    "c": "E",
+    "e": "L",
+    "f": "S",
+    "g": "O",
+    "h": "B",
+    "d": "T"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "BASICTHISISTO",
+   "wordLogp": -8.8476,
+   "words": "BASIC THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "A",
+    "c": "S",
+    "e": "C",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "d": "O"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "DANDELIONONLY",
+   "wordLogp": -8.9083,
+   "words": "DANDELION ONLY",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "A",
+    "c": "N",
+    "e": "E",
+    "f": "L",
+    "g": "I",
+    "h": "O",
+    "d": "Y"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "SHALLNOTATAND",
+   "wordLogp": -8.933,
+   "words": "SHALL NOT AT AND",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "H",
+    "c": "A",
+    "e": "L",
+    "f": "N",
+    "g": "O",
+    "h": "T",
+    "d": "D"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "OFAMERICACARD",
+   "wordLogp": -8.9932,
+   "words": "OF AMERICA CARD",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "A",
+    "e": "E",
+    "f": "R",
+    "g": "I",
+    "h": "C",
+    "d": "D"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "FREEANDWEWENT",
+   "wordLogp": -8.9964,
+   "words": "FREE AND WE WENT",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "W",
+    "d": "T"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "BRIGHTONINITS",
+   "wordLogp": -9.0333,
+   "words": "BRIGHTON IN ITS",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "R",
+    "c": "I",
+    "e": "H",
+    "f": "T",
+    "g": "O",
+    "h": "N",
+    "d": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "IRELANDWEWENT",
+   "wordLogp": -9.0437,
+   "words": "IRELAND WE WENT",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "R",
+    "c": "E",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "W",
+    "d": "T"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SHALLNOTATANY",
+   "wordLogp": -9.064,
+   "words": "SHALL NOT AT ANY",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "H",
+    "c": "A",
+    "e": "L",
+    "f": "N",
+    "g": "O",
+    "h": "T",
+    "d": "Y"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "OFAMERICACART",
+   "wordLogp": -9.0695,
+   "words": "OF AMERICA CART",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "A",
+    "e": "E",
+    "f": "R",
+    "g": "I",
+    "h": "C",
+    "d": "T"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ASDEFINEDEDIT",
+   "wordLogp": -9.0713,
+   "words": "AS DEFINED EDIT",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "S",
+    "c": "D",
+    "e": "F",
+    "f": "I",
+    "g": "N",
+    "h": "E",
+    "d": "T"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "PUSSYTHISISTO",
+   "wordLogp": -9.085,
+   "words": "PUSSY THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "U",
+    "c": "S",
+    "e": "Y",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "d": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "PLATINUMAMAND",
+   "wordLogp": -9.1528,
+   "words": "PLATINUM AM AND",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "L",
+    "c": "A",
+    "e": "I",
+    "f": "N",
+    "g": "U",
+    "h": "M",
+    "d": "D"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "SIERRATHEHEAD",
+   "wordLogp": -9.1592,
+   "words": "SIERRA THE HEAD",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "I",
+    "c": "E",
+    "e": "R",
+    "f": "A",
+    "g": "T",
+    "h": "H",
+    "d": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "OFAMERICACARS",
+   "wordLogp": -9.2115,
+   "words": "OF AMERICA CARS",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "A",
+    "e": "E",
+    "f": "R",
+    "g": "I",
+    "h": "C",
+    "d": "S"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "LASERTHISISTO",
+   "wordLogp": -9.2119,
+   "words": "LASER THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "A",
+    "c": "S",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "d": "O"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "WASTETHISISTO",
+   "wordLogp": -9.2417,
+   "words": "WASTE THIS IS TO",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "A",
+    "c": "S",
+    "e": "E",
+    "f": "T",
+    "g": "H",
+    "h": "I",
+    "d": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "RENTALSONONLY",
+   "wordLogp": -9.2975,
+   "words": "RENTALS ON ONLY",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "E",
+    "c": "N",
+    "e": "A",
+    "f": "L",
+    "g": "S",
+    "h": "O",
+    "d": "Y"
+   }
+  }
+ ]
+}

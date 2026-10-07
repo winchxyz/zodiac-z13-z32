@@ -1,0 +1,4563 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:23:25.309Z",
+ "label": "brute_enum_homophonic_3000_3_-",
+ "cipher": {
+  "id": "z13.canonical",
+  "source": "data/ciphers/variants/z13.canonical.txt",
+  "text": "AENz0K0M0[NAM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcdefegehcag"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "homophonic",
+  "topWords": 3000,
+  "wordsUsed": 2988,
+  "maxWords": 3,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": null,
+  "streamMin": null,
+  "threads": 1,
+  "taskDepth": 2,
+  "tasks": 27,
+  "maxSeconds": 0
+ },
+ "reference": null,
+ "counts": {
+  "complete": true,
+  "tasksDone": 27,
+  "tasks": 27,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 348,
+  "scored": 348,
+  "keptAtLeastStreamMin": 348,
+  "atLeast": {},
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {},
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.711131451359392,
+  "topShare": 0.7895734881062669,
+  "top10Share": 0.8933761769283513,
+  "effectiveNumberExpEntropy": 4.0017112833825355,
+  "effectiveNumberInverseSimpson": 1.599348255369372,
+  "unscoredMassBoundRelative": 0,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-11.75": 2,
+   "-11.50": 1,
+   "-11.25": 1,
+   "-10.75": 1,
+   "-10.50": 1,
+   "-10.25": 2,
+   "-10.00": 3,
+   "-9.75": 6,
+   "-9.50": 4,
+   "-9.25": 11,
+   "-9.00": 18,
+   "-8.75": 19,
+   "-8.50": 18,
+   "-8.25": 12,
+   "-8.00": 16,
+   "-7.75": 22,
+   "-7.50": 16,
+   "-7.25": 17,
+   "-7.00": 17,
+   "-6.75": 28,
+   "-6.50": 27,
+   "-6.25": 33,
+   "-6.00": 13,
+   "-5.75": 16,
+   "-5.50": 16,
+   "-5.25": 15,
+   "-5.00": 4,
+   "-4.75": 4,
+   "-4.50": 3,
+   "-4.25": 2
+  },
+  "exactScored": {
+   "-13.50": 3,
+   "-13.25": 9,
+   "-13.00": 17,
+   "-12.75": 28,
+   "-12.50": 42,
+   "-12.25": 41,
+   "-12.00": 31,
+   "-11.75": 48,
+   "-11.50": 30,
+   "-11.25": 30,
+   "-11.00": 24,
+   "-10.75": 20,
+   "-10.50": 9,
+   "-10.25": 6,
+   "-10.00": 5,
+   "-9.75": 3,
+   "-9.25": 1,
+   "-8.00": 1
+  },
+  "boundUnscored": {}
+ },
+ "timeMs": {
+  "total": 1611,
+  "setup": 569
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "SOUTHTHEHOUSE",
+   "wordLogp": -7.8137,
+   "words": "SOUTH THE HOUSE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "A": "S",
+    "E": "O",
+    "N": "U",
+    "z": "T",
+    "K": "T",
+    "M": "E",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CHIEFOFAFRICA",
+   "wordLogp": -9.2244,
+   "words": "CHIEF OF AFRICA",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "A": "C",
+    "E": "H",
+    "N": "I",
+    "z": "E",
+    "K": "O",
+    "M": "A",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "SEESTATETHESE",
+   "wordLogp": -9.5637,
+   "words": "SEE STATE THESE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "E",
+    "N": "E",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "INDIANASAIDIS",
+   "wordLogp": -9.6102,
+   "words": "INDIANA SAID IS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "I",
+    "E": "N",
+    "N": "D",
+    "z": "I",
+    "K": "N",
+    "M": "S",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "INNDIVISIONIS",
+   "wordLogp": -9.6277,
+   "words": "INN DIVISION IS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "I",
+    "E": "N",
+    "N": "N",
+    "z": "D",
+    "K": "V",
+    "M": "S",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ARECANADAREAD",
+   "wordLogp": -9.7716,
+   "words": "ARE CANADA READ",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "R",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "PATHELEMENTPM",
+   "wordLogp": -9.8311,
+   "words": "PATH ELEMENT PM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "E": "A",
+    "N": "T",
+    "z": "H",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "SHESTATETHESE",
+   "wordLogp": -9.8935,
+   "words": "SHE STATE THESE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "H",
+    "N": "E",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "SOESTATETHESE",
+   "wordLogp": -9.9487,
+   "words": "SO ESTATE THESE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "O",
+    "N": "E",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ROOMIVISITORS",
+   "wordLogp": -9.9541,
+   "words": "ROOM I VISITORS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "R",
+    "E": "O",
+    "N": "O",
+    "z": "M",
+    "K": "V",
+    "M": "S",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "TELHEREHEALTH",
+   "wordLogp": -10.1952,
+   "words": "TEL HERE HEALTH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "E",
+    "N": "L",
+    "z": "H",
+    "K": "R",
+    "M": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ANGELALLLEGAL",
+   "wordLogp": -10.2121,
+   "words": "ANGEL ALL LEGAL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "A",
+    "E": "N",
+    "N": "G",
+    "z": "E",
+    "K": "A",
+    "M": "L",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ASIAACANADIAN",
+   "wordLogp": -10.217,
+   "words": "ASIA A CANADIAN",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "S",
+    "N": "I",
+    "z": "A",
+    "K": "C",
+    "M": "N",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ARECANADAHEAD",
+   "wordLogp": -10.2257,
+   "words": "ARE CANADA HEAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "R",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "ANIMALANASIAN",
+   "wordLogp": -10.2328,
+   "words": "ANIMAL AN ASIAN",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "N",
+    "N": "I",
+    "z": "M",
+    "K": "L",
+    "M": "N",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "SCRIPTPAPERSA",
+   "wordLogp": -10.2427,
+   "words": "SCRIPT PAPERS A",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "S",
+    "E": "C",
+    "N": "R",
+    "z": "I",
+    "K": "T",
+    "M": "A",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "EVILEYESERIES",
+   "wordLogp": -10.3381,
+   "words": "EVIL EYE SERIES",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "E",
+    "E": "V",
+    "N": "I",
+    "z": "L",
+    "K": "Y",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "STESTATETHESE",
+   "wordLogp": -10.3398,
+   "words": "ST ESTATE THESE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "T",
+    "N": "E",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "TEAMSASESTATE",
+   "wordLogp": -10.4126,
+   "words": "TEAMS AS ESTATE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "E": "E",
+    "N": "A",
+    "z": "M",
+    "K": "A",
+    "M": "E",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "CLASSUSESPACE",
+   "wordLogp": -10.4166,
+   "words": "CLASS USE SPACE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "C",
+    "E": "L",
+    "N": "A",
+    "z": "S",
+    "K": "U",
+    "M": "E",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 21,
+   "plaintext": "EURSTATETHREE",
+   "wordLogp": -10.4357,
+   "words": "EUR STATE THREE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "E",
+    "E": "U",
+    "N": "R",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 22,
+   "plaintext": "ARECANADALEAD",
+   "wordLogp": -10.4454,
+   "words": "ARE CANADA LEAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "R",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 23,
+   "plaintext": "SOUTHSHEHOUSE",
+   "wordLogp": -10.4489,
+   "words": "SOUTH SHE HOUSE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "A": "S",
+    "E": "O",
+    "N": "U",
+    "z": "T",
+    "K": "S",
+    "M": "E",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 24,
+   "plaintext": "AGECANADAREAD",
+   "wordLogp": -10.4832,
+   "words": "AGE CANADA READ",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "G",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 25,
+   "plaintext": "ACIDACANADIAN",
+   "wordLogp": -10.4976,
+   "words": "ACID A CANADIAN",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "C",
+    "N": "I",
+    "z": "D",
+    "K": "C",
+    "M": "N",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 26,
+   "plaintext": "ROOMSUSESMORE",
+   "wordLogp": -10.5182,
+   "words": "ROOMS USES MORE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "R",
+    "E": "O",
+    "N": "O",
+    "z": "M",
+    "K": "U",
+    "M": "E",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 27,
+   "plaintext": "TELWEREHEALTH",
+   "wordLogp": -10.5409,
+   "words": "TEL WERE HEALTH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "E",
+    "N": "L",
+    "z": "W",
+    "K": "R",
+    "M": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 28,
+   "plaintext": "ROOMSUSESTORE",
+   "wordLogp": -10.5456,
+   "words": "ROOMS USE STORE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "R",
+    "E": "O",
+    "N": "O",
+    "z": "M",
+    "K": "U",
+    "M": "E",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 29,
+   "plaintext": "TEAMSUSESTATE",
+   "wordLogp": -10.5525,
+   "words": "TEAMS US ESTATE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "E": "E",
+    "N": "A",
+    "z": "M",
+    "K": "U",
+    "M": "E",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 30,
+   "plaintext": "ACHIEVESETHAS",
+   "wordLogp": -10.5714,
+   "words": "ACHIEVE SET HAS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "S",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 31,
+   "plaintext": "LETSTATETITLE",
+   "wordLogp": -10.5877,
+   "words": "LET STATE TITLE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "L",
+    "E": "E",
+    "N": "T",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 32,
+   "plaintext": "ARECANADADEAD",
+   "wordLogp": -10.5952,
+   "words": "ARE CANADA DEAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "R",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 33,
+   "plaintext": "DELETETOTALDO",
+   "wordLogp": -10.5991,
+   "words": "DELETE TOTAL DO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "D",
+    "E": "E",
+    "N": "L",
+    "z": "E",
+    "K": "E",
+    "M": "O",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 34,
+   "plaintext": "ROOTIVISITORS",
+   "wordLogp": -10.5994,
+   "words": "ROOT I VISITORS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "R",
+    "E": "O",
+    "N": "O",
+    "z": "T",
+    "K": "V",
+    "M": "S",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 35,
+   "plaintext": "IMAGETELEMAIL",
+   "wordLogp": -10.6066,
+   "words": "IMAGE TEL EMAIL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "T",
+    "M": "L",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 36,
+   "plaintext": "EXTRACARAFTER",
+   "wordLogp": -10.6312,
+   "words": "EXTRA CAR AFTER",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "X",
+    "N": "T",
+    "z": "R",
+    "K": "C",
+    "M": "R",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 37,
+   "plaintext": "ENDCOLORORDER",
+   "wordLogp": -10.6462,
+   "words": "END COLOR ORDER",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "E",
+    "E": "N",
+    "N": "D",
+    "z": "C",
+    "K": "L",
+    "M": "R",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 38,
+   "plaintext": "TEAMSISESTATE",
+   "wordLogp": -10.6533,
+   "words": "TEAMS IS ESTATE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "E": "E",
+    "N": "A",
+    "z": "M",
+    "K": "I",
+    "M": "E",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 39,
+   "plaintext": "IMAGEBEREPAIR",
+   "wordLogp": -10.6928,
+   "words": "IMAGE BE REPAIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "B",
+    "M": "R",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 40,
+   "plaintext": "IMAGEHEREHAIR",
+   "wordLogp": -10.693,
+   "words": "IMAGE HERE HAIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "H",
+    "M": "R",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 41,
+   "plaintext": "ACHIEVESEEHAS",
+   "wordLogp": -10.701,
+   "words": "ACHIEVE SEE HAS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "S",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 42,
+   "plaintext": "ANNDIVISIONAS",
+   "wordLogp": -10.7107,
+   "words": "ANN DIVISION AS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "A",
+    "E": "N",
+    "N": "N",
+    "z": "D",
+    "K": "V",
+    "M": "S",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 43,
+   "plaintext": "SPENTATSTRESS",
+   "wordLogp": -10.7122,
+   "words": "SPENT AT STRESS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "P",
+    "N": "E",
+    "z": "N",
+    "K": "A",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 44,
+   "plaintext": "INDIANADAYDID",
+   "wordLogp": -10.722,
+   "words": "INDIANA DAY DID",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "I",
+    "E": "N",
+    "N": "D",
+    "z": "I",
+    "K": "N",
+    "M": "D",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 45,
+   "plaintext": "INPROTOCOLPIC",
+   "wordLogp": -10.7307,
+   "words": "IN PROTOCOL PIC",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "I",
+    "E": "N",
+    "N": "P",
+    "z": "R",
+    "K": "T",
+    "M": "C",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 46,
+   "plaintext": "MYESTATETHEME",
+   "wordLogp": -10.753,
+   "words": "MY ESTATE THEME",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "M",
+    "E": "Y",
+    "N": "E",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 47,
+   "plaintext": "OURNEVERERROR",
+   "wordLogp": -10.7568,
+   "words": "OUR NEVER ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "U",
+    "N": "R",
+    "z": "N",
+    "K": "V",
+    "M": "R",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 48,
+   "plaintext": "OURPETERERROR",
+   "wordLogp": -10.763,
+   "words": "OUR PETER ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "U",
+    "N": "R",
+    "z": "P",
+    "K": "T",
+    "M": "R",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 49,
+   "plaintext": "IMAGEHEREFAIR",
+   "wordLogp": -10.7769,
+   "words": "IMAGE HERE FAIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "H",
+    "M": "R",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 50,
+   "plaintext": "EXTREMEMEITEM",
+   "wordLogp": -10.7928,
+   "words": "EXTREME ME ITEM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "E",
+    "E": "X",
+    "N": "T",
+    "z": "R",
+    "K": "M",
+    "M": "M",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 51,
+   "plaintext": "ACHIEVESEXHAS",
+   "wordLogp": -10.7947,
+   "words": "ACHIEVE SEX HAS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "S",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 52,
+   "plaintext": "SUITEYETEXIST",
+   "wordLogp": -10.802,
+   "words": "SUITE YET EXIST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "U",
+    "N": "I",
+    "z": "T",
+    "K": "Y",
+    "M": "T",
+    "[": "X"
+   }
+  },
+  {
+   "rank": 53,
+   "plaintext": "ACHIEVETECHAT",
+   "wordLogp": -10.8102,
+   "words": "ACHIEVE TECH AT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "T",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 54,
+   "plaintext": "IMAGEDELEMAIL",
+   "wordLogp": -10.8182,
+   "words": "IMAGE DEL EMAIL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "D",
+    "M": "L",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 55,
+   "plaintext": "LOTSTATETITLE",
+   "wordLogp": -10.819,
+   "words": "LOT STATE TITLE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "L",
+    "E": "O",
+    "N": "T",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 56,
+   "plaintext": "IMAGEMEREPAIR",
+   "wordLogp": -10.8507,
+   "words": "IMAGE ME REPAIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "M",
+    "M": "R",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 57,
+   "plaintext": "EYECANADANEED",
+   "wordLogp": -10.8603,
+   "words": "EYE CANADA NEED",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "Y",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 58,
+   "plaintext": "IMAGEWEREPAIR",
+   "wordLogp": -10.8705,
+   "words": "IMAGE WE REPAIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "W",
+    "M": "R",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 59,
+   "plaintext": "SEEDELETEBEST",
+   "wordLogp": -10.8801,
+   "words": "SEE DELETE BEST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "E",
+    "N": "E",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 60,
+   "plaintext": "ENDHEREREADER",
+   "wordLogp": -10.8846,
+   "words": "END HERE READER",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "E",
+    "E": "N",
+    "N": "D",
+    "z": "H",
+    "K": "R",
+    "M": "R",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 61,
+   "plaintext": "SHEETATSTRESS",
+   "wordLogp": -10.9142,
+   "words": "SHEET AT STRESS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "H",
+    "N": "E",
+    "z": "E",
+    "K": "A",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 62,
+   "plaintext": "LABSTATETABLE",
+   "wordLogp": -10.9186,
+   "words": "LAB STATE TABLE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "L",
+    "E": "A",
+    "N": "B",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 63,
+   "plaintext": "AVECANADAREAD",
+   "wordLogp": -10.9243,
+   "words": "AVE CANADA READ",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "V",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 64,
+   "plaintext": "AGOCANADAROAD",
+   "wordLogp": -10.9245,
+   "words": "AGO CANADA ROAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "G",
+    "N": "O",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 65,
+   "plaintext": "EXTRAMARAFTER",
+   "wordLogp": -10.9268,
+   "words": "EXTRA MAR AFTER",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "X",
+    "N": "T",
+    "z": "R",
+    "K": "M",
+    "M": "R",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 66,
+   "plaintext": "INDIADATAEDIT",
+   "wordLogp": -10.9354,
+   "words": "INDIA DATA EDIT",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "I",
+    "E": "N",
+    "N": "D",
+    "z": "I",
+    "K": "D",
+    "M": "T",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 67,
+   "plaintext": "AGECANADAHEAD",
+   "wordLogp": -10.9372,
+   "words": "AGE CANADA HEAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "G",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 68,
+   "plaintext": "GLASSUSESPAGE",
+   "wordLogp": -10.9382,
+   "words": "GLASS USES PAGE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "G",
+    "E": "L",
+    "N": "A",
+    "z": "S",
+    "K": "U",
+    "M": "E",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 69,
+   "plaintext": "EXTRAWARAFTER",
+   "wordLogp": -10.9731,
+   "words": "EXTRA WAR AFTER",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "X",
+    "N": "T",
+    "z": "R",
+    "K": "W",
+    "M": "R",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 70,
+   "plaintext": "MEESTATETHEME",
+   "wordLogp": -11.0133,
+   "words": "ME ESTATE THEME",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "M",
+    "E": "E",
+    "N": "E",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 71,
+   "plaintext": "IMAGEHEREPAIR",
+   "wordLogp": -11.0192,
+   "words": "IMAGE HE REPAIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "H",
+    "M": "R",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 72,
+   "plaintext": "EXTREMENEWTEN",
+   "wordLogp": -11.0304,
+   "words": "EXTREME NEW TEN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "E",
+    "E": "X",
+    "N": "T",
+    "z": "R",
+    "K": "M",
+    "M": "N",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 73,
+   "plaintext": "ACHIEVESEPHAS",
+   "wordLogp": -11.0368,
+   "words": "ACHIEVE SEP HAS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "S",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 74,
+   "plaintext": "IMAGEWEREHAIR",
+   "wordLogp": -11.0387,
+   "words": "IMAGE WERE HAIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "W",
+    "M": "R",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 75,
+   "plaintext": "LIBSTATETABLE",
+   "wordLogp": -11.0588,
+   "words": "LIB STATE TABLE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "L",
+    "E": "I",
+    "N": "B",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 76,
+   "plaintext": "IMAGEGENERAIN",
+   "wordLogp": -11.0618,
+   "words": "IMAGE GENERA IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "G",
+    "M": "N",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 77,
+   "plaintext": "ARTSELEMENTAM",
+   "wordLogp": -11.0981,
+   "words": "ARTS ELEMENT AM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "R",
+    "N": "T",
+    "z": "S",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 78,
+   "plaintext": "ENDMOTORORDER",
+   "wordLogp": -11.115,
+   "words": "END MOTOR ORDER",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "E",
+    "E": "N",
+    "N": "D",
+    "z": "M",
+    "K": "T",
+    "M": "R",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 79,
+   "plaintext": "LARGEKEYEARLY",
+   "wordLogp": -11.1217,
+   "words": "LARGE KEY EARLY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "L",
+    "E": "A",
+    "N": "R",
+    "z": "G",
+    "K": "K",
+    "M": "Y",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 80,
+   "plaintext": "IMAGEWEREFAIR",
+   "wordLogp": -11.1225,
+   "words": "IMAGE WERE FAIR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "W",
+    "M": "R",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 81,
+   "plaintext": "AUTOELEMENTAM",
+   "wordLogp": -11.1325,
+   "words": "AUTO ELEMENT AM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "U",
+    "N": "T",
+    "z": "O",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 82,
+   "plaintext": "EXTRABARAFTER",
+   "wordLogp": -11.1351,
+   "words": "EXTRA BAR AFTER",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "X",
+    "N": "T",
+    "z": "R",
+    "K": "B",
+    "M": "R",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 83,
+   "plaintext": "AGECANADALEAD",
+   "wordLogp": -11.1569,
+   "words": "AGE CANADA LEAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "G",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 84,
+   "plaintext": "TALKEYEHEALTH",
+   "wordLogp": -11.1654,
+   "words": "TALK EYE HEALTH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "A",
+    "N": "L",
+    "z": "K",
+    "K": "Y",
+    "M": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 85,
+   "plaintext": "ROOMSUSESCORE",
+   "wordLogp": -11.1691,
+   "words": "ROOMS USE SCORE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "R",
+    "E": "O",
+    "N": "O",
+    "z": "M",
+    "K": "U",
+    "M": "E",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 86,
+   "plaintext": "GUIDEGENESIGN",
+   "wordLogp": -11.1782,
+   "words": "GUIDE GENE SIGN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "G",
+    "E": "U",
+    "N": "I",
+    "z": "D",
+    "K": "G",
+    "M": "N",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 87,
+   "plaintext": "ALLDELETEFLAT",
+   "wordLogp": -11.1804,
+   "words": "ALL DELETE FLAT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "L",
+    "N": "L",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 88,
+   "plaintext": "STATESEYEEASY",
+   "wordLogp": -11.1846,
+   "words": "STATES EYE EASY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "T",
+    "N": "A",
+    "z": "T",
+    "K": "S",
+    "M": "Y",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 89,
+   "plaintext": "SHEETITSTRESS",
+   "wordLogp": -11.1894,
+   "words": "SHEET IT STRESS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "H",
+    "N": "E",
+    "z": "E",
+    "K": "I",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 90,
+   "plaintext": "LOANSUSESCALE",
+   "wordLogp": -11.209,
+   "words": "LOANS USE SCALE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "L",
+    "E": "O",
+    "N": "A",
+    "z": "N",
+    "K": "U",
+    "M": "E",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 91,
+   "plaintext": "SHEDELETEBEST",
+   "wordLogp": -11.2099,
+   "words": "SHE DELETE BEST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "H",
+    "N": "E",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 92,
+   "plaintext": "SEEDELETEWEST",
+   "wordLogp": -11.2115,
+   "words": "SEE DELETE WEST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "E",
+    "N": "E",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 93,
+   "plaintext": "GLASSUSESTAGE",
+   "wordLogp": -11.2147,
+   "words": "GLASS USE STAGE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "G",
+    "E": "L",
+    "N": "A",
+    "z": "S",
+    "K": "U",
+    "M": "E",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 94,
+   "plaintext": "ACHIEVEDECHAD",
+   "wordLogp": -11.2166,
+   "words": "ACHIEVE DEC HAD",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "D",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 95,
+   "plaintext": "ITPROTOCOLPIC",
+   "wordLogp": -11.218,
+   "words": "IT PROTOCOL PIC",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "I",
+    "E": "T",
+    "N": "P",
+    "z": "R",
+    "K": "T",
+    "M": "C",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 96,
+   "plaintext": "ENDWEREREADER",
+   "wordLogp": -11.2303,
+   "words": "END WERE READER",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "E",
+    "E": "N",
+    "N": "D",
+    "z": "W",
+    "K": "R",
+    "M": "R",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 97,
+   "plaintext": "TERMPOPSPORTS",
+   "wordLogp": -11.2375,
+   "words": "TERM POP SPORTS",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "T",
+    "E": "E",
+    "N": "R",
+    "z": "M",
+    "K": "O",
+    "M": "S",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 98,
+   "plaintext": "MARSTATSTERMS",
+   "wordLogp": -11.2388,
+   "words": "MAR STATS TERMS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "M",
+    "E": "A",
+    "N": "R",
+    "z": "S",
+    "K": "A",
+    "M": "S",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 99,
+   "plaintext": "SWEETATSTRESS",
+   "wordLogp": -11.2462,
+   "words": "SWEET AT STRESS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "W",
+    "N": "E",
+    "z": "E",
+    "K": "A",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 100,
+   "plaintext": "SEEDELETETEST",
+   "wordLogp": -11.2601,
+   "words": "SEE DELETE TEST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "E",
+    "N": "E",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 101,
+   "plaintext": "LONGEREYEONLY",
+   "wordLogp": -11.2759,
+   "words": "LONGER EYE ONLY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "L",
+    "E": "O",
+    "N": "N",
+    "z": "G",
+    "K": "R",
+    "M": "Y",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 102,
+   "plaintext": "SWEETITSTRESS",
+   "wordLogp": -11.2771,
+   "words": "SWEET IT STRESS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "W",
+    "N": "E",
+    "z": "E",
+    "K": "I",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 103,
+   "plaintext": "ANTIELEMENTAM",
+   "wordLogp": -11.2855,
+   "words": "ANTI ELEMENT AM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "N",
+    "N": "T",
+    "z": "I",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 104,
+   "plaintext": "CHIEFIFAFRICA",
+   "wordLogp": -11.2906,
+   "words": "CHIEF IF AFRICA",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "A": "C",
+    "E": "H",
+    "N": "I",
+    "z": "E",
+    "K": "I",
+    "M": "A",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 105,
+   "plaintext": "IMAGEGENEMAIN",
+   "wordLogp": -11.2965,
+   "words": "IMAGE GENE MAIN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "I",
+    "E": "M",
+    "N": "A",
+    "z": "G",
+    "K": "G",
+    "M": "N",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 106,
+   "plaintext": "AGECANADADEAD",
+   "wordLogp": -11.3068,
+   "words": "AGE CANADA DEAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "G",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 107,
+   "plaintext": "VIEWSUSESTEVE",
+   "wordLogp": -11.311,
+   "words": "VIEWS USE STEVE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "V",
+    "E": "I",
+    "N": "E",
+    "z": "W",
+    "K": "U",
+    "M": "E",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 108,
+   "plaintext": "TELGENEHEALTH",
+   "wordLogp": -11.3204,
+   "words": "TEL GENE HEALTH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "E",
+    "N": "L",
+    "z": "G",
+    "K": "N",
+    "M": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 109,
+   "plaintext": "TOOLSUSESNOTE",
+   "wordLogp": -11.3224,
+   "words": "TOOLS USES NOTE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "E": "O",
+    "N": "O",
+    "z": "L",
+    "K": "U",
+    "M": "E",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 110,
+   "plaintext": "PLANSUSESCAPE",
+   "wordLogp": -11.3319,
+   "words": "PLANS US ESCAPE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "P",
+    "E": "L",
+    "N": "A",
+    "z": "N",
+    "K": "U",
+    "M": "E",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 111,
+   "plaintext": "ISPROTOCOLPIC",
+   "wordLogp": -11.342,
+   "words": "IS PROTOCOL PIC",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "I",
+    "E": "S",
+    "N": "P",
+    "z": "R",
+    "K": "T",
+    "M": "C",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 112,
+   "plaintext": "GOALSUSESPAGE",
+   "wordLogp": -11.3422,
+   "words": "GOALS USES PAGE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "G",
+    "E": "O",
+    "N": "A",
+    "z": "L",
+    "K": "U",
+    "M": "E",
+    "[": "P"
+   }
+  },
+  {
+   "rank": 113,
+   "plaintext": "ACHIEVESEAHAS",
+   "wordLogp": -11.3547,
+   "words": "ACHIEVE SEA HAS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "S",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 114,
+   "plaintext": "ABLEINITIALAT",
+   "wordLogp": -11.3648,
+   "words": "ABLE INITIAL AT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "A",
+    "E": "B",
+    "N": "L",
+    "z": "E",
+    "K": "N",
+    "M": "T",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 115,
+   "plaintext": "EXTRAFARAFTER",
+   "wordLogp": -11.3739,
+   "words": "EXTRA FAR AFTER",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "X",
+    "N": "T",
+    "z": "R",
+    "K": "F",
+    "M": "R",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 116,
+   "plaintext": "AVECANADAHEAD",
+   "wordLogp": -11.3783,
+   "words": "AVE CANADA HEAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "V",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 117,
+   "plaintext": "EVENTITSTREES",
+   "wordLogp": -11.3789,
+   "words": "EVENT ITS TREES",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "E",
+    "E": "V",
+    "N": "E",
+    "z": "N",
+    "K": "I",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 118,
+   "plaintext": "DOINGAGEGUIDE",
+   "wordLogp": -11.4223,
+   "words": "DOING AGE GUIDE",
+   "unknown": 0,
+   "key": {
+    "0": "G",
+    "A": "D",
+    "E": "O",
+    "N": "I",
+    "z": "N",
+    "K": "A",
+    "M": "E",
+    "[": "U"
+   }
+  },
+  {
+   "rank": 119,
+   "plaintext": "GROUNDNONLOGO",
+   "wordLogp": -11.4246,
+   "words": "GROUND NON LOGO",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "G",
+    "E": "R",
+    "N": "O",
+    "z": "U",
+    "K": "D",
+    "M": "O",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 120,
+   "plaintext": "SONGSUSESENSE",
+   "wordLogp": -11.4298,
+   "words": "SONGS USE SENSE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "S",
+    "E": "O",
+    "N": "N",
+    "z": "G",
+    "K": "U",
+    "M": "E",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 121,
+   "plaintext": "DEALSUSESMADE",
+   "wordLogp": -11.4511,
+   "words": "DEALS USES MADE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "D",
+    "E": "E",
+    "N": "A",
+    "z": "L",
+    "K": "U",
+    "M": "E",
+    "[": "M"
+   }
+  },
+  {
+   "rank": 122,
+   "plaintext": "ACHIEVESECHAS",
+   "wordLogp": -11.4547,
+   "words": "ACHIEVE SEC HAS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "S",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 123,
+   "plaintext": "LEECANADAHELD",
+   "wordLogp": -11.4559,
+   "words": "LEE CANADA HELD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "L",
+    "E": "E",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 124,
+   "plaintext": "NEEDSUSESCENE",
+   "wordLogp": -11.4613,
+   "words": "NEEDS USE SCENE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "N",
+    "E": "E",
+    "N": "E",
+    "z": "D",
+    "K": "U",
+    "M": "E",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 125,
+   "plaintext": "EXTRAVARAFTER",
+   "wordLogp": -11.462,
+   "words": "EXTRA VAR AFTER",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "X",
+    "N": "T",
+    "z": "R",
+    "K": "V",
+    "M": "R",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 126,
+   "plaintext": "AGOCANADALOAD",
+   "wordLogp": -11.4658,
+   "words": "AGO CANADA LOAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "G",
+    "N": "O",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 127,
+   "plaintext": "MEANSUSESNAME",
+   "wordLogp": -11.4779,
+   "words": "MEANS USES NAME",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "M",
+    "E": "E",
+    "N": "A",
+    "z": "N",
+    "K": "U",
+    "M": "E",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 128,
+   "plaintext": "SEADELETELAST",
+   "wordLogp": -11.4833,
+   "words": "SEA DELETE LAST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "E",
+    "N": "A",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 129,
+   "plaintext": "ALABAMADATAAD",
+   "wordLogp": -11.4884,
+   "words": "ALABAMA DATA AD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "L",
+    "N": "A",
+    "z": "B",
+    "K": "M",
+    "M": "D",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 130,
+   "plaintext": "TELLEYEHEALTH",
+   "wordLogp": -11.5001,
+   "words": "TELL EYE HEALTH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "E",
+    "N": "L",
+    "z": "L",
+    "K": "Y",
+    "M": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 131,
+   "plaintext": "SALEINITIALST",
+   "wordLogp": -11.5065,
+   "words": "SALE INITIAL ST",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "S",
+    "E": "A",
+    "N": "L",
+    "z": "E",
+    "K": "N",
+    "M": "T",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 132,
+   "plaintext": "TITLESEVENTTV",
+   "wordLogp": -11.5169,
+   "words": "TITLES EVENT TV",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "I",
+    "N": "T",
+    "z": "L",
+    "K": "S",
+    "M": "V",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 133,
+   "plaintext": "AREDELETEHEAT",
+   "wordLogp": -11.5227,
+   "words": "ARE DELETE HEAT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "R",
+    "N": "E",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 134,
+   "plaintext": "ENDCOLOROLDER",
+   "wordLogp": -11.5278,
+   "words": "END COLOR OLDER",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "E",
+    "E": "N",
+    "N": "D",
+    "z": "C",
+    "K": "L",
+    "M": "R",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 135,
+   "plaintext": "ANDREWEYESDAY",
+   "wordLogp": -11.5342,
+   "words": "ANDREW EYES DAY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "N",
+    "N": "D",
+    "z": "R",
+    "K": "W",
+    "M": "Y",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 136,
+   "plaintext": "SHEDELETEWEST",
+   "wordLogp": -11.5413,
+   "words": "SHE DELETE WEST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "H",
+    "N": "E",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 137,
+   "plaintext": "CLOSEPETEROCT",
+   "wordLogp": -11.5622,
+   "words": "CLOSE PETER OCT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "C",
+    "E": "L",
+    "N": "O",
+    "z": "S",
+    "K": "P",
+    "M": "T",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 138,
+   "plaintext": "ARECIVILIDEAL",
+   "wordLogp": -11.5626,
+   "words": "ARE CIVIL IDEAL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "A",
+    "E": "R",
+    "N": "E",
+    "z": "C",
+    "K": "V",
+    "M": "L",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 139,
+   "plaintext": "EYECANADAFEED",
+   "wordLogp": -11.5676,
+   "words": "EYE CANADA FEED",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "Y",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 140,
+   "plaintext": "EDITEYESERIES",
+   "wordLogp": -11.57,
+   "words": "EDIT EYE SERIES",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "E",
+    "E": "D",
+    "N": "I",
+    "z": "T",
+    "K": "Y",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 141,
+   "plaintext": "CHINESEHERICH",
+   "wordLogp": -11.5776,
+   "words": "CHINESE HE RICH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "C",
+    "E": "H",
+    "N": "I",
+    "z": "N",
+    "K": "S",
+    "M": "H",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 142,
+   "plaintext": "TOLLEYEHEALTH",
+   "wordLogp": -11.5784,
+   "words": "TOLL EYE HEALTH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "O",
+    "N": "L",
+    "z": "L",
+    "K": "Y",
+    "M": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 143,
+   "plaintext": "ESTNEVERENTER",
+   "wordLogp": -11.5818,
+   "words": "EST NEVER ENTER",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "E",
+    "E": "S",
+    "N": "T",
+    "z": "N",
+    "K": "V",
+    "M": "R",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 144,
+   "plaintext": "ESTPETERENTER",
+   "wordLogp": -11.588,
+   "words": "EST PETER ENTER",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "E",
+    "E": "S",
+    "N": "T",
+    "z": "P",
+    "K": "T",
+    "M": "R",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 145,
+   "plaintext": "SHEDELETETEST",
+   "wordLogp": -11.5899,
+   "words": "SHE DELETE TEST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "H",
+    "N": "E",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 146,
+   "plaintext": "AVECANADALEAD",
+   "wordLogp": -11.598,
+   "words": "AVE CANADA LEAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "V",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 147,
+   "plaintext": "CROSSASKSTOCK",
+   "wordLogp": -11.6012,
+   "words": "CROSS ASK STOCK",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "C",
+    "E": "R",
+    "N": "O",
+    "z": "S",
+    "K": "A",
+    "M": "K",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 148,
+   "plaintext": "CLIPCOCKCLICK",
+   "wordLogp": -11.6113,
+   "words": "CLIP COCK CLICK",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "A": "C",
+    "E": "L",
+    "N": "I",
+    "z": "P",
+    "K": "O",
+    "M": "K",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 149,
+   "plaintext": "GOALSUSESTAGE",
+   "wordLogp": -11.6187,
+   "words": "GOALS USE STAGE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "G",
+    "E": "O",
+    "N": "A",
+    "z": "L",
+    "K": "U",
+    "M": "E",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 150,
+   "plaintext": "CLASSUSESFACE",
+   "wordLogp": -11.6206,
+   "words": "CLASS USES FACE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "C",
+    "E": "L",
+    "N": "A",
+    "z": "S",
+    "K": "U",
+    "M": "E",
+    "[": "F"
+   }
+  },
+  {
+   "rank": 151,
+   "plaintext": "SELFINITIALST",
+   "wordLogp": -11.6222,
+   "words": "SELF INITIAL ST",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "S",
+    "E": "E",
+    "N": "L",
+    "z": "F",
+    "K": "N",
+    "M": "T",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 152,
+   "plaintext": "TOOLSESTSCOTT",
+   "wordLogp": -11.6271,
+   "words": "TOOLS EST SCOTT",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "E": "O",
+    "N": "O",
+    "z": "L",
+    "K": "E",
+    "M": "T",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 153,
+   "plaintext": "PLANSUSESHAPE",
+   "wordLogp": -11.6283,
+   "words": "PLANS USE SHAPE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "P",
+    "E": "L",
+    "N": "A",
+    "z": "N",
+    "K": "U",
+    "M": "E",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 154,
+   "plaintext": "SALESUSESELSE",
+   "wordLogp": -11.64,
+   "words": "SALES USES ELSE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "S",
+    "E": "A",
+    "N": "L",
+    "z": "E",
+    "K": "U",
+    "M": "E",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 155,
+   "plaintext": "TURNPOPSPORTS",
+   "wordLogp": -11.641,
+   "words": "TURN POP SPORTS",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "T",
+    "E": "U",
+    "N": "R",
+    "z": "N",
+    "K": "O",
+    "M": "S",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 156,
+   "plaintext": "TEAMSUSESDATE",
+   "wordLogp": -11.6411,
+   "words": "TEAMS USES DATE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "E": "E",
+    "N": "A",
+    "z": "M",
+    "K": "U",
+    "M": "E",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 157,
+   "plaintext": "VIRUSUSESERVE",
+   "wordLogp": -11.6544,
+   "words": "VIRUS USE SERVE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "V",
+    "E": "I",
+    "N": "R",
+    "z": "U",
+    "K": "U",
+    "M": "E",
+    "[": "E"
+   }
+  },
+  {
+   "rank": 158,
+   "plaintext": "LOANSUSESSALE",
+   "wordLogp": -11.6587,
+   "words": "LOANS USES SALE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "L",
+    "E": "O",
+    "N": "A",
+    "z": "N",
+    "K": "U",
+    "M": "E",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 159,
+   "plaintext": "AREDELETESEAT",
+   "wordLogp": -11.6611,
+   "words": "ARE DELETE SEAT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "R",
+    "N": "E",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 160,
+   "plaintext": "SAIDNONENOISE",
+   "wordLogp": -11.6614,
+   "words": "SAID NONE NOISE",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "S",
+    "E": "A",
+    "N": "I",
+    "z": "D",
+    "K": "O",
+    "M": "E",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 161,
+   "plaintext": "PETSELEMENTPM",
+   "wordLogp": -11.6619,
+   "words": "PETS ELEMENT PM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "E": "E",
+    "N": "T",
+    "z": "S",
+    "K": "L",
+    "M": "M",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 162,
+   "plaintext": "STARSUSESCASE",
+   "wordLogp": -11.6692,
+   "words": "STARS USES CASE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "S",
+    "E": "T",
+    "N": "A",
+    "z": "R",
+    "K": "U",
+    "M": "E",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 163,
+   "plaintext": "INCCANADAACID",
+   "wordLogp": -11.6751,
+   "words": "INC CANADA ACID",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "I",
+    "E": "N",
+    "N": "C",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 164,
+   "plaintext": "AREDELETEBEAT",
+   "wordLogp": -11.6833,
+   "words": "ARE DELETE BEAT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "R",
+    "N": "E",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "B"
+   }
+  },
+  {
+   "rank": 165,
+   "plaintext": "SPENTITSTRESS",
+   "wordLogp": -11.6951,
+   "words": "SPENT IT STRESS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "S",
+    "E": "P",
+    "N": "E",
+    "z": "N",
+    "K": "I",
+    "M": "S",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 166,
+   "plaintext": "GROUPSPOPLOGO",
+   "wordLogp": -11.7075,
+   "words": "GROUPS POP LOGO",
+   "unknown": 0,
+   "key": {
+    "0": "P",
+    "A": "G",
+    "E": "R",
+    "N": "O",
+    "z": "U",
+    "K": "S",
+    "M": "O",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 167,
+   "plaintext": "TOOLSPSTSCOTT",
+   "wordLogp": -11.7077,
+   "words": "TOOLS PST SCOTT",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "E": "O",
+    "N": "O",
+    "z": "L",
+    "K": "P",
+    "M": "T",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 168,
+   "plaintext": "LARGEHEYEARLY",
+   "wordLogp": -11.7151,
+   "words": "LARGE HEY EARLY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "L",
+    "E": "A",
+    "N": "R",
+    "z": "G",
+    "K": "H",
+    "M": "Y",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 169,
+   "plaintext": "TOLDEYEHEALTH",
+   "wordLogp": -11.7153,
+   "words": "TOLD EYE HEALTH",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "T",
+    "E": "O",
+    "N": "L",
+    "z": "D",
+    "K": "Y",
+    "M": "H",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 170,
+   "plaintext": "SPADELETELAST",
+   "wordLogp": -11.7165,
+   "words": "SPA DELETE LAST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "P",
+    "N": "A",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 171,
+   "plaintext": "ROOMSESTSHORT",
+   "wordLogp": -11.7181,
+   "words": "ROOMS EST SHORT",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "R",
+    "E": "O",
+    "N": "O",
+    "z": "M",
+    "K": "E",
+    "M": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 172,
+   "plaintext": "WHOLEGENEDOWN",
+   "wordLogp": -11.7209,
+   "words": "WHOLE GENE DOWN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "W",
+    "E": "H",
+    "N": "O",
+    "z": "L",
+    "K": "G",
+    "M": "N",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 173,
+   "plaintext": "SEEDELETEREST",
+   "wordLogp": -11.7236,
+   "words": "SEE DELETE REST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "E",
+    "N": "E",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 174,
+   "plaintext": "INPUTETCTOPIC",
+   "wordLogp": -11.7252,
+   "words": "INPUT ETC TOPIC",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "I",
+    "E": "N",
+    "N": "P",
+    "z": "U",
+    "K": "E",
+    "M": "C",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 175,
+   "plaintext": "MAESTATETHEME",
+   "wordLogp": -11.7349,
+   "words": "MA ESTATE THEME",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "M",
+    "E": "A",
+    "N": "E",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 176,
+   "plaintext": "AVECANADADEAD",
+   "wordLogp": -11.7479,
+   "words": "AVE CANADA DEAD",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "A",
+    "E": "V",
+    "N": "E",
+    "z": "C",
+    "K": "N",
+    "M": "D",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 177,
+   "plaintext": "SKIDELETELIST",
+   "wordLogp": -11.7484,
+   "words": "SKI DELETE LIST",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "E": "K",
+    "N": "I",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 178,
+   "plaintext": "ACHIEVEDEVHAD",
+   "wordLogp": -11.7571,
+   "words": "ACHIEVE DEV HAD",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "D",
+    "[": "V"
+   }
+  },
+  {
+   "rank": 179,
+   "plaintext": "MRESTATETHEME",
+   "wordLogp": -11.7624,
+   "words": "MR ESTATE THEME",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "M",
+    "E": "R",
+    "N": "E",
+    "z": "S",
+    "K": "A",
+    "M": "E",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 180,
+   "plaintext": "OURREFERERROR",
+   "wordLogp": -11.7662,
+   "words": "OUR REFER ERROR",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "O",
+    "E": "U",
+    "N": "R",
+    "z": "R",
+    "K": "F",
+    "M": "R",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 181,
+   "plaintext": "MEANSUSESSAME",
+   "wordLogp": -11.7741,
+   "words": "MEANS USES SAME",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "M",
+    "E": "E",
+    "N": "A",
+    "z": "N",
+    "K": "U",
+    "M": "E",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 182,
+   "plaintext": "TOOLSUSESVOTE",
+   "wordLogp": -11.778,
+   "words": "TOOLS USES VOTE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "T",
+    "E": "O",
+    "N": "O",
+    "z": "L",
+    "K": "U",
+    "M": "E",
+    "[": "V"
+   }
+  },
+  {
+   "rank": 183,
+   "plaintext": "INDIANADANDID",
+   "wordLogp": -11.7782,
+   "words": "INDIANA DAN DID",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "I",
+    "E": "N",
+    "N": "D",
+    "z": "I",
+    "K": "N",
+    "M": "D",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 184,
+   "plaintext": "LEADSUSESCALE",
+   "wordLogp": -11.7796,
+   "words": "LEADS USE SCALE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "L",
+    "E": "E",
+    "N": "A",
+    "z": "D",
+    "K": "U",
+    "M": "E",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 185,
+   "plaintext": "MEANSUSESGAME",
+   "wordLogp": -11.7886,
+   "words": "MEANS USES GAME",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "M",
+    "E": "E",
+    "N": "A",
+    "z": "N",
+    "K": "U",
+    "M": "E",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 186,
+   "plaintext": "PRESSASSSTEPS",
+   "wordLogp": -11.7906,
+   "words": "PRESS ASS STEPS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "P",
+    "E": "R",
+    "N": "E",
+    "z": "S",
+    "K": "A",
+    "M": "S",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 187,
+   "plaintext": "RAINNONENTIRE",
+   "wordLogp": -11.7953,
+   "words": "RAIN NON ENTIRE",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "R",
+    "E": "A",
+    "N": "I",
+    "z": "N",
+    "K": "O",
+    "M": "E",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 188,
+   "plaintext": "WROTEGENEDOWN",
+   "wordLogp": -11.7957,
+   "words": "WROTE GENE DOWN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "W",
+    "E": "R",
+    "N": "O",
+    "z": "T",
+    "K": "G",
+    "M": "N",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 189,
+   "plaintext": "ROOMSPSTSHORT",
+   "wordLogp": -11.7986,
+   "words": "ROOMS PST SHORT",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "R",
+    "E": "O",
+    "N": "O",
+    "z": "M",
+    "K": "P",
+    "M": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 190,
+   "plaintext": "SELLINITIALST",
+   "wordLogp": -11.8017,
+   "words": "SELL INITIAL ST",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "S",
+    "E": "E",
+    "N": "L",
+    "z": "L",
+    "K": "N",
+    "M": "T",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 191,
+   "plaintext": "IFPROTOCOLPIC",
+   "wordLogp": -11.8121,
+   "words": "IF PROTOCOL PIC",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "I",
+    "E": "F",
+    "N": "P",
+    "z": "R",
+    "K": "T",
+    "M": "C",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 192,
+   "plaintext": "CLASSUSESRACE",
+   "wordLogp": -11.8202,
+   "words": "CLASS USES RACE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "C",
+    "E": "L",
+    "N": "A",
+    "z": "S",
+    "K": "U",
+    "M": "E",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 193,
+   "plaintext": "ACHIEVEDELHAD",
+   "wordLogp": -11.8333,
+   "words": "ACHIEVE DEL HAD",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "D",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 194,
+   "plaintext": "WHOSEGENEDOWN",
+   "wordLogp": -11.8359,
+   "words": "WHOSE GENE DOWN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "W",
+    "E": "H",
+    "N": "O",
+    "z": "S",
+    "K": "G",
+    "M": "N",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 195,
+   "plaintext": "ABOVEGENELOAN",
+   "wordLogp": -11.8382,
+   "words": "ABOVE GENE LOAN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "B",
+    "N": "O",
+    "z": "V",
+    "K": "G",
+    "M": "N",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 196,
+   "plaintext": "ACHIEVEDESHAD",
+   "wordLogp": -11.8611,
+   "words": "ACHIEVE DES HAD",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "A",
+    "E": "C",
+    "N": "H",
+    "z": "I",
+    "K": "V",
+    "M": "D",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 197,
+   "plaintext": "STATSUSESCASE",
+   "wordLogp": -11.8618,
+   "words": "STATS USES CASE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "S",
+    "E": "T",
+    "N": "A",
+    "z": "T",
+    "K": "U",
+    "M": "E",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 198,
+   "plaintext": "FRIDELETEGIFT",
+   "wordLogp": -11.8654,
+   "words": "FRI DELETE GIFT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "F",
+    "E": "R",
+    "N": "I",
+    "z": "D",
+    "K": "L",
+    "M": "T",
+    "[": "G"
+   }
+  },
+  {
+   "rank": 199,
+   "plaintext": "MARKETEYEARMY",
+   "wordLogp": -11.8756,
+   "words": "MARKET EYE ARMY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "M",
+    "E": "A",
+    "N": "R",
+    "z": "K",
+    "K": "T",
+    "M": "Y",
+    "[": "A"
+   }
+  },
+  {
+   "rank": 200,
+   "plaintext": "PHONESEYECOPY",
+   "wordLogp": -11.8879,
+   "words": "PHONES EYE COPY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "P",
+    "E": "H",
+    "N": "O",
+    "z": "N",
+    "K": "S",
+    "M": "Y",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 201,
+   "plaintext": "SUITEGETEXIST",
+   "wordLogp": -11.894,
+   "words": "SUITE GET EXIST",
+   "unknown": 0
+  },
+  {
+   "rank": 202,
+   "plaintext": "ANSWEREYESSAY",
+   "wordLogp": -11.9103,
+   "words": "ANSWER EYES SAY",
+   "unknown": 0
+  },
+  {
+   "rank": 203,
+   "plaintext": "ERICEYESERIES",
+   "wordLogp": -11.9489,
+   "words": "ERIC EYE SERIES",
+   "unknown": 0
+  },
+  {
+   "rank": 204,
+   "plaintext": "ROOMSESTSPORT",
+   "wordLogp": -11.9493,
+   "words": "ROOMS EST SPORT",
+   "unknown": 0
+  },
+  {
+   "rank": 205,
+   "plaintext": "ACTSELEMENTAM",
+   "wordLogp": -11.9503,
+   "words": "ACTS ELEMENT AM",
+   "unknown": 0
+  },
+  {
+   "rank": 206,
+   "plaintext": "IMAGEGENEPAIN",
+   "wordLogp": -11.9716,
+   "words": "IMAGE GENE PAIN",
+   "unknown": 0
+  },
+  {
+   "rank": 207,
+   "plaintext": "SEADELETEEAST",
+   "wordLogp": -11.9736,
+   "words": "SEA DELETE EAST",
+   "unknown": 0
+  },
+  {
+   "rank": 208,
+   "plaintext": "ENDMOTOROLDER",
+   "wordLogp": -11.9965,
+   "words": "END MOTOR OLDER",
+   "unknown": 0
+  },
+  {
+   "rank": 209,
+   "plaintext": "UNITEYEMEDIUM",
+   "wordLogp": -12.0089,
+   "words": "UNIT EYE MEDIUM",
+   "unknown": 0
+  },
+  {
+   "rank": 210,
+   "plaintext": "ENDGENEREADER",
+   "wordLogp": -12.0098,
+   "words": "END GENE READER",
+   "unknown": 0
+  },
+  {
+   "rank": 211,
+   "plaintext": "TEAMSUSESRATE",
+   "wordLogp": -12.0131,
+   "words": "TEAMS USES RATE",
+   "unknown": 0
+  },
+  {
+   "rank": 212,
+   "plaintext": "ACHIEVEDERHAD",
+   "wordLogp": -12.022,
+   "words": "ACHIEVE DER HAD",
+   "unknown": 0
+  },
+  {
+   "rank": 213,
+   "plaintext": "SUITESETEXIST",
+   "wordLogp": -12.0248,
+   "words": "SUITE SET EXIST",
+   "unknown": 0
+  },
+  {
+   "rank": 214,
+   "plaintext": "ROOMSPSTSPORT",
+   "wordLogp": -12.0299,
+   "words": "ROOMS PST SPORT",
+   "unknown": 0
+  },
+  {
+   "rank": 215,
+   "plaintext": "EATNEVERENTER",
+   "wordLogp": -12.0477,
+   "words": "EAT NEVER ENTER",
+   "unknown": 0
+  },
+  {
+   "rank": 216,
+   "plaintext": "STEVEPETEREST",
+   "wordLogp": -12.0521,
+   "words": "STEVE PETER EST",
+   "unknown": 0
+  },
+  {
+   "rank": 217,
+   "plaintext": "SHEDELETEREST",
+   "wordLogp": -12.0534,
+   "words": "SHE DELETE REST",
+   "unknown": 0
+  },
+  {
+   "rank": 218,
+   "plaintext": "FEEDELETELEFT",
+   "wordLogp": -12.0536,
+   "words": "FEE DELETE LEFT",
+   "unknown": 0
+  },
+  {
+   "rank": 219,
+   "plaintext": "EATPETERENTER",
+   "wordLogp": -12.0539,
+   "words": "EAT PETER ENTER",
+   "unknown": 0
+  },
+  {
+   "rank": 220,
+   "plaintext": "INNDELETEUNIT",
+   "wordLogp": -12.0598,
+   "words": "INN DELETE UNIT",
+   "unknown": 0
+  },
+  {
+   "rank": 221,
+   "plaintext": "EXITEYESERIES",
+   "wordLogp": -12.0688,
+   "words": "EXIT EYE SERIES",
+   "unknown": 0
+  },
+  {
+   "rank": 222,
+   "plaintext": "EXTREMENETTEN",
+   "wordLogp": -12.0794,
+   "words": "EXTREME NET TEN",
+   "unknown": 0
+  },
+  {
+   "rank": 223,
+   "plaintext": "SEADELETEPAST",
+   "wordLogp": -12.0803,
+   "words": "SEA DELETE PAST",
+   "unknown": 0
+  },
+  {
+   "rank": 224,
+   "plaintext": "LOANSUSESMALE",
+   "wordLogp": -12.0883,
+   "words": "LOANS USES MALE",
+   "unknown": 0
+  },
+  {
+   "rank": 225,
+   "plaintext": "SLEEPUPSPRESS",
+   "wordLogp": -12.0914,
+   "words": "SLEEP UPS PRESS",
+   "unknown": 0
+  },
+  {
+   "rank": 226,
+   "plaintext": "IMAGEGENEGAIN",
+   "wordLogp": -12.0918,
+   "words": "IMAGE GENE GAIN",
+   "unknown": 0
+  },
+  {
+   "rank": 227,
+   "plaintext": "INTOELEMENTIM",
+   "wordLogp": -12.0962,
+   "words": "INTO ELEMENT IM",
+   "unknown": 0
+  },
+  {
+   "rank": 228,
+   "plaintext": "TEAUSESESTATE",
+   "wordLogp": -12.1139,
+   "words": "TEA USES ESTATE",
+   "unknown": 0
+  },
+  {
+   "rank": 229,
+   "plaintext": "WHOLEGENETOWN",
+   "wordLogp": -12.1163,
+   "words": "WHOLE GENE TOWN",
+   "unknown": 0
+  },
+  {
+   "rank": 230,
+   "plaintext": "STARSUSESBASE",
+   "wordLogp": -12.1281,
+   "words": "STARS USES BASE",
+   "unknown": 0
+  },
+  {
+   "rank": 231,
+   "plaintext": "SEADELETEFAST",
+   "wordLogp": -12.1312,
+   "words": "SEA DELETE FAST",
+   "unknown": 0
+  },
+  {
+   "rank": 232,
+   "plaintext": "SHAREDEYEEASY",
+   "wordLogp": -12.1504,
+   "words": "SHARED EYE EASY",
+   "unknown": 0
+  },
+  {
+   "rank": 233,
+   "plaintext": "IDPROTOCOLPIC",
+   "wordLogp": -12.1799,
+   "words": "ID PROTOCOL PIC",
+   "unknown": 0
+  },
+  {
+   "rank": 234,
+   "plaintext": "SAIDNINENOISE",
+   "wordLogp": -12.1819,
+   "words": "SAID NINE NOISE",
+   "unknown": 0
+  },
+  {
+   "rank": 235,
+   "plaintext": "EARTHOHSHARES",
+   "wordLogp": -12.1829,
+   "words": "EARTH OH SHARES",
+   "unknown": 0
+  },
+  {
+   "rank": 236,
+   "plaintext": "SUITENETEXIST",
+   "wordLogp": -12.1869,
+   "words": "SUITE NET EXIST",
+   "unknown": 0
+  },
+  {
+   "rank": 237,
+   "plaintext": "RATHEREYESTRY",
+   "wordLogp": -12.1882,
+   "words": "RATHER EYES TRY",
+   "unknown": 0
+  },
+  {
+   "rank": 238,
+   "plaintext": "WROTEGENETOWN",
+   "wordLogp": -12.1912,
+   "words": "WROTE GENE TOWN",
+   "unknown": 0
+  },
+  {
+   "rank": 239,
+   "plaintext": "EXTREMELETTEL",
+   "wordLogp": -12.1914,
+   "words": "EXTREME LET TEL",
+   "unknown": 0
+  },
+  {
+   "rank": 240,
+   "plaintext": "NEEDSESTSPENT",
+   "wordLogp": -12.1927,
+   "words": "NEEDS EST SPENT",
+   "unknown": 0
+  },
+  {
+   "rank": 241,
+   "plaintext": "SPADELETEEAST",
+   "wordLogp": -12.2069,
+   "words": "SPA DELETE EAST",
+   "unknown": 0
+  },
+  {
+   "rank": 242,
+   "plaintext": "SHEETSTSTRESS",
+   "wordLogp": -12.2214,
+   "words": "SHEET ST STRESS",
+   "unknown": 0
+  },
+  {
+   "rank": 243,
+   "plaintext": "LEADSUSESSALE",
+   "wordLogp": -12.2293,
+   "words": "LEADS USES SALE",
+   "unknown": 0
+  },
+  {
+   "rank": 244,
+   "plaintext": "READEREYEMARY",
+   "wordLogp": -12.2297,
+   "words": "READER EYE MARY",
+   "unknown": 0
+  },
+  {
+   "rank": 245,
+   "plaintext": "WHOSEGENETOWN",
+   "wordLogp": -12.2314,
+   "words": "WHOSE GENE TOWN",
+   "unknown": 0
+  },
+  {
+   "rank": 246,
+   "plaintext": "NEAREYEDEMAND",
+   "wordLogp": -12.2314,
+   "words": "NEAR EYE DEMAND",
+   "unknown": 0
+  },
+  {
+   "rank": 247,
+   "plaintext": "AGEDELETEHEAT",
+   "wordLogp": -12.2343,
+   "words": "AGE DELETE HEAT",
+   "unknown": 0
+  },
+  {
+   "rank": 248,
+   "plaintext": "GENERARERANGE",
+   "wordLogp": -12.2389,
+   "words": "GENE RARE RANGE",
+   "unknown": 0
+  },
+  {
+   "rank": 249,
+   "plaintext": "EYEDELETEMEET",
+   "wordLogp": -12.2394,
+   "words": "EYE DELETE MEET",
+   "unknown": 0
+  },
+  {
+   "rank": 250,
+   "plaintext": "SHOESUSESROSE",
+   "wordLogp": -12.2688,
+   "words": "SHOES USES ROSE",
+   "unknown": 0
+  },
+  {
+   "rank": 251,
+   "plaintext": "EVENCOCKCREEK",
+   "wordLogp": -12.2727,
+   "words": "EVEN COCK CREEK",
+   "unknown": 0
+  },
+  {
+   "rank": 252,
+   "plaintext": "NEEDSPSTSPENT",
+   "wordLogp": -12.2732,
+   "words": "NEEDS PST SPENT",
+   "unknown": 0
+  },
+  {
+   "rank": 253,
+   "plaintext": "AGECIVILIDEAL",
+   "wordLogp": -12.2741,
+   "words": "AGE CIVIL IDEAL",
+   "unknown": 0
+  },
+  {
+   "rank": 254,
+   "plaintext": "MEANSUSESCAME",
+   "wordLogp": -12.2799,
+   "words": "MEANS USES CAME",
+   "unknown": 0
+  },
+  {
+   "rank": 255,
+   "plaintext": "SHARESEYEEASY",
+   "wordLogp": -12.2808,
+   "words": "SHARES EYE EASY",
+   "unknown": 0
+  },
+  {
+   "rank": 256,
+   "plaintext": "SPEEDADSDRESS",
+   "wordLogp": -12.2974,
+   "words": "SPEED ADS DRESS",
+   "unknown": 0
+  },
+  {
+   "rank": 257,
+   "plaintext": "DRUGSUSESNUDE",
+   "wordLogp": -12.298,
+   "words": "DRUGS USES NUDE",
+   "unknown": 0
+  },
+  {
+   "rank": 258,
+   "plaintext": "PROPEREYECOPY",
+   "wordLogp": -12.3004,
+   "words": "PROPER EYE COPY",
+   "unknown": 0
+  },
+  {
+   "rank": 259,
+   "plaintext": "SALTINITIALST",
+   "wordLogp": -12.3078,
+   "words": "SALT INITIAL ST",
+   "unknown": 0
+  },
+  {
+   "rank": 260,
+   "plaintext": "SWEETSTSTRESS",
+   "wordLogp": -12.309,
+   "words": "SWEET ST STRESS",
+   "unknown": 0
+  },
+  {
+   "rank": 261,
+   "plaintext": "SPADELETEPAST",
+   "wordLogp": -12.3135,
+   "words": "SPA DELETE PAST",
+   "unknown": 0
+  },
+  {
+   "rank": 262,
+   "plaintext": "SCENEPETEREST",
+   "wordLogp": -12.3173,
+   "words": "SCENE PETER EST",
+   "unknown": 0
+  },
+  {
+   "rank": 263,
+   "plaintext": "STATSUSESBASE",
+   "wordLogp": -12.3207,
+   "words": "STATS USES BASE",
+   "unknown": 0
+  },
+  {
+   "rank": 264,
+   "plaintext": "SOLDINITIALST",
+   "wordLogp": -12.3234,
+   "words": "SOLD INITIAL ST",
+   "unknown": 0
+  },
+  {
+   "rank": 265,
+   "plaintext": "AREASASKSPEAK",
+   "wordLogp": -12.3252,
+   "words": "AREAS ASK SPEAK",
+   "unknown": 0
+  },
+  {
+   "rank": 266,
+   "plaintext": "SKINNONENOISE",
+   "wordLogp": -12.3301,
+   "words": "SKIN NONE NOISE",
+   "unknown": 0
+  },
+  {
+   "rank": 267,
+   "plaintext": "EXTREMELEETEL",
+   "wordLogp": -12.3382,
+   "words": "EXTREME LEE TEL",
+   "unknown": 0
+  },
+  {
+   "rank": 268,
+   "plaintext": "ALONEGENELOAN",
+   "wordLogp": -12.3429,
+   "words": "ALONE GENE LOAN",
+   "unknown": 0
+  },
+  {
+   "rank": 269,
+   "plaintext": "STATEDEYEEASY",
+   "wordLogp": -12.3515,
+   "words": "STATED EYE EASY",
+   "unknown": 0
+  },
+  {
+   "rank": 270,
+   "plaintext": "AGODELETEBOAT",
+   "wordLogp": -12.3561,
+   "words": "AGO DELETE BOAT",
+   "unknown": 0
+  },
+  {
+   "rank": 271,
+   "plaintext": "PLANSUSESRAPE",
+   "wordLogp": -12.3638,
+   "words": "PLANS USES RAPE",
+   "unknown": 0
+  },
+  {
+   "rank": 272,
+   "plaintext": "SPADELETEFAST",
+   "wordLogp": -12.3644,
+   "words": "SPA DELETE FAST",
+   "unknown": 0
+  },
+  {
+   "rank": 273,
+   "plaintext": "AGEDELETESEAT",
+   "wordLogp": -12.3726,
+   "words": "AGE DELETE SEAT",
+   "unknown": 0
+  },
+  {
+   "rank": 274,
+   "plaintext": "ADOBEGENELOAN",
+   "wordLogp": -12.3759,
+   "words": "ADOBE GENE LOAN",
+   "unknown": 0
+  },
+  {
+   "rank": 275,
+   "plaintext": "GONERARERANGE",
+   "wordLogp": -12.3796,
+   "words": "GONE RARE RANGE",
+   "unknown": 0
+  },
+  {
+   "rank": 276,
+   "plaintext": "SHIPNONENOISE",
+   "wordLogp": -12.3812,
+   "words": "SHIP NONE NOISE",
+   "unknown": 0
+  },
+  {
+   "rank": 277,
+   "plaintext": "LOUISUSESRULE",
+   "wordLogp": -12.3935,
+   "words": "LOUIS USES RULE",
+   "unknown": 0
+  },
+  {
+   "rank": 278,
+   "plaintext": "AGEDELETEBEAT",
+   "wordLogp": -12.3949,
+   "words": "AGE DELETE BEAT",
+   "unknown": 0
+  },
+  {
+   "rank": 279,
+   "plaintext": "NOISEPETERINT",
+   "wordLogp": -12.4082,
+   "words": "NOISE PETER INT",
+   "unknown": 0
+  },
+  {
+   "rank": 280,
+   "plaintext": "TRUERAREROUTE",
+   "wordLogp": -12.4109,
+   "words": "TRUE RARE ROUTE",
+   "unknown": 0
+  },
+  {
+   "rank": 281,
+   "plaintext": "SUITELETEXIST",
+   "wordLogp": -12.4117,
+   "words": "SUITE LET EXIST",
+   "unknown": 0
+  },
+  {
+   "rank": 282,
+   "plaintext": "NEEDSUSESGENE",
+   "wordLogp": -12.4318,
+   "words": "NEEDS USES GENE",
+   "unknown": 0
+  },
+  {
+   "rank": 283,
+   "plaintext": "ROUTEGENETURN",
+   "wordLogp": -12.4409,
+   "words": "ROUTE GENE TURN",
+   "unknown": 0
+  },
+  {
+   "rank": 284,
+   "plaintext": "CLIPSUSESNICE",
+   "wordLogp": -12.4442,
+   "words": "CLIPS USES NICE",
+   "unknown": 0
+  },
+  {
+   "rank": 285,
+   "plaintext": "ABUSETELEQUAL",
+   "wordLogp": -12.4445,
+   "words": "ABUSE TEL EQUAL",
+   "unknown": 0
+  },
+  {
+   "rank": 286,
+   "plaintext": "EVERCOCKCREEK",
+   "wordLogp": -12.4468,
+   "words": "EVER COCK CREEK",
+   "unknown": 0
+  },
+  {
+   "rank": 287,
+   "plaintext": "EYEDELETEFEET",
+   "wordLogp": -12.4521,
+   "words": "EYE DELETE FEET",
+   "unknown": 0
+  },
+  {
+   "rank": 288,
+   "plaintext": "DANLOGOSOUNDS",
+   "wordLogp": -12.4745,
+   "words": "DAN LOGO SOUNDS",
+   "unknown": 0
+  },
+  {
+   "rank": 289,
+   "plaintext": "SHOESUSESLOSE",
+   "wordLogp": -12.4762,
+   "words": "SHOES USES LOSE",
+   "unknown": 0
+  },
+  {
+   "rank": 290,
+   "plaintext": "ENDSEYEREADER",
+   "wordLogp": -12.485,
+   "words": "ENDS EYE READER",
+   "unknown": 0
+  },
+  {
+   "rank": 291,
+   "plaintext": "SHOWSUSESROSE",
+   "wordLogp": -12.4984,
+   "words": "SHOWS USES ROSE",
+   "unknown": 0
+  },
+  {
+   "rank": 292,
+   "plaintext": "DONLOGOSOUNDS",
+   "wordLogp": -12.5083,
+   "words": "DON LOGO SOUNDS",
+   "unknown": 0
+  },
+  {
+   "rank": 293,
+   "plaintext": "TEAMSUSESLATE",
+   "wordLogp": -12.5136,
+   "words": "TEAMS USES LATE",
+   "unknown": 0
+  },
+  {
+   "rank": 294,
+   "plaintext": "TOURRAREROUTE",
+   "wordLogp": -12.517,
+   "words": "TOUR RARE ROUTE",
+   "unknown": 0
+  },
+  {
+   "rank": 295,
+   "plaintext": "PREDELETEKEPT",
+   "wordLogp": -12.5282,
+   "words": "PRE DELETE KEPT",
+   "unknown": 0
+  },
+  {
+   "rank": 296,
+   "plaintext": "EXTREMELESTEL",
+   "wordLogp": -12.532,
+   "words": "EXTREME LES TEL",
+   "unknown": 0
+  },
+  {
+   "rank": 297,
+   "plaintext": "IRANEYEREPAIR",
+   "wordLogp": -12.5605,
+   "words": "IRAN EYE REPAIR",
+   "unknown": 0
+  },
+  {
+   "rank": 298,
+   "plaintext": "SUITEPETEXIST",
+   "wordLogp": -12.5757,
+   "words": "SUITE PET EXIST",
+   "unknown": 0
+  },
+  {
+   "rank": 299,
+   "plaintext": "SEADELETECAST",
+   "wordLogp": -12.5804,
+   "words": "SEA DELETE CAST",
+   "unknown": 0
+  },
+  {
+   "rank": 300,
+   "plaintext": "PLANSUSESTAPE",
+   "wordLogp": -12.5847,
+   "words": "PLANS USES TAPE",
+   "unknown": 0
+  },
+  {
+   "rank": 301,
+   "plaintext": "ESTREFERENTER",
+   "wordLogp": -12.5912,
+   "words": "EST REFER ENTER",
+   "unknown": 0
+  },
+  {
+   "rank": 302,
+   "plaintext": "SHOPSUSESROSE",
+   "wordLogp": -12.6209,
+   "words": "SHOPS USES ROSE",
+   "unknown": 0
+  },
+  {
+   "rank": 303,
+   "plaintext": "EXTREMELEDTEL",
+   "wordLogp": -12.6274,
+   "words": "EXTREME LED TEL",
+   "unknown": 0
+  },
+  {
+   "rank": 304,
+   "plaintext": "EYESCOCKCREEK",
+   "wordLogp": -12.6307,
+   "words": "EYES COCK CREEK",
+   "unknown": 0
+  },
+  {
+   "rank": 305,
+   "plaintext": "COOLCOCKCLOCK",
+   "wordLogp": -12.633,
+   "words": "COOL COCK CLOCK",
+   "unknown": 0
+  },
+  {
+   "rank": 306,
+   "plaintext": "TEAMSASSSTATS",
+   "wordLogp": -12.6389,
+   "words": "TEAMS ASS STATS",
+   "unknown": 0
+  },
+  {
+   "rank": 307,
+   "plaintext": "THUSRAREROUTE",
+   "wordLogp": -12.6433,
+   "words": "THUS RARE ROUTE",
+   "unknown": 0
+  },
+  {
+   "rank": 308,
+   "plaintext": "EYESTATSTREES",
+   "wordLogp": -12.6516,
+   "words": "EYE STATS TREES",
+   "unknown": 0
+  },
+  {
+   "rank": 309,
+   "plaintext": "ABUSEDELEQUAL",
+   "wordLogp": -12.6562,
+   "words": "ABUSE DEL EQUAL",
+   "unknown": 0
+  },
+  {
+   "rank": 310,
+   "plaintext": "LEADSUSESMALE",
+   "wordLogp": -12.659,
+   "words": "LEADS USES MALE",
+   "unknown": 0
+  },
+  {
+   "rank": 311,
+   "plaintext": "LEEDELETEFELT",
+   "wordLogp": -12.6591,
+   "words": "LEE DELETE FELT",
+   "unknown": 0
+  },
+  {
+   "rank": 312,
+   "plaintext": "AVEDELETEHEAT",
+   "wordLogp": -12.6753,
+   "words": "AVE DELETE HEAT",
+   "unknown": 0
+  },
+  {
+   "rank": 313,
+   "plaintext": "SOILNONENOISE",
+   "wordLogp": -12.6939,
+   "words": "SOIL NONE NOISE",
+   "unknown": 0
+  },
+  {
+   "rank": 314,
+   "plaintext": "INDIANAEATDIE",
+   "wordLogp": -12.6959,
+   "words": "INDIANA EAT DIE",
+   "unknown": 0
+  },
+  {
+   "rank": 315,
+   "plaintext": "SHOWSUSESLOSE",
+   "wordLogp": -12.7058,
+   "words": "SHOWS USES LOSE",
+   "unknown": 0
+  },
+  {
+   "rank": 316,
+   "plaintext": "EDGEANALANGEL",
+   "wordLogp": -12.7133,
+   "words": "EDGE ANAL ANGEL",
+   "unknown": 0
+  },
+  {
+   "rank": 317,
+   "plaintext": "AVECIVILIDEAL",
+   "wordLogp": -12.7152,
+   "words": "AVE CIVIL IDEAL",
+   "unknown": 0
+  },
+  {
+   "rank": 318,
+   "plaintext": "SPENTSTSTRESS",
+   "wordLogp": -12.727,
+   "words": "SPENT ST STRESS",
+   "unknown": 0
+  },
+  {
+   "rank": 319,
+   "plaintext": "LOOKSUSESROLE",
+   "wordLogp": -12.732,
+   "words": "LOOKS USES ROLE",
+   "unknown": 0
+  },
+  {
+   "rank": 320,
+   "plaintext": "AOLDELETEFLAT",
+   "wordLogp": -12.7525,
+   "words": "AOL DELETE FLAT",
+   "unknown": 0
+  },
+  {
+   "rank": 321,
+   "plaintext": "DEALEREYELADY",
+   "wordLogp": -12.7533,
+   "words": "DEALER EYE LADY",
+   "unknown": 0
+  },
+  {
+   "rank": 322,
+   "plaintext": "SKIPNONENOISE",
+   "wordLogp": -12.7629,
+   "words": "SKIP NONE NOISE",
+   "unknown": 0
+  },
+  {
+   "rank": 323,
+   "plaintext": "IMPROTOCOLPIC",
+   "wordLogp": -12.7676,
+   "words": "IM PROTOCOL PIC",
+   "unknown": 0
+  },
+  {
+   "rank": 324,
+   "plaintext": "CLIPSUSESVICE",
+   "wordLogp": -12.7774,
+   "words": "CLIPS USES VICE",
+   "unknown": 0
+  },
+  {
+   "rank": 325,
+   "plaintext": "ENTIRERARETEA",
+   "wordLogp": -12.779,
+   "words": "ENTIRE RARE TEA",
+   "unknown": 0
+  },
+  {
+   "rank": 326,
+   "plaintext": "SUITEMETEXIST",
+   "wordLogp": -12.8,
+   "words": "SUITE MET EXIST",
+   "unknown": 0
+  },
+  {
+   "rank": 327,
+   "plaintext": "SPADELETECAST",
+   "wordLogp": -12.8136,
+   "words": "SPA DELETE CAST",
+   "unknown": 0
+  },
+  {
+   "rank": 328,
+   "plaintext": "AVEDELETESEAT",
+   "wordLogp": -12.8137,
+   "words": "AVE DELETE SEAT",
+   "unknown": 0
+  },
+  {
+   "rank": 329,
+   "plaintext": "SHOPSUSESLOSE",
+   "wordLogp": -12.8283,
+   "words": "SHOPS USES LOSE",
+   "unknown": 0
+  },
+  {
+   "rank": 330,
+   "plaintext": "AVEDELETEBEAT",
+   "wordLogp": -12.8359,
+   "words": "AVE DELETE BEAT",
+   "unknown": 0
+  },
+  {
+   "rank": 331,
+   "plaintext": "ENSURERARESEA",
+   "wordLogp": -12.8362,
+   "words": "ENSURE RARE SEA",
+   "unknown": 0
+  },
+  {
+   "rank": 332,
+   "plaintext": "SKINNINENOISE",
+   "wordLogp": -12.8506,
+   "words": "SKIN NINE NOISE",
+   "unknown": 0
+  },
+  {
+   "rank": 333,
+   "plaintext": "SHIPNINENOISE",
+   "wordLogp": -12.9017,
+   "words": "SHIP NINE NOISE",
+   "unknown": 0
+  },
+  {
+   "rank": 334,
+   "plaintext": "SUITEWETEXIST",
+   "wordLogp": -12.9044,
+   "words": "SUITE WET EXIST",
+   "unknown": 0
+  },
+  {
+   "rank": 335,
+   "plaintext": "ACHIEVETELHAT",
+   "wordLogp": -12.916,
+   "words": "ACHIEVE TEL HAT",
+   "unknown": 0
+  },
+  {
+   "rank": 336,
+   "plaintext": "COOKCOCKCLOCK",
+   "wordLogp": -12.9678,
+   "words": "COOK COCK CLOCK",
+   "unknown": 0
+  },
+  {
+   "rank": 337,
+   "plaintext": "TEADELETEMATT",
+   "wordLogp": -13.0553,
+   "words": "TEA DELETE MATT",
+   "unknown": 0
+  },
+  {
+   "rank": 338,
+   "plaintext": "EATREFERENTER",
+   "wordLogp": -13.0571,
+   "words": "EAT REFER ENTER",
+   "unknown": 0
+  },
+  {
+   "rank": 339,
+   "plaintext": "SPENDADSDRESS",
+   "wordLogp": -13.0905,
+   "words": "SPEND ADS DRESS",
+   "unknown": 0
+  },
+  {
+   "rank": 340,
+   "plaintext": "SHIPSUSESRISE",
+   "wordLogp": -13.0968,
+   "words": "SHIPS USES RISE",
+   "unknown": 0
+  },
+  {
+   "rank": 341,
+   "plaintext": "LOOKSUSESHOLE",
+   "wordLogp": -13.1811,
+   "words": "LOOKS USES HOLE",
+   "unknown": 0
+  },
+  {
+   "rank": 342,
+   "plaintext": "ACHIEVETENHAT",
+   "wordLogp": -13.1849,
+   "words": "ACHIEVE TEN HAT",
+   "unknown": 0
+  },
+  {
+   "rank": 343,
+   "plaintext": "SOILNINENOISE",
+   "wordLogp": -13.2143,
+   "words": "SOIL NINE NOISE",
+   "unknown": 0
+  },
+  {
+   "rank": 344,
+   "plaintext": "AGREEGENEIRAN",
+   "wordLogp": -13.2245,
+   "words": "AGREE GENE IRAN",
+   "unknown": 0
+  },
+  {
+   "rank": 345,
+   "plaintext": "AGREEDEYESRAY",
+   "wordLogp": -13.2308,
+   "words": "AGREED EYES RAY",
+   "unknown": 0
+  },
+  {
+   "rank": 346,
+   "plaintext": "SKIPNINENOISE",
+   "wordLogp": -13.2834,
+   "words": "SKIP NINE NOISE",
+   "unknown": 0
+  },
+  {
+   "rank": 347,
+   "plaintext": "ACHIEVETEAHAT",
+   "wordLogp": -13.3158,
+   "words": "ACHIEVE TEA HAT",
+   "unknown": 0
+  },
+  {
+   "rank": 348,
+   "plaintext": "LOOKEDEYEHOLY",
+   "wordLogp": -13.3309,
+   "words": "LOOKED EYE HOLY",
+   "unknown": 0
+  }
+ ]
+}

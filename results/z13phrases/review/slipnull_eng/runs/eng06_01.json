@@ -1,0 +1,609 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:33:03.367Z",
+ "label": "eng06_01",
+ "cipher": {
+  "id": "eng06",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng06.txt",
+  "text": "abccdbcefgehh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*ccdbcefgehh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 454136,
+  "scored": 410221,
+  "keptAtLeastStreamMin": 79,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 17085,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1890,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 79,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 37,
+  "4": 42
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.005220865240495,
+  "topShare": 0.09112743610390144,
+  "top10Share": 0.35558372919145226,
+  "effectiveNumberExpEntropy": 520.3127654824182,
+  "effectiveNumberInverseSimpson": 54.7535786668901,
+  "unscoredMassBoundRelative": 0.04872296984993727,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 42,
+   "maxWordLogp": -15.777746679012148,
+   "massEstimateRelative": 0.00001036443115871308,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.015577442945280198
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 11,
+   "-18.00": 53,
+   "-17.75": 58,
+   "-17.50": 102,
+   "-17.25": 230,
+   "-17.00": 274,
+   "-16.75": 350,
+   "-16.50": 393,
+   "-16.25": 515,
+   "-16.00": 649,
+   "-15.75": 935,
+   "-15.50": 1247,
+   "-15.25": 1618,
+   "-15.00": 2213,
+   "-14.75": 2791,
+   "-14.50": 3467,
+   "-14.25": 4160,
+   "-14.00": 4752,
+   "-13.75": 5475,
+   "-13.50": 6155,
+   "-13.25": 7221,
+   "-13.00": 8352,
+   "-12.75": 9268,
+   "-12.50": 10418,
+   "-12.25": 11758,
+   "-12.00": 12948,
+   "-11.75": 13976,
+   "-11.50": 15223,
+   "-11.25": 16409,
+   "-11.00": 17132,
+   "-10.75": 17742,
+   "-10.50": 18449,
+   "-10.25": 18744,
+   "-10.00": 18967,
+   "-9.75": 18641,
+   "-9.50": 18485,
+   "-9.25": 18069,
+   "-9.00": 17929,
+   "-8.75": 17392,
+   "-8.50": 16907,
+   "-8.25": 16229,
+   "-8.00": 15154,
+   "-7.75": 13712,
+   "-7.50": 12849,
+   "-7.25": 11401,
+   "-7.00": 9549,
+   "-6.75": 8217,
+   "-6.50": 6832,
+   "-6.25": 5549,
+   "-6.00": 4377,
+   "-5.75": 3401,
+   "-5.50": 2583,
+   "-5.25": 1796,
+   "-5.00": 1225,
+   "-4.75": 762,
+   "-4.50": 444,
+   "-4.25": 238,
+   "-4.00": 151,
+   "-3.75": 93,
+   "-3.50": 54,
+   "-3.25": 26,
+   "-3.00": 12,
+   "-2.75": 3,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.50": 12,
+   "-19.25": 18,
+   "-19.00": 45,
+   "-18.75": 144,
+   "-18.50": 693,
+   "-18.25": 2255,
+   "-18.00": 5385,
+   "-17.75": 9977,
+   "-17.50": 15238,
+   "-17.25": 20459,
+   "-17.00": 26044,
+   "-16.75": 29764,
+   "-16.50": 31973,
+   "-16.25": 32358,
+   "-16.00": 31803,
+   "-15.75": 30222,
+   "-15.50": 27767,
+   "-15.25": 25310,
+   "-15.00": 22025,
+   "-14.75": 19086,
+   "-14.50": 16055,
+   "-14.25": 13169,
+   "-14.00": 10731,
+   "-13.75": 8803,
+   "-13.50": 7221,
+   "-13.25": 5761,
+   "-13.00": 4713,
+   "-12.75": 3663,
+   "-12.50": 2697,
+   "-12.25": 2039,
+   "-12.00": 1463,
+   "-11.75": 1091,
+   "-11.50": 812,
+   "-11.25": 538,
+   "-11.00": 360,
+   "-10.75": 219,
+   "-10.50": 131,
+   "-10.25": 69,
+   "-10.00": 45,
+   "-9.75": 27,
+   "-9.50": 20,
+   "-9.25": 6,
+   "-9.00": 2,
+   "-8.75": 3,
+   "-8.50": 4,
+   "-8.25": 1
+  },
+  "boundUnscored": {
+   "-18.25": 11,
+   "-18.00": 53,
+   "-17.75": 58,
+   "-17.50": 102,
+   "-17.25": 230,
+   "-17.00": 274,
+   "-16.75": 350,
+   "-16.50": 393,
+   "-16.25": 515,
+   "-16.00": 649,
+   "-15.75": 935,
+   "-15.50": 1247,
+   "-15.25": 1618,
+   "-15.00": 2213,
+   "-14.75": 2791,
+   "-14.50": 3467,
+   "-14.25": 4160,
+   "-14.00": 4752,
+   "-13.75": 5475,
+   "-13.50": 6155,
+   "-13.25": 7221,
+   "-13.00": 1246
+  }
+ },
+ "timeMs": {
+  "total": 3947,
+  "setup": 462
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "CARRIERANDALL",
+   "wordLogp": -8.0456,
+   "words": "CARRIER AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "c": "R",
+    "d": "I",
+    "b": "E",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ALOOKFORTHREE",
+   "wordLogp": -8.3734,
+   "words": "A LOOK FOR THREE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "c": "O",
+    "d": "K",
+    "b": "F",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "AGOODFORTHREE",
+   "wordLogp": -8.3954,
+   "words": "A GOOD FOR THREE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "c": "O",
+    "d": "D",
+    "b": "F",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "HOTTESTANDALL",
+   "wordLogp": -8.4019,
+   "words": "HOTTEST AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "c": "T",
+    "d": "E",
+    "b": "S",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "TISSUESANDALL",
+   "wordLogp": -8.4117,
+   "words": "TISSUES AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "c": "S",
+    "d": "U",
+    "b": "E",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "FREETHEIRWILL",
+   "wordLogp": -8.6034,
+   "words": "FREE THEIR WILL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "c": "E",
+    "d": "T",
+    "b": "H",
+    "e": "I",
+    "f": "R",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "CARRIERASMALL",
+   "wordLogp": -8.6178,
+   "words": "CARRIER A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "c": "R",
+    "d": "I",
+    "b": "E",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "FREETHEANDALL",
+   "wordLogp": -8.6208,
+   "words": "FREE THE AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "c": "E",
+    "d": "T",
+    "b": "H",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "FREETHEASMALL",
+   "wordLogp": -8.8456,
+   "words": "FREE THE A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "c": "E",
+    "d": "T",
+    "b": "H",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "BLOODFORTHREE",
+   "wordLogp": -8.8825,
+   "words": "BLOOD FOR THREE",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "c": "O",
+    "d": "D",
+    "b": "F",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ATOOLFORTHREE",
+   "wordLogp": -9.0043,
+   "words": "A TOOL FOR THREE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "c": "O",
+    "d": "L",
+    "b": "F",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "FREEUSEITWILL",
+   "wordLogp": -9.023,
+   "words": "FREE USE IT WILL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "c": "E",
+    "d": "U",
+    "b": "S",
+    "e": "I",
+    "f": "T",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "AGOODWORKFREE",
+   "wordLogp": -9.0862,
+   "words": "A GOOD WORK FREE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "c": "O",
+    "d": "D",
+    "b": "W",
+    "e": "R",
+    "f": "K",
+    "g": "F",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "BUTTHATISWILL",
+   "wordLogp": -9.1102,
+   "words": "BUT THAT IS WILL",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "c": "T",
+    "d": "H",
+    "b": "A",
+    "e": "I",
+    "f": "S",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THEEDGEASMALL",
+   "wordLogp": -9.2286,
+   "words": "THE EDGE A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "c": "E",
+    "d": "D",
+    "b": "G",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "FUNNYINEXCESS",
+   "wordLogp": -9.2401,
+   "words": "FUNNY IN EXCESS",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "c": "N",
+    "d": "Y",
+    "b": "I",
+    "e": "E",
+    "f": "X",
+    "g": "C",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "CHOOSEOURFULL",
+   "wordLogp": -9.2572,
+   "words": "CHOOSE OUR FULL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "c": "O",
+    "d": "S",
+    "b": "E",
+    "e": "U",
+    "f": "R",
+    "g": "F",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "NOTTHATISWILL",
+   "wordLogp": -9.2726,
+   "words": "NOT THAT IS WILL",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "c": "T",
+    "d": "H",
+    "b": "A",
+    "e": "I",
+    "f": "S",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "GREENTEASMALL",
+   "wordLogp": -9.2764,
+   "words": "GREEN TEA SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "c": "E",
+    "d": "N",
+    "b": "T",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "COMMONMAKEALL",
+   "wordLogp": -9.2841,
+   "words": "COMMON MAKE ALL",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "c": "M",
+    "d": "O",
+    "b": "N",
+    "e": "A",
+    "f": "K",
+    "g": "E",
+    "h": "L"
+   }
+  }
+ ]
+}

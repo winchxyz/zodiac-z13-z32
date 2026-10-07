@@ -1,0 +1,614 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:37:23.568Z",
+ "label": "eng09_10",
+ "cipher": {
+  "id": "eng09",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng09.txt",
+  "text": "abcdbefbgdahc",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   10
+  ],
+  "isomorphAfterSlips": "abcdbefbgd*hc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 1335692,
+  "scored": 1237679,
+  "keptAtLeastStreamMin": 261,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 38825,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 4319,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 261,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 7,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 16,
+  "3": 116,
+  "4": 128,
+  "5": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.466447003543734,
+  "topShare": 0.0758049142850519,
+  "top10Share": 0.30527310625286824,
+  "effectiveNumberExpEntropy": 647.4235744502366,
+  "effectiveNumberInverseSimpson": 61.78354859892854,
+  "unscoredMassBoundRelative": 0.03145072678756932,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 96,
+   "maxWordLogp": -14.754844657760236,
+   "massEstimateRelative": 0.000017840697885309386,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.010472308658325921
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 3,
+   "-18.25": 23,
+   "-18.00": 76,
+   "-17.75": 146,
+   "-17.50": 273,
+   "-17.25": 379,
+   "-17.00": 477,
+   "-16.75": 620,
+   "-16.50": 885,
+   "-16.25": 1110,
+   "-16.00": 1540,
+   "-15.75": 2017,
+   "-15.50": 2630,
+   "-15.25": 3464,
+   "-15.00": 4609,
+   "-14.75": 5859,
+   "-14.50": 7364,
+   "-14.25": 9113,
+   "-14.00": 10579,
+   "-13.75": 12448,
+   "-13.50": 14560,
+   "-13.25": 16930,
+   "-13.00": 19504,
+   "-12.75": 22544,
+   "-12.50": 25624,
+   "-12.25": 29444,
+   "-12.00": 33517,
+   "-11.75": 37276,
+   "-11.50": 41213,
+   "-11.25": 44762,
+   "-11.00": 48328,
+   "-10.75": 50729,
+   "-10.50": 53147,
+   "-10.25": 54837,
+   "-10.00": 56159,
+   "-9.75": 57565,
+   "-9.50": 58096,
+   "-9.25": 58686,
+   "-9.00": 58676,
+   "-8.75": 58108,
+   "-8.50": 56354,
+   "-8.25": 54362,
+   "-8.00": 51653,
+   "-7.75": 47526,
+   "-7.50": 42857,
+   "-7.25": 37983,
+   "-7.00": 33018,
+   "-6.75": 27430,
+   "-6.50": 22386,
+   "-6.25": 17323,
+   "-6.00": 13275,
+   "-5.75": 9581,
+   "-5.50": 6746,
+   "-5.25": 4590,
+   "-5.00": 2931,
+   "-4.75": 1915,
+   "-4.50": 1134,
+   "-4.25": 659,
+   "-4.00": 344,
+   "-3.75": 172,
+   "-3.50": 75,
+   "-3.25": 35,
+   "-3.00": 12,
+   "-2.75": 6,
+   "-2.50": 5
+  },
+  "exactScored": {
+   "-19.25": 3,
+   "-19.00": 50,
+   "-18.75": 528,
+   "-18.50": 2848,
+   "-18.25": 8089,
+   "-18.00": 18034,
+   "-17.75": 32908,
+   "-17.50": 53001,
+   "-17.25": 73560,
+   "-17.00": 90704,
+   "-16.75": 102521,
+   "-16.50": 107545,
+   "-16.25": 105423,
+   "-16.00": 98413,
+   "-15.75": 88520,
+   "-15.50": 78592,
+   "-15.25": 68088,
+   "-15.00": 58597,
+   "-14.75": 49985,
+   "-14.50": 42013,
+   "-14.25": 34854,
+   "-14.00": 28577,
+   "-13.75": 22484,
+   "-13.50": 17659,
+   "-13.25": 13958,
+   "-13.00": 10668,
+   "-12.75": 8315,
+   "-12.50": 6289,
+   "-12.25": 4695,
+   "-12.00": 3294,
+   "-11.75": 2415,
+   "-11.50": 1615,
+   "-11.25": 1163,
+   "-11.00": 810,
+   "-10.75": 499,
+   "-10.50": 392,
+   "-10.25": 226,
+   "-10.00": 130,
+   "-9.75": 87,
+   "-9.50": 47,
+   "-9.25": 40,
+   "-9.00": 18,
+   "-8.75": 12,
+   "-8.50": 5,
+   "-8.25": 1,
+   "-8.00": 1,
+   "-7.75": 3
+  },
+  "boundUnscored": {
+   "-18.50": 3,
+   "-18.25": 23,
+   "-18.00": 76,
+   "-17.75": 146,
+   "-17.50": 273,
+   "-17.25": 379,
+   "-17.00": 477,
+   "-16.75": 620,
+   "-16.50": 885,
+   "-16.25": 1110,
+   "-16.00": 1540,
+   "-15.75": 2017,
+   "-15.50": 2630,
+   "-15.25": 3464,
+   "-15.00": 4609,
+   "-14.75": 5859,
+   "-14.50": 7364,
+   "-14.25": 9113,
+   "-14.00": 10579,
+   "-13.75": 12448,
+   "-13.50": 14560,
+   "-13.25": 16930,
+   "-13.00": 2908
+  }
+ },
+ "timeMs": {
+  "total": 12739,
+  "setup": 523
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "SEPTEMBERTRIP",
+   "wordLogp": -7.5867,
+   "words": "SEPTEMBER TRIP",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "P",
+    "d": "T",
+    "e": "M",
+    "f": "B",
+    "g": "R",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "FANTASYACTION",
+   "wordLogp": -7.6696,
+   "words": "FANTASY ACTION",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "A",
+    "c": "N",
+    "d": "T",
+    "e": "S",
+    "f": "Y",
+    "g": "C",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "BOSTONFORTHIS",
+   "wordLogp": -7.7225,
+   "words": "BOSTON FOR THIS",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "O",
+    "c": "S",
+    "d": "T",
+    "e": "N",
+    "f": "F",
+    "g": "R",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "RELIEFMEDICAL",
+   "wordLogp": -7.9714,
+   "words": "RELIEF MEDICAL",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "E",
+    "c": "L",
+    "d": "I",
+    "e": "F",
+    "f": "M",
+    "g": "D",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "POSTONEOFTHIS",
+   "wordLogp": -8.224,
+   "words": "POST ONE OF THIS",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "O",
+    "c": "S",
+    "d": "T",
+    "e": "N",
+    "f": "E",
+    "g": "F",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "MOSTOFDOCTORS",
+   "wordLogp": -8.2865,
+   "words": "MOST OF DOCTORS",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "O",
+    "c": "S",
+    "d": "T",
+    "e": "F",
+    "f": "D",
+    "g": "C",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "MOSTONEOFTHIS",
+   "wordLogp": -8.3,
+   "words": "MOST ONE OF THIS",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "O",
+    "c": "S",
+    "d": "T",
+    "e": "N",
+    "f": "E",
+    "g": "F",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ORDERLARGEAND",
+   "wordLogp": -8.3788,
+   "words": "ORDER LARGE AND",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "R",
+    "c": "D",
+    "d": "E",
+    "e": "L",
+    "f": "A",
+    "g": "G",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "WESTERNEXTRAS",
+   "wordLogp": -8.4355,
+   "words": "WESTERN EXTRAS",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "E",
+    "c": "S",
+    "d": "T",
+    "e": "R",
+    "f": "N",
+    "g": "X",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "SEPTEMBERTOUP",
+   "wordLogp": -8.4729,
+   "words": "SEPTEMBER TO UP",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "P",
+    "d": "T",
+    "e": "M",
+    "f": "B",
+    "g": "R",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "BOSTONDOCTORS",
+   "wordLogp": -8.5206,
+   "words": "BOSTON DOCTORS",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "O",
+    "c": "S",
+    "d": "T",
+    "e": "N",
+    "f": "D",
+    "g": "C",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "NOTWORKOFWHAT",
+   "wordLogp": -8.5247,
+   "words": "NOT WORK OF WHAT",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "W",
+    "e": "R",
+    "f": "K",
+    "g": "F",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "BELIEFMEDICAL",
+   "wordLogp": -8.5304,
+   "words": "BELIEF MEDICAL",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "E",
+    "c": "L",
+    "d": "I",
+    "e": "F",
+    "f": "M",
+    "g": "D",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "GENRETHEIROWN",
+   "wordLogp": -8.5314,
+   "words": "GENRE THEIR OWN",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "E",
+    "c": "N",
+    "d": "R",
+    "e": "T",
+    "f": "H",
+    "g": "I",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "CENTERDEATHIN",
+   "wordLogp": -8.5384,
+   "words": "CENTER DEATH IN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "D",
+    "g": "A",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "LOSTONEOFTHIS",
+   "wordLogp": -8.5898,
+   "words": "LOST ONE OF THIS",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "O",
+    "c": "S",
+    "d": "T",
+    "e": "N",
+    "f": "E",
+    "g": "F",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "JANTAKEACTION",
+   "wordLogp": -8.5978,
+   "words": "JAN TAKE ACTION",
+   "unknown": 0,
+   "key": {
+    "a": "J",
+    "b": "A",
+    "c": "N",
+    "d": "T",
+    "e": "K",
+    "f": "E",
+    "g": "C",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SANTAREACTION",
+   "wordLogp": -8.614,
+   "words": "SANTA REACTION",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "A",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "E",
+    "g": "C",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "BESTEXPERTSIS",
+   "wordLogp": -8.6164,
+   "words": "BEST EXPERTS IS",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "E",
+    "c": "S",
+    "d": "T",
+    "e": "X",
+    "f": "P",
+    "g": "R",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "RENTEXCEPTION",
+   "wordLogp": -8.6883,
+   "words": "RENT EXCEPTION",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "X",
+    "f": "C",
+    "g": "P",
+    "h": "O"
+   }
+  }
+ ]
+}

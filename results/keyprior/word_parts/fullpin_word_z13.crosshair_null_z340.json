@@ -1,0 +1,111 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:46:04.781Z",
+ "argv": "--ciphers z13.crosshair_null --keys z340 --null 10000 --null-kind permute --threads 1 --seed 1970 --stat word --out results/keyprior/word_parts/fullpin_word_z13.crosshair_null_z340.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 3.154,
+ "results": [
+  {
+   "cipher": "z13.crosshair_null",
+   "key": "z340",
+   "text": "AEN0K0M0[NAM",
+   "pinnedSymbols": "AENKM",
+   "nPinned": 5,
+   "nFree": 2,
+   "carriedOver": "DRE?A?O??EDO",
+   "real": {
+    "best": {
+     "plaintext": "DRETATOTHEDO",
+     "words": "DRETA TO THE DO",
+     "wordLogp": -14.28640898393584,
+     "unknownWords": [
+      "DRETA"
+     ],
+     "ngram5": -39.98587465286255
+    },
+    "score": -14.262707210076682,
+    "top5": [
+     {
+      "plaintext": "DRETATOTHEDO",
+      "score": -14.262707210076682
+     },
+     {
+      "plaintext": "DREAAAOAREDO",
+      "score": -15.66605932916626
+     },
+     {
+      "plaintext": "DREWAWOWBEDO",
+      "score": -16.002499596172505
+     },
+     {
+      "plaintext": "DREEAEOEEEDO",
+      "score": -16.020536359006307
+     },
+     {
+      "plaintext": "DRENANONCEDO",
+      "score": -16.028297548273045
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -16.73018973601688,
+     "sd": 1.3990221928038582,
+     "min": -21.564299402272212,
+     "q05": -18.897704300915706,
+     "q25": -17.705814418828,
+     "median": -16.801727249127193,
+     "q75": -15.836556819391665,
+     "q95": -14.259189192079138,
+     "q99": -13.237117958223589,
+     "max": -10.109762763404023
+    },
+    "topNull": [
+     {
+      "index": 921,
+      "score": -10.109762763404023,
+      "plaintext": "AREINISIDEAS"
+     },
+     {
+      "index": 11,
+      "score": -11.502970316990847,
+      "plaintext": "TERMSMOMORTO"
+     },
+     {
+      "index": 1677,
+      "score": -11.548706579671872,
+      "plaintext": "NOININANDINA"
+     },
+     {
+      "index": 908,
+      "score": -11.552713047596704,
+      "plaintext": "ISTOTOTOITIT"
+     },
+     {
+      "index": 4338,
+      "score": -11.59725394996848,
+      "plaintext": "ONSAHARAISOR"
+     }
+    ]
+   },
+   "test": {
+    "ge": 505,
+    "n": 10000,
+    "p": 0.050594940505949405,
+    "percentile": 94.95,
+    "z": 1.7637193595871254
+   }
+  }
+ ]
+}

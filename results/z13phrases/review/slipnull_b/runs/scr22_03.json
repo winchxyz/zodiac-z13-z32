@@ -1,0 +1,618 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:37:17.695Z",
+ "label": "scr22_03",
+ "cipher": {
+  "id": "scr22",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr22.txt",
+  "text": "K0MN0EM[Az0AN",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*becfghbgd"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 954818,
+  "scored": 880094,
+  "keptAtLeastStreamMin": 340,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 39602,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 4671,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 340,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 13,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 18,
+  "3": 156,
+  "4": 164,
+  "5": 2
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.329280053536982,
+  "topShare": 0.08380645942157092,
+  "top10Share": 0.38273503018732047,
+  "effectiveNumberExpEntropy": 410.7816671376257,
+  "effectiveNumberInverseSimpson": 44.808444334833474,
+  "unscoredMassBoundRelative": 0.017483974536114597,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 74,
+   "maxWordLogp": -15.594322263333003,
+   "massEstimateRelative": 0.0000033493210278852473,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.005589407181249875
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 2,
+   "-18.25": 22,
+   "-18.00": 41,
+   "-17.75": 132,
+   "-17.50": 225,
+   "-17.25": 312,
+   "-17.00": 431,
+   "-16.75": 579,
+   "-16.50": 760,
+   "-16.25": 1010,
+   "-16.00": 1263,
+   "-15.75": 1660,
+   "-15.50": 2139,
+   "-15.25": 2829,
+   "-15.00": 3670,
+   "-14.75": 4664,
+   "-14.50": 5688,
+   "-14.25": 6886,
+   "-14.00": 8000,
+   "-13.75": 9388,
+   "-13.50": 10741,
+   "-13.25": 12175,
+   "-13.00": 14224,
+   "-12.75": 16150,
+   "-12.50": 18001,
+   "-12.25": 20513,
+   "-12.00": 23255,
+   "-11.75": 26058,
+   "-11.50": 28140,
+   "-11.25": 30452,
+   "-11.00": 32845,
+   "-10.75": 34543,
+   "-10.50": 36228,
+   "-10.25": 37113,
+   "-10.00": 38035,
+   "-9.75": 38490,
+   "-9.50": 38428,
+   "-9.25": 38509,
+   "-9.00": 38536,
+   "-8.75": 39303,
+   "-8.50": 38408,
+   "-8.25": 37974,
+   "-8.00": 36239,
+   "-7.75": 34864,
+   "-7.50": 32505,
+   "-7.25": 29460,
+   "-7.00": 26339,
+   "-6.75": 23043,
+   "-6.50": 19004,
+   "-6.25": 15412,
+   "-6.00": 11984,
+   "-5.75": 8956,
+   "-5.50": 6859,
+   "-5.25": 4565,
+   "-5.00": 3150,
+   "-4.75": 1968,
+   "-4.50": 1222,
+   "-4.25": 686,
+   "-4.00": 412,
+   "-3.75": 200,
+   "-3.50": 84,
+   "-3.25": 28,
+   "-3.00": 8,
+   "-2.75": 4,
+   "-2.50": 3,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.75": 1,
+   "-19.50": 15,
+   "-19.25": 36,
+   "-19.00": 77,
+   "-18.75": 289,
+   "-18.50": 1308,
+   "-18.25": 4329,
+   "-18.00": 10008,
+   "-17.75": 19263,
+   "-17.50": 31112,
+   "-17.25": 43712,
+   "-17.00": 54660,
+   "-16.75": 63249,
+   "-16.50": 68010,
+   "-16.25": 68818,
+   "-16.00": 66681,
+   "-15.75": 62450,
+   "-15.50": 57961,
+   "-15.25": 52871,
+   "-15.00": 47324,
+   "-14.75": 41668,
+   "-14.50": 36158,
+   "-14.25": 30665,
+   "-14.00": 25692,
+   "-13.75": 21275,
+   "-13.50": 17210,
+   "-13.25": 13767,
+   "-13.00": 10647,
+   "-12.75": 8436,
+   "-12.50": 6351,
+   "-12.25": 4663,
+   "-12.00": 3495,
+   "-11.75": 2474,
+   "-11.50": 1754,
+   "-11.25": 1213,
+   "-11.00": 812,
+   "-10.75": 560,
+   "-10.50": 412,
+   "-10.25": 237,
+   "-10.00": 156,
+   "-9.75": 116,
+   "-9.50": 72,
+   "-9.25": 40,
+   "-9.00": 18,
+   "-8.75": 11,
+   "-8.50": 8,
+   "-8.25": 4,
+   "-8.00": 2,
+   "-7.75": 2,
+   "-7.50": 2
+  },
+  "boundUnscored": {
+   "-18.50": 2,
+   "-18.25": 22,
+   "-18.00": 41,
+   "-17.75": 132,
+   "-17.50": 225,
+   "-17.25": 312,
+   "-17.00": 431,
+   "-16.75": 579,
+   "-16.50": 760,
+   "-16.25": 1010,
+   "-16.00": 1263,
+   "-15.75": 1660,
+   "-15.50": 2139,
+   "-15.25": 2829,
+   "-15.00": 3670,
+   "-14.75": 4664,
+   "-14.50": 5688,
+   "-14.25": 6886,
+   "-14.00": 8000,
+   "-13.75": 9388,
+   "-13.50": 10741,
+   "-13.25": 12175,
+   "-13.00": 2107
+  }
+ },
+ "timeMs": {
+  "total": 9466,
+  "setup": 546
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "LETTERTOCHECK",
+   "wordLogp": -7.406,
+   "words": "LETTER TO CHECK",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "L",
+    "M": "T",
+    "E": "R",
+    "[": "O",
+    "A": "C",
+    "z": "H",
+    "N": "K"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "WHICHGIVETHEM",
+   "wordLogp": -7.4694,
+   "words": "WHICH GIVE THEM",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "K": "W",
+    "M": "I",
+    "E": "G",
+    "[": "V",
+    "A": "E",
+    "z": "T",
+    "N": "M"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "WHICHGIVESHER",
+   "wordLogp": -7.5519,
+   "words": "WHICH GIVES HER",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "K": "W",
+    "M": "I",
+    "E": "G",
+    "[": "V",
+    "A": "E",
+    "z": "S",
+    "N": "R"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "BETTERTOCHECK",
+   "wordLogp": -7.5986,
+   "words": "BETTER TO CHECK",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "B",
+    "M": "T",
+    "E": "R",
+    "[": "O",
+    "A": "C",
+    "z": "H",
+    "N": "K"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ITEMTHEMOSTOF",
+   "wordLogp": -7.9274,
+   "words": "ITEM THE MOST OF",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "K": "I",
+    "M": "E",
+    "E": "H",
+    "[": "M",
+    "A": "O",
+    "z": "S",
+    "N": "F"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "FORYOURANYONE",
+   "wordLogp": -7.9613,
+   "words": "FOR YOUR ANYONE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "F",
+    "M": "R",
+    "E": "U",
+    "[": "A",
+    "A": "N",
+    "z": "Y",
+    "N": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "REVIEWVINCENT",
+   "wordLogp": -8.0082,
+   "words": "REVIEW VINCENT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "R",
+    "M": "V",
+    "E": "W",
+    "[": "I",
+    "A": "N",
+    "z": "C",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "HISFIRSTCLICK",
+   "wordLogp": -8.0796,
+   "words": "HIS FIRST CLICK",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "S",
+    "E": "R",
+    "[": "T",
+    "A": "C",
+    "z": "L",
+    "N": "K"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "BETTERTHOSEOF",
+   "wordLogp": -8.2101,
+   "words": "BETTER THOSE OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "B",
+    "M": "T",
+    "E": "R",
+    "[": "H",
+    "A": "O",
+    "z": "S",
+    "N": "F"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "SIGNINGREVIEW",
+   "wordLogp": -8.2358,
+   "words": "SIGNING REVIEW",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "S",
+    "M": "G",
+    "E": "N",
+    "[": "R",
+    "A": "E",
+    "z": "V",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SITEINTHEVIEW",
+   "wordLogp": -8.2666,
+   "words": "SITE IN THE VIEW",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "S",
+    "M": "T",
+    "E": "N",
+    "[": "H",
+    "A": "E",
+    "z": "V",
+    "N": "W"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "HESEEMSLIKEIT",
+   "wordLogp": -8.2878,
+   "words": "HE SEEMS LIKE IT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "H",
+    "M": "S",
+    "E": "M",
+    "[": "L",
+    "A": "I",
+    "z": "K",
+    "N": "T"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "FORYOURANDONE",
+   "wordLogp": -8.331,
+   "words": "FOR YOUR AND ONE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "F",
+    "M": "R",
+    "E": "U",
+    "[": "A",
+    "A": "N",
+    "z": "D",
+    "N": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "UNIONLISTENTO",
+   "wordLogp": -8.3601,
+   "words": "UNION LISTEN TO",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "K": "U",
+    "M": "I",
+    "E": "L",
+    "[": "S",
+    "A": "T",
+    "z": "E",
+    "N": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "WITHINTHELIES",
+   "wordLogp": -8.3791,
+   "words": "WITHIN THE LIES",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "W",
+    "M": "T",
+    "E": "N",
+    "[": "H",
+    "A": "E",
+    "z": "L",
+    "N": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ITEMTHEDOCTOR",
+   "wordLogp": -8.4662,
+   "words": "ITEM THE DOCTOR",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "K": "I",
+    "M": "E",
+    "E": "H",
+    "[": "D",
+    "A": "O",
+    "z": "C",
+    "N": "R"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ITEMTHECOSTOF",
+   "wordLogp": -8.4888,
+   "words": "ITEM THE COST OF",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "K": "I",
+    "M": "E",
+    "E": "H",
+    "[": "C",
+    "A": "O",
+    "z": "S",
+    "N": "F"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SIGNINGOFLIFE",
+   "wordLogp": -8.4924,
+   "words": "SIGNING OF LIFE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "S",
+    "M": "G",
+    "E": "N",
+    "[": "O",
+    "A": "F",
+    "z": "L",
+    "N": "E"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "LETTERTHOSEOF",
+   "wordLogp": -8.535,
+   "words": "LETTER THOSE OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "L",
+    "M": "T",
+    "E": "R",
+    "[": "H",
+    "A": "O",
+    "z": "S",
+    "N": "F"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "BEUSEFULCHECK",
+   "wordLogp": -8.5885,
+   "words": "BE USEFUL CHECK",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "B",
+    "M": "U",
+    "E": "F",
+    "[": "L",
+    "A": "C",
+    "z": "H",
+    "N": "K"
+   }
+  }
+ ]
+}

@@ -1,0 +1,611 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:36:57.083Z",
+ "label": "eng09_07",
+ "cipher": {
+  "id": "eng09",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng09.txt",
+  "text": "abcdbefbgdahc",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abcdbef*gdahc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 466536,
+  "scored": 430408,
+  "keptAtLeastStreamMin": 120,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 16099,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1986,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 120,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 72,
+  "4": 46
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.752721319333138,
+  "topShare": 0.13625159073904858,
+  "top10Share": 0.4557927256372838,
+  "effectiveNumberExpEntropy": 198.56924568096775,
+  "effectiveNumberInverseSimpson": 22.387281297385478,
+  "unscoredMassBoundRelative": 0.022411206619290438,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 34,
+   "maxWordLogp": -15.01660531730232,
+   "massEstimateRelative": 0.000013522141095207951,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0071860612086100525
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 1,
+   "-18.25": 22,
+   "-18.00": 45,
+   "-17.75": 114,
+   "-17.50": 116,
+   "-17.25": 156,
+   "-17.00": 214,
+   "-16.75": 234,
+   "-16.50": 329,
+   "-16.25": 417,
+   "-16.00": 610,
+   "-15.75": 751,
+   "-15.50": 1084,
+   "-15.25": 1406,
+   "-15.00": 1854,
+   "-14.75": 2303,
+   "-14.50": 2748,
+   "-14.25": 3261,
+   "-14.00": 3845,
+   "-13.75": 4485,
+   "-13.50": 5133,
+   "-13.25": 5964,
+   "-13.00": 6897,
+   "-12.75": 8014,
+   "-12.50": 9251,
+   "-12.25": 10534,
+   "-12.00": 11839,
+   "-11.75": 13210,
+   "-11.50": 14284,
+   "-11.25": 15377,
+   "-11.00": 16525,
+   "-10.75": 17406,
+   "-10.50": 18044,
+   "-10.25": 18517,
+   "-10.00": 19035,
+   "-9.75": 19508,
+   "-9.50": 19744,
+   "-9.25": 19803,
+   "-9.00": 19794,
+   "-8.75": 19747,
+   "-8.50": 19345,
+   "-8.25": 18511,
+   "-8.00": 17678,
+   "-7.75": 16334,
+   "-7.50": 15082,
+   "-7.25": 13418,
+   "-7.00": 11588,
+   "-6.75": 10054,
+   "-6.50": 8244,
+   "-6.25": 6533,
+   "-6.00": 4896,
+   "-5.75": 3774,
+   "-5.50": 2824,
+   "-5.25": 2036,
+   "-5.00": 1381,
+   "-4.75": 912,
+   "-4.50": 564,
+   "-4.25": 346,
+   "-4.00": 200,
+   "-3.75": 86,
+   "-3.50": 53,
+   "-3.25": 31,
+   "-3.00": 11,
+   "-2.75": 8,
+   "-2.50": 6
+  },
+  "exactScored": {
+   "-19.00": 13,
+   "-18.75": 113,
+   "-18.50": 726,
+   "-18.25": 2629,
+   "-18.00": 6398,
+   "-17.75": 11966,
+   "-17.50": 18303,
+   "-17.25": 24122,
+   "-17.00": 29477,
+   "-16.75": 32684,
+   "-16.50": 34267,
+   "-16.25": 34144,
+   "-16.00": 32663,
+   "-15.75": 30023,
+   "-15.50": 27481,
+   "-15.25": 24606,
+   "-15.00": 21755,
+   "-14.75": 19337,
+   "-14.50": 16325,
+   "-14.25": 13528,
+   "-14.00": 11271,
+   "-13.75": 9002,
+   "-13.50": 7130,
+   "-13.25": 5584,
+   "-13.00": 4257,
+   "-12.75": 3316,
+   "-12.50": 2509,
+   "-12.25": 1999,
+   "-12.00": 1409,
+   "-11.75": 1061,
+   "-11.50": 747,
+   "-11.25": 560,
+   "-11.00": 329,
+   "-10.75": 260,
+   "-10.50": 155,
+   "-10.25": 99,
+   "-10.00": 59,
+   "-9.75": 41,
+   "-9.50": 24,
+   "-9.25": 15,
+   "-9.00": 9,
+   "-8.75": 7,
+   "-8.50": 2,
+   "-8.00": 1,
+   "-7.75": 2
+  },
+  "boundUnscored": {
+   "-18.50": 1,
+   "-18.25": 22,
+   "-18.00": 45,
+   "-17.75": 114,
+   "-17.50": 116,
+   "-17.25": 156,
+   "-17.00": 214,
+   "-16.75": 234,
+   "-16.50": 329,
+   "-16.25": 417,
+   "-16.00": 610,
+   "-15.75": 751,
+   "-15.50": 1084,
+   "-15.25": 1406,
+   "-15.00": 1854,
+   "-14.75": 2303,
+   "-14.50": 2748,
+   "-14.25": 3261,
+   "-14.00": 3845,
+   "-13.75": 4485,
+   "-13.50": 5133,
+   "-13.25": 5964,
+   "-13.00": 1036
+  }
+ },
+ "timeMs": {
+  "total": 5976,
+  "setup": 394
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ROLEOFSEVERAL",
+   "wordLogp": -7.6184,
+   "words": "ROLE OF SEVERAL",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "O",
+    "c": "L",
+    "d": "E",
+    "e": "F",
+    "f": "S",
+    "g": "V",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ANDONTHEBOARD",
+   "wordLogp": -7.6677,
+   "words": "AND ON THE BOARD",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "O",
+    "e": "T",
+    "f": "H",
+    "g": "B",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ROLEOFGENERAL",
+   "wordLogp": -7.7937,
+   "words": "ROLE OF GENERAL",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "O",
+    "c": "L",
+    "d": "E",
+    "e": "F",
+    "f": "G",
+    "g": "N",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THESHOWMUSTBE",
+   "wordLogp": -8.4591,
+   "words": "THE SHOW MUST BE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "S",
+    "e": "O",
+    "f": "W",
+    "g": "U",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "TOENOUGHINTHE",
+   "wordLogp": -8.4804,
+   "words": "TO ENOUGH IN THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "c": "E",
+    "d": "N",
+    "e": "U",
+    "f": "G",
+    "g": "I",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "EASTANDHOTELS",
+   "wordLogp": -8.542,
+   "words": "EAST AND HOTELS",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "A",
+    "c": "S",
+    "d": "T",
+    "e": "N",
+    "f": "D",
+    "g": "O",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ORDERINTHEOLD",
+   "wordLogp": -8.5642,
+   "words": "ORDER IN THE OLD",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "R",
+    "c": "D",
+    "d": "E",
+    "e": "I",
+    "f": "N",
+    "g": "H",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "CENTERJUSTCAN",
+   "wordLogp": -8.6382,
+   "words": "CENTER JUST CAN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "J",
+    "g": "S",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ORDERBYTHEOLD",
+   "wordLogp": -8.6494,
+   "words": "ORDER BY THE OLD",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "R",
+    "c": "D",
+    "d": "E",
+    "e": "B",
+    "f": "Y",
+    "g": "H",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "WHYTHEBESTWAY",
+   "wordLogp": -8.7051,
+   "words": "WHY THE BEST WAY",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "H",
+    "c": "Y",
+    "d": "T",
+    "e": "E",
+    "f": "B",
+    "g": "S",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "CENTEROFITCAN",
+   "wordLogp": -8.7193,
+   "words": "CENTER OF IT CAN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "O",
+    "g": "I",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "CENTERONITCAN",
+   "wordLogp": -8.7373,
+   "words": "CENTER ON IT CAN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "O",
+    "g": "I",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THESHOPMUSTBE",
+   "wordLogp": -8.7546,
+   "words": "THE SHOP MUST BE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "S",
+    "e": "O",
+    "f": "P",
+    "g": "U",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ANDONKEYBOARD",
+   "wordLogp": -8.7573,
+   "words": "AND ON KEYBOARD",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "O",
+    "e": "K",
+    "f": "E",
+    "g": "B",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "AREPRICESPAGE",
+   "wordLogp": -8.8327,
+   "words": "ARE PRICES PAGE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "R",
+    "c": "E",
+    "d": "P",
+    "e": "I",
+    "f": "C",
+    "g": "S",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "WESTERNSITWAS",
+   "wordLogp": -8.8684,
+   "words": "WESTERNS IT WAS",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "E",
+    "c": "S",
+    "d": "T",
+    "e": "R",
+    "f": "N",
+    "g": "I",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ENDINTHEFIELD",
+   "wordLogp": -8.8721,
+   "words": "END IN THE FIELD",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "N",
+    "c": "D",
+    "d": "I",
+    "e": "T",
+    "f": "H",
+    "g": "F",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "WESTERNBUTWAS",
+   "wordLogp": -8.8749,
+   "words": "WESTERN BUT WAS",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "E",
+    "c": "S",
+    "d": "T",
+    "e": "R",
+    "f": "N",
+    "g": "U",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THESHIPMUSTBE",
+   "wordLogp": -8.8875,
+   "words": "THE SHIP MUST BE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "S",
+    "e": "I",
+    "f": "P",
+    "g": "U",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "AREPRICEDPAGE",
+   "wordLogp": -8.9112,
+   "words": "ARE PRICED PAGE",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "R",
+    "c": "E",
+    "d": "P",
+    "e": "I",
+    "f": "C",
+    "g": "D",
+    "h": "G"
+   }
+  }
+ ]
+}

@@ -1,0 +1,454 @@
+{
+ "generated": "2026-10-07T18:45:30.706Z",
+ "method": "p-like JSON fields (lead_replicate_multiplicity.js regexes), results/lead and summary/calibration files excluded; analysis = task + file stem",
+ "records": 4723,
+ "distinctValues": 1861,
+ "analyses": 51,
+ "analysesByTask": {
+  "nullmodel": 2,
+  "z13phrases": 3,
+  "audit": 1,
+  "keyprior": 36,
+  "z13names": 4,
+  "mapgeometry": 3,
+  "synthesis": 2
+ },
+ "keypriorShareOfDistinct": 0.9097259537882859,
+ "analysesWithMinAtOrBelow": {
+  "0.0051": {
+   "all": 20,
+   "nonKeyprior": 10
+  },
+  "0.0102": {
+   "all": 20,
+   "nonKeyprior": 10
+  },
+  "0.039": {
+   "all": 25,
+   "nonKeyprior": 10
+  },
+  "0.144": {
+   "all": 33,
+   "nonKeyprior": 12
+  }
+ },
+ "bh": {
+  "0.0051": {
+   "distinctValues": {
+    "m": 1862,
+    "rank": 80,
+    "q": 0.11693683608502502
+   },
+   "analysisMinima": {
+    "m": 52,
+    "rank": 20,
+    "q": 0.012628571428571428
+   },
+   "analysisMinimaNonKeyprior": {
+    "m": 16,
+    "rank": 10,
+    "q": 0.0074181818181818186
+   }
+  },
+  "0.0102": {
+   "distinctValues": {
+    "m": 1862,
+    "rank": 134,
+    "q": 0.14068444444444445
+   },
+   "analysisMinima": {
+    "m": 52,
+    "rank": 21,
+    "q": 0.023510692409019967
+   },
+   "analysisMinimaNonKeyprior": {
+    "m": 16,
+    "rank": 11,
+    "q": 0.014836363636363637
+   }
+  },
+  "0.039": {
+   "distinctValues": {
+    "m": 1862,
+    "rank": 320,
+    "q": 0.22679302171963056
+   },
+   "analysisMinima": {
+    "m": 52,
+    "rank": 26,
+    "q": 0.078
+   },
+   "analysisMinimaNonKeyprior": {
+    "m": 16,
+    "rank": 11,
+    "q": 0.05672727272727273
+   }
+  },
+  "0.144": {
+   "distinctValues": {
+    "m": 1862,
+    "rank": 830,
+    "q": 0.32304578313253013
+   },
+   "analysisMinima": {
+    "m": 52,
+    "rank": 34,
+    "q": 0.22023529411764706
+   },
+   "analysisMinimaNonKeyprior": {
+    "m": 16,
+    "rank": 13,
+    "q": 0.17723076923076922
+   }
+  }
+ },
+ "sidakAtAnalyses": {
+  "0.0051": {
+   "m": 51,
+   "pAny": 0.2295384427578293,
+   "mNonKeyprior": 16,
+   "pAnyNonKeyprior": 0.07855186822423055
+  },
+  "0.0102": {
+   "m": 51,
+   "pAny": 0.4071839910311248,
+   "mNonKeyprior": 16,
+   "pAnyNonKeyprior": 0.15129024958878934
+  },
+  "0.039": {
+   "m": 51,
+   "pAny": 0.8685099861568326,
+   "mNonKeyprior": 16,
+   "pAnyNonKeyprior": 0.47085560194758
+  },
+  "0.144": {
+   "m": 51,
+   "pAny": 0.9996401164477671,
+   "mNonKeyprior": 16,
+   "pAnyNonKeyprior": 0.916903977762651
+  }
+ },
+ "smallestAnalyses": [
+  {
+   "family": "nullmodel:isomorph_likelihood",
+   "task": "nullmodel",
+   "fields": 16,
+   "distinct": 13,
+   "min": 0,
+   "minWhere": "nullmodel/isomorph_likelihood.json .ciphers.z13.canonical.profileLikelihood.z63cycle.p"
+  },
+  {
+   "family": "z13phrases:slipnull",
+   "task": "z13phrases",
+   "fields": 26,
+   "distinct": 2,
+   "min": 0,
+   "minWhere": "z13phrases/review/slipnull.json .rows[0].slips[0].p"
+  },
+  {
+   "family": "z13phrases:slipnull_b",
+   "task": "z13phrases",
+   "fields": 50,
+   "distinct": 2,
+   "min": 0,
+   "minWhere": "z13phrases/review/slipnull_b.json .rows[0].slips[0].p"
+  },
+  {
+   "family": "z13phrases:slipnull_eng",
+   "task": "z13phrases",
+   "fields": 26,
+   "distinct": 2,
+   "min": 0,
+   "minWhere": "z13phrases/review/slipnull_eng.json .rows[0].slips[0].p"
+  },
+  {
+   "family": "audit:audit_details",
+   "task": "audit",
+   "fields": 19,
+   "distinct": 11,
+   "min": 0.00000807,
+   "minWhere": "audit/audit_details.json .named[1].cycle_p"
+  },
+  {
+   "family": "keyprior:z13subsets_words_v1_asymmetricFW",
+   "task": "keyprior",
+   "fields": 1716,
+   "distinct": 733,
+   "min": 0.0001999600079984003,
+   "minWhere": "keyprior/z13subsets_words_v1_asymmetricFW.json .results[1].familywise.best.all.minP"
+  },
+  {
+   "family": "keyprior:z13subsets_z340",
+   "task": "keyprior",
+   "fields": 572,
+   "distinct": 314,
+   "min": 0.00044997750112494374,
+   "minWhere": "keyprior/review/z13subsets_top500k_z340_n20000.json .results[0].familywise.best.all.minP"
+  },
+  {
+   "family": "keyprior:fullpin_z13_iid",
+   "task": "keyprior",
+   "fields": 12,
+   "distinct": 12,
+   "min": 0.0006999300069993001,
+   "minWhere": "keyprior/fullpin_z13_iid.json .results[1].test.p"
+  },
+  {
+   "family": "keyprior:fullpin_z13_permute",
+   "task": "keyprior",
+   "fields": 12,
+   "distinct": 12,
+   "min": 0.0007999200079992001,
+   "minWhere": "keyprior/fullpin_z13_permute.json .results[1].test.p"
+  },
+  {
+   "family": "keyprior:family",
+   "task": "keyprior",
+   "fields": 36,
+   "distinct": 27,
+   "min": 0.0007999200079992001,
+   "minWhere": "keyprior/review/family.json .perTest[8].p"
+  },
+  {
+   "family": "z13names:suspects_review_all",
+   "task": "z13names",
+   "fields": 48,
+   "distinct": 12,
+   "min": 0.0009995002498750624,
+   "minWhere": "z13names/review/suspects_review_all.json .test.z13.canonical/simple/slips1.persons0.p"
+  },
+  {
+   "family": "keyprior:z13subsets_z408",
+   "task": "keyprior",
+   "fields": 572,
+   "distinct": 262,
+   "min": 0.0011499425028748563,
+   "minWhere": "keyprior/review/z13subsets_top500k_z408_n20000.json .results[0].familywise.count@rank100000.all.minP"
+  },
+  {
+   "family": "keyprior:fullpin_z13_circles_permute",
+   "task": "keyprior",
+   "fields": 2,
+   "distinct": 2,
+   "min": 0.001998001998001998,
+   "minWhere": "keyprior/fullpin_z13_circles_permute.json .results[1].test.p"
+  },
+  {
+   "family": "keyprior:z13subsets_words_z340",
+   "task": "keyprior",
+   "fields": 572,
+   "distinct": 239,
+   "min": 0.001998001998001998,
+   "minWhere": "keyprior/z13subsets_words_top500k_z340.json .results[0].familywise.best.all.minP"
+  },
+  {
+   "family": "keyprior:condnull_objective",
+   "task": "keyprior",
+   "fields": 12,
+   "distinct": 6,
+   "min": 0.0023325558147284237,
+   "minWhere": "keyprior/condnull_objective.json .results.z340.englishFreq.p"
+  },
+  {
+   "family": "mapgeometry:independent",
+   "task": "mapgeometry",
+   "fields": 24,
+   "distinct": 24,
+   "min": 0.00235,
+   "minWhere": "mapgeometry/review/independent.json .gridhit_wide[0].rotated real constellation.p_le_obs"
+  },
+  {
+   "family": "mapgeometry:gridhit",
+   "task": "mapgeometry",
+   "fields": 10,
+   "distinct": 5,
+   "min": 0.00265,
+   "minWhere": "mapgeometry/gridhit.json .families[0].p_at_least_as_close"
+  },
+  {
+   "family": "keyprior:z13subsets_words_z408",
+   "task": "keyprior",
+   "fields": 572,
+   "distinct": 210,
+   "min": 0.002997002997002997,
+   "minWhere": "keyprior/z13subsets_words_top500k_z408.json .results[0].familywise.count@rank10000.all.minP"
+  },
+  {
+   "family": "mapgeometry:radian_tests",
+   "task": "mapgeometry",
+   "fields": 168,
+   "distinct": 83,
+   "min": 0.00455,
+   "minWhere": "mapgeometry/radian_tests.json .monte_carlo[16].p_at_least_as_good_as_observed"
+  },
+  {
+   "family": "synthesis:multiplicity",
+   "task": "synthesis",
+   "fields": 16,
+   "distinct": 10,
+   "min": 0.0051,
+   "minWhere": "synthesis/multiplicity.json .rows[0].p"
+  },
+  {
+   "family": "keyprior:fullpin_z13_permute_word",
+   "task": "keyprior",
+   "fields": 12,
+   "distinct": 12,
+   "min": 0.0103989601039896,
+   "minWhere": "keyprior/fullpin_z13_permute_word.json .results[1].test.p"
+  },
+  {
+   "family": "keyprior:word_parts/fullpin_word_z13.canonical_z340",
+   "task": "keyprior",
+   "fields": 1,
+   "distinct": 1,
+   "min": 0.0103989601039896,
+   "minWhere": "keyprior/word_parts/fullpin_word_z13.canonical_z340.json .results[0].test.p"
+  },
+  {
+   "family": "keyprior:fullpin_z13_circles_word",
+   "task": "keyprior",
+   "fields": 2,
+   "distinct": 2,
+   "min": 0.01199400299850075,
+   "minWhere": "keyprior/review/fullpin_z13_circles_word_n2000.json .results[1].test.p"
+  },
+  {
+   "family": "keyprior:z32subsets_z340",
+   "task": "keyprior",
+   "fields": 9,
+   "distinct": 8,
+   "min": 0.017964071856287425,
+   "minWhere": "keyprior/z32subsets_z340.json .perK.8.test.realMaxVsSingleNull.p"
+  },
+  {
+   "family": "keyprior:condnull_word",
+   "task": "keyprior",
+   "fields": 6,
+   "distinct": 6,
+   "min": 0.017994001999333556,
+   "minWhere": "keyprior/condnull_word.json .results.z340.englishFreq.p"
+  },
+  {
+   "family": "synthesis:pvalues",
+   "task": "synthesis",
+   "fields": 1,
+   "distinct": 1,
+   "min": 0.05,
+   "minWhere": "synthesis/pvalues.json .maxP"
+  },
+  {
+   "family": "keyprior:word_parts/fullpin_word_z13.crosshair_null_z340",
+   "task": "keyprior",
+   "fields": 1,
+   "distinct": 1,
+   "min": 0.050594940505949405,
+   "minWhere": "keyprior/word_parts/fullpin_word_z13.crosshair_null_z340.json .results[0].test.p"
+  },
+  {
+   "family": "keyprior:construction",
+   "task": "keyprior",
+   "fields": 22,
+   "distinct": 21,
+   "min": 0.05434728263586821,
+   "minWhere": "keyprior/construction.json .crossKey.shiftMaxCount.p"
+  },
+  {
+   "family": "keyprior:word_parts/fullpin_word_z13.bracket_is_perp_z340",
+   "task": "keyprior",
+   "fields": 1,
+   "distinct": 1,
+   "min": 0.06429357064293571,
+   "minWhere": "keyprior/word_parts/fullpin_word_z13.bracket_is_perp_z340.json .results[0].test.p"
+  },
+  {
+   "family": "keyprior:joint_synthetic",
+   "task": "keyprior",
+   "fields": 5,
+   "distinct": 4,
+   "min": 0.06451612903225806,
+   "minWhere": "keyprior/joint_synthetic.json .problems[4].test.p"
+  },
+  {
+   "family": "nullmodel:windows_check",
+   "task": "nullmodel",
+   "fields": 1,
+   "distinct": 1,
+   "min": 0.07698628747111716,
+   "minWhere": "nullmodel/review/windows_check.json .simpleKeyProfileLikelihood.p"
+  },
+  {
+   "family": "keyprior:z32subsets_z408",
+   "task": "keyprior",
+   "fields": 9,
+   "distinct": 7,
+   "min": 0.07984031936127745,
+   "minWhere": "keyprior/z32subsets_z408.json .perK.8.test.realMaxVsSingleNull.p"
+  },
+  {
+   "family": "keyprior:z32keylevel_z340",
+   "task": "keyprior",
+   "fields": 6,
+   "distinct": 6,
+   "min": 0.08196721311475409,
+   "minWhere": "keyprior/review/z32keylevel_z340.json .perK.8.pMeanLower"
+  },
+  {
+   "family": "keyprior:word_parts/fullpin_word_z13.bracket_is_perp_z408",
+   "task": "keyprior",
+   "fields": 1,
+   "distinct": 1,
+   "min": 0.1810818918108189,
+   "minWhere": "keyprior/word_parts/fullpin_word_z13.bracket_is_perp_z408.json .results[0].test.p"
+  },
+  {
+   "family": "z13names:suspects_review_excl",
+   "task": "z13names",
+   "fields": 48,
+   "distinct": 5,
+   "min": 0.20439780109945027,
+   "minWhere": "z13names/review/suspects_review_excl.json .test.z13.circles_distinct/simple/slips1.persons.p"
+  },
+  {
+   "family": "keyprior:word_parts/fullpin_word_z13.bracket_is_perp_union",
+   "task": "keyprior",
+   "fields": 1,
+   "distinct": 1,
+   "min": 0.2156784321567843,
+   "minWhere": "keyprior/word_parts/fullpin_word_z13.bracket_is_perp_union.json .results[0].test.p"
+  },
+  {
+   "family": "keyprior:z32keylevel_z408",
+   "task": "keyprior",
+   "fields": 6,
+   "distinct": 6,
+   "min": 0.2459016393442623,
+   "minWhere": "keyprior/review/z32keylevel_z408.json .perK.8.pMeanLower"
+  },
+  {
+   "family": "keyprior:word_parts/fullpin_word_z13.canonical_z408",
+   "task": "keyprior",
+   "fields": 1,
+   "distinct": 1,
+   "min": 0.25377462253774624,
+   "minWhere": "keyprior/word_parts/fullpin_word_z13.canonical_z408.json .results[0].test.p"
+  },
+  {
+   "family": "keyprior:fullpin_z32_permute",
+   "task": "keyprior",
+   "fields": 20,
+   "distinct": 20,
+   "min": 0.2817182817182817,
+   "minWhere": "keyprior/fullpin_z32_permute.json .results[19].test.p"
+  },
+  {
+   "family": "keyprior:word_parts/fullpin_word_z13.canonical_union",
+   "task": "keyprior",
+   "fields": 1,
+   "distinct": 1,
+   "min": 0.28957104289571045,
+   "minWhere": "keyprior/word_parts/fullpin_word_z13.canonical_union.json .results[0].test.p"
+  }
+ ],
+ "keypriorAnalyses": 36
+}

@@ -1,0 +1,1025 @@
+{
+ "tool": "tools/nullmodel_windows.py",
+ "created": "2026-10-07T16:51:15",
+ "cache_meta": {
+  "mismatches": 0,
+  "docs": 870
+ },
+ "definitions": {
+  "windows": "all windows of the cipher length inside one document (letters only)",
+  "aligned": "windows that start at a word start and end at a word end",
+  "homophonic": "equal symbols -> equal letters (weak fit)",
+  "simple": "homophonic AND different symbols -> different letters (strict fit)",
+  "distinct": "number of distinct fitting letter strings",
+  "singletons": "distinct fitting strings seen exactly once (Good-Turing: unseen fitting mass ~ singletons/fits)"
+ },
+ "variants": {
+  "z13.bracket_is_perp": {
+   "text": "AENz0K0M0tNAM",
+   "length": 13,
+   "distinct_symbols": 8,
+   "isomorph": "abcdefegehcag",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112021522,
+     "aligned_windows": 6116427,
+     "homophonic": {
+      "fits": 125,
+      "fraction": 1.115857004692366e-06,
+      "distinct": 57,
+      "singletons": 47,
+      "aligned_fits": 14,
+      "aligned_fraction": 2.2889180235454457e-06,
+      "aligned_distinct": 6,
+      "clean_fits": 53,
+      "clean_fraction": 4.7312336998956327e-07,
+      "clean_distinct": 47,
+      "clean_singletons": 42,
+      "clean_aligned_fits": 4,
+      "clean_aligned_fraction": 6.539765781558416e-07,
+      "distinct_letters_over_classes": {
+       "mean": 3.544,
+       "min": 1,
+       "max": 8
+      }
+     },
+     "simple": {
+      "fits": 12,
+      "fraction": 1.0712227245046715e-07,
+      "distinct": 11,
+      "singletons": 10,
+      "aligned_fits": 1,
+      "aligned_fraction": 1.634941445389604e-07,
+      "aligned_distinct": 1
+     }
+    },
+    "heldout": {
+     "windows": 2089476,
+     "aligned_windows": 114709,
+     "homophonic": {
+      "fits": 1,
+      "fraction": 4.785888902289378e-07,
+      "distinct": 1,
+      "singletons": 1,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0,
+      "clean_fits": 1,
+      "clean_fraction": 4.785888902289378e-07,
+      "clean_distinct": 1,
+      "clean_singletons": 1,
+      "clean_aligned_fits": 0,
+      "clean_aligned_fraction": 0.0,
+      "distinct_letters_over_classes": {
+       "mean": 5.0,
+       "min": 5,
+       "max": 5
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.3
+  },
+  "z13.canonical": {
+   "text": "AENz0K0M0[NAM",
+   "length": 13,
+   "distinct_symbols": 8,
+   "isomorph": "abcdefegehcag",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112021522,
+     "aligned_windows": 6116427,
+     "homophonic": {
+      "fits": 125,
+      "fraction": 1.115857004692366e-06,
+      "distinct": 57,
+      "singletons": 47,
+      "aligned_fits": 14,
+      "aligned_fraction": 2.2889180235454457e-06,
+      "aligned_distinct": 6,
+      "clean_fits": 53,
+      "clean_fraction": 4.7312336998956327e-07,
+      "clean_distinct": 47,
+      "clean_singletons": 42,
+      "clean_aligned_fits": 4,
+      "clean_aligned_fraction": 6.539765781558416e-07,
+      "distinct_letters_over_classes": {
+       "mean": 3.544,
+       "min": 1,
+       "max": 8
+      }
+     },
+     "simple": {
+      "fits": 12,
+      "fraction": 1.0712227245046715e-07,
+      "distinct": 11,
+      "singletons": 10,
+      "aligned_fits": 1,
+      "aligned_fraction": 1.634941445389604e-07,
+      "aligned_distinct": 1
+     }
+    },
+    "heldout": {
+     "windows": 2089476,
+     "aligned_windows": 114709,
+     "homophonic": {
+      "fits": 1,
+      "fraction": 4.785888902289378e-07,
+      "distinct": 1,
+      "singletons": 1,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0,
+      "clean_fits": 1,
+      "clean_fraction": 4.785888902289378e-07,
+      "clean_distinct": 1,
+      "clean_singletons": 1,
+      "clean_aligned_fits": 0,
+      "clean_aligned_fraction": 0.0,
+      "distinct_letters_over_classes": {
+       "mean": 5.0,
+       "min": 5,
+       "max": 5
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.3
+  },
+  "z13.circles_distinct": {
+   "text": "AENz0K{M}[NAM",
+   "length": 13,
+   "distinct_symbols": 10,
+   "isomorph": "abcdefghijcah",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112021522,
+     "aligned_windows": 6116427,
+     "homophonic": {
+      "fits": 28336,
+      "fraction": 0.0002529513926797031,
+      "distinct": 20759,
+      "singletons": 18219,
+      "aligned_fits": 1538,
+      "aligned_fraction": 0.0002514539943009211,
+      "aligned_distinct": 882,
+      "clean_fits": 28190,
+      "clean_fraction": 0.00025164807169822243,
+      "clean_distinct": 20683,
+      "clean_singletons": 18155,
+      "clean_aligned_fits": 1513,
+      "clean_aligned_fraction": 0.0002473666406874471,
+      "distinct_letters_over_classes": {
+       "mean": 7.757269904009035,
+       "min": 1,
+       "max": 10
+      }
+     },
+     "simple": {
+      "fits": 1232,
+      "fraction": 1.099788663824796e-05,
+      "distinct": 838,
+      "singletons": 747,
+      "aligned_fits": 68,
+      "aligned_fraction": 1.1117601828649308e-05,
+      "aligned_distinct": 34
+     }
+    },
+    "heldout": {
+     "windows": 2089476,
+     "aligned_windows": 114709,
+     "homophonic": {
+      "fits": 526,
+      "fraction": 0.0002517377562604213,
+      "distinct": 494,
+      "singletons": 474,
+      "aligned_fits": 27,
+      "aligned_fraction": 0.00023537821792535895,
+      "aligned_distinct": 22,
+      "clean_fits": 523,
+      "clean_fraction": 0.00025030198958973446,
+      "clean_distinct": 491,
+      "clean_singletons": 471,
+      "clean_aligned_fits": 27,
+      "clean_aligned_fraction": 0.00023537821792535895,
+      "distinct_letters_over_classes": {
+       "mean": 7.716730038022813,
+       "min": 3,
+       "max": 10
+      }
+     },
+     "simple": {
+      "fits": 22,
+      "fraction": 1.0528955585036631e-05,
+      "distinct": 17,
+      "singletons": 15,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.3
+  },
+  "z13.crosshair_null": {
+   "text": "AEN0K0M0[NAM",
+   "length": 12,
+   "distinct_symbols": 7,
+   "isomorph": "abcdedfdgcaf",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112022375,
+     "aligned_windows": 6129818,
+     "homophonic": {
+      "fits": 127,
+      "fraction": 1.1337020840702582e-06,
+      "distinct": 38,
+      "singletons": 30,
+      "aligned_fits": 16,
+      "aligned_fraction": 2.6101916892149162e-06,
+      "aligned_distinct": 5,
+      "clean_fits": 30,
+      "clean_fraction": 2.678036419063602e-07,
+      "clean_distinct": 27,
+      "clean_singletons": 24,
+      "clean_aligned_fits": 1,
+      "clean_aligned_fraction": 1.6313698057593226e-07,
+      "distinct_letters_over_classes": {
+       "mean": 2.125984251968504,
+       "min": 1,
+       "max": 7
+      }
+     },
+     "simple": {
+      "fits": 7,
+      "fraction": 6.248751644481738e-08,
+      "distinct": 6,
+      "singletons": 5,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    },
+    "heldout": {
+     "windows": 2089493,
+     "aligned_windows": 115665,
+     "homophonic": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0,
+      "clean_fits": 0,
+      "clean_fraction": 0.0,
+      "clean_distinct": 0,
+      "clean_singletons": 0,
+      "clean_aligned_fits": 0,
+      "clean_aligned_fraction": 0.0
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.5
+  },
+  "z13.reversed": {
+   "text": "MAN[0M0K0zNEA",
+   "length": 13,
+   "distinct_symbols": 8,
+   "isomorph": "abcdeaefegchb",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112021522,
+     "aligned_windows": 6116427,
+     "homophonic": {
+      "fits": 165,
+      "fraction": 1.4729312461939233e-06,
+      "distinct": 59,
+      "singletons": 47,
+      "aligned_fits": 10,
+      "aligned_fraction": 1.6349414453896041e-06,
+      "aligned_distinct": 3,
+      "clean_fits": 94,
+      "clean_fraction": 8.391244675286594e-07,
+      "clean_distinct": 50,
+      "clean_singletons": 43,
+      "clean_aligned_fits": 0,
+      "clean_aligned_fraction": 0.0,
+      "distinct_letters_over_classes": {
+       "mean": 4.084848484848485,
+       "min": 1,
+       "max": 8
+      }
+     },
+     "simple": {
+      "fits": 6,
+      "fraction": 5.3561136225233574e-08,
+      "distinct": 4,
+      "singletons": 3,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    },
+    "heldout": {
+     "windows": 2089476,
+     "aligned_windows": 114709,
+     "homophonic": {
+      "fits": 2,
+      "fraction": 9.571777804578755e-07,
+      "distinct": 2,
+      "singletons": 2,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0,
+      "clean_fits": 2,
+      "clean_fraction": 9.571777804578755e-07,
+      "clean_distinct": 2,
+      "clean_singletons": 2,
+      "clean_aligned_fits": 0,
+      "clean_aligned_fraction": 0.0,
+      "distinct_letters_over_classes": {
+       "mean": 6.0,
+       "min": 6,
+       "max": 6
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.3
+  },
+  "z32.bar_I_and_t2_perp": {
+   "text": "C9JI#OktAMf8?ORTGX6FDVj%HCELzPW9",
+   "length": 32,
+   "distinct_symbols": 29,
+   "isomorph": "abcdefghijklmfnopqrstuvwxayzABCb",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112005315,
+     "aligned_windows": 6112677,
+     "homophonic": {
+      "fits": 29678,
+      "fraction": 0.00026496956863163146,
+      "distinct": 29593,
+      "singletons": 29514,
+      "aligned_fits": 1332,
+      "aligned_fraction": 0.00021790780046123819,
+      "aligned_distinct": 1331,
+      "clean_fits": 29475,
+      "clean_fraction": 0.0002631571546403847,
+      "clean_distinct": 29390,
+      "clean_singletons": 29311,
+      "clean_aligned_fits": 1316,
+      "clean_aligned_fraction": 0.00021529028934458665,
+      "distinct_letters_over_classes": {
+       "mean": 14.258609070692096,
+       "min": 3,
+       "max": 20
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    },
+    "heldout": {
+     "windows": 2089153,
+     "aligned_windows": 115086,
+     "homophonic": {
+      "fits": 576,
+      "fraction": 0.0002757098211571867,
+      "distinct": 575,
+      "singletons": 574,
+      "aligned_fits": 23,
+      "aligned_fraction": 0.00019985054654779905,
+      "aligned_distinct": 22,
+      "clean_fits": 571,
+      "clean_fraction": 0.0002733165067374194,
+      "clean_distinct": 570,
+      "clean_singletons": 569,
+      "clean_aligned_fits": 23,
+      "clean_aligned_fraction": 0.00019985054654779905,
+      "distinct_letters_over_classes": {
+       "mean": 14.265625,
+       "min": 11,
+       "max": 19
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.6
+  },
+  "z32.bar_is_serif_I": {
+   "text": "C9JI#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "length": 32,
+   "distinct_symbols": 29,
+   "isomorph": "abcdefghijklmfnopqrstuvwxayzABCb",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112005315,
+     "aligned_windows": 6112677,
+     "homophonic": {
+      "fits": 29678,
+      "fraction": 0.00026496956863163146,
+      "distinct": 29593,
+      "singletons": 29514,
+      "aligned_fits": 1332,
+      "aligned_fraction": 0.00021790780046123819,
+      "aligned_distinct": 1331,
+      "clean_fits": 29475,
+      "clean_fraction": 0.0002631571546403847,
+      "clean_distinct": 29390,
+      "clean_singletons": 29311,
+      "clean_aligned_fits": 1316,
+      "clean_aligned_fraction": 0.00021529028934458665,
+      "distinct_letters_over_classes": {
+       "mean": 14.258609070692096,
+       "min": 3,
+       "max": 20
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    },
+    "heldout": {
+     "windows": 2089153,
+     "aligned_windows": 115086,
+     "homophonic": {
+      "fits": 576,
+      "fraction": 0.0002757098211571867,
+      "distinct": 575,
+      "singletons": 574,
+      "aligned_fits": 23,
+      "aligned_fraction": 0.00019985054654779905,
+      "aligned_distinct": 22,
+      "clean_fits": 571,
+      "clean_fraction": 0.0002733165067374194,
+      "clean_distinct": 570,
+      "clean_singletons": 569,
+      "clean_aligned_fits": 23,
+      "clean_aligned_fraction": 0.00019985054654779905,
+      "distinct_letters_over_classes": {
+       "mean": 14.265625,
+       "min": 11,
+       "max": 19
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 4.1
+  },
+  "z32.canonical": {
+   "text": "C9J|#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "length": 32,
+   "distinct_symbols": 29,
+   "isomorph": "abcdefghijklmfnopqrstuvwxayzABCb",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112005315,
+     "aligned_windows": 6112677,
+     "homophonic": {
+      "fits": 29678,
+      "fraction": 0.00026496956863163146,
+      "distinct": 29593,
+      "singletons": 29514,
+      "aligned_fits": 1332,
+      "aligned_fraction": 0.00021790780046123819,
+      "aligned_distinct": 1331,
+      "clean_fits": 29475,
+      "clean_fraction": 0.0002631571546403847,
+      "clean_distinct": 29390,
+      "clean_singletons": 29311,
+      "clean_aligned_fits": 1316,
+      "clean_aligned_fraction": 0.00021529028934458665,
+      "distinct_letters_over_classes": {
+       "mean": 14.258609070692096,
+       "min": 3,
+       "max": 20
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    },
+    "heldout": {
+     "windows": 2089153,
+     "aligned_windows": 115086,
+     "homophonic": {
+      "fits": 576,
+      "fraction": 0.0002757098211571867,
+      "distinct": 575,
+      "singletons": 574,
+      "aligned_fits": 23,
+      "aligned_fraction": 0.00019985054654779905,
+      "aligned_distinct": 22,
+      "clean_fits": 571,
+      "clean_fraction": 0.0002733165067374194,
+      "clean_distinct": 570,
+      "clean_singletons": 569,
+      "clean_aligned_fits": 23,
+      "clean_aligned_fraction": 0.00019985054654779905,
+      "distinct_letters_over_classes": {
+       "mean": 14.265625,
+       "min": 11,
+       "max": 19
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.3
+  },
+  "z32.t2_is_perp": {
+   "text": "C9J|#OktAMf8?ORTGX6FDVj%HCELzPW9",
+   "length": 32,
+   "distinct_symbols": 29,
+   "isomorph": "abcdefghijklmfnopqrstuvwxayzABCb",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112005315,
+     "aligned_windows": 6112677,
+     "homophonic": {
+      "fits": 29678,
+      "fraction": 0.00026496956863163146,
+      "distinct": 29593,
+      "singletons": 29514,
+      "aligned_fits": 1332,
+      "aligned_fraction": 0.00021790780046123819,
+      "aligned_distinct": 1331,
+      "clean_fits": 29475,
+      "clean_fraction": 0.0002631571546403847,
+      "clean_distinct": 29390,
+      "clean_singletons": 29311,
+      "clean_aligned_fits": 1316,
+      "clean_aligned_fraction": 0.00021529028934458665,
+      "distinct_letters_over_classes": {
+       "mean": 14.258609070692096,
+       "min": 3,
+       "max": 20
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    },
+    "heldout": {
+     "windows": 2089153,
+     "aligned_windows": 115086,
+     "homophonic": {
+      "fits": 576,
+      "fraction": 0.0002757098211571867,
+      "distinct": 575,
+      "singletons": 574,
+      "aligned_fits": 23,
+      "aligned_fraction": 0.00019985054654779905,
+      "aligned_distinct": 22,
+      "clean_fits": 571,
+      "clean_fraction": 0.0002733165067374194,
+      "clean_distinct": 570,
+      "clean_singletons": 569,
+      "clean_aligned_fits": 23,
+      "clean_aligned_fraction": 0.00019985054654779905,
+      "distinct_letters_over_classes": {
+       "mean": 14.265625,
+       "min": 11,
+       "max": 19
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.2
+  },
+  "z32.tau_distinct": {
+   "text": "C9J|#Ok[AMf8?ORTGX6FDV$%HCELzPW9",
+   "length": 32,
+   "distinct_symbols": 29,
+   "isomorph": "abcdefghijklmfnopqrstuvwxayzABCb",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112005315,
+     "aligned_windows": 6112677,
+     "homophonic": {
+      "fits": 29678,
+      "fraction": 0.00026496956863163146,
+      "distinct": 29593,
+      "singletons": 29514,
+      "aligned_fits": 1332,
+      "aligned_fraction": 0.00021790780046123819,
+      "aligned_distinct": 1331,
+      "clean_fits": 29475,
+      "clean_fraction": 0.0002631571546403847,
+      "clean_distinct": 29390,
+      "clean_singletons": 29311,
+      "clean_aligned_fits": 1316,
+      "clean_aligned_fraction": 0.00021529028934458665,
+      "distinct_letters_over_classes": {
+       "mean": 14.258609070692096,
+       "min": 3,
+       "max": 20
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    },
+    "heldout": {
+     "windows": 2089153,
+     "aligned_windows": 115086,
+     "homophonic": {
+      "fits": 576,
+      "fraction": 0.0002757098211571867,
+      "distinct": 575,
+      "singletons": 574,
+      "aligned_fits": 23,
+      "aligned_fraction": 0.00019985054654779905,
+      "aligned_distinct": 22,
+      "clean_fits": 571,
+      "clean_fraction": 0.0002733165067374194,
+      "clean_distinct": 570,
+      "clean_singletons": 569,
+      "clean_aligned_fits": 23,
+      "clean_aligned_fraction": 0.00019985054654779905,
+      "distinct_letters_over_classes": {
+       "mean": 14.265625,
+       "min": 11,
+       "max": 19
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.0
+  },
+  "z32.triangles_merged": {
+   "text": "C9J|#Ok[AMf9?ORTGX6FDVj%HCELzPW9",
+   "length": 32,
+   "distinct_symbols": 28,
+   "isomorph": "abcdefghijkblfmnopqrstuvwaxyzABb",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112005315,
+     "aligned_windows": 6112677,
+     "homophonic": {
+      "fits": 2445,
+      "fraction": 2.1829321224622243e-05,
+      "distinct": 2437,
+      "singletons": 2429,
+      "aligned_fits": 111,
+      "aligned_fraction": 1.815898337176985e-05,
+      "aligned_distinct": 111,
+      "clean_fits": 2422,
+      "clean_fraction": 2.162397382659921e-05,
+      "clean_distinct": 2414,
+      "clean_singletons": 2406,
+      "clean_aligned_fits": 111,
+      "clean_aligned_fraction": 1.815898337176985e-05,
+      "distinct_letters_over_classes": {
+       "mean": 14.015950920245398,
+       "min": 8,
+       "max": 19
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    },
+    "heldout": {
+     "windows": 2089153,
+     "aligned_windows": 115086,
+     "homophonic": {
+      "fits": 27,
+      "fraction": 1.2923897866743125e-05,
+      "distinct": 27,
+      "singletons": 27,
+      "aligned_fits": 1,
+      "aligned_fraction": 8.689154197730393e-06,
+      "aligned_distinct": 1,
+      "clean_fits": 27,
+      "clean_fraction": 1.2923897866743125e-05,
+      "clean_distinct": 27,
+      "clean_singletons": 27,
+      "clean_aligned_fits": 1,
+      "clean_aligned_fraction": 8.689154197730393e-06,
+      "distinct_letters_over_classes": {
+       "mean": 14.037037037037036,
+       "min": 11,
+       "max": 17
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 2.2
+  },
+  "z32.reversed": {
+   "text": "9WPzLECH%jVDF6XGTRO?8fMA[kO#|J9C",
+   "length": 32,
+   "distinct_symbols": 29,
+   "isomorph": "abcdefghijklmnopqrstuvwxyzsABCag",
+   "pinned": false,
+   "splits": {
+    "train": {
+     "windows": 112005315,
+     "aligned_windows": 6112677,
+     "homophonic": {
+      "fits": 29743,
+      "fraction": 0.00026554989823474,
+      "distinct": 29648,
+      "singletons": 29562,
+      "aligned_fits": 1622,
+      "aligned_fraction": 0.0002653501894505468,
+      "aligned_distinct": 1616,
+      "clean_fits": 29525,
+      "clean_fraction": 0.00026360356202739126,
+      "clean_distinct": 29431,
+      "clean_singletons": 29346,
+      "clean_aligned_fits": 1615,
+      "clean_aligned_fraction": 0.00026420502833701177,
+      "distinct_letters_over_classes": {
+       "mean": 14.254849880644185,
+       "min": 3,
+       "max": 20
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    },
+    "heldout": {
+     "windows": 2089153,
+     "aligned_windows": 115086,
+     "homophonic": {
+      "fits": 537,
+      "fraction": 0.00025704196868300215,
+      "distinct": 537,
+      "singletons": 537,
+      "aligned_fits": 24,
+      "aligned_fraction": 0.00020853970074552944,
+      "aligned_distinct": 24,
+      "clean_fits": 532,
+      "clean_fraction": 0.0002546486542632349,
+      "clean_distinct": 532,
+      "clean_singletons": 532,
+      "clean_aligned_fits": 22,
+      "clean_aligned_fraction": 0.00019116139235006863,
+      "distinct_letters_over_classes": {
+       "mean": 14.191806331471136,
+       "min": 10,
+       "max": 19
+      }
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.1
+  },
+  "z13.letters_literal": {
+   "text": "AENz0K0M0[NAM",
+   "length": 13,
+   "distinct_symbols": 8,
+   "isomorph": "abcdefegehcag",
+   "pinned": true,
+   "splits": {
+    "train": {
+     "windows": 112021522,
+     "aligned_windows": 6116427,
+     "homophonic": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0,
+      "clean_fits": 0,
+      "clean_fraction": 0.0,
+      "clean_distinct": 0,
+      "clean_singletons": 0,
+      "clean_aligned_fits": 0,
+      "clean_aligned_fraction": 0.0
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    },
+    "heldout": {
+     "windows": 2089476,
+     "aligned_windows": 114709,
+     "homophonic": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0,
+      "clean_fits": 0,
+      "clean_fraction": 0.0,
+      "clean_distinct": 0,
+      "clean_singletons": 0,
+      "clean_aligned_fits": 0,
+      "clean_aligned_fraction": 0.0
+     },
+     "simple": {
+      "fits": 0,
+      "fraction": 0.0,
+      "distinct": 0,
+      "singletons": 0,
+      "aligned_fits": 0,
+      "aligned_fraction": 0.0,
+      "aligned_distinct": 0
+     }
+    }
+   },
+   "seconds": 3.1
+  }
+ },
+ "scrambled_isomorphs": {
+  "z13_hom_fraction": {
+   "real": 4.7312336998956327e-07,
+   "scrambled_median": 3.704645255578656e-07,
+   "scrambled_p05": 8.480513235661985e-09,
+   "scrambled_p95": 1.6617342513878716e-06,
+   "fraction_scrambled_ge_real": 0.42,
+   "n": 100
+  },
+  "z13_simple_fraction": {
+   "real": 1.0712227245046715e-07,
+   "scrambled_median": 4.4634280187694644e-08,
+   "scrambled_p05": 0.0,
+   "scrambled_p95": 2.41471455815428e-07,
+   "fraction_scrambled_ge_real": 0.26,
+   "n": 100
+  },
+  "z32_hom_fraction": {
+   "real": 0.0002733165067374194,
+   "scrambled_median": 0.0002498620254237004,
+   "scrambled_p05": 0.00011535775503278124,
+   "scrambled_p95": 0.00029296561812370853,
+   "fraction_scrambled_ge_real": 0.24666666666666667,
+   "n": 300
+  },
+  "z32_simple_fraction": {
+   "real": 0.0,
+   "scrambled_median": 0.0,
+   "scrambled_p05": 0.0,
+   "scrambled_p95": 0.0,
+   "fraction_scrambled_ge_real": 1.0,
+   "n": 300
+  }
+ }
+}

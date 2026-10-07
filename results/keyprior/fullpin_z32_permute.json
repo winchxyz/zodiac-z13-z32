@@ -1,0 +1,1997 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:19:36.843Z",
+ "argv": "--ciphers z32.canonical,z32.t2_is_perp,z32.bar_is_serif_I,z32.bar_I_and_t2_perp,z32.triangles_merged,z32.tau_distinct,z32.reversed --keys z408,z340,union --null 1000 --null-kind permute --threads 4 --seed 1970 --max-free 4 --out results/keyprior/fullpin_z32_permute.json",
+ "statistic": "objective",
+ "objective": "anneal.js objective: 5-gram joint log10 + entropy penalty 0.5 + 1.0 x wordfast log10 P (common vocab); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 1000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 2811.022,
+ "results": [
+  {
+   "cipher": "z32.canonical",
+   "key": "z408",
+   "text": "C9J|#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "9J#OkAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 25,
+   "nFree": 4,
+   "carriedOver": "?IF?LNI?WHDA?NGOAOESNBXLT?ETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "HIFULNINWHDAINGOAOESNBXLTHETDIEI",
+     "words": "HIFULNINWHDA IN GOAOESNBXL THE TDIEI",
+     "wordLogp": -49.091122343517966,
+     "unknownWords": [
+      "HIFULNINWHDA",
+      "GOAOESNBXL",
+      "TDIEI"
+     ],
+     "ngram5": -253.5782389640808
+    },
+    "score": -301.83835135608746,
+    "top5": [
+     {
+      "plaintext": "HIFULNINWHDAINGOAOESNBXLTHETDIEI",
+      "score": -301.83835135608746
+     },
+     {
+      "plaintext": "HIFULNINWHDAWNGOAOESNBXLTHETDIEI",
+      "score": -303.6223203342728
+     },
+     {
+      "plaintext": "HIFULNINWHDAMNGOAOESNBXLTHETDIEI",
+      "score": -304.1271505416908
+     },
+     {
+      "plaintext": "HIFULNINWHDARNGOAOESNBXLTHETDIEI",
+      "score": -304.58468556984144
+     },
+     {
+      "plaintext": "HIFELNINWHDAINGOAOESNBXLTHETDIEI",
+      "score": -305.7000429502113
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -278.99278624387705,
+     "sd": 24.381664797496327,
+     "min": -365.36648669592125,
+     "q05": -318.9736906108201,
+     "q25": -295.4799903288393,
+     "median": -279.04075926470136,
+     "q75": -261.85834410429123,
+     "q95": -240.79186591014286,
+     "q99": -224.25288870983152,
+     "max": -212.54963115665927
+    },
+    "topNull": [
+     {
+      "index": 919,
+      "score": -212.54963115665927,
+      "plaintext": "ITFLOODEDYENTOPLECLESNATEISOKANT"
+     },
+     {
+      "index": 24,
+      "score": -213.61278641358743,
+      "plaintext": "UTALLERBAGVEREETINERSPEYOUSSTOHT"
+     },
+     {
+      "index": 781,
+      "score": -216.1172079914952,
+      "plaintext": "SIKHEOUTREFEBOXSENGISLATESTEINLI"
+     },
+     {
+      "index": 235,
+      "score": -217.84408368598704,
+      "plaintext": "IPETHSAINTAXISTINANOTEEWRISTIECP"
+     },
+     {
+      "index": 313,
+      "score": -218.7061363427528,
+      "plaintext": "ESMARRINGSOBEREENFEHLEYSEEKOICIS"
+     }
+    ]
+   },
+   "test": {
+    "ge": 830,
+    "n": 1000,
+    "p": 0.8301698301698301,
+    "percentile": 17.000000000000004,
+    "z": -0.9369977522845915
+   }
+  },
+  {
+   "cipher": "z32.canonical",
+   "key": "z340",
+   "text": "C9J|#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "C9J|#OkAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 27,
+   "nFree": 2,
+   "carriedOver": "YNSETAI?DOBP?AORTRDFNOPTIYRGAIWN",
+   "real": {
+    "best": {
+     "plaintext": "YNSETAINDOBPRAORTRDFNOPTIYRGAIWN",
+     "words": "YNSETAINDOBPRA OR TRDFNOPTIYRGAIWN",
+     "wordLogp": -50.59433618560546,
+     "unknownWords": [
+      "YNSETAINDOBPRA",
+      "TRDFNOPTIYRGAIWN"
+     ],
+     "ngram5": -268.09112453460693
+    },
+    "score": -318.27137480557025,
+    "top5": [
+     {
+      "plaintext": "YNSETAINDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -318.27137480557025
+     },
+     {
+      "plaintext": "YNSETAILDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -321.2119535046822
+     },
+     {
+      "plaintext": "YNSETAINDOBPIAORTRDFNOPTIYRGAIWN",
+      "score": -321.3624880152947
+     },
+     {
+      "plaintext": "YNSETAIRDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -322.1480537492043
+     },
+     {
+      "plaintext": "YNSETAINDOBPEAORTRDFNOPTIYRGAIWN",
+      "score": -322.33941112339556
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -297.5853142008089,
+     "sd": 24.759195061602338,
+     "min": -388.69079094760633,
+     "q05": -339.9016642910771,
+     "q25": -313.9559339081116,
+     "median": -295.9621971490665,
+     "q75": -281.41458959993366,
+     "q95": -257.9965360641702,
+     "q99": -247.10975753291083,
+     "max": -227.95168530627728
+    },
+    "topNull": [
+     {
+      "index": 900,
+      "score": -227.95168530627728,
+      "plaintext": "NREWBETHATEEREMOTSOITRAYINIURSPR"
+     },
+     {
+      "index": 120,
+      "score": -233.40889357236858,
+      "plaintext": "OBSENEDASITAKEEVETALNUREIOSIRRYB"
+     },
+     {
+      "index": 714,
+      "score": -233.48707144987904,
+      "plaintext": "NDYITTELLATLETIRTSTOFOHWANDIISGD"
+     },
+     {
+      "index": 622,
+      "score": -234.08688864462724,
+      "plaintext": "OTERSTRANETSATPUEBNDHOFUSORWARDT"
+     },
+     {
+      "index": 719,
+      "score": -235.7870166640709,
+      "plaintext": "DTYGNESTRYCREEIRETINRAWNEDOSTITT"
+     }
+    ]
+   },
+   "test": {
+    "ge": 801,
+    "n": 1000,
+    "p": 0.8011988011988012,
+    "percentile": 19.899999999999995,
+    "z": -0.8354900291909005
+   }
+  },
+  {
+   "cipher": "z32.canonical",
+   "key": "union",
+   "text": "C9J|#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "C9J|#OkAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 27,
+   "nFree": 2,
+   "carriedOver": "YIFELNI?WHDA?NGOAOESNBXLTYETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "YIFELNINWHDAINGOAOESNBXLTYETDIEI",
+     "words": "YIFELNINWHDA IN GOAOESNBXLT YET DIE I",
+     "wordLogp": -50.11825657314987,
+     "unknownWords": [
+      "YIFELNINWHDA",
+      "GOAOESNBXLT"
+     ],
+     "ngram5": -263.3105754852295
+    },
+    "score": -312.6532782455613,
+    "top5": [
+     {
+      "plaintext": "YIFELNINWHDAINGOAOESNBXLTYETDIEI",
+      "score": -312.6532782455613
+     },
+     {
+      "plaintext": "YIFELNINWHDAWNGOAOESNBXLTYETDIEI",
+      "score": -314.4372472237467
+     },
+     {
+      "plaintext": "YIFELNINWHDAMNGOAOESNBXLTYETDIEI",
+      "score": -314.9420774311647
+     },
+     {
+      "plaintext": "YIFELNINWHDARNGOAOESNBXLTYETDIEI",
+      "score": -315.3996124593153
+     },
+     {
+      "plaintext": "YIFELNINWHDAONGOAOESNBXLTYETDIEI",
+      "score": -320.1035155025584
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -292.9847156975793,
+     "sd": 25.714020724642577,
+     "min": -378.1825004342708,
+     "q05": -336.6453535149792,
+     "q25": -309.5593973133601,
+     "median": -292.05135628857533,
+     "q75": -275.19150927992575,
+     "q95": -252.5648639895328,
+     "q99": -236.88441006011814,
+     "max": -214.84056456683135
+    },
+    "topNull": [
+     {
+      "index": 298,
+      "score": -214.84056456683135,
+      "plaintext": "MIOINIMEAROUTINESIXDAYANEMHEFABI"
+     },
+     {
+      "index": 594,
+      "score": -228.171391056415,
+      "plaintext": "RTENDEFLEETTHERINSLSAPAMTRHOWEAT"
+     },
+     {
+      "index": 496,
+      "score": -231.87444791138984,
+      "plaintext": "SIDELRANYHOCARETSIREILEATSNTDIBI"
+     },
+     {
+      "index": 919,
+      "score": -233.3583669122638,
+      "plaintext": "MIETDEYESRHERENLEEHERTSIMMOADORI"
+     },
+     {
+      "index": 556,
+      "score": -233.40311686596985,
+      "plaintext": "ISYINENTEESILETSLEOFYONDAIEITAES"
+     }
+    ]
+   },
+   "test": {
+    "ge": 786,
+    "n": 1000,
+    "p": 0.7862137862137862,
+    "percentile": 21.4,
+    "z": -0.7648964259071696
+   }
+  },
+  {
+   "cipher": "z32.t2_is_perp",
+   "key": "z408",
+   "text": "C9J|#OktAMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "9J#OktAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 26,
+   "nFree": 3,
+   "carriedOver": "?IF?LNIRWHDA?NGOAOESNBXLT?ETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "HIFULNIRWHDAINGOAOESNBXLTHETDIEI",
+     "words": "HIFULNIRWHDA IN GOAOESNBXL THE TDIEI",
+     "wordLogp": -49.165216639019675,
+     "unknownWords": [
+      "HIFULNIRWHDA",
+      "GOAOESNBXL",
+      "TDIEI"
+     ],
+     "ngram5": -269.32752895355225
+    },
+    "score": -317.6617356410606,
+    "top5": [
+     {
+      "plaintext": "HIFULNIRWHDAINGOAOESNBXLTHETDIEI",
+      "score": -317.6617356410606
+     },
+     {
+      "plaintext": "HIFULNIRWHDAWNGOAOESNBXLTHETDIEI",
+      "score": -319.44570461924593
+     },
+     {
+      "plaintext": "HIFULNIRWHDAMNGOAOESNBXLTHETDIEI",
+      "score": -319.95053482666395
+     },
+     {
+      "plaintext": "HIFULNIRWHDARNGOAOESNBXLTHETDIEI",
+      "score": -320.4080698548146
+     },
+     {
+      "plaintext": "HIFELNIRWHDAINGOAOESNBXLTHETDIEI",
+      "score": -322.0506698957069
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -290.176994959226,
+     "sd": 25.768885180629027,
+     "min": -394.6027652298568,
+     "q05": -332.7101331258794,
+     "q25": -307.4554396971828,
+     "median": -289.33378573838394,
+     "q75": -272.67617988912946,
+     "q95": -248.8617176800119,
+     "q99": -235.84301023078015,
+     "max": -218.76949750126846
+    },
+    "topNull": [
+     {
+      "index": 781,
+      "score": -218.76949750126846,
+      "plaintext": "SIKHEOUAREFEBOXSENGISLATESTEINLI"
+     },
+     {
+      "index": 24,
+      "score": -222.19461231459002,
+      "plaintext": "UTALLERIAGVEREETINERSPEYOUSSTOHT"
+     },
+     {
+      "index": 665,
+      "score": -224.25288870983152,
+      "plaintext": "AASHEERINNOANENDTUFLOORFMATLATEA"
+     },
+     {
+      "index": 113,
+      "score": -225.86676857183483,
+      "plaintext": "LSUNOHEVAEFIGHTLEDSLOTRABLEPONGS"
+     },
+     {
+      "index": 542,
+      "score": -227.25905677561508,
+      "plaintext": "TWONTREIFANDERTHELHNYTALKTOEMENW"
+     }
+    ]
+   },
+   "test": {
+    "ge": 860,
+    "n": 1000,
+    "p": 0.8601398601398601,
+    "percentile": 14.000000000000002,
+    "z": -1.0665863303428973
+   }
+  },
+  {
+   "cipher": "z32.t2_is_perp",
+   "key": "z340",
+   "text": "C9J|#OktAMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "C9J|#OktAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 28,
+   "nFree": 1,
+   "carriedOver": "YNSETAILDOBP?AORTRDFNOPTIYRGAIWN",
+   "real": {
+    "best": {
+     "plaintext": "YNSETAILDOBPRAORTRDFNOPTIYRGAIWN",
+     "words": "YNSETAILDOBPRA OR TRDFNOPTIYRGAIWN",
+     "wordLogp": -50.80123082175963,
+     "unknownWords": [
+      "YNSETAILDOBPRA",
+      "TRDFNOPTIYRGAIWN"
+     ],
+     "ngram5": -270.8248085975647
+    },
+    "score": -321.2119535046822,
+    "top5": [
+     {
+      "plaintext": "YNSETAILDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -321.2119535046822
+     },
+     {
+      "plaintext": "YNSETAILDOBPIAORTRDFNOPTIYRGAIWN",
+      "score": -324.3030667144066
+     },
+     {
+      "plaintext": "YNSETAILDOBPEAORTRDFNOPTIYRGAIWN",
+      "score": -325.2799898225075
+     },
+     {
+      "plaintext": "YNSETAILDOBPLAORTRDFNOPTIYRGAIWN",
+      "score": -325.42047415554583
+     },
+     {
+      "plaintext": "YNSETAILDOBPHAORTRDFNOPTIYRGAIWN",
+      "score": -326.2678481179482
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -308.5564754189257,
+     "sd": 26.402755265336765,
+     "min": -414.69446891181684,
+     "q05": -353.6864286466563,
+     "q25": -324.9301859670427,
+     "median": -307.33808874733535,
+     "q75": -290.39368745343296,
+     "q95": -266.38376246403584,
+     "q99": -256.49009823428696,
+     "max": -234.08688864462724
+    },
+    "topNull": [
+     {
+      "index": 622,
+      "score": -234.08688864462724,
+      "plaintext": "OTERSTRANETSATPUEBNDHOFUSORWARDT"
+     },
+     {
+      "index": 900,
+      "score": -237.37744986529069,
+      "plaintext": "NREWBETWATEENEMOTSOITRAYINIURSPR"
+     },
+     {
+      "index": 714,
+      "score": -238.89775386861257,
+      "plaintext": "NDYITTESLATLETIRTSTOFOHWANDIISGD"
+     },
+     {
+      "index": 491,
+      "score": -247.8489255649767,
+      "plaintext": "UWAUROPELYESDOGDITSEINNTRUTSIEAW"
+     },
+     {
+      "index": 120,
+      "score": -249.92516456750866,
+      "plaintext": "OBSENEDBSITAKEEVETALNUREIOSIRRYB"
+     }
+    ]
+   },
+   "test": {
+    "ge": 708,
+    "n": 1000,
+    "p": 0.7082917082917083,
+    "percentile": 29.200000000000003,
+    "z": -0.4793241447180107
+   }
+  },
+  {
+   "cipher": "z32.t2_is_perp",
+   "key": "union",
+   "text": "C9J|#OktAMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "C9J|#OktAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 28,
+   "nFree": 1,
+   "carriedOver": "YIFELNIRWHDA?NGOAOESNBXLTYETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "YIFELNIRWHDAINGOAOESNBXLTYETDIEI",
+     "words": "YIFELNIRWHDA IN GOAOESNBXLT YET DIE I",
+     "wordLogp": -50.19235086865158,
+     "unknownWords": [
+      "YIFELNIRWHDA",
+      "GOAOESNBXLT"
+     ],
+     "ngram5": -279.5871081352234
+    },
+    "score": -329.0039051910569,
+    "top5": [
+     {
+      "plaintext": "YIFELNIRWHDAINGOAOESNBXLTYETDIEI",
+      "score": -329.0039051910569
+     },
+     {
+      "plaintext": "YIFELNIRWHDAWNGOAOESNBXLTYETDIEI",
+      "score": -330.7878741692423
+     },
+     {
+      "plaintext": "YIFELNIRWHDAMNGOAOESNBXLTYETDIEI",
+      "score": -331.2927043766603
+     },
+     {
+      "plaintext": "YIFELNIRWHDARNGOAOESNBXLTYETDIEI",
+      "score": -331.7502394048109
+     },
+     {
+      "plaintext": "YIFELNIRWHDAONGOAOESNBXLTYETDIEI",
+      "score": -336.45414244805403
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -303.56145013797743,
+     "sd": 26.63148157486676,
+     "min": -388.80243926083585,
+     "q05": -347.77085809156665,
+     "q25": -320.87879766418155,
+     "median": -302.8198855989829,
+     "q75": -283.9877793353379,
+     "q95": -262.0222880901134,
+     "q99": -246.69579800220242,
+     "max": -220.98405893443083
+    },
+    "topNull": [
+     {
+      "index": 298,
+      "score": -220.98405893443083,
+      "plaintext": "MIOINIMTAROUTINESIXDAYANEMHEFABI"
+     },
+     {
+      "index": 919,
+      "score": -233.3583669122638,
+      "plaintext": "MIETDEYESRHERENLEEHERTSIMMOADORI"
+     },
+     {
+      "index": 556,
+      "score": -236.15275498592084,
+      "plaintext": "ISYINENREESILETSLEOFYONDAIEITAES"
+     },
+     {
+      "index": 606,
+      "score": -237.43994733021398,
+      "plaintext": "TGTINEREFIANCEEIFDOILLNAOTESSEEG"
+     },
+     {
+      "index": 594,
+      "score": -239.41135956883926,
+      "plaintext": "RTENDEFEEETTHERINSLSAPAMTRHOWEAT"
+     }
+    ]
+   },
+   "test": {
+    "ge": 819,
+    "n": 1000,
+    "p": 0.8191808191808192,
+    "percentile": 18.100000000000005,
+    "z": -0.9553525958199253
+   }
+  },
+  {
+   "cipher": "z32.bar_is_serif_I",
+   "key": "z408",
+   "text": "C9JI#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "9JI#OkAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 26,
+   "nFree": 3,
+   "carriedOver": "?IFTLNI?WHDA?NGOAOESNBXLT?ETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "HIFTLNINWHDAINGOAOESNBXLTHETDIEI",
+     "words": "HIFTLNINWHDA IN GOAOESNBXL THE TDIEI",
+     "wordLogp": -48.59220226047201,
+     "unknownWords": [
+      "HIFTLNINWHDA",
+      "GOAOESNBXL",
+      "TDIEI"
+     ],
+     "ngram5": -269.25592708587646
+    },
+    "score": -317.01711939483715,
+    "top5": [
+     {
+      "plaintext": "HIFTLNINWHDAINGOAOESNBXLTHETDIEI",
+      "score": -317.01711939483715
+     },
+     {
+      "plaintext": "HIFTLNINWHDAWNGOAOESNBXLTHETDIEI",
+      "score": -318.8010883730225
+     },
+     {
+      "plaintext": "HIFTLNINWHDAMNGOAOESNBXLTHETDIEI",
+      "score": -319.3059185804405
+     },
+     {
+      "plaintext": "HIFTLNINWHDARNGOAOESNBXLTHETDIEI",
+      "score": -319.76345360859113
+     },
+     {
+      "plaintext": "HIFTLNINWHDANNGOAOESNBXLTHETDIEI",
+      "score": -324.33820559129964
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -288.5473972668773,
+     "sd": 25.468981350094985,
+     "min": -376.5083055344951,
+     "q05": -330.8147253130097,
+     "q25": -304.3998011699568,
+     "median": -288.3440423177782,
+     "q75": -270.19970081521274,
+     "q95": -248.60707670073776,
+     "q99": -234.5072945432177,
+     "max": -213.61278641358743
+    },
+    "topNull": [
+     {
+      "index": 24,
+      "score": -213.61278641358743,
+      "plaintext": "UTALLERBAGVEREETINERSPEYOUSSTOHT"
+     },
+     {
+      "index": 235,
+      "score": -221.82124372487644,
+      "plaintext": "IPEOHSAINTAXISTINANOTEEWRISTIECP"
+     },
+     {
+      "index": 633,
+      "score": -221.88110195640903,
+      "plaintext": "EAKEPROTHERRORSULGELEMSTHETIBNAA"
+     },
+     {
+      "index": 814,
+      "score": -221.89431265340863,
+      "plaintext": "SELFIIVEYTOSTINCHWESIAFRESONTOAE"
+     },
+     {
+      "index": 781,
+      "score": -224.5956422293503,
+      "plaintext": "SIKREOUTREFEBOXSENGISLATESTEINLI"
+     }
+    ]
+   },
+   "test": {
+    "ge": 873,
+    "n": 1000,
+    "p": 0.8731268731268731,
+    "percentile": 12.7,
+    "z": -1.1178194265650792
+   }
+  },
+  {
+   "cipher": "z32.bar_is_serif_I",
+   "key": "z340",
+   "text": "C9JI#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "C9J#OkAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 26,
+   "nFree": 3,
+   "carriedOver": "YNS?TAI?DOBP?AORTRDFNOPTIYRGAIWN",
+   "real": {
+    "best": {
+     "plaintext": "YNSSTAINDOBPRAORTRDFNOPTIYRGAIWN",
+     "words": "YNSSTAINDOBPRA OR TRDFNOPTIYRGAIWN",
+     "wordLogp": -50.9019369222235,
+     "unknownWords": [
+      "YNSSTAINDOBPRA",
+      "TRDFNOPTIYRGAIWN"
+     ],
+     "ngram5": -266.6791977882385
+    },
+    "score": -317.1670487958199,
+    "top5": [
+     {
+      "plaintext": "YNSSTAINDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -317.1670487958199
+     },
+     {
+      "plaintext": "YNSETAINDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -318.27137480557025
+     },
+     {
+      "plaintext": "YNSITAINDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -318.9259077237948
+     },
+     {
+      "plaintext": "YNSSTAIRDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -319.4084452229744
+     },
+     {
+      "plaintext": "YNSATAINDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -319.49241410959803
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -287.96354412452524,
+     "sd": 23.96590273928075,
+     "min": -387.5771143996022,
+     "q05": -328.4231047553608,
+     "q25": -303.5374887556413,
+     "median": -286.5347586921446,
+     "q75": -271.0795081858345,
+     "q95": -250.90444501311762,
+     "q99": -239.15643460527912,
+     "max": -219.77673377926442
+    },
+    "topNull": [
+     {
+      "index": 900,
+      "score": -219.77673377926442,
+      "plaintext": "NREDBETHATEEREMOTSOITRAYINIURSPR"
+     },
+     {
+      "index": 719,
+      "score": -222.20630577616197,
+      "plaintext": "DTYONESTRYCREEIRETINRAWNEDOSTITT"
+     },
+     {
+      "index": 714,
+      "score": -227.90204911344043,
+      "plaintext": "NDYETTELLATLETIRTSTOFOHWANDIISGD"
+     },
+     {
+      "index": 120,
+      "score": -230.3971567410325,
+      "plaintext": "OBSONEDASITATEEVETALNUREIOSIRRYB"
+     },
+     {
+      "index": 622,
+      "score": -234.08688864462724,
+      "plaintext": "OTERSTRANETSATPUEBNDHOFUSORWARDT"
+     }
+    ]
+   },
+   "test": {
+    "ge": 878,
+    "n": 1000,
+    "p": 0.8781218781218781,
+    "percentile": 12.2,
+    "z": -1.2185439033527128
+   }
+  },
+  {
+   "cipher": "z32.bar_is_serif_I",
+   "key": "union",
+   "text": "C9JI#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "C9JI#OkAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 27,
+   "nFree": 2,
+   "carriedOver": "YIFTLNI?WHDA?NGOAOESNBXLTYETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "YIFTLNINWHDAINGOAOESNBXLTYETDIEI",
+     "words": "YIFTLNINWHDA IN GOAOESNBXLT YET DIE I",
+     "wordLogp": -50.258121256301116,
+     "unknownWords": [
+      "YIFTLNINWHDA",
+      "GOAOESNBXLT"
+     ],
+     "ngram5": -276.88300037384033
+    },
+    "score": -326.3655678173234,
+    "top5": [
+     {
+      "plaintext": "YIFTLNINWHDAINGOAOESNBXLTYETDIEI",
+      "score": -326.3655678173234
+     },
+     {
+      "plaintext": "YIFTLNINWHDAWNGOAOESNBXLTYETDIEI",
+      "score": -328.14953679550877
+     },
+     {
+      "plaintext": "YIFTLNINWHDAMNGOAOESNBXLTYETDIEI",
+      "score": -328.6543670029268
+     },
+     {
+      "plaintext": "YIFTLNINWHDARNGOAOESNBXLTYETDIEI",
+      "score": -329.11190203107736
+     },
+     {
+      "plaintext": "YIFTLNINWHDAONGOAOESNBXLTYETDIEI",
+      "score": -333.8158050743205
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -293.5747272661819,
+     "sd": 25.60336190244128,
+     "min": -369.04537997606593,
+     "q05": -338.3338616956975,
+     "q25": -310.18025420804156,
+     "median": -291.9468101264994,
+     "q75": -275.7265556023481,
+     "q95": -254.14125930774898,
+     "q99": -239.78491302879058,
+     "max": -216.05685921309447
+    },
+    "topNull": [
+     {
+      "index": 298,
+      "score": -216.05685921309447,
+      "plaintext": "MIORNIMEAROUTINESIXDAYANEMHEFABI"
+     },
+     {
+      "index": 594,
+      "score": -228.171391056415,
+      "plaintext": "RTENDEFLEETTHERINSLSAPAMTRHOWEAT"
+     },
+     {
+      "index": 532,
+      "score": -230.65778781160242,
+      "plaintext": "STXINEWHESLAVENENOEAENELYSKIRINT"
+     },
+     {
+      "index": 18,
+      "score": -231.73323745541825,
+      "plaintext": "RSENSIDESUNFLIESEGEDOMRYARAHLECS"
+     },
+     {
+      "index": 606,
+      "score": -232.49924636287213,
+      "plaintext": "TGTONEREFIANCEEIFDOILLNAOTESSEEG"
+     }
+    ]
+   },
+   "test": {
+    "ge": 898,
+    "n": 1000,
+    "p": 0.8981018981018981,
+    "percentile": 10.199999999999998,
+    "z": -1.2807240188256235
+   }
+  },
+  {
+   "cipher": "z32.bar_I_and_t2_perp",
+   "key": "z408",
+   "text": "C9JI#OktAMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "9JI#OktAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 27,
+   "nFree": 2,
+   "carriedOver": "?IFTLNIRWHDA?NGOAOESNBXLT?ETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "HIFTLNIRWHDAINGOAOESNBXLTHETDIEI",
+     "words": "HIFTLNIRWHDA IN GOAOESNBXL THE TDIEI",
+     "wordLogp": -48.666296555973716,
+     "unknownWords": [
+      "HIFTLNIRWHDA",
+      "GOAOESNBXL",
+      "TDIEI"
+     ],
+     "ngram5": -284.4441285133362
+    },
+    "score": -332.2794151177986,
+    "top5": [
+     {
+      "plaintext": "HIFTLNIRWHDAINGOAOESNBXLTHETDIEI",
+      "score": -332.2794151177986
+     },
+     {
+      "plaintext": "HIFTLNIRWHDAWNGOAOESNBXLTHETDIEI",
+      "score": -334.0633840959839
+     },
+     {
+      "plaintext": "HIFTLNIRWHDAMNGOAOESNBXLTHETDIEI",
+      "score": -334.56821430340193
+     },
+     {
+      "plaintext": "HIFTLNIRWHDARNGOAOESNBXLTHETDIEI",
+      "score": -335.02574933155256
+     },
+     {
+      "plaintext": "HIFTLNIRWHDANNGOAOESNBXLTHETDIEI",
+      "score": -339.60050131426107
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -299.5444652498279,
+     "sd": 26.811324248276847,
+     "min": -399.7634228306038,
+     "q05": -343.64400129208855,
+     "q25": -317.35073500140606,
+     "median": -299.24845573482116,
+     "q75": -281.2007805346132,
+     "q95": -257.7363480181786,
+     "q99": -240.10965250973086,
+     "max": -222.19461231459002
+    },
+    "topNull": [
+     {
+      "index": 24,
+      "score": -222.19461231459002,
+      "plaintext": "UTALLERIAGVEREETINERSPEYOUSSTOHT"
+     },
+     {
+      "index": 781,
+      "score": -229.9963985796194,
+      "plaintext": "SIKREOUAREFEBOXSENGISLATESTEINLI"
+     },
+     {
+      "index": 113,
+      "score": -234.63607237051036,
+      "plaintext": "LSUROHEVAEFIGHTLEDSLOTRABLEPONGS"
+     },
+     {
+      "index": 665,
+      "score": -235.37438761439705,
+      "plaintext": "EASYEERINNOANENDTUFLOORFMETLATEA"
+     },
+     {
+      "index": 410,
+      "score": -236.24369079963486,
+      "plaintext": "ALFTITEAOLSINTEHORTCITSPLASEERBL"
+     }
+    ]
+   },
+   "test": {
+    "ge": 890,
+    "n": 1000,
+    "p": 0.8901098901098901,
+    "percentile": 10.999999999999998,
+    "z": -1.2209374503415114
+   }
+  },
+  {
+   "cipher": "z32.bar_I_and_t2_perp",
+   "key": "z340",
+   "text": "C9JI#OktAMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "C9J#OktAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 27,
+   "nFree": 2,
+   "carriedOver": "YNS?TAILDOBP?AORTRDFNOPTIYRGAIWN",
+   "real": {
+    "best": {
+     "plaintext": "YNSETAILDOBPRAORTRDFNOPTIYRGAIWN",
+     "words": "YNSETAILDOBPRA OR TRDFNOPTIYRGAIWN",
+     "wordLogp": -50.80123082175963,
+     "unknownWords": [
+      "YNSETAILDOBPRA",
+      "TRDFNOPTIYRGAIWN"
+     ],
+     "ngram5": -270.8248085975647
+    },
+    "score": -321.2119535046822,
+    "top5": [
+     {
+      "plaintext": "YNSETAILDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -321.2119535046822
+     },
+     {
+      "plaintext": "YNSSTAILDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -321.2574344712502
+     },
+     {
+      "plaintext": "YNSATAILDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -322.88393138229907
+     },
+     {
+      "plaintext": "YNSITAILDOBPRAORTRDFNOPTIYRGAIWN",
+      "score": -324.26027987778247
+     },
+     {
+      "plaintext": "YNSETAILDOBPIAORTRDFNOPTIYRGAIWN",
+      "score": -324.3030667144066
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -299.10177573075003,
+     "sd": 25.646519525662406,
+     "min": -413.5807923638127,
+     "q05": -343.15693374424586,
+     "q25": -315.0240523694454,
+     "median": -297.72061409863625,
+     "q75": -280.7937540037551,
+     "q95": -259.6548582693092,
+     "q99": -246.3890757839088,
+     "max": -229.43370784221608
+    },
+    "topNull": [
+     {
+      "index": 900,
+      "score": -229.43370784221608,
+      "plaintext": "NREDBETWATEENEMOTSOITRAYINIURSPR"
+     },
+     {
+      "index": 714,
+      "score": -232.0505397658675,
+      "plaintext": "NDYETTESLATLETIRTSTOFOHWANDIISGD"
+     },
+     {
+      "index": 622,
+      "score": -234.08688864462724,
+      "plaintext": "OTERSTRANETSATPUEBNDHOFUSORWARDT"
+     },
+     {
+      "index": 491,
+      "score": -240.54316298320714,
+      "plaintext": "UWASROPELYESSOGDITSEINNTRUTSIEAW"
+     },
+     {
+      "index": 2,
+      "score": -242.80625887637956,
+      "plaintext": "OGAMBLIENNELILWAUTSOYPASTORSHTIG"
+     }
+    ]
+   },
+   "test": {
+    "ge": 812,
+    "n": 1000,
+    "p": 0.8121878121878122,
+    "percentile": 18.799999999999994,
+    "z": -0.8621122157261252
+   }
+  },
+  {
+   "cipher": "z32.bar_I_and_t2_perp",
+   "key": "union",
+   "text": "C9JI#OktAMf8?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "C9JI#OktAMf8RTGX6FDVj%HELzPW",
+   "nPinned": 28,
+   "nFree": 1,
+   "carriedOver": "YIFTLNIRWHDA?NGOAOESNBXLTYETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "YIFTLNIRWHDAINGOAOESNBXLTYETDIEI",
+     "words": "YIFTLNIRWHDA IN GOAOESNBXLT YET DIE I",
+     "wordLogp": -50.332215551802825,
+     "unknownWords": [
+      "YIFTLNIRWHDA",
+      "GOAOESNBXLT"
+     ],
+     "ngram5": -292.07120180130005
+    },
+    "score": -341.6278635402848,
+    "top5": [
+     {
+      "plaintext": "YIFTLNIRWHDAINGOAOESNBXLTYETDIEI",
+      "score": -341.6278635402848
+     },
+     {
+      "plaintext": "YIFTLNIRWHDAWNGOAOESNBXLTYETDIEI",
+      "score": -343.4118325184702
+     },
+     {
+      "plaintext": "YIFTLNIRWHDAMNGOAOESNBXLTYETDIEI",
+      "score": -343.9166627258882
+     },
+     {
+      "plaintext": "YIFTLNIRWHDARNGOAOESNBXLTYETDIEI",
+      "score": -344.3741977540388
+     },
+     {
+      "plaintext": "YIFTLNIRWHDAONGOAOESNBXLTYETDIEI",
+      "score": -349.07810079728193
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -304.09673871408154,
+     "sd": 26.523822163106654,
+     "min": -380.78133802449247,
+     "q05": -350.2317510799022,
+     "q25": -321.7571169377447,
+     "median": -303.29839425950047,
+     "q75": -284.8521496082076,
+     "q95": -262.7270793104818,
+     "q99": -247.28400012409597,
+     "max": -222.13178773520445
+    },
+    "topNull": [
+     {
+      "index": 298,
+      "score": -222.13178773520445,
+      "plaintext": "MIORNIMTAROUTINESIXDAYANEMHEFABI"
+     },
+     {
+      "index": 606,
+      "score": -232.49924636287213,
+      "plaintext": "TGTONEREFIANCEEIFDOILLNAOTESSEEG"
+     },
+     {
+      "index": 18,
+      "score": -237.01664018797055,
+      "plaintext": "RSENSIDISUNFLIESEGEDOMRYARAHLECS"
+     },
+     {
+      "index": 919,
+      "score": -239.08606972897357,
+      "plaintext": "MIEODEYESRHERENLEEHERTSIMMOADORI"
+     },
+     {
+      "index": 532,
+      "score": -239.29697322009145,
+      "plaintext": "STXINEWNESLAVENENOEAENELYSKIRINT"
+     }
+    ]
+   },
+   "test": {
+    "ge": 914,
+    "n": 1000,
+    "p": 0.9140859140859141,
+    "percentile": 8.599999999999996,
+    "z": -1.4149968505823884
+   }
+  },
+  {
+   "cipher": "z32.triangles_merged",
+   "key": "z408",
+   "text": "C9J|#Ok[AMf9?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "9J#OkAMfRTGX6FDVj%HELzPW",
+   "nPinned": 24,
+   "nFree": 4,
+   "carriedOver": "?IF?LNI?WHDI?NGOAOESNBXLT?ETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "HIFULNINWHDIANGOAOESNBXLTHETDIEI",
+     "words": "HIFULNINWHDI ANGOAOESNBXL THE TDIEI",
+     "wordLogp": -49.670108037934554,
+     "unknownWords": [
+      "HIFULNINWHDI",
+      "ANGOAOESNBXL",
+      "TDIEI"
+     ],
+     "ngram5": -252.7007279396057
+    },
+    "score": -301.76008248328833,
+    "top5": [
+     {
+      "plaintext": "HIFULNINWHDIANGOAOESNBXLTHETDIEI",
+      "score": -301.76008248328833
+     },
+     {
+      "plaintext": "HIFELNINWHDIANGOAOESNBXLTHETDIEI",
+      "score": -305.62177407741217
+     },
+     {
+      "plaintext": "HIFULNINWHDIENGOAOESNBXLTHETDIEI",
+      "score": -306.89609944820074
+     },
+     {
+      "plaintext": "HIFULNINWHDIDNGOAOESNBXLTHETDIEI",
+      "score": -307.02129403151554
+     },
+     {
+      "plaintext": "HIFALNINWHDIANGOAOESNBXLTHETDIEI",
+      "score": -307.5375077724424
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -278.8926854833028,
+     "sd": 24.71638983246691,
+     "min": -375.38466815583547,
+     "q05": -319.5893383925333,
+     "q25": -295.3326203002942,
+     "median": -277.60369892704335,
+     "q75": -261.4402189376893,
+     "q95": -240.10134176458297,
+     "q99": -227.33939332289742,
+     "max": -207.99585917965177
+    },
+    "topNull": [
+     {
+      "index": 919,
+      "score": -207.99585917965177,
+      "plaintext": "ITFLOODEDYETTOPLECLESNATEISOKANT"
+     },
+     {
+      "index": 235,
+      "score": -216.25217475359915,
+      "plaintext": "IPETHSAINTAPOSTINANOTEEWRISTIECP"
+     },
+     {
+      "index": 313,
+      "score": -217.68362951302262,
+      "plaintext": "ESMARRINGSOSCREENFEHLEYSEEKOICIS"
+     },
+     {
+      "index": 24,
+      "score": -219.3137636363317,
+      "plaintext": "UTALLERBAGVTHEETINERSPEYOUSSTOHT"
+     },
+     {
+      "index": 781,
+      "score": -219.3831929388236,
+      "plaintext": "SIKHEOUTREFINOXSENGISLATESTEINLI"
+     }
+    ]
+   },
+   "test": {
+    "ge": 824,
+    "n": 1000,
+    "p": 0.8241758241758241,
+    "percentile": 17.600000000000005,
+    "z": -0.9251916301282573
+   }
+  },
+  {
+   "cipher": "z32.triangles_merged",
+   "key": "z340",
+   "text": "C9J|#Ok[AMf9?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "C9J|#OkAMfRTGX6FDVj%HELzPW",
+   "nPinned": 26,
+   "nFree": 2,
+   "carriedOver": "YNSETAI?DOBN?AORTRDFNOPTIYRGAIWN",
+   "real": {
+    "best": {
+     "plaintext": "YNSETAINDOBNIAORTRDFNOPTIYRGAIWN",
+     "words": "YNSETAINDOBNIA OR TRDFNOPTIYRGAIWN",
+     "wordLogp": -49.911929044873645,
+     "unknownWords": [
+      "YNSETAINDOBNIA",
+      "TRDFNOPTIYRGAIWN"
+     ],
+     "ngram5": -264.74183082580566
+    },
+    "score": -314.23967395603717,
+    "top5": [
+     {
+      "plaintext": "YNSETAINDOBNIAORTRDFNOPTIYRGAIWN",
+      "score": -314.23967395603717
+     },
+     {
+      "plaintext": "YNSETAINDOBNEAORTRDFNOPTIYRGAIWN",
+      "score": -315.2831020194298
+     },
+     {
+      "plaintext": "YNSETAINDOBNOAORTRDFNOPTIYRGAIWN",
+      "score": -317.07677648842395
+     },
+     {
+      "plaintext": "YNSETAILDOBNIAORTRDFNOPTIYRGAIWN",
+      "score": -317.11772690594256
+     },
+     {
+      "plaintext": "YNSETAILDOBNEAORTRDFNOPTIYRGAIWN",
+      "score": -318.1611549693352
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -297.45071055507265,
+     "sd": 24.84846785110426,
+     "min": -398.03022256823294,
+     "q05": -339.5230005135234,
+     "q25": -314.3810310059501,
+     "median": -296.0472910457907,
+     "q75": -280.50537933862495,
+     "q95": -257.46252731067796,
+     "q99": -243.905483369882,
+     "max": -225.39055994491605
+    },
+    "topNull": [
+     {
+      "index": 900,
+      "score": -225.39055994491605,
+      "plaintext": "NREWBETHATERHEMOTSOITRAYINIURSPR"
+     },
+     {
+      "index": 719,
+      "score": -234.34945832468588,
+      "plaintext": "DTYGNESORYCTHEIRETINRAWNEDOSTITT"
+     },
+     {
+      "index": 622,
+      "score": -236.82232927063313,
+      "plaintext": "OTERSTRONETTITPUEBNDHOFUSORWARDT"
+     },
+     {
+      "index": 120,
+      "score": -237.3673171917707,
+      "plaintext": "OBSENEDASITBREEVETALNUREIOSIRRYB"
+     },
+     {
+      "index": 848,
+      "score": -240.6234545358193,
+      "plaintext": "TIRNIBORNCAINBADDELULOSONTISBRAI"
+     }
+    ]
+   },
+   "test": {
+    "ge": 746,
+    "n": 1000,
+    "p": 0.7462537462537463,
+    "percentile": 25.4,
+    "z": -0.6756538673356643
+   }
+  },
+  {
+   "cipher": "z32.triangles_merged",
+   "key": "union",
+   "text": "C9J|#Ok[AMf9?ORTGX6FDVj%HCELzPW9",
+   "pinnedSymbols": "C9J|#OkAMfRTGX6FDVj%HELzPW",
+   "nPinned": 26,
+   "nFree": 2,
+   "carriedOver": "YIFELNI?WHDI?NGOAOESNBXLTYETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "YIFELNINWHDIANGOAOESNBXLTYETDIEI",
+     "words": "YIFELNINWHDIA NGOAOESNBXLT YET DIE I",
+     "wordLogp": -50.76491467555929,
+     "unknownWords": [
+      "YIFELNINWHDIA",
+      "NGOAOESNBXLT"
+     ],
+     "ngram5": -262.4330644607544
+    },
+    "score": -312.5981411417564,
+    "top5": [
+     {
+      "plaintext": "YIFELNINWHDIANGOAOESNBXLTYETDIEI",
+      "score": -312.5981411417564
+     },
+     {
+      "plaintext": "YIFELNINWHDIDNGOAOESNBXLTYETDIEI",
+      "score": -317.9708381661636
+     },
+     {
+      "plaintext": "YIFELNINWHDIENGOAOESNBXLTYETDIEI",
+      "score": -317.9909923035747
+     },
+     {
+      "plaintext": "YIFELNINWHDIONGOAOESNBXLTYETDIEI",
+      "score": -318.98749005471296
+     },
+     {
+      "plaintext": "YIFELNINWHDIGNGOAOESNBXLTYETDIEI",
+      "score": -319.64556759913853
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -293.22376153820125,
+     "sd": 25.34285208035694,
+     "min": -378.1825004342708,
+     "q05": -338.23301460039585,
+     "q25": -310.2270665670415,
+     "median": -292.5251673361398,
+     "q75": -275.05269737251615,
+     "q95": -253.18983441552103,
+     "q99": -237.9075026906059,
+     "max": -227.18128058013895
+    },
+    "topNull": [
+     {
+      "index": 298,
+      "score": -227.18128058013895,
+      "plaintext": "MIOINIMPAROILINESIXDAYANEMHEFABI"
+     },
+     {
+      "index": 594,
+      "score": -228.171391056415,
+      "plaintext": "RTENDEFLEETTHERINSLSAPAMTRHOWEAT"
+     },
+     {
+      "index": 556,
+      "score": -232.78310923180695,
+      "plaintext": "ISYINENTEESSHETSLEOFYONDAIEITAES"
+     },
+     {
+      "index": 900,
+      "score": -233.85371228433922,
+      "plaintext": "ATPLEERESTITHESTEIESAISALANMTOWT"
+     },
+     {
+      "index": 670,
+      "score": -233.9452401114303,
+      "plaintext": "YSLNEHSHEEISTHOSEYSEANTURYTHSOFS"
+     }
+    ]
+   },
+   "test": {
+    "ge": 784,
+    "n": 1000,
+    "p": 0.7842157842157842,
+    "percentile": 21.599999999999998,
+    "z": -0.7644908924269063
+   }
+  },
+  {
+   "cipher": "z32.tau_distinct",
+   "key": "z408",
+   "text": "C9J|#Ok[AMf8?ORTGX6FDV$%HCELzPW9",
+   "pinnedSymbols": "9J#OkAMf8RTGX6FDV%HELzPW",
+   "nPinned": 24,
+   "nFree": 5,
+   "carriedOver": "?IF?LNI?WHDA?NGOAOESNB?LT?ETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "HIFULNINWHDAINGOAOESNBELTHETDIEI",
+     "words": "HIFULNINWHDA IN GOAOESNBEL THE TDIEI",
+     "wordLogp": -47.12661547897024,
+     "unknownWords": [
+      "HIFULNINWHDA",
+      "GOAOESNBEL",
+      "TDIEI"
+     ],
+     "ngram5": -215.11701679229736
+    },
+    "score": -261.4126223197563,
+    "top5": [
+     {
+      "plaintext": "HIFULNINWHDAINGOAOESNBELTHETDIEI",
+      "score": -261.4126223197563
+     },
+     {
+      "plaintext": "HIFULNINWHDAINGOAOESNBALTHETDIEI",
+      "score": -262.97748635917736
+     },
+     {
+      "plaintext": "HIFULNINWHDAWNGOAOESNBELTHETDIEI",
+      "score": -263.1965912979416
+     },
+     {
+      "plaintext": "HIFULNINWHDAMNGOAOESNBELTHETDIEI",
+      "score": -263.70142150535963
+     },
+     {
+      "plaintext": "SIFULNINWHDAINGOAOESNBELTSETDIEI",
+      "score": -264.0981583417904
+     }
+    ]
+   },
+   "null": {
+    "n": 0,
+    "kind": "permute",
+    "summary": {
+     "n": 0,
+     "finite": 0
+    },
+    "topNull": []
+   },
+   "test": null
+  },
+  {
+   "cipher": "z32.tau_distinct",
+   "key": "z340",
+   "text": "C9J|#Ok[AMf8?ORTGX6FDV$%HCELzPW9",
+   "pinnedSymbols": "C9J|#OkAMf8RTGX6FDV%HELzPW",
+   "nPinned": 26,
+   "nFree": 3,
+   "carriedOver": "YNSETAI?DOBP?AORTRDFNO?TIYRGAIWN",
+   "real": {
+    "best": {
+     "plaintext": "YNSETAINDOBPRAORTRDFNONTIYRGAIWN",
+     "words": "YNSETA IN DOBPRAORTRDF NON TIYRGAIWN",
+     "wordLogp": -49.69861961799916,
+     "unknownWords": [
+      "YNSETA",
+      "DOBPRAORTRDF",
+      "TIYRGAIWN"
+     ],
+     "ngram5": -263.2999129295349
+    },
+    "score": -312.4266259339562,
+    "top5": [
+     {
+      "plaintext": "YNSETAINDOBPRAORTRDFNONTIYRGAIWN",
+      "score": -312.4266259339562
+     },
+     {
+      "plaintext": "YNSETAINDOBPRAORTRDFNOTTIYRGAIWN",
+      "score": -312.6041821905895
+     },
+     {
+      "plaintext": "YNSETAINDOBPRAORTRDFNOUTIYRGAIWN",
+      "score": -313.08590805913286
+     },
+     {
+      "plaintext": "YNSETAINDOBPRAORTRDFNORTIYRGAIWN",
+      "score": -315.31120665315973
+     },
+     {
+      "plaintext": "YNSETAINDOBPIAORTRDFNONTIYRGAIWN",
+      "score": -315.5177391436806
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -286.41404005939546,
+     "sd": 23.810097205887974,
+     "min": -385.28203914319744,
+     "q05": -326.35693203527,
+     "q25": -302.32777204964697,
+     "median": -284.88586542628445,
+     "q75": -270.12136042825614,
+     "q95": -250.2870268273797,
+     "q99": -236.55510304041505,
+     "max": -221.98296289923692
+    },
+    "topNull": [
+     {
+      "index": 714,
+      "score": -221.98296289923692,
+      "plaintext": "NDYITTELLATLETIRTSTOFORWANDIISGD"
+     },
+     {
+      "index": 705,
+      "score": -223.74270215120046,
+      "plaintext": "MFLATESEVILATESREWAUNOFARMOTYETF"
+     },
+     {
+      "index": 900,
+      "score": -227.95168530627728,
+      "plaintext": "NREWBETHATEEREMOTSOITRAYINIURSPR"
+     },
+     {
+      "index": 120,
+      "score": -229.27843807844158,
+      "plaintext": "OBSENEDASITAKEEVETALNUTEIOSIRRYB"
+     },
+     {
+      "index": 719,
+      "score": -229.45300587833745,
+      "plaintext": "DTYGNESTRYCREEIRETINRAINEDOSTITT"
+     }
+    ]
+   },
+   "test": {
+    "ge": 870,
+    "n": 1000,
+    "p": 0.8701298701298701,
+    "percentile": 13,
+    "z": -1.0925022963840778
+   }
+  },
+  {
+   "cipher": "z32.tau_distinct",
+   "key": "union",
+   "text": "C9J|#Ok[AMf8?ORTGX6FDV$%HCELzPW9",
+   "pinnedSymbols": "C9J|#OkAMf8RTGX6FDV%HELzPW",
+   "nPinned": 26,
+   "nFree": 3,
+   "carriedOver": "YIFELNI?WHDA?NGOAOESNB?LTYETDIEI",
+   "real": {
+    "best": {
+     "plaintext": "YIFELNINWHDAINGOAOESNBELTYETDIEI",
+     "words": "YIFELNINWHDA IN GOAOESN BELT YET DIE I",
+     "wordLogp": -46.97812826158523,
+     "unknownWords": [
+      "YIFELNINWHDA",
+      "GOAOESN"
+     ],
+     "ngram5": -222.91584873199463
+    },
+    "score": -269.1620766361437,
+    "top5": [
+     {
+      "plaintext": "YIFELNINWHDAINGOAOESNBELTYETDIEI",
+      "score": -269.1620766361437
+     },
+     {
+      "plaintext": "YIFELNINWHDAWNGOAOESNBELTYETDIEI",
+      "score": -270.9460456143291
+     },
+     {
+      "plaintext": "YIFELNINWHDARNGOAOESNBELTYETDIEI",
+      "score": -271.43028062391335
+     },
+     {
+      "plaintext": "YIFELNINWHDAMNGOAOESNBELTYETDIEI",
+      "score": -271.4508758217471
+     },
+     {
+      "plaintext": "YIFELNINWHDAINGOAOESNBALTYETDIEI",
+      "score": -271.9723029276063
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -282.2097681558106,
+     "sd": 24.616975696708927,
+     "min": -374.23781546758494,
+     "q05": -325.12329863613587,
+     "q25": -297.97060738558196,
+     "median": -281.5723719808735,
+     "q75": -264.0434935376249,
+     "q95": -244.95367540298025,
+     "q99": -227.63659008016248,
+     "max": -211.6918711480477
+    },
+    "topNull": [
+     {
+      "index": 298,
+      "score": -211.6918711480477,
+      "plaintext": "MIOINIMEAROUTINESIXDAYONEMHEFABI"
+     },
+     {
+      "index": 409,
+      "score": -222.16584906899374,
+      "plaintext": "KNINHEIREFOGUESTILSEETANSKRATYAN"
+     },
+     {
+      "index": 594,
+      "score": -222.72855576480592,
+      "plaintext": "RTENDEFLEETTHERINSLSAPIMTRHOWEAT"
+     },
+     {
+      "index": 296,
+      "score": -223.1579931311898,
+      "plaintext": "ITLEORISHIFTEREDAENTASEMYILYATLT"
+     },
+     {
+      "index": 900,
+      "score": -223.68936281321726,
+      "plaintext": "ATPLEERESTITHESTEIESAIDALANMTOWT"
+     }
+    ]
+   },
+   "test": {
+    "ge": 316,
+    "n": 1000,
+    "p": 0.3166833166833167,
+    "percentile": 68.39999999999999,
+    "z": 0.5300282081933915
+   }
+  },
+  {
+   "cipher": "z32.reversed",
+   "key": "z408",
+   "text": "9WPzLECH%jVDF6XGTRO?8fMA[kO#|J9C",
+   "pinnedSymbols": "9WPzLEH%jVDF6XGTRO8fMAk#J",
+   "nPinned": 25,
+   "nFree": 4,
+   "carriedOver": "IEIDTE?TLXBNSEOAOGN?ADHW?INL?FI?",
+   "real": {
+    "best": {
+     "plaintext": "IEIDTENTLXBNSEOAOGNEADHWAINLYFIN",
+     "words": "IEIDTENTLXBNSEOA OGNEADHWAINLYF IN",
+     "wordLogp": -49.156570068681155,
+     "unknownWords": [
+      "IEIDTENTLXBNSEOA",
+      "OGNEADHWAINLYF"
+     ],
+     "ngram5": -272.3991003036499
+    },
+    "score": -321.55567037233106,
+    "top5": [
+     {
+      "plaintext": "IEIDTENTLXBNSEOAOGNEADHWAINLYFIN",
+      "score": -321.55567037233106
+     },
+     {
+      "plaintext": "IEIDTENTLXBNSEOAOGNEADHWHINLYFIN",
+      "score": -322.85283779271833
+     },
+     {
+      "plaintext": "IEIDTESTLXBNSEOAOGNEADHWAINLYFIS",
+      "score": -323.6027221934695
+     },
+     {
+      "plaintext": "IEIDTENTLXBNSEOAOGNHADHWAINLYFIN",
+      "score": -324.09054827552245
+     },
+     {
+      "plaintext": "IEIDTENTLXBNSEOAOGNOADHWAINLYFIN",
+      "score": -324.38491450914137
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -278.1331003767353,
+     "sd": 24.180414985335844,
+     "min": -368.2870545565972,
+     "q05": -317.7708347253841,
+     "q25": -294.1291754166374,
+     "median": -277.78724994688173,
+     "q75": -260.95467766112256,
+     "q95": -240.73290587497962,
+     "q99": -225.99414590270374,
+     "max": -209.95808978457086
+    },
+    "topNull": [
+     {
+      "index": 410,
+      "score": -209.95808978457086,
+      "plaintext": "LBREESALPSTICTROHETHISLOVETINFLA"
+     },
+     {
+      "index": 921,
+      "score": -212.30285914802812,
+      "plaintext": "SATDIFFLINUNTOROREFULWILLEFERESF"
+     },
+     {
+      "index": 639,
+      "score": -216.5887097980435,
+      "plaintext": "ABOWERSCONDELSEAIENTSHAIRLNSAGAS"
+     },
+     {
+      "index": 113,
+      "score": -217.00430438977162,
+      "plaintext": "SGNOPENBARTOLSDELTHEIFEAREHOWUSN"
+     },
+     {
+      "index": 235,
+      "score": -217.5136562865447,
+      "plaintext": "PCEITSORWEETONANITSEXATNEASHEEPO"
+     }
+    ]
+   },
+   "test": {
+    "ge": 961,
+    "n": 1000,
+    "p": 0.961038961038961,
+    "percentile": 3.9000000000000035,
+    "z": -1.795774391048677
+   }
+  },
+  {
+   "cipher": "z32.reversed",
+   "key": "z340",
+   "text": "9WPzLECH%jVDF6XGTRO?8fMA[kO#|J9C",
+   "pinnedSymbols": "9WPzLECH%jVDF6XGTRO8fMAk#|J",
+   "nPinned": 27,
+   "nFree": 2,
+   "carriedOver": "NWIAGRYITPONFDRTROA?PBOD?IATESNY",
+   "real": {
+    "best": {
+     "plaintext": "NWIAGRYITPONFDRTROAMPBODYIATESNY",
+     "words": "NWIAGRYITPONFDRTRO AMP BODY IATESNY",
+     "wordLogp": -48.55050527237964,
+     "unknownWords": [
+      "NWIAGRYITPONFDRTRO",
+      "IATESNY"
+     ],
+     "ngram5": -232.3099226951599
+    },
+    "score": -280.6195016123174,
+    "top5": [
+     {
+      "plaintext": "NWIAGRYITPONFDRTROAMPBODYIATESNY",
+      "score": -280.6195016123174
+     },
+     {
+      "plaintext": "NWIAGRYITPONFDRTROARPBODYIATESNY",
+      "score": -281.74569681495467
+     },
+     {
+      "plaintext": "NWIAGRYITPONFDRTROASPBODYIATESNY",
+      "score": -285.925759108961
+     },
+     {
+      "plaintext": "NWIAGRYITPONFDRTROALPBODYIATESNY",
+      "score": -287.1026301702861
+     },
+     {
+      "plaintext": "NWIAGRYITPONFDRTROAMPBODDIATESNY",
+      "score": -287.57059682778606
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -296.36079998893035,
+     "sd": 25.01781848177964,
+     "min": -374.92467271264474,
+     "q05": -336.9276901229195,
+     "q25": -313.7247924739771,
+     "median": -296.4688167991946,
+     "q75": -278.24808326395527,
+     "q95": -256.28625212459895,
+     "q99": -240.0397462072832,
+     "max": -225.8459199251104
+    },
+    "topNull": [
+     {
+      "index": 805,
+      "score": -225.8459199251104,
+      "plaintext": "UASENGELEYOTOVEDARINOCTPERITEBUE"
+     },
+     {
+      "index": 120,
+      "score": -228.4147864417747,
+      "plaintext": "BYRRISOIERUNLATEVEERATISIDENESBO"
+     },
+     {
+      "index": 719,
+      "score": -232.110897587895,
+      "plaintext": "TTITSODENWARNITERIEORCYRESENGYTD"
+     },
+     {
+      "index": 824,
+      "score": -233.121788071063,
+      "plaintext": "INGSOPSWANATSDETLUNGASTHEDNBYEIS"
+     },
+     {
+      "index": 21,
+      "score": -234.52410156795224,
+      "plaintext": "TNLERWIWASDOIIIRLFAGREEDAYANODTI"
+     }
+    ]
+   },
+   "test": {
+    "ge": 281,
+    "n": 1000,
+    "p": 0.2817182817182817,
+    "percentile": 71.89999999999999,
+    "z": 0.6292034770368683
+   }
+  },
+  {
+   "cipher": "z32.reversed",
+   "key": "union",
+   "text": "9WPzLECH%jVDF6XGTRO?8fMA[kO#|J9C",
+   "pinnedSymbols": "9WPzLECH%jVDF6XGTRO8fMAk#|J",
+   "nPinned": 27,
+   "nFree": 2,
+   "carriedOver": "IEIDTEYTLXBNSEOAOGN?ADHW?INLEFIY",
+   "real": {
+    "best": {
+     "plaintext": "IEIDTEYTLXBNSEOAOGNEADHWAINLEFIY",
+     "words": "IEIDTEYTLXBNSEOA OGNEADHWAINLEFIY",
+     "wordLogp": -50.49910228500569,
+     "unknownWords": [
+      "IEIDTEYTLXBNSEOA",
+      "OGNEADHWAINLEFIY"
+     ],
+     "ngram5": -307.6181721687317
+    },
+    "score": -358.11727445373737,
+    "top5": [
+     {
+      "plaintext": "IEIDTEYTLXBNSEOAOGNEADHWAINLEFIY",
+      "score": -358.11727445373737
+     },
+     {
+      "plaintext": "IEIDTEYTLXBNSEOAOGNEADHWEINLEFIY",
+      "score": -358.33195122320814
+     },
+     {
+      "plaintext": "IEIDTEYTLXBNSEOAOGNEADHWHINLEFIY",
+      "score": -358.4628780389806
+     },
+     {
+      "plaintext": "IEIDTEYTLXBNSEOAOGNHADHWAINLEFIY",
+      "score": -360.43465596117954
+     },
+     {
+      "plaintext": "IEIDTEYTLXBNSEOAOGNHADHWHINLEFIY",
+      "score": -360.78025954642277
+     }
+    ]
+   },
+   "null": {
+    "n": 1000,
+    "kind": "permute",
+    "summary": {
+     "n": 1000,
+     "finite": 1000,
+     "mean": -292.5673018294155,
+     "sd": 24.77319047518139,
+     "min": -376.9319975214226,
+     "q05": -333.1459662173801,
+     "q25": -309.30122614661957,
+     "median": -292.0815528117602,
+     "q75": -275.0667374536314,
+     "q95": -253.61665155246226,
+     "q99": -240.1506330902191,
+     "max": -229.96873357411081
+    },
+    "topNull": [
+     {
+      "index": 568,
+      "score": -229.96873357411081,
+      "plaintext": "ITTWAISNOAINTEEASAIDENIEREISTNIS"
+     },
+     {
+      "index": 496,
+      "score": -234.33876364901315,
+      "plaintext": "IBIDTNSTAELIERISTERICOHYEARLEDIS"
+     },
+     {
+      "index": 436,
+      "score": -234.83003127442748,
+      "plaintext": "RESEESNILIWASOONIANEDSCUTENLAERN"
+     },
+     {
+      "index": 228,
+      "score": -235.60033887122987,
+      "plaintext": "EDSFORELEUSAYIEGVANCEONROWNPOSEE"
+     },
+     {
+      "index": 20,
+      "score": -237.38255758301997,
+      "plaintext": "GTANLOINTSBYNNOMDEOFMESATIOFARGI"
+     }
+    ]
+   },
+   "test": {
+    "ge": 994,
+    "n": 1000,
+    "p": 0.994005994005994,
+    "percentile": 0.6000000000000005,
+    "z": -2.6460044655932395
+   }
+  }
+ ]
+}

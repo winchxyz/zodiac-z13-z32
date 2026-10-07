@@ -1,0 +1,2843 @@
+{
+ "tool": "tools/z32search_grammar.js",
+ "created": "2026-10-07T16:04:52.155Z",
+ "grammar": {
+  "leads": [
+   "",
+   "GO",
+   "SET",
+   "IS",
+   "IT IS",
+   "ITS",
+   "AT",
+   "BOMB",
+   "BOMB IS",
+   "BOMB AT",
+   "THE BOMB IS",
+   "BOMB IS AT",
+   "ESTIMATE",
+   "MEASURE",
+   "DIG",
+   "DIG AT",
+   "FROM MAG N",
+   "FROM MAG NORTH",
+   "FROM ZERO",
+   "FROM DIABLO",
+   "FROM MT DIABLO",
+   "FROM PEAK",
+   "MAG N",
+   "CLOCKWISE",
+   "LOOK",
+   "FIND IT",
+   "OK",
+   "OKAY",
+   "SET ZERO",
+   "TURN",
+   "MOVE",
+   "WALK",
+   "TRY",
+   "GO OUT",
+   "IN",
+   "FROM",
+   "BURIED",
+   "IT IS BURIED",
+   "THE CODE IS"
+  ],
+  "seps": [
+   "",
+   "AND",
+   "THEN",
+   "BY",
+   "AT",
+   "PLUS",
+   "ALONG",
+   "ALONG THE RADIAN",
+   "OUT",
+   "GO",
+   "X",
+   "ON",
+   "TO",
+   "AND GO",
+   "THEN GO",
+   "AND THEN"
+  ],
+  "tails": [
+   "",
+   "ALONG THE RADIAN",
+   "ALONG THE RADIANS",
+   "ALONG RADIAN",
+   "OUT",
+   "FROM MAG N",
+   "FROM MAG NORTH",
+   "FROM ZERO",
+   "FROM DIABLO",
+   "FROM MT DIABLO",
+   "FROM PEAK",
+   "FROM TOP",
+   "FROM CENTER",
+   "CLOCKWISE",
+   "NORTH",
+   "SOUTH",
+   "EAST",
+   "WEST",
+   "DIG",
+   "DIG IT UP",
+   "DEEP",
+   "ON MAP",
+   "ON THE MAP",
+   "FROM CROSS",
+   "FROM ME",
+   "BOMB",
+   "THERE",
+   "HERE",
+   "DIG HERE",
+   "FROM MOUNT DIABLO",
+   "FROM SUMMIT"
+  ],
+  "radianUnits": [
+   "RADIAN",
+   "RADIANS",
+   "RAD",
+   "RADS"
+  ],
+  "inchUnits": [
+   "INCH",
+   "INCHES",
+   "INCHS",
+   "IN",
+   "INS"
+  ],
+  "numberPhrases": 4371,
+  "fractionSuffixes": [
+   "AND A HALF",
+   "AND ONE HALF",
+   "AND A QUARTER",
+   "AND ONE QUARTER",
+   "AND THREE QUARTERS",
+   "AND A THIRD",
+   "AND ONE THIRD",
+   "AND TWO THIRDS",
+   "AND AN EIGHTH",
+   "AND ONE EIGHTH",
+   "AND THREE EIGHTHS",
+   "AND FIVE EIGHTHS",
+   "AND SEVEN EIGHTHS",
+   "AND ONE SIXTEENTH",
+   "AND THREE SIXTEENTHS",
+   "AND FIVE SIXTEENTHS",
+   "AND SEVEN SIXTEENTHS",
+   "AND NINE SIXTEENTHS",
+   "AND ELEVEN SIXTEENTHS",
+   "AND THIRTEEN SIXTEENTHS",
+   "AND FIFTEEN SIXTEENTHS",
+   "AND ONE TENTH",
+   "AND TWO TENTHS",
+   "AND THREE TENTHS",
+   "AND FOUR TENTHS",
+   "AND FIVE TENTHS",
+   "AND SIX TENTHS",
+   "AND SEVEN TENTHS",
+   "AND EIGHT TENTHS",
+   "AND NINE TENTHS",
+   "POINT ZERO",
+   "POINT OH",
+   "POINT ONE",
+   "POINT TWO",
+   "POINT THREE",
+   "POINT FOUR",
+   "POINT FIVE",
+   "POINT SIX",
+   "POINT SEVEN",
+   "POINT EIGHT",
+   "POINT NINE"
+  ],
+  "bareFractions": [
+   "HALF",
+   "A HALF",
+   "ONE HALF",
+   "A QUARTER",
+   "ONE QUARTER",
+   "THREE QUARTERS",
+   "A THIRD",
+   "ONE THIRD",
+   "TWO THIRDS",
+   "AN EIGHTH",
+   "ONE EIGHTH",
+   "THREE EIGHTHS",
+   "FIVE EIGHTHS",
+   "SEVEN EIGHTHS",
+   "ONE TENTH",
+   "TWO TENTHS",
+   "THREE TENTHS",
+   "FOUR TENTHS",
+   "FIVE TENTHS",
+   "SIX TENTHS",
+   "SEVEN TENTHS",
+   "EIGHT TENTHS",
+   "NINE TENTHS",
+   "POINT ZERO",
+   "ZERO POINT ZERO",
+   "POINT OH",
+   "ZERO POINT OH",
+   "POINT ONE",
+   "ZERO POINT ONE",
+   "POINT TWO",
+   "ZERO POINT TWO",
+   "POINT THREE",
+   "ZERO POINT THREE",
+   "POINT FOUR",
+   "ZERO POINT FOUR",
+   "POINT FIVE",
+   "ZERO POINT FIVE",
+   "POINT SIX",
+   "ZERO POINT SIX",
+   "POINT SEVEN",
+   "ZERO POINT SEVEN",
+   "POINT EIGHT",
+   "ZERO POINT EIGHT",
+   "POINT NINE",
+   "ZERO POINT NINE"
+  ],
+  "note": "counts are derivations (token sequences of exactly 32 letters); distinct letter strings are counted separately for Z32"
+ },
+ "forms": [
+  {
+   "id": "LEAD_R=num-unit_I=num-unit_TAIL",
+   "desc": "LEAD radian part SEP inch part TAIL; radian part NUM RUNIT, inch part NUM IUNIT",
+   "derivationsOfLength32": 183670340,
+   "fitZ32": 47519,
+   "oneIn": 3865.1979208316675,
+   "nullQuantiles": {
+    "0": 5635,
+    "1": 148744,
+    "0.05": 8162,
+    "0.25": 29274,
+    "0.5": 49970,
+    "0.75": 57003,
+    "0.95": 121954
+   },
+   "nullMeanSd": {
+    "mean": 52847.8,
+    "sd": 36254.82099717004,
+    "n": 20
+   },
+   "nullPgeZ32": 0.5
+  },
+  {
+   "id": "LEAD_R=num-unit_I=unit-num_TAIL",
+   "desc": "LEAD radian part SEP inch part TAIL; radian part NUM RUNIT, inch part IUNIT NUM",
+   "derivationsOfLength32": 183670340,
+   "fitZ32": 34436,
+   "oneIn": 5333.672319665467,
+   "nullQuantiles": {
+    "0": 5570,
+    "1": 128775,
+    "0.05": 8888,
+    "0.25": 30730,
+    "0.5": 48045,
+    "0.75": 51332,
+    "0.95": 72164
+   },
+   "nullMeanSd": {
+    "mean": 46031.15,
+    "sd": 25983.22481358228,
+    "n": 20
+   },
+   "nullPgeZ32": 0.7
+  },
+  {
+   "id": "LEAD_R=unit-num_I=num-unit_TAIL",
+   "desc": "LEAD radian part SEP inch part TAIL; radian part RUNIT NUM, inch part NUM IUNIT",
+   "derivationsOfLength32": 183670340,
+   "fitZ32": 31974,
+   "oneIn": 5744.365421905298,
+   "nullQuantiles": {
+    "0": 4132,
+    "1": 138365,
+    "0.05": 13119,
+    "0.25": 26653,
+    "0.5": 55681,
+    "0.75": 68605,
+    "0.95": 105783
+   },
+   "nullMeanSd": {
+    "mean": 54131.65,
+    "sd": 33395.19507712859,
+    "n": 20
+   },
+   "nullPgeZ32": 0.7
+  },
+  {
+   "id": "LEAD_R=unit-num_I=unit-num_TAIL",
+   "desc": "LEAD radian part SEP inch part TAIL; radian part RUNIT NUM, inch part IUNIT NUM",
+   "derivationsOfLength32": 183670340,
+   "fitZ32": 22547,
+   "oneIn": 8146.109903756597,
+   "nullQuantiles": {
+    "0": 3332,
+    "1": 106681,
+    "0.05": 12182,
+    "0.25": 19777,
+    "0.5": 38284,
+    "0.75": 56404,
+    "0.95": 76520
+   },
+   "nullMeanSd": {
+    "mean": 42690.4,
+    "sd": 26087.530760882677,
+    "n": 20
+   },
+   "nullPgeZ32": 0.7
+  },
+  {
+   "id": "LEAD_I=num-unit_R=num-unit_TAIL",
+   "desc": "LEAD inch part SEP radian part TAIL; radian part NUM RUNIT, inch part NUM IUNIT",
+   "derivationsOfLength32": 183670340,
+   "fitZ32": 88852,
+   "oneIn": 2067.1491919146447,
+   "nullQuantiles": {
+    "0": 5568,
+    "1": 113982,
+    "0.05": 8599,
+    "0.25": 31852,
+    "0.5": 43358,
+    "0.75": 58767,
+    "0.95": 79418
+   },
+   "nullMeanSd": {
+    "mean": 45843.9,
+    "sd": 27093.723796247876,
+    "n": 20
+   },
+   "nullPgeZ32": 0.05
+  },
+  {
+   "id": "LEAD_I=unit-num_R=num-unit_TAIL",
+   "desc": "LEAD inch part SEP radian part TAIL; radian part NUM RUNIT, inch part IUNIT NUM",
+   "derivationsOfLength32": 183670340,
+   "fitZ32": 69157,
+   "oneIn": 2655.8459736541495,
+   "nullQuantiles": {
+    "0": 5537,
+    "1": 120653,
+    "0.05": 7867,
+    "0.25": 31098,
+    "0.5": 46908,
+    "0.75": 68791,
+    "0.95": 103188
+   },
+   "nullMeanSd": {
+    "mean": 51076.6,
+    "sd": 30165.86435970998,
+    "n": 20
+   },
+   "nullPgeZ32": 0.25
+  },
+  {
+   "id": "LEAD_I=num-unit_R=unit-num_TAIL",
+   "desc": "LEAD inch part SEP radian part TAIL; radian part RUNIT NUM, inch part NUM IUNIT",
+   "derivationsOfLength32": 183670340,
+   "fitZ32": 46298,
+   "oneIn": 3967.1333534925916,
+   "nullQuantiles": {
+    "0": 3287,
+    "1": 155480,
+    "0.05": 6116,
+    "0.25": 34500,
+    "0.5": 43209,
+    "0.75": 53556,
+    "0.95": 65672
+   },
+   "nullMeanSd": {
+    "mean": 44679.7,
+    "sd": 31644.343096524008,
+    "n": 20
+   },
+   "nullPgeZ32": 0.3
+  },
+  {
+   "id": "LEAD_I=unit-num_R=unit-num_TAIL",
+   "desc": "LEAD inch part SEP radian part TAIL; radian part RUNIT NUM, inch part IUNIT NUM",
+   "derivationsOfLength32": 183670340,
+   "fitZ32": 35289,
+   "oneIn": 5204.747655076652,
+   "nullQuantiles": {
+    "0": 5785,
+    "1": 150613,
+    "0.05": 10671,
+    "0.25": 30801,
+    "0.5": 45919,
+    "0.75": 57027,
+    "0.95": 67307
+   },
+   "nullMeanSd": {
+    "mean": 45825.65,
+    "sd": 30195.46673413255,
+    "n": 20
+   },
+   "nullPgeZ32": 0.55
+  }
+ ],
+ "orders": [
+  {
+   "id": "skip19",
+   "family": "period",
+   "pairs": [
+    [
+     0,
+     3
+    ],
+    [
+     5,
+     27
+    ],
+    [
+     7,
+     31
+    ]
+   ],
+   "fits": 1193167,
+   "perForm": [
+    191422,
+    179332,
+    134336,
+    65829,
+    104861,
+    161962,
+    168411,
+    187014
+   ],
+   "PnullGe": 0
+  },
+  {
+   "id": "cols_bt_r2right",
+   "family": "columns",
+   "pairs": [
+    [
+     0,
+     18
+    ],
+    [
+     1,
+     30
+    ],
+    [
+     9,
+     25
+    ]
+   ],
+   "fits": 451988,
+   "perForm": [
+    75818,
+    69671,
+    57980,
+    62093,
+    32584,
+    30488,
+    67793,
+    55561
+   ],
+   "PnullGe": 0.3
+  },
+  {
+   "id": "written",
+   "family": "rows",
+   "pairs": [
+    [
+     0,
+     25
+    ],
+    [
+     1,
+     31
+    ],
+    [
+     5,
+     13
+    ]
+   ],
+   "fits": 376072,
+   "perForm": [
+    47519,
+    34436,
+    31974,
+    22547,
+    88852,
+    69157,
+    46298,
+    35289
+   ],
+   "PnullGe": 0.6
+  },
+  {
+   "id": "diag_dc2",
+   "family": "diagonal",
+   "pairs": [
+    [
+     0,
+     21
+    ],
+    [
+     7,
+     25
+    ],
+    [
+     27,
+     31
+    ]
+   ],
+   "fits": 135333,
+   "perForm": [
+    2251,
+    23532,
+    934,
+    36173,
+    3666,
+    2198,
+    34016,
+    32563
+   ],
+   "PnullGe": 0.9
+  },
+  {
+   "id": "diag_dc2_r2right",
+   "family": "diagonal",
+   "pairs": [
+    [
+     0,
+     5
+    ],
+    [
+     23,
+     24
+    ],
+    [
+     26,
+     30
+    ]
+   ],
+   "fits": 43663,
+   "perForm": [
+    6683,
+    2915,
+    15264,
+    8067,
+    0,
+    87,
+    5172,
+    5475
+   ],
+   "PnullGe": 1
+  }
+ ],
+ "null": {
+  "patterns": 20,
+  "kind": "uniformly random 3 disjoint position pairs",
+  "totalQuantiles": {
+   "0": 53822,
+   "1": 860676,
+   "0.05": 80550,
+   "0.25": 285917,
+   "0.5": 396488,
+   "0.75": 470681,
+   "0.95": 621324
+  },
+  "totalMeanSd": {
+   "mean": 383126.85,
+   "sd": 184531.38621106252,
+   "n": 20
+  },
+  "PgeZ32": 0.6
+ },
+ "totals": {
+  "derivationsOfLength32": 1469362720,
+  "fitZ32": 376072,
+  "oneIn": 3907.131400370142
+ },
+ "lookElsewhere": {
+  "orders": 5,
+  "bestOrder": "skip19",
+  "bestFits": 1193167,
+  "nullMaxOfBlock": [
+   470681,
+   860676,
+   496254,
+   378485
+  ],
+  "PmaxGe": 0,
+  "note": "each null value is the maximum over a block of 5 random 3-pair patterns (as many as read orders tested)"
+ },
+ "z32List": {
+  "listing": "partial: first 50 distinct strings per form in depth-first order, cardinal numbers only",
+  "derivations": 400,
+  "distinctStrings": 400,
+  "integerOnly": 400,
+  "integerOnlyFullUnitWords": 72,
+  "top": [
+   {
+    "letters": "THIRTYINCHESBYRADIANSTWENTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS TWENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.215583630363923
+   },
+   {
+    "letters": "SEVENINCHESTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCHES THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -25.216873857627075
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSTWENTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS TWENTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.255142883057726
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSTHIRTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS THIRTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.477334374539453
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSTHIRTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS THIRTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.516893627233255
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEVENTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIAN SEVENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.996830888839213
+   },
+   {
+    "letters": "INCHSEVENTYONEANDRADIANSEIGHTEEN",
+    "tokens": "INCH SEVENTYONE AND RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.015039063538758
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEVENTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIAN SEVENTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.036390141533015
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEIGHTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS EIGHTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.057016579653624
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEIGHTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS EIGHTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.096575832347426
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSNINETYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS NINETY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.098214316943995
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSNINETYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS NINETY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.137773569637794
+   },
+   {
+    "letters": "SEVENINCHANDFIFTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH AND FIFTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -26.18961369620767
+   },
+   {
+    "letters": "SEVENRADIANFORTYFOURINCHESFROMME",
+    "tokens": "SEVEN RADIAN FORTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -26.234223482237148
+   },
+   {
+    "letters": "INCHSEVENTYONEANDRADIANSNINETEEN",
+    "tokens": "INCH SEVENTYONE AND RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.343075882118836
+   },
+   {
+    "letters": "THIRTYRADIANBYINCHESSEVENTYSOUTH",
+    "tokens": "THIRTY RADIAN BY INCHES SEVENTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -26.523339569799163
+   },
+   {
+    "letters": "THIRTYRADIANBYINCHESSEVENTYNORTH",
+    "tokens": "THIRTY RADIAN BY INCHES SEVENTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -26.56289882249296
+   },
+   {
+    "letters": "SEVENINCHATTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH AT THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -26.600950786014383
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDRADIANEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT AND RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.706288419210995
+   },
+   {
+    "letters": "INCHTHIRTEENTHENGORADIANEIGHTEEN",
+    "tokens": "INCH THIRTEEN THENGO RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.720721800430773
+   },
+   {
+    "letters": "INCHSEVENTYTHENGORADIANSEIGHTEEN",
+    "tokens": "INCH SEVENTY THENGO RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.85806406739561
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTTORADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT TO RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.886651808066055
+   },
+   {
+    "letters": "SEVENINCHANDSIXTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH AND SIXTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -26.942556255446114
+   },
+   {
+    "letters": "INCHSEVENTYONEOUTRADIANSEIGHTEEN",
+    "tokens": "INCH SEVENTYONE OUT RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.005365201367884
+   },
+   {
+    "letters": "INCHAHUNDREDTHENGORADIANEIGHTEEN",
+    "tokens": "INCH AHUNDRED THENGO RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.00661194926538
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDRADIANNINETEEN",
+    "tokens": "INCH THIRTYEIGHT AND RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.034325237791073
+   },
+   {
+    "letters": "INCHTHIRTEENTHENGORADIANNINETEEN",
+    "tokens": "INCH THIRTEEN THENGO RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.04875861901085
+   },
+   {
+    "letters": "SEVENINCHTOTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH TO THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -27.159865790427393
+   },
+   {
+    "letters": "INCHSEVENTYTHENGORADIANSNINETEEN",
+    "tokens": "INCH SEVENTY THENGO RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.186100885975687
+   },
+   {
+    "letters": "SEVENINCHBYTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH BY THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -27.20579341727041
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTTORADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT TO RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.214688626646133
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTBYRADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT BY RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.287352739425884
+   },
+   {
+    "letters": "INCHSEVENTYONEOUTRADIANSNINETEEN",
+    "tokens": "INCH SEVENTYONE OUT RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.33340201994796
+   },
+   {
+    "letters": "INCHAHUNDREDTHENGORADIANNINETEEN",
+    "tokens": "INCH AHUNDRED THENGO RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.334648767845458
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTONRADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT ON RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.396309815718627
+   },
+   {
+    "letters": "INCHSEVENTYONETHENRADIANEIGHTEEN",
+    "tokens": "INCH SEVENTYONE THEN RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.455407954868477
+   },
+   {
+    "letters": "TENINANDTHENRADIANSTWENTYTWOHERE",
+    "tokens": "TEN IN ANDTHEN RADIANS TWENTYTWO HERE",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.45761807974114
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTATRADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT AT RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.53759570183325
+   },
+   {
+    "letters": "SEVENINCHONTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH ON THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -27.550187190398365
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANTWENTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIAN TWENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.569252938406535
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANTWENTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIAN TWENTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.608812191100338
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTBYRADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT BY RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.615389558005962
+   },
+   {
+    "letters": "INCHESSEVENTYSIXBYRADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX BY RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.689849335162783
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDTHENRADIANSTEN",
+    "tokens": "INCH THIRTYEIGHT ANDTHEN RADIANS TEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.71229704894983
+   },
+   {
+    "letters": "TENINANDTHENRADIANSTHIRTYTWOHERE",
+    "tokens": "TEN IN ANDTHEN RADIANS THIRTYTWO HERE",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.71936882391667
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTONRADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT ON RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.724346634298705
+   },
+   {
+    "letters": "INCHSEVENTYONETHENRADIANNINETEEN",
+    "tokens": "INCH SEVENTYONE THEN RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.783444773448554
+   },
+   {
+    "letters": "INCHESSEVENTYSIXONRADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX ON RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.798806411455526
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANTHIRTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIAN THIRTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.831003682582065
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTATRADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT AT RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.865632520413328
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANTHIRTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIAN THIRTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.870562935275867
+   },
+   {
+    "letters": "INCHESSEVENTYSIXATRADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX AT RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.940092297570153
+   },
+   {
+    "letters": "SEVENTYRADIANTHENINTWENTYSIXHERE",
+    "tokens": "SEVENTY RADIAN THEN IN TWENTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -27.995786974598882
+   },
+   {
+    "letters": "SEVENRADIANFORTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RADIAN FORTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.002241952272577
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSFORTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIANS FORTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.01674913916316
+   },
+   {
+    "letters": "INCHESSEVENTYSIXBYRADIANNINETEEN",
+    "tokens": "INCHES SEVENTYSIX BY RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.01788615374286
+   },
+   {
+    "letters": "INCHSEVENTYONEPLUSRADIANEIGHTEEN",
+    "tokens": "INCH SEVENTYONE PLUS RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.01794506057514
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSFIFTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIANS FIFTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.033778338505677
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSFORTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIANS FORTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.05630839185696
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSFIFTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIANS FIFTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.07333759119948
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTOUTRADIANEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT OUT RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.13613612582079
+   },
+   {
+    "letters": "SEVENINCHOUTFIFTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH OUT FIFTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -28.161533898496025
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESTWENTYSOUTH",
+    "tokens": "THIRTEEN RAD THEN INCHES TWENTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.170405535485607
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSSIXTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIANS SIXTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.194007338783926
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESTWENTYNORTH",
+    "tokens": "THIRTEEN RAD THEN INCHES TWENTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.20996478817941
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSSIXTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIANS SIXTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.23356659147773
+   },
+   {
+    "letters": "TENINANDTHENRADIANSEVENTYTWOHERE",
+    "tokens": "TEN IN ANDTHEN RADIAN SEVENTYTWO HERE",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.23886533821643
+   },
+   {
+    "letters": "INCHESSEVENTYSIXATRADIANNINETEEN",
+    "tokens": "INCHES SEVENTYSIX AT RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.26812911615023
+   },
+   {
+    "letters": "TENINANDTHENRADIANSEIGHTYTWOHERE",
+    "tokens": "TEN IN ANDTHEN RADIANS EIGHTYTWO HERE",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.299051029030842
+   },
+   {
+    "letters": "SEVENINCHOUTSIXTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH OUT SIXTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -28.32986595879684
+   },
+   {
+    "letters": "SEVENTYRADIANTHENINTHIRTYSIXHERE",
+    "tokens": "SEVENTY RADIAN THEN IN THIRTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.32987685527597
+   },
+   {
+    "letters": "TENINANDTHENRADIANSNINETYTWOHERE",
+    "tokens": "TEN IN ANDTHEN RADIANS NINETYTWO HERE",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.340248766321213
+   },
+   {
+    "letters": "INCHSEVENTYONEPLUSRADIANNINETEEN",
+    "tokens": "INCH SEVENTYONE PLUS RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.345981879155218
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANEIGHTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIAN EIGHTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.410685887696236
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTGORADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT GO RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.4204321584631
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESTHIRTYSOUTH",
+    "tokens": "THIRTEEN RAD THEN INCHES THIRTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.432156279661136
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANEIGHTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIAN EIGHTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.450245140390038
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANNINETYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIAN NINETY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.451883624986607
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTOUTRADIANNINETEEN",
+    "tokens": "INCH THIRTYEIGHT OUT RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.464172944400868
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESTHIRTYNORTH",
+    "tokens": "THIRTEEN RAD THEN INCHES THIRTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.47171553235494
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANNINETYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIAN NINETY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.491442877680406
+   },
+   {
+    "letters": "SEVENRADIANFORTYNINEINCHESFROMME",
+    "tokens": "SEVEN RADIAN FORTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.508204235673194
+   },
+   {
+    "letters": "SEVENRADATTHIRTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD AT THIRTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.556651085264924
+   },
+   {
+    "letters": "SEVENINCHGOTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH GO THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -28.57430953314284
+   },
+   {
+    "letters": "SEVENRADTOTHIRTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD TO THIRTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.58542069757724
+   },
+   {
+    "letters": "SEVENRADANDFORTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD AND FORTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.630158852478445
+   },
+   {
+    "letters": "SEVENRADONTHIRTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD ON THIRTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.71105298364902
+   },
+   {
+    "letters": "SEVENTYRADIANTHENGOINCHESSIXHERE",
+    "tokens": "SEVENTY RADIAN THENGO INCHES SIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.737449295368645
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTGORADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT GO RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.748468977043178
+   },
+   {
+    "letters": "INCHESSEVENTYSIXGORADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX GO RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.8229287542
+   },
+   {
+    "letters": "INCHSEVENTYONEANDTHENRADEIGHTEEN",
+    "tokens": "INCH SEVENTYONE ANDTHEN RAD EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.899250307646966
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESEIGHTYSOUTH",
+    "tokens": "THIRTEEN RAD THEN INCHES EIGHTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.011838484775307
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESEIGHTYNORTH",
+    "tokens": "THIRTEEN RAD THEN INCHES EIGHTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.05139773746911
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESNINETYSOUTH",
+    "tokens": "THIRTEEN RAD THEN INCHES NINETY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.05303622206568
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESNINETYNORTH",
+    "tokens": "THIRTEEN RAD THEN INCHES NINETY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.09259547475948
+   },
+   {
+    "letters": "INCHESSEVENTYSIXGORADIANNINETEEN",
+    "tokens": "INCHES SEVENTYSIX GO RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -29.150965572780077
+   },
+   {
+    "letters": "SEVENRADGOTHIRTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD GO THIRTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -29.202890723593477
+   },
+   {
+    "letters": "INCHSEVENTYONEANDTHENRADNINETEEN",
+    "tokens": "INCH SEVENTYONE ANDTHEN RAD NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -29.227287126227044
+   },
+   {
+    "letters": "SEVENTYRADIANTHENINEIGHTYSIXHERE",
+    "tokens": "SEVENTY RADIAN THEN IN EIGHTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.340074535264748
+   },
+   {
+    "letters": "SEVENTYRADIANTHENINNINETYSIXHERE",
+    "tokens": "SEVENTY RADIAN THEN IN NINETYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.38127227255512
+   },
+   {
+    "letters": "INCHESSEVENTYSIXTHENRADSEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX THEN RADS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -29.42522492418027
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHTWENTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH TWENTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.515870981667824
+   },
+   {
+    "letters": "SEVENINCHESTHIRTYTHREERADSFROMME",
+    "tokens": "SEVEN INCHES THIRTYTHREE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -29.574708474554424
+   },
+   {
+    "letters": "SEVENRADBYTHIRTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD BY THIRTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -29.701101018655926
+   },
+   {
+    "letters": "INCHESSEVENTYSIXTHENRADSNINETEEN",
+    "tokens": "INCHES SEVENTYSIX THEN RADS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -29.753261742760348
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHTHIRTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH THIRTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.777621725843353
+   },
+   {
+    "letters": "GORADTHREEANDTHENINCHESEIGHTYTWO",
+    "tokens": "GO RAD THREE ANDTHEN INCHES EIGHTYTWO",
+    "form": "LEAD_R=unit-num_I=unit-num_TAIL",
+    "wordLogp": -29.82875055203165
+   },
+   {
+    "letters": "SEVENINCHANDEIGHTYFIVERADSFROMME",
+    "tokens": "SEVEN INCH AND EIGHTYFIVE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -29.851978429808494
+   },
+   {
+    "letters": "SEVENINCHANDEIGHTYNINERADSFROMME",
+    "tokens": "SEVEN INCH AND EIGHTYNINE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -29.86086712878618
+   },
+   {
+    "letters": "SEVENRADSBYFORTYFOURINCHESFROMME",
+    "tokens": "SEVEN RADS BY FORTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -29.87911379897438
+   },
+   {
+    "letters": "SEVENTYRADANDTHENINTWENTYSIXHERE",
+    "tokens": "SEVENTY RAD ANDTHEN IN TWENTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.890499508364773
+   },
+   {
+    "letters": "SEVENINCHANDNINETYFIVERADSFROMME",
+    "tokens": "SEVEN INCH AND NINETYFIVE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -29.999782045958614
+   },
+   {
+    "letters": "SEVENINCHANDNINETYNINERADSFROMME",
+    "tokens": "SEVEN INCH AND NINETYNINE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -30.0086707449363
+   },
+   {
+    "letters": "SEVENRADOUTFORTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD OUT FORTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.068384262587113
+   },
+   {
+    "letters": "SEVENTYRADANDTHENINTHIRTYSIXHERE",
+    "tokens": "SEVENTY RAD ANDTHEN IN THIRTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.22458938904186
+   },
+   {
+    "letters": "SEVENRADATTHIRTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RAD AT THIRTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.324669555300353
+   },
+   {
+    "letters": "SEVENRADTOTHIRTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RAD TO THIRTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.35343916761267
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHEIGHTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH EIGHTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.357303930957524
+   },
+   {
+    "letters": "SEVENRADANDFORTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RAD AND FORTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.398177322513877
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHNINETYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH NINETYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.3985016682479
+   },
+   {
+    "letters": "SEVENRADONTHIRTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RAD ON THIRTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.479071453684448
+   },
+   {
+    "letters": "SEVENINCHANDFIFTYTHREERADSFROMME",
+    "tokens": "SEVEN INCH AND FIFTYTHREE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -30.519296317613044
+   },
+   {
+    "letters": "THIRTEENRADTHENGOINCHTWENTYSOUTH",
+    "tokens": "THIRTEEN RAD THENGO INCH TWENTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.53722339016639
+   },
+   {
+    "letters": "THIRTEENRADTHENGOINCHTWENTYNORTH",
+    "tokens": "THIRTEEN RAD THENGO INCH TWENTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.57678264286019
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDGORADSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT ANDGO RADS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -30.638821781129053
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTTHENGORADEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT THENGO RAD EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -30.690710467402944
+   },
+   {
+    "letters": "THIRTEENINSTHENGORADSEVENTYSOUTH",
+    "tokens": "THIRTEEN INS THENGO RAD SEVENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -30.776545574783093
+   },
+   {
+    "letters": "SEVENTYRADIANTOINSSEVENTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INS SEVENTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.793347170373856
+   },
+   {
+    "letters": "THIRTEENRADTHENGOINCHTHIRTYSOUTH",
+    "tokens": "THIRTEEN RAD THENGO INCH THIRTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.79897413434192
+   },
+   {
+    "letters": "THIRTEENINSTHENGORADSEVENTYNORTH",
+    "tokens": "THIRTEEN INS THENGO RAD SEVENTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -30.81610482747689
+   },
+   {
+    "letters": "SEVENRADATTHIRTYNINEINCHESFROMME",
+    "tokens": "SEVEN RAD AT THIRTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.83063183870097
+   },
+   {
+    "letters": "THIRTEENRADTHENGOINCHTHIRTYNORTH",
+    "tokens": "THIRTEEN RAD THENGO INCH THIRTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.83853338703572
+   },
+   {
+    "letters": "SEVENINCHANDSIXTYTHREERADSFROMME",
+    "tokens": "SEVEN INCH AND SIXTYTHREE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -30.843904129710598
+   },
+   {
+    "letters": "SEVENRADTOTHIRTYNINEINCHESFROMME",
+    "tokens": "SEVEN RAD TO THIRTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.859401451013287
+   },
+   {
+    "letters": "SEVENINCHTOTHIRTYTHREERADSFROMME",
+    "tokens": "SEVEN INCH TO THIRTYTHREE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -30.86418004080821
+   },
+   {
+    "letters": "SEVENRADANDFORTYNINEINCHESFROMME",
+    "tokens": "SEVEN RAD AND FORTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.90413960591449
+   },
+   {
+    "letters": "INCHESSEVENTYSIXPLUSRADSEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX PLUS RADS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -30.915524533517903
+   },
+   {
+    "letters": "GORADTHIRTEENTHENINCHESEIGHTYTWO",
+    "tokens": "GO RAD THIRTEEN THEN INCHES EIGHTYTWO",
+    "form": "LEAD_R=unit-num_I=unit-num_TAIL",
+    "wordLogp": -30.92168146196172
+   },
+   {
+    "letters": "SEVENINCHATTHIRTYTHREERADSFROMME",
+    "tokens": "SEVEN INCH AT THIRTYTHREE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -30.958785402941732
+   },
+   {
+    "letters": "ISRADTHREEANDTHENSEVENTYEIGHTINS",
+    "tokens": "IS RAD THREE ANDTHEN SEVENTYEIGHT INS",
+    "form": "LEAD_R=unit-num_I=num-unit_TAIL",
+    "wordLogp": -30.961146461545397
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDGORADSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT ANDGO RADS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -30.96685859970913
+   },
+   {
+    "letters": "SEVENRADGOTHIRTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RAD GO THIRTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.970909193628906
+   },
+   {
+    "letters": "SEVENRADONTHIRTYNINEINCHESFROMME",
+    "tokens": "SEVEN RAD ON THIRTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.985033737085065
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTTHENGORADNINETEEN",
+    "tokens": "INCH THIRTYEIGHT THENGO RAD NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -31.01874728598302
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTALONGRADSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT ALONG RADS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -31.053840165277364
+   },
+   {
+    "letters": "ISINCHTWENTYTHREESEVENTYFIVERADS",
+    "tokens": "IS INCH TWENTYTHREE SEVENTYFIVE RADS",
+    "form": "LEAD_I=unit-num_R=num-unit_TAIL",
+    "wordLogp": -31.079751512413736
+   },
+   {
+    "letters": "ISINCHTWENTYTHREESEVENTYNINERADS",
+    "tokens": "IS INCH TWENTYTHREE SEVENTYNINE RADS",
+    "form": "LEAD_I=unit-num_R=num-unit_TAIL",
+    "wordLogp": -31.08864021139142
+   },
+   {
+    "letters": "SEVENINCHANDFIFTYSEVENRADSFROMME",
+    "tokens": "SEVEN INCH AND FIFTYSEVEN RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -31.1286809856993
+   },
+   {
+    "letters": "SEVENINCHANDEIGHTYFOURRADSFROMME",
+    "tokens": "SEVEN INCH AND EIGHTYFOUR RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -31.13654307722935
+   },
+   {
+    "letters": "THIRTEENINSTHENGORADSTWENTYSOUTH",
+    "tokens": "THIRTEEN INS THENGO RADS TWENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -31.145022377348745
+   }
+  ],
+  "integerOnlyTop": [
+   {
+    "letters": "THIRTYINCHESBYRADIANSTWENTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS TWENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.215583630363923
+   },
+   {
+    "letters": "SEVENINCHESTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCHES THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -25.216873857627075
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSTWENTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS TWENTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.255142883057726
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSTHIRTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS THIRTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.477334374539453
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSTHIRTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS THIRTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.516893627233255
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEVENTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIAN SEVENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.996830888839213
+   },
+   {
+    "letters": "INCHSEVENTYONEANDRADIANSEIGHTEEN",
+    "tokens": "INCH SEVENTYONE AND RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.015039063538758
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEVENTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIAN SEVENTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.036390141533015
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEIGHTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS EIGHTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.057016579653624
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEIGHTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS EIGHTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.096575832347426
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSNINETYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS NINETY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.098214316943995
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSNINETYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS NINETY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.137773569637794
+   },
+   {
+    "letters": "SEVENINCHANDFIFTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH AND FIFTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -26.18961369620767
+   },
+   {
+    "letters": "SEVENRADIANFORTYFOURINCHESFROMME",
+    "tokens": "SEVEN RADIAN FORTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -26.234223482237148
+   },
+   {
+    "letters": "INCHSEVENTYONEANDRADIANSNINETEEN",
+    "tokens": "INCH SEVENTYONE AND RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.343075882118836
+   },
+   {
+    "letters": "THIRTYRADIANBYINCHESSEVENTYSOUTH",
+    "tokens": "THIRTY RADIAN BY INCHES SEVENTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -26.523339569799163
+   },
+   {
+    "letters": "THIRTYRADIANBYINCHESSEVENTYNORTH",
+    "tokens": "THIRTY RADIAN BY INCHES SEVENTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -26.56289882249296
+   },
+   {
+    "letters": "SEVENINCHATTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH AT THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -26.600950786014383
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDRADIANEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT AND RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.706288419210995
+   },
+   {
+    "letters": "INCHTHIRTEENTHENGORADIANEIGHTEEN",
+    "tokens": "INCH THIRTEEN THENGO RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.720721800430773
+   },
+   {
+    "letters": "INCHSEVENTYTHENGORADIANSEIGHTEEN",
+    "tokens": "INCH SEVENTY THENGO RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.85806406739561
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTTORADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT TO RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.886651808066055
+   },
+   {
+    "letters": "SEVENINCHANDSIXTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH AND SIXTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -26.942556255446114
+   },
+   {
+    "letters": "INCHSEVENTYONEOUTRADIANSEIGHTEEN",
+    "tokens": "INCH SEVENTYONE OUT RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.005365201367884
+   },
+   {
+    "letters": "INCHAHUNDREDTHENGORADIANEIGHTEEN",
+    "tokens": "INCH AHUNDRED THENGO RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.00661194926538
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDRADIANNINETEEN",
+    "tokens": "INCH THIRTYEIGHT AND RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.034325237791073
+   },
+   {
+    "letters": "INCHTHIRTEENTHENGORADIANNINETEEN",
+    "tokens": "INCH THIRTEEN THENGO RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.04875861901085
+   },
+   {
+    "letters": "SEVENINCHTOTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH TO THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -27.159865790427393
+   },
+   {
+    "letters": "INCHSEVENTYTHENGORADIANSNINETEEN",
+    "tokens": "INCH SEVENTY THENGO RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.186100885975687
+   },
+   {
+    "letters": "SEVENINCHBYTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH BY THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -27.20579341727041
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTTORADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT TO RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.214688626646133
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTBYRADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT BY RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.287352739425884
+   },
+   {
+    "letters": "INCHSEVENTYONEOUTRADIANSNINETEEN",
+    "tokens": "INCH SEVENTYONE OUT RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.33340201994796
+   },
+   {
+    "letters": "INCHAHUNDREDTHENGORADIANNINETEEN",
+    "tokens": "INCH AHUNDRED THENGO RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.334648767845458
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTONRADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT ON RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.396309815718627
+   },
+   {
+    "letters": "INCHSEVENTYONETHENRADIANEIGHTEEN",
+    "tokens": "INCH SEVENTYONE THEN RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.455407954868477
+   },
+   {
+    "letters": "TENINANDTHENRADIANSTWENTYTWOHERE",
+    "tokens": "TEN IN ANDTHEN RADIANS TWENTYTWO HERE",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.45761807974114
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTATRADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT AT RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.53759570183325
+   },
+   {
+    "letters": "SEVENINCHONTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH ON THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -27.550187190398365
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANTWENTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIAN TWENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.569252938406535
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANTWENTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIAN TWENTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.608812191100338
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTBYRADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT BY RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.615389558005962
+   },
+   {
+    "letters": "INCHESSEVENTYSIXBYRADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX BY RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.689849335162783
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDTHENRADIANSTEN",
+    "tokens": "INCH THIRTYEIGHT ANDTHEN RADIANS TEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.71229704894983
+   },
+   {
+    "letters": "TENINANDTHENRADIANSTHIRTYTWOHERE",
+    "tokens": "TEN IN ANDTHEN RADIANS THIRTYTWO HERE",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.71936882391667
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTONRADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT ON RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.724346634298705
+   },
+   {
+    "letters": "INCHSEVENTYONETHENRADIANNINETEEN",
+    "tokens": "INCH SEVENTYONE THEN RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.783444773448554
+   },
+   {
+    "letters": "INCHESSEVENTYSIXONRADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX ON RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.798806411455526
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANTHIRTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIAN THIRTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.831003682582065
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTATRADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT AT RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.865632520413328
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANTHIRTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIAN THIRTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -27.870562935275867
+   },
+   {
+    "letters": "INCHESSEVENTYSIXATRADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX AT RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.940092297570153
+   },
+   {
+    "letters": "SEVENTYRADIANTHENINTWENTYSIXHERE",
+    "tokens": "SEVENTY RADIAN THEN IN TWENTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -27.995786974598882
+   },
+   {
+    "letters": "SEVENRADIANFORTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RADIAN FORTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.002241952272577
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSFORTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIANS FORTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.01674913916316
+   },
+   {
+    "letters": "INCHESSEVENTYSIXBYRADIANNINETEEN",
+    "tokens": "INCHES SEVENTYSIX BY RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.01788615374286
+   },
+   {
+    "letters": "INCHSEVENTYONEPLUSRADIANEIGHTEEN",
+    "tokens": "INCH SEVENTYONE PLUS RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.01794506057514
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSFIFTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIANS FIFTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.033778338505677
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSFORTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIANS FORTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.05630839185696
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSFIFTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIANS FIFTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.07333759119948
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTOUTRADIANEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT OUT RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.13613612582079
+   },
+   {
+    "letters": "SEVENINCHOUTFIFTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH OUT FIFTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -28.161533898496025
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESTWENTYSOUTH",
+    "tokens": "THIRTEEN RAD THEN INCHES TWENTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.170405535485607
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSSIXTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIANS SIXTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.194007338783926
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESTWENTYNORTH",
+    "tokens": "THIRTEEN RAD THEN INCHES TWENTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.20996478817941
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANSSIXTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIANS SIXTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.23356659147773
+   },
+   {
+    "letters": "TENINANDTHENRADIANSEVENTYTWOHERE",
+    "tokens": "TEN IN ANDTHEN RADIAN SEVENTYTWO HERE",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.23886533821643
+   },
+   {
+    "letters": "INCHESSEVENTYSIXATRADIANNINETEEN",
+    "tokens": "INCHES SEVENTYSIX AT RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.26812911615023
+   },
+   {
+    "letters": "TENINANDTHENRADIANSEIGHTYTWOHERE",
+    "tokens": "TEN IN ANDTHEN RADIANS EIGHTYTWO HERE",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.299051029030842
+   },
+   {
+    "letters": "SEVENINCHOUTSIXTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH OUT SIXTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -28.32986595879684
+   },
+   {
+    "letters": "SEVENTYRADIANTHENINTHIRTYSIXHERE",
+    "tokens": "SEVENTY RADIAN THEN IN THIRTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.32987685527597
+   },
+   {
+    "letters": "TENINANDTHENRADIANSNINETYTWOHERE",
+    "tokens": "TEN IN ANDTHEN RADIANS NINETYTWO HERE",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.340248766321213
+   },
+   {
+    "letters": "INCHSEVENTYONEPLUSRADIANNINETEEN",
+    "tokens": "INCH SEVENTYONE PLUS RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.345981879155218
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANEIGHTYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIAN EIGHTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.410685887696236
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTGORADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT GO RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.4204321584631
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESTHIRTYSOUTH",
+    "tokens": "THIRTEEN RAD THEN INCHES THIRTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.432156279661136
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANEIGHTYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIAN EIGHTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.450245140390038
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANNINETYSOUTH",
+    "tokens": "THIRTEEN INS THEN RADIAN NINETY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.451883624986607
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTOUTRADIANNINETEEN",
+    "tokens": "INCH THIRTYEIGHT OUT RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.464172944400868
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESTHIRTYNORTH",
+    "tokens": "THIRTEEN RAD THEN INCHES THIRTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.47171553235494
+   },
+   {
+    "letters": "THIRTEENINSTHENRADIANNINETYNORTH",
+    "tokens": "THIRTEEN INS THEN RADIAN NINETY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -28.491442877680406
+   },
+   {
+    "letters": "SEVENRADIANFORTYNINEINCHESFROMME",
+    "tokens": "SEVEN RADIAN FORTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.508204235673194
+   },
+   {
+    "letters": "SEVENRADATTHIRTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD AT THIRTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.556651085264924
+   },
+   {
+    "letters": "SEVENINCHGOTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH GO THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -28.57430953314284
+   },
+   {
+    "letters": "SEVENRADTOTHIRTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD TO THIRTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.58542069757724
+   },
+   {
+    "letters": "SEVENRADANDFORTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD AND FORTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.630158852478445
+   },
+   {
+    "letters": "SEVENRADONTHIRTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD ON THIRTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.71105298364902
+   },
+   {
+    "letters": "SEVENTYRADIANTHENGOINCHESSIXHERE",
+    "tokens": "SEVENTY RADIAN THENGO INCHES SIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.737449295368645
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTGORADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT GO RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.748468977043178
+   },
+   {
+    "letters": "INCHESSEVENTYSIXGORADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX GO RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.8229287542
+   },
+   {
+    "letters": "INCHSEVENTYONEANDTHENRADEIGHTEEN",
+    "tokens": "INCH SEVENTYONE ANDTHEN RAD EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.899250307646966
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESEIGHTYSOUTH",
+    "tokens": "THIRTEEN RAD THEN INCHES EIGHTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.011838484775307
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESEIGHTYNORTH",
+    "tokens": "THIRTEEN RAD THEN INCHES EIGHTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.05139773746911
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESNINETYSOUTH",
+    "tokens": "THIRTEEN RAD THEN INCHES NINETY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.05303622206568
+   },
+   {
+    "letters": "THIRTEENRADTHENINCHESNINETYNORTH",
+    "tokens": "THIRTEEN RAD THEN INCHES NINETY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.09259547475948
+   },
+   {
+    "letters": "INCHESSEVENTYSIXGORADIANNINETEEN",
+    "tokens": "INCHES SEVENTYSIX GO RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -29.150965572780077
+   },
+   {
+    "letters": "SEVENRADGOTHIRTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD GO THIRTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -29.202890723593477
+   },
+   {
+    "letters": "INCHSEVENTYONEANDTHENRADNINETEEN",
+    "tokens": "INCH SEVENTYONE ANDTHEN RAD NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -29.227287126227044
+   },
+   {
+    "letters": "SEVENTYRADIANTHENINEIGHTYSIXHERE",
+    "tokens": "SEVENTY RADIAN THEN IN EIGHTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.340074535264748
+   },
+   {
+    "letters": "SEVENTYRADIANTHENINNINETYSIXHERE",
+    "tokens": "SEVENTY RADIAN THEN IN NINETYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.38127227255512
+   },
+   {
+    "letters": "INCHESSEVENTYSIXTHENRADSEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX THEN RADS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -29.42522492418027
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHTWENTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH TWENTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.515870981667824
+   },
+   {
+    "letters": "SEVENINCHESTHIRTYTHREERADSFROMME",
+    "tokens": "SEVEN INCHES THIRTYTHREE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -29.574708474554424
+   },
+   {
+    "letters": "SEVENRADBYTHIRTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD BY THIRTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -29.701101018655926
+   },
+   {
+    "letters": "INCHESSEVENTYSIXTHENRADSNINETEEN",
+    "tokens": "INCHES SEVENTYSIX THEN RADS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -29.753261742760348
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHTHIRTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH THIRTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.777621725843353
+   },
+   {
+    "letters": "GORADTHREEANDTHENINCHESEIGHTYTWO",
+    "tokens": "GO RAD THREE ANDTHEN INCHES EIGHTYTWO",
+    "form": "LEAD_R=unit-num_I=unit-num_TAIL",
+    "wordLogp": -29.82875055203165
+   },
+   {
+    "letters": "SEVENINCHANDEIGHTYFIVERADSFROMME",
+    "tokens": "SEVEN INCH AND EIGHTYFIVE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -29.851978429808494
+   },
+   {
+    "letters": "SEVENINCHANDEIGHTYNINERADSFROMME",
+    "tokens": "SEVEN INCH AND EIGHTYNINE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -29.86086712878618
+   },
+   {
+    "letters": "SEVENRADSBYFORTYFOURINCHESFROMME",
+    "tokens": "SEVEN RADS BY FORTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -29.87911379897438
+   },
+   {
+    "letters": "SEVENTYRADANDTHENINTWENTYSIXHERE",
+    "tokens": "SEVENTY RAD ANDTHEN IN TWENTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.890499508364773
+   },
+   {
+    "letters": "SEVENINCHANDNINETYFIVERADSFROMME",
+    "tokens": "SEVEN INCH AND NINETYFIVE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -29.999782045958614
+   },
+   {
+    "letters": "SEVENINCHANDNINETYNINERADSFROMME",
+    "tokens": "SEVEN INCH AND NINETYNINE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -30.0086707449363
+   },
+   {
+    "letters": "SEVENRADOUTFORTYFOURINCHESFROMME",
+    "tokens": "SEVEN RAD OUT FORTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.068384262587113
+   },
+   {
+    "letters": "SEVENTYRADANDTHENINTHIRTYSIXHERE",
+    "tokens": "SEVENTY RAD ANDTHEN IN THIRTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.22458938904186
+   },
+   {
+    "letters": "SEVENRADATTHIRTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RAD AT THIRTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.324669555300353
+   },
+   {
+    "letters": "SEVENRADTOTHIRTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RAD TO THIRTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.35343916761267
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHEIGHTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH EIGHTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.357303930957524
+   },
+   {
+    "letters": "SEVENRADANDFORTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RAD AND FORTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.398177322513877
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHNINETYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH NINETYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.3985016682479
+   },
+   {
+    "letters": "SEVENRADONTHIRTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RAD ON THIRTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.479071453684448
+   },
+   {
+    "letters": "SEVENINCHANDFIFTYTHREERADSFROMME",
+    "tokens": "SEVEN INCH AND FIFTYTHREE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -30.519296317613044
+   },
+   {
+    "letters": "THIRTEENRADTHENGOINCHTWENTYSOUTH",
+    "tokens": "THIRTEEN RAD THENGO INCH TWENTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.53722339016639
+   },
+   {
+    "letters": "THIRTEENRADTHENGOINCHTWENTYNORTH",
+    "tokens": "THIRTEEN RAD THENGO INCH TWENTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.57678264286019
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDGORADSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT ANDGO RADS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -30.638821781129053
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTTHENGORADEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT THENGO RAD EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -30.690710467402944
+   },
+   {
+    "letters": "THIRTEENINSTHENGORADSEVENTYSOUTH",
+    "tokens": "THIRTEEN INS THENGO RAD SEVENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -30.776545574783093
+   },
+   {
+    "letters": "SEVENTYRADIANTOINSSEVENTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INS SEVENTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.793347170373856
+   },
+   {
+    "letters": "THIRTEENRADTHENGOINCHTHIRTYSOUTH",
+    "tokens": "THIRTEEN RAD THENGO INCH THIRTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.79897413434192
+   },
+   {
+    "letters": "THIRTEENINSTHENGORADSEVENTYNORTH",
+    "tokens": "THIRTEEN INS THENGO RAD SEVENTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -30.81610482747689
+   },
+   {
+    "letters": "SEVENRADATTHIRTYNINEINCHESFROMME",
+    "tokens": "SEVEN RAD AT THIRTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.83063183870097
+   },
+   {
+    "letters": "THIRTEENRADTHENGOINCHTHIRTYNORTH",
+    "tokens": "THIRTEEN RAD THENGO INCH THIRTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.83853338703572
+   },
+   {
+    "letters": "SEVENINCHANDSIXTYTHREERADSFROMME",
+    "tokens": "SEVEN INCH AND SIXTYTHREE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -30.843904129710598
+   },
+   {
+    "letters": "SEVENRADTOTHIRTYNINEINCHESFROMME",
+    "tokens": "SEVEN RAD TO THIRTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.859401451013287
+   },
+   {
+    "letters": "SEVENINCHTOTHIRTYTHREERADSFROMME",
+    "tokens": "SEVEN INCH TO THIRTYTHREE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -30.86418004080821
+   },
+   {
+    "letters": "SEVENRADANDFORTYNINEINCHESFROMME",
+    "tokens": "SEVEN RAD AND FORTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.90413960591449
+   },
+   {
+    "letters": "INCHESSEVENTYSIXPLUSRADSEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX PLUS RADS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -30.915524533517903
+   },
+   {
+    "letters": "GORADTHIRTEENTHENINCHESEIGHTYTWO",
+    "tokens": "GO RAD THIRTEEN THEN INCHES EIGHTYTWO",
+    "form": "LEAD_R=unit-num_I=unit-num_TAIL",
+    "wordLogp": -30.92168146196172
+   },
+   {
+    "letters": "SEVENINCHATTHIRTYTHREERADSFROMME",
+    "tokens": "SEVEN INCH AT THIRTYTHREE RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -30.958785402941732
+   },
+   {
+    "letters": "ISRADTHREEANDTHENSEVENTYEIGHTINS",
+    "tokens": "IS RAD THREE ANDTHEN SEVENTYEIGHT INS",
+    "form": "LEAD_R=unit-num_I=num-unit_TAIL",
+    "wordLogp": -30.961146461545397
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDGORADSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT ANDGO RADS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -30.96685859970913
+   },
+   {
+    "letters": "SEVENRADGOTHIRTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RAD GO THIRTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.970909193628906
+   },
+   {
+    "letters": "SEVENRADONTHIRTYNINEINCHESFROMME",
+    "tokens": "SEVEN RAD ON THIRTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -30.985033737085065
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTTHENGORADNINETEEN",
+    "tokens": "INCH THIRTYEIGHT THENGO RAD NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -31.01874728598302
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTALONGRADSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT ALONG RADS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -31.053840165277364
+   },
+   {
+    "letters": "ISINCHTWENTYTHREESEVENTYFIVERADS",
+    "tokens": "IS INCH TWENTYTHREE SEVENTYFIVE RADS",
+    "form": "LEAD_I=unit-num_R=num-unit_TAIL",
+    "wordLogp": -31.079751512413736
+   },
+   {
+    "letters": "ISINCHTWENTYTHREESEVENTYNINERADS",
+    "tokens": "IS INCH TWENTYTHREE SEVENTYNINE RADS",
+    "form": "LEAD_I=unit-num_R=num-unit_TAIL",
+    "wordLogp": -31.08864021139142
+   },
+   {
+    "letters": "SEVENINCHANDFIFTYSEVENRADSFROMME",
+    "tokens": "SEVEN INCH AND FIFTYSEVEN RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -31.1286809856993
+   },
+   {
+    "letters": "SEVENINCHANDEIGHTYFOURRADSFROMME",
+    "tokens": "SEVEN INCH AND EIGHTYFOUR RADS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -31.13654307722935
+   },
+   {
+    "letters": "THIRTEENINSTHENGORADSTWENTYSOUTH",
+    "tokens": "THIRTEEN INS THENGO RADS TWENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -31.145022377348745
+   }
+  ],
+  "integerOnlyFullUnitWordsTop": [
+   {
+    "letters": "THIRTYINCHESBYRADIANSTWENTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS TWENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.215583630363923
+   },
+   {
+    "letters": "SEVENINCHESTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCHES THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -25.216873857627075
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSTWENTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS TWENTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.255142883057726
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSTHIRTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS THIRTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.477334374539453
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSTHIRTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS THIRTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.516893627233255
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEVENTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIAN SEVENTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -25.996830888839213
+   },
+   {
+    "letters": "INCHSEVENTYONEANDRADIANSEIGHTEEN",
+    "tokens": "INCH SEVENTYONE AND RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.015039063538758
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEVENTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIAN SEVENTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.036390141533015
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEIGHTYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS EIGHTY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.057016579653624
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSEIGHTYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS EIGHTY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.096575832347426
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSNINETYSOUTH",
+    "tokens": "THIRTY INCHES BY RADIANS NINETY SOUTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.098214316943995
+   },
+   {
+    "letters": "THIRTYINCHESBYRADIANSNINETYNORTH",
+    "tokens": "THIRTY INCHES BY RADIANS NINETY NORTH",
+    "form": "LEAD_I=num-unit_R=unit-num_TAIL",
+    "wordLogp": -26.137773569637794
+   },
+   {
+    "letters": "SEVENINCHANDFIFTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH AND FIFTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -26.18961369620767
+   },
+   {
+    "letters": "SEVENRADIANFORTYFOURINCHESFROMME",
+    "tokens": "SEVEN RADIAN FORTYFOUR INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -26.234223482237148
+   },
+   {
+    "letters": "INCHSEVENTYONEANDRADIANSNINETEEN",
+    "tokens": "INCH SEVENTYONE AND RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.343075882118836
+   },
+   {
+    "letters": "THIRTYRADIANBYINCHESSEVENTYSOUTH",
+    "tokens": "THIRTY RADIAN BY INCHES SEVENTY SOUTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -26.523339569799163
+   },
+   {
+    "letters": "THIRTYRADIANBYINCHESSEVENTYNORTH",
+    "tokens": "THIRTY RADIAN BY INCHES SEVENTY NORTH",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -26.56289882249296
+   },
+   {
+    "letters": "SEVENINCHATTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH AT THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -26.600950786014383
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDRADIANEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT AND RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.706288419210995
+   },
+   {
+    "letters": "INCHTHIRTEENTHENGORADIANEIGHTEEN",
+    "tokens": "INCH THIRTEEN THENGO RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.720721800430773
+   },
+   {
+    "letters": "INCHSEVENTYTHENGORADIANSEIGHTEEN",
+    "tokens": "INCH SEVENTY THENGO RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.85806406739561
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTTORADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT TO RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -26.886651808066055
+   },
+   {
+    "letters": "SEVENINCHANDSIXTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH AND SIXTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -26.942556255446114
+   },
+   {
+    "letters": "INCHSEVENTYONEOUTRADIANSEIGHTEEN",
+    "tokens": "INCH SEVENTYONE OUT RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.005365201367884
+   },
+   {
+    "letters": "INCHAHUNDREDTHENGORADIANEIGHTEEN",
+    "tokens": "INCH AHUNDRED THENGO RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.00661194926538
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDRADIANNINETEEN",
+    "tokens": "INCH THIRTYEIGHT AND RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.034325237791073
+   },
+   {
+    "letters": "INCHTHIRTEENTHENGORADIANNINETEEN",
+    "tokens": "INCH THIRTEEN THENGO RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.04875861901085
+   },
+   {
+    "letters": "SEVENINCHTOTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH TO THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -27.159865790427393
+   },
+   {
+    "letters": "INCHSEVENTYTHENGORADIANSNINETEEN",
+    "tokens": "INCH SEVENTY THENGO RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.186100885975687
+   },
+   {
+    "letters": "SEVENINCHBYTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH BY THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -27.20579341727041
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTTORADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT TO RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.214688626646133
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTBYRADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT BY RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.287352739425884
+   },
+   {
+    "letters": "INCHSEVENTYONEOUTRADIANSNINETEEN",
+    "tokens": "INCH SEVENTYONE OUT RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.33340201994796
+   },
+   {
+    "letters": "INCHAHUNDREDTHENGORADIANNINETEEN",
+    "tokens": "INCH AHUNDRED THENGO RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.334648767845458
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTONRADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT ON RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.396309815718627
+   },
+   {
+    "letters": "INCHSEVENTYONETHENRADIANEIGHTEEN",
+    "tokens": "INCH SEVENTYONE THEN RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.455407954868477
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTATRADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT AT RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.53759570183325
+   },
+   {
+    "letters": "SEVENINCHONTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH ON THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -27.550187190398365
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTBYRADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT BY RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.615389558005962
+   },
+   {
+    "letters": "INCHESSEVENTYSIXBYRADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX BY RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.689849335162783
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTANDTHENRADIANSTEN",
+    "tokens": "INCH THIRTYEIGHT ANDTHEN RADIANS TEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.71229704894983
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTONRADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT ON RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.724346634298705
+   },
+   {
+    "letters": "INCHSEVENTYONETHENRADIANNINETEEN",
+    "tokens": "INCH SEVENTYONE THEN RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.783444773448554
+   },
+   {
+    "letters": "INCHESSEVENTYSIXONRADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX ON RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.798806411455526
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTATRADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT AT RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.865632520413328
+   },
+   {
+    "letters": "INCHESSEVENTYSIXATRADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX AT RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -27.940092297570153
+   },
+   {
+    "letters": "SEVENRADIANFORTYFIVEINCHESFROMME",
+    "tokens": "SEVEN RADIAN FORTYFIVE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.002241952272577
+   },
+   {
+    "letters": "INCHESSEVENTYSIXBYRADIANNINETEEN",
+    "tokens": "INCHES SEVENTYSIX BY RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.01788615374286
+   },
+   {
+    "letters": "INCHSEVENTYONEPLUSRADIANEIGHTEEN",
+    "tokens": "INCH SEVENTYONE PLUS RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.01794506057514
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTOUTRADIANEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT OUT RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.13613612582079
+   },
+   {
+    "letters": "SEVENINCHOUTFIFTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH OUT FIFTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -28.161533898496025
+   },
+   {
+    "letters": "INCHESSEVENTYSIXATRADIANNINETEEN",
+    "tokens": "INCHES SEVENTYSIX AT RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.26812911615023
+   },
+   {
+    "letters": "SEVENINCHOUTSIXTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH OUT SIXTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -28.32986595879684
+   },
+   {
+    "letters": "INCHSEVENTYONEPLUSRADIANNINETEEN",
+    "tokens": "INCH SEVENTYONE PLUS RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.345981879155218
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTGORADIANSEIGHTEEN",
+    "tokens": "INCH THIRTYEIGHT GO RADIANS EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.4204321584631
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTOUTRADIANNINETEEN",
+    "tokens": "INCH THIRTYEIGHT OUT RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.464172944400868
+   },
+   {
+    "letters": "SEVENRADIANFORTYNINEINCHESFROMME",
+    "tokens": "SEVEN RADIAN FORTYNINE INCHES FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -28.508204235673194
+   },
+   {
+    "letters": "SEVENINCHGOTHIRTEENRADIANSFROMME",
+    "tokens": "SEVEN INCH GO THIRTEEN RADIANS FROMME",
+    "form": "LEAD_I=num-unit_R=num-unit_TAIL",
+    "wordLogp": -28.57430953314284
+   },
+   {
+    "letters": "SEVENTYRADIANTHENGOINCHESSIXHERE",
+    "tokens": "SEVENTY RADIAN THENGO INCHES SIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -28.737449295368645
+   },
+   {
+    "letters": "INCHTHIRTYEIGHTGORADIANSNINETEEN",
+    "tokens": "INCH THIRTYEIGHT GO RADIANS NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.748468977043178
+   },
+   {
+    "letters": "INCHESSEVENTYSIXGORADIANEIGHTEEN",
+    "tokens": "INCHES SEVENTYSIX GO RADIAN EIGHTEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -28.8229287542
+   },
+   {
+    "letters": "INCHESSEVENTYSIXGORADIANNINETEEN",
+    "tokens": "INCHES SEVENTYSIX GO RADIAN NINETEEN",
+    "form": "LEAD_I=unit-num_R=unit-num_TAIL",
+    "wordLogp": -29.150965572780077
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHTWENTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH TWENTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.515870981667824
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHTHIRTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH THIRTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -29.777621725843353
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHEIGHTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH EIGHTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.357303930957524
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHNINETYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCH NINETYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -30.3985016682479
+   },
+   {
+    "letters": "SEVENRADIANFORTYTHREEINCHSFROMME",
+    "tokens": "SEVEN RADIAN FORTYTHREE INCHS FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -32.316247808286505
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHSFORTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCHS FORTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -32.72595986311724
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHSFIFTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCHS FIFTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -32.742989062459756
+   },
+   {
+    "letters": "SEVENTYRADIANTOINCHSSIXTYSIXHERE",
+    "tokens": "SEVENTY RADIAN TO INCHS SIXTYSIX HERE",
+    "form": "LEAD_R=num-unit_I=unit-num_TAIL",
+    "wordLogp": -32.90321806273801
+   },
+   {
+    "letters": "SEVENRADIANFORTYSEVENINCHSFROMME",
+    "tokens": "SEVEN RADIAN FORTYSEVEN INCHS FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -32.92563247637277
+   },
+   {
+    "letters": "SEVENRADIANFORTYEIGHTINCHSFROMME",
+    "tokens": "SEVEN RADIAN FORTYEIGHT INCHS FROMME",
+    "form": "LEAD_R=num-unit_I=num-unit_TAIL",
+    "wordLogp": -33.05831190226415
+   }
+  ]
+ },
+ "orderDetail": {},
+ "published": {
+  "Grinell 2020 / InStepWithTheStars": {
+   "text": "ESTIMATE FOUR RADIANS AND FIVE INCHES",
+   "length": 32,
+   "fitsZ32": true,
+   "generatedByGrammar": false
+  },
+  "DMW 2019 / Stampher 2026": {
+   "text": "IN THREE AND THREE EIGHTHS RADIANS TEN",
+   "length": 32,
+   "fitsZ32": true,
+   "generatedByGrammar": false
+  },
+  "Cragle 2022": {
+   "text": "THREE RADIANS FROM MOUNT AREA TWO INCH",
+   "length": 32,
+   "fitsZ32": true,
+   "generatedByGrammar": false
+  },
+  "Foxon 2023 candidate (needs his transposition)": {
+   "text": "TWELVE INCHES ALONG THE THREE RADIANS",
+   "length": 32,
+   "fitsZ32": false,
+   "generatedByGrammar": false
+  }
+ },
+ "timeSeconds": 7.498
+}

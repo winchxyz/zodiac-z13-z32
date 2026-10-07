@@ -1,0 +1,602 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:08:44.930Z",
+ "label": "scr03_06",
+ "cipher": {
+  "id": "scr03",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr03.txt",
+  "text": "0[N0KzNAA0MEM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   6
+  ],
+  "isomorphAfterSlips": "abcade*ffaghg"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 113161,
+  "scored": 106074,
+  "keptAtLeastStreamMin": 46,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 5602,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 666,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 46,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 34,
+  "4": 12
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.415385430542911,
+  "topShare": 0.10989174602493094,
+  "top10Share": 0.3688997337229428,
+  "effectiveNumberExpEntropy": 245.52326353813788,
+  "effectiveNumberInverseSimpson": 40.140778670672304,
+  "unscoredMassBoundRelative": 0.020218450229985398,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 4,
+   "maxWordLogp": -17.168780430552715,
+   "massEstimateRelative": 4.3348428895154393e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.007435978709521096
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 8,
+   "-17.50": 9,
+   "-17.25": 14,
+   "-17.00": 23,
+   "-16.75": 31,
+   "-16.50": 41,
+   "-16.25": 49,
+   "-16.00": 72,
+   "-15.75": 125,
+   "-15.50": 157,
+   "-15.25": 237,
+   "-15.00": 294,
+   "-14.75": 414,
+   "-14.50": 479,
+   "-14.25": 606,
+   "-14.00": 826,
+   "-13.75": 953,
+   "-13.50": 1084,
+   "-13.25": 1408,
+   "-13.00": 1680,
+   "-12.75": 1921,
+   "-12.50": 2140,
+   "-12.25": 2388,
+   "-12.00": 2724,
+   "-11.75": 2988,
+   "-11.50": 3362,
+   "-11.25": 3636,
+   "-11.00": 3921,
+   "-10.75": 4012,
+   "-10.50": 4283,
+   "-10.25": 4375,
+   "-10.00": 4452,
+   "-9.75": 4507,
+   "-9.50": 4642,
+   "-9.25": 4666,
+   "-9.00": 4557,
+   "-8.75": 4552,
+   "-8.50": 4564,
+   "-8.25": 4506,
+   "-8.00": 4166,
+   "-7.75": 4085,
+   "-7.50": 3945,
+   "-7.25": 3446,
+   "-7.00": 3109,
+   "-6.75": 2732,
+   "-6.50": 2397,
+   "-6.25": 1929,
+   "-6.00": 1611,
+   "-5.75": 1322,
+   "-5.50": 1117,
+   "-5.25": 813,
+   "-5.00": 581,
+   "-4.75": 453,
+   "-4.50": 283,
+   "-4.25": 205,
+   "-4.00": 132,
+   "-3.75": 55,
+   "-3.50": 35,
+   "-3.25": 26,
+   "-3.00": 8,
+   "-2.75": 4,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.00": 8,
+   "-18.75": 114,
+   "-18.50": 432,
+   "-18.25": 860,
+   "-18.00": 1668,
+   "-17.75": 2545,
+   "-17.50": 3609,
+   "-17.25": 4772,
+   "-17.00": 5504,
+   "-16.75": 5839,
+   "-16.50": 6230,
+   "-16.25": 6643,
+   "-16.00": 6903,
+   "-15.75": 7136,
+   "-15.50": 7418,
+   "-15.25": 7138,
+   "-15.00": 6623,
+   "-14.75": 6108,
+   "-14.50": 5177,
+   "-14.25": 4596,
+   "-14.00": 3666,
+   "-13.75": 2973,
+   "-13.50": 2358,
+   "-13.25": 1860,
+   "-13.00": 1557,
+   "-12.75": 1190,
+   "-12.50": 860,
+   "-12.25": 627,
+   "-12.00": 538,
+   "-11.75": 361,
+   "-11.50": 231,
+   "-11.25": 170,
+   "-11.00": 126,
+   "-10.75": 86,
+   "-10.50": 56,
+   "-10.25": 28,
+   "-10.00": 29,
+   "-9.75": 21,
+   "-9.50": 7,
+   "-9.25": 2,
+   "-9.00": 3,
+   "-8.75": 1,
+   "-8.50": 1
+  },
+  "boundUnscored": {
+   "-17.75": 8,
+   "-17.50": 9,
+   "-17.25": 14,
+   "-17.00": 23,
+   "-16.75": 31,
+   "-16.50": 41,
+   "-16.25": 49,
+   "-16.00": 72,
+   "-15.75": 125,
+   "-15.50": 157,
+   "-15.25": 237,
+   "-15.00": 294,
+   "-14.75": 414,
+   "-14.50": 479,
+   "-14.25": 606,
+   "-14.00": 826,
+   "-13.75": 953,
+   "-13.50": 1084,
+   "-13.25": 1408,
+   "-13.00": 257
+  }
+ },
+ "timeMs": {
+  "total": 7316,
+  "setup": 796
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "HIGHKNOWWHERE",
+   "wordLogp": -8.3744,
+   "words": "HIGH KNOW WHERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "N": "G",
+    "K": "K",
+    "z": "N",
+    "A": "W",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "OUTOFCOMMONIN",
+   "wordLogp": -8.5337,
+   "words": "OUT OF COMMON IN",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "U",
+    "N": "T",
+    "K": "F",
+    "z": "C",
+    "A": "M",
+    "M": "N",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ELSEWRITTENIN",
+   "wordLogp": -8.7788,
+   "words": "ELSE WRITTEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "L",
+    "N": "S",
+    "K": "W",
+    "z": "R",
+    "A": "T",
+    "M": "N",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "HIGHCOSTTHERE",
+   "wordLogp": -8.8643,
+   "words": "HIGH COST THERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "N": "G",
+    "K": "C",
+    "z": "O",
+    "A": "T",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "HIGHCOSTTHESE",
+   "wordLogp": -8.9769,
+   "words": "HIGH COST THESE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "N": "G",
+    "K": "C",
+    "z": "O",
+    "A": "T",
+    "M": "E",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "EDGEWRITTENIN",
+   "wordLogp": -9.1108,
+   "words": "EDGE WRITTEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "D",
+    "N": "G",
+    "K": "W",
+    "z": "R",
+    "A": "T",
+    "M": "N",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ANDABOUTTASKS",
+   "wordLogp": -9.1999,
+   "words": "AND ABOUT TASKS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "N",
+    "N": "D",
+    "K": "B",
+    "z": "O",
+    "A": "T",
+    "M": "S",
+    "E": "K"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "HIGHSTILLHERE",
+   "wordLogp": -9.2836,
+   "words": "HIGH STILL HERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "N": "G",
+    "K": "S",
+    "z": "T",
+    "A": "L",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "HIGHKNOWWHATA",
+   "wordLogp": -9.2924,
+   "words": "HIGH KNOW WHAT A",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "N": "G",
+    "K": "K",
+    "z": "N",
+    "A": "W",
+    "M": "A",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THATSMALLTODO",
+   "wordLogp": -9.2975,
+   "words": "THAT SMALL TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "S",
+    "z": "M",
+    "A": "L",
+    "M": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "HIGHCLASSHERE",
+   "wordLogp": -9.3364,
+   "words": "HIGH CLASS HERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "N": "G",
+    "K": "C",
+    "z": "L",
+    "A": "S",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ELSEWRITTENON",
+   "wordLogp": -9.3493,
+   "words": "ELSE WRITTEN ON",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "L",
+    "N": "S",
+    "K": "W",
+    "z": "R",
+    "A": "T",
+    "M": "N",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THATCLASSTODO",
+   "wordLogp": -9.3619,
+   "words": "THAT CLASS TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "C",
+    "z": "L",
+    "A": "S",
+    "M": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "HIGHLYATTHESE",
+   "wordLogp": -9.3845,
+   "words": "HIGHLY AT THESE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "N": "G",
+    "K": "L",
+    "z": "Y",
+    "A": "T",
+    "M": "E",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HIGHJUSTTHERE",
+   "wordLogp": -9.5331,
+   "words": "HIGH JUST THERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "N": "G",
+    "K": "J",
+    "z": "U",
+    "A": "T",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "HIGHSTUFFHERE",
+   "wordLogp": -9.5364,
+   "words": "HIGH STUFF HERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "N": "G",
+    "K": "S",
+    "z": "T",
+    "A": "F",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "THATDOESSTEVE",
+   "wordLogp": -9.539,
+   "words": "THAT DOES STEVE",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "D",
+    "z": "O",
+    "A": "S",
+    "M": "E",
+    "E": "V"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THATSMALLTOGO",
+   "wordLogp": -9.5613,
+   "words": "THAT SMALL TO GO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "N": "A",
+    "K": "S",
+    "z": "M",
+    "A": "L",
+    "M": "O",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "HIGHPOSTTHERE",
+   "wordLogp": -9.5614,
+   "words": "HIGH POST THERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "N": "G",
+    "K": "P",
+    "z": "O",
+    "A": "T",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "OUTOFLESSONIN",
+   "wordLogp": -9.5634,
+   "words": "OUT OF LESSON IN",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "U",
+    "N": "T",
+    "K": "F",
+    "z": "L",
+    "A": "S",
+    "M": "N",
+    "E": "I"
+   }
+  }
+ ]
+}

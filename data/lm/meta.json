@@ -1,0 +1,642 @@
+{
+  "description": "English language data for the Zodiac Z13/Z32 solvers. Load with tools/lm.js.",
+  "built": "2026-10-07T11:05:32.041Z",
+  "build_commands": [
+    "python tools/lm_build_corpus.py --download --build",
+    "python tools/lm_build_ngrams.py",
+    "python tools/lm_build_words.py",
+    "python tools/lm_build_names.py",
+    "node tools/lm_build_meta.js"
+  ],
+  "corpus": {
+    "source": "Project Gutenberg plain-text e-books (catalog https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv; files from the robot mirror http://aleph.gutenberg.org as linked by https://www.gutenberg.org/robot/harvest)",
+    "selection": "Language en, Library of Congress class PS (American literature), not Poetry/Plays; tier A = first author born 1880-1945 (max 6 texts per author), tier B = born 1850-1879 (max 5 per author); random order with fixed seed; Gutenberg header/footer and short transcriber/copyright lines removed; NFKD accents folded; A-Z only.",
+    "manifest": "data/lm/corpus_manifest.tsv",
+    "texts": 870,
+    "letters_total": 114121438,
+    "tiers": {
+      "A": {
+        "texts": 750,
+        "letters": 82508421
+      },
+      "B": {
+        "texts": 120,
+        "letters": 31613017
+      }
+    },
+    "letters_by_author_birth_decade": {
+      "1900s": 7475381,
+      "1910s": 11926517,
+      "1920s": 6773305,
+      "1890s": 19151954,
+      "1880s": 34053563,
+      "1930s": 3082349,
+      "1940s": 45352,
+      "1860s": 10948051,
+      "1870s": 13047211,
+      "1850s": 7617755
+    },
+    "letters_by_genre_shelf": {
+      "science fiction": 31102290,
+      "crime/mystery": 9553513,
+      "adventure/western": 16670664,
+      "general fiction": 46768488,
+      "other/unshelved": 10026483
+    },
+    "train_letters": 112031758,
+    "heldout_letters": 2089680,
+    "heldout_rule": "documents with manifest row index % 50 == 25 are excluded from the tables and used only for evaluation",
+    "caveat": "All fiction-shelved prose: science fiction 27.3%, adventure/western 14.6%, crime/mystery 8.4%, general fiction 41.0%, unshelved 8.8% of letters. Most texts by authors born after 1900 are 1950s-60s American magazine stories that Project Gutenberg's transcriber notes describe as having no renewed US copyright. No newspaper or private-letter text is included; Zodiac letters (Z408/Z340 plaintexts) are not in the corpus."
+  },
+  "ngrams": {
+    "alphabet": "A..Z = 0..25",
+    "index": "index(c_0..c_{n-1}) = sum c_i * 26^(n-1-i)",
+    "value": "joint log10 P(c_0..c_{n-1}); dense tables of order n sum to 1 over all 26^n entries",
+    "smoothing": "interpolated modified absolute discounting (three discounts D1, D2, D3+ per order, D estimated from count-of-counts as in Chen & Goodman 1998), recursively interpolated down to an add-one unigram; joint values built by the chain rule J_n(hc) = J_{n-1}(h) + log10 P_n(c|h), so log10 P_n(c|h) = J_n(hc) - J_{n-1}(h) exactly",
+    "files": {
+      "ngram1.bin .. ngram5.bin": "dense little-endian Float32, 26^n entries",
+      "ngram6.keys.bin": "sorted little-endian Uint32 indices of the stored 6-grams (count >= 1 in training)",
+      "ngram6.vals.bin": "little-endian Float32 joint log10 P for each key",
+      "ngram6.gamma.bin": "dense little-endian Float32, 26^5 entries: G6(h) = log10 of the backoff weight gamma_6(h) of 5-letter history h (0 for histories never seen in training)"
+    },
+    "dense6": "tools/lm.js dense6() builds (in memory, not on disk) a 26^6-byte Uint8Array q with q[idx] = round((J6 - min)/step), min = -24, step = 21/255 (~0.082), values below -24 clipped; decode J6 ~= min + q*step. Optional SharedArrayBuffer for worker_threads. About 8x faster than j6() for window sums.",
+    "ngram6_unseen": "J_6(h c) = J_5(h) + G6(h) + J_5(g[1..5]) - J_4(g[1..4]) for any 6-gram g = h c not stored (exact under the model; tools/lm.js j6() does this)",
+    "ngram6_floor_constant": -10.049324617250079,
+    "ngram6_floor_note": "If a solver insists on a single constant for unstored 6-grams, use ngram6_floor_constant = log10(0.01 / number of training 6-gram windows); the exact backoff above is preferred and is what tools/lm.js uses.",
+    "per_order": {
+      "1": {
+        "distinct": 26,
+        "smoothing": "add-one"
+      },
+      "2": {
+        "windows": 112030905,
+        "distinct": 676,
+        "possible": 676,
+        "n1": 3,
+        "n2": 2,
+        "n3": 1,
+        "n4": 3,
+        "D1": 0.5,
+        "D2": 0.5,
+        "D3": 0.5,
+        "discount_rule": "fixed 0.5 (too few rare n-grams)",
+        "max_row_sum_error": 2.220446049250313e-16,
+        "table_sum": 0.9999999999999999
+      },
+      "3": {
+        "windows": 112030052,
+        "distinct": 13770,
+        "possible": 17576,
+        "n1": 1160,
+        "n2": 648,
+        "n3": 470,
+        "n4": 376,
+        "D1": 0.4723127035830619,
+        "D2": 0.9722825431294486,
+        "D3": 1.488599348534202,
+        "discount_rule": "Chen-Goodman count-of-counts, clamped",
+        "max_row_sum_error": 3.3306690738754696e-16,
+        "table_sum": 0.9999999999999998
+      },
+      "4": {
+        "windows": 112029199,
+        "distinct": 152490,
+        "possible": 456976,
+        "n1": 24584,
+        "n2": 11297,
+        "n3": 7049,
+        "n4": 5032,
+        "D1": 0.5210903387171987,
+        "D2": 1.0245642743336638,
+        "D3": 1.5120575489147716,
+        "discount_rule": "Chen-Goodman count-of-counts, clamped",
+        "max_row_sum_error": 3.3306690738754696e-16,
+        "table_sum": 1
+      },
+      "5": {
+        "windows": 112028346,
+        "distinct": 1026556,
+        "possible": 11881376,
+        "n1": 255214,
+        "n2": 110228,
+        "n3": 67459,
+        "n4": 47684,
+        "D1": 0.5365358336661972,
+        "D2": 1.0149280363440871,
+        "D3": 1.4829793093559676,
+        "discount_rule": "Chen-Goodman count-of-counts, clamped",
+        "max_row_sum_error": 4.440892098500626e-16,
+        "table_sum": 0.9999999999999999
+      },
+      "6": {
+        "windows": 112027493,
+        "distinct": 4233150,
+        "possible": 308915776,
+        "n1": 1555356,
+        "n2": 585373,
+        "n3": 331553,
+        "n4": 221416,
+        "D1": 0.5705421147117753,
+        "D2": 1.0305414679578666,
+        "D3": 1.4759341297346436,
+        "discount_rule": "Chen-Goodman count-of-counts, clamped",
+        "stored": 4233150,
+        "floor_constant": -10.049324617250079,
+        "min_stored": -9.320712669442436,
+        "max_stored": -3.109371836538812,
+        "max_row_sum_error_sample5000": 3.1086244689504383e-15
+      }
+    },
+    "heldout_eval": {
+      "2": {
+        "heldout_perChar_log10": -1.0880780386658901,
+        "heldout_bits_per_char": 3.6145170060741583,
+        "heldout_perWindow": -2.345241671010947,
+        "shuffled_perChar_log10": -1.4945918520426733,
+        "shuffled_perWindow": -2.7517588700118676,
+        "uniform_random_perChar_log10": -2.148339848960263,
+        "uniform_random_perWindow": -3.829858319631689,
+        "english_minus_shuffled_perChar": 0.40651381337678316
+      },
+      "3": {
+        "heldout_perChar_log10": -0.9625230950913555,
+        "heldout_bits_per_char": 3.1974325115619138,
+        "heldout_perWindow": -3.307764542884992,
+        "shuffled_perChar_log10": -1.8962738213607484,
+        "shuffled_perWindow": -4.648041653337808,
+        "uniform_random_perChar_log10": -2.882390116587949,
+        "uniform_random_perWindow": -6.712259905587942,
+        "english_minus_shuffled_perChar": 0.9337507262693929
+      },
+      "4": {
+        "heldout_perChar_log10": -0.8333033497064679,
+        "heldout_bits_per_char": 2.7681738089536645,
+        "heldout_perWindow": -4.1410651028057215,
+        "shuffled_perChar_log10": -2.286366299836989,
+        "shuffled_perWindow": -6.934421838199111,
+        "uniform_random_perChar_log10": -3.351631831141455,
+        "uniform_random_perWindow": -10.063913334789039,
+        "english_minus_shuffled_perChar": 1.4530629501305212
+      },
+      "5": {
+        "heldout_perChar_log10": -0.7299584912279189,
+        "heldout_bits_per_char": 2.4248696201116138,
+        "heldout_perWindow": -4.871013005272375,
+        "shuffled_perChar_log10": -2.6201090577295982,
+        "shuffled_perWindow": -9.554550885325066,
+        "uniform_random_perChar_log10": -3.525860182464605,
+        "uniform_random_perWindow": -13.589800830111653,
+        "english_minus_shuffled_perChar": 1.8901505665016793
+      },
+      "6": {
+        "heldout_perChar_log10": -0.667881151733514,
+        "heldout_bits_per_char": 2.2186531619892897,
+        "heldout_perWindow": -5.5388778288904055,
+        "shuffled_perChar_log10": -2.773471380592286,
+        "shuffled_perWindow": -12.328045010318,
+        "uniform_random_perChar_log10": -3.5613638523199067,
+        "uniform_random_perWindow": -17.151195196876426,
+        "english_minus_shuffled_perChar": 2.105590228858772
+      }
+    },
+    "letter_frequencies": {
+      "A": 0.08028596677024384,
+      "B": 0.015343988442991317,
+      "C": 0.023710678538133804,
+      "D": 0.04579528244125206,
+      "E": 0.1255393850018849,
+      "F": 0.021536000532991727,
+      "G": 0.021950534776040916,
+      "H": 0.06466243259344373,
+      "I": 0.06741716933514513,
+      "J": 0.0015827922650289929,
+      "K": 0.009514337889797284,
+      "L": 0.042304674001455905,
+      "M": 0.02492656591178369,
+      "N": 0.06812130895955414,
+      "O": 0.07513980990997214,
+      "P": 0.016613360650825457,
+      "Q": 0.0008968617630725745,
+      "R": 0.05743658865015758,
+      "S": 0.061827147263010904,
+      "T": 0.09097358804277622,
+      "U": 0.028839991960136875,
+      "V": 0.008931440672385058,
+      "W": 0.024166477866035093,
+      "X": 0.0013622922885848136,
+      "Y": 0.020295218432616224,
+      "Z": 0.0008261050406796258
+    }
+  },
+  "words": {
+    "sources": {
+      "count_1w.txt / count_2w.txt": "Peter Norvig, https://norvig.com/ngrams/ (derived from the Google Web 1T 5-gram corpus, LDC2006T13); copied from his repository https://github.com/norvig/pytudes/tree/main/data/text because norvig.com serves a JavaScript bot check to scripts. count_1w.txt: 4,956,241 bytes, md5 1710e1aa36917a32ba8cee42acf8af4f (norvig.com/ngrams lists it as 4.9 MB); count_2w.txt: 5,566,017 bytes, md5 44766e613c3750f952b7861ca54a3e49 (size on norvig.com not cross-checked because of the bot check).",
+      "totals": "N tokens = 1,024,908,267,229 and N sentences = 95,119,665,584 (https://catalog.ldc.upenn.edu/LDC2006T13)"
+    },
+    "files": {
+      "words.tsv": "WORD<TAB>count, every all-letter entry of count_1w upper-cased (333333 rows)",
+      "bigrams.tsv": "W1<TAB>W2<TAB>count from count_2w, upper-cased and case-merged, A-Z words or <S> (sentence start) only (258168 rows)",
+      "words_common.tsv": "WORD<TAB>count curated vocabulary (60006 rows): top 60000 count_1w words that pass a junk filter (1-letter: A, I; 2-letter: whitelist; no valid Roman numerals except I/MIX; >=3 letters must contain a vowel (whitelist MRS, HMM, ...) and occur >= 2 times in the Gutenberg corpus), plus forced words (numbers, directions, map/measure words, contractions without apostrophes, Zodiac-case vocabulary) and the 400 most frequent Gutenberg words that pass the filter",
+      "words_stats.json": "parameters read by tools/lm.js (p_oov, OOV length distribution, bigram lambda)"
+    },
+    "forced_added": [
+      "AFTERLIFE",
+      "BENICIA",
+      "BERRYESSA",
+      "NAPA",
+      "RADIAN",
+      "RADIANS"
+    ],
+    "forced_missing_from_norvig": [
+      "AINT"
+    ],
+    "model": {
+      "unigram": "P1(w) = (1 - p_oov) * count(w) / (sum of vocabulary counts)",
+      "unknown": "P_unk(w) = p_oov * P_len(|w|) * prod_i P_letter(w_i) with P_letter = order-1 letter model; p_oov and P_len (add-0.5 smoothed, lengths 1..30, geometric 0.8 tail) measured on the Gutenberg corpus tokens missing from the vocabulary. This is a proper distribution over all strings and penalises an unknown word by about 1.258 log10 units per letter on average (the letter entropy) plus the OOV overhead log10 p_oov + log10 P_len, so known words win whenever they explain the text.",
+      "bigram": "P(w2|w1) = lam * c2(w1 w2)/c1(w1) + (1 - lam * s(w1)) * P(w2), s(w1) = sum over listed bigrams of c2(w1 .)/c1(w1), c1(<S>) = N sentences; lam tuned on held-out Gutenberg word pairs",
+      "params": {
+        "common": {
+          "vocab_size": 60006,
+          "vocab_count_sum": 528339889481,
+          "p_oov": 0.014697686930336728,
+          "oov_len_log10": [
+            -1.0108164814676053,
+            -0.9689669918827847,
+            -1.9181000955436294,
+            -1.3102495014790754,
+            -1.0507319025198982,
+            -0.8536809626518317,
+            -0.840320004975096,
+            -0.9015189431192285,
+            -1.0126422817342513,
+            -1.2297070397103458,
+            -1.4323873864273884,
+            -1.6781279702166154,
+            -1.9484807249264946,
+            -2.3018115339485417,
+            -2.597203415916118,
+            -2.8474960262889226,
+            -3.242902562097854,
+            -3.832512244876179,
+            -4.325008361162795,
+            -4.325008361162795,
+            -4.570990790495871,
+            -5.048112045215533,
+            -5.048112045215533,
+            -4.938967575790466,
+            -5.89321008522979,
+            -5.89321008522979,
+            -5.048112045215533,
+            -5.416088830510128,
+            -5.89321008522979,
+            -4.570990790495871
+          ],
+          "histories_rescaled": 0,
+          "bigram_lambda": 0.99,
+          "heldout_pairs": 480495,
+          "heldout_log10_per_word": {
+            "0.3": -3.0758905639813,
+            "0.5": -3.0202704423980435,
+            "0.7": -2.9858682544751463,
+            "0.8": -2.9743058358418697,
+            "0.9": -2.966163089144109,
+            "0.95": -2.963428978903459,
+            "0.97": -2.9626070534324476,
+            "0.98": -2.9622581762398172,
+            "0.99": -2.9619524045748613
+          },
+          "heldout_unigram_log10_per_word": -3.312231614082996,
+          "bigrams_used": 242394
+        },
+        "full": {
+          "vocab_size": 333333,
+          "vocab_count_sum": 588124220187,
+          "p_oov": 0.009744000913615209,
+          "oov_len_log10": [
+            -5.714706878813469,
+            -5.714706878813469,
+            -3.3548713964735812,
+            -1.2462856950754126,
+            -0.9464610774815915,
+            -0.7480912021516545,
+            -0.72828003068104,
+            -0.7837629390530693,
+            -0.8983263616855313,
+            -1.1115516760419937,
+            -1.3482278872048752,
+            -1.587958737253277,
+            -1.8610694968548749,
+            -2.2248889705120183,
+            -2.5713797488214225,
+            -2.8121600994994775,
+            -3.1008650569374,
+            -3.6693839000268116,
+            -4.196192938935582,
+            -4.2233451849791965,
+            -4.39248758407955,
+            -4.869608838799213,
+            -5.01573687447745,
+            -4.760464369374144,
+            -5.714706878813469,
+            -5.714706878813469,
+            -4.869608838799213,
+            -5.237585624093807,
+            -5.714706878813469,
+            -4.39248758407955
+          ],
+          "histories_rescaled": 9,
+          "bigram_lambda": 0.99,
+          "heldout_pairs": 483363,
+          "heldout_log10_per_word": {
+            "0.3": -3.1139844425345555,
+            "0.5": -3.0559693545283557,
+            "0.7": -3.0200231027747027,
+            "0.8": -3.0078744834909843,
+            "0.9": -2.999243290549098,
+            "0.95": -2.9963009893274397,
+            "0.97": -2.9954030279480373,
+            "0.98": -2.9950178033253496,
+            "0.99": -2.9946768558885055
+          },
+          "heldout_unigram_log10_per_word": -3.3641241058029236,
+          "bigrams_used": 258168
+        }
+      }
+    }
+  },
+  "names": {
+    "readme": "data/names/README.md",
+    "stats": {
+      "first_male.tsv": {
+        "names": 10853,
+        "ssa_names": 10826,
+        "ssa_births": 56170503,
+        "census1990_names": 1219,
+        "weight_sum": 0.9755248887171624
+      },
+      "first_female.tsv": {
+        "names": 16831,
+        "ssa_names": 16234,
+        "ssa_births": 59321149,
+        "census1990_names": 4275,
+        "weight_sum": 0.975353926930641
+      },
+      "first_all.tsv": {
+        "names": 24490,
+        "weight_sum": 0.9754394078239017
+      },
+      "surnames.tsv": {
+        "names": 175879,
+        "census1990_names": 88799,
+        "census2010_names": 162253,
+        "census2010_total_count": 294979229,
+        "weight_sum": 0.9037658365159322
+      }
+    }
+  },
+  "load_ms": {
+    "ngram2to5": 29.2611,
+    "ngram6": 111.782,
+    "words_common": 876.9798,
+    "words_full": 1081.5519,
+    "dense6_build": 8076.8896
+  },
+  "benchmark": {
+    "ngramSumCodes_n2_Mchars_per_s": 159,
+    "ngramSumCodes_n3_Mchars_per_s": 163.5,
+    "ngramSumCodes_n4_Mchars_per_s": 174,
+    "ngramSumCodes_n5_Mchars_per_s": 172.4,
+    "ngramSumCodes_n6_Mchars_per_s": 11.3,
+    "j6_random_index_M_per_s": 10.1,
+    "ngramScore_n5_340chars_per_s": 83043,
+    "ngramScore_n6_340chars_per_s": 11659,
+    "wordSegment_13chars_per_s": 18983,
+    "wordSegment_32chars_per_s": 7425,
+    "wordSegment_100chars_per_s": 1074,
+    "wordSegment_340chars_per_s": 353,
+    "dense6_window_sum_Mchars_per_s": 233.1,
+    "dense6_max_abs_quantisation_error_log10": 0.041169772428624185
+  },
+  "benchmark_machine": "13th Gen Intel(R) Core(TM) i7-13700H (20 logical CPUs, shared with other jobs during the build), Node v24.16.0, single thread, best of 3",
+  "sanity": {
+    "english_vs_shuffled": {
+      "2": {
+        "passages": 200,
+        "letters_each": 1000,
+        "english_mean_perChar": -1.0906329099798204,
+        "shuffled_mean_perChar": -1.4949348437058925,
+        "english_beats_its_shuffle_fraction": 1
+      },
+      "3": {
+        "passages": 200,
+        "letters_each": 1000,
+        "english_mean_perChar": -0.9678329622715712,
+        "shuffled_mean_perChar": -1.893903838519455,
+        "english_beats_its_shuffle_fraction": 1
+      },
+      "4": {
+        "passages": 200,
+        "letters_each": 1000,
+        "english_mean_perChar": -0.8424408867949248,
+        "shuffled_mean_perChar": -2.2847509474903327,
+        "english_beats_its_shuffle_fraction": 1
+      },
+      "5": {
+        "passages": 200,
+        "letters_each": 1000,
+        "english_mean_perChar": -0.7405183026719092,
+        "shuffled_mean_perChar": -2.622984002948999,
+        "english_beats_its_shuffle_fraction": 1
+      },
+      "6": {
+        "passages": 200,
+        "letters_each": 1000,
+        "english_mean_perChar": -0.6801165338906645,
+        "shuffled_mean_perChar": -2.7702061187730016,
+        "english_beats_its_shuffle_fraction": 1
+      }
+    },
+    "short_window_discrimination": {
+      "13": {
+        "2": {
+          "english_mean_perChar": -1.1026753309575432,
+          "shuffled_mean_perChar": -1.4456632797328295,
+          "english_beats_its_shuffle_fraction": 0.98475
+        },
+        "3": {
+          "english_mean_perChar": -0.9994163233064701,
+          "shuffled_mean_perChar": -1.7456229820503715,
+          "english_beats_its_shuffle_fraction": 0.9975
+        },
+        "4": {
+          "english_mean_perChar": -0.9027893747182993,
+          "shuffled_mean_perChar": -2.048475556896283,
+          "english_beats_its_shuffle_fraction": 0.9995
+        },
+        "5": {
+          "english_mean_perChar": -0.8308550315957821,
+          "shuffled_mean_perChar": -2.2810221056846496,
+          "english_beats_its_shuffle_fraction": 0.99925
+        },
+        "6": {
+          "english_mean_perChar": -0.7941386025909029,
+          "shuffled_mean_perChar": -2.383102548128137,
+          "english_beats_its_shuffle_fraction": 0.99925
+        }
+      },
+      "32": {
+        "2": {
+          "english_mean_perChar": -1.0961433732798322,
+          "shuffled_mean_perChar": -1.4763331755539402,
+          "english_beats_its_shuffle_fraction": 0.99925
+        },
+        "3": {
+          "english_mean_perChar": -0.9827342918720097,
+          "shuffled_mean_perChar": -1.8382122981045395,
+          "english_beats_its_shuffle_fraction": 1
+        },
+        "4": {
+          "english_mean_perChar": -0.869376359150745,
+          "shuffled_mean_perChar": -2.191314712510444,
+          "english_beats_its_shuffle_fraction": 1
+        },
+        "5": {
+          "english_mean_perChar": -0.7803871866352856,
+          "shuffled_mean_perChar": -2.488785287680104,
+          "english_beats_its_shuffle_fraction": 1
+        },
+        "6": {
+          "english_mean_perChar": -0.7291356423045509,
+          "shuffled_mean_perChar": -2.6191220643153645,
+          "english_beats_its_shuffle_fraction": 1
+        }
+      },
+      "100": {
+        "2": {
+          "english_mean_perChar": -1.0925097009390567,
+          "shuffled_mean_perChar": -1.490376008602082,
+          "english_beats_its_shuffle_fraction": 1
+        },
+        "3": {
+          "english_mean_perChar": -0.9730428530740742,
+          "shuffled_mean_perChar": -1.8761491201338167,
+          "english_beats_its_shuffle_fraction": 1
+        },
+        "4": {
+          "english_mean_perChar": -0.8512943448331949,
+          "shuffled_mean_perChar": -2.2599056722831707,
+          "english_beats_its_shuffle_fraction": 1
+        },
+        "5": {
+          "english_mean_perChar": -0.7552062085425859,
+          "shuffled_mean_perChar": -2.580883369605546,
+          "english_beats_its_shuffle_fraction": 1
+        },
+        "6": {
+          "english_mean_perChar": -0.6977124656903745,
+          "shuffled_mean_perChar": -2.727433457364178,
+          "english_beats_its_shuffle_fraction": 1
+        }
+      }
+    },
+    "required_words_checked": 77,
+    "required_words_missing": [],
+    "short_inputs": {
+      "ngramScore(\"AB\", 4)": {
+        "n": 2,
+        "len": 2,
+        "windows": 1,
+        "sum": -2.698401689529419,
+        "perWindow": -2.698401689529419,
+        "logp": -2.698401689529419,
+        "perChar": -1.3492008447647095
+      },
+      "ngramScore(\"\", 4)": {
+        "n": 4,
+        "len": 0,
+        "windows": 0,
+        "sum": 0,
+        "perWindow": 0,
+        "logp": 0,
+        "perChar": 0
+      },
+      "ngramScore(\"the cat!\", 3) (non-letters ignored)": {
+        "n": 3,
+        "len": 6,
+        "windows": 4,
+        "sum": -11.170843720436096,
+        "perWindow": -2.792710930109024,
+        "logp": -4.823232412338257,
+        "perChar": -0.8038720687230428
+      }
+    },
+    "viterbi_vs_bruteforce": {
+      "tests": 200,
+      "mismatches": 0
+    },
+    "wordSegment": {
+      "IHOPEYOUAREHAVINGLOTSOFFUN": {
+        "words": "I HOPE YOU ARE HAVING LOTS OF FUN",
+        "logp": -18.670110533113263,
+        "perChar": -0.7180811743505101,
+        "unknown": []
+      },
+      "ILIKEKILLINGPEOPLEBECAUSEITISSOMUCHFUN": {
+        "words": "I LIKE KILLING PEOPLE BECAUSE IT IS SO MUCH FUN",
+        "logp": -22.860053583786968,
+        "perChar": -0.6015803574680781,
+        "unknown": []
+      },
+      "THEMOUNTDIABLOCODECONCERNSRADIANSANDINCHESALONGTHERADIANS": {
+        "words": "THE MOUNT DIABLO CODE CONCERNS RADIANS AND INCHES ALONG THE RADIANS",
+        "logp": -42.83787693248528,
+        "perChar": -0.7515417005699172,
+        "unknown": []
+      },
+      "MYNAMEIS": {
+        "words": "MY NAME IS",
+        "logp": -6.416210425736426,
+        "perChar": -0.8020263032170533,
+        "unknown": []
+      },
+      "XQZVKWJPLMRT": {
+        "words": "XQZVKWJPLMRT",
+        "logp": -28.03328388694476,
+        "perChar": -2.3361069905787297,
+        "unknown": [
+          "XQZVKWJPLMRT"
+        ]
+      },
+      "THISISATESTOFTHEEMERGENCYBROADCASTSYSTEM": {
+        "words": "THIS IS A TEST OF THE EMERGENCY BROADCAST SYSTEM",
+        "logp": -21.345663003985077,
+        "perChar": -0.533641575099627,
+        "unknown": []
+      }
+    },
+    "wordSegment_pass": true,
+    "ngram_pass": true,
+    "js_python_crosscheck": {
+      "2": {
+        "js_heldout_perChar": -1.0880780286885874,
+        "python_heldout_perChar": -1.0880780386658901
+      },
+      "3": {
+        "js_heldout_perChar": -0.9625231030274075,
+        "python_heldout_perChar": -0.9625230950913555
+      },
+      "4": {
+        "js_heldout_perChar": -0.8333033491649807,
+        "python_heldout_perChar": -0.8333033497064679
+      },
+      "5": {
+        "js_heldout_perChar": -0.729958489788815,
+        "python_heldout_perChar": -0.7299584912279189
+      },
+      "6": {
+        "js_heldout_perChar": -0.6678811536640429,
+        "python_heldout_perChar": -0.667881151733514
+      }
+    }
+  }
+}

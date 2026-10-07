@@ -1,0 +1,609 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:34:25.391Z",
+ "label": "scr19_12",
+ "cipher": {
+  "id": "scr19",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr19.txt",
+  "text": "[NKAz0EMAM0N0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   12
+  ],
+  "isomorphAfterSlips": "abcdefghdhfb*"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 263529,
+  "scored": 248815,
+  "keptAtLeastStreamMin": 188,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 17499,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2223,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 188,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 6,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 10,
+  "3": 124,
+  "4": 53,
+  "5": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.602640116399567,
+  "topShare": 0.0893434740544886,
+  "top10Share": 0.3507386234267329,
+  "effectiveNumberExpEntropy": 273.3192236738163,
+  "effectiveNumberInverseSimpson": 49.28529073231674,
+  "unscoredMassBoundRelative": 0.006460570471571266,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 14,
+   "maxWordLogp": -15.130841470364825,
+   "massEstimateRelative": 0.000003654028901832101,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0021476735810945025
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 8,
+   "-17.75": 20,
+   "-17.50": 34,
+   "-17.25": 47,
+   "-17.00": 57,
+   "-16.75": 88,
+   "-16.50": 149,
+   "-16.25": 193,
+   "-16.00": 250,
+   "-15.75": 307,
+   "-15.50": 434,
+   "-15.25": 521,
+   "-15.00": 735,
+   "-14.75": 822,
+   "-14.50": 1092,
+   "-14.25": 1400,
+   "-14.00": 1509,
+   "-13.75": 1911,
+   "-13.50": 2145,
+   "-13.25": 2563,
+   "-13.00": 2887,
+   "-12.75": 3495,
+   "-12.50": 3993,
+   "-12.25": 4604,
+   "-12.00": 5174,
+   "-11.75": 5915,
+   "-11.50": 6484,
+   "-11.25": 7302,
+   "-11.00": 8144,
+   "-10.75": 8713,
+   "-10.50": 9219,
+   "-10.25": 9793,
+   "-10.00": 10137,
+   "-9.75": 10145,
+   "-9.50": 10568,
+   "-9.25": 10586,
+   "-9.00": 10943,
+   "-8.75": 11111,
+   "-8.50": 11331,
+   "-8.25": 11386,
+   "-8.00": 11292,
+   "-7.75": 10828,
+   "-7.50": 10420,
+   "-7.25": 9925,
+   "-7.00": 8825,
+   "-6.75": 8170,
+   "-6.50": 6854,
+   "-6.25": 5623,
+   "-6.00": 4689,
+   "-5.75": 3367,
+   "-5.50": 2518,
+   "-5.25": 1813,
+   "-5.00": 1273,
+   "-4.75": 781,
+   "-4.50": 411,
+   "-4.25": 267,
+   "-4.00": 139,
+   "-3.75": 70,
+   "-3.50": 31,
+   "-3.25": 10,
+   "-3.00": 6,
+   "-2.75": 2
+  },
+  "exactScored": {
+   "-19.25": 3,
+   "-19.00": 12,
+   "-18.75": 66,
+   "-18.50": 265,
+   "-18.25": 704,
+   "-18.00": 1711,
+   "-17.75": 3393,
+   "-17.50": 5705,
+   "-17.25": 8182,
+   "-17.00": 10498,
+   "-16.75": 13133,
+   "-16.50": 15179,
+   "-16.25": 16531,
+   "-16.00": 17472,
+   "-15.75": 18392,
+   "-15.50": 17933,
+   "-15.25": 17345,
+   "-15.00": 16359,
+   "-14.75": 14570,
+   "-14.50": 12961,
+   "-14.25": 11145,
+   "-14.00": 9309,
+   "-13.75": 7899,
+   "-13.50": 6511,
+   "-13.25": 5361,
+   "-13.00": 4201,
+   "-12.75": 3548,
+   "-12.50": 2809,
+   "-12.25": 2170,
+   "-12.00": 1665,
+   "-11.75": 1202,
+   "-11.50": 828,
+   "-11.25": 578,
+   "-11.00": 377,
+   "-10.75": 261,
+   "-10.50": 174,
+   "-10.25": 119,
+   "-10.00": 84,
+   "-9.75": 47,
+   "-9.50": 42,
+   "-9.25": 34,
+   "-9.00": 17,
+   "-8.75": 6,
+   "-8.50": 9,
+   "-8.25": 2,
+   "-8.00": 2,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-18.00": 8,
+   "-17.75": 20,
+   "-17.50": 34,
+   "-17.25": 47,
+   "-17.00": 57,
+   "-16.75": 88,
+   "-16.50": 149,
+   "-16.25": 193,
+   "-16.00": 250,
+   "-15.75": 307,
+   "-15.50": 434,
+   "-15.25": 521,
+   "-15.00": 735,
+   "-14.75": 822,
+   "-14.50": 1092,
+   "-14.25": 1400,
+   "-14.00": 1509,
+   "-13.75": 1911,
+   "-13.50": 2145,
+   "-13.25": 2563,
+   "-13.00": 429
+  }
+ },
+ "timeMs": {
+  "total": 4427,
+  "setup": 392
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "WITHALCOHOLIN",
+   "wordLogp": -7.6516,
+   "words": "WITH ALCOHOL IN",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "[": "W",
+    "N": "I",
+    "K": "T",
+    "A": "H",
+    "z": "A",
+    "E": "C",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "WITHALCOHOLIS",
+   "wordLogp": -7.7941,
+   "words": "WITH ALCOHOL IS",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "[": "W",
+    "N": "I",
+    "K": "T",
+    "A": "H",
+    "z": "A",
+    "E": "C",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "CREATINGAGIRL",
+   "wordLogp": -7.9293,
+   "words": "CREATING A GIRL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "C",
+    "N": "R",
+    "K": "E",
+    "A": "A",
+    "z": "T",
+    "E": "N",
+    "M": "G"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "YOUARESTATEOF",
+   "wordLogp": -8.0681,
+   "words": "YOU ARE STATE OF",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "Y",
+    "N": "O",
+    "K": "U",
+    "A": "A",
+    "z": "R",
+    "E": "S",
+    "M": "T"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "WAYTOCRITICAL",
+   "wordLogp": -8.1742,
+   "words": "WAY TO CRITICAL",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "[": "W",
+    "N": "A",
+    "K": "Y",
+    "A": "T",
+    "z": "O",
+    "E": "R",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "CAUGHTDIGITAL",
+   "wordLogp": -8.2744,
+   "words": "CAUGHT DIGITAL",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "C",
+    "N": "A",
+    "K": "U",
+    "A": "G",
+    "z": "H",
+    "E": "D",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "WASTECRITICAL",
+   "wordLogp": -8.3436,
+   "words": "WASTE CRITICAL",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "[": "W",
+    "N": "A",
+    "K": "S",
+    "A": "T",
+    "z": "E",
+    "E": "R",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "CANGETDIGITAL",
+   "wordLogp": -8.3674,
+   "words": "CAN GET DIGITAL",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "C",
+    "N": "A",
+    "K": "N",
+    "A": "G",
+    "z": "E",
+    "E": "D",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "HADTOCRITICAL",
+   "wordLogp": -8.3953,
+   "words": "HAD TO CRITICAL",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "[": "H",
+    "N": "A",
+    "K": "D",
+    "A": "T",
+    "z": "O",
+    "E": "R",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "PERSONHASANEW",
+   "wordLogp": -8.396,
+   "words": "PERSON HAS A NEW",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "P",
+    "N": "E",
+    "K": "R",
+    "A": "S",
+    "z": "O",
+    "E": "H",
+    "M": "A"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "PAGEWHITETHAT",
+   "wordLogp": -8.4177,
+   "words": "PAGE WHITE THAT",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "P",
+    "N": "A",
+    "K": "G",
+    "A": "E",
+    "z": "W",
+    "E": "I",
+    "M": "T"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "FINALESTATEIN",
+   "wordLogp": -8.4219,
+   "words": "FINAL ESTATE IN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "F",
+    "N": "I",
+    "K": "N",
+    "A": "A",
+    "z": "L",
+    "E": "S",
+    "M": "T"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "WITHALCOHOLIT",
+   "wordLogp": -8.4528,
+   "words": "WITH ALCOHOL IT",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "[": "W",
+    "N": "I",
+    "K": "T",
+    "A": "H",
+    "z": "A",
+    "E": "C",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "OFHAVINGAGIFT",
+   "wordLogp": -8.4712,
+   "words": "OF HAVING A GIFT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "O",
+    "N": "F",
+    "K": "H",
+    "A": "A",
+    "z": "V",
+    "E": "N",
+    "M": "G"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HASTOCRITICAL",
+   "wordLogp": -8.525,
+   "words": "HAS TO CRITICAL",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "[": "H",
+    "N": "A",
+    "K": "S",
+    "A": "T",
+    "z": "O",
+    "E": "R",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "WASTOCRITICAL",
+   "wordLogp": -8.5532,
+   "words": "WAS TO CRITICAL",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "[": "W",
+    "N": "A",
+    "K": "S",
+    "A": "T",
+    "z": "O",
+    "E": "R",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "PANTSCRITICAL",
+   "wordLogp": -8.6077,
+   "words": "PANTS CRITICAL",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "[": "P",
+    "N": "A",
+    "K": "N",
+    "A": "T",
+    "z": "S",
+    "E": "R",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "WAYNECLINICAL",
+   "wordLogp": -8.6239,
+   "words": "WAYNE CLINICAL",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "[": "W",
+    "N": "A",
+    "K": "Y",
+    "A": "N",
+    "z": "E",
+    "E": "L",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "GETALIBRARIES",
+   "wordLogp": -8.6479,
+   "words": "GET A LIBRARIES",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "[": "G",
+    "N": "E",
+    "K": "T",
+    "A": "A",
+    "z": "L",
+    "E": "B",
+    "M": "R"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "PERSONWASANEW",
+   "wordLogp": -8.7225,
+   "words": "PERSON WAS A NEW",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "P",
+    "N": "E",
+    "K": "R",
+    "A": "S",
+    "z": "O",
+    "E": "W",
+    "M": "A"
+   }
+  }
+ ]
+}

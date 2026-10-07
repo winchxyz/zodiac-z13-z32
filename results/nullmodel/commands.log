@@ -1,0 +1,35 @@
+# nullmodel task - commands run (working directory the repository root), 2026-10-07
+# CACHE = scratchpad copy of the corpus as numpy arrays (built by nullmodel_windows.py; rebuildable)
+
+# 1. corpus windows (Z13 / Z32 variants, training vs held-out, word-aligned, scrambled isomorphs)
+node tools/run_slot.js --label nullmodel-windows -- python tools/nullmodel_windows.py --cache CACHE --scrambled13 100 --scrambled 300
+#   -> results/nullmodel/windows/window_counts.json, fits_<variant>_<split>.tsv, scrambled_isomorphs.tsv; log windows.log
+
+# 2. information content and expected number of solutions
+node tools/nullmodel_info.js --samples 40000 --cache CACHE --out results/nullmodel/information.json
+node tools/run_slot.js --label nullmodel-isolik -- node tools/nullmodel_isolik.js --windows 100000 --keys 2000 --cache CACHE --out results/nullmodel/isomorph_likelihood.json
+node tools/nullmodel_posterior.js            # -> results/nullmodel/posterior_candidates.json
+
+# 3. solver null (queued; see solvernull.log) and dictionary fits of scrambled isomorphs (queued)
+node tools/run_slot.js --label nullmodel-solvernull -- node tools/nullmodel_solvernull.js --which z13,z32 --n-exact 20 --n-scrambled 20 --threads 4 --out results/nullmodel/solvernull.json
+node tools/run_slot.js --label nullmodel-screnum -- node tools/nullmodel_scrambled_enum.js --n 40 --threads 4 --out results/nullmodel/scrambled_enum.json
+
+# 4. length scan (empirical unicity curve)
+node tools/run_slot.js --label nullmodel-lengthscan -- node tools/nullmodel_lengthscan.js --n 12 --threads 4 --max-seconds 2400 --out results/nullmodel/lengthscan
+node tools/run_slot.js --label nullmodel-lengthscan-a -- node tools/nullmodel_lengthscan.js --lengths 50,75,100 --n 10 --threads 4 --restarts-long 24 --max-seconds 2700 --out results/nullmodel/lengthscan
+node tools/run_slot.js --label nullmodel-lengthscan-b -- node tools/nullmodel_lengthscan.js --lengths 150,200,340 --n 10 --threads 4 --restarts-long 24 --max-seconds 2700 --out results/nullmodel/lengthscan_b
+
+# 5. Oranchak 2013 reproduction
+node tools/run_slot.js --label nullmodel-oranchak -- bash tools/nullmodel_oranchak.sh      # names (24 patterns, both modes) + unfiltered tuples
+python tools/nullmodel_namecombos.py --names-json results/nullmodel/oranchak/names_homophonic.json results/nullmodel/oranchak/names_simple.json --out results/nullmodel/oranchak/name_rates.json
+node tools/run_slot.js --label nullmodel-tuples -- bash tools/nullmodel_oranchak_tuples.sh  # junk-filtered tuples, four word lists
+
+# validation of the tuple counters (exact agreement with tools/enumerate.js and with each other)
+node tools/nullmodel_wordtuples.js --cipher data/ciphers/variants/z13.canonical.txt --words-file data/lm/words_common.tsv --top 5000 --k 1,2,3 --threads 1
+node tools/nullmodel_tuplejoin.js  --cipher data/ciphers/variants/z13.canonical.txt --words-file data/lm/words_common.tsv --top 5000 --k 1,2,3
+node tools/enumerate.js words --cipher data/ciphers/variants/z13.canonical.txt --mode homophonic --top-words 5000 --max-words 3 --threads 1 --no-score
+node tools/enumerate.js words --cipher data/ciphers/variants/z13.canonical.txt --mode simple --top-words 5000 --max-words 3 --threads 1 --no-score
+#   homophonic: 1 two-word + 1027 three-word tuples = 1019 distinct strings (enumerate: 1019); simple: 212 tuples / 208 strings (enumerate: 208)
+
+# collection
+python tools/nullmodel_summary.py            # -> results/nullmodel/summary.json, lengthscan_merged.csv

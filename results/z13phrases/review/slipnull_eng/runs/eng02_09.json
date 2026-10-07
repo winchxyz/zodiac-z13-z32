@@ -1,0 +1,620 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:30:00.174Z",
+ "label": "eng02_09",
+ "cipher": {
+  "id": "eng02",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng02.txt",
+  "text": "abcadbefddgch",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   9
+  ],
+  "isomorphAfterSlips": "abcadbefd*gch"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 277028,
+  "scored": 256201,
+  "keptAtLeastStreamMin": 322,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 15884,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2594,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 322,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 32,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 5,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 2,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 32,
+  "3": 221,
+  "4": 68,
+  "5": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -5.6866803059195465,
+  "topShare": 0.3866280754467695,
+  "top10Share": 0.7857751938872292,
+  "effectiveNumberExpEntropy": 18.438664191285948,
+  "effectiveNumberInverseSimpson": 5.1442135430867015,
+  "unscoredMassBoundRelative": 0.0011097036715792539,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 18,
+   "maxWordLogp": -16.276587872678935,
+   "massEstimateRelative": 8.853016544657233e-8,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.000350537805268784
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 2,
+   "-18.25": 10,
+   "-18.00": 24,
+   "-17.75": 55,
+   "-17.50": 70,
+   "-17.25": 111,
+   "-17.00": 124,
+   "-16.75": 141,
+   "-16.50": 187,
+   "-16.25": 255,
+   "-16.00": 356,
+   "-15.75": 466,
+   "-15.50": 652,
+   "-15.25": 881,
+   "-15.00": 1065,
+   "-14.75": 1304,
+   "-14.50": 1698,
+   "-14.25": 1854,
+   "-14.00": 2144,
+   "-13.75": 2552,
+   "-13.50": 2887,
+   "-13.25": 3416,
+   "-13.00": 3748,
+   "-12.75": 4368,
+   "-12.50": 5001,
+   "-12.25": 5664,
+   "-12.00": 6390,
+   "-11.75": 7017,
+   "-11.50": 7693,
+   "-11.25": 8413,
+   "-11.00": 8952,
+   "-10.75": 9555,
+   "-10.50": 9793,
+   "-10.25": 10404,
+   "-10.00": 10550,
+   "-9.75": 10757,
+   "-9.50": 11015,
+   "-9.25": 11314,
+   "-9.00": 11103,
+   "-8.75": 11238,
+   "-8.50": 11249,
+   "-8.25": 11051,
+   "-8.00": 10864,
+   "-7.75": 10401,
+   "-7.50": 9843,
+   "-7.25": 9164,
+   "-7.00": 8235,
+   "-6.75": 7137,
+   "-6.50": 6154,
+   "-6.25": 5070,
+   "-6.00": 4184,
+   "-5.75": 3100,
+   "-5.50": 2303,
+   "-5.25": 1751,
+   "-5.00": 1244,
+   "-4.75": 818,
+   "-4.50": 531,
+   "-4.25": 341,
+   "-4.00": 176,
+   "-3.75": 111,
+   "-3.50": 47,
+   "-3.25": 12,
+   "-3.00": 5,
+   "-2.75": 3,
+   "-2.50": 4,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.25": 7,
+   "-19.00": 34,
+   "-18.75": 89,
+   "-18.50": 405,
+   "-18.25": 1312,
+   "-18.00": 2827,
+   "-17.75": 4642,
+   "-17.50": 7202,
+   "-17.25": 9858,
+   "-17.00": 12457,
+   "-16.75": 14997,
+   "-16.50": 17185,
+   "-16.25": 18406,
+   "-16.00": 18857,
+   "-15.75": 18768,
+   "-15.50": 18239,
+   "-15.25": 16983,
+   "-15.00": 15553,
+   "-14.75": 13671,
+   "-14.50": 11931,
+   "-14.25": 10117,
+   "-14.00": 8639,
+   "-13.75": 6887,
+   "-13.50": 5853,
+   "-13.25": 4741,
+   "-13.00": 3704,
+   "-12.75": 3149,
+   "-12.50": 2420,
+   "-12.25": 1947,
+   "-12.00": 1358,
+   "-11.75": 1010,
+   "-11.50": 809,
+   "-11.25": 575,
+   "-11.00": 432,
+   "-10.75": 291,
+   "-10.50": 262,
+   "-10.25": 188,
+   "-10.00": 133,
+   "-9.75": 93,
+   "-9.50": 68,
+   "-9.25": 32,
+   "-9.00": 18,
+   "-8.75": 13,
+   "-8.50": 11,
+   "-8.25": 10,
+   "-8.00": 7,
+   "-7.75": 5,
+   "-7.50": 1,
+   "-7.25": 2,
+   "-7.00": 1,
+   "-6.50": 1,
+   "-6.25": 1
+  },
+  "boundUnscored": {
+   "-18.50": 2,
+   "-18.25": 10,
+   "-18.00": 24,
+   "-17.75": 55,
+   "-17.50": 70,
+   "-17.25": 111,
+   "-17.00": 124,
+   "-16.75": 141,
+   "-16.50": 187,
+   "-16.25": 255,
+   "-16.00": 356,
+   "-15.75": 466,
+   "-15.50": 652,
+   "-15.25": 881,
+   "-15.00": 1065,
+   "-14.75": 1304,
+   "-14.50": 1698,
+   "-14.25": 1854,
+   "-14.00": 2144,
+   "-13.75": 2552,
+   "-13.50": 2887,
+   "-13.25": 3416,
+   "-13.00": 573
+  }
+ },
+ "timeMs": {
+  "total": 2643,
+  "setup": 497
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "PEOPLEWILLNOT",
+   "wordLogp": -6.0994,
+   "words": "PEOPLE WILL NOT",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "N",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "PROPERTIESYOU",
+   "wordLogp": -6.4062,
+   "words": "PROPERTIES YOU",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "Y",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "PEOPLECALLFOR",
+   "wordLogp": -6.8903,
+   "words": "PEOPLE CALL FOR",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "F",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "PROPERTIESNOW",
+   "wordLogp": -7.0965,
+   "words": "PROPERTIES NOW",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "N",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "PROPERTIESHOW",
+   "wordLogp": -7.1255,
+   "words": "PROPERTIES HOW",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "H",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "PEOPLEWILLYOU",
+   "wordLogp": -7.3077,
+   "words": "PEOPLE WILL YOU",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "Y",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "PROPERTYENDOF",
+   "wordLogp": -7.5821,
+   "words": "PROPERTY END OF",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "Y",
+    "g": "D",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "PROPERTIESLOW",
+   "wordLogp": -7.6161,
+   "words": "PROPERTIES LOW",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "L",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "PROPERTIESJOB",
+   "wordLogp": -7.6331,
+   "words": "PROPERTIES JOB",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "J",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "PROPERTIESBOX",
+   "wordLogp": -7.6543,
+   "words": "PROPERTIES BOX",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "B",
+    "h": "X"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "PEOPLECALLYOU",
+   "wordLogp": -7.6916,
+   "words": "PEOPLE CALL YOU",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "Y",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "PEOPLEWILLFOR",
+   "wordLogp": -7.7697,
+   "words": "PEOPLE WILL FOR",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "F",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "PROPERTIESNOV",
+   "wordLogp": -7.7808,
+   "words": "PROPERTIES NOV",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "N",
+    "h": "V"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "PEOPLECALLNOW",
+   "wordLogp": -7.7958,
+   "words": "PEOPLE CALL NOW",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "O",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "N",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "PROPERTIESGOD",
+   "wordLogp": -7.8273,
+   "words": "PROPERTIES GOD",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "G",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "PROPERTIESLOG",
+   "wordLogp": -7.8368,
+   "words": "PROPERTIES LOG",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "L",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "PROPERTIESAOF",
+   "wordLogp": -7.9838,
+   "words": "PROPERTIES A OF",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "A",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "PROPERTIESDOG",
+   "wordLogp": -7.9948,
+   "words": "PROPERTIES DOG",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "D",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "PROPERTIESMON",
+   "wordLogp": -8.0229,
+   "words": "PROPERTIES MON",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "M",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "PROPERTIESCOM",
+   "wordLogp": -8.0237,
+   "words": "PROPERTIES COM",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "O",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "g": "C",
+    "h": "M"
+   }
+  }
+ ]
+}

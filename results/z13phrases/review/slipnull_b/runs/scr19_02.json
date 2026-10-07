@@ -1,0 +1,290 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:32:57.933Z",
+ "label": "scr19_02",
+ "cipher": {
+  "id": "scr19",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr19.txt",
+  "text": "[NKAz0EMAM0N0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   2
+  ],
+  "isomorphAfterSlips": "ab*defghdhfbf"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 119,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 119,
+  "tasks": 119,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 13044,
+  "scored": 12543,
+  "keptAtLeastStreamMin": 3,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 845,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 84,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 3,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 1,
+  "4": 2
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.520236385848147,
+  "topShare": 0.19594238107633702,
+  "top10Share": 0.30833551325293296,
+  "effectiveNumberExpEntropy": 95.31791728836177,
+  "effectiveNumberInverseSimpson": 19.08955614152504,
+  "unscoredMassBoundRelative": 0.018195923895143844,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.005225107627717756
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-16.50": 2,
+   "-16.00": 2,
+   "-15.75": 3,
+   "-15.50": 9,
+   "-15.25": 19,
+   "-15.00": 26,
+   "-14.75": 43,
+   "-14.50": 58,
+   "-14.25": 67,
+   "-14.00": 63,
+   "-13.75": 58,
+   "-13.50": 81,
+   "-13.25": 64,
+   "-13.00": 65,
+   "-12.75": 85,
+   "-12.50": 121,
+   "-12.25": 140,
+   "-12.00": 181,
+   "-11.75": 198,
+   "-11.50": 297,
+   "-11.25": 302,
+   "-11.00": 335,
+   "-10.75": 404,
+   "-10.50": 416,
+   "-10.25": 505,
+   "-10.00": 482,
+   "-9.75": 517,
+   "-9.50": 574,
+   "-9.25": 492,
+   "-9.00": 481,
+   "-8.75": 531,
+   "-8.50": 580,
+   "-8.25": 587,
+   "-8.00": 628,
+   "-7.75": 669,
+   "-7.50": 639,
+   "-7.25": 610,
+   "-7.00": 560,
+   "-6.75": 528,
+   "-6.50": 438,
+   "-6.25": 334,
+   "-6.00": 271,
+   "-5.75": 203,
+   "-5.50": 147,
+   "-5.25": 101,
+   "-5.00": 59,
+   "-4.75": 34,
+   "-4.50": 17,
+   "-4.25": 7,
+   "-4.00": 5,
+   "-3.75": 5,
+   "-3.50": 1
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-18.75": 14,
+   "-18.50": 31,
+   "-18.25": 52,
+   "-18.00": 78,
+   "-17.75": 112,
+   "-17.50": 203,
+   "-17.25": 255,
+   "-17.00": 352,
+   "-16.75": 428,
+   "-16.50": 582,
+   "-16.25": 657,
+   "-16.00": 758,
+   "-15.75": 920,
+   "-15.50": 971,
+   "-15.25": 1020,
+   "-15.00": 977,
+   "-14.75": 962,
+   "-14.50": 827,
+   "-14.25": 686,
+   "-14.00": 631,
+   "-13.75": 470,
+   "-13.50": 383,
+   "-13.25": 288,
+   "-13.00": 216,
+   "-12.75": 186,
+   "-12.50": 141,
+   "-12.25": 111,
+   "-12.00": 80,
+   "-11.75": 52,
+   "-11.50": 33,
+   "-11.25": 23,
+   "-11.00": 16,
+   "-10.75": 13,
+   "-10.50": 5,
+   "-10.25": 4,
+   "-10.00": 3,
+   "-9.75": 1,
+   "-9.25": 1
+  },
+  "boundUnscored": {
+   "-16.50": 2,
+   "-16.00": 2,
+   "-15.75": 3,
+   "-15.50": 9,
+   "-15.25": 19,
+   "-15.00": 26,
+   "-14.75": 43,
+   "-14.50": 58,
+   "-14.25": 67,
+   "-14.00": 63,
+   "-13.75": 58,
+   "-13.50": 81,
+   "-13.25": 64,
+   "-13.00": 6
+  }
+ },
+ "timeMs": {
+  "total": 4011,
+  "setup": 385
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ITTHROUGHGOTO",
+   "wordLogp": -9.2281,
+   "words": "IT THROUGH GO TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "I",
+    "N": "T",
+    "A": "H",
+    "z": "R",
+    "E": "U",
+    "M": "G"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ITISLANDSDATA",
+   "wordLogp": -9.7091,
+   "words": "IT ISLANDS DATA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "I",
+    "N": "T",
+    "A": "S",
+    "z": "L",
+    "E": "N",
+    "M": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ATTHROUGHGOTO",
+   "wordLogp": -9.842,
+   "words": "AT THROUGH GO TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "A",
+    "N": "T",
+    "A": "H",
+    "z": "R",
+    "E": "U",
+    "M": "G"
+   }
+  }
+ ]
+}

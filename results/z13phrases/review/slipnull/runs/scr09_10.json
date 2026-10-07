@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:13:05.123Z",
+ "label": "scr09_10",
+ "cipher": {
+  "id": "scr09",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr09.txt",
+  "text": "NM0Mz0[AENA0K",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   10
+  ],
+  "isomorphAfterSlips": "abcbdcefga*ch"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 189257,
+  "scored": 177507,
+  "keptAtLeastStreamMin": 93,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 10296,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1082,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 93,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 4,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 6,
+  "3": 55,
+  "4": 32
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.9084349306959085,
+  "topShare": 0.1276451697830043,
+  "top10Share": 0.4623243873877762,
+  "effectiveNumberExpEntropy": 142.63994728706976,
+  "effectiveNumberInverseSimpson": 28.361151133245464,
+  "unscoredMassBoundRelative": 0.010432125362073911,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 9,
+   "maxWordLogp": -13.325623676405863,
+   "massEstimateRelative": 0.0003851718382391997,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0035674611214763182
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.75": 1,
+   "-18.50": 3,
+   "-18.25": 2,
+   "-18.00": 4,
+   "-17.75": 21,
+   "-17.50": 21,
+   "-17.25": 35,
+   "-17.00": 48,
+   "-16.75": 91,
+   "-16.50": 105,
+   "-16.25": 152,
+   "-16.00": 191,
+   "-15.75": 236,
+   "-15.50": 328,
+   "-15.25": 417,
+   "-15.00": 528,
+   "-14.75": 639,
+   "-14.50": 837,
+   "-14.25": 1045,
+   "-14.00": 1261,
+   "-13.75": 1538,
+   "-13.50": 1775,
+   "-13.25": 2103,
+   "-13.00": 2435,
+   "-12.75": 2642,
+   "-12.50": 3077,
+   "-12.25": 3522,
+   "-12.00": 3872,
+   "-11.75": 4563,
+   "-11.50": 4947,
+   "-11.25": 5590,
+   "-11.00": 6116,
+   "-10.75": 6339,
+   "-10.50": 6959,
+   "-10.25": 7293,
+   "-10.00": 7209,
+   "-9.75": 7617,
+   "-9.50": 7559,
+   "-9.25": 7824,
+   "-9.00": 7855,
+   "-8.75": 7991,
+   "-8.50": 8341,
+   "-8.25": 7868,
+   "-8.00": 7905,
+   "-7.75": 7691,
+   "-7.50": 6994,
+   "-7.25": 6543,
+   "-7.00": 5862,
+   "-6.75": 4989,
+   "-6.50": 4348,
+   "-6.25": 3506,
+   "-6.00": 2738,
+   "-5.75": 2276,
+   "-5.50": 1606,
+   "-5.25": 1218,
+   "-5.00": 914,
+   "-4.75": 618,
+   "-4.50": 404,
+   "-4.25": 279,
+   "-4.00": 162,
+   "-3.75": 93,
+   "-3.50": 56,
+   "-3.25": 31,
+   "-3.00": 21,
+   "-2.75": 3
+  },
+  "exactScored": {
+   "-18.75": 9,
+   "-18.50": 88,
+   "-18.25": 554,
+   "-18.00": 1443,
+   "-17.75": 2911,
+   "-17.50": 4598,
+   "-17.25": 6518,
+   "-17.00": 8896,
+   "-16.75": 11086,
+   "-16.50": 12751,
+   "-16.25": 13256,
+   "-16.00": 13395,
+   "-15.75": 13110,
+   "-15.50": 12540,
+   "-15.25": 11722,
+   "-15.00": 10637,
+   "-14.75": 9428,
+   "-14.50": 8125,
+   "-14.25": 6983,
+   "-14.00": 5965,
+   "-13.75": 5103,
+   "-13.50": 4230,
+   "-13.25": 3361,
+   "-13.00": 2810,
+   "-12.75": 2303,
+   "-12.50": 1681,
+   "-12.25": 1254,
+   "-12.00": 866,
+   "-11.75": 620,
+   "-11.50": 408,
+   "-11.25": 272,
+   "-11.00": 184,
+   "-10.75": 147,
+   "-10.50": 94,
+   "-10.25": 42,
+   "-10.00": 46,
+   "-9.75": 20,
+   "-9.50": 19,
+   "-9.25": 10,
+   "-9.00": 11,
+   "-8.75": 3,
+   "-8.50": 6,
+   "-8.00": 2
+  },
+  "boundUnscored": {
+   "-18.75": 1,
+   "-18.50": 3,
+   "-18.25": 2,
+   "-18.00": 4,
+   "-17.75": 21,
+   "-17.50": 21,
+   "-17.25": 35,
+   "-17.00": 48,
+   "-16.75": 91,
+   "-16.50": 105,
+   "-16.25": 152,
+   "-16.00": 191,
+   "-15.75": 236,
+   "-15.50": 328,
+   "-15.25": 417,
+   "-15.00": 528,
+   "-14.75": 639,
+   "-14.50": 837,
+   "-14.25": 1045,
+   "-14.00": 1261,
+   "-13.75": 1538,
+   "-13.50": 1775,
+   "-13.25": 2103,
+   "-13.00": 369
+  }
+ },
+ "timeMs": {
+  "total": 2564,
+  "setup": 421
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "DETECTIONDATA",
+   "wordLogp": -7.8024,
+   "words": "DETECTION DATA",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "D",
+    "M": "E",
+    "z": "C",
+    "[": "I",
+    "A": "O",
+    "E": "N",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "HEREFROMTHIRD",
+   "wordLogp": -7.9302,
+   "words": "HERE FROM THIRD",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "N": "H",
+    "M": "E",
+    "z": "F",
+    "[": "O",
+    "A": "M",
+    "E": "T",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "AMEMBERPLACES",
+   "wordLogp": -8.2813,
+   "words": "A MEMBER PLACES",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "M": "M",
+    "z": "B",
+    "[": "R",
+    "A": "P",
+    "E": "L",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "DANAINCLUDING",
+   "wordLogp": -8.3358,
+   "words": "DANA INCLUDING",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "N": "D",
+    "M": "A",
+    "z": "I",
+    "[": "C",
+    "A": "L",
+    "E": "U",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "AMEMBERPLACED",
+   "wordLogp": -8.4464,
+   "words": "A MEMBER PLACED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "M": "M",
+    "z": "B",
+    "[": "R",
+    "A": "P",
+    "E": "L",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "AMEMBERPLAYED",
+   "wordLogp": -8.451,
+   "words": "A MEMBER PLAYED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "M": "M",
+    "z": "B",
+    "[": "R",
+    "A": "P",
+    "E": "L",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ICECREAMVIDEO",
+   "wordLogp": -8.4618,
+   "words": "ICE CREAM VIDEO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "I",
+    "M": "C",
+    "z": "R",
+    "[": "A",
+    "A": "M",
+    "E": "V",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "AMEMBERSTATED",
+   "wordLogp": -8.4749,
+   "words": "A MEMBER STATED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "M": "M",
+    "z": "B",
+    "[": "R",
+    "A": "S",
+    "E": "T",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "AMEMBERSHARED",
+   "wordLogp": -8.5035,
+   "words": "A MEMBER SHARED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "M": "M",
+    "z": "B",
+    "[": "R",
+    "A": "S",
+    "E": "H",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "AMEMBERPLANET",
+   "wordLogp": -8.573,
+   "words": "A MEMBER PLANET",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "M": "M",
+    "z": "B",
+    "[": "R",
+    "A": "P",
+    "E": "L",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ICECREAMTIMES",
+   "wordLogp": -8.7172,
+   "words": "ICE CREAM TIMES",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "I",
+    "M": "C",
+    "z": "R",
+    "[": "A",
+    "A": "M",
+    "E": "T",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "INANDATYPICAL",
+   "wordLogp": -8.7874,
+   "words": "IN AND A TYPICAL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "N": "I",
+    "M": "N",
+    "z": "D",
+    "[": "T",
+    "A": "Y",
+    "E": "P",
+    "K": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "AMEMBERSHAVED",
+   "wordLogp": -8.793,
+   "words": "A MEMBER SHAVED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "M": "M",
+    "z": "B",
+    "[": "R",
+    "A": "S",
+    "E": "H",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "FOROURTHEFORM",
+   "wordLogp": -8.8128,
+   "words": "FOR OUR THE FORM",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "N": "F",
+    "M": "O",
+    "z": "U",
+    "[": "T",
+    "A": "H",
+    "E": "E",
+    "K": "M"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HADANDMETHODS",
+   "wordLogp": -8.8366,
+   "words": "HAD AND METHODS",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "N": "H",
+    "M": "A",
+    "z": "N",
+    "[": "M",
+    "A": "E",
+    "E": "T",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "AMEMBERPLATES",
+   "wordLogp": -8.8421,
+   "words": "A MEMBER PLATES",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "M": "M",
+    "z": "B",
+    "[": "R",
+    "A": "P",
+    "E": "L",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "SARAHREGISTRY",
+   "wordLogp": -8.848,
+   "words": "SARAH REGISTRY",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "N": "S",
+    "M": "A",
+    "z": "H",
+    "[": "E",
+    "A": "G",
+    "E": "I",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "AMEMBERLOADED",
+   "wordLogp": -8.8576,
+   "words": "A MEMBER LOADED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "M": "M",
+    "z": "B",
+    "[": "R",
+    "A": "L",
+    "E": "O",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "DETECTIONDUTY",
+   "wordLogp": -8.9066,
+   "words": "DETECTION DUTY",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "D",
+    "M": "E",
+    "z": "C",
+    "[": "I",
+    "A": "O",
+    "E": "N",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ICECREAMGIVEN",
+   "wordLogp": -8.9258,
+   "words": "ICE CREAM GIVEN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "I",
+    "M": "C",
+    "z": "R",
+    "[": "A",
+    "A": "M",
+    "E": "G",
+    "K": "N"
+   }
+  }
+ ]
+}

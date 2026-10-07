@@ -1,0 +1,618 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:35:30.025Z",
+ "label": "scr21_03",
+ "cipher": {
+  "id": "scr21",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr21.txt",
+  "text": "zK0ANE0AM[NM0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*efcdghegc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 631811,
+  "scored": 588131,
+  "keptAtLeastStreamMin": 348,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 32106,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 4030,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 348,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 22,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 2,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 1,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 10,
+  "3": 212,
+  "4": 126
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.035907533726884,
+  "topShare": 0.2528841961486693,
+  "top10Share": 0.5765965222193018,
+  "effectiveNumberExpEntropy": 79.79300525991276,
+  "effectiveNumberInverseSimpson": 9.899959869291884,
+  "unscoredMassBoundRelative": 0.005201039635660508,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 41,
+   "maxWordLogp": -14.997641584089749,
+   "massEstimateRelative": 0.0000035495893521555426,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0017121276527398235
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 1,
+   "-18.25": 27,
+   "-18.00": 36,
+   "-17.75": 74,
+   "-17.50": 130,
+   "-17.25": 183,
+   "-17.00": 257,
+   "-16.75": 333,
+   "-16.50": 430,
+   "-16.25": 602,
+   "-16.00": 732,
+   "-15.75": 1005,
+   "-15.50": 1227,
+   "-15.25": 1570,
+   "-15.00": 2084,
+   "-14.75": 2574,
+   "-14.50": 3151,
+   "-14.25": 3944,
+   "-14.00": 4532,
+   "-13.75": 5686,
+   "-13.50": 6364,
+   "-13.25": 7452,
+   "-13.00": 8521,
+   "-12.75": 9762,
+   "-12.50": 10988,
+   "-12.25": 12466,
+   "-12.00": 13948,
+   "-11.75": 15319,
+   "-11.50": 17046,
+   "-11.25": 18695,
+   "-11.00": 20233,
+   "-10.75": 21654,
+   "-10.50": 22646,
+   "-10.25": 23318,
+   "-10.00": 24080,
+   "-9.75": 24353,
+   "-9.50": 24763,
+   "-9.25": 25429,
+   "-9.00": 26148,
+   "-8.75": 26055,
+   "-8.50": 26491,
+   "-8.25": 26399,
+   "-8.00": 25781,
+   "-7.75": 25336,
+   "-7.50": 23962,
+   "-7.25": 21872,
+   "-7.00": 19369,
+   "-6.75": 16936,
+   "-6.50": 14143,
+   "-6.25": 11423,
+   "-6.00": 9086,
+   "-5.75": 6994,
+   "-5.50": 5363,
+   "-5.25": 3757,
+   "-5.00": 2615,
+   "-4.75": 1796,
+   "-4.50": 1109,
+   "-4.25": 679,
+   "-4.00": 411,
+   "-3.75": 234,
+   "-3.50": 117,
+   "-3.25": 69,
+   "-3.00": 26,
+   "-2.75": 15,
+   "-2.50": 8,
+   "-2.00": 2
+  },
+  "exactScored": {
+   "-19.75": 1,
+   "-19.50": 7,
+   "-19.25": 13,
+   "-19.00": 88,
+   "-18.75": 243,
+   "-18.50": 893,
+   "-18.25": 2811,
+   "-18.00": 6464,
+   "-17.75": 12136,
+   "-17.50": 19213,
+   "-17.25": 25512,
+   "-17.00": 32190,
+   "-16.75": 36787,
+   "-16.50": 40045,
+   "-16.25": 41525,
+   "-16.00": 41489,
+   "-15.75": 40276,
+   "-15.50": 39028,
+   "-15.25": 36938,
+   "-15.00": 34910,
+   "-14.75": 31605,
+   "-14.50": 27809,
+   "-14.25": 23816,
+   "-14.00": 20022,
+   "-13.75": 16641,
+   "-13.50": 13480,
+   "-13.25": 10671,
+   "-13.00": 8220,
+   "-12.75": 6697,
+   "-12.50": 5147,
+   "-12.25": 3859,
+   "-12.00": 2808,
+   "-11.75": 2116,
+   "-11.50": 1454,
+   "-11.25": 977,
+   "-11.00": 722,
+   "-10.75": 506,
+   "-10.50": 347,
+   "-10.25": 236,
+   "-10.00": 150,
+   "-9.75": 95,
+   "-9.50": 60,
+   "-9.25": 40,
+   "-9.00": 28,
+   "-8.75": 20,
+   "-8.50": 19,
+   "-8.25": 8,
+   "-8.00": 4,
+   "-7.75": 3,
+   "-7.00": 1,
+   "-6.75": 1
+  },
+  "boundUnscored": {
+   "-18.50": 1,
+   "-18.25": 27,
+   "-18.00": 36,
+   "-17.75": 74,
+   "-17.50": 130,
+   "-17.25": 183,
+   "-17.00": 257,
+   "-16.75": 333,
+   "-16.50": 430,
+   "-16.25": 602,
+   "-16.00": 732,
+   "-15.75": 1005,
+   "-15.50": 1227,
+   "-15.25": 1570,
+   "-15.00": 2084,
+   "-14.75": 2574,
+   "-14.50": 3151,
+   "-14.25": 3944,
+   "-14.00": 4532,
+   "-13.75": 5686,
+   "-13.50": 6364,
+   "-13.25": 7452,
+   "-13.00": 1286
+  }
+ },
+ "timeMs": {
+  "total": 11463,
+  "setup": 378
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "PRESIDENTSITE",
+   "wordLogp": -6.633,
+   "words": "PRESIDENT SITE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "P",
+    "K": "R",
+    "N": "I",
+    "E": "D",
+    "A": "N",
+    "M": "T",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THETIMEONLINE",
+   "wordLogp": -6.775,
+   "words": "THE TIME ONLINE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "M",
+    "A": "O",
+    "M": "N",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THESIZEONLINE",
+   "wordLogp": -7.5431,
+   "words": "THE SIZE ONLINE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "Z",
+    "A": "O",
+    "M": "N",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THELIFEONLINE",
+   "wordLogp": -7.6547,
+   "words": "THE LIFE ONLINE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "F",
+    "A": "O",
+    "M": "N",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "THELIVEONLINE",
+   "wordLogp": -7.7477,
+   "words": "THE LIVE ONLINE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "V",
+    "A": "O",
+    "M": "N",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "THETIMEOFLIFE",
+   "wordLogp": -7.7887,
+   "words": "THE TIME OF LIFE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "M",
+    "A": "O",
+    "M": "F",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THESIDEONLINE",
+   "wordLogp": -7.88,
+   "words": "THE SIDE ONLINE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "D",
+    "A": "O",
+    "M": "N",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THEFIREONLINE",
+   "wordLogp": -7.9183,
+   "words": "THE FIRE ONLINE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "R",
+    "A": "O",
+    "M": "N",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THEFIVEONLINE",
+   "wordLogp": -7.9796,
+   "words": "THE FIVE ONLINE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "V",
+    "A": "O",
+    "M": "N",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THELIKEONLINE",
+   "wordLogp": -8.0229,
+   "words": "THE LIKE ONLINE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "K",
+    "A": "O",
+    "M": "N",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THEHOMEANYONE",
+   "wordLogp": -8.111,
+   "words": "THE HOME ANYONE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "O",
+    "E": "M",
+    "A": "A",
+    "M": "N",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THESIDEOFLIFE",
+   "wordLogp": -8.1497,
+   "words": "THE SIDE OF LIFE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "D",
+    "A": "O",
+    "M": "F",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THEMOREANYONE",
+   "wordLogp": -8.1757,
+   "words": "THE MORE ANYONE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "O",
+    "E": "R",
+    "A": "A",
+    "M": "N",
+    "[": "Y"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ABOVEFORTHETO",
+   "wordLogp": -8.2338,
+   "words": "ABOVE FOR THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "A",
+    "K": "B",
+    "N": "E",
+    "E": "F",
+    "A": "R",
+    "M": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THESIZEOFLIFE",
+   "wordLogp": -8.2371,
+   "words": "THE SIZE OF LIFE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "I",
+    "E": "Z",
+    "A": "O",
+    "M": "F",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THEHOMEANDONE",
+   "wordLogp": -8.2434,
+   "words": "THE HOME AND ONE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "T",
+    "K": "H",
+    "N": "O",
+    "E": "M",
+    "A": "A",
+    "M": "N",
+    "[": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "SAFETYFRONTOF",
+   "wordLogp": -8.2454,
+   "words": "SAFETY FRONT OF",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "z": "S",
+    "K": "A",
+    "N": "T",
+    "E": "Y",
+    "A": "R",
+    "M": "O",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "QUOTEFORTHETO",
+   "wordLogp": -8.2753,
+   "words": "QUOTE FOR THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "Q",
+    "K": "U",
+    "N": "E",
+    "E": "F",
+    "A": "R",
+    "M": "T",
+    "[": "H"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "MASTERSUITEIS",
+   "wordLogp": -8.2964,
+   "words": "MASTER SUITE IS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "M",
+    "K": "A",
+    "N": "E",
+    "E": "R",
+    "A": "U",
+    "M": "I",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "CLOSEDONTHETO",
+   "wordLogp": -8.3022,
+   "words": "CLOSED ON THE TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "z": "C",
+    "K": "L",
+    "N": "E",
+    "E": "D",
+    "A": "N",
+    "M": "T",
+    "[": "H"
+   }
+  }
+ ]
+}

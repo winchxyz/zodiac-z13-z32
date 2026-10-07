@@ -1,0 +1,586 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:28:03.920Z",
+ "label": "eng01_06",
+ "cipher": {
+  "id": "eng01",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng01.txt",
+  "text": "abcdefghechef",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   6
+  ],
+  "isomorphAfterSlips": "abcdef*hechef"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 117647,
+  "scored": 108526,
+  "keptAtLeastStreamMin": 49,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 4420,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 568,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 49,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 2,
+  "3": 28,
+  "4": 19
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.404767655368798,
+  "topShare": 0.07469727613587002,
+  "top10Share": 0.35957074675291484,
+  "effectiveNumberExpEntropy": 202.80078482135724,
+  "effectiveNumberInverseSimpson": 51.17216028019029,
+  "unscoredMassBoundRelative": 0.025392771877818167,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 8,
+   "maxWordLogp": -16.032055100469222,
+   "massEstimateRelative": 0.000006595405443551488,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00807174748768559
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 3,
+   "-17.75": 5,
+   "-17.50": 9,
+   "-17.25": 28,
+   "-17.00": 48,
+   "-16.75": 59,
+   "-16.50": 89,
+   "-16.25": 133,
+   "-16.00": 151,
+   "-15.75": 210,
+   "-15.50": 257,
+   "-15.25": 338,
+   "-15.00": 478,
+   "-14.75": 600,
+   "-14.50": 723,
+   "-14.25": 808,
+   "-14.00": 1016,
+   "-13.75": 1126,
+   "-13.50": 1319,
+   "-13.25": 1472,
+   "-13.00": 1755,
+   "-12.75": 2013,
+   "-12.50": 2256,
+   "-12.25": 2446,
+   "-12.00": 2652,
+   "-11.75": 2965,
+   "-11.50": 3243,
+   "-11.25": 3381,
+   "-11.00": 3668,
+   "-10.75": 3842,
+   "-10.50": 4024,
+   "-10.25": 4309,
+   "-10.00": 4703,
+   "-9.75": 4713,
+   "-9.50": 4703,
+   "-9.25": 4803,
+   "-9.00": 4956,
+   "-8.75": 5016,
+   "-8.50": 4966,
+   "-8.25": 4999,
+   "-8.00": 4868,
+   "-7.75": 4672,
+   "-7.50": 4267,
+   "-7.25": 3919,
+   "-7.00": 3413,
+   "-6.75": 2849,
+   "-6.50": 2334,
+   "-6.25": 1888,
+   "-6.00": 1484,
+   "-5.75": 1174,
+   "-5.50": 827,
+   "-5.25": 637,
+   "-5.00": 382,
+   "-4.75": 286,
+   "-4.50": 165,
+   "-4.25": 70,
+   "-4.00": 49,
+   "-3.75": 43,
+   "-3.50": 18,
+   "-3.25": 10,
+   "-3.00": 5,
+   "-2.50": 2
+  },
+  "exactScored": {
+   "-19.75": 1,
+   "-19.50": 1,
+   "-19.25": 5,
+   "-19.00": 11,
+   "-18.75": 51,
+   "-18.50": 195,
+   "-18.25": 723,
+   "-18.00": 1561,
+   "-17.75": 3011,
+   "-17.50": 4666,
+   "-17.25": 6273,
+   "-17.00": 7564,
+   "-16.75": 8451,
+   "-16.50": 8575,
+   "-16.25": 8498,
+   "-16.00": 8089,
+   "-15.75": 7388,
+   "-15.50": 6752,
+   "-15.25": 6106,
+   "-15.00": 5485,
+   "-14.75": 4698,
+   "-14.50": 4071,
+   "-14.25": 3380,
+   "-14.00": 2784,
+   "-13.75": 2374,
+   "-13.50": 1761,
+   "-13.25": 1435,
+   "-13.00": 1182,
+   "-12.75": 867,
+   "-12.50": 691,
+   "-12.25": 543,
+   "-12.00": 392,
+   "-11.75": 293,
+   "-11.50": 203,
+   "-11.25": 123,
+   "-11.00": 91,
+   "-10.75": 75,
+   "-10.50": 60,
+   "-10.25": 36,
+   "-10.00": 23,
+   "-9.75": 16,
+   "-9.50": 10,
+   "-9.25": 6,
+   "-9.00": 4,
+   "-8.75": 2
+  },
+  "boundUnscored": {
+   "-18.00": 3,
+   "-17.75": 5,
+   "-17.50": 9,
+   "-17.25": 28,
+   "-17.00": 48,
+   "-16.75": 59,
+   "-16.50": 89,
+   "-16.25": 133,
+   "-16.00": 151,
+   "-15.75": 210,
+   "-15.50": 257,
+   "-15.25": 338,
+   "-15.00": 478,
+   "-14.75": 600,
+   "-14.50": 723,
+   "-14.25": 808,
+   "-14.00": 1016,
+   "-13.75": 1126,
+   "-13.50": 1319,
+   "-13.25": 1472,
+   "-13.00": 249
+  }
+ },
+ "timeMs": {
+  "total": 5120,
+  "setup": 454
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "RULESTHISLIST",
+   "wordLogp": -8.5315,
+   "words": "RULES THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "U",
+    "c": "L",
+    "d": "E",
+    "e": "S",
+    "f": "T",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "BACKINWHICHIN",
+   "wordLogp": -8.5762,
+   "words": "BACK IN WHICH IN",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "A",
+    "c": "C",
+    "d": "K",
+    "e": "I",
+    "f": "N",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ANDRELATEDTEL",
+   "wordLogp": -8.8062,
+   "words": "AND RELATED TEL",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "R",
+    "e": "E",
+    "f": "L",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "EXTRASTHATHAS",
+   "wordLogp": -8.8354,
+   "words": "EXTRAS THAT HAS",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "X",
+    "c": "T",
+    "d": "R",
+    "e": "A",
+    "f": "S",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "WALESTHISLIST",
+   "wordLogp": -8.8714,
+   "words": "WALES THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "A",
+    "c": "L",
+    "d": "E",
+    "e": "S",
+    "f": "T",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ENGLISHHIGHIS",
+   "wordLogp": -8.9539,
+   "words": "ENGLISH HIGH IS",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "N",
+    "c": "G",
+    "d": "L",
+    "e": "I",
+    "f": "S",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "BUTWASTHATHAS",
+   "wordLogp": -9.0994,
+   "words": "BUT WAS THAT HAS",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "U",
+    "c": "T",
+    "d": "W",
+    "e": "A",
+    "f": "S",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "NEWSTHEITWITH",
+   "wordLogp": -9.1041,
+   "words": "NEWS THE IT WITH",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "E",
+    "c": "W",
+    "d": "S",
+    "e": "T",
+    "f": "H",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "DOWNTHEITWITH",
+   "wordLogp": -9.1157,
+   "words": "DOWN THE IT WITH",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "O",
+    "c": "W",
+    "d": "N",
+    "e": "T",
+    "f": "H",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "CRASHESTHATHE",
+   "wordLogp": -9.133,
+   "words": "CRASHES THAT HE",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "R",
+    "c": "A",
+    "d": "S",
+    "e": "H",
+    "f": "E",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "HELPSTHISLIST",
+   "wordLogp": -9.14,
+   "words": "HELPS THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "E",
+    "c": "L",
+    "d": "P",
+    "e": "S",
+    "f": "T",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "CHAPTERSTASTE",
+   "wordLogp": -9.2005,
+   "words": "CHAPTERS TASTE",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "H",
+    "c": "A",
+    "d": "P",
+    "e": "T",
+    "f": "E",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "FIELDSANDENDS",
+   "wordLogp": -9.2548,
+   "words": "FIELDS AND ENDS",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "I",
+    "c": "E",
+    "d": "L",
+    "e": "D",
+    "f": "S",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "POWERSTARWARS",
+   "wordLogp": -9.2561,
+   "words": "POWER STAR WARS",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "O",
+    "c": "W",
+    "d": "E",
+    "e": "R",
+    "f": "S",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HOLDSTHISLIST",
+   "wordLogp": -9.3082,
+   "words": "HOLDS THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "L",
+    "d": "D",
+    "e": "S",
+    "f": "T",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "WONDERWHENHER",
+   "wordLogp": -9.328,
+   "words": "WONDER WHEN HER",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "O",
+    "c": "N",
+    "d": "D",
+    "e": "E",
+    "f": "R",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "FOLKSTHISLIST",
+   "wordLogp": -9.3701,
+   "words": "FOLKS THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "L",
+    "d": "K",
+    "e": "S",
+    "f": "T",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "FLASHESTHATHE",
+   "wordLogp": -9.3867,
+   "words": "FLASHES THAT HE",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "L",
+    "c": "A",
+    "d": "S",
+    "e": "H",
+    "f": "E",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "HOLESTHISLIST",
+   "wordLogp": -9.4222,
+   "words": "HOLES THIS LIST",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "L",
+    "d": "E",
+    "e": "S",
+    "f": "T",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "BEYONDMANYAND",
+   "wordLogp": -9.4577,
+   "words": "BEYOND MANY AND",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "E",
+    "c": "Y",
+    "d": "O",
+    "e": "N",
+    "f": "D",
+    "h": "A"
+   }
+  }
+ ]
+}

@@ -1,0 +1,612 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:30:47.253Z",
+ "label": "scr16_06",
+ "cipher": {
+  "id": "scr16",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr16.txt",
+  "text": "NM0z[EMAK0NA0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   6
+  ],
+  "isomorphAfterSlips": "abcdef*ghcagc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 416856,
+  "scored": 389699,
+  "keptAtLeastStreamMin": 190,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 17768,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2035,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 190,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 9,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 11,
+  "3": 120,
+  "4": 59
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.580504855207917,
+  "topShare": 0.06934588228547574,
+  "top10Share": 0.381929782765051,
+  "effectiveNumberExpEntropy": 236.26945497496763,
+  "effectiveNumberInverseSimpson": 49.181099403102685,
+  "unscoredMassBoundRelative": 0.011331480284430385,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 25,
+   "maxWordLogp": -15.334430257507108,
+   "massEstimateRelative": 0.0000034651848781773724,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0037426131403189692
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 3,
+   "-18.00": 16,
+   "-17.75": 59,
+   "-17.50": 75,
+   "-17.25": 96,
+   "-17.00": 128,
+   "-16.75": 154,
+   "-16.50": 265,
+   "-16.25": 316,
+   "-16.00": 403,
+   "-15.75": 553,
+   "-15.50": 686,
+   "-15.25": 894,
+   "-15.00": 1238,
+   "-14.75": 1633,
+   "-14.50": 2108,
+   "-14.25": 2570,
+   "-14.00": 3094,
+   "-13.75": 3519,
+   "-13.50": 3927,
+   "-13.25": 4627,
+   "-13.00": 5402,
+   "-12.75": 6254,
+   "-12.50": 7139,
+   "-12.25": 8079,
+   "-12.00": 9153,
+   "-11.75": 10121,
+   "-11.50": 11380,
+   "-11.25": 12380,
+   "-11.00": 13637,
+   "-10.75": 14508,
+   "-10.50": 15203,
+   "-10.25": 15821,
+   "-10.00": 16214,
+   "-9.75": 16879,
+   "-9.50": 16943,
+   "-9.25": 16864,
+   "-9.00": 17221,
+   "-8.75": 16715,
+   "-8.50": 16863,
+   "-8.25": 16464,
+   "-8.00": 16571,
+   "-7.75": 16103,
+   "-7.50": 15289,
+   "-7.25": 14299,
+   "-7.00": 13083,
+   "-6.75": 11394,
+   "-6.50": 9841,
+   "-6.25": 8180,
+   "-6.00": 6425,
+   "-5.75": 4913,
+   "-5.50": 3602,
+   "-5.25": 2727,
+   "-5.00": 1739,
+   "-4.75": 1145,
+   "-4.50": 768,
+   "-4.25": 476,
+   "-4.00": 284,
+   "-3.75": 189,
+   "-3.50": 116,
+   "-3.25": 57,
+   "-3.00": 30,
+   "-2.75": 19,
+   "-2.50": 2
+  },
+  "exactScored": {
+   "-19.50": 1,
+   "-19.25": 4,
+   "-19.00": 17,
+   "-18.75": 141,
+   "-18.50": 625,
+   "-18.25": 1851,
+   "-18.00": 4047,
+   "-17.75": 7650,
+   "-17.50": 12769,
+   "-17.25": 18402,
+   "-17.00": 23591,
+   "-16.75": 27091,
+   "-16.50": 28233,
+   "-16.25": 28775,
+   "-16.00": 28814,
+   "-15.75": 27573,
+   "-15.50": 25535,
+   "-15.25": 23818,
+   "-15.00": 21986,
+   "-14.75": 20107,
+   "-14.50": 17515,
+   "-14.25": 15123,
+   "-14.00": 12514,
+   "-13.75": 10417,
+   "-13.50": 8169,
+   "-13.25": 6313,
+   "-13.00": 4880,
+   "-12.75": 3870,
+   "-12.50": 2799,
+   "-12.25": 2098,
+   "-12.00": 1562,
+   "-11.75": 1043,
+   "-11.50": 749,
+   "-11.25": 518,
+   "-11.00": 359,
+   "-10.75": 220,
+   "-10.50": 170,
+   "-10.25": 96,
+   "-10.00": 93,
+   "-9.75": 53,
+   "-9.50": 42,
+   "-9.25": 25,
+   "-9.00": 17,
+   "-8.75": 10,
+   "-8.50": 6,
+   "-8.25": 4,
+   "-8.00": 3,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-18.25": 3,
+   "-18.00": 16,
+   "-17.75": 59,
+   "-17.50": 75,
+   "-17.25": 96,
+   "-17.00": 128,
+   "-16.75": 154,
+   "-16.50": 265,
+   "-16.25": 316,
+   "-16.00": 403,
+   "-15.75": 553,
+   "-15.50": 686,
+   "-15.25": 894,
+   "-15.00": 1238,
+   "-14.75": 1633,
+   "-14.50": 2108,
+   "-14.25": 2570,
+   "-14.00": 3094,
+   "-13.75": 3519,
+   "-13.50": 3927,
+   "-13.25": 4627,
+   "-13.00": 793
+  }
+ },
+ "timeMs": {
+  "total": 19538,
+  "setup": 373
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "HOTELSSAYTHAT",
+   "wordLogp": -7.7395,
+   "words": "HOTELS SAY THAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "M": "O",
+    "z": "E",
+    "[": "L",
+    "E": "S",
+    "A": "A",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "AUTHORINSTANT",
+   "wordLogp": -7.7966,
+   "words": "AUTHOR INSTANT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "A",
+    "M": "U",
+    "z": "H",
+    "[": "O",
+    "E": "R",
+    "A": "N",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "SINGLEJOHNSON",
+   "wordLogp": -7.8133,
+   "words": "SINGLE JOHNSON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "N": "S",
+    "M": "I",
+    "z": "G",
+    "[": "L",
+    "E": "E",
+    "A": "O",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "AFTERCONSTANT",
+   "wordLogp": -7.9084,
+   "words": "AFTER CONSTANT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "A",
+    "M": "F",
+    "z": "E",
+    "[": "R",
+    "E": "C",
+    "A": "N",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "SUNDAYJOHNSON",
+   "wordLogp": -8.0272,
+   "words": "SUNDAY JOHNSON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "N": "S",
+    "M": "U",
+    "z": "D",
+    "[": "A",
+    "E": "Y",
+    "A": "O",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "HOTELSWAYTHAT",
+   "wordLogp": -8.0939,
+   "words": "HOTELS WAY THAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "M": "O",
+    "z": "E",
+    "[": "L",
+    "E": "S",
+    "A": "A",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ACTIVEINSTANT",
+   "wordLogp": -8.1983,
+   "words": "ACTIVE INSTANT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "A",
+    "M": "C",
+    "z": "I",
+    "[": "V",
+    "E": "E",
+    "A": "N",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "HOTELMEANTHAT",
+   "wordLogp": -8.2427,
+   "words": "HOTEL MEAN THAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "M": "O",
+    "z": "E",
+    "[": "L",
+    "E": "M",
+    "A": "A",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "OFEVIDENCEONE",
+   "wordLogp": -8.3041,
+   "words": "OF EVIDENCE ONE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "O",
+    "M": "F",
+    "z": "V",
+    "[": "I",
+    "E": "D",
+    "A": "N",
+    "K": "C"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "AMTHECONSTANT",
+   "wordLogp": -8.4019,
+   "words": "AM THE CONSTANT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "A",
+    "M": "M",
+    "z": "H",
+    "[": "E",
+    "E": "C",
+    "A": "N",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "OFTHECOURTOUT",
+   "wordLogp": -8.41,
+   "words": "OF THE COURT OUT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "M": "F",
+    "z": "H",
+    "[": "E",
+    "E": "C",
+    "A": "U",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "OFEXCHANGEONE",
+   "wordLogp": -8.4254,
+   "words": "OF EXCHANGE ONE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "O",
+    "M": "F",
+    "z": "X",
+    "[": "C",
+    "E": "H",
+    "A": "N",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "HOTELNEARTHAT",
+   "wordLogp": -8.4689,
+   "words": "HOTEL NEAR THAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "M": "O",
+    "z": "E",
+    "[": "L",
+    "E": "N",
+    "A": "A",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "HOTELSDAYTHAT",
+   "wordLogp": -8.4961,
+   "words": "HOTELS DAY THAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "M": "O",
+    "z": "E",
+    "[": "L",
+    "E": "S",
+    "A": "A",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HOTELYEARTHAT",
+   "wordLogp": -8.5287,
+   "words": "HOTEL YEAR THAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "M": "O",
+    "z": "E",
+    "[": "L",
+    "E": "Y",
+    "A": "A",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "NEARBYATLANTA",
+   "wordLogp": -8.5404,
+   "words": "NEARBY ATLANTA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "N": "N",
+    "M": "E",
+    "z": "R",
+    "[": "B",
+    "E": "Y",
+    "A": "T",
+    "K": "L"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "HOTELPLANTHAT",
+   "wordLogp": -8.6416,
+   "words": "HOTEL PLAN THAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "M": "O",
+    "z": "E",
+    "[": "L",
+    "E": "P",
+    "A": "A",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "OREXCHANGEONE",
+   "wordLogp": -8.6807,
+   "words": "OR EXCHANGE ONE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "O",
+    "M": "R",
+    "z": "X",
+    "[": "C",
+    "E": "H",
+    "A": "N",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "HOTELSLAWTHAT",
+   "wordLogp": -8.6851,
+   "words": "HOTELS LAW THAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "M": "O",
+    "z": "E",
+    "[": "L",
+    "E": "S",
+    "A": "A",
+    "K": "W"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "HOTELREADTHAT",
+   "wordLogp": -8.6927,
+   "words": "HOTEL READ THAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "H",
+    "M": "O",
+    "z": "E",
+    "[": "L",
+    "E": "R",
+    "A": "A",
+    "K": "D"
+   }
+  }
+ ]
+}

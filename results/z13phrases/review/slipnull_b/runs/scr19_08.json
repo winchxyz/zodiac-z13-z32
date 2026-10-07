@@ -1,0 +1,604 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:34:01.740Z",
+ "label": "scr19_08",
+ "cipher": {
+  "id": "scr19",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr19.txt",
+  "text": "[NKAz0EMAM0N0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   8
+  ],
+  "isomorphAfterSlips": "abcdefgh*hfbf"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 196533,
+  "scored": 188023,
+  "keptAtLeastStreamMin": 78,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 11601,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1261,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 78,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 27,
+  "4": 50
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.959571539777884,
+  "topShare": 0.20793730909451455,
+  "top10Share": 0.4562261781968861,
+  "effectiveNumberExpEntropy": 175.1388190018786,
+  "effectiveNumberInverseSimpson": 18.471451156178553,
+  "unscoredMassBoundRelative": 0.008499651120064306,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 7,
+   "maxWordLogp": -15.705343126816675,
+   "massEstimateRelative": 0.000002864026788736649,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.003014771384887915
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 2,
+   "-17.50": 3,
+   "-17.25": 11,
+   "-17.00": 15,
+   "-16.75": 27,
+   "-16.50": 40,
+   "-16.25": 48,
+   "-16.00": 76,
+   "-15.75": 109,
+   "-15.50": 200,
+   "-15.25": 265,
+   "-15.00": 388,
+   "-14.75": 544,
+   "-14.50": 692,
+   "-14.25": 817,
+   "-14.00": 932,
+   "-13.75": 1138,
+   "-13.50": 1362,
+   "-13.25": 1557,
+   "-13.00": 1930,
+   "-12.75": 2170,
+   "-12.50": 2493,
+   "-12.25": 2912,
+   "-12.00": 3379,
+   "-11.75": 3768,
+   "-11.50": 4391,
+   "-11.25": 5303,
+   "-11.00": 5646,
+   "-10.75": 6427,
+   "-10.50": 7106,
+   "-10.25": 7585,
+   "-10.00": 7888,
+   "-9.75": 8352,
+   "-9.50": 8710,
+   "-9.25": 8441,
+   "-9.00": 8655,
+   "-8.75": 8786,
+   "-8.50": 9123,
+   "-8.25": 9006,
+   "-8.00": 8903,
+   "-7.75": 8821,
+   "-7.50": 8221,
+   "-7.25": 7695,
+   "-7.00": 6822,
+   "-6.75": 6108,
+   "-6.50": 5178,
+   "-6.25": 4203,
+   "-6.00": 3198,
+   "-5.75": 2355,
+   "-5.50": 1711,
+   "-5.25": 1217,
+   "-5.00": 768,
+   "-4.75": 490,
+   "-4.50": 274,
+   "-4.25": 142,
+   "-4.00": 80,
+   "-3.75": 37,
+   "-3.50": 9,
+   "-3.25": 2,
+   "-3.00": 2
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-19.00": 8,
+   "-18.75": 83,
+   "-18.50": 304,
+   "-18.25": 896,
+   "-18.00": 1738,
+   "-17.75": 2778,
+   "-17.50": 4298,
+   "-17.25": 5837,
+   "-17.00": 7648,
+   "-16.75": 9087,
+   "-16.50": 10653,
+   "-16.25": 11658,
+   "-16.00": 12645,
+   "-15.75": 13086,
+   "-15.50": 13232,
+   "-15.25": 13568,
+   "-15.00": 12732,
+   "-14.75": 12173,
+   "-14.50": 10722,
+   "-14.25": 9325,
+   "-14.00": 7756,
+   "-13.75": 6371,
+   "-13.50": 5143,
+   "-13.25": 4128,
+   "-13.00": 3221,
+   "-12.75": 2530,
+   "-12.50": 1910,
+   "-12.25": 1358,
+   "-12.00": 980,
+   "-11.75": 683,
+   "-11.50": 463,
+   "-11.25": 307,
+   "-11.00": 228,
+   "-10.75": 167,
+   "-10.50": 116,
+   "-10.25": 83,
+   "-10.00": 46,
+   "-9.75": 18,
+   "-9.50": 18,
+   "-9.25": 11,
+   "-9.00": 8,
+   "-8.75": 1,
+   "-8.50": 3,
+   "-8.25": 1,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-17.75": 2,
+   "-17.50": 3,
+   "-17.25": 11,
+   "-17.00": 15,
+   "-16.75": 27,
+   "-16.50": 40,
+   "-16.25": 48,
+   "-16.00": 76,
+   "-15.75": 109,
+   "-15.50": 200,
+   "-15.25": 265,
+   "-15.00": 388,
+   "-14.75": 544,
+   "-14.50": 692,
+   "-14.25": 817,
+   "-14.00": 932,
+   "-13.75": 1138,
+   "-13.50": 1362,
+   "-13.25": 1557,
+   "-13.00": 284
+  }
+ },
+ "timeMs": {
+  "total": 16246,
+  "setup": 416
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "PROBLEMWEWERE",
+   "wordLogp": -7.6416,
+   "words": "PROBLEM WE WERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "P",
+    "N": "R",
+    "K": "O",
+    "A": "B",
+    "z": "L",
+    "E": "M",
+    "M": "W"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "BROWSETHEHERE",
+   "wordLogp": -8.164,
+   "words": "BROWSE THE HERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "B",
+    "N": "R",
+    "K": "O",
+    "A": "W",
+    "z": "S",
+    "E": "T",
+    "M": "H"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "KNOWLEDGEGENE",
+   "wordLogp": -8.2854,
+   "words": "KNOWLEDGE GENE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "K",
+    "N": "N",
+    "K": "O",
+    "A": "W",
+    "z": "L",
+    "E": "D",
+    "M": "G"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "WITHANDEVENIN",
+   "wordLogp": -8.4389,
+   "words": "WITH AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "W",
+    "N": "I",
+    "K": "T",
+    "A": "H",
+    "z": "A",
+    "E": "D",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "FRANCETHEHERE",
+   "wordLogp": -8.4416,
+   "words": "FRANCE THE HERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "F",
+    "N": "R",
+    "K": "A",
+    "A": "N",
+    "z": "C",
+    "E": "T",
+    "M": "H"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "COMPANYEVENON",
+   "wordLogp": -8.7476,
+   "words": "COMPANY EVEN ON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "C",
+    "N": "O",
+    "K": "M",
+    "A": "P",
+    "z": "A",
+    "E": "Y",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "BRIDGETHEHERE",
+   "wordLogp": -8.7739,
+   "words": "BRIDGE THE HERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "B",
+    "N": "R",
+    "K": "I",
+    "A": "D",
+    "z": "G",
+    "E": "T",
+    "M": "H"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "PRINTEDWEWERE",
+   "wordLogp": -8.7851,
+   "words": "PRINTED WE WERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "P",
+    "N": "R",
+    "K": "I",
+    "A": "N",
+    "z": "T",
+    "E": "D",
+    "M": "W"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "CITYANDEVENIN",
+   "wordLogp": -8.8161,
+   "words": "CITY AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "C",
+    "N": "I",
+    "K": "T",
+    "A": "Y",
+    "z": "A",
+    "E": "D",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "FIGHTSCENESIS",
+   "wordLogp": -8.8802,
+   "words": "FIGHT SCENES IS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "F",
+    "N": "I",
+    "K": "G",
+    "A": "H",
+    "z": "T",
+    "E": "C",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ORANGETHEHERE",
+   "wordLogp": -8.8852,
+   "words": "ORANGE THE HERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "O",
+    "N": "R",
+    "K": "A",
+    "A": "N",
+    "z": "G",
+    "E": "T",
+    "M": "H"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "LISTANDEVENIN",
+   "wordLogp": -8.8858,
+   "words": "LIST AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "L",
+    "N": "I",
+    "K": "S",
+    "A": "T",
+    "z": "A",
+    "E": "D",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "GRANTEDWEWERE",
+   "wordLogp": -8.9314,
+   "words": "GRANTED WE WERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "G",
+    "N": "R",
+    "K": "A",
+    "A": "N",
+    "z": "T",
+    "E": "D",
+    "M": "W"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "TIPSANDEVENIN",
+   "wordLogp": -8.9955,
+   "words": "TIPS AND EVEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "T",
+    "N": "I",
+    "K": "P",
+    "A": "S",
+    "z": "A",
+    "E": "D",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "PAYMENTISINAN",
+   "wordLogp": -9.0245,
+   "words": "PAYMENT IS IN AN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "P",
+    "N": "A",
+    "K": "Y",
+    "A": "M",
+    "z": "E",
+    "E": "T",
+    "M": "I"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "DISTANCEMENIN",
+   "wordLogp": -9.0356,
+   "words": "DISTANCE MEN IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "D",
+    "N": "I",
+    "K": "S",
+    "A": "T",
+    "z": "A",
+    "E": "C",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "CRUISETHEHERE",
+   "wordLogp": -9.0562,
+   "words": "CRUISE THE HERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "C",
+    "N": "R",
+    "K": "U",
+    "A": "I",
+    "z": "S",
+    "E": "T",
+    "M": "H"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "WORKINGASANON",
+   "wordLogp": -9.057,
+   "words": "WORKING AS A NON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "W",
+    "N": "O",
+    "K": "R",
+    "A": "K",
+    "z": "I",
+    "E": "G",
+    "M": "A"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "TRACKEDWEWERE",
+   "wordLogp": -9.0753,
+   "words": "TRACKED WE WERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "T",
+    "N": "R",
+    "K": "A",
+    "A": "C",
+    "z": "K",
+    "E": "D",
+    "M": "W"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "TRAINEDWEWERE",
+   "wordLogp": -9.1064,
+   "words": "TRAINED WE WERE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "T",
+    "N": "R",
+    "K": "A",
+    "A": "I",
+    "z": "N",
+    "E": "D",
+    "M": "W"
+   }
+  }
+ ]
+}

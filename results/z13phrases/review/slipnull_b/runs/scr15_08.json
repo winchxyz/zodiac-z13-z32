@@ -1,0 +1,613 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:29:26.383Z",
+ "label": "scr15_08",
+ "cipher": {
+  "id": "scr15",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr15.txt",
+  "text": "NE0N[MA0AzMK0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   8
+  ],
+  "isomorphAfterSlips": "abcadefc*gehc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 302972,
+  "scored": 284997,
+  "keptAtLeastStreamMin": 316,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 29209,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 4083,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 316,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 14,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 11,
+  "3": 198,
+  "4": 107
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.249326960736052,
+  "topShare": 0.09617971768605056,
+  "top10Share": 0.414301499025076,
+  "effectiveNumberExpEntropy": 249.52239780851153,
+  "effectiveNumberInverseSimpson": 40.53323613562368,
+  "unscoredMassBoundRelative": 0.003498612631444664,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 17,
+   "maxWordLogp": -16.019374012155396,
+   "massEstimateRelative": 6.037785468670061e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0011467231717324363
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 1,
+   "-18.25": 4,
+   "-18.00": 9,
+   "-17.75": 34,
+   "-17.50": 55,
+   "-17.25": 69,
+   "-17.00": 97,
+   "-16.75": 121,
+   "-16.50": 149,
+   "-16.25": 197,
+   "-16.00": 249,
+   "-15.75": 342,
+   "-15.50": 447,
+   "-15.25": 654,
+   "-15.00": 839,
+   "-14.75": 1069,
+   "-14.50": 1385,
+   "-14.25": 1681,
+   "-14.00": 2121,
+   "-13.75": 2301,
+   "-13.50": 2634,
+   "-13.25": 2999,
+   "-13.00": 3369,
+   "-12.75": 3709,
+   "-12.50": 4371,
+   "-12.25": 5127,
+   "-12.00": 5661,
+   "-11.75": 6565,
+   "-11.50": 7342,
+   "-11.25": 8143,
+   "-11.00": 8878,
+   "-10.75": 9287,
+   "-10.50": 9742,
+   "-10.25": 10185,
+   "-10.00": 10257,
+   "-9.75": 10685,
+   "-9.50": 10896,
+   "-9.25": 11143,
+   "-9.00": 11633,
+   "-8.75": 11862,
+   "-8.50": 12483,
+   "-8.25": 12293,
+   "-8.00": 12525,
+   "-7.75": 12558,
+   "-7.50": 12199,
+   "-7.25": 11600,
+   "-7.00": 10785,
+   "-6.75": 9873,
+   "-6.50": 8672,
+   "-6.25": 7517,
+   "-6.00": 6434,
+   "-5.75": 5150,
+   "-5.50": 4195,
+   "-5.25": 3247,
+   "-5.00": 2452,
+   "-4.75": 1765,
+   "-4.50": 1165,
+   "-4.25": 794,
+   "-4.00": 430,
+   "-3.75": 250,
+   "-3.50": 142,
+   "-3.25": 86,
+   "-3.00": 29,
+   "-2.75": 7,
+   "-2.50": 7,
+   "-2.00": 2
+  },
+  "exactScored": {
+   "-19.00": 2,
+   "-18.75": 36,
+   "-18.50": 151,
+   "-18.25": 562,
+   "-18.00": 1508,
+   "-17.75": 2858,
+   "-17.50": 4805,
+   "-17.25": 7511,
+   "-17.00": 10112,
+   "-16.75": 12826,
+   "-16.50": 15010,
+   "-16.25": 16490,
+   "-16.00": 17592,
+   "-15.75": 18452,
+   "-15.50": 18874,
+   "-15.25": 18869,
+   "-15.00": 18190,
+   "-14.75": 17627,
+   "-14.50": 16152,
+   "-14.25": 14686,
+   "-14.00": 13047,
+   "-13.75": 11486,
+   "-13.50": 9662,
+   "-13.25": 8169,
+   "-13.00": 6778,
+   "-12.75": 5743,
+   "-12.50": 4629,
+   "-12.25": 3480,
+   "-12.00": 2869,
+   "-11.75": 2051,
+   "-11.50": 1563,
+   "-11.25": 1028,
+   "-11.00": 720,
+   "-10.75": 538,
+   "-10.50": 318,
+   "-10.25": 218,
+   "-10.00": 116,
+   "-9.75": 89,
+   "-9.50": 66,
+   "-9.25": 35,
+   "-9.00": 35,
+   "-8.75": 18,
+   "-8.50": 15,
+   "-8.25": 4,
+   "-7.75": 5,
+   "-7.50": 2
+  },
+  "boundUnscored": {
+   "-18.50": 1,
+   "-18.25": 4,
+   "-18.00": 9,
+   "-17.75": 34,
+   "-17.50": 55,
+   "-17.25": 69,
+   "-17.00": 97,
+   "-16.75": 121,
+   "-16.50": 149,
+   "-16.25": 197,
+   "-16.00": 249,
+   "-15.75": 342,
+   "-15.50": 447,
+   "-15.25": 654,
+   "-15.00": 839,
+   "-14.75": 1069,
+   "-14.50": 1385,
+   "-14.25": 1681,
+   "-14.00": 2121,
+   "-13.75": 2301,
+   "-13.50": 2634,
+   "-13.25": 2999,
+   "-13.00": 518
+  }
+ },
+ "timeMs": {
+  "total": 3301,
+  "setup": 429
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ONEOFTHETITLE",
+   "wordLogp": -7.2662,
+   "words": "ONE OF THE TITLE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "O",
+    "E": "N",
+    "[": "F",
+    "M": "T",
+    "A": "H",
+    "z": "I",
+    "K": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ONEOFAMESSAGE",
+   "wordLogp": -7.4201,
+   "words": "ONE OF A MESSAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "O",
+    "E": "N",
+    "[": "F",
+    "M": "A",
+    "A": "M",
+    "z": "S",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THETOAMESSAGE",
+   "wordLogp": -7.5557,
+   "words": "THE TO A MESSAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "E": "H",
+    "[": "O",
+    "M": "A",
+    "A": "M",
+    "z": "S",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THATLOCATIONA",
+   "wordLogp": -7.6157,
+   "words": "THAT LOCATION A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "N": "T",
+    "E": "H",
+    "[": "L",
+    "M": "O",
+    "A": "C",
+    "z": "I",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ONEOFADEQUATE",
+   "wordLogp": -7.6397,
+   "words": "ONE OF ADEQUATE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "O",
+    "E": "N",
+    "[": "F",
+    "M": "A",
+    "A": "D",
+    "z": "U",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "AREACODEABOVE",
+   "wordLogp": -7.6762,
+   "words": "AREA CODE ABOVE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "A",
+    "E": "R",
+    "[": "C",
+    "M": "O",
+    "A": "D",
+    "z": "B",
+    "K": "V"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THETRAVELPAGE",
+   "wordLogp": -7.7061,
+   "words": "THE TRAVEL PAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "E": "H",
+    "[": "R",
+    "M": "A",
+    "A": "V",
+    "z": "P",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "CHECKAMESSAGE",
+   "wordLogp": -8.0166,
+   "words": "CHECK A MESSAGE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "C",
+    "E": "H",
+    "[": "K",
+    "M": "A",
+    "A": "M",
+    "z": "S",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THETRAVELNAME",
+   "wordLogp": -8.0734,
+   "words": "THE TRAVEL NAME",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "E": "H",
+    "[": "R",
+    "M": "A",
+    "A": "V",
+    "z": "N",
+    "K": "M"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THETRAVELMAKE",
+   "wordLogp": -8.1328,
+   "words": "THE TRAVEL MAKE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "E": "H",
+    "[": "R",
+    "M": "A",
+    "A": "V",
+    "z": "M",
+    "K": "K"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "OCTOBERTALENT",
+   "wordLogp": -8.1481,
+   "words": "OCTOBER TALENT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "E": "C",
+    "[": "B",
+    "M": "E",
+    "A": "R",
+    "z": "L",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THETRAVELMADE",
+   "wordLogp": -8.282,
+   "words": "THE TRAVEL MADE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "E": "H",
+    "[": "R",
+    "M": "A",
+    "A": "V",
+    "z": "M",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "CHECKADEQUATE",
+   "wordLogp": -8.2947,
+   "words": "CHECK ADEQUATE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "C",
+    "E": "H",
+    "[": "K",
+    "M": "A",
+    "A": "D",
+    "z": "U",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "OCTOBERTAKEIT",
+   "wordLogp": -8.3105,
+   "words": "OCTOBER TAKE IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "E": "C",
+    "[": "B",
+    "M": "E",
+    "A": "R",
+    "z": "K",
+    "K": "I"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "INSIGHTSUCHAS",
+   "wordLogp": -8.3502,
+   "words": "INSIGHT SUCH AS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "I",
+    "E": "N",
+    "[": "G",
+    "M": "H",
+    "A": "T",
+    "z": "C",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "TESTINGSOUNDS",
+   "wordLogp": -8.3583,
+   "words": "TESTING SOUNDS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "N": "T",
+    "E": "E",
+    "[": "I",
+    "M": "N",
+    "A": "G",
+    "z": "U",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "THETRAVELCASE",
+   "wordLogp": -8.3683,
+   "words": "THE TRAVEL CASE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "E": "H",
+    "[": "R",
+    "M": "A",
+    "A": "V",
+    "z": "C",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THETRAVELSAME",
+   "wordLogp": -8.3696,
+   "words": "THE TRAVEL SAME",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "E": "H",
+    "[": "R",
+    "M": "A",
+    "A": "V",
+    "z": "S",
+    "K": "M"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THETRAVELGAME",
+   "wordLogp": -8.3841,
+   "words": "THE TRAVEL GAME",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "E": "H",
+    "[": "R",
+    "M": "A",
+    "A": "V",
+    "z": "G",
+    "K": "M"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "OCTOBERTIMEIT",
+   "wordLogp": -8.3844,
+   "words": "OCTOBER TIME IT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "O",
+    "E": "C",
+    "[": "B",
+    "M": "E",
+    "A": "R",
+    "z": "M",
+    "K": "I"
+   }
+  }
+ ]
+}

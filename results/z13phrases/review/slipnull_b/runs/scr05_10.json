@@ -1,0 +1,602 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:22:19.575Z",
+ "label": "scr05_10",
+ "cipher": {
+  "id": "scr05",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr05.txt",
+  "text": "ME0NMNA0[z0AK",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   10
+  ],
+  "isomorphAfterSlips": "abcdadecfg*eh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 179326,
+  "scored": 166020,
+  "keptAtLeastStreamMin": 71,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 11427,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1437,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 71,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 49,
+  "4": 22
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.246688752246953,
+  "topShare": 0.044200618374680437,
+  "top10Share": 0.16473966361729148,
+  "effectiveNumberExpEntropy": 1030.8812543776378,
+  "effectiveNumberInverseSimpson": 179.80997335309178,
+  "unscoredMassBoundRelative": 0.02574164349729171,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 12,
+   "maxWordLogp": -14.975982674165799,
+   "massEstimateRelative": 0.000028576951202890463,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.008485240725478647
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 10,
+   "-17.75": 18,
+   "-17.50": 33,
+   "-17.25": 63,
+   "-17.00": 81,
+   "-16.75": 85,
+   "-16.50": 128,
+   "-16.25": 175,
+   "-16.00": 214,
+   "-15.75": 309,
+   "-15.50": 339,
+   "-15.25": 485,
+   "-15.00": 608,
+   "-14.75": 780,
+   "-14.50": 1011,
+   "-14.25": 1220,
+   "-14.00": 1472,
+   "-13.75": 1638,
+   "-13.50": 1984,
+   "-13.25": 2269,
+   "-13.00": 2350,
+   "-12.75": 2818,
+   "-12.50": 3213,
+   "-12.25": 3559,
+   "-12.00": 4106,
+   "-11.75": 4613,
+   "-11.50": 5189,
+   "-11.25": 5642,
+   "-11.00": 5823,
+   "-10.75": 6321,
+   "-10.50": 6576,
+   "-10.25": 6704,
+   "-10.00": 6792,
+   "-9.75": 6925,
+   "-9.50": 6892,
+   "-9.25": 7170,
+   "-9.00": 7111,
+   "-8.75": 7314,
+   "-8.50": 7300,
+   "-8.25": 7193,
+   "-8.00": 7075,
+   "-7.75": 6882,
+   "-7.50": 6511,
+   "-7.25": 6033,
+   "-7.00": 5452,
+   "-6.75": 4779,
+   "-6.50": 3986,
+   "-6.25": 3132,
+   "-6.00": 2440,
+   "-5.75": 1872,
+   "-5.50": 1432,
+   "-5.25": 972,
+   "-5.00": 732,
+   "-4.75": 512,
+   "-4.50": 369,
+   "-4.25": 264,
+   "-4.00": 175,
+   "-3.75": 93,
+   "-3.50": 46,
+   "-3.25": 24,
+   "-3.00": 9,
+   "-2.75": 2,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-18.75": 4,
+   "-18.50": 99,
+   "-18.25": 430,
+   "-18.00": 1111,
+   "-17.75": 2062,
+   "-17.50": 3437,
+   "-17.25": 4917,
+   "-17.00": 6401,
+   "-16.75": 8262,
+   "-16.50": 9858,
+   "-16.25": 10985,
+   "-16.00": 11877,
+   "-15.75": 12224,
+   "-15.50": 12460,
+   "-15.25": 11921,
+   "-15.00": 11433,
+   "-14.75": 10178,
+   "-14.50": 8945,
+   "-14.25": 7652,
+   "-14.00": 6460,
+   "-13.75": 5297,
+   "-13.50": 4449,
+   "-13.25": 3631,
+   "-13.00": 2974,
+   "-12.75": 2251,
+   "-12.50": 1812,
+   "-12.25": 1393,
+   "-12.00": 1055,
+   "-11.75": 774,
+   "-11.50": 527,
+   "-11.25": 371,
+   "-11.00": 278,
+   "-10.75": 196,
+   "-10.50": 128,
+   "-10.25": 72,
+   "-10.00": 45,
+   "-9.75": 32,
+   "-9.50": 14,
+   "-9.25": 2,
+   "-9.00": 2,
+   "-8.75": 1
+  },
+  "boundUnscored": {
+   "-18.00": 10,
+   "-17.75": 18,
+   "-17.50": 33,
+   "-17.25": 63,
+   "-17.00": 81,
+   "-16.75": 85,
+   "-16.50": 128,
+   "-16.25": 175,
+   "-16.00": 214,
+   "-15.75": 309,
+   "-15.50": 339,
+   "-15.25": 485,
+   "-15.00": 608,
+   "-14.75": 780,
+   "-14.50": 1011,
+   "-14.25": 1220,
+   "-14.00": 1472,
+   "-13.75": 1638,
+   "-13.50": 1984,
+   "-13.25": 2269,
+   "-13.00": 384
+  }
+ },
+ "timeMs": {
+  "total": 2282,
+  "setup": 575
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "WITHWHATYOUAS",
+   "wordLogp": -8.6013,
+   "words": "WITH WHAT YOU AS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "Y",
+    "z": "O",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "WITHWHATYOUAN",
+   "wordLogp": -8.7712,
+   "words": "WITH WHAT YOU AN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "Y",
+    "z": "O",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "SITESENTRYAND",
+   "wordLogp": -8.8402,
+   "words": "SITES ENTRY AND",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "S",
+    "E": "I",
+    "N": "E",
+    "A": "N",
+    "[": "R",
+    "z": "Y",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "WITHWHATCLEAR",
+   "wordLogp": -9.129,
+   "words": "WITH WHAT CLEAR",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "C",
+    "z": "L",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "SORESEARCHCAN",
+   "wordLogp": -9.1869,
+   "words": "SO RESEARCH CAN",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "S",
+    "E": "O",
+    "N": "E",
+    "A": "A",
+    "[": "C",
+    "z": "H",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ATISASLIGHTLY",
+   "wordLogp": -9.2713,
+   "words": "AT IS A SLIGHTLY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "A",
+    "E": "T",
+    "N": "S",
+    "A": "L",
+    "[": "G",
+    "z": "H",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "WITHWHATMETAL",
+   "wordLogp": -9.3261,
+   "words": "WITH WHAT METAL",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "M",
+    "z": "E",
+    "K": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "WITHWHATFORAN",
+   "wordLogp": -9.3594,
+   "words": "WITH WHAT FOR AN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "F",
+    "z": "O",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "WITHWHATBREAK",
+   "wordLogp": -9.366,
+   "words": "WITH WHAT BREAK",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "B",
+    "z": "R",
+    "K": "K"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "AMSTATESUNDER",
+   "wordLogp": -9.3729,
+   "words": "AM STATES UNDER",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "A",
+    "E": "M",
+    "N": "T",
+    "A": "E",
+    "[": "U",
+    "z": "N",
+    "K": "R"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SORESEARCHMAY",
+   "wordLogp": -9.3749,
+   "words": "SO RESEARCH MAY",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "S",
+    "E": "O",
+    "N": "E",
+    "A": "A",
+    "[": "C",
+    "z": "H",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "WITHWHATDOWAS",
+   "wordLogp": -9.3754,
+   "words": "WITH WHAT DO WAS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "D",
+    "z": "O",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "WITHWHATROYAL",
+   "wordLogp": -9.4185,
+   "words": "WITH WHAT ROYAL",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "R",
+    "z": "O",
+    "K": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "WITHWHATCLEAN",
+   "wordLogp": -9.4188,
+   "words": "WITH WHAT CLEAN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "C",
+    "z": "L",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "WITHWHATVEGAS",
+   "wordLogp": -9.4243,
+   "words": "WITH WHAT VEGAS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "V",
+    "z": "E",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "SHIPSPOINTSOF",
+   "wordLogp": -9.4547,
+   "words": "SHIPS POINTS OF",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "S",
+    "E": "H",
+    "N": "P",
+    "A": "O",
+    "[": "N",
+    "z": "T",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "TRUSTSOUNDSOF",
+   "wordLogp": -9.4838,
+   "words": "TRUST SOUNDS OF",
+   "unknown": 0,
+   "key": {
+    "0": "U",
+    "M": "T",
+    "E": "R",
+    "N": "S",
+    "A": "O",
+    "[": "N",
+    "z": "D",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "WITHWHATBEGAN",
+   "wordLogp": -9.4928,
+   "words": "WITH WHAT BEGAN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "B",
+    "z": "E",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "WITHWHATURBAN",
+   "wordLogp": -9.4949,
+   "words": "WITH WHAT URBAN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "U",
+    "z": "R",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "WITHWHATSOFAR",
+   "wordLogp": -9.5314,
+   "words": "WITH WHAT SO FAR",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "W",
+    "E": "I",
+    "N": "H",
+    "A": "A",
+    "[": "S",
+    "z": "O",
+    "K": "R"
+   }
+  }
+ ]
+}

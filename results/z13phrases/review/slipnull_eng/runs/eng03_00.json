@@ -1,0 +1,612 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:30:09.843Z",
+ "label": "eng03_00",
+ "cipher": {
+  "id": "eng03",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng03.txt",
+  "text": "abcdefcgehhca",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   0
+  ],
+  "isomorphAfterSlips": "*bcdefcgehhca"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 118,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 118,
+  "tasks": 118,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 411110,
+  "scored": 383422,
+  "keptAtLeastStreamMin": 471,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 26029,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 3698,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 471,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 28,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 1,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 23,
+  "3": 362,
+  "4": 86
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -5.962201149809231,
+  "topShare": 0.28513795523604546,
+  "top10Share": 0.5214372054118169,
+  "effectiveNumberExpEntropy": 99.7125887739572,
+  "effectiveNumberInverseSimpson": 10.96397641689857,
+  "unscoredMassBoundRelative": 0.0027822281224098005,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 26,
+   "maxWordLogp": -15.474128967567063,
+   "massEstimateRelative": 7.411826346492354e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0009103252665687823
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 15,
+   "-17.75": 40,
+   "-17.50": 75,
+   "-17.25": 121,
+   "-17.00": 152,
+   "-16.75": 200,
+   "-16.50": 229,
+   "-16.25": 329,
+   "-16.00": 416,
+   "-15.75": 570,
+   "-15.50": 678,
+   "-15.25": 1015,
+   "-15.00": 1400,
+   "-14.75": 1790,
+   "-14.50": 2159,
+   "-14.25": 2479,
+   "-14.00": 2985,
+   "-13.75": 3526,
+   "-13.50": 4044,
+   "-13.25": 4652,
+   "-13.00": 5497,
+   "-12.75": 6278,
+   "-12.50": 7264,
+   "-12.25": 8243,
+   "-12.00": 9412,
+   "-11.75": 10458,
+   "-11.50": 11839,
+   "-11.25": 12680,
+   "-11.00": 13803,
+   "-10.75": 14368,
+   "-10.50": 15605,
+   "-10.25": 16122,
+   "-10.00": 16625,
+   "-9.75": 16796,
+   "-9.50": 17069,
+   "-9.25": 17559,
+   "-9.00": 17553,
+   "-8.75": 17472,
+   "-8.50": 17458,
+   "-8.25": 17014,
+   "-8.00": 16077,
+   "-7.75": 15682,
+   "-7.50": 14185,
+   "-7.25": 12819,
+   "-7.00": 11483,
+   "-6.75": 10033,
+   "-6.50": 8263,
+   "-6.25": 6654,
+   "-6.00": 5348,
+   "-5.75": 4308,
+   "-5.50": 3128,
+   "-5.25": 2281,
+   "-5.00": 1767,
+   "-4.75": 1222,
+   "-4.50": 776,
+   "-4.25": 476,
+   "-4.00": 294,
+   "-3.75": 166,
+   "-3.50": 89,
+   "-3.25": 43,
+   "-3.00": 13,
+   "-2.75": 9,
+   "-2.50": 3,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.00": 7,
+   "-18.75": 95,
+   "-18.50": 373,
+   "-18.25": 1317,
+   "-18.00": 3164,
+   "-17.75": 5966,
+   "-17.50": 10273,
+   "-17.25": 14626,
+   "-17.00": 18904,
+   "-16.75": 22930,
+   "-16.50": 25407,
+   "-16.25": 27456,
+   "-16.00": 27605,
+   "-15.75": 27073,
+   "-15.50": 25743,
+   "-15.25": 24257,
+   "-15.00": 22249,
+   "-14.75": 20645,
+   "-14.50": 18558,
+   "-14.25": 16276,
+   "-14.00": 13855,
+   "-13.75": 11780,
+   "-13.50": 9731,
+   "-13.25": 7927,
+   "-13.00": 6502,
+   "-12.75": 5192,
+   "-12.50": 4127,
+   "-12.25": 3097,
+   "-12.00": 2375,
+   "-11.75": 1663,
+   "-11.50": 1234,
+   "-11.25": 831,
+   "-11.00": 625,
+   "-10.75": 417,
+   "-10.50": 293,
+   "-10.25": 274,
+   "-10.00": 173,
+   "-9.75": 135,
+   "-9.50": 87,
+   "-9.25": 64,
+   "-9.00": 45,
+   "-8.75": 30,
+   "-8.50": 19,
+   "-8.25": 11,
+   "-8.00": 4,
+   "-7.75": 3,
+   "-7.50": 1,
+   "-7.25": 2,
+   "-6.75": 1
+  },
+  "boundUnscored": {
+   "-18.00": 15,
+   "-17.75": 40,
+   "-17.50": 75,
+   "-17.25": 121,
+   "-17.00": 152,
+   "-16.75": 200,
+   "-16.50": 229,
+   "-16.25": 329,
+   "-16.00": 416,
+   "-15.75": 570,
+   "-15.50": 678,
+   "-15.25": 1015,
+   "-15.00": 1400,
+   "-14.75": 1790,
+   "-14.50": 2159,
+   "-14.25": 2479,
+   "-14.00": 2985,
+   "-13.75": 3526,
+   "-13.50": 4044,
+   "-13.25": 4652,
+   "-13.00": 813
+  }
+ },
+ "timeMs": {
+  "total": 3542,
+  "setup": 368
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "THEYARECALLED",
+   "wordLogp": -6.5071,
+   "words": "THEY ARE CALLED",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "Y",
+    "e": "A",
+    "f": "R",
+    "g": "C",
+    "h": "L",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THEGAMECALLED",
+   "wordLogp": -7.2091,
+   "words": "THE GAME CALLED",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "G",
+    "e": "A",
+    "f": "M",
+    "g": "C",
+    "h": "L",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THEYAREPASSED",
+   "wordLogp": -7.2257,
+   "words": "THEY ARE PASSED",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "Y",
+    "e": "A",
+    "f": "R",
+    "g": "P",
+    "h": "S",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THESAMECALLED",
+   "wordLogp": -7.4845,
+   "words": "THE SAME CALLED",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "S",
+    "e": "A",
+    "f": "M",
+    "g": "C",
+    "h": "L",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "AVERAGECALLED",
+   "wordLogp": -7.5542,
+   "words": "AVERAGE CALLED",
+   "unknown": 0,
+   "key": {
+    "b": "V",
+    "c": "E",
+    "d": "R",
+    "e": "A",
+    "f": "G",
+    "g": "C",
+    "h": "L",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "THETOBELOGGED",
+   "wordLogp": -7.698,
+   "words": "THE TO BE LOGGED",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "T",
+    "e": "O",
+    "f": "B",
+    "g": "L",
+    "h": "G",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THESAMEVALLEY",
+   "wordLogp": -7.7235,
+   "words": "THE SAME VALLEY",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "S",
+    "e": "A",
+    "f": "M",
+    "g": "V",
+    "h": "L",
+    "a": "Y"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THEPAGECALLED",
+   "wordLogp": -7.8569,
+   "words": "THE PAGE CALLED",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "P",
+    "e": "A",
+    "f": "G",
+    "g": "C",
+    "h": "L",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THEMARECALLED",
+   "wordLogp": -7.9234,
+   "words": "THEM ARE CALLED",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "M",
+    "e": "A",
+    "f": "R",
+    "g": "C",
+    "h": "L",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THENAMECALLED",
+   "wordLogp": -7.9557,
+   "words": "THE NAME CALLED",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "e": "A",
+    "f": "M",
+    "g": "C",
+    "h": "L",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "TREATMENTSSEX",
+   "wordLogp": -7.9761,
+   "words": "TREATMENTS SEX",
+   "unknown": 0,
+   "key": {
+    "b": "R",
+    "c": "E",
+    "d": "A",
+    "e": "T",
+    "f": "M",
+    "g": "N",
+    "h": "S",
+    "a": "X"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "AVERAGEPASSED",
+   "wordLogp": -8.0618,
+   "words": "AVERAGE PASSED",
+   "unknown": 0,
+   "key": {
+    "b": "V",
+    "c": "E",
+    "d": "R",
+    "e": "A",
+    "f": "G",
+    "g": "P",
+    "h": "S",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THEPAGEMATTER",
+   "wordLogp": -8.0625,
+   "words": "THE PAGE MATTER",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "P",
+    "e": "A",
+    "f": "G",
+    "g": "M",
+    "h": "T",
+    "a": "R"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THEPAGEVALLEY",
+   "wordLogp": -8.0959,
+   "words": "THE PAGE VALLEY",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "P",
+    "e": "A",
+    "f": "G",
+    "g": "V",
+    "h": "L",
+    "a": "Y"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "GUIDELINESSIX",
+   "wordLogp": -8.1148,
+   "words": "GUIDELINES SIX",
+   "unknown": 0,
+   "key": {
+    "b": "U",
+    "c": "I",
+    "d": "D",
+    "e": "E",
+    "f": "L",
+    "g": "N",
+    "h": "S",
+    "a": "X"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "DUETOBELOGGED",
+   "wordLogp": -8.1334,
+   "words": "DUE TO BE LOGGED",
+   "unknown": 0,
+   "key": {
+    "b": "U",
+    "c": "E",
+    "d": "T",
+    "e": "O",
+    "f": "B",
+    "g": "L",
+    "h": "G",
+    "a": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "AVERAGEHAPPEN",
+   "wordLogp": -8.1488,
+   "words": "AVERAGE HAPPEN",
+   "unknown": 0,
+   "key": {
+    "b": "V",
+    "c": "E",
+    "d": "R",
+    "e": "A",
+    "f": "G",
+    "g": "H",
+    "h": "P",
+    "a": "N"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THECASEMATTER",
+   "wordLogp": -8.1901,
+   "words": "THE CASE MATTER",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "C",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "T",
+    "a": "R"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THENAMEVALLEY",
+   "wordLogp": -8.1947,
+   "words": "THE NAME VALLEY",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "e": "A",
+    "f": "M",
+    "g": "V",
+    "h": "L",
+    "a": "Y"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "THECASEVALLEY",
+   "wordLogp": -8.2235,
+   "words": "THE CASE VALLEY",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "C",
+    "e": "A",
+    "f": "S",
+    "g": "V",
+    "h": "L",
+    "a": "Y"
+   }
+  }
+ ]
+}

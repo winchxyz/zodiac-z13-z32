@@ -1,0 +1,612 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:38:38.819Z",
+ "label": "eng10_10",
+ "cipher": {
+  "id": "eng10",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng10.txt",
+  "text": "abcdbefcfgdbh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   10
+  ],
+  "isomorphAfterSlips": "abcdbefcfg*bh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 943632,
+  "scored": 881069,
+  "keptAtLeastStreamMin": 174,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 28008,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 3004,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 174,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 11,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 1,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 1,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 13,
+  "3": 105,
+  "4": 56
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.260707799172152,
+  "topShare": 0.54622472713207,
+  "top10Share": 0.6977106445919629,
+  "effectiveNumberExpEntropy": 31.34727970105578,
+  "effectiveNumberInverseSimpson": 3.3142951803676746,
+  "unscoredMassBoundRelative": 0.012500441869818985,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 61,
+   "maxWordLogp": -14.943449477642304,
+   "massEstimateRelative": 0.000008351424280664013,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004260743722124087
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 2,
+   "-18.25": 12,
+   "-18.00": 24,
+   "-17.75": 76,
+   "-17.50": 115,
+   "-17.25": 168,
+   "-17.00": 242,
+   "-16.75": 335,
+   "-16.50": 458,
+   "-16.25": 623,
+   "-16.00": 943,
+   "-15.75": 1204,
+   "-15.50": 1547,
+   "-15.25": 2181,
+   "-15.00": 2956,
+   "-14.75": 3742,
+   "-14.50": 4707,
+   "-14.25": 5885,
+   "-14.00": 6858,
+   "-13.75": 7937,
+   "-13.50": 9481,
+   "-13.25": 11121,
+   "-13.00": 12839,
+   "-12.75": 15015,
+   "-12.50": 17131,
+   "-12.25": 19955,
+   "-12.00": 22319,
+   "-11.75": 25079,
+   "-11.50": 27625,
+   "-11.25": 30054,
+   "-11.00": 32348,
+   "-10.75": 34768,
+   "-10.50": 36426,
+   "-10.25": 37370,
+   "-10.00": 38762,
+   "-9.75": 39537,
+   "-9.50": 40362,
+   "-9.25": 41179,
+   "-9.00": 40992,
+   "-8.75": 41304,
+   "-8.50": 40849,
+   "-8.25": 40132,
+   "-8.00": 38582,
+   "-7.75": 36123,
+   "-7.50": 33508,
+   "-7.25": 29615,
+   "-7.00": 25988,
+   "-6.75": 21710,
+   "-6.50": 17549,
+   "-6.25": 13830,
+   "-6.00": 10328,
+   "-5.75": 7337,
+   "-5.50": 5230,
+   "-5.25": 3557,
+   "-5.00": 2295,
+   "-4.75": 1465,
+   "-4.50": 881,
+   "-4.25": 475,
+   "-4.00": 236,
+   "-3.75": 121,
+   "-3.50": 70,
+   "-3.25": 43,
+   "-3.00": 15,
+   "-2.75": 8,
+   "-2.50": 3
+  },
+  "exactScored": {
+   "-19.00": 9,
+   "-18.75": 185,
+   "-18.50": 1320,
+   "-18.25": 4507,
+   "-18.00": 10815,
+   "-17.75": 20671,
+   "-17.50": 33494,
+   "-17.25": 46553,
+   "-17.00": 58397,
+   "-16.75": 67045,
+   "-16.50": 71562,
+   "-16.25": 71887,
+   "-16.00": 69854,
+   "-15.75": 66040,
+   "-15.50": 60358,
+   "-15.25": 54456,
+   "-15.00": 47728,
+   "-14.75": 40819,
+   "-14.50": 34066,
+   "-14.25": 27626,
+   "-14.00": 22514,
+   "-13.75": 17383,
+   "-13.50": 13752,
+   "-13.25": 10585,
+   "-13.00": 8045,
+   "-12.75": 6040,
+   "-12.50": 4405,
+   "-12.25": 3321,
+   "-12.00": 2433,
+   "-11.75": 1676,
+   "-11.50": 1210,
+   "-11.25": 780,
+   "-11.00": 542,
+   "-10.75": 380,
+   "-10.50": 230,
+   "-10.25": 148,
+   "-10.00": 88,
+   "-9.75": 54,
+   "-9.50": 42,
+   "-9.25": 17,
+   "-9.00": 12,
+   "-8.75": 6,
+   "-8.50": 4,
+   "-8.25": 6,
+   "-8.00": 3,
+   "-6.75": 1
+  },
+  "boundUnscored": {
+   "-18.50": 2,
+   "-18.25": 12,
+   "-18.00": 24,
+   "-17.75": 76,
+   "-17.50": 115,
+   "-17.25": 168,
+   "-17.00": 242,
+   "-16.75": 335,
+   "-16.50": 458,
+   "-16.25": 623,
+   "-16.00": 943,
+   "-15.75": 1204,
+   "-15.50": 1547,
+   "-15.25": 2181,
+   "-15.00": 2956,
+   "-14.75": 3742,
+   "-14.50": 4707,
+   "-14.25": 5885,
+   "-14.00": 6858,
+   "-13.75": 7937,
+   "-13.50": 9481,
+   "-13.25": 11121,
+   "-13.00": 1946
+  }
+ },
+ "timeMs": {
+  "total": 7161,
+  "setup": 481
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "FORSOMEREASON",
+   "wordLogp": -6.5233,
+   "words": "FOR SOME REASON",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "R",
+    "d": "S",
+    "e": "M",
+    "f": "E",
+    "g": "A",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "HAVEACIVILIAN",
+   "wordLogp": -7.7945,
+   "words": "HAVE A CIVILIAN",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "A",
+    "c": "V",
+    "d": "E",
+    "e": "C",
+    "f": "I",
+    "g": "L",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "DAYSAGOYOUCAN",
+   "wordLogp": -7.8887,
+   "words": "DAYS AGO YOU CAN",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "A",
+    "c": "Y",
+    "d": "S",
+    "e": "G",
+    "f": "O",
+    "g": "U",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "PATRADITIONAL",
+   "wordLogp": -7.9838,
+   "words": "PA TRADITIONAL",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "A",
+    "c": "T",
+    "d": "R",
+    "e": "D",
+    "f": "I",
+    "g": "O",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "MATRADITIONAL",
+   "wordLogp": -8.0087,
+   "words": "MA TRADITIONAL",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "A",
+    "c": "T",
+    "d": "R",
+    "e": "D",
+    "f": "I",
+    "g": "O",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "CULTURALANDUP",
+   "wordLogp": -8.1125,
+   "words": "CULTURAL AND UP",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "U",
+    "c": "L",
+    "d": "T",
+    "e": "R",
+    "f": "A",
+    "g": "N",
+    "h": "P"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "LEADERSASTHEY",
+   "wordLogp": -8.159,
+   "words": "LEADERS AS THEY",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "E",
+    "c": "A",
+    "d": "D",
+    "e": "R",
+    "f": "S",
+    "g": "T",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "CENTERANALSEX",
+   "wordLogp": -8.1619,
+   "words": "CENTER ANAL SEX",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "E",
+    "c": "N",
+    "d": "T",
+    "e": "R",
+    "f": "A",
+    "g": "L",
+    "h": "X"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "NOTPOLITICSOF",
+   "wordLogp": -8.1851,
+   "words": "NOT POLITICS OF",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "P",
+    "e": "L",
+    "f": "I",
+    "g": "C",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "CULTURALANDUS",
+   "wordLogp": -8.23,
+   "words": "CULTURAL AND US",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "U",
+    "c": "L",
+    "d": "T",
+    "e": "R",
+    "f": "A",
+    "g": "N",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "NOTPOSITIVEOF",
+   "wordLogp": -8.2773,
+   "words": "NOT POSITIVE OF",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "P",
+    "e": "S",
+    "f": "I",
+    "g": "V",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "NOTPOSITIVEOR",
+   "wordLogp": -8.3726,
+   "words": "NOT POSITIVE OR",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "T",
+    "d": "P",
+    "e": "S",
+    "f": "I",
+    "g": "V",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "FORSOMEREGION",
+   "wordLogp": -8.417,
+   "words": "FOR SOME REGION",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "R",
+    "d": "S",
+    "e": "M",
+    "f": "E",
+    "g": "G",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "HATRADITIONAL",
+   "wordLogp": -8.4833,
+   "words": "HA TRADITIONAL",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "A",
+    "c": "T",
+    "d": "R",
+    "e": "D",
+    "f": "I",
+    "g": "O",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HAVEACIVILWAR",
+   "wordLogp": -8.5235,
+   "words": "HAVE A CIVIL WAR",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "A",
+    "c": "V",
+    "d": "E",
+    "e": "C",
+    "f": "I",
+    "g": "L",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "FORHOMEREGION",
+   "wordLogp": -8.567,
+   "words": "FOR HOME REGION",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "R",
+    "d": "H",
+    "e": "M",
+    "f": "E",
+    "g": "G",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "DEALERSASTHEY",
+   "wordLogp": -8.5826,
+   "words": "DEALERS AS THEY",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "E",
+    "c": "A",
+    "d": "L",
+    "e": "R",
+    "f": "S",
+    "g": "T",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "HOWYOUAWAREOF",
+   "wordLogp": -8.696,
+   "words": "HOW YOU AWARE OF",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "W",
+    "d": "Y",
+    "e": "U",
+    "f": "A",
+    "g": "R",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "GENREFINISHED",
+   "wordLogp": -8.716,
+   "words": "GENRE FINISHED",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "E",
+    "c": "N",
+    "d": "R",
+    "e": "F",
+    "f": "I",
+    "g": "S",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "VENUEMINISTER",
+   "wordLogp": -8.7386,
+   "words": "VENUE MINISTER",
+   "unknown": 0,
+   "key": {
+    "a": "V",
+    "b": "E",
+    "c": "N",
+    "d": "U",
+    "e": "M",
+    "f": "I",
+    "g": "S",
+    "h": "R"
+   }
+  }
+ ]
+}

@@ -1,0 +1,2265 @@
+{
+ "tool": "tools/cyclemodel_score.js",
+ "created": "2026-10-07T14:56:59.363Z",
+ "command": "node tools/cyclemodel_score.js --cipher data/ciphers/variants/z32.triangles_merged.txt --rows 17,15 --in results/cyclemodel/anneal_z32_triangles_merged_w0.json --in results/cyclemodel/anneal_z32_triangles_merged_w1.json --top 40 --out results/cyclemodel/score_z32_triangles_merged_anneal.json",
+ "cipher": {
+  "source": "data/ciphers/variants/z32.triangles_merged.txt",
+  "text": "C9J|#Ok[AMf9?ORTGX6FDVj%HCELzPW9",
+  "isomorph": "abcdefghijkblfmnopqrstuvwaxyzABb",
+  "rows": "17,15"
+ },
+ "inputs": [
+  "results/cyclemodel/anneal_z32_triangles_merged_w0.json",
+  "results/cyclemodel/anneal_z32_triangles_merged_w1.json"
+ ],
+ "model": "results/cyclemodel/fit.json",
+ "hyp": {
+  "kind": "homophonic",
+  "S": [
+   20,
+   26,
+   30,
+   35,
+   40,
+   45,
+   50,
+   54,
+   58,
+   63,
+   68
+  ],
+  "regimes": [
+   "z408p12",
+   "z340",
+   "z408p3"
+  ]
+ },
+ "counts": {
+  "read": 306,
+  "droppedBelowLmWindow": 21,
+  "lmWindow": 12,
+  "maxLM": -17.45786119504518,
+  "candidates": 285,
+  "skipped": 0,
+  "inconsistentWithIsomorph": 0,
+  "simpleFits": 0,
+  "approximatedPatterns": 5
+ },
+ "evidence": {
+  "note": "log10 sum over the listed candidates of 10^lm * L_H(P); comparable between hypotheses on the same list (same normalisation)",
+  "simple": null,
+  "homophonicSmallS": -23.938123890403492,
+  "homophonicZodiacSize": -23.002227387374667,
+  "homophonicMixture": -23.29194492891258,
+  "perRegime": {
+   "z408p12": -23.611918781557655,
+   "z340": -23.441003896719014,
+   "z408p3": -23.03382037288926
+  },
+  "lmOnly": -17.45123298308102
+ },
+ "concentration": {
+  "lm": {
+   "top1": 0.9849,
+   "top10": 0.9992,
+   "top100": 1,
+   "effectiveN": 1
+  },
+  "post": {
+   "top1": 0.9213,
+   "top10": 0.9976,
+   "top100": 1,
+   "effectiveN": 1.2
+  },
+  "postComb": {
+   "top1": 0.9213,
+   "top10": 0.9976,
+   "top100": 1,
+   "effectiveN": 1.2
+  }
+ },
+ "lmTopMoves": [
+  {
+   "k": 10,
+   "meanLog10RankChange": 0.088,
+   "stillInTopK": 8
+  },
+  {
+   "k": 100,
+   "meanLog10RankChange": 0.031,
+   "stillInTopK": 86
+  }
+ ],
+ "letterPosterior": {
+  "lm": [],
+  "post": [],
+  "postComb": []
+ },
+ "topLM": [
+  {
+   "plaintext": "TENDSTOCOLLECTIONTHEWATERTHESAME",
+   "words": "TENDS TO COLLECTION THE WATER THE SAME",
+   "lm": -17.458,
+   "logL": -5.87,
+   "logLzodiacSize": -5.575,
+   "logLperRegime": {
+    "z408p12": -6.333,
+    "z340": -5.99,
+    "z408p3": -5.591
+   },
+   "simpleFit": false,
+   "post": -23.328,
+   "postComb": -23.629,
+   "rankLM": 1,
+   "rankPost": 1,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "TESTANDTHEREANDTHINKINGWITHMOVIE",
+   "words": "TEST AND THERE AND THINKING WITH MOVIE",
+   "lm": -19.775,
+   "logL": -6.146,
+   "logLzodiacSize": -5.811,
+   "logLperRegime": {
+    "z408p12": -6.807,
+    "z340": -6.106,
+    "z408p3": -5.919
+   },
+   "simpleFit": false,
+   "post": -25.921,
+   "postComb": -26.222,
+   "rankLM": 2,
+   "rankPost": 6,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "DELAYEDINTHEREDDOWNTHEREADINGTHE",
+   "words": "DELAYED IN THE RED DOWN THE READING THE",
+   "lm": -19.816,
+   "logL": -5.021,
+   "logLzodiacSize": -4.75,
+   "logLperRegime": {
+    "z408p12": -4.552,
+    "z340": -6.747,
+    "z408p3": -6.489
+   },
+   "simpleFit": false,
+   "post": -24.838,
+   "postComb": -25.139,
+   "rankLM": 3,
+   "rankPost": 2,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "TOOTHERFORSOMETHEWORDSANDTHINGTO",
+   "words": "TO OTHER FOR SOME THE WORDS AND THING TO",
+   "lm": -20.364,
+   "logL": -5.876,
+   "logLzodiacSize": -5.53,
+   "logLperRegime": {
+    "z408p12": -6.937,
+    "z340": -6.166,
+    "z408p3": -5.496
+   },
+   "simpleFit": false,
+   "post": -26.24,
+   "postComb": -26.541,
+   "rankLM": 4,
+   "rankPost": 8,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "ANDTHEWORKINTERVALSANDHERANDMAIN",
+   "words": "AND THE WORK INTERVALS AND HER AND MAIN",
+   "lm": -20.441,
+   "logL": -5.939,
+   "logLzodiacSize": -5.606,
+   "logLperRegime": {
+    "z408p12": -6.9,
+    "z340": -6.517,
+    "z408p3": -5.519
+   },
+   "simpleFit": false,
+   "post": -26.379,
+   "postComb": -26.68,
+   "rankLM": 5,
+   "rankPost": 9,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "DELAYEDINTHERESHOWNTHEREADINGTHE",
+   "words": "DELAYED IN THERE SHOWN THE READING THE",
+   "lm": -20.464,
+   "logL": -4.455,
+   "logLzodiacSize": -4.296,
+   "logLperRegime": {
+    "z408p12": -4.003,
+    "z340": -6.058,
+    "z408p3": -5.289
+   },
+   "simpleFit": false,
+   "post": -24.919,
+   "postComb": -25.22,
+   "rankLM": 6,
+   "rankPost": 3,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "HERMANAGETHEINCOMEFORTHISHERETHE",
+   "words": "HER MANAGE THE INCOME FOR THIS HERE THE",
+   "lm": -20.471,
+   "logL": -6.712,
+   "logLzodiacSize": -6.394,
+   "logLperRegime": {
+    "z408p12": -7.52,
+    "z340": -7.052,
+    "z408p3": -6.334
+   },
+   "simpleFit": false,
+   "post": -27.183,
+   "postComb": -27.484,
+   "rankLM": 7,
+   "rankPost": 17,
+   "rankComb": 17
+  },
+  {
+   "plaintext": "WEAREINANDDEVICESOUTOFTHEWILLTHE",
+   "words": "WE ARE IN AND DEVICES OUT OF THE WILL THE",
+   "lm": -20.636,
+   "logL": -4.567,
+   "logLzodiacSize": -4.374,
+   "logLperRegime": {
+    "z408p12": -5.621,
+    "z340": -4.992,
+    "z408p3": -4.163
+   },
+   "simpleFit": false,
+   "post": -25.204,
+   "postComb": -25.505,
+   "rankLM": 8,
+   "rankPost": 4,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "ITDIDNOTFORTUNEYOUHAVESPRINGTHAT",
+   "words": "IT DID NOT FORTUNE YOU HAVE SPRING THAT",
+   "lm": -20.998,
+   "logL": -4.537,
+   "logLzodiacSize": -4.332,
+   "logLperRegime": {
+    "z408p12": -5.969,
+    "z340": -5.173,
+    "z408p3": -4.1
+   },
+   "simpleFit": false,
+   "post": -25.535,
+   "postComb": -25.836,
+   "rankLM": 9,
+   "rankPost": 5,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "REDTHATINTHESAMEBACKTOTHERESINCE",
+   "words": "RED THAT IN THE SAME BACK TO THERE SINCE",
+   "lm": -21.166,
+   "logL": -6.792,
+   "logLzodiacSize": -6.492,
+   "logLperRegime": {
+    "z408p12": -7.863,
+    "z340": -7.356,
+    "z408p3": -6.37
+   },
+   "simpleFit": false,
+   "post": -27.959,
+   "postComb": -28.26,
+   "rankLM": 10,
+   "rankPost": 31,
+   "rankComb": 31
+  },
+  {
+   "plaintext": "LOWEREDTHESOMETHINGTHEWASLATINTO",
+   "words": "LOWERED THE SOMETHING THE WAS LATIN TO",
+   "lm": -21.372,
+   "logL": -6.555,
+   "logLzodiacSize": -6.269,
+   "logLperRegime": {
+    "z408p12": -7.133,
+    "z340": -6.878,
+    "z408p3": -6.201
+   },
+   "simpleFit": false,
+   "post": -27.927,
+   "postComb": -28.228,
+   "rankLM": 11,
+   "rankPost": 30,
+   "rankComb": 30
+  },
+  {
+   "plaintext": "HERTHEBRIDGEBEENTHEROUGHTHESTATE",
+   "words": "HER THE BRIDGE BEEN THE ROUGH THE STATE",
+   "lm": -21.582,
+   "logL": -5.382,
+   "logLzodiacSize": -5.028,
+   "logLperRegime": {
+    "z408p12": -4.906,
+    "z340": -7.75,
+    "z408p3": -7.653
+   },
+   "simpleFit": false,
+   "post": -26.964,
+   "postComb": -27.265,
+   "rankLM": 12,
+   "rankPost": 13,
+   "rankComb": 13
+  },
+  {
+   "plaintext": "HIMSELFORTHISLETTERANDOFTHEMANDI",
+   "words": "HIMSELF OR THIS LETTER AND OF THEM AND I",
+   "lm": -21.596,
+   "logL": -5.23,
+   "logLzodiacSize": -5.408,
+   "logLperRegime": {
+    "z408p12": -4.933,
+    "z340": -5.628,
+    "z408p3": -5.437
+   },
+   "simpleFit": false,
+   "post": -26.825,
+   "postComb": -27.126,
+   "rankLM": 13,
+   "rankPost": 11,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "ALSOTHESMALLTHEWASHEDANDCARRYALL",
+   "words": "ALSO THE SMALL THE WASHED AND CARRY ALL",
+   "lm": -21.626,
+   "logL": -5.947,
+   "logLzodiacSize": -5.66,
+   "logLperRegime": {
+    "z408p12": -6.928,
+    "z340": -6.321,
+    "z408p3": -5.554
+   },
+   "simpleFit": false,
+   "post": -27.573,
+   "postComb": -27.874,
+   "rankLM": 14,
+   "rankPost": 24,
+   "rankComb": 24
+  },
+  {
+   "plaintext": "HIMSELFORTHISLETTERANDINTHESAIDI",
+   "words": "HIMSELF OR THIS LETTER AND IN THE SAID I",
+   "lm": -21.63,
+   "logL": -4.937,
+   "logLzodiacSize": -4.849,
+   "logLperRegime": {
+    "z408p12": -4.705,
+    "z340": -5.287,
+    "z408p3": -5.011
+   },
+   "simpleFit": false,
+   "post": -26.567,
+   "postComb": -26.868,
+   "rankLM": 15,
+   "rankPost": 10,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "HERTHEBRIDGEBEENTHEFOUNDTHESCALE",
+   "words": "HER THE BRIDGE BEEN THE FOUND THE SCALE",
+   "lm": -21.815,
+   "logL": -4.32,
+   "logLzodiacSize": -4.269,
+   "logLperRegime": {
+    "z408p12": -3.853,
+    "z340": -6.137,
+    "z408p3": -5.59
+   },
+   "simpleFit": false,
+   "post": -26.134,
+   "postComb": -26.435,
+   "rankLM": 16,
+   "rankPost": 7,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "TRIEDTOSPEARSTHATWILLWASSTILLFOR",
+   "words": "TRIED TO SPEARS THAT WILL WAS STILL FOR",
+   "lm": -21.826,
+   "logL": -7.471,
+   "logLzodiacSize": -7.294,
+   "logLperRegime": {
+    "z408p12": -7.468,
+    "z340": -7.563,
+    "z408p3": -7.398
+   },
+   "simpleFit": false,
+   "post": -29.297,
+   "postComb": -29.598,
+   "rankLM": 17,
+   "rankPost": 65,
+   "rankComb": 65
+  },
+  {
+   "plaintext": "POWEREDTHESOMETHINGTHEWASPITALSO",
+   "words": "POWERED THE SOMETHING THE WASP IT ALSO",
+   "lm": -21.959,
+   "logL": -5.577,
+   "logLzodiacSize": -5.267,
+   "logLperRegime": {
+    "z408p12": -5.981,
+    "z340": -6.067,
+    "z408p3": -5.219
+   },
+   "simpleFit": false,
+   "post": -27.536,
+   "postComb": -27.837,
+   "rankLM": 18,
+   "rankPost": 22,
+   "rankComb": 22
+  },
+  {
+   "plaintext": "ONWASAREADINGANDOFTHEYOUTOTHECAN",
+   "words": "ON WAS A READING AND OF THE YOU TO THE CAN",
+   "lm": -22.082,
+   "logL": -4.939,
+   "logLzodiacSize": -4.645,
+   "logLperRegime": {
+    "z408p12": -6.248,
+    "z340": -5.269,
+    "z408p3": -4.543
+   },
+   "simpleFit": false,
+   "post": -27.021,
+   "postComb": -27.322,
+   "rankLM": 19,
+   "rankPost": 16,
+   "rankComb": 16
+  },
+  {
+   "plaintext": "POWEREDTHESOMETHINGTHEWASPAYINTO",
+   "words": "POWERED THE SOMETHING THE WAS PAY INTO",
+   "lm": -22.161,
+   "logL": -5.349,
+   "logLzodiacSize": -5.054,
+   "logLperRegime": {
+    "z408p12": -5.855,
+    "z340": -5.817,
+    "z408p3": -4.979
+   },
+   "simpleFit": false,
+   "post": -27.51,
+   "postComb": -27.811,
+   "rankLM": 20,
+   "rankPost": 21,
+   "rankComb": 21
+  },
+  {
+   "plaintext": "HERTHESTAGGEREDWORKWITHATHESTONE",
+   "words": "HER THE STAGGERED WORK WITH A THE STONE",
+   "lm": -22.186,
+   "logL": -5.449,
+   "logLzodiacSize": -5.085,
+   "logLperRegime": {
+    "z408p12": -4.997,
+    "z340": -7.028,
+    "z408p3": -6.295
+   },
+   "simpleFit": false,
+   "post": -27.635,
+   "postComb": -27.936,
+   "rankLM": 21,
+   "rankPost": 26,
+   "rankComb": 26
+  },
+  {
+   "plaintext": "ASINTHEWORDSTHEREITWASTODAYANDIS",
+   "words": "AS IN THE WORDS THERE IT WAS TODAY AND IS",
+   "lm": -22.208,
+   "logL": -6.106,
+   "logLzodiacSize": -5.79,
+   "logLperRegime": {
+    "z408p12": -7.169,
+    "z340": -6.594,
+    "z408p3": -5.693
+   },
+   "simpleFit": false,
+   "post": -28.314,
+   "postComb": -28.615,
+   "rankLM": 22,
+   "rankPost": 39,
+   "rankComb": 39
+  },
+  {
+   "plaintext": "HERTHETHATHERETHOUSANDINTHISLIKE",
+   "words": "HER THE THAT HERE THOUSAND IN THIS LIKE",
+   "lm": -22.239,
+   "logL": -4.73,
+   "logLzodiacSize": -4.471,
+   "logLperRegime": {
+    "z408p12": -4.275,
+    "z340": -5.583,
+    "z408p3": -6.964
+   },
+   "simpleFit": false,
+   "post": -26.969,
+   "postComb": -27.27,
+   "rankLM": 23,
+   "rankPost": 14,
+   "rankComb": 14
+  },
+  {
+   "plaintext": "HIMSELFORTHISLETTERANDINTHEMANDI",
+   "words": "HIMSELF OR THIS LETTER AND IN THEM AND I",
+   "lm": -22.281,
+   "logL": -5.153,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -5.29,
+    "z340": -5.303,
+    "z408p3": -4.959
+   },
+   "simpleFit": false,
+   "post": -27.434,
+   "postComb": -27.735,
+   "rankLM": 24,
+   "rankPost": 20,
+   "rankComb": 20
+  },
+  {
+   "plaintext": "WARNEDTIMESANDWASANDOFTHEWILLBEA",
+   "words": "WARNED TIMES AND WAS AND OF THE WILL BE A",
+   "lm": -22.285,
+   "logL": -4.969,
+   "logLzodiacSize": -4.655,
+   "logLperRegime": {
+    "z408p12": -5.63,
+    "z340": -5.77,
+    "z408p3": -4.551
+   },
+   "simpleFit": false,
+   "post": -27.254,
+   "postComb": -27.555,
+   "rankLM": 25,
+   "rankPost": 18,
+   "rankComb": 18
+  },
+  {
+   "plaintext": "THEWASTHATTHESURECALLINGATHEWITH",
+   "words": "THE WAS THAT THE SURE CALLING A THE WITH",
+   "lm": -22.306,
+   "logL": -6.381,
+   "logLzodiacSize": -6.059,
+   "logLperRegime": {
+    "z408p12": -7.008,
+    "z340": -6.595,
+    "z408p3": -6.048
+   },
+   "simpleFit": false,
+   "post": -28.688,
+   "postComb": -28.989,
+   "rankLM": 26,
+   "rankPost": 46,
+   "rankComb": 46
+  },
+  {
+   "plaintext": "HEINTHEWANTEDHISSHORTBUTTHATHAVE",
+   "words": "HE IN THE WANTED HIS SHORT BUT THAT HAVE",
+   "lm": -22.32,
+   "logL": -7.277,
+   "logLzodiacSize": -7.021,
+   "logLperRegime": {
+    "z408p12": -8.178,
+    "z340": -7.386,
+    "z408p3": -6.956
+   },
+   "simpleFit": false,
+   "post": -29.598,
+   "postComb": -29.899,
+   "rankLM": 27,
+   "rankPost": 76,
+   "rankComb": 76
+  },
+  {
+   "plaintext": "ITSMORETHISTOREADINGTHEPRICESOFT",
+   "words": "ITS MORE THIS TO READING THE PRICE SOFT",
+   "lm": -22.448,
+   "logL": -5.239,
+   "logLzodiacSize": -4.954,
+   "logLperRegime": {
+    "z408p12": -5.616,
+    "z340": -5.972,
+    "z408p3": -4.859
+   },
+   "simpleFit": false,
+   "post": -27.687,
+   "postComb": -27.988,
+   "rankLM": 28,
+   "rankPost": 28,
+   "rankComb": 28
+  },
+  {
+   "plaintext": "ISBECOMETHESTOFTHEANDTRADINGTHIS",
+   "words": "IS BECOME THE ST OF THE AND TRADING THIS",
+   "lm": -22.452,
+   "logL": -6.343,
+   "logLzodiacSize": -6.096,
+   "logLperRegime": {
+    "z408p12": -6.934,
+    "z340": -6.498,
+    "z408p3": -6.033
+   },
+   "simpleFit": false,
+   "post": -28.795,
+   "postComb": -29.096,
+   "rankLM": 29,
+   "rankPost": 50,
+   "rankComb": 50
+  },
+  {
+   "plaintext": "THERINGBUTTHENOTINGTHEDOCTOREACH",
+   "words": "THE RING BUT THE NOTING THE DOCTOR EACH",
+   "lm": -22.561,
+   "logL": -6.462,
+   "logLzodiacSize": -6.141,
+   "logLperRegime": {
+    "z408p12": -6.559,
+    "z340": -6.956,
+    "z408p3": -6.187
+   },
+   "simpleFit": false,
+   "post": -29.023,
+   "postComb": -29.324,
+   "rankLM": 30,
+   "rankPost": 57,
+   "rankComb": 57
+  },
+  {
+   "plaintext": "ANBUTTHEREANOTHERHADTHEPLAYTHEIN",
+   "words": "AN BUT THERE ANOTHER HAD THE PLAY THE IN",
+   "lm": -22.568,
+   "logL": -7.11,
+   "logLzodiacSize": -6.99,
+   "logLperRegime": {
+    "z408p12": -6.859,
+    "z340": -7.622,
+    "z408p3": -7.151
+   },
+   "simpleFit": false,
+   "post": -29.678,
+   "postComb": -29.979,
+   "rankLM": 31,
+   "rankPost": 79,
+   "rankComb": 79
+  },
+  {
+   "plaintext": "NTOTHERWISETHERETHINGTHEONESTHAT",
+   "words": "NT OTHERWISE THERE THING THE ONES THAT",
+   "lm": -22.591,
+   "logL": -7.389,
+   "logLzodiacSize": -7.095,
+   "logLperRegime": {
+    "z408p12": -7.246,
+    "z340": -7.751,
+    "z408p3": -7.319
+   },
+   "simpleFit": false,
+   "post": -29.98,
+   "postComb": -30.281,
+   "rankLM": 32,
+   "rankPost": 87,
+   "rankComb": 87
+  },
+  {
+   "plaintext": "ASINTHECARDSTHEREITWASTODAYANDIS",
+   "words": "AS IN THE CARDS THERE IT WAS TODAY AND IS",
+   "lm": -22.635,
+   "logL": -6.185,
+   "logLzodiacSize": -5.861,
+   "logLperRegime": {
+    "z408p12": -7.079,
+    "z340": -6.663,
+    "z408p3": -5.78
+   },
+   "simpleFit": false,
+   "post": -28.82,
+   "postComb": -29.121,
+   "rankLM": 33,
+   "rankPost": 52,
+   "rankComb": 52
+  },
+  {
+   "plaintext": "ANDOUTLOOKINGTHEREDTHEBECAMETHAN",
+   "words": "AND OUT LOOKING THE RED THE BECAME THAN",
+   "lm": -22.652,
+   "logL": -6.006,
+   "logLzodiacSize": -5.724,
+   "logLperRegime": {
+    "z408p12": -6.981,
+    "z340": -6.208,
+    "z408p3": -5.651
+   },
+   "simpleFit": false,
+   "post": -28.658,
+   "postComb": -28.959,
+   "rankLM": 34,
+   "rankPost": 44,
+   "rankComb": 44
+  },
+  {
+   "plaintext": "ANBUTTHEREANDTHEREASTHEPLAYTHEIN",
+   "words": "AN BUT THERE AND THERE AS THE PLAY THE IN",
+   "lm": -22.654,
+   "logL": -6.712,
+   "logLzodiacSize": -6.444,
+   "logLperRegime": {
+    "z408p12": -6.454,
+    "z340": -7.254,
+    "z408p3": -6.756
+   },
+   "simpleFit": false,
+   "post": -29.366,
+   "postComb": -29.667,
+   "rankLM": 35,
+   "rankPost": 67,
+   "rankComb": 67
+  },
+  {
+   "plaintext": "IEYESANDASKEDABOUTHEFORTHISTOTHE",
+   "words": "I EYES AND ASKED ABOUT HE FOR THIS TO THE",
+   "lm": -22.771,
+   "logL": -5.598,
+   "logLzodiacSize": -5.329,
+   "logLperRegime": {
+    "z408p12": -6.408,
+    "z340": -5.633,
+    "z408p3": -5.315
+   },
+   "simpleFit": false,
+   "post": -28.369,
+   "postComb": -28.67,
+   "rankLM": 36,
+   "rankPost": 40,
+   "rankComb": 40
+  },
+  {
+   "plaintext": "INCESTTHELONGTHATTHEMANDLIKETHAN",
+   "words": "INCEST THE LONG THAT THEM AND LIKE THAN",
+   "lm": -22.813,
+   "logL": -6.741,
+   "logLzodiacSize": -6.432,
+   "logLperRegime": {
+    "z408p12": -7.526,
+    "z340": -7.209,
+    "z408p3": -6.344
+   },
+   "simpleFit": false,
+   "post": -29.554,
+   "postComb": -29.855,
+   "rankLM": 37,
+   "rankPost": 74,
+   "rankComb": 74
+  },
+  {
+   "plaintext": "LAKETHENEEDATHEFORTUNETHELIVINGA",
+   "words": "LAKE THE NEED A THE FORTUNE THE LIVING A",
+   "lm": -22.826,
+   "logL": -6.998,
+   "logLzodiacSize": -6.722,
+   "logLperRegime": {
+    "z408p12": -6.952,
+    "z340": -7.296,
+    "z408p3": -6.858
+   },
+   "simpleFit": false,
+   "post": -29.824,
+   "postComb": -30.125,
+   "rankLM": 38,
+   "rankPost": 83,
+   "rankComb": 83
+  },
+  {
+   "plaintext": "STARINGEVENTINANDTOTHEPERSONSHOT",
+   "words": "STARING EVENT IN AND TO THE PERSON SHOT",
+   "lm": -22.832,
+   "logL": -5.89,
+   "logLzodiacSize": -5.563,
+   "logLperRegime": {
+    "z408p12": -7.134,
+    "z340": -6.049,
+    "z408p3": -5.537
+   },
+   "simpleFit": false,
+   "post": -28.721,
+   "postComb": -29.022,
+   "rankLM": 39,
+   "rankPost": 47,
+   "rankComb": 47
+  },
+  {
+   "plaintext": "ESOFTHEREWASTHINGSANDCONTENTIOUS",
+   "words": "ES OF THERE WAS THINGS AND CONTENTIOUS",
+   "lm": -23.002,
+   "logL": -5.928,
+   "logLzodiacSize": -5.637,
+   "logLperRegime": {
+    "z408p12": -6.471,
+    "z340": -6.495,
+    "z408p3": -5.54
+   },
+   "simpleFit": false,
+   "post": -28.93,
+   "postComb": -29.231,
+   "rankLM": 40,
+   "rankPost": 53,
+   "rankComb": 53
+  }
+ ],
+ "topPost": [
+  {
+   "plaintext": "TENDSTOCOLLECTIONTHEWATERTHESAME",
+   "words": "TENDS TO COLLECTION THE WATER THE SAME",
+   "lm": -17.458,
+   "logL": -5.87,
+   "logLzodiacSize": -5.575,
+   "logLperRegime": {
+    "z408p12": -6.333,
+    "z340": -5.99,
+    "z408p3": -5.591
+   },
+   "simpleFit": false,
+   "post": -23.328,
+   "postComb": -23.629,
+   "rankLM": 1,
+   "rankPost": 1,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "DELAYEDINTHEREDDOWNTHEREADINGTHE",
+   "words": "DELAYED IN THE RED DOWN THE READING THE",
+   "lm": -19.816,
+   "logL": -5.021,
+   "logLzodiacSize": -4.75,
+   "logLperRegime": {
+    "z408p12": -4.552,
+    "z340": -6.747,
+    "z408p3": -6.489
+   },
+   "simpleFit": false,
+   "post": -24.838,
+   "postComb": -25.139,
+   "rankLM": 3,
+   "rankPost": 2,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "DELAYEDINTHERESHOWNTHEREADINGTHE",
+   "words": "DELAYED IN THERE SHOWN THE READING THE",
+   "lm": -20.464,
+   "logL": -4.455,
+   "logLzodiacSize": -4.296,
+   "logLperRegime": {
+    "z408p12": -4.003,
+    "z340": -6.058,
+    "z408p3": -5.289
+   },
+   "simpleFit": false,
+   "post": -24.919,
+   "postComb": -25.22,
+   "rankLM": 6,
+   "rankPost": 3,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "WEAREINANDDEVICESOUTOFTHEWILLTHE",
+   "words": "WE ARE IN AND DEVICES OUT OF THE WILL THE",
+   "lm": -20.636,
+   "logL": -4.567,
+   "logLzodiacSize": -4.374,
+   "logLperRegime": {
+    "z408p12": -5.621,
+    "z340": -4.992,
+    "z408p3": -4.163
+   },
+   "simpleFit": false,
+   "post": -25.204,
+   "postComb": -25.505,
+   "rankLM": 8,
+   "rankPost": 4,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "ITDIDNOTFORTUNEYOUHAVESPRINGTHAT",
+   "words": "IT DID NOT FORTUNE YOU HAVE SPRING THAT",
+   "lm": -20.998,
+   "logL": -4.537,
+   "logLzodiacSize": -4.332,
+   "logLperRegime": {
+    "z408p12": -5.969,
+    "z340": -5.173,
+    "z408p3": -4.1
+   },
+   "simpleFit": false,
+   "post": -25.535,
+   "postComb": -25.836,
+   "rankLM": 9,
+   "rankPost": 5,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "TESTANDTHEREANDTHINKINGWITHMOVIE",
+   "words": "TEST AND THERE AND THINKING WITH MOVIE",
+   "lm": -19.775,
+   "logL": -6.146,
+   "logLzodiacSize": -5.811,
+   "logLperRegime": {
+    "z408p12": -6.807,
+    "z340": -6.106,
+    "z408p3": -5.919
+   },
+   "simpleFit": false,
+   "post": -25.921,
+   "postComb": -26.222,
+   "rankLM": 2,
+   "rankPost": 6,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "HERTHEBRIDGEBEENTHEFOUNDTHESCALE",
+   "words": "HER THE BRIDGE BEEN THE FOUND THE SCALE",
+   "lm": -21.815,
+   "logL": -4.32,
+   "logLzodiacSize": -4.269,
+   "logLperRegime": {
+    "z408p12": -3.853,
+    "z340": -6.137,
+    "z408p3": -5.59
+   },
+   "simpleFit": false,
+   "post": -26.134,
+   "postComb": -26.435,
+   "rankLM": 16,
+   "rankPost": 7,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "TOOTHERFORSOMETHEWORDSANDTHINGTO",
+   "words": "TO OTHER FOR SOME THE WORDS AND THING TO",
+   "lm": -20.364,
+   "logL": -5.876,
+   "logLzodiacSize": -5.53,
+   "logLperRegime": {
+    "z408p12": -6.937,
+    "z340": -6.166,
+    "z408p3": -5.496
+   },
+   "simpleFit": false,
+   "post": -26.24,
+   "postComb": -26.541,
+   "rankLM": 4,
+   "rankPost": 8,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "ANDTHEWORKINTERVALSANDHERANDMAIN",
+   "words": "AND THE WORK INTERVALS AND HER AND MAIN",
+   "lm": -20.441,
+   "logL": -5.939,
+   "logLzodiacSize": -5.606,
+   "logLperRegime": {
+    "z408p12": -6.9,
+    "z340": -6.517,
+    "z408p3": -5.519
+   },
+   "simpleFit": false,
+   "post": -26.379,
+   "postComb": -26.68,
+   "rankLM": 5,
+   "rankPost": 9,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "HIMSELFORTHISLETTERANDINTHESAIDI",
+   "words": "HIMSELF OR THIS LETTER AND IN THE SAID I",
+   "lm": -21.63,
+   "logL": -4.937,
+   "logLzodiacSize": -4.849,
+   "logLperRegime": {
+    "z408p12": -4.705,
+    "z340": -5.287,
+    "z408p3": -5.011
+   },
+   "simpleFit": false,
+   "post": -26.567,
+   "postComb": -26.868,
+   "rankLM": 15,
+   "rankPost": 10,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "HIMSELFORTHISLETTERANDOFTHEMANDI",
+   "words": "HIMSELF OR THIS LETTER AND OF THEM AND I",
+   "lm": -21.596,
+   "logL": -5.23,
+   "logLzodiacSize": -5.408,
+   "logLperRegime": {
+    "z408p12": -4.933,
+    "z340": -5.628,
+    "z408p3": -5.437
+   },
+   "simpleFit": false,
+   "post": -26.825,
+   "postComb": -27.126,
+   "rankLM": 13,
+   "rankPost": 11,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "HELOVEANDTHERESOMETHEREACHINGARE",
+   "words": "HE LOVE AND THERE SOME THE REACHING ARE",
+   "lm": -23.177,
+   "logL": -3.769,
+   "logLzodiacSize": -3.737,
+   "logLperRegime": {
+    "z408p12": -3.298,
+    "z340": -5.793,
+    "z408p3": -5.343
+   },
+   "simpleFit": false,
+   "post": -26.946,
+   "postComb": -27.247,
+   "rankLM": 46,
+   "rankPost": 12,
+   "rankComb": 12
+  },
+  {
+   "plaintext": "HERTHEBRIDGEBEENTHEROUGHTHESTATE",
+   "words": "HER THE BRIDGE BEEN THE ROUGH THE STATE",
+   "lm": -21.582,
+   "logL": -5.382,
+   "logLzodiacSize": -5.028,
+   "logLperRegime": {
+    "z408p12": -4.906,
+    "z340": -7.75,
+    "z408p3": -7.653
+   },
+   "simpleFit": false,
+   "post": -26.964,
+   "postComb": -27.265,
+   "rankLM": 12,
+   "rankPost": 13,
+   "rankComb": 13
+  },
+  {
+   "plaintext": "HERTHETHATHERETHOUSANDINTHISLIKE",
+   "words": "HER THE THAT HERE THOUSAND IN THIS LIKE",
+   "lm": -22.239,
+   "logL": -4.73,
+   "logLzodiacSize": -4.471,
+   "logLperRegime": {
+    "z408p12": -4.275,
+    "z340": -5.583,
+    "z408p3": -6.964
+   },
+   "simpleFit": false,
+   "post": -26.969,
+   "postComb": -27.27,
+   "rankLM": 23,
+   "rankPost": 14,
+   "rankComb": 14
+  },
+  {
+   "plaintext": "HELIKEANDTHERESOMETHEREACHINGARE",
+   "words": "HE LIKE AND THERE SOME THE REACHING ARE",
+   "lm": -23.205,
+   "logL": -3.772,
+   "logLzodiacSize": -3.737,
+   "logLperRegime": {
+    "z408p12": -3.3,
+    "z340": -5.85,
+    "z408p3": -5.348
+   },
+   "simpleFit": false,
+   "post": -26.977,
+   "postComb": -27.279,
+   "rankLM": 48,
+   "rankPost": 15,
+   "rankComb": 15
+  },
+  {
+   "plaintext": "ONWASAREADINGANDOFTHEYOUTOTHECAN",
+   "words": "ON WAS A READING AND OF THE YOU TO THE CAN",
+   "lm": -22.082,
+   "logL": -4.939,
+   "logLzodiacSize": -4.645,
+   "logLperRegime": {
+    "z408p12": -6.248,
+    "z340": -5.269,
+    "z408p3": -4.543
+   },
+   "simpleFit": false,
+   "post": -27.021,
+   "postComb": -27.322,
+   "rankLM": 19,
+   "rankPost": 16,
+   "rankComb": 16
+  },
+  {
+   "plaintext": "HERMANAGETHEINCOMEFORTHISHERETHE",
+   "words": "HER MANAGE THE INCOME FOR THIS HERE THE",
+   "lm": -20.471,
+   "logL": -6.712,
+   "logLzodiacSize": -6.394,
+   "logLperRegime": {
+    "z408p12": -7.52,
+    "z340": -7.052,
+    "z408p3": -6.334
+   },
+   "simpleFit": false,
+   "post": -27.183,
+   "postComb": -27.484,
+   "rankLM": 7,
+   "rankPost": 17,
+   "rankComb": 17
+  },
+  {
+   "plaintext": "WARNEDTIMESANDWASANDOFTHEWILLBEA",
+   "words": "WARNED TIMES AND WAS AND OF THE WILL BE A",
+   "lm": -22.285,
+   "logL": -4.969,
+   "logLzodiacSize": -4.655,
+   "logLperRegime": {
+    "z408p12": -5.63,
+    "z340": -5.77,
+    "z408p3": -4.551
+   },
+   "simpleFit": false,
+   "post": -27.254,
+   "postComb": -27.555,
+   "rankLM": 25,
+   "rankPost": 18,
+   "rankComb": 18
+  },
+  {
+   "plaintext": "NDABOUTWOULDBUSINESSTHATINTHEHAD",
+   "words": "ND ABOUT WOULD BUSINESS THAT IN THE HAD",
+   "lm": -23.226,
+   "logL": -4.154,
+   "logLzodiacSize": -4.001,
+   "logLperRegime": {
+    "z408p12": -3.814,
+    "z340": -4.34,
+    "z408p3": -4.96
+   },
+   "simpleFit": false,
+   "post": -27.38,
+   "postComb": -27.681,
+   "rankLM": 51,
+   "rankPost": 19,
+   "rankComb": 19
+  },
+  {
+   "plaintext": "HIMSELFORTHISLETTERANDINTHEMANDI",
+   "words": "HIMSELF OR THIS LETTER AND IN THEM AND I",
+   "lm": -22.281,
+   "logL": -5.153,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -5.29,
+    "z340": -5.303,
+    "z408p3": -4.959
+   },
+   "simpleFit": false,
+   "post": -27.434,
+   "postComb": -27.735,
+   "rankLM": 24,
+   "rankPost": 20,
+   "rankComb": 20
+  },
+  {
+   "plaintext": "POWEREDTHESOMETHINGTHEWASPAYINTO",
+   "words": "POWERED THE SOMETHING THE WAS PAY INTO",
+   "lm": -22.161,
+   "logL": -5.349,
+   "logLzodiacSize": -5.054,
+   "logLperRegime": {
+    "z408p12": -5.855,
+    "z340": -5.817,
+    "z408p3": -4.979
+   },
+   "simpleFit": false,
+   "post": -27.51,
+   "postComb": -27.811,
+   "rankLM": 20,
+   "rankPost": 21,
+   "rankComb": 21
+  },
+  {
+   "plaintext": "POWEREDTHESOMETHINGTHEWASPITALSO",
+   "words": "POWERED THE SOMETHING THE WASP IT ALSO",
+   "lm": -21.959,
+   "logL": -5.577,
+   "logLzodiacSize": -5.267,
+   "logLperRegime": {
+    "z408p12": -5.981,
+    "z340": -6.067,
+    "z408p3": -5.219
+   },
+   "simpleFit": false,
+   "post": -27.536,
+   "postComb": -27.837,
+   "rankLM": 18,
+   "rankPost": 22,
+   "rankComb": 22
+  },
+  {
+   "plaintext": "DERIVEANDTHEWEREHOUSINGHADBEENME",
+   "words": "DERIVE AND THE WERE HOUSING HAD BEEN ME",
+   "lm": -23.915,
+   "logL": -3.657,
+   "logLzodiacSize": -3.637,
+   "logLperRegime": {
+    "z408p12": -3.192,
+    "z340": -5.431,
+    "z408p3": -4.815
+   },
+   "simpleFit": false,
+   "post": -27.572,
+   "postComb": -27.873,
+   "rankLM": 67,
+   "rankPost": 23,
+   "rankComb": 23
+  },
+  {
+   "plaintext": "ALSOTHESMALLTHEWASHEDANDCARRYALL",
+   "words": "ALSO THE SMALL THE WASHED AND CARRY ALL",
+   "lm": -21.626,
+   "logL": -5.947,
+   "logLzodiacSize": -5.66,
+   "logLperRegime": {
+    "z408p12": -6.928,
+    "z340": -6.321,
+    "z408p3": -5.554
+   },
+   "simpleFit": false,
+   "post": -27.573,
+   "postComb": -27.874,
+   "rankLM": 14,
+   "rankPost": 24,
+   "rankComb": 24
+  },
+  {
+   "plaintext": "THEREFORWITHOFLITTLESANDSTHESUCH",
+   "words": "THERE FOR WITH OF LITTLE SANDS THE SUCH",
+   "lm": -23.456,
+   "logL": -4.172,
+   "logLzodiacSize": -3.995,
+   "logLperRegime": {
+    "z408p12": -3.995,
+    "z340": -4.287,
+    "z408p3": -4.308
+   },
+   "simpleFit": false,
+   "post": -27.628,
+   "postComb": -27.929,
+   "rankLM": 56,
+   "rankPost": 25,
+   "rankComb": 25
+  },
+  {
+   "plaintext": "HERTHESTAGGEREDWORKWITHATHESTONE",
+   "words": "HER THE STAGGERED WORK WITH A THE STONE",
+   "lm": -22.186,
+   "logL": -5.449,
+   "logLzodiacSize": -5.085,
+   "logLperRegime": {
+    "z408p12": -4.997,
+    "z340": -7.028,
+    "z408p3": -6.295
+   },
+   "simpleFit": false,
+   "post": -27.635,
+   "postComb": -27.936,
+   "rankLM": 21,
+   "rankPost": 26,
+   "rankComb": 26
+  },
+  {
+   "plaintext": "IRECORDSTHERAREGOINGALISTINGOVER",
+   "words": "I RECORDS THE RARE GOING A LISTING OVER",
+   "lm": -24.3,
+   "logL": -3.341,
+   "logLzodiacSize": -3.319,
+   "logLperRegime": {
+    "z408p12": -2.9,
+    "z340": -4.071,
+    "z408p3": -4.596
+   },
+   "simpleFit": false,
+   "post": -27.641,
+   "postComb": -27.942,
+   "rankLM": 87,
+   "rankPost": 27,
+   "rankComb": 27
+  },
+  {
+   "plaintext": "ITSMORETHISTOREADINGTHEPRICESOFT",
+   "words": "ITS MORE THIS TO READING THE PRICE SOFT",
+   "lm": -22.448,
+   "logL": -5.239,
+   "logLzodiacSize": -4.954,
+   "logLperRegime": {
+    "z408p12": -5.616,
+    "z340": -5.972,
+    "z408p3": -4.859
+   },
+   "simpleFit": false,
+   "post": -27.687,
+   "postComb": -27.988,
+   "rankLM": 28,
+   "rankPost": 28,
+   "rankComb": 28
+  },
+  {
+   "plaintext": "HERWAYANDEVERYTOPICKTHENTHATSOME",
+   "words": "HER WAY AND EVERY TO PICK THEN THAT SOME",
+   "lm": -23.743,
+   "logL": -3.971,
+   "logLzodiacSize": -3.872,
+   "logLperRegime": {
+    "z408p12": -4.149,
+    "z340": -4.118,
+    "z408p3": -3.761
+   },
+   "simpleFit": false,
+   "post": -27.714,
+   "postComb": -28.015,
+   "rankLM": 63,
+   "rankPost": 29,
+   "rankComb": 29
+  },
+  {
+   "plaintext": "LOWEREDTHESOMETHINGTHEWASLATINTO",
+   "words": "LOWERED THE SOMETHING THE WAS LATIN TO",
+   "lm": -21.372,
+   "logL": -6.555,
+   "logLzodiacSize": -6.269,
+   "logLperRegime": {
+    "z408p12": -7.133,
+    "z340": -6.878,
+    "z408p3": -6.201
+   },
+   "simpleFit": false,
+   "post": -27.927,
+   "postComb": -28.228,
+   "rankLM": 11,
+   "rankPost": 30,
+   "rankComb": 30
+  },
+  {
+   "plaintext": "REDTHATINTHESAMEBACKTOTHERESINCE",
+   "words": "RED THAT IN THE SAME BACK TO THERE SINCE",
+   "lm": -21.166,
+   "logL": -6.792,
+   "logLzodiacSize": -6.492,
+   "logLperRegime": {
+    "z408p12": -7.863,
+    "z340": -7.356,
+    "z408p3": -6.37
+   },
+   "simpleFit": false,
+   "post": -27.959,
+   "postComb": -28.26,
+   "rankLM": 10,
+   "rankPost": 31,
+   "rankComb": 31
+  },
+  {
+   "plaintext": "THATALMOSTTHELIKEHISWASNOTHINGOH",
+   "words": "THAT ALMOST THE LIKE HIS WAS NOTHING OH",
+   "lm": -23.083,
+   "logL": -4.888,
+   "logLzodiacSize": -4.787,
+   "logLperRegime": {
+    "z408p12": -4.492,
+    "z340": -5.494,
+    "z408p3": -5.476
+   },
+   "simpleFit": false,
+   "post": -27.971,
+   "postComb": -28.272,
+   "rankLM": 43,
+   "rankPost": 32,
+   "rankComb": 32
+  },
+  {
+   "plaintext": "HEWASFORTIMEOFANDBYTHERETHEDANCE",
+   "words": "HE WAS FOR TIME OF AND BY THERE THE DANCE",
+   "lm": -24.002,
+   "logL": -3.979,
+   "logLzodiacSize": -3.94,
+   "logLperRegime": {
+    "z408p12": -3.96,
+    "z340": -4.123,
+    "z408p3": -3.888
+   },
+   "simpleFit": false,
+   "post": -27.981,
+   "postComb": -28.282,
+   "rankLM": 71,
+   "rankPost": 33,
+   "rankComb": 33
+  },
+  {
+   "plaintext": "HANDSATTHEWASALONGBUTTHETHECOMMA",
+   "words": "HANDS AT THE WAS A LONG BUT THE THE COMMA",
+   "lm": -24.167,
+   "logL": -3.836,
+   "logLzodiacSize": -3.745,
+   "logLperRegime": {
+    "z408p12": -3.394,
+    "z340": -4.742,
+    "z408p3": -4.787
+   },
+   "simpleFit": false,
+   "post": -28.003,
+   "postComb": -28.304,
+   "rankLM": 82,
+   "rankPost": 34,
+   "rankComb": 34
+  },
+  {
+   "plaintext": "HAIRWASINTHATAGENTSOMEOFTHESAIDA",
+   "words": "HAIR WAS IN THAT AGENT SOME OF THE SAID A",
+   "lm": -24.211,
+   "logL": -3.834,
+   "logLzodiacSize": -3.846,
+   "logLperRegime": {
+    "z408p12": -3.398,
+    "z340": -5.207,
+    "z408p3": -4.467
+   },
+   "simpleFit": false,
+   "post": -28.045,
+   "postComb": -28.346,
+   "rankLM": 84,
+   "rankPost": 35,
+   "rankComb": 35
+  },
+  {
+   "plaintext": "HERTHEALLOWEVERYBOTHINTOTHESENSE",
+   "words": "HER THE ALLOW EVERY BOTH INTO THE SENSE",
+   "lm": -24.056,
+   "logL": -4.107,
+   "logLzodiacSize": -4.096,
+   "logLperRegime": {
+    "z408p12": -3.646,
+    "z340": -5.654,
+    "z408p3": -5.215
+   },
+   "simpleFit": false,
+   "post": -28.163,
+   "postComb": -28.464,
+   "rankLM": 74,
+   "rankPost": 36,
+   "rankComb": 36
+  },
+  {
+   "plaintext": "NDABOUTWOULDBUSINESSTHISINTHEHAD",
+   "words": "ND ABOUT WOULD BUSINESS THIS IN THE HAD",
+   "lm": -23.629,
+   "logL": -4.586,
+   "logLzodiacSize": -4.332,
+   "logLperRegime": {
+    "z408p12": -4.263,
+    "z340": -4.731,
+    "z408p3": -5.327
+   },
+   "simpleFit": false,
+   "post": -28.214,
+   "postComb": -28.516,
+   "rankLM": 60,
+   "rankPost": 37,
+   "rankComb": 37
+  },
+  {
+   "plaintext": "TOSPEAKANDYOUAREHERWITHOFTHATTOO",
+   "words": "TO SPEAK AND YOU ARE HER WITH OF THAT TOO",
+   "lm": -23.081,
+   "logL": -5.205,
+   "logLzodiacSize": -4.907,
+   "logLperRegime": {
+    "z408p12": -6.007,
+    "z340": -5.477,
+    "z408p3": -4.842
+   },
+   "simpleFit": false,
+   "post": -28.286,
+   "postComb": -28.587,
+   "rankLM": 42,
+   "rankPost": 38,
+   "rankComb": 38
+  },
+  {
+   "plaintext": "ASINTHEWORDSTHEREITWASTODAYANDIS",
+   "words": "AS IN THE WORDS THERE IT WAS TODAY AND IS",
+   "lm": -22.208,
+   "logL": -6.106,
+   "logLzodiacSize": -5.79,
+   "logLperRegime": {
+    "z408p12": -7.169,
+    "z340": -6.594,
+    "z408p3": -5.693
+   },
+   "simpleFit": false,
+   "post": -28.314,
+   "postComb": -28.615,
+   "rankLM": 22,
+   "rankPost": 39,
+   "rankComb": 39
+  },
+  {
+   "plaintext": "IEYESANDASKEDABOUTHEFORTHISTOTHE",
+   "words": "I EYES AND ASKED ABOUT HE FOR THIS TO THE",
+   "lm": -22.771,
+   "logL": -5.598,
+   "logLzodiacSize": -5.329,
+   "logLperRegime": {
+    "z408p12": -6.408,
+    "z340": -5.633,
+    "z408p3": -5.315
+   },
+   "simpleFit": false,
+   "post": -28.369,
+   "postComb": -28.67,
+   "rankLM": 36,
+   "rankPost": 40,
+   "rankComb": 40
+  }
+ ],
+ "topComb": [
+  {
+   "plaintext": "TENDSTOCOLLECTIONTHEWATERTHESAME",
+   "words": "TENDS TO COLLECTION THE WATER THE SAME",
+   "lm": -17.458,
+   "logL": -5.87,
+   "logLzodiacSize": -5.575,
+   "logLperRegime": {
+    "z408p12": -6.333,
+    "z340": -5.99,
+    "z408p3": -5.591
+   },
+   "simpleFit": false,
+   "post": -23.328,
+   "postComb": -23.629,
+   "rankLM": 1,
+   "rankPost": 1,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "DELAYEDINTHEREDDOWNTHEREADINGTHE",
+   "words": "DELAYED IN THE RED DOWN THE READING THE",
+   "lm": -19.816,
+   "logL": -5.021,
+   "logLzodiacSize": -4.75,
+   "logLperRegime": {
+    "z408p12": -4.552,
+    "z340": -6.747,
+    "z408p3": -6.489
+   },
+   "simpleFit": false,
+   "post": -24.838,
+   "postComb": -25.139,
+   "rankLM": 3,
+   "rankPost": 2,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "DELAYEDINTHERESHOWNTHEREADINGTHE",
+   "words": "DELAYED IN THERE SHOWN THE READING THE",
+   "lm": -20.464,
+   "logL": -4.455,
+   "logLzodiacSize": -4.296,
+   "logLperRegime": {
+    "z408p12": -4.003,
+    "z340": -6.058,
+    "z408p3": -5.289
+   },
+   "simpleFit": false,
+   "post": -24.919,
+   "postComb": -25.22,
+   "rankLM": 6,
+   "rankPost": 3,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "WEAREINANDDEVICESOUTOFTHEWILLTHE",
+   "words": "WE ARE IN AND DEVICES OUT OF THE WILL THE",
+   "lm": -20.636,
+   "logL": -4.567,
+   "logLzodiacSize": -4.374,
+   "logLperRegime": {
+    "z408p12": -5.621,
+    "z340": -4.992,
+    "z408p3": -4.163
+   },
+   "simpleFit": false,
+   "post": -25.204,
+   "postComb": -25.505,
+   "rankLM": 8,
+   "rankPost": 4,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "ITDIDNOTFORTUNEYOUHAVESPRINGTHAT",
+   "words": "IT DID NOT FORTUNE YOU HAVE SPRING THAT",
+   "lm": -20.998,
+   "logL": -4.537,
+   "logLzodiacSize": -4.332,
+   "logLperRegime": {
+    "z408p12": -5.969,
+    "z340": -5.173,
+    "z408p3": -4.1
+   },
+   "simpleFit": false,
+   "post": -25.535,
+   "postComb": -25.836,
+   "rankLM": 9,
+   "rankPost": 5,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "TESTANDTHEREANDTHINKINGWITHMOVIE",
+   "words": "TEST AND THERE AND THINKING WITH MOVIE",
+   "lm": -19.775,
+   "logL": -6.146,
+   "logLzodiacSize": -5.811,
+   "logLperRegime": {
+    "z408p12": -6.807,
+    "z340": -6.106,
+    "z408p3": -5.919
+   },
+   "simpleFit": false,
+   "post": -25.921,
+   "postComb": -26.222,
+   "rankLM": 2,
+   "rankPost": 6,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "HERTHEBRIDGEBEENTHEFOUNDTHESCALE",
+   "words": "HER THE BRIDGE BEEN THE FOUND THE SCALE",
+   "lm": -21.815,
+   "logL": -4.32,
+   "logLzodiacSize": -4.269,
+   "logLperRegime": {
+    "z408p12": -3.853,
+    "z340": -6.137,
+    "z408p3": -5.59
+   },
+   "simpleFit": false,
+   "post": -26.134,
+   "postComb": -26.435,
+   "rankLM": 16,
+   "rankPost": 7,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "TOOTHERFORSOMETHEWORDSANDTHINGTO",
+   "words": "TO OTHER FOR SOME THE WORDS AND THING TO",
+   "lm": -20.364,
+   "logL": -5.876,
+   "logLzodiacSize": -5.53,
+   "logLperRegime": {
+    "z408p12": -6.937,
+    "z340": -6.166,
+    "z408p3": -5.496
+   },
+   "simpleFit": false,
+   "post": -26.24,
+   "postComb": -26.541,
+   "rankLM": 4,
+   "rankPost": 8,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "ANDTHEWORKINTERVALSANDHERANDMAIN",
+   "words": "AND THE WORK INTERVALS AND HER AND MAIN",
+   "lm": -20.441,
+   "logL": -5.939,
+   "logLzodiacSize": -5.606,
+   "logLperRegime": {
+    "z408p12": -6.9,
+    "z340": -6.517,
+    "z408p3": -5.519
+   },
+   "simpleFit": false,
+   "post": -26.379,
+   "postComb": -26.68,
+   "rankLM": 5,
+   "rankPost": 9,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "HIMSELFORTHISLETTERANDINTHESAIDI",
+   "words": "HIMSELF OR THIS LETTER AND IN THE SAID I",
+   "lm": -21.63,
+   "logL": -4.937,
+   "logLzodiacSize": -4.849,
+   "logLperRegime": {
+    "z408p12": -4.705,
+    "z340": -5.287,
+    "z408p3": -5.011
+   },
+   "simpleFit": false,
+   "post": -26.567,
+   "postComb": -26.868,
+   "rankLM": 15,
+   "rankPost": 10,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "HIMSELFORTHISLETTERANDOFTHEMANDI",
+   "words": "HIMSELF OR THIS LETTER AND OF THEM AND I",
+   "lm": -21.596,
+   "logL": -5.23,
+   "logLzodiacSize": -5.408,
+   "logLperRegime": {
+    "z408p12": -4.933,
+    "z340": -5.628,
+    "z408p3": -5.437
+   },
+   "simpleFit": false,
+   "post": -26.825,
+   "postComb": -27.126,
+   "rankLM": 13,
+   "rankPost": 11,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "HELOVEANDTHERESOMETHEREACHINGARE",
+   "words": "HE LOVE AND THERE SOME THE REACHING ARE",
+   "lm": -23.177,
+   "logL": -3.769,
+   "logLzodiacSize": -3.737,
+   "logLperRegime": {
+    "z408p12": -3.298,
+    "z340": -5.793,
+    "z408p3": -5.343
+   },
+   "simpleFit": false,
+   "post": -26.946,
+   "postComb": -27.247,
+   "rankLM": 46,
+   "rankPost": 12,
+   "rankComb": 12
+  },
+  {
+   "plaintext": "HERTHEBRIDGEBEENTHEROUGHTHESTATE",
+   "words": "HER THE BRIDGE BEEN THE ROUGH THE STATE",
+   "lm": -21.582,
+   "logL": -5.382,
+   "logLzodiacSize": -5.028,
+   "logLperRegime": {
+    "z408p12": -4.906,
+    "z340": -7.75,
+    "z408p3": -7.653
+   },
+   "simpleFit": false,
+   "post": -26.964,
+   "postComb": -27.265,
+   "rankLM": 12,
+   "rankPost": 13,
+   "rankComb": 13
+  },
+  {
+   "plaintext": "HERTHETHATHERETHOUSANDINTHISLIKE",
+   "words": "HER THE THAT HERE THOUSAND IN THIS LIKE",
+   "lm": -22.239,
+   "logL": -4.73,
+   "logLzodiacSize": -4.471,
+   "logLperRegime": {
+    "z408p12": -4.275,
+    "z340": -5.583,
+    "z408p3": -6.964
+   },
+   "simpleFit": false,
+   "post": -26.969,
+   "postComb": -27.27,
+   "rankLM": 23,
+   "rankPost": 14,
+   "rankComb": 14
+  },
+  {
+   "plaintext": "HELIKEANDTHERESOMETHEREACHINGARE",
+   "words": "HE LIKE AND THERE SOME THE REACHING ARE",
+   "lm": -23.205,
+   "logL": -3.772,
+   "logLzodiacSize": -3.737,
+   "logLperRegime": {
+    "z408p12": -3.3,
+    "z340": -5.85,
+    "z408p3": -5.348
+   },
+   "simpleFit": false,
+   "post": -26.977,
+   "postComb": -27.279,
+   "rankLM": 48,
+   "rankPost": 15,
+   "rankComb": 15
+  },
+  {
+   "plaintext": "ONWASAREADINGANDOFTHEYOUTOTHECAN",
+   "words": "ON WAS A READING AND OF THE YOU TO THE CAN",
+   "lm": -22.082,
+   "logL": -4.939,
+   "logLzodiacSize": -4.645,
+   "logLperRegime": {
+    "z408p12": -6.248,
+    "z340": -5.269,
+    "z408p3": -4.543
+   },
+   "simpleFit": false,
+   "post": -27.021,
+   "postComb": -27.322,
+   "rankLM": 19,
+   "rankPost": 16,
+   "rankComb": 16
+  },
+  {
+   "plaintext": "HERMANAGETHEINCOMEFORTHISHERETHE",
+   "words": "HER MANAGE THE INCOME FOR THIS HERE THE",
+   "lm": -20.471,
+   "logL": -6.712,
+   "logLzodiacSize": -6.394,
+   "logLperRegime": {
+    "z408p12": -7.52,
+    "z340": -7.052,
+    "z408p3": -6.334
+   },
+   "simpleFit": false,
+   "post": -27.183,
+   "postComb": -27.484,
+   "rankLM": 7,
+   "rankPost": 17,
+   "rankComb": 17
+  },
+  {
+   "plaintext": "WARNEDTIMESANDWASANDOFTHEWILLBEA",
+   "words": "WARNED TIMES AND WAS AND OF THE WILL BE A",
+   "lm": -22.285,
+   "logL": -4.969,
+   "logLzodiacSize": -4.655,
+   "logLperRegime": {
+    "z408p12": -5.63,
+    "z340": -5.77,
+    "z408p3": -4.551
+   },
+   "simpleFit": false,
+   "post": -27.254,
+   "postComb": -27.555,
+   "rankLM": 25,
+   "rankPost": 18,
+   "rankComb": 18
+  },
+  {
+   "plaintext": "NDABOUTWOULDBUSINESSTHATINTHEHAD",
+   "words": "ND ABOUT WOULD BUSINESS THAT IN THE HAD",
+   "lm": -23.226,
+   "logL": -4.154,
+   "logLzodiacSize": -4.001,
+   "logLperRegime": {
+    "z408p12": -3.814,
+    "z340": -4.34,
+    "z408p3": -4.96
+   },
+   "simpleFit": false,
+   "post": -27.38,
+   "postComb": -27.681,
+   "rankLM": 51,
+   "rankPost": 19,
+   "rankComb": 19
+  },
+  {
+   "plaintext": "HIMSELFORTHISLETTERANDINTHEMANDI",
+   "words": "HIMSELF OR THIS LETTER AND IN THEM AND I",
+   "lm": -22.281,
+   "logL": -5.153,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -5.29,
+    "z340": -5.303,
+    "z408p3": -4.959
+   },
+   "simpleFit": false,
+   "post": -27.434,
+   "postComb": -27.735,
+   "rankLM": 24,
+   "rankPost": 20,
+   "rankComb": 20
+  },
+  {
+   "plaintext": "POWEREDTHESOMETHINGTHEWASPAYINTO",
+   "words": "POWERED THE SOMETHING THE WAS PAY INTO",
+   "lm": -22.161,
+   "logL": -5.349,
+   "logLzodiacSize": -5.054,
+   "logLperRegime": {
+    "z408p12": -5.855,
+    "z340": -5.817,
+    "z408p3": -4.979
+   },
+   "simpleFit": false,
+   "post": -27.51,
+   "postComb": -27.811,
+   "rankLM": 20,
+   "rankPost": 21,
+   "rankComb": 21
+  },
+  {
+   "plaintext": "POWEREDTHESOMETHINGTHEWASPITALSO",
+   "words": "POWERED THE SOMETHING THE WASP IT ALSO",
+   "lm": -21.959,
+   "logL": -5.577,
+   "logLzodiacSize": -5.267,
+   "logLperRegime": {
+    "z408p12": -5.981,
+    "z340": -6.067,
+    "z408p3": -5.219
+   },
+   "simpleFit": false,
+   "post": -27.536,
+   "postComb": -27.837,
+   "rankLM": 18,
+   "rankPost": 22,
+   "rankComb": 22
+  },
+  {
+   "plaintext": "DERIVEANDTHEWEREHOUSINGHADBEENME",
+   "words": "DERIVE AND THE WERE HOUSING HAD BEEN ME",
+   "lm": -23.915,
+   "logL": -3.657,
+   "logLzodiacSize": -3.637,
+   "logLperRegime": {
+    "z408p12": -3.192,
+    "z340": -5.431,
+    "z408p3": -4.815
+   },
+   "simpleFit": false,
+   "post": -27.572,
+   "postComb": -27.873,
+   "rankLM": 67,
+   "rankPost": 23,
+   "rankComb": 23
+  },
+  {
+   "plaintext": "ALSOTHESMALLTHEWASHEDANDCARRYALL",
+   "words": "ALSO THE SMALL THE WASHED AND CARRY ALL",
+   "lm": -21.626,
+   "logL": -5.947,
+   "logLzodiacSize": -5.66,
+   "logLperRegime": {
+    "z408p12": -6.928,
+    "z340": -6.321,
+    "z408p3": -5.554
+   },
+   "simpleFit": false,
+   "post": -27.573,
+   "postComb": -27.874,
+   "rankLM": 14,
+   "rankPost": 24,
+   "rankComb": 24
+  },
+  {
+   "plaintext": "THEREFORWITHOFLITTLESANDSTHESUCH",
+   "words": "THERE FOR WITH OF LITTLE SANDS THE SUCH",
+   "lm": -23.456,
+   "logL": -4.172,
+   "logLzodiacSize": -3.995,
+   "logLperRegime": {
+    "z408p12": -3.995,
+    "z340": -4.287,
+    "z408p3": -4.308
+   },
+   "simpleFit": false,
+   "post": -27.628,
+   "postComb": -27.929,
+   "rankLM": 56,
+   "rankPost": 25,
+   "rankComb": 25
+  },
+  {
+   "plaintext": "HERTHESTAGGEREDWORKWITHATHESTONE",
+   "words": "HER THE STAGGERED WORK WITH A THE STONE",
+   "lm": -22.186,
+   "logL": -5.449,
+   "logLzodiacSize": -5.085,
+   "logLperRegime": {
+    "z408p12": -4.997,
+    "z340": -7.028,
+    "z408p3": -6.295
+   },
+   "simpleFit": false,
+   "post": -27.635,
+   "postComb": -27.936,
+   "rankLM": 21,
+   "rankPost": 26,
+   "rankComb": 26
+  },
+  {
+   "plaintext": "IRECORDSTHERAREGOINGALISTINGOVER",
+   "words": "I RECORDS THE RARE GOING A LISTING OVER",
+   "lm": -24.3,
+   "logL": -3.341,
+   "logLzodiacSize": -3.319,
+   "logLperRegime": {
+    "z408p12": -2.9,
+    "z340": -4.071,
+    "z408p3": -4.596
+   },
+   "simpleFit": false,
+   "post": -27.641,
+   "postComb": -27.942,
+   "rankLM": 87,
+   "rankPost": 27,
+   "rankComb": 27
+  },
+  {
+   "plaintext": "ITSMORETHISTOREADINGTHEPRICESOFT",
+   "words": "ITS MORE THIS TO READING THE PRICE SOFT",
+   "lm": -22.448,
+   "logL": -5.239,
+   "logLzodiacSize": -4.954,
+   "logLperRegime": {
+    "z408p12": -5.616,
+    "z340": -5.972,
+    "z408p3": -4.859
+   },
+   "simpleFit": false,
+   "post": -27.687,
+   "postComb": -27.988,
+   "rankLM": 28,
+   "rankPost": 28,
+   "rankComb": 28
+  },
+  {
+   "plaintext": "HERWAYANDEVERYTOPICKTHENTHATSOME",
+   "words": "HER WAY AND EVERY TO PICK THEN THAT SOME",
+   "lm": -23.743,
+   "logL": -3.971,
+   "logLzodiacSize": -3.872,
+   "logLperRegime": {
+    "z408p12": -4.149,
+    "z340": -4.118,
+    "z408p3": -3.761
+   },
+   "simpleFit": false,
+   "post": -27.714,
+   "postComb": -28.015,
+   "rankLM": 63,
+   "rankPost": 29,
+   "rankComb": 29
+  },
+  {
+   "plaintext": "LOWEREDTHESOMETHINGTHEWASLATINTO",
+   "words": "LOWERED THE SOMETHING THE WAS LATIN TO",
+   "lm": -21.372,
+   "logL": -6.555,
+   "logLzodiacSize": -6.269,
+   "logLperRegime": {
+    "z408p12": -7.133,
+    "z340": -6.878,
+    "z408p3": -6.201
+   },
+   "simpleFit": false,
+   "post": -27.927,
+   "postComb": -28.228,
+   "rankLM": 11,
+   "rankPost": 30,
+   "rankComb": 30
+  },
+  {
+   "plaintext": "REDTHATINTHESAMEBACKTOTHERESINCE",
+   "words": "RED THAT IN THE SAME BACK TO THERE SINCE",
+   "lm": -21.166,
+   "logL": -6.792,
+   "logLzodiacSize": -6.492,
+   "logLperRegime": {
+    "z408p12": -7.863,
+    "z340": -7.356,
+    "z408p3": -6.37
+   },
+   "simpleFit": false,
+   "post": -27.959,
+   "postComb": -28.26,
+   "rankLM": 10,
+   "rankPost": 31,
+   "rankComb": 31
+  },
+  {
+   "plaintext": "THATALMOSTTHELIKEHISWASNOTHINGOH",
+   "words": "THAT ALMOST THE LIKE HIS WAS NOTHING OH",
+   "lm": -23.083,
+   "logL": -4.888,
+   "logLzodiacSize": -4.787,
+   "logLperRegime": {
+    "z408p12": -4.492,
+    "z340": -5.494,
+    "z408p3": -5.476
+   },
+   "simpleFit": false,
+   "post": -27.971,
+   "postComb": -28.272,
+   "rankLM": 43,
+   "rankPost": 32,
+   "rankComb": 32
+  },
+  {
+   "plaintext": "HEWASFORTIMEOFANDBYTHERETHEDANCE",
+   "words": "HE WAS FOR TIME OF AND BY THERE THE DANCE",
+   "lm": -24.002,
+   "logL": -3.979,
+   "logLzodiacSize": -3.94,
+   "logLperRegime": {
+    "z408p12": -3.96,
+    "z340": -4.123,
+    "z408p3": -3.888
+   },
+   "simpleFit": false,
+   "post": -27.981,
+   "postComb": -28.282,
+   "rankLM": 71,
+   "rankPost": 33,
+   "rankComb": 33
+  },
+  {
+   "plaintext": "HANDSATTHEWASALONGBUTTHETHECOMMA",
+   "words": "HANDS AT THE WAS A LONG BUT THE THE COMMA",
+   "lm": -24.167,
+   "logL": -3.836,
+   "logLzodiacSize": -3.745,
+   "logLperRegime": {
+    "z408p12": -3.394,
+    "z340": -4.742,
+    "z408p3": -4.787
+   },
+   "simpleFit": false,
+   "post": -28.003,
+   "postComb": -28.304,
+   "rankLM": 82,
+   "rankPost": 34,
+   "rankComb": 34
+  },
+  {
+   "plaintext": "HAIRWASINTHATAGENTSOMEOFTHESAIDA",
+   "words": "HAIR WAS IN THAT AGENT SOME OF THE SAID A",
+   "lm": -24.211,
+   "logL": -3.834,
+   "logLzodiacSize": -3.846,
+   "logLperRegime": {
+    "z408p12": -3.398,
+    "z340": -5.207,
+    "z408p3": -4.467
+   },
+   "simpleFit": false,
+   "post": -28.045,
+   "postComb": -28.346,
+   "rankLM": 84,
+   "rankPost": 35,
+   "rankComb": 35
+  },
+  {
+   "plaintext": "HERTHEALLOWEVERYBOTHINTOTHESENSE",
+   "words": "HER THE ALLOW EVERY BOTH INTO THE SENSE",
+   "lm": -24.056,
+   "logL": -4.107,
+   "logLzodiacSize": -4.096,
+   "logLperRegime": {
+    "z408p12": -3.646,
+    "z340": -5.654,
+    "z408p3": -5.215
+   },
+   "simpleFit": false,
+   "post": -28.163,
+   "postComb": -28.464,
+   "rankLM": 74,
+   "rankPost": 36,
+   "rankComb": 36
+  },
+  {
+   "plaintext": "NDABOUTWOULDBUSINESSTHISINTHEHAD",
+   "words": "ND ABOUT WOULD BUSINESS THIS IN THE HAD",
+   "lm": -23.629,
+   "logL": -4.586,
+   "logLzodiacSize": -4.332,
+   "logLperRegime": {
+    "z408p12": -4.263,
+    "z340": -4.731,
+    "z408p3": -5.327
+   },
+   "simpleFit": false,
+   "post": -28.214,
+   "postComb": -28.516,
+   "rankLM": 60,
+   "rankPost": 37,
+   "rankComb": 37
+  },
+  {
+   "plaintext": "TOSPEAKANDYOUAREHERWITHOFTHATTOO",
+   "words": "TO SPEAK AND YOU ARE HER WITH OF THAT TOO",
+   "lm": -23.081,
+   "logL": -5.205,
+   "logLzodiacSize": -4.907,
+   "logLperRegime": {
+    "z408p12": -6.007,
+    "z340": -5.477,
+    "z408p3": -4.842
+   },
+   "simpleFit": false,
+   "post": -28.286,
+   "postComb": -28.587,
+   "rankLM": 42,
+   "rankPost": 38,
+   "rankComb": 38
+  },
+  {
+   "plaintext": "ASINTHEWORDSTHEREITWASTODAYANDIS",
+   "words": "AS IN THE WORDS THERE IT WAS TODAY AND IS",
+   "lm": -22.208,
+   "logL": -6.106,
+   "logLzodiacSize": -5.79,
+   "logLperRegime": {
+    "z408p12": -7.169,
+    "z340": -6.594,
+    "z408p3": -5.693
+   },
+   "simpleFit": false,
+   "post": -28.314,
+   "postComb": -28.615,
+   "rankLM": 22,
+   "rankPost": 39,
+   "rankComb": 39
+  },
+  {
+   "plaintext": "IEYESANDASKEDABOUTHEFORTHISTOTHE",
+   "words": "I EYES AND ASKED ABOUT HE FOR THIS TO THE",
+   "lm": -22.771,
+   "logL": -5.598,
+   "logLzodiacSize": -5.329,
+   "logLperRegime": {
+    "z408p12": -6.408,
+    "z340": -5.633,
+    "z408p3": -5.315
+   },
+   "simpleFit": false,
+   "post": -28.369,
+   "postComb": -28.67,
+   "rankLM": 36,
+   "rankPost": 40,
+   "rankComb": 40
+  }
+ ],
+ "seconds": 3.325
+}

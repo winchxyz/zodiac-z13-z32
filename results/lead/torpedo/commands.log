@@ -1,0 +1,20 @@
+# torpedo task commands, run from the repository root
+node tools/lead_torpedo_lists.js
+node tools/run_slot.js --label torpedo -- node tools/lead_torpedo_real.js --out results/lead/torpedo/real.json --tsv results/lead/torpedo/real_circles_z340_top20000.tsv
+node tools/run_slot.js --label torpedo -- node tools/lead_torpedo_null.js --validate 15 --threads 4 --out results/lead/torpedo/validate.json
+node tools/run_slot.js --label torpedo -- node tools/lead_torpedo_null.js --n 10000 --kinds permute,stratified --threads 4 --out results/lead/torpedo/null.jsonl
+python tools/lead_torpedo_keys.py
+node tools/run_slot.js --label torpedo -- node tools/lead_torpedo_fit.js --n 100000 --out results/lead/torpedo/fit.json
+node tools/run_slot.js --label torpedo -- node tools/lead_torpedo_twocircle.js --n 10000 --threads 4 --out results/lead/torpedo/twocircle.json
+node tools/run_slot.js --label torpedo -- node tools/lead_torpedo_counts.js > results/lead/torpedo/counts.json
+node tools/lead_torpedo_summary.js > results/lead/torpedo/summary.log
+node tools/run_slot.js --label torpedo -- node tools/lead_torpedo_null.js --validate 24 --validate-from results/lead/torpedo/null.jsonl --threads 4 --out results/lead/torpedo/validate_fluent.json
+node tools/lead_torpedo_headline.js > results/lead/torpedo/headline.log
+node tools/lead_torpedo_summary.js > results/lead/torpedo/summary.log   # rerun with the any7 sensitivity event
+node tools/lead_torpedo_headline.js > results/lead/torpedo/headline.log
+python tools/lead_torpedo_derived.py
+python tools/lead_torpedo_derived.py   # rerun after adding the look-elsewhere-adjusted ratios
+# facts (step 1): curl of the Wikisource raw pages Page:Zodiac-name-and-bomb.djvu/1 and /2; Wayback CDX query
+#   http://web.archive.org/cdx/search/cdx?url=cse.unt.edu/~garlick/research/papers/*; YouTube page metadata of
+#   watch?v=tqwVEU5hapk; WebFetch of the forum thread, mathgenealogy.org id 12266, ciphermysteries.com 2017-12-16;
+#   grep of data/sources/arxiv_2403.17350.html and data/sources/wp_zodiac_killer.wiki. Results in facts.json.

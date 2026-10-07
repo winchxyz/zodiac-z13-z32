@@ -1,0 +1,3463 @@
+{
+ "tool": "tools/cyclemodel_score.js",
+ "created": "2026-10-07T14:51:24.754Z",
+ "command": "node tools/cyclemodel_score.js --cipher data/ciphers/variants/z13.canonical.txt --in results/cyclemodel/names_z13_canonical_simple.tsv --in results/cyclemodel/names_z13_canonical_homophonic.tsv --track 4,9 --top 60 --out results/cyclemodel/score_z13_canonical_names.json",
+ "cipher": {
+  "source": "data/ciphers/variants/z13.canonical.txt",
+  "text": "AENz0K0M0[NAM",
+  "isomorph": "abcdefegehcag",
+  "rows": "13"
+ },
+ "inputs": [
+  "results/cyclemodel/names_z13_canonical_simple.tsv",
+  "results/cyclemodel/names_z13_canonical_homophonic.tsv"
+ ],
+ "model": "results/cyclemodel/fit.json",
+ "hyp": {
+  "kind": "homophonic",
+  "S": [
+   20,
+   26,
+   30,
+   35,
+   40,
+   45,
+   50,
+   54,
+   58,
+   63,
+   68
+  ],
+  "regimes": [
+   "z408p12",
+   "z340",
+   "z408p3"
+  ]
+ },
+ "counts": {
+  "read": 624506,
+  "droppedBelowLmWindow": 45406,
+  "lmWindow": 12,
+  "maxLM": -8.38393592821535,
+  "candidates": 473057,
+  "skipped": 0,
+  "inconsistentWithIsomorph": 0,
+  "simpleFits": 69227,
+  "approximatedPatterns": 0
+ },
+ "evidence": {
+  "note": "log10 sum over the listed candidates of 10^lm * L_H(P); comparable between hypotheses on the same list (same normalisation)",
+  "simple": -8.600173782350705,
+  "homophonicSmallS": -10.13481247936628,
+  "homophonicZodiacSize": -11.912913621426409,
+  "homophonicMixture": -10.391616765499803,
+  "perRegime": {
+   "z408p12": -10.529035086704765,
+   "z340": -10.412142409558607,
+   "z408p3": -10.27189668000024
+  },
+  "lmOnly": -7.633904067413768
+ },
+ "concentration": {
+  "lm": {
+   "top1": 0.1778,
+   "top10": 0.5471,
+   "top100": 0.8423,
+   "effectiveN": 16.6
+  },
+  "post": {
+   "top1": 0.3078,
+   "top10": 0.6022,
+   "top100": 0.8802,
+   "effectiveN": 9.3
+  },
+  "postComb": {
+   "top1": 0.2911,
+   "top10": 0.8185,
+   "top100": 0.9507,
+   "effectiveN": 6.6
+  }
+ },
+ "lmTopMoves": [
+  {
+   "k": 10,
+   "meanLog10RankChange": 0.802,
+   "stillInTopK": 3
+  },
+  {
+   "k": 100,
+   "meanLog10RankChange": 0.543,
+   "stillInTopK": 42
+  },
+  {
+   "k": 1000,
+   "meanLog10RankChange": 0.383,
+   "stillInTopK": 476
+  }
+ ],
+ "letterPosterior": {
+  "lm": [
+   {
+    "position": 4,
+    "symbol": "0",
+    "letters": {
+     "E": 0.7021,
+     "A": 0.1341,
+     "L": 0.0666,
+     "T": 0.0346,
+     "N": 0.0331,
+     "R": 0.0066,
+     "O": 0.0056
+    }
+   },
+   {
+    "position": 9,
+    "symbol": "[",
+    "letters": {
+     "N": 0.2463,
+     "I": 0.197,
+     "R": 0.1124,
+     "U": 0.0845,
+     "E": 0.0757,
+     "V": 0.0377,
+     "L": 0.0347,
+     "O": 0.0314,
+     "W": 0.0253,
+     "A": 0.0252,
+     "S": 0.0244,
+     "C": 0.0212,
+     "H": 0.0182,
+     "B": 0.0143,
+     "T": 0.013,
+     "D": 0.0083,
+     "M": 0.0054
+    }
+   }
+  ],
+  "post": [
+   {
+    "position": 4,
+    "symbol": "0",
+    "letters": {
+     "T": 0.3237,
+     "L": 0.268,
+     "E": 0.1398,
+     "R": 0.0792,
+     "A": 0.0654,
+     "B": 0.0199,
+     "I": 0.0182,
+     "C": 0.0164,
+     "S": 0.0151,
+     "N": 0.0142,
+     "O": 0.0123,
+     "M": 0.0099,
+     "V": 0.0093,
+     "H": 0.006
+    }
+   },
+   {
+    "position": 9,
+    "symbol": "[",
+    "letters": {
+     "R": 0.3509,
+     "E": 0.2448,
+     "A": 0.1033,
+     "I": 0.0574,
+     "V": 0.0528,
+     "C": 0.0341,
+     "O": 0.0296,
+     "B": 0.023,
+     "N": 0.0226,
+     "U": 0.0138,
+     "L": 0.0133,
+     "H": 0.0103,
+     "D": 0.0078,
+     "Z": 0.0057
+    }
+   }
+  ],
+  "postComb": [
+   {
+    "position": 4,
+    "symbol": "0",
+    "letters": {
+     "E": 0.6257,
+     "T": 0.3017,
+     "A": 0.0527,
+     "L": 0.0088
+    }
+   },
+   {
+    "position": 9,
+    "symbol": "[",
+    "letters": {
+     "R": 0.3407,
+     "V": 0.2969,
+     "C": 0.1688,
+     "B": 0.0214,
+     "I": 0.0207,
+     "P": 0.02,
+     "W": 0.02,
+     "L": 0.0137,
+     "G": 0.0116,
+     "M": 0.0116,
+     "N": 0.0105,
+     "T": 0.0073,
+     "H": 0.0064,
+     "E": 0.006,
+     "S": 0.0058,
+     "Q": 0.0056,
+     "A": 0.0055,
+     "D": 0.0054
+    }
+   }
+  ]
+ },
+ "topLM": [
+  {
+   "plaintext": "EDDIERESENDES",
+   "words": "EDDIE RESENDES",
+   "lm": -8.384,
+   "logL": -4.571,
+   "logLzodiacSize": -5.052,
+   "logLperRegime": {
+    "z408p12": -7.836,
+    "z340": -4.704,
+    "z408p3": -4.217
+   },
+   "simpleFit": false,
+   "post": -12.955,
+   "postComb": -13.256,
+   "rankLM": 1,
+   "rankPost": 39,
+   "rankComb": 369
+  },
+  {
+   "plaintext": "ESTHEREREITER",
+   "words": "ESTHER E REITER",
+   "lm": -8.539,
+   "logL": -4.683,
+   "logLzodiacSize": -5.049,
+   "logLperRegime": {
+    "z408p12": -8.073,
+    "z340": -4.881,
+    "z408p3": -4.309
+   },
+   "simpleFit": false,
+   "post": -13.223,
+   "postComb": -13.524,
+   "rankLM": 2,
+   "rankPost": 62,
+   "rankComb": 525
+  },
+  {
+   "plaintext": "ESTHEREREUTER",
+   "words": "ESTHER E REUTER",
+   "lm": -8.73,
+   "logL": -4.683,
+   "logLzodiacSize": -5.049,
+   "logLperRegime": {
+    "z408p12": -8.073,
+    "z340": -4.881,
+    "z408p3": -4.309
+   },
+   "simpleFit": false,
+   "post": -13.413,
+   "postComb": -13.714,
+   "rankLM": 3,
+   "rankPost": 81,
+   "rankComb": 670
+  },
+  {
+   "plaintext": "ELSIEHENEISEN",
+   "words": "ELSIE HENEISEN",
+   "lm": -8.969,
+   "logL": -3.838,
+   "logLzodiacSize": -5.052,
+   "logLperRegime": {
+    "z408p12": -5.934,
+    "z340": -3.808,
+    "z408p3": -3.555
+   },
+   "simpleFit": false,
+   "post": -12.808,
+   "postComb": -13.109,
+   "rankLM": 4,
+   "rankPost": 31,
+   "rankComb": 302
+  },
+  {
+   "plaintext": "CHASTITYTRACY",
+   "words": "CHASTITY TRACY",
+   "lm": -9.137,
+   "logL": -1.767,
+   "logLzodiacSize": -3.611,
+   "logLperRegime": {
+    "z408p12": -1.811,
+    "z340": -1.804,
+    "z408p3": -1.695
+   },
+   "simpleFit": true,
+   "post": -10.903,
+   "postComb": -9.43,
+   "rankLM": 5,
+   "rankPost": 1,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "IMOGENEREVOIR",
+   "words": "IMOGENE REVOIR",
+   "lm": -9.347,
+   "logL": -2.586,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -2.654,
+    "z340": -2.645,
+    "z408p3": -2.481
+   },
+   "simpleFit": true,
+   "post": -11.933,
+   "postComb": -9.647,
+   "rankLM": 6,
+   "rankPost": 6,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "ESTHERERESTER",
+   "words": "ESTHER E RESTER",
+   "lm": -9.365,
+   "logL": -4.921,
+   "logLzodiacSize": -5.106,
+   "logLperRegime": {
+    "z408p12": -8.427,
+    "z340": -5.284,
+    "z408p3": -4.512
+   },
+   "simpleFit": false,
+   "post": -14.286,
+   "postComb": -14.587,
+   "rankLM": 7,
+   "rankPost": 304,
+   "rankComb": 2003
+  },
+  {
+   "plaintext": "IRENEPETEREIT",
+   "words": "IRENE PETEREIT",
+   "lm": -9.404,
+   "logL": -4.206,
+   "logLzodiacSize": -5.057,
+   "logLperRegime": {
+    "z408p12": -6.381,
+    "z340": -4.23,
+    "z408p3": -3.894
+   },
+   "simpleFit": false,
+   "post": -13.609,
+   "postComb": -13.91,
+   "rankLM": 8,
+   "rankPost": 107,
+   "rankComb": 861
+  },
+  {
+   "plaintext": "ALLENANNNOLAN",
+   "words": "ALLEN ANN NOLAN",
+   "lm": -9.407,
+   "logL": -3.636,
+   "logLzodiacSize": -4.027,
+   "logLperRegime": {
+    "z408p12": -5.373,
+    "z340": -4.255,
+    "z408p3": -3.198
+   },
+   "simpleFit": false,
+   "post": -13.043,
+   "postComb": -13.344,
+   "rankLM": 9,
+   "rankPost": 46,
+   "rankComb": 418
+  },
+  {
+   "plaintext": "ASHLEYEMECHAM",
+   "words": "ASHLEY E MECHAM",
+   "lm": -9.446,
+   "logL": -2.493,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.565,
+    "z340": -2.556,
+    "z408p3": -2.384
+   },
+   "simpleFit": true,
+   "post": -11.939,
+   "postComb": -9.746,
+   "rankLM": 10,
+   "rankPost": 7,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "MARYLULALERMA",
+   "words": "MARY LULA LERMA",
+   "lm": -9.454,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -11.663,
+   "postComb": -11.964,
+   "rankLM": 11,
+   "rankPost": 2,
+   "rankComb": 54
+  },
+  {
+   "plaintext": "ELLAAVANALLEN",
+   "words": "ELLA A VANALLEN",
+   "lm": -9.456,
+   "logL": -5.435,
+   "logLzodiacSize": -5.215,
+   "logLperRegime": {
+    "z408p12": -9.168,
+    "z340": -6.494,
+    "z408p3": -4.971
+   },
+   "simpleFit": false,
+   "post": -14.891,
+   "postComb": -15.192,
+   "rankLM": 12,
+   "rankPost": 772,
+   "rankComb": 4089
+  },
+  {
+   "plaintext": "MARYLOLALERMA",
+   "words": "MARY LOLA LERMA",
+   "lm": -9.498,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -11.707,
+   "postComb": -12.008,
+   "rankLM": 13,
+   "rankPost": 3,
+   "rankComb": 57
+  },
+  {
+   "plaintext": "IMOGENEDEVOID",
+   "words": "IMOGENE DEVOID",
+   "lm": -9.542,
+   "logL": -2.53,
+   "logLzodiacSize": -4.899,
+   "logLperRegime": {
+    "z408p12": -2.597,
+    "z340": -2.588,
+    "z408p3": -2.427
+   },
+   "simpleFit": true,
+   "post": -12.072,
+   "postComb": -9.842,
+   "rankLM": 14,
+   "rankPost": 10,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "ADRIANAHARRAH",
+   "words": "ADRIANA HARRAH",
+   "lm": -9.55,
+   "logL": -3.517,
+   "logLzodiacSize": -4.305,
+   "logLperRegime": {
+    "z408p12": -5.569,
+    "z340": -3.459,
+    "z408p3": -3.25
+   },
+   "simpleFit": false,
+   "post": -13.066,
+   "postComb": -13.367,
+   "rankLM": 15,
+   "rankPost": 49,
+   "rankComb": 430
+  },
+  {
+   "plaintext": "ESSIEHENEISEN",
+   "words": "ESSIE HENEISEN",
+   "lm": -9.583,
+   "logL": -4.686,
+   "logLzodiacSize": -5.106,
+   "logLperRegime": {
+    "z408p12": -7.973,
+    "z340": -4.864,
+    "z408p3": -4.317
+   },
+   "simpleFit": false,
+   "post": -14.268,
+   "postComb": -14.569,
+   "rankLM": 16,
+   "rankPost": 293,
+   "rankComb": 1969
+  },
+  {
+   "plaintext": "IRENEJENEWEIN",
+   "words": "IRENE JENEWEIN",
+   "lm": -9.585,
+   "logL": -4.4,
+   "logLzodiacSize": -5.05,
+   "logLperRegime": {
+    "z408p12": -7.633,
+    "z340": -4.479,
+    "z408p3": -4.065
+   },
+   "simpleFit": false,
+   "post": -13.986,
+   "postComb": -14.287,
+   "rankLM": 17,
+   "rankPost": 192,
+   "rankComb": 1391
+  },
+  {
+   "plaintext": "THERESEHERETH",
+   "words": "THERESE HERETH",
+   "lm": -9.657,
+   "logL": -4.907,
+   "logLzodiacSize": -5.108,
+   "logLperRegime": {
+    "z408p12": -8.399,
+    "z340": -5.258,
+    "z408p3": -4.5
+   },
+   "simpleFit": false,
+   "post": -14.564,
+   "postComb": -14.866,
+   "rankLM": 18,
+   "rankPost": 458,
+   "rankComb": 2788
+  },
+  {
+   "plaintext": "ESTHERERETTER",
+   "words": "ESTHER E RETTER",
+   "lm": -9.673,
+   "logL": -4.388,
+   "logLzodiacSize": -4.86,
+   "logLperRegime": {
+    "z408p12": -7.614,
+    "z340": -4.605,
+    "z408p3": -4.01
+   },
+   "simpleFit": false,
+   "post": -14.061,
+   "postComb": -14.362,
+   "rankLM": 19,
+   "rankPost": 218,
+   "rankComb": 1529
+  },
+  {
+   "plaintext": "EARLENEREHRER",
+   "words": "EARLENE REHRER",
+   "lm": -9.678,
+   "logL": -3.358,
+   "logLzodiacSize": -3.936,
+   "logLperRegime": {
+    "z408p12": -5.344,
+    "z340": -3.523,
+    "z408p3": -2.995
+   },
+   "simpleFit": false,
+   "post": -13.036,
+   "postComb": -13.337,
+   "rankLM": 20,
+   "rankPost": 45,
+   "rankComb": 412
+  },
+  {
+   "plaintext": "EARLENENERREN",
+   "words": "EARLENE NERREN",
+   "lm": -9.693,
+   "logL": -4.303,
+   "logLzodiacSize": -4.59,
+   "logLperRegime": {
+    "z408p12": -7.479,
+    "z340": -4.658,
+    "z408p3": -3.895
+   },
+   "simpleFit": false,
+   "post": -13.996,
+   "postComb": -14.297,
+   "rankLM": 21,
+   "rankPost": 196,
+   "rankComb": 1410
+  },
+  {
+   "plaintext": "EARLENESERRES",
+   "words": "EARLENE SERRES",
+   "lm": -9.715,
+   "logL": -3.683,
+   "logLzodiacSize": -4.535,
+   "logLperRegime": {
+    "z408p12": -5.761,
+    "z340": -3.742,
+    "z408p3": -3.357
+   },
+   "simpleFit": false,
+   "post": -13.399,
+   "postComb": -13.7,
+   "rankLM": 22,
+   "rankPost": 78,
+   "rankComb": 655
+  },
+  {
+   "plaintext": "MARYLILALERMA",
+   "words": "MARY LILA LERMA",
+   "lm": -9.718,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -11.927,
+   "postComb": -12.228,
+   "rankLM": 23,
+   "rankPost": 5,
+   "rankComb": 76
+  },
+  {
+   "plaintext": "MARYLELALERMA",
+   "words": "MARY LELA LERMA",
+   "lm": -9.766,
+   "logL": -2.261,
+   "logLzodiacSize": -3.81,
+   "logLperRegime": {
+    "z408p12": -3.151,
+    "z340": -2.159,
+    "z408p3": -2.056
+   },
+   "simpleFit": false,
+   "post": -12.028,
+   "postComb": -12.329,
+   "rankLM": 24,
+   "rankPost": 9,
+   "rankComb": 88
+  },
+  {
+   "plaintext": "ANNSARAHANNAH",
+   "words": "ANN SARA HANNAH",
+   "lm": -9.771,
+   "logL": -4.406,
+   "logLzodiacSize": -4.69,
+   "logLperRegime": {
+    "z408p12": -7.281,
+    "z340": -4.389,
+    "z408p3": -4.114
+   },
+   "simpleFit": false,
+   "post": -14.177,
+   "postComb": -14.478,
+   "rankLM": 25,
+   "rankPost": 253,
+   "rankComb": 1778
+  },
+  {
+   "plaintext": "STEVEPETEWEST",
+   "words": "STEVE PETE WEST",
+   "lm": -9.811,
+   "logL": -4.236,
+   "logLzodiacSize": -5.051,
+   "logLperRegime": {
+    "z408p12": -7.409,
+    "z340": -4.297,
+    "z408p3": -3.907
+   },
+   "simpleFit": false,
+   "post": -14.047,
+   "postComb": -14.348,
+   "rankLM": 26,
+   "rankPost": 215,
+   "rankComb": 1503
+  },
+  {
+   "plaintext": "SHANNONENEASE",
+   "words": "SHANNON E NEASE",
+   "lm": -9.898,
+   "logL": -3.944,
+   "logLzodiacSize": -5.041,
+   "logLperRegime": {
+    "z408p12": -6.067,
+    "z340": -3.938,
+    "z408p3": -3.648
+   },
+   "simpleFit": false,
+   "post": -13.842,
+   "postComb": -14.143,
+   "rankLM": 27,
+   "rankPost": 157,
+   "rankComb": 1164
+  },
+  {
+   "plaintext": "EULAAVANALLEN",
+   "words": "EULA A VANALLEN",
+   "lm": -9.907,
+   "logL": -4.38,
+   "logLzodiacSize": -4.473,
+   "logLperRegime": {
+    "z408p12": -7.071,
+    "z340": -4.94,
+    "z408p3": -3.945
+   },
+   "simpleFit": false,
+   "post": -14.287,
+   "postComb": -14.588,
+   "rankLM": 28,
+   "rankPost": 306,
+   "rankComb": 2006
+  },
+  {
+   "plaintext": "ELLENANNNOLEN",
+   "words": "ELLEN ANN NOLEN",
+   "lm": -9.914,
+   "logL": -3.856,
+   "logLzodiacSize": -4.252,
+   "logLperRegime": {
+    "z408p12": -5.785,
+    "z340": -4.695,
+    "z408p3": -3.402
+   },
+   "simpleFit": false,
+   "post": -13.77,
+   "postComb": -14.071,
+   "rankLM": 29,
+   "rankPost": 138,
+   "rankComb": 1048
+  },
+  {
+   "plaintext": "ESTHERERENTER",
+   "words": "ESTHER E RENTER",
+   "lm": -9.92,
+   "logL": -4.683,
+   "logLzodiacSize": -5.049,
+   "logLperRegime": {
+    "z408p12": -8.073,
+    "z340": -4.881,
+    "z408p3": -4.309
+   },
+   "simpleFit": false,
+   "post": -14.603,
+   "postComb": -14.904,
+   "rankLM": 30,
+   "rankPost": 489,
+   "rankComb": 2915
+  },
+  {
+   "plaintext": "ANNAADAHANNAH",
+   "words": "ANNA ADA HANNAH",
+   "lm": -9.923,
+   "logL": -4.781,
+   "logLzodiacSize": -4.858,
+   "logLperRegime": {
+    "z408p12": -7.407,
+    "z340": -4.691,
+    "z408p3": -4.534
+   },
+   "simpleFit": false,
+   "post": -14.704,
+   "postComb": -15.005,
+   "rankLM": 31,
+   "rankPost": 596,
+   "rankComb": 3332
+  },
+  {
+   "plaintext": "EDDIEREZENDEZ",
+   "words": "EDDIE REZENDEZ",
+   "lm": -9.932,
+   "logL": -4.048,
+   "logLzodiacSize": -4.154,
+   "logLperRegime": {
+    "z408p12": -7.235,
+    "z340": -4.407,
+    "z408p3": -3.639
+   },
+   "simpleFit": false,
+   "post": -13.98,
+   "postComb": -14.281,
+   "rankLM": 32,
+   "rankPost": 191,
+   "rankComb": 1381
+  },
+  {
+   "plaintext": "ELDREDEREEDER",
+   "words": "ELDRED E REEDER",
+   "lm": -10.068,
+   "logL": -4.641,
+   "logLzodiacSize": -4.608,
+   "logLperRegime": {
+    "z408p12": -7.341,
+    "z340": -5.798,
+    "z408p3": -4.174
+   },
+   "simpleFit": false,
+   "post": -14.709,
+   "postComb": -15.01,
+   "rankLM": 33,
+   "rankPost": 605,
+   "rankComb": 3363
+  },
+  {
+   "plaintext": "ANNDANAHANNAH",
+   "words": "ANN DANA HANNAH",
+   "lm": -10.093,
+   "logL": -5.429,
+   "logLzodiacSize": -5.317,
+   "logLperRegime": {
+    "z408p12": -8.303,
+    "z340": -5.673,
+    "z408p3": -5.044
+   },
+   "simpleFit": false,
+   "post": -15.522,
+   "postComb": -15.823,
+   "rankLM": 34,
+   "rankPost": 1912,
+   "rankComb": 7862
+  },
+  {
+   "plaintext": "ESTHEREREETER",
+   "words": "ESTHER E REETER",
+   "lm": -10.1,
+   "logL": -5.128,
+   "logLzodiacSize": -5.19,
+   "logLperRegime": {
+    "z408p12": -8.103,
+    "z340": -6.351,
+    "z408p3": -4.66
+   },
+   "simpleFit": false,
+   "post": -15.228,
+   "postComb": -15.529,
+   "rankLM": 35,
+   "rankPost": 1253,
+   "rankComb": 5836
+  },
+  {
+   "plaintext": "ANNAAMAHANNAH",
+   "words": "ANNA A MAHANNAH",
+   "lm": -10.123,
+   "logL": -4.781,
+   "logLzodiacSize": -4.858,
+   "logLperRegime": {
+    "z408p12": -7.407,
+    "z340": -4.691,
+    "z408p3": -4.534
+   },
+   "simpleFit": false,
+   "post": -14.904,
+   "postComb": -15.205,
+   "rankLM": 36,
+   "rankPost": 790,
+   "rankComb": 4157
+  },
+  {
+   "plaintext": "ADRIANAMABRAM",
+   "words": "ADRIANA M ABRAM",
+   "lm": -10.13,
+   "logL": -3.057,
+   "logLzodiacSize": -4.14,
+   "logLperRegime": {
+    "z408p12": -5.121,
+    "z340": -2.949,
+    "z408p3": -2.824
+   },
+   "simpleFit": false,
+   "post": -13.188,
+   "postComb": -13.489,
+   "rankLM": 37,
+   "rankPost": 59,
+   "rankComb": 511
+  },
+  {
+   "plaintext": "AMYHELENERYAN",
+   "words": "AMY HELENE RYAN",
+   "lm": -10.141,
+   "logL": -2.509,
+   "logLzodiacSize": -4.265,
+   "logLperRegime": {
+    "z408p12": -2.582,
+    "z340": -2.574,
+    "z408p3": -2.397
+   },
+   "simpleFit": true,
+   "post": -12.65,
+   "postComb": -10.441,
+   "rankLM": 38,
+   "rankPost": 25,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "IRENEGENEHEIN",
+   "words": "IRENE GENE HEIN",
+   "lm": -10.179,
+   "logL": -4.4,
+   "logLzodiacSize": -5.05,
+   "logLperRegime": {
+    "z408p12": -7.633,
+    "z340": -4.479,
+    "z408p3": -4.065
+   },
+   "simpleFit": false,
+   "post": -14.579,
+   "postComb": -14.881,
+   "rankLM": 39,
+   "rankPost": 475,
+   "rankComb": 2848
+  },
+  {
+   "plaintext": "ADELEGENEDEAN",
+   "words": "ADELE GENE DEAN",
+   "lm": -10.181,
+   "logL": -4.266,
+   "logLzodiacSize": -5.07,
+   "logLperRegime": {
+    "z408p12": -6.418,
+    "z340": -4.276,
+    "z408p3": -3.961
+   },
+   "simpleFit": false,
+   "post": -14.447,
+   "postComb": -14.748,
+   "rankLM": 40,
+   "rankPost": 381,
+   "rankComb": 2423
+  },
+  {
+   "plaintext": "TERESASOSORTO",
+   "words": "TERESA S OSORTO",
+   "lm": -10.24,
+   "logL": -2.129,
+   "logLzodiacSize": -4.713,
+   "logLperRegime": {
+    "z408p12": -2.137,
+    "z340": -2.188,
+    "z408p3": -2.07
+   },
+   "simpleFit": false,
+   "post": -12.369,
+   "postComb": -12.67,
+   "rankLM": 41,
+   "rankPost": 15,
+   "rankComb": 156
+  },
+  {
+   "plaintext": "DONNAPATARNDT",
+   "words": "DONNA PAT ARNDT",
+   "lm": -10.245,
+   "logL": -2.255,
+   "logLzodiacSize": -4.546,
+   "logLperRegime": {
+    "z408p12": -2.271,
+    "z340": -2.321,
+    "z408p3": -2.185
+   },
+   "simpleFit": false,
+   "post": -12.5,
+   "postComb": -12.801,
+   "rankLM": 42,
+   "rankPost": 19,
+   "rankComb": 192
+  },
+  {
+   "plaintext": "ANNAANAHANNAH",
+   "words": "ANNA ANA HANNAH",
+   "lm": -10.295,
+   "logL": -5.641,
+   "logLzodiacSize": -5.445,
+   "logLperRegime": {
+    "z408p12": -8.334,
+    "z340": -5.68,
+    "z408p3": -5.322
+   },
+   "simpleFit": false,
+   "post": -15.936,
+   "postComb": -16.237,
+   "rankLM": 43,
+   "rankPost": 3382,
+   "rankComb": 11685
+  },
+  {
+   "plaintext": "ANNEADAHANNAH",
+   "words": "ANNE ADA HANNAH",
+   "lm": -10.302,
+   "logL": -4.406,
+   "logLzodiacSize": -4.69,
+   "logLperRegime": {
+    "z408p12": -7.281,
+    "z340": -4.389,
+    "z408p3": -4.114
+   },
+   "simpleFit": false,
+   "post": -14.708,
+   "postComb": -15.009,
+   "rankLM": 44,
+   "rankPost": 602,
+   "rankComb": 3351
+  },
+  {
+   "plaintext": "NEILEWEDEKIND",
+   "words": "NEIL E WEDEKIND",
+   "lm": -10.308,
+   "logL": -3.472,
+   "logLzodiacSize": -5,
+   "logLperRegime": {
+    "z408p12": -5.454,
+    "z340": -3.511,
+    "z408p3": -3.154
+   },
+   "simpleFit": false,
+   "post": -13.78,
+   "postComb": -14.081,
+   "rankLM": 45,
+   "rankPost": 141,
+   "rankComb": 1058
+  },
+  {
+   "plaintext": "MARKLULALERMA",
+   "words": "MARK LULA LERMA",
+   "lm": -10.35,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -12.559,
+   "postComb": -12.86,
+   "rankLM": 46,
+   "rankPost": 21,
+   "rankComb": 210
+  },
+  {
+   "plaintext": "EARLEDESERRES",
+   "words": "EARLE DESERRES",
+   "lm": -10.351,
+   "logL": -3.683,
+   "logLzodiacSize": -4.535,
+   "logLperRegime": {
+    "z408p12": -5.761,
+    "z340": -3.742,
+    "z408p3": -3.357
+   },
+   "simpleFit": false,
+   "post": -14.034,
+   "postComb": -14.335,
+   "rankLM": 47,
+   "rankPost": 210,
+   "rankComb": 1484
+  },
+  {
+   "plaintext": "OATHERENEWTON",
+   "words": "OATHER E NEWTON",
+   "lm": -10.362,
+   "logL": -2.857,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.95,
+    "z340": -2.936,
+    "z408p3": -2.723
+   },
+   "simpleFit": true,
+   "post": -13.219,
+   "postComb": -10.663,
+   "rankLM": 48,
+   "rankPost": 61,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "IDAHELENECAIN",
+   "words": "IDA HELENE CAIN",
+   "lm": -10.385,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.083,
+   "postComb": -10.685,
+   "rankLM": 49,
+   "rankPost": 50,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "MARKLOLALERMA",
+   "words": "MARK LOLA LERMA",
+   "lm": -10.395,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -12.604,
+   "postComb": -12.905,
+   "rankLM": 50,
+   "rankPost": 22,
+   "rankComb": 224
+  },
+  {
+   "plaintext": "GARYLYLELARGE",
+   "words": "GARY LYLE LARGE",
+   "lm": -10.396,
+   "logL": -3.202,
+   "logLzodiacSize": -4.173,
+   "logLperRegime": {
+    "z408p12": -3.518,
+    "z340": -3.436,
+    "z408p3": -2.916
+   },
+   "simpleFit": false,
+   "post": -13.598,
+   "postComb": -13.899,
+   "rankLM": 51,
+   "rankPost": 104,
+   "rankComb": 850
+  },
+  {
+   "plaintext": "EASTERENELSEN",
+   "words": "EASTER E NELSEN",
+   "lm": -10.419,
+   "logL": -3.495,
+   "logLzodiacSize": -4.995,
+   "logLperRegime": {
+    "z408p12": -5.588,
+    "z340": -3.444,
+    "z408p3": -3.224
+   },
+   "simpleFit": false,
+   "post": -13.914,
+   "postComb": -14.215,
+   "rankLM": 52,
+   "rankPost": 179,
+   "rankComb": 1284
+  },
+  {
+   "plaintext": "LEAMONODONALD",
+   "words": "LEAMON ODONALD",
+   "lm": -10.427,
+   "logL": -2.069,
+   "logLzodiacSize": -4.806,
+   "logLperRegime": {
+    "z408p12": -2.102,
+    "z340": -2.095,
+    "z408p3": -2.016
+   },
+   "simpleFit": false,
+   "post": -12.497,
+   "postComb": -12.798,
+   "rankLM": 53,
+   "rankPost": 18,
+   "rankComb": 191
+  },
+  {
+   "plaintext": "ALYCEGENERYAN",
+   "words": "ALYCE GENE RYAN",
+   "lm": -10.441,
+   "logL": -2.509,
+   "logLzodiacSize": -4.265,
+   "logLperRegime": {
+    "z408p12": -2.582,
+    "z340": -2.574,
+    "z408p3": -2.397
+   },
+   "simpleFit": true,
+   "post": -12.95,
+   "postComb": -10.74,
+   "rankLM": 54,
+   "rankPost": 38,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "ELNORARKRENEK",
+   "words": "ELNORA R KRENEK",
+   "lm": -10.449,
+   "logL": -1.565,
+   "logLzodiacSize": -4.009,
+   "logLperRegime": {
+    "z408p12": -1.591,
+    "z340": -1.65,
+    "z408p3": -1.474
+   },
+   "simpleFit": false,
+   "post": -12.014,
+   "postComb": -12.315,
+   "rankLM": 55,
+   "rankPost": 8,
+   "rankComb": 86
+  },
+  {
+   "plaintext": "CASSIEIHIRSCH",
+   "words": "CASSIE I HIRSCH",
+   "lm": -10.47,
+   "logL": -1.759,
+   "logLzodiacSize": -3.915,
+   "logLperRegime": {
+    "z408p12": -1.744,
+    "z340": -1.801,
+    "z408p3": -1.736
+   },
+   "simpleFit": false,
+   "post": -12.23,
+   "postComb": -12.531,
+   "rankLM": 56,
+   "rankPost": 13,
+   "rankComb": 119
+  },
+  {
+   "plaintext": "LURLENESEARLS",
+   "words": "LURLENE SEARLS",
+   "lm": -10.473,
+   "logL": -3.097,
+   "logLzodiacSize": -4.365,
+   "logLperRegime": {
+    "z408p12": -3.133,
+    "z340": -3.189,
+    "z408p3": -2.992
+   },
+   "simpleFit": false,
+   "post": -13.57,
+   "postComb": -13.871,
+   "rankLM": 57,
+   "rankPost": 98,
+   "rankComb": 823
+  },
+  {
+   "plaintext": "ELIJAHARAPIER",
+   "words": "ELIJAH A RAPIER",
+   "lm": -10.475,
+   "logL": -2.484,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -2.664,
+    "z340": -2.626,
+    "z408p3": -2.274
+   },
+   "simpleFit": true,
+   "post": -12.959,
+   "postComb": -10.775,
+   "rankLM": 58,
+   "rankPost": 41,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "ANNEAMAHANNAH",
+   "words": "ANNE A MAHANNAH",
+   "lm": -10.502,
+   "logL": -4.406,
+   "logLzodiacSize": -4.69,
+   "logLperRegime": {
+    "z408p12": -7.281,
+    "z340": -4.389,
+    "z408p3": -4.114
+   },
+   "simpleFit": false,
+   "post": -14.908,
+   "postComb": -15.209,
+   "rankLM": 59,
+   "rankPost": 792,
+   "rankComb": 4167
+  },
+  {
+   "plaintext": "STEVEPETEBEST",
+   "words": "STEVE PETE BEST",
+   "lm": -10.514,
+   "logL": -4.236,
+   "logLzodiacSize": -5.051,
+   "logLperRegime": {
+    "z408p12": -7.409,
+    "z340": -4.297,
+    "z408p3": -3.907
+   },
+   "simpleFit": false,
+   "post": -14.75,
+   "postComb": -15.051,
+   "rankLM": 60,
+   "rankPost": 640,
+   "rankComb": 3506
+  }
+ ],
+ "topPost": [
+  {
+   "plaintext": "CHASTITYTRACY",
+   "words": "CHASTITY TRACY",
+   "lm": -9.137,
+   "logL": -1.767,
+   "logLzodiacSize": -3.611,
+   "logLperRegime": {
+    "z408p12": -1.811,
+    "z340": -1.804,
+    "z408p3": -1.695
+   },
+   "simpleFit": true,
+   "post": -10.903,
+   "postComb": -9.43,
+   "rankLM": 5,
+   "rankPost": 1,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "MARYLULALERMA",
+   "words": "MARY LULA LERMA",
+   "lm": -9.454,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -11.663,
+   "postComb": -11.964,
+   "rankLM": 11,
+   "rankPost": 2,
+   "rankComb": 54
+  },
+  {
+   "plaintext": "MARYLOLALERMA",
+   "words": "MARY LOLA LERMA",
+   "lm": -9.498,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -11.707,
+   "postComb": -12.008,
+   "rankLM": 13,
+   "rankPost": 3,
+   "rankComb": 57
+  },
+  {
+   "plaintext": "CLAIRERKRAACK",
+   "words": "CLAIRE R KRAACK",
+   "lm": -10.624,
+   "logL": -1.182,
+   "logLzodiacSize": -3.082,
+   "logLperRegime": {
+    "z408p12": -1.161,
+    "z340": -1.223,
+    "z408p3": -1.165
+   },
+   "simpleFit": false,
+   "post": -11.806,
+   "postComb": -12.107,
+   "rankLM": 74,
+   "rankPost": 4,
+   "rankComb": 66
+  },
+  {
+   "plaintext": "MARYLILALERMA",
+   "words": "MARY LILA LERMA",
+   "lm": -9.718,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -11.927,
+   "postComb": -12.228,
+   "rankLM": 23,
+   "rankPost": 5,
+   "rankComb": 76
+  },
+  {
+   "plaintext": "IMOGENEREVOIR",
+   "words": "IMOGENE REVOIR",
+   "lm": -9.347,
+   "logL": -2.586,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -2.654,
+    "z340": -2.645,
+    "z408p3": -2.481
+   },
+   "simpleFit": true,
+   "post": -11.933,
+   "postComb": -9.647,
+   "rankLM": 6,
+   "rankPost": 6,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "ASHLEYEMECHAM",
+   "words": "ASHLEY E MECHAM",
+   "lm": -9.446,
+   "logL": -2.493,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.565,
+    "z340": -2.556,
+    "z408p3": -2.384
+   },
+   "simpleFit": true,
+   "post": -11.939,
+   "postComb": -9.746,
+   "rankLM": 10,
+   "rankPost": 7,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "ELNORARKRENEK",
+   "words": "ELNORA R KRENEK",
+   "lm": -10.449,
+   "logL": -1.565,
+   "logLzodiacSize": -4.009,
+   "logLperRegime": {
+    "z408p12": -1.591,
+    "z340": -1.65,
+    "z408p3": -1.474
+   },
+   "simpleFit": false,
+   "post": -12.014,
+   "postComb": -12.315,
+   "rankLM": 55,
+   "rankPost": 8,
+   "rankComb": 86
+  },
+  {
+   "plaintext": "MARYLELALERMA",
+   "words": "MARY LELA LERMA",
+   "lm": -9.766,
+   "logL": -2.261,
+   "logLzodiacSize": -3.81,
+   "logLperRegime": {
+    "z408p12": -3.151,
+    "z340": -2.159,
+    "z408p3": -2.056
+   },
+   "simpleFit": false,
+   "post": -12.028,
+   "postComb": -12.329,
+   "rankLM": 24,
+   "rankPost": 9,
+   "rankComb": 88
+  },
+  {
+   "plaintext": "IMOGENEDEVOID",
+   "words": "IMOGENE DEVOID",
+   "lm": -9.542,
+   "logL": -2.53,
+   "logLzodiacSize": -4.899,
+   "logLperRegime": {
+    "z408p12": -2.597,
+    "z340": -2.588,
+    "z408p3": -2.427
+   },
+   "simpleFit": true,
+   "post": -12.072,
+   "postComb": -9.842,
+   "rankLM": 14,
+   "rankPost": 10,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "PAMELALOLIMPO",
+   "words": "PAMELA L OLIMPO",
+   "lm": -10.726,
+   "logL": -1.383,
+   "logLzodiacSize": -2.912,
+   "logLperRegime": {
+    "z408p12": -1.433,
+    "z340": -1.421,
+    "z408p3": -1.306
+   },
+   "simpleFit": false,
+   "post": -12.109,
+   "postComb": -12.41,
+   "rankLM": 87,
+   "rankPost": 11,
+   "rankComb": 98
+  },
+  {
+   "plaintext": "ROYLAVADABYRD",
+   "words": "ROY LAVADA BYRD",
+   "lm": -10.689,
+   "logL": -1.5,
+   "logLzodiacSize": -4.163,
+   "logLperRegime": {
+    "z408p12": -1.525,
+    "z340": -1.521,
+    "z408p3": -1.456
+   },
+   "simpleFit": true,
+   "post": -12.189,
+   "postComb": -10.976,
+   "rankLM": 83,
+   "rankPost": 12,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "CASSIEIHIRSCH",
+   "words": "CASSIE I HIRSCH",
+   "lm": -10.47,
+   "logL": -1.759,
+   "logLzodiacSize": -3.915,
+   "logLperRegime": {
+    "z408p12": -1.744,
+    "z340": -1.801,
+    "z408p3": -1.736
+   },
+   "simpleFit": false,
+   "post": -12.23,
+   "postComb": -12.531,
+   "rankLM": 56,
+   "rankPost": 13,
+   "rankComb": 119
+  },
+  {
+   "plaintext": "ANGELOLYLEGAY",
+   "words": "ANGELO LYLE GAY",
+   "lm": -10.995,
+   "logL": -1.304,
+   "logLzodiacSize": -2.904,
+   "logLperRegime": {
+    "z408p12": -1.354,
+    "z340": -1.342,
+    "z408p3": -1.227
+   },
+   "simpleFit": false,
+   "post": -12.298,
+   "postComb": -12.599,
+   "rankLM": 150,
+   "rankPost": 14,
+   "rankComb": 134
+  },
+  {
+   "plaintext": "TERESASOSORTO",
+   "words": "TERESA S OSORTO",
+   "lm": -10.24,
+   "logL": -2.129,
+   "logLzodiacSize": -4.713,
+   "logLperRegime": {
+    "z408p12": -2.137,
+    "z340": -2.188,
+    "z408p3": -2.07
+   },
+   "simpleFit": false,
+   "post": -12.369,
+   "postComb": -12.67,
+   "rankLM": 41,
+   "rankPost": 15,
+   "rankComb": 156
+  },
+  {
+   "plaintext": "THELMAMSMEETS",
+   "words": "THELMA M SMEETS",
+   "lm": -10.588,
+   "logL": -1.834,
+   "logLzodiacSize": -3.522,
+   "logLperRegime": {
+    "z408p12": -1.901,
+    "z340": -1.952,
+    "z408p3": -1.693
+   },
+   "simpleFit": false,
+   "post": -12.421,
+   "postComb": -12.722,
+   "rankLM": 67,
+   "rankPost": 16,
+   "rankComb": 173
+  },
+  {
+   "plaintext": "CHASTITYTLACY",
+   "words": "CHASTITY T LACY",
+   "lm": -10.729,
+   "logL": -1.767,
+   "logLzodiacSize": -3.611,
+   "logLperRegime": {
+    "z408p12": -1.811,
+    "z340": -1.804,
+    "z408p3": -1.695
+   },
+   "simpleFit": true,
+   "post": -12.496,
+   "postComb": -11.023,
+   "rankLM": 88,
+   "rankPost": 17,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "LEAMONODONALD",
+   "words": "LEAMON ODONALD",
+   "lm": -10.427,
+   "logL": -2.069,
+   "logLzodiacSize": -4.806,
+   "logLperRegime": {
+    "z408p12": -2.102,
+    "z340": -2.095,
+    "z408p3": -2.016
+   },
+   "simpleFit": false,
+   "post": -12.497,
+   "postComb": -12.798,
+   "rankLM": 53,
+   "rankPost": 18,
+   "rankComb": 191
+  },
+  {
+   "plaintext": "DONNAPATARNDT",
+   "words": "DONNA PAT ARNDT",
+   "lm": -10.245,
+   "logL": -2.255,
+   "logLzodiacSize": -4.546,
+   "logLperRegime": {
+    "z408p12": -2.271,
+    "z340": -2.321,
+    "z408p3": -2.185
+   },
+   "simpleFit": false,
+   "post": -12.5,
+   "postComb": -12.801,
+   "rankLM": 42,
+   "rankPost": 19,
+   "rankComb": 192
+  },
+  {
+   "plaintext": "GEARLDLALIAGA",
+   "words": "GEARLD L ALIAGA",
+   "lm": -11.478,
+   "logL": -1.042,
+   "logLzodiacSize": -2.838,
+   "logLperRegime": {
+    "z408p12": -0.968,
+    "z340": -1.106,
+    "z408p3": -1.065
+   },
+   "simpleFit": false,
+   "post": -12.52,
+   "postComb": -12.821,
+   "rankLM": 350,
+   "rankPost": 20,
+   "rankComb": 200
+  },
+  {
+   "plaintext": "MARKLULALERMA",
+   "words": "MARK LULA LERMA",
+   "lm": -10.35,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -12.559,
+   "postComb": -12.86,
+   "rankLM": 46,
+   "rankPost": 21,
+   "rankComb": 210
+  },
+  {
+   "plaintext": "MARKLOLALERMA",
+   "words": "MARK LOLA LERMA",
+   "lm": -10.395,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -12.604,
+   "postComb": -12.905,
+   "rankLM": 50,
+   "rankPost": 22,
+   "rankComb": 224
+  },
+  {
+   "plaintext": "ARDYCECMCADAM",
+   "words": "ARDYCE C MCADAM",
+   "lm": -11.561,
+   "logL": -1.054,
+   "logLzodiacSize": -2.474,
+   "logLperRegime": {
+    "z408p12": -1.054,
+    "z340": -1.113,
+    "z408p3": -1.003
+   },
+   "simpleFit": false,
+   "post": -12.615,
+   "postComb": -12.916,
+   "rankLM": 402,
+   "rankPost": 23,
+   "rankComb": 231
+  },
+  {
+   "plaintext": "ARLENENINALAI",
+   "words": "ARLENE NINA LAI",
+   "lm": -10.841,
+   "logL": -1.798,
+   "logLzodiacSize": -4.633,
+   "logLperRegime": {
+    "z408p12": -1.769,
+    "z340": -1.829,
+    "z408p3": -1.798
+   },
+   "simpleFit": false,
+   "post": -12.639,
+   "postComb": -12.94,
+   "rankLM": 109,
+   "rankPost": 24,
+   "rankComb": 240
+  },
+  {
+   "plaintext": "AMYHELENERYAN",
+   "words": "AMY HELENE RYAN",
+   "lm": -10.141,
+   "logL": -2.509,
+   "logLzodiacSize": -4.265,
+   "logLperRegime": {
+    "z408p12": -2.582,
+    "z340": -2.574,
+    "z408p3": -2.397
+   },
+   "simpleFit": true,
+   "post": -12.65,
+   "postComb": -10.441,
+   "rankLM": 38,
+   "rankPost": 25,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "CARLBOBABARCA",
+   "words": "CARL BOB ABARCA",
+   "lm": -10.621,
+   "logL": -2.052,
+   "logLzodiacSize": -2.578,
+   "logLperRegime": {
+    "z408p12": -2.674,
+    "z340": -1.933,
+    "z408p3": -1.892
+   },
+   "simpleFit": false,
+   "post": -12.673,
+   "postComb": -12.974,
+   "rankLM": 72,
+   "rankPost": 26,
+   "rankComb": 249
+  },
+  {
+   "plaintext": "EULICECSCALES",
+   "words": "EULICE C SCALES",
+   "lm": -11.262,
+   "logL": -1.414,
+   "logLzodiacSize": -3.317,
+   "logLperRegime": {
+    "z408p12": -1.455,
+    "z340": -1.515,
+    "z408p3": -1.302
+   },
+   "simpleFit": false,
+   "post": -12.676,
+   "postComb": -12.977,
+   "rankLM": 235,
+   "rankPost": 27,
+   "rankComb": 251
+  },
+  {
+   "plaintext": "GENOVEVAVANGA",
+   "words": "GENOVEVA VANGA",
+   "lm": -11.41,
+   "logL": -1.307,
+   "logLzodiacSize": -2.343,
+   "logLperRegime": {
+    "z408p12": -1.324,
+    "z340": -1.38,
+    "z408p3": -1.231
+   },
+   "simpleFit": false,
+   "post": -12.717,
+   "postComb": -13.018,
+   "rankLM": 306,
+   "rankPost": 28,
+   "rankComb": 272
+  },
+  {
+   "plaintext": "ALVARORKRIVAK",
+   "words": "ALVARO R KRIVAK",
+   "lm": -11.58,
+   "logL": -1.147,
+   "logLzodiacSize": -2.864,
+   "logLperRegime": {
+    "z408p12": -1.126,
+    "z340": -1.189,
+    "z408p3": -1.128
+   },
+   "simpleFit": false,
+   "post": -12.727,
+   "postComb": -13.028,
+   "rankLM": 422,
+   "rankPost": 29,
+   "rankComb": 276
+  },
+  {
+   "plaintext": "GEARLDLALZAGA",
+   "words": "GEARLD L ALZAGA",
+   "lm": -11.702,
+   "logL": -1.042,
+   "logLzodiacSize": -2.838,
+   "logLperRegime": {
+    "z408p12": -0.968,
+    "z340": -1.106,
+    "z408p3": -1.065
+   },
+   "simpleFit": false,
+   "post": -12.745,
+   "postComb": -13.046,
+   "rankLM": 507,
+   "rankPost": 30,
+   "rankComb": 279
+  },
+  {
+   "plaintext": "ELSIEHENEISEN",
+   "words": "ELSIE HENEISEN",
+   "lm": -8.969,
+   "logL": -3.838,
+   "logLzodiacSize": -5.052,
+   "logLperRegime": {
+    "z408p12": -5.934,
+    "z340": -3.808,
+    "z408p3": -3.555
+   },
+   "simpleFit": false,
+   "post": -12.808,
+   "postComb": -13.109,
+   "rankLM": 4,
+   "rankPost": 31,
+   "rankComb": 302
+  },
+  {
+   "plaintext": "MARKLILALERMA",
+   "words": "MARK LILA LERMA",
+   "lm": -10.615,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -12.824,
+   "postComb": -13.125,
+   "rankLM": 70,
+   "rankPost": 32,
+   "rankComb": 314
+  },
+  {
+   "plaintext": "ALVERARKRIVAK",
+   "words": "ALVERA R KRIVAK",
+   "lm": -11.704,
+   "logL": -1.147,
+   "logLzodiacSize": -2.864,
+   "logLperRegime": {
+    "z408p12": -1.126,
+    "z340": -1.189,
+    "z408p3": -1.128
+   },
+   "simpleFit": false,
+   "post": -12.851,
+   "postComb": -13.152,
+   "rankLM": 508,
+   "rankPost": 33,
+   "rankComb": 320
+  },
+  {
+   "plaintext": "MARITATSTORMS",
+   "words": "MARITA T STORMS",
+   "lm": -10.882,
+   "logL": -2.013,
+   "logLzodiacSize": -4.417,
+   "logLperRegime": {
+    "z408p12": -2.029,
+    "z340": -2.027,
+    "z408p3": -1.983
+   },
+   "simpleFit": false,
+   "post": -12.895,
+   "postComb": -13.196,
+   "rankLM": 121,
+   "rankPost": 34,
+   "rankComb": 339
+  },
+  {
+   "plaintext": "REATHAHSHEARS",
+   "words": "REATHA H SHEARS",
+   "lm": -11.098,
+   "logL": -1.807,
+   "logLzodiacSize": -4.762,
+   "logLperRegime": {
+    "z408p12": -1.778,
+    "z340": -1.839,
+    "z408p3": -1.807
+   },
+   "simpleFit": false,
+   "post": -12.905,
+   "postComb": -13.206,
+   "rankLM": 179,
+   "rankPost": 35,
+   "rankComb": 343
+  },
+  {
+   "plaintext": "MARKLELALERMA",
+   "words": "MARK LELA LERMA",
+   "lm": -10.663,
+   "logL": -2.261,
+   "logLzodiacSize": -3.81,
+   "logLperRegime": {
+    "z408p12": -3.151,
+    "z340": -2.159,
+    "z408p3": -2.056
+   },
+   "simpleFit": false,
+   "post": -12.924,
+   "postComb": -13.225,
+   "rankLM": 80,
+   "rankPost": 36,
+   "rankComb": 353
+  },
+  {
+   "plaintext": "GENESISHSINGH",
+   "words": "GENESIS H SINGH",
+   "lm": -11.026,
+   "logL": -1.921,
+   "logLzodiacSize": -4.383,
+   "logLperRegime": {
+    "z408p12": -1.932,
+    "z340": -1.93,
+    "z408p3": -1.902
+   },
+   "simpleFit": false,
+   "post": -12.947,
+   "postComb": -13.248,
+   "rankLM": 158,
+   "rankPost": 37,
+   "rankComb": 364
+  },
+  {
+   "plaintext": "ALYCEGENERYAN",
+   "words": "ALYCE GENE RYAN",
+   "lm": -10.441,
+   "logL": -2.509,
+   "logLzodiacSize": -4.265,
+   "logLperRegime": {
+    "z408p12": -2.582,
+    "z340": -2.574,
+    "z408p3": -2.397
+   },
+   "simpleFit": true,
+   "post": -12.95,
+   "postComb": -10.74,
+   "rankLM": 54,
+   "rankPost": 38,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "EDDIERESENDES",
+   "words": "EDDIE RESENDES",
+   "lm": -8.384,
+   "logL": -4.571,
+   "logLzodiacSize": -5.052,
+   "logLperRegime": {
+    "z408p12": -7.836,
+    "z340": -4.704,
+    "z408p3": -4.217
+   },
+   "simpleFit": false,
+   "post": -12.955,
+   "postComb": -13.256,
+   "rankLM": 1,
+   "rankPost": 39,
+   "rankComb": 369
+  },
+  {
+   "plaintext": "LEONCECACHOLA",
+   "words": "LEONCE CACHOLA",
+   "lm": -11.302,
+   "logL": -1.657,
+   "logLzodiacSize": -3.425,
+   "logLperRegime": {
+    "z408p12": -1.714,
+    "z340": -1.704,
+    "z408p3": -1.568
+   },
+   "simpleFit": false,
+   "post": -12.958,
+   "postComb": -13.26,
+   "rankLM": 254,
+   "rankPost": 40,
+   "rankComb": 372
+  },
+  {
+   "plaintext": "ELIJAHARAPIER",
+   "words": "ELIJAH A RAPIER",
+   "lm": -10.475,
+   "logL": -2.484,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -2.664,
+    "z340": -2.626,
+    "z408p3": -2.274
+   },
+   "simpleFit": true,
+   "post": -12.959,
+   "postComb": -10.775,
+   "rankLM": 58,
+   "rankPost": 41,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "BRUCEHELENUBL",
+   "words": "BRUCE HELEN UBL",
+   "lm": -10.945,
+   "logL": -2.047,
+   "logLzodiacSize": -3.486,
+   "logLperRegime": {
+    "z408p12": -2.121,
+    "z340": -2.116,
+    "z408p3": -1.931
+   },
+   "simpleFit": true,
+   "post": -12.992,
+   "postComb": -11.242,
+   "rankLM": 137,
+   "rankPost": 42,
+   "rankComb": 19
+  },
+  {
+   "plaintext": "DANALILYLUNDY",
+   "words": "DANA LILY LUNDY",
+   "lm": -11.58,
+   "logL": -1.421,
+   "logLzodiacSize": -3.545,
+   "logLperRegime": {
+    "z408p12": -1.45,
+    "z340": -1.444,
+    "z408p3": -1.372
+   },
+   "simpleFit": false,
+   "post": -13,
+   "postComb": -13.301,
+   "rankLM": 421,
+   "rankPost": 43,
+   "rankComb": 395
+  },
+  {
+   "plaintext": "LORIBOBEBERLE",
+   "words": "LORI BOB EBERLE",
+   "lm": -11.418,
+   "logL": -1.601,
+   "logLzodiacSize": -3.179,
+   "logLperRegime": {
+    "z408p12": -1.645,
+    "z340": -1.71,
+    "z408p3": -1.481
+   },
+   "simpleFit": false,
+   "post": -13.02,
+   "postComb": -13.321,
+   "rankLM": 310,
+   "rankPost": 44,
+   "rankComb": 402
+  },
+  {
+   "plaintext": "EARLENEREHRER",
+   "words": "EARLENE REHRER",
+   "lm": -9.678,
+   "logL": -3.358,
+   "logLzodiacSize": -3.936,
+   "logLperRegime": {
+    "z408p12": -5.344,
+    "z340": -3.523,
+    "z408p3": -2.995
+   },
+   "simpleFit": false,
+   "post": -13.036,
+   "postComb": -13.337,
+   "rankLM": 20,
+   "rankPost": 45,
+   "rankComb": 412
+  },
+  {
+   "plaintext": "ALLENANNNOLAN",
+   "words": "ALLEN ANN NOLAN",
+   "lm": -9.407,
+   "logL": -3.636,
+   "logLzodiacSize": -4.027,
+   "logLperRegime": {
+    "z408p12": -5.373,
+    "z340": -4.255,
+    "z408p3": -3.198
+   },
+   "simpleFit": false,
+   "post": -13.043,
+   "postComb": -13.344,
+   "rankLM": 9,
+   "rankPost": 46,
+   "rankComb": 418
+  },
+  {
+   "plaintext": "CESAREROROSCO",
+   "words": "CESARE R OROSCO",
+   "lm": -11.498,
+   "logL": -1.557,
+   "logLzodiacSize": -4.011,
+   "logLperRegime": {
+    "z408p12": -1.526,
+    "z340": -1.587,
+    "z408p3": -1.56
+   },
+   "simpleFit": false,
+   "post": -13.055,
+   "postComb": -13.356,
+   "rankLM": 360,
+   "rankPost": 47,
+   "rankComb": 425
+  },
+  {
+   "plaintext": "ANGELALYLAGAY",
+   "words": "ANGELA LYLA GAY",
+   "lm": -11.57,
+   "logL": -1.496,
+   "logLzodiacSize": -2.484,
+   "logLperRegime": {
+    "z408p12": -1.28,
+    "z340": -1.561,
+    "z408p3": -1.798
+   },
+   "simpleFit": false,
+   "post": -13.065,
+   "postComb": -13.366,
+   "rankLM": 416,
+   "rankPost": 48,
+   "rankComb": 429
+  },
+  {
+   "plaintext": "ADRIANAHARRAH",
+   "words": "ADRIANA HARRAH",
+   "lm": -9.55,
+   "logL": -3.517,
+   "logLzodiacSize": -4.305,
+   "logLperRegime": {
+    "z408p12": -5.569,
+    "z340": -3.459,
+    "z408p3": -3.25
+   },
+   "simpleFit": false,
+   "post": -13.066,
+   "postComb": -13.367,
+   "rankLM": 15,
+   "rankPost": 49,
+   "rankComb": 430
+  },
+  {
+   "plaintext": "IDAHELENECAIN",
+   "words": "IDA HELENE CAIN",
+   "lm": -10.385,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.083,
+   "postComb": -10.685,
+   "rankLM": 49,
+   "rankPost": 50,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "PEARLELALDAPA",
+   "words": "PEARLE L ALDAPA",
+   "lm": -12.043,
+   "logL": -1.061,
+   "logLzodiacSize": -2.782,
+   "logLperRegime": {
+    "z408p12": -0.97,
+    "z340": -1.113,
+    "z408p3": -1.117
+   },
+   "simpleFit": false,
+   "post": -13.104,
+   "postComb": -13.405,
+   "rankLM": 816,
+   "rankPost": 51,
+   "rankComb": 454
+  },
+  {
+   "plaintext": "RUBYLOLALABRA",
+   "words": "RUBY LOLA LABRA",
+   "lm": -11.842,
+   "logL": -1.275,
+   "logLzodiacSize": -3.24,
+   "logLperRegime": {
+    "z408p12": -1.269,
+    "z340": -1.327,
+    "z408p3": -1.234
+   },
+   "simpleFit": false,
+   "post": -13.117,
+   "postComb": -13.418,
+   "rankLM": 618,
+   "rankPost": 52,
+   "rankComb": 457
+  },
+  {
+   "plaintext": "DEANBABYBRADY",
+   "words": "DEAN BABY BRADY",
+   "lm": -12.116,
+   "logL": -1.003,
+   "logLzodiacSize": -2.19,
+   "logLperRegime": {
+    "z408p12": -1.008,
+    "z340": -1.068,
+    "z408p3": -0.941
+   },
+   "simpleFit": false,
+   "post": -13.118,
+   "postComb": -13.419,
+   "rankLM": 895,
+   "rankPost": 53,
+   "rankComb": 459
+  },
+  {
+   "plaintext": "ANGELOLYLAGAY",
+   "words": "ANGELO LYLA GAY",
+   "lm": -12.15,
+   "logL": -1.007,
+   "logLzodiacSize": -2.503,
+   "logLperRegime": {
+    "z408p12": -0.994,
+    "z340": -1.056,
+    "z408p3": -0.974
+   },
+   "simpleFit": false,
+   "post": -13.156,
+   "postComb": -13.457,
+   "rankLM": 931,
+   "rankPost": 54,
+   "rankComb": 482
+  },
+  {
+   "plaintext": "PEARLYLALDAPA",
+   "words": "PEARLY L ALDAPA",
+   "lm": -12.135,
+   "logL": -1.025,
+   "logLzodiacSize": -2.743,
+   "logLperRegime": {
+    "z408p12": -0.95,
+    "z340": -1.089,
+    "z408p3": -1.048
+   },
+   "simpleFit": false,
+   "post": -13.16,
+   "postComb": -13.461,
+   "rankLM": 917,
+   "rankPost": 55,
+   "rankComb": 484
+  },
+  {
+   "plaintext": "ARNOLDLULANAU",
+   "words": "ARNOLD LULA NAU",
+   "lm": -11.725,
+   "logL": -1.439,
+   "logLzodiacSize": -3.535,
+   "logLperRegime": {
+    "z408p12": -1.443,
+    "z340": -1.498,
+    "z408p3": -1.384
+   },
+   "simpleFit": false,
+   "post": -13.164,
+   "postComb": -13.465,
+   "rankLM": 519,
+   "rankPost": 56,
+   "rankComb": 489
+  },
+  {
+   "plaintext": "GENELYLELANGE",
+   "words": "GENE LYLE LANGE",
+   "lm": -10.646,
+   "logL": -2.54,
+   "logLzodiacSize": -3.838,
+   "logLperRegime": {
+    "z408p12": -3.382,
+    "z340": -2.374,
+    "z408p3": -2.397
+   },
+   "simpleFit": false,
+   "post": -13.186,
+   "postComb": -13.487,
+   "rankLM": 78,
+   "rankPost": 57,
+   "rankComb": 509
+  },
+  {
+   "plaintext": "EDCLARAYANCEY",
+   "words": "ED CLARA YANCEY",
+   "lm": -11.05,
+   "logL": -2.137,
+   "logLzodiacSize": -3.611,
+   "logLperRegime": {
+    "z408p12": -2.336,
+    "z340": -2.291,
+    "z408p3": -1.915
+   },
+   "simpleFit": true,
+   "post": -13.187,
+   "postComb": -11.348,
+   "rankLM": 164,
+   "rankPost": 58,
+   "rankComb": 22
+  },
+  {
+   "plaintext": "ADRIANAMABRAM",
+   "words": "ADRIANA M ABRAM",
+   "lm": -10.13,
+   "logL": -3.057,
+   "logLzodiacSize": -4.14,
+   "logLperRegime": {
+    "z408p12": -5.121,
+    "z340": -2.949,
+    "z408p3": -2.824
+   },
+   "simpleFit": false,
+   "post": -13.188,
+   "postComb": -13.489,
+   "rankLM": 37,
+   "rankPost": 59,
+   "rankComb": 511
+  },
+  {
+   "plaintext": "ARNOLDLYLENAY",
+   "words": "ARNOLD LYLE NAY",
+   "lm": -11.688,
+   "logL": -1.527,
+   "logLzodiacSize": -3.621,
+   "logLperRegime": {
+    "z408p12": -1.593,
+    "z340": -1.58,
+    "z408p3": -1.428
+   },
+   "simpleFit": true,
+   "post": -13.215,
+   "postComb": -11.976,
+   "rankLM": 500,
+   "rankPost": 60,
+   "rankComb": 55
+  }
+ ],
+ "topComb": [
+  {
+   "plaintext": "CHASTITYTRACY",
+   "words": "CHASTITY TRACY",
+   "lm": -9.137,
+   "logL": -1.767,
+   "logLzodiacSize": -3.611,
+   "logLperRegime": {
+    "z408p12": -1.811,
+    "z340": -1.804,
+    "z408p3": -1.695
+   },
+   "simpleFit": true,
+   "post": -10.903,
+   "postComb": -9.43,
+   "rankLM": 5,
+   "rankPost": 1,
+   "rankComb": 1
+  },
+  {
+   "plaintext": "IMOGENEREVOIR",
+   "words": "IMOGENE REVOIR",
+   "lm": -9.347,
+   "logL": -2.586,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -2.654,
+    "z340": -2.645,
+    "z408p3": -2.481
+   },
+   "simpleFit": true,
+   "post": -11.933,
+   "postComb": -9.647,
+   "rankLM": 6,
+   "rankPost": 6,
+   "rankComb": 2
+  },
+  {
+   "plaintext": "ASHLEYEMECHAM",
+   "words": "ASHLEY E MECHAM",
+   "lm": -9.446,
+   "logL": -2.493,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.565,
+    "z340": -2.556,
+    "z408p3": -2.384
+   },
+   "simpleFit": true,
+   "post": -11.939,
+   "postComb": -9.746,
+   "rankLM": 10,
+   "rankPost": 7,
+   "rankComb": 3
+  },
+  {
+   "plaintext": "IMOGENEDEVOID",
+   "words": "IMOGENE DEVOID",
+   "lm": -9.542,
+   "logL": -2.53,
+   "logLzodiacSize": -4.899,
+   "logLperRegime": {
+    "z408p12": -2.597,
+    "z340": -2.588,
+    "z408p3": -2.427
+   },
+   "simpleFit": true,
+   "post": -12.072,
+   "postComb": -9.842,
+   "rankLM": 14,
+   "rankPost": 10,
+   "rankComb": 4
+  },
+  {
+   "plaintext": "AMYHELENERYAN",
+   "words": "AMY HELENE RYAN",
+   "lm": -10.141,
+   "logL": -2.509,
+   "logLzodiacSize": -4.265,
+   "logLperRegime": {
+    "z408p12": -2.582,
+    "z340": -2.574,
+    "z408p3": -2.397
+   },
+   "simpleFit": true,
+   "post": -12.65,
+   "postComb": -10.441,
+   "rankLM": 38,
+   "rankPost": 25,
+   "rankComb": 5
+  },
+  {
+   "plaintext": "OATHERENEWTON",
+   "words": "OATHER E NEWTON",
+   "lm": -10.362,
+   "logL": -2.857,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.95,
+    "z340": -2.936,
+    "z408p3": -2.723
+   },
+   "simpleFit": true,
+   "post": -13.219,
+   "postComb": -10.663,
+   "rankLM": 48,
+   "rankPost": 61,
+   "rankComb": 6
+  },
+  {
+   "plaintext": "IDAHELENECAIN",
+   "words": "IDA HELENE CAIN",
+   "lm": -10.385,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.083,
+   "postComb": -10.685,
+   "rankLM": 49,
+   "rankPost": 50,
+   "rankComb": 7
+  },
+  {
+   "plaintext": "ALYCEGENERYAN",
+   "words": "ALYCE GENE RYAN",
+   "lm": -10.441,
+   "logL": -2.509,
+   "logLzodiacSize": -4.265,
+   "logLperRegime": {
+    "z408p12": -2.582,
+    "z340": -2.574,
+    "z408p3": -2.397
+   },
+   "simpleFit": true,
+   "post": -12.95,
+   "postComb": -10.74,
+   "rankLM": 54,
+   "rankPost": 38,
+   "rankComb": 8
+  },
+  {
+   "plaintext": "ELIJAHARAPIER",
+   "words": "ELIJAH A RAPIER",
+   "lm": -10.475,
+   "logL": -2.484,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -2.664,
+    "z340": -2.626,
+    "z408p3": -2.274
+   },
+   "simpleFit": true,
+   "post": -12.959,
+   "postComb": -10.775,
+   "rankLM": 58,
+   "rankPost": 41,
+   "rankComb": 9
+  },
+  {
+   "plaintext": "ROYLAVADABYRD",
+   "words": "ROY LAVADA BYRD",
+   "lm": -10.689,
+   "logL": -1.5,
+   "logLzodiacSize": -4.163,
+   "logLperRegime": {
+    "z408p12": -1.525,
+    "z340": -1.521,
+    "z408p3": -1.456
+   },
+   "simpleFit": true,
+   "post": -12.189,
+   "postComb": -10.976,
+   "rankLM": 83,
+   "rankPost": 12,
+   "rankComb": 10
+  },
+  {
+   "plaintext": "CHASTITYTLACY",
+   "words": "CHASTITY T LACY",
+   "lm": -10.729,
+   "logL": -1.767,
+   "logLzodiacSize": -3.611,
+   "logLperRegime": {
+    "z408p12": -1.811,
+    "z340": -1.804,
+    "z408p3": -1.695
+   },
+   "simpleFit": true,
+   "post": -12.496,
+   "postComb": -11.023,
+   "rankLM": 88,
+   "rankPost": 17,
+   "rankComb": 11
+  },
+  {
+   "plaintext": "ISRAELENEGRIN",
+   "words": "ISRAEL E NEGRIN",
+   "lm": -10.735,
+   "logL": -2.532,
+   "logLzodiacSize": -4.974,
+   "logLperRegime": {
+    "z408p12": -2.596,
+    "z340": -2.588,
+    "z408p3": -2.432
+   },
+   "simpleFit": true,
+   "post": -13.267,
+   "postComb": -11.035,
+   "rankLM": 89,
+   "rankPost": 66,
+   "rankComb": 12
+  },
+  {
+   "plaintext": "ANDREWEMEIDAM",
+   "words": "ANDREW E MEIDAM",
+   "lm": -10.864,
+   "logL": -2.389,
+   "logLzodiacSize": -4.281,
+   "logLperRegime": {
+    "z408p12": -2.459,
+    "z340": -2.451,
+    "z408p3": -2.281
+   },
+   "simpleFit": true,
+   "post": -13.253,
+   "postComb": -11.163,
+   "rankLM": 116,
+   "rankPost": 63,
+   "rankComb": 13
+  },
+  {
+   "plaintext": "ANDREWELEIDAL",
+   "words": "ANDREW E LEIDAL",
+   "lm": -10.871,
+   "logL": -2.439,
+   "logLzodiacSize": -4.75,
+   "logLperRegime": {
+    "z408p12": -2.506,
+    "z340": -2.498,
+    "z408p3": -2.335
+   },
+   "simpleFit": true,
+   "post": -13.31,
+   "postComb": -11.17,
+   "rankLM": 118,
+   "rankPost": 70,
+   "rankComb": 14
+  },
+  {
+   "plaintext": "IRAHELENECAIN",
+   "words": "IRA HELENE CAIN",
+   "lm": -10.906,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.604,
+   "postComb": -11.207,
+   "rankLM": 126,
+   "rankPost": 105,
+   "rankComb": 15
+  },
+  {
+   "plaintext": "ISRAELEGEHRIG",
+   "words": "ISRAEL E GEHRIG",
+   "lm": -10.924,
+   "logL": -2.337,
+   "logLzodiacSize": -4.291,
+   "logLperRegime": {
+    "z408p12": -2.399,
+    "z340": -2.393,
+    "z408p3": -2.239
+   },
+   "simpleFit": true,
+   "post": -13.261,
+   "postComb": -11.223,
+   "rankLM": 128,
+   "rankPost": 64,
+   "rankComb": 16
+  },
+  {
+   "plaintext": "IDAHELENEBAIN",
+   "words": "IDA HELENE BAIN",
+   "lm": -10.93,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.627,
+   "postComb": -11.23,
+   "rankLM": 130,
+   "rankPost": 111,
+   "rankComb": 17
+  },
+  {
+   "plaintext": "ALICEGENEQIAN",
+   "words": "ALICE GENE QIAN",
+   "lm": -10.94,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.638,
+   "postComb": -11.24,
+   "rankLM": 134,
+   "rankPost": 113,
+   "rankComb": 18
+  },
+  {
+   "plaintext": "BRUCEHELENUBL",
+   "words": "BRUCE HELEN UBL",
+   "lm": -10.945,
+   "logL": -2.047,
+   "logLzodiacSize": -3.486,
+   "logLperRegime": {
+    "z408p12": -2.121,
+    "z340": -2.116,
+    "z408p3": -1.931
+   },
+   "simpleFit": true,
+   "post": -12.992,
+   "postComb": -11.242,
+   "rankLM": 137,
+   "rankPost": 42,
+   "rankComb": 19
+  },
+  {
+   "plaintext": "ALICEGENETIAN",
+   "words": "ALICE GENE TIAN",
+   "lm": -10.95,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.648,
+   "postComb": -11.25,
+   "rankLM": 139,
+   "rankPost": 116,
+   "rankComb": 20
+  },
+  {
+   "plaintext": "IDAHELENEMAIN",
+   "words": "IDA HELENE MAIN",
+   "lm": -11.043,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.74,
+   "postComb": -11.343,
+   "rankLM": 162,
+   "rankPost": 134,
+   "rankComb": 21
+  },
+  {
+   "plaintext": "EDCLARAYANCEY",
+   "words": "ED CLARA YANCEY",
+   "lm": -11.05,
+   "logL": -2.137,
+   "logLzodiacSize": -3.611,
+   "logLperRegime": {
+    "z408p12": -2.336,
+    "z340": -2.291,
+    "z408p3": -1.915
+   },
+   "simpleFit": true,
+   "post": -13.187,
+   "postComb": -11.348,
+   "rankLM": 164,
+   "rankPost": 58,
+   "rankComb": 22
+  },
+  {
+   "plaintext": "IVAHELENECAIN",
+   "words": "IVA HELENE CAIN",
+   "lm": -11.063,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.761,
+   "postComb": -11.363,
+   "rankLM": 167,
+   "rankPost": 135,
+   "rankComb": 23
+  },
+  {
+   "plaintext": "OKSTEVENELSON",
+   "words": "OK STEVE NELSON",
+   "lm": -11.105,
+   "logL": -2.617,
+   "logLzodiacSize": -4.981,
+   "logLperRegime": {
+    "z408p12": -2.687,
+    "z340": -2.677,
+    "z408p3": -2.51
+   },
+   "simpleFit": true,
+   "post": -13.722,
+   "postComb": -11.405,
+   "rankLM": 182,
+   "rankPost": 129,
+   "rankComb": 24
+  },
+  {
+   "plaintext": "AUDREYEMEIDAM",
+   "words": "AUDREY E MEIDAM",
+   "lm": -11.144,
+   "logL": -2.389,
+   "logLzodiacSize": -4.281,
+   "logLperRegime": {
+    "z408p12": -2.459,
+    "z340": -2.451,
+    "z408p3": -2.281
+   },
+   "simpleFit": true,
+   "post": -13.533,
+   "postComb": -11.443,
+   "rankLM": 193,
+   "rankPost": 94,
+   "rankComb": 25
+  },
+  {
+   "plaintext": "AUDREYELEIDAL",
+   "words": "AUDREY E LEIDAL",
+   "lm": -11.151,
+   "logL": -2.439,
+   "logLzodiacSize": -4.75,
+   "logLperRegime": {
+    "z408p12": -2.506,
+    "z340": -2.498,
+    "z408p3": -2.335
+   },
+   "simpleFit": true,
+   "post": -13.59,
+   "postComb": -11.451,
+   "rankLM": 195,
+   "rankPost": 103,
+   "rankComb": 26
+  },
+  {
+   "plaintext": "ASHLEYEMEPHAM",
+   "words": "ASHLEY E MEPHAM",
+   "lm": -11.167,
+   "logL": -2.493,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.565,
+    "z340": -2.556,
+    "z408p3": -2.384
+   },
+   "simpleFit": true,
+   "post": -13.66,
+   "postComb": -11.466,
+   "rankLM": 198,
+   "rankPost": 120,
+   "rankComb": 27
+  },
+  {
+   "plaintext": "OLIVEGENEDION",
+   "words": "OLIVE GENE DION",
+   "lm": -11.17,
+   "logL": -2.654,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.726,
+    "z340": -2.716,
+    "z408p3": -2.544
+   },
+   "simpleFit": true,
+   "post": -13.824,
+   "postComb": -11.47,
+   "rankLM": 200,
+   "rankPost": 153,
+   "rankComb": 28
+  },
+  {
+   "plaintext": "IDAHELENEFAIN",
+   "words": "IDA HELENE FAIN",
+   "lm": -11.229,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.926,
+   "postComb": -11.529,
+   "rankLM": 225,
+   "rankPost": 182,
+   "rankComb": 29
+  },
+  {
+   "plaintext": "ALICEGENEVIAN",
+   "words": "ALICE GENE VIAN",
+   "lm": -11.236,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -13.934,
+   "postComb": -11.536,
+   "rankLM": 230,
+   "rankPost": 183,
+   "rankComb": 30
+  },
+  {
+   "plaintext": "ALICEGENEMIAN",
+   "words": "ALICE GENE MIAN",
+   "lm": -11.334,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.031,
+   "postComb": -11.634,
+   "rankLM": 270,
+   "rankPost": 208,
+   "rankComb": 31
+  },
+  {
+   "plaintext": "EULARORYRILEY",
+   "words": "EULA RORY RILEY",
+   "lm": -11.345,
+   "logL": -1.954,
+   "logLzodiacSize": -4.024,
+   "logLperRegime": {
+    "z408p12": -2.181,
+    "z340": -2.126,
+    "z408p3": -1.715
+   },
+   "simpleFit": true,
+   "post": -13.298,
+   "postComb": -11.641,
+   "rankLM": 278,
+   "rankPost": 68,
+   "rankComb": 32
+  },
+  {
+   "plaintext": "RYANEHEDEGARD",
+   "words": "RYAN E HEDEGARD",
+   "lm": -11.403,
+   "logL": -2.51,
+   "logLzodiacSize": -4.89,
+   "logLperRegime": {
+    "z408p12": -2.578,
+    "z340": -2.57,
+    "z408p3": -2.406
+   },
+   "simpleFit": true,
+   "post": -13.913,
+   "postComb": -11.702,
+   "rankLM": 301,
+   "rankPost": 178,
+   "rankComb": 33
+  },
+  {
+   "plaintext": "IRAHELENEBAIN",
+   "words": "IRA HELENE BAIN",
+   "lm": -11.451,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.149,
+   "postComb": -11.751,
+   "rankLM": 332,
+   "rankPost": 246,
+   "rankComb": 34
+  },
+  {
+   "plaintext": "LORIENESEARLS",
+   "words": "LORIENE SEARLS",
+   "lm": -11.471,
+   "logL": -2.353,
+   "logLzodiacSize": -4.829,
+   "logLperRegime": {
+    "z408p12": -2.411,
+    "z340": -2.405,
+    "z408p3": -2.261
+   },
+   "simpleFit": true,
+   "post": -13.825,
+   "postComb": -11.77,
+   "rankLM": 346,
+   "rankPost": 154,
+   "rankComb": 35
+  },
+  {
+   "plaintext": "IDAHELENEJAIN",
+   "words": "IDA HELENE JAIN",
+   "lm": -11.474,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.172,
+   "postComb": -11.775,
+   "rankLM": 348,
+   "rankPost": 250,
+   "rankComb": 36
+  },
+  {
+   "plaintext": "CHASTITYTMACY",
+   "words": "CHASTITY T MACY",
+   "lm": -11.511,
+   "logL": -1.767,
+   "logLzodiacSize": -3.611,
+   "logLperRegime": {
+    "z408p12": -1.811,
+    "z340": -1.804,
+    "z408p3": -1.695
+   },
+   "simpleFit": true,
+   "post": -13.278,
+   "postComb": -11.805,
+   "rankLM": 371,
+   "rankPost": 67,
+   "rankComb": 37
+  },
+  {
+   "plaintext": "IDAHELENESAIN",
+   "words": "IDA HELENE SAIN",
+   "lm": -11.548,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.246,
+   "postComb": -11.849,
+   "rankLM": 389,
+   "rankPost": 275,
+   "rankComb": 38
+  },
+  {
+   "plaintext": "NYOKAMAGALONG",
+   "words": "NYOKA MAGALONG",
+   "lm": -11.565,
+   "logL": -1.799,
+   "logLzodiacSize": -4.301,
+   "logLperRegime": {
+    "z408p12": -1.844,
+    "z340": -1.835,
+    "z408p3": -1.727
+   },
+   "simpleFit": true,
+   "post": -13.364,
+   "postComb": -11.859,
+   "rankLM": 408,
+   "rankPost": 75,
+   "rankComb": 39
+  },
+  {
+   "plaintext": "ELIGAHARAPIER",
+   "words": "ELIGAH A RAPIER",
+   "lm": -11.562,
+   "logL": -2.484,
+   "logLzodiacSize": -4.975,
+   "logLperRegime": {
+    "z408p12": -2.664,
+    "z340": -2.626,
+    "z408p3": -2.274
+   },
+   "simpleFit": true,
+   "post": -14.046,
+   "postComb": -11.862,
+   "rankLM": 403,
+   "rankPost": 214,
+   "rankComb": 40
+  },
+  {
+   "plaintext": "MERITATSTORMS",
+   "words": "MERITA T STORMS",
+   "lm": -11.568,
+   "logL": -1.753,
+   "logLzodiacSize": -4.36,
+   "logLperRegime": {
+    "z408p12": -1.785,
+    "z340": -1.78,
+    "z408p3": -1.699
+   },
+   "simpleFit": true,
+   "post": -13.321,
+   "postComb": -11.862,
+   "rankLM": 414,
+   "rankPost": 71,
+   "rankComb": 41
+  },
+  {
+   "plaintext": "IDAHELENEKAIN",
+   "words": "IDA HELENE KAIN",
+   "lm": -11.562,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.259,
+   "postComb": -11.862,
+   "rankLM": 404,
+   "rankPost": 286,
+   "rankComb": 42
+  },
+  {
+   "plaintext": "IRAHELENEMAIN",
+   "words": "IRA HELENE MAIN",
+   "lm": -11.564,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.261,
+   "postComb": -11.864,
+   "rankLM": 406,
+   "rankPost": 288,
+   "rankComb": 43
+  },
+  {
+   "plaintext": "ALICEGENERIAN",
+   "words": "ALICE GENE RIAN",
+   "lm": -11.569,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.267,
+   "postComb": -11.869,
+   "rankLM": 415,
+   "rankPost": 292,
+   "rankComb": 44
+  },
+  {
+   "plaintext": "EDISONOROZIER",
+   "words": "EDISON O ROZIER",
+   "lm": -11.572,
+   "logL": -2.43,
+   "logLzodiacSize": -4.974,
+   "logLperRegime": {
+    "z408p12": -2.614,
+    "z340": -2.575,
+    "z408p3": -2.218
+   },
+   "simpleFit": true,
+   "post": -14.002,
+   "postComb": -11.871,
+   "rankLM": 418,
+   "rankPost": 198,
+   "rankComb": 45
+  },
+  {
+   "plaintext": "ALICERENEQIAN",
+   "words": "ALICE RENE QIAN",
+   "lm": -11.589,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.286,
+   "postComb": -11.889,
+   "rankLM": 433,
+   "rankPost": 305,
+   "rankComb": 46
+  },
+  {
+   "plaintext": "ALICEGENEPIAN",
+   "words": "ALICE GENE PIAN",
+   "lm": -11.593,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.29,
+   "postComb": -11.893,
+   "rankLM": 438,
+   "rankPost": 308,
+   "rankComb": 47
+  },
+  {
+   "plaintext": "ALICERENETIAN",
+   "words": "ALICE RENE TIAN",
+   "lm": -11.599,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.296,
+   "postComb": -11.899,
+   "rankLM": 441,
+   "rankPost": 311,
+   "rankComb": 48
+  },
+  {
+   "plaintext": "ATHLENEMECHAM",
+   "words": "ATHLENE MECHAM",
+   "lm": -11.608,
+   "logL": -2.493,
+   "logLzodiacSize": -4.373,
+   "logLperRegime": {
+    "z408p12": -2.565,
+    "z340": -2.556,
+    "z408p3": -2.384
+   },
+   "simpleFit": true,
+   "post": -14.101,
+   "postComb": -11.907,
+   "rankLM": 444,
+   "rankPost": 229,
+   "rankComb": 49
+  },
+  {
+   "plaintext": "IVAHELENEBAIN",
+   "words": "IVA HELENE BAIN",
+   "lm": -11.608,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.305,
+   "postComb": -11.908,
+   "rankLM": 445,
+   "rankPost": 318,
+   "rankComb": 50
+  },
+  {
+   "plaintext": "BURLENEYEARBY",
+   "words": "BURLENE YEARBY",
+   "lm": -11.619,
+   "logL": -2.113,
+   "logLzodiacSize": -3.438,
+   "logLperRegime": {
+    "z408p12": -2.186,
+    "z340": -2.181,
+    "z408p3": -1.998
+   },
+   "simpleFit": true,
+   "post": -13.732,
+   "postComb": -11.917,
+   "rankLM": 454,
+   "rankPost": 130,
+   "rankComb": 51
+  },
+  {
+   "plaintext": "EDNALILYLONEY",
+   "words": "EDNA LILY LONEY",
+   "lm": -11.63,
+   "logL": -2.021,
+   "logLzodiacSize": -3.621,
+   "logLperRegime": {
+    "z408p12": -2.265,
+    "z340": -2.213,
+    "z408p3": -1.77
+   },
+   "simpleFit": true,
+   "post": -13.651,
+   "postComb": -11.926,
+   "rankLM": 460,
+   "rankPost": 117,
+   "rankComb": 52
+  },
+  {
+   "plaintext": "EUTHAVANASTEN",
+   "words": "EUTHA VANASTEN",
+   "lm": -11.637,
+   "logL": -2.758,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.963,
+    "z340": -2.923,
+    "z408p3": -2.529
+   },
+   "simpleFit": true,
+   "post": -14.395,
+   "postComb": -11.938,
+   "rankLM": 464,
+   "rankPost": 356,
+   "rankComb": 53
+  },
+  {
+   "plaintext": "MARYLULALERMA",
+   "words": "MARY LULA LERMA",
+   "lm": -9.454,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -11.663,
+   "postComb": -11.964,
+   "rankLM": 11,
+   "rankPost": 2,
+   "rankComb": 54
+  },
+  {
+   "plaintext": "ARNOLDLYLENAY",
+   "words": "ARNOLD LYLE NAY",
+   "lm": -11.688,
+   "logL": -1.527,
+   "logLzodiacSize": -3.621,
+   "logLperRegime": {
+    "z408p12": -1.593,
+    "z340": -1.58,
+    "z408p3": -1.428
+   },
+   "simpleFit": true,
+   "post": -13.215,
+   "postComb": -11.976,
+   "rankLM": 500,
+   "rankPost": 60,
+   "rankComb": 55
+  },
+  {
+   "plaintext": "ALICEGENEJIAN",
+   "words": "ALICE GENE JIAN",
+   "lm": -11.677,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.374,
+   "postComb": -11.977,
+   "rankLM": 489,
+   "rankPost": 347,
+   "rankComb": 56
+  },
+  {
+   "plaintext": "MARYLOLALERMA",
+   "words": "MARY LOLA LERMA",
+   "lm": -9.498,
+   "logL": -2.209,
+   "logLzodiacSize": -3.755,
+   "logLperRegime": {
+    "z408p12": -3.129,
+    "z340": -2.129,
+    "z408p3": -1.984
+   },
+   "simpleFit": false,
+   "post": -11.707,
+   "postComb": -12.008,
+   "rankLM": 13,
+   "rankPost": 3,
+   "rankComb": 57
+  },
+  {
+   "plaintext": "ERTHAVANASTEN",
+   "words": "ERTHA VANASTEN",
+   "lm": -11.71,
+   "logL": -2.758,
+   "logLzodiacSize": -4.984,
+   "logLperRegime": {
+    "z408p12": -2.963,
+    "z340": -2.923,
+    "z408p3": -2.529
+   },
+   "simpleFit": true,
+   "post": -14.467,
+   "postComb": -12.01,
+   "rankLM": 509,
+   "rankPost": 396,
+   "rankComb": 58
+  },
+  {
+   "plaintext": "IVAHELENEMAIN",
+   "words": "IVA HELENE MAIN",
+   "lm": -11.721,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.418,
+   "postComb": -12.021,
+   "rankLM": 514,
+   "rankPost": 366,
+   "rankComb": 59
+  },
+  {
+   "plaintext": "IMAHELENECAIN",
+   "words": "IMA HELENE CAIN",
+   "lm": -11.721,
+   "logL": -2.697,
+   "logLzodiacSize": -4.983,
+   "logLperRegime": {
+    "z408p12": -2.773,
+    "z340": -2.763,
+    "z408p3": -2.583
+   },
+   "simpleFit": true,
+   "post": -14.419,
+   "postComb": -12.022,
+   "rankLM": 515,
+   "rankPost": 368,
+   "rankComb": 60
+  }
+ ],
+ "seconds": 58.28
+}

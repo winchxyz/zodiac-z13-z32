@@ -1,0 +1,111 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:44:47.590Z",
+ "argv": "--ciphers z13.canonical --keys z408 --null 10000 --null-kind permute --threads 1 --seed 1970 --stat word --out results/keyprior/word_parts/fullpin_word_z13.canonical_z408.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 7.287,
+ "results": [
+  {
+   "cipher": "z13.canonical",
+   "key": "z408",
+   "text": "AENz0K0M0[NAM",
+   "pinnedSymbols": "AENzKM",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "WEED?S?H??EWH",
+   "real": {
+    "best": {
+     "plaintext": "WEEDASAHAVEWH",
+     "words": "WEED AS A HAVE WH",
+     "wordLogp": -17.617619555789872,
+     "unknownWords": [
+      "WH"
+     ],
+     "ngram5": -51.20824909210205
+    },
+    "score": -17.240242540965436,
+    "top5": [
+     {
+      "plaintext": "WEEDASAHAVEWH",
+      "score": -17.240242540965436
+     },
+     {
+      "plaintext": "WEEDSSSHSEEWH",
+      "score": -17.46731385975523
+     },
+     {
+      "plaintext": "WEEDESEHEEEWH",
+      "score": -17.504276938762985
+     },
+     {
+      "plaintext": "WEEDSSSHSTEWH",
+      "score": -17.607178542906475
+     },
+     {
+      "plaintext": "WEEDESEHETEWH",
+      "score": -17.64414162191423
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -18.36545555363286,
+     "sd": 1.7425771182037801,
+     "min": -24.705888004455236,
+     "q05": -21.34165582195249,
+     "q25": -19.46097669139829,
+     "median": -18.346378776126212,
+     "q75": -17.220273969841003,
+     "q95": -15.549560667704508,
+     "q99": -14.487505773420486,
+     "max": -11.316475910069821
+    },
+    "topNull": [
+     {
+      "index": 5974,
+      "score": -11.316475910069821,
+      "plaintext": "ONSEEREFERSOF"
+     },
+     {
+      "index": 8319,
+      "score": -11.723615744680394,
+      "plaintext": "EUROPEPEPFREE"
+     },
+     {
+      "index": 2133,
+      "score": -12.136839270864368,
+      "plaintext": "OFLOOKOFOILOF"
+     },
+     {
+      "index": 5910,
+      "score": -12.405730443948997,
+      "plaintext": "TOOFWEWEWROTE"
+     },
+     {
+      "index": 8132,
+      "score": -12.431544802268572,
+      "plaintext": "ARESOLOMOREAM"
+     }
+    ]
+   },
+   "test": {
+    "ge": 2537,
+    "n": 10000,
+    "p": 0.25377462253774624,
+    "percentile": 74.63,
+    "z": 0.6457177710604132
+   }
+  }
+ ]
+}

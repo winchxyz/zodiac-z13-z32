@@ -1,0 +1,120 @@
+{
+ "created": "2026-10-07",
+ "tool": "synthesis (hand-assembled from the eight attack reports and their adversarial reviews; reviewer-corrected numbers used throughout)",
+ "note": "Written at synthesis time, before the follow-up investigation of the Z340-key lead (results/lead/). Where this file and results/lead/DECISION.md or REPORT.md differ, those two govern. Fields updated after that investigation: bottom_line, key_reuse.z408_key, key_reuse.z340_key_full_pin.arrangement, key_reuse.standing, novel_findings, open_threads[0].",
+ "inputs": {
+  "reports_and_reviews": "results/synthesis/reports_and_reviews.json",
+  "pvalue_scan": "results/synthesis/pvalues.json",
+  "multiplicity": "results/synthesis/multiplicity.json",
+  "report_markdown": "REPORT.md"
+ },
+ "bottom_line": "Neither Z13 nor Z32 is solved. No proposed text for either beats a fair null model, and every published proposal we could test is incompatible with the cipher or indistinguishable from chance. The binding limit is information, not computation. Z13 is probably not an ordinary English phrase under plain substitution without errors, and its repeat pattern is atypical of Zodiac's Z408/Z340-style keys. The one lead (Z340 key letters on Z13's six shared symbols, family-wise p about 0.005-0.01 within its task) did not hold up: the pre-registered replication gave 0.039 over its 12 tests, failed its negative control (the Z408 key does about as well on n-gram statistics), and is not significant at project scale. It is a negative result and yields no meaningful text (results/lead/DECISION.md).",
+ "z13": {
+  "status": "unsolved; no supported reading",
+  "transcription": "AENz0K0M0[NAM (isomorph abcdefegehcag; 13 symbols, 8 distinct)",
+  "information": {
+   "english_windows_fitting_homophonic": "53 of 112,021,522 (1 in 2.1 million); 21.0 bits",
+   "english_windows_fitting_strict": "12 (1 in 9.3 million); 23.2 bits",
+   "window_information_bits_6gram": 34.0,
+   "expected_fitting_strings": {"6gram": 7900, "6gram_word_aligned": 1500, "2.2_bits_per_letter": 193, "1.3_bits_per_letter": 0.06, "1.0_bits_per_letter": 0.004},
+   "oranchak_1_in_12_million": "26^-5, the uniform-letter homophonic figure, not strict"
+  },
+  "names": {
+   "canonical_no_filler_strict_male_female": {"FL": [6, 44], "FIL": [208, 234], "FML": [9723, 51521], "FIIL": [4142, 11454], "LF": [12, 3]},
+   "canonical_no_filler_homophonic_male_female": {"FL": [72, 321], "FIL": [1494, 2958], "FML": [72182, 367670], "FIIL": [33725, 76049], "LF": [56, 87]},
+   "with_0_2_fillers_total": "5.6 to 69 million",
+   "suspects": "36 persons, 386 renderings: 0 fits outside circles_distinct; under circles_distinct homophonic with fillers 5 vs 5.48 expected (p = 0.69); with one slip only literature-fitted names fit, 0 after excluding them",
+   "verdict": "no name supported; the pattern gives a name no support over random letters"
+  },
+  "phrases": {
+   "canonical_60k_5words_simple": {"consistent": 25761330, "at_or_above_real_median": 22, "at_or_above_p75": 1, "at_or_above_p90": 0},
+   "canonical_60k_5words_homophonic": {"consistent": 148816201, "at_or_above_real_median": 64, "at_or_above_p75": 3, "at_or_above_p90": 0},
+   "best_fits": ["A DEFINITIVE AT", "ON THE DEFEAT OF", "IN THE DESERT IS", "SOUTH THE HOUSE"],
+   "z13_vs_scrambles_of_own_symbols": "typical (22 vs median 13 above-median fits; 20% of scrambles at 22 or more)",
+   "calibration_truth_rank": "same-profile real phrases: top-1 in 6/20, top-10 in 17/20, median rank 2; Zodiac's own aligned 13-letter windows: median 58 of 4,151,724 homophonic fits read better",
+   "verdict": "the ordinary-English, plain-substitution, no-error hypothesis is disfavoured (judgement: the top fits are not a message)"
+  },
+  "key_reuse": {
+   "z408_key": "word p = 0.25 in this task; on the replication's 6-gram statistics the Z408 key reaches p = 0.026 (results/lead/DECISION.md), so 'no signal' holds for the word statistic only",
+   "z340_key_full_pin": {"p_objective": 0.0008, "p_word": 0.0105, "familywise_z340": 0.0051, "both_keys_sidak": 0.0102, "glyph_class_null": [0.0011, 0.016], "arrangement": "best of 360 under this task's anneal objective only (p = 1/360 = 0.0028); 28th, 9th and 29th of 360 under the replication's 6-gram, word and top-10 statistics", "partial_pin_familywise_best": 0.026},
+   "project_scale": "about 109 distinct p-values quoted in reports and reviews; P(at least one null test reaches 0.0051 among 100) = 0.40, 0.0102 -> 0.64",
+   "completions": "canonical: 676, none meaningful (best DREAM A MOM WE DO); with [ = t: none all-vocabulary; circles_distinct: at least 29,220 all-vocabulary incl. DREAM A TORPEDO, but random keys give equally fluent phrases (word p = 0.012)",
+   "standing": "negative result: the pre-registered replication (results/lead/replicate/) gave 0.0147 primary and 0.039 over its 12 tests and failed its negative control; Sidak over the project's 51 analyses gives 0.23 (original) and 0.87 (replicated); all three skeptic reviews concluded 'refuted' (results/lead/DECISION.md)",
+   "joint_z13_z32_key": "untestable at these lengths (0/5 synthetic detections; solver unconverged)"
+  },
+  "key_model": {
+   "simple_vs_zodiac_size_key_bayes_factor_log10": [2.7, 3.8],
+   "zodiac_style_cycled_keys_reproducing_8_symbol_profile": "0 of 20,000 (simple substitution 24.4%)",
+   "circle_letter_if_zodiac_size_key": "most likely E or O with a single symbol",
+   "circles_distinct_vs_same_bayes_factor_log10": {"simple": 2.0, "small": 2.8, "zodiac_size": 4.5},
+   "circles_posterior": "prior-dependent (same symbol 0.06-0.91); only Bayes factors robust"
+  },
+  "candidates": [
+   {"plaintext": "A DEFINITIVE AT / ON THE DEFEAT OF / IN THE DESERT IS", "standing": "unsupported"},
+   {"plaintext": "SOUTH THE HOUSE", "standing": "unsupported"},
+   {"plaintext": "IN THE RESENT IS", "standing": "refuted (solver artifact)"},
+   {"plaintext": "OF THE DIRECTOR (one slip)", "standing": "unsupported (scramble p about 0.08)"},
+   {"plaintext": "EDDIE RESENDES / CHASTITY TRACY / other top names", "standing": "unsupported"},
+   {"plaintext": "DREAM A MOM WE DO (Z340 key)", "standing": "unsupported"},
+   {"plaintext": "DREAM A TORPEDO / DR EAT A TORPEDO (Z340 key, circles distinct)", "standing": "unsupported"},
+   {"plaintext": "ALFRED E NEUMAN", "standing": "unsupported (needs its admitted slip)"},
+   {"plaintext": "MARVIN MERRILL", "standing": "refuted as reported"}
+  ]
+ },
+ "z32": {
+  "status": "unsolved; no supported reading",
+  "transcription": "C9J|#Ok[AMf8?ORTG / X6FDVj%HCELzPW9 (29 distinct; repeats at 0=25, 1=31, 5=13)",
+  "information": {
+   "english_windows_fitting": "1 in 3,800 to 1 in 5,400 depending on corpus; 11.9 bits",
+   "window_information_bits_6gram": 76.2,
+   "expected_fitting_strings": "10^6 to 10^19 depending on the entropy rate",
+   "simple_substitution": "impossible (29 symbols)"
+  },
+  "free_search": "2,980 restarts; best -126.27 is ordinary for the pattern (z = 0.14 vs nulls); solver beats truth 12/12 on null ciphers",
+  "radian_grammars": "z32search 376,072 of 1.47e9 derivations fit (null median, P = 0.60); nullmodel review 20,181 of 47.7M (1 in 2,365); audit about 5.1 million of 1.46e10",
+  "read_orders": "51 tested; none stands out (best p about 0.04 among 51)",
+  "key_carry_over": "none in any of 7 readings (p >= 0.28)",
+  "crib_test_power": "positive control p = 0.098, true position found 0/12: crib and read-order anneal tests carry almost no weight",
+  "candidates": [
+   {"plaintext": "A TURNED THAT THE LOOKING THE WAS ABOUT", "standing": "refuted"},
+   {"plaintext": "ESTIMATE FOUR RADIANS AND FIVE INCHES (Grinell 2020)", "standing": "unsupported"},
+   {"plaintext": "IN THREE AND THREE EIGHTHS RADIANS TEN (DMW 2019, Stampher 2026)", "standing": "unsupported"},
+   {"plaintext": "TWELVE INCHES ALONG THE THREE RADIANS (Foxon 2023)", "standing": "unsupported (2 conflicts on his own order; 15.3% of random windows do as well)"}
+  ]
+ },
+ "map": {
+  "true_north_cw_of_map_up_deg": [4.2, 4.9],
+  "scale_bar_vs_geography": 1.09,
+  "ground_miles_per_paper_inch": [7.0, 7.2],
+  "drawn_zero_arm_cw_of_map_up_deg": [1.9, 3.2],
+  "reach_from_summit_inches": {"north": 2.5, "east": 1.2, "west": 5.7, "south": 5.8},
+  "blue_rock_springs": "0.5-1.1 mi beyond the top edge of the mailed piece",
+  "penn_radian": "60.28 deg = 1.052 rad; refuted as one radian",
+  "lake_herman_road_coincidence": "1.000 rad ccw of 1970 magnetic N, 3 in at 6.4 mi/in lands 0.13 mi away; p 0.01-0.05 (narrow) to 0.12-0.33 (wider) at 0.25 mi; post hoc; unsupported",
+  "off_map_claims": "Foxon (12 in, 3 rad) and (3 in, 0 rad), Burke '7 in south', Penn '4 in along the radian'"
+ },
+ "audit": {
+  "named_proposals": 43,
+  "z13_verdicts": {"indistinguishable_from_chance": 10, "incompatible": 5, "untestable": 3},
+  "z32_verdicts": {"indistinguishable_from_chance": 13, "incompatible": 4, "untestable": 8},
+  "wiki_z13_strings": {"total": 1153, "fit_or_profile_anagram": 1148, "incompatible": 5},
+  "supported": 0
+ },
+ "task_strengths": {
+  "z13names": "none", "z13phrases": "none", "keyprior": "none for any solution; key-letter anomaly weak", "cyclemodel": "none",
+  "z32search": "none", "nullmodel": "none", "mapgeometry": "none", "audit": "none"
+ },
+ "novel_findings": [
+  "Quantification, not a new idea (Pelling 2017 argued it qualitatively; Oranchak 2012 showed no window of the solved ciphers is as repetitive): Z13's repeat pattern is atypical of Zodiac-style cycled homophonic keys: 0 of 20,000 phrases reproduce its 8-symbol profile; Bayes factor 10^2.7-10^3.8 for a mostly one-symbol-per-letter key (direction robust, strength model-dependent).",
+  "New calibration (the phrase IN THE DESERT IS was listed by Oranchak in 2012): an ordinary-English plain-substitution Z13 text would rank among the few dozen most fluent fits (median rank 2; Zodiac's own text median 58 of 4.15M); those fits are fragments, so that hypothesis is disfavoured (judgement in the last step).",
+  "Not new (corrected after the prior-art search): the Mt. Diablo inset figures (true north 4.6 deg clockwise of map-up; scale bar about 9% too long, 7.0-7.2 ground mi per paper inch) were published first by shaqmeister (forum, 2026-05-12); this project only confirms them independently. Several published instructions fall off the mailed piece.",
+  "Negative result, not a finding (corrected after the lead investigation): the Z340-key letters on Z13 looked English-friendly within the task (family-wise p 0.005-0.01), but the pre-registered replication gave 0.039 over 12 tests, failed its negative control, and is not significant at project scale. No evidence of key reuse (results/lead/DECISION.md)."
+ ],
+ "open_threads": [
+  "Done after synthesis: the pre-registered replication, TORPEDO look-elsewhere analysis, three skeptic reviews and prior-art search of the Z340-key lead (results/lead/). Outcome: a negative result; TORPEDO carries no weight (results/lead/DECISION.md).",
+  "Higher-resolution images of the April 20, 1970 letter to decide whether the three circles are one symbol (Bayes factor 10^2-10^4.5 at stake) and whether the [ hook is deliberate.",
+  "A cycling-aware homophonic name likelihood for Z13; slip-tolerant name and phrase enumerations; insert/delete misspellings; transpositions of Z13.",
+  "A key model combined with transposition for Z32; a converged joint Z13+Z32 key solver; null-symbol variants of Z32.",
+  "A 1970 USGS quad for the declination Zodiac could have used; the illegible print code on the map inset."
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:45:10.446Z",
+ "argv": "--ciphers z13.canonical --keys z340 --null 10000 --null-kind permute --threads 1 --seed 1970 --stat word --out results/keyprior/word_parts/fullpin_word_z13.canonical_z340.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 8.812,
+ "results": [
+  {
+   "cipher": "z13.canonical",
+   "key": "z340",
+   "text": "AENz0K0M0[NAM",
+   "pinnedSymbols": "AENzKM",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "DREA?A?O??EDO",
+   "real": {
+    "best": {
+     "plaintext": "DREADADODGEDO",
+     "words": "DREAD A DODGE DO",
+     "wordLogp": -15.09160840882196,
+     "unknownWords": [],
+     "ngram5": -52.50890254974365
+    },
+    "score": -14.59439243784138,
+    "top5": [
+     {
+      "plaintext": "DREADADODGEDO",
+      "score": -14.59439243784138
+     },
+     {
+      "plaintext": "DREATATOTHEDO",
+      "score": -15.161016668501157
+     },
+     {
+      "plaintext": "DREAMAMOMBEDO",
+      "score": -15.33195883803864
+     },
+     {
+      "plaintext": "DREAMAMOMWEDO",
+      "score": -15.568717587591978
+     },
+     {
+      "plaintext": "DREAMAMOMHEDO",
+      "score": -15.786190289593405
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -18.231516659658197,
+     "sd": 1.4740298859201415,
+     "min": -23.37465700641599,
+     "q05": -20.487497301253942,
+     "q25": -19.25751206413236,
+     "median": -18.31513542466289,
+     "q75": -17.302336425933508,
+     "q95": -15.625291440460195,
+     "q99": -14.587309252232519,
+     "max": -10.874112475487031
+    },
+    "topNull": [
+     {
+      "index": 9846,
+      "score": -10.874112475487031,
+      "plaintext": "TRAYSISESTATE"
+     },
+     {
+      "index": 5968,
+      "score": -11.637837762571476,
+      "plaintext": "ESTINANDNOTED"
+     },
+     {
+      "index": 921,
+      "score": -11.841577379584987,
+      "plaintext": "AREMANASAREAS"
+     },
+     {
+      "index": 5408,
+      "score": -12.180414926190677,
+      "plaintext": "STENTSTOTHESO"
+     },
+     {
+      "index": 1705,
+      "score": -12.244496011014075,
+      "plaintext": "INRESISTSORIT"
+     }
+    ]
+   },
+   "test": {
+    "ge": 103,
+    "n": 10000,
+    "p": 0.0103989601039896,
+    "percentile": 98.97,
+    "z": 2.4674697959372756
+   }
+  }
+ ]
+}

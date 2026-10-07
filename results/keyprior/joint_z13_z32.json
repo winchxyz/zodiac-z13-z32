@@ -1,0 +1,89 @@
+{
+ "tool": "tools/keyprior_joint.js",
+ "created": "2026-10-07T14:41:42.457Z",
+ "argv": "--a z13.canonical --b z32.canonical --null 300 --restarts 4 --iters 120000 --threads 4 --seed 1332 --out results/keyprior/joint_z13_z32.json",
+ "solver": {
+  "restarts": 4,
+  "iters": 120000,
+  "T0": 8,
+  "objective": "sum of the anneal.js objectives of both ciphers under one key (links tie symbols)"
+ },
+ "null": {
+  "n": 300,
+  "kind": "A-side shared symbols linked to random B symbols with the same occurrence count as the real partner"
+ },
+ "seconds": 228.193,
+ "problems": [
+  {
+   "name": "z13.canonical+z32.canonical",
+   "a": "AENz0K0M0[NAM",
+   "b": "C9J|#Ok[AMf8?ORTGX6FDVj%HCELzPW9",
+   "sharedSymbols": "AEzM[",
+   "nLinks": 5,
+   "independent": {
+    "score": -184.28914548074124,
+    "ptA": "INTHERESENTIS",
+    "ptB": "SAYTHEROUGHTHEWASTHEREFIRSTTHEMA",
+    "restartScores": [
+     -204.5009564598979,
+     -191.50653202476434,
+     -184.28914548074124,
+     -203.4590637976891
+    ]
+   },
+   "joint": {
+    "score": -196.82995157275846,
+    "scoreA": -62.49751872887225,
+    "scoreB": -134.3324328438862,
+    "ptA": "REDANDNONEDRO",
+    "ptB": "HISFATHEROVERTHEMANDTHEOTHERANDI",
+    "wordsA": "RED AND NON EDRO",
+    "wordsB": "HIS FATHER OVER THEM AND THE OTHER AND I",
+    "restartScores": [
+     -196.82995157275846,
+     -206.77585229304805,
+     -198.00173565328151,
+     -213.7150006765557
+    ]
+   },
+   "penaltyReal": 12.54080609201722,
+   "null": {
+    "n": 300,
+    "summary": {
+     "n": 300,
+     "finite": 300,
+     "mean": -196.13843289080094,
+     "sd": 4.810150163163683,
+     "min": -208.26482675005806,
+     "q05": -203.75672126734554,
+     "q25": -199.43390389582976,
+     "median": -196.6650885062265,
+     "q75": -193.02339348217237,
+     "q95": -187.25351876736178,
+     "q99": -184.73853328046494,
+     "max": -183.65445764005847
+    },
+    "penaltySummary": {
+     "n": 300,
+     "finite": 300,
+     "mean": 11.849287410059482,
+     "sd": 4.810150163163683,
+     "min": -0.6346878406827727,
+     "q05": 2.9643732866205426,
+     "q25": 8.734248001431126,
+     "median": 12.378124319824991,
+     "q75": 15.144758415088518,
+     "q95": 19.4675757866043,
+     "q99": 21.40591341499527,
+     "max": 23.975681269316823
+    }
+   },
+   "test": {
+    "ge": 158,
+    "n": 300,
+    "p": 0.5282392026578073,
+    "percentile": 47.333333333333336
+   }
+  }
+ ]
+}

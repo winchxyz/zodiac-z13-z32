@@ -1,0 +1,609 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:32:09.912Z",
+ "label": "scr18_03",
+ "cipher": {
+  "id": "scr18",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr18.txt",
+  "text": "A0EN0MMK[0NAz",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*beefgbdah"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 379102,
+  "scored": 345378,
+  "keptAtLeastStreamMin": 83,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 15168,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1491,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 83,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 12,
+  "3": 34,
+  "4": 37
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.042920617512811,
+  "topShare": 0.07529331635050063,
+  "top10Share": 0.3124345474924263,
+  "effectiveNumberExpEntropy": 484.3739226857315,
+  "effectiveNumberInverseSimpson": 64.01249656013223,
+  "unscoredMassBoundRelative": 0.040809351939092034,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 31,
+   "maxWordLogp": -14.839437790424284,
+   "massEstimateRelative": 0.00003955184931572319,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.012725322596398138
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 3,
+   "-18.25": 14,
+   "-18.00": 58,
+   "-17.75": 87,
+   "-17.50": 127,
+   "-17.25": 197,
+   "-17.00": 232,
+   "-16.75": 316,
+   "-16.50": 380,
+   "-16.25": 508,
+   "-16.00": 570,
+   "-15.75": 809,
+   "-15.50": 1008,
+   "-15.25": 1290,
+   "-15.00": 1577,
+   "-14.75": 2023,
+   "-14.50": 2571,
+   "-14.25": 3111,
+   "-14.00": 3601,
+   "-13.75": 4284,
+   "-13.50": 4756,
+   "-13.25": 5313,
+   "-13.00": 6012,
+   "-12.75": 6460,
+   "-12.50": 7432,
+   "-12.25": 8312,
+   "-12.00": 9363,
+   "-11.75": 10479,
+   "-11.50": 11696,
+   "-11.25": 12519,
+   "-11.00": 13689,
+   "-10.75": 14274,
+   "-10.50": 14609,
+   "-10.25": 14710,
+   "-10.00": 14463,
+   "-9.75": 14615,
+   "-9.50": 14701,
+   "-9.25": 14894,
+   "-9.00": 14804,
+   "-8.75": 15143,
+   "-8.50": 14920,
+   "-8.25": 14768,
+   "-8.00": 14894,
+   "-7.75": 13810,
+   "-7.50": 12562,
+   "-7.25": 11335,
+   "-7.00": 10028,
+   "-6.75": 8567,
+   "-6.50": 6957,
+   "-6.25": 5561,
+   "-6.00": 4366,
+   "-5.75": 3253,
+   "-5.50": 2290,
+   "-5.25": 1681,
+   "-5.00": 1145,
+   "-4.75": 735,
+   "-4.50": 493,
+   "-4.25": 300,
+   "-4.00": 196,
+   "-3.75": 115,
+   "-3.50": 77,
+   "-3.25": 28,
+   "-3.00": 9,
+   "-2.75": 2
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-19.00": 21,
+   "-18.75": 122,
+   "-18.50": 594,
+   "-18.25": 1880,
+   "-18.00": 3734,
+   "-17.75": 6459,
+   "-17.50": 9825,
+   "-17.25": 13148,
+   "-17.00": 16171,
+   "-16.75": 18986,
+   "-16.50": 21885,
+   "-16.25": 24398,
+   "-16.00": 26853,
+   "-15.75": 27311,
+   "-15.50": 27099,
+   "-15.25": 25817,
+   "-15.00": 23640,
+   "-14.75": 20081,
+   "-14.50": 16320,
+   "-14.25": 13428,
+   "-14.00": 10675,
+   "-13.75": 8702,
+   "-13.50": 6858,
+   "-13.25": 5406,
+   "-13.00": 4389,
+   "-12.75": 3306,
+   "-12.50": 2488,
+   "-12.25": 1849,
+   "-12.00": 1223,
+   "-11.75": 936,
+   "-11.50": 654,
+   "-11.25": 389,
+   "-11.00": 257,
+   "-10.75": 165,
+   "-10.50": 126,
+   "-10.25": 65,
+   "-10.00": 49,
+   "-9.75": 26,
+   "-9.50": 19,
+   "-9.25": 10,
+   "-9.00": 9,
+   "-8.50": 3,
+   "-8.25": 1
+  },
+  "boundUnscored": {
+   "-18.50": 3,
+   "-18.25": 14,
+   "-18.00": 58,
+   "-17.75": 87,
+   "-17.50": 127,
+   "-17.25": 197,
+   "-17.00": 232,
+   "-16.75": 316,
+   "-16.50": 380,
+   "-16.25": 508,
+   "-16.00": 570,
+   "-15.75": 809,
+   "-15.50": 1008,
+   "-15.25": 1290,
+   "-15.00": 1577,
+   "-14.75": 2023,
+   "-14.50": 2571,
+   "-14.25": 3111,
+   "-14.00": 3601,
+   "-13.75": 4284,
+   "-13.50": 4756,
+   "-13.25": 5313,
+   "-13.00": 889
+  }
+ },
+ "timeMs": {
+  "total": 3528,
+  "setup": 516
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "EASTALLOCATED",
+   "wordLogp": -8.1662,
+   "words": "EAST ALLOCATED",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "S",
+    "M": "L",
+    "K": "O",
+    "[": "C",
+    "N": "T",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "CALLASSURANCE",
+   "wordLogp": -8.3402,
+   "words": "CALL ASSURANCE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "C",
+    "E": "L",
+    "M": "S",
+    "K": "U",
+    "[": "R",
+    "N": "N",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "CANCALLSEARCH",
+   "wordLogp": -8.3639,
+   "words": "CAN CALL SEARCH",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "C",
+    "E": "N",
+    "M": "L",
+    "K": "S",
+    "[": "E",
+    "N": "R",
+    "z": "H"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "EASYALLOCATED",
+   "wordLogp": -8.4159,
+   "words": "EASY ALLOCATED",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "S",
+    "M": "L",
+    "K": "O",
+    "[": "C",
+    "N": "T",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "NOTWORRYFOUND",
+   "wordLogp": -8.7815,
+   "words": "NOT WORRY FOUND",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "N",
+    "E": "T",
+    "M": "R",
+    "K": "Y",
+    "[": "F",
+    "N": "U",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "DATEALLBRANDS",
+   "wordLogp": -8.7895,
+   "words": "DATE ALL BRANDS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "D",
+    "E": "T",
+    "M": "L",
+    "K": "B",
+    "[": "R",
+    "N": "N",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "EACHALLIMAGES",
+   "wordLogp": -8.8037,
+   "words": "EACH ALL IMAGES",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "C",
+    "M": "L",
+    "K": "I",
+    "[": "M",
+    "N": "G",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ORDERSSHAREOF",
+   "wordLogp": -8.8415,
+   "words": "ORDERS SHARE OF",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "A": "O",
+    "E": "D",
+    "M": "S",
+    "K": "H",
+    "[": "A",
+    "N": "E",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "CAMPASSURANCE",
+   "wordLogp": -8.8859,
+   "words": "CAMP ASSURANCE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "C",
+    "E": "M",
+    "M": "S",
+    "K": "U",
+    "[": "R",
+    "N": "N",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "CAPEASSURANCE",
+   "wordLogp": -8.9355,
+   "words": "CAPE ASSURANCE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "C",
+    "E": "P",
+    "M": "S",
+    "K": "U",
+    "[": "R",
+    "N": "N",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "ISJUSTTHOSEIN",
+   "wordLogp": -8.9664,
+   "words": "IS JUST THOSE IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "I",
+    "E": "J",
+    "M": "T",
+    "K": "H",
+    "[": "O",
+    "N": "E",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TIMEISSOCIETY",
+   "wordLogp": -8.9776,
+   "words": "TIME IS SOCIETY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "A": "T",
+    "E": "M",
+    "M": "S",
+    "K": "O",
+    "[": "C",
+    "N": "E",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "DAYSALLBRANDS",
+   "wordLogp": -8.9895,
+   "words": "DAYS ALL BRANDS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "D",
+    "E": "Y",
+    "M": "L",
+    "K": "B",
+    "[": "R",
+    "N": "N",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "DATAALLBRANDS",
+   "wordLogp": -9.0358,
+   "words": "DATA ALL BRANDS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "D",
+    "E": "T",
+    "M": "L",
+    "K": "B",
+    "[": "R",
+    "N": "N",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "ONLYNEEDANYOF",
+   "wordLogp": -9.1292,
+   "words": "ONLY NEED ANY OF",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "A": "O",
+    "E": "L",
+    "M": "E",
+    "K": "D",
+    "[": "A",
+    "N": "Y",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "NOTWORRYSOUND",
+   "wordLogp": -9.1469,
+   "words": "NOT WORRY SOUND",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "N",
+    "E": "T",
+    "M": "R",
+    "K": "Y",
+    "[": "S",
+    "N": "U",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "EARNALLOCATED",
+   "wordLogp": -9.1556,
+   "words": "EARN ALLOCATED",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "E",
+    "E": "R",
+    "M": "L",
+    "K": "O",
+    "[": "C",
+    "N": "T",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "CAFEASSURANCE",
+   "wordLogp": -9.1818,
+   "words": "CAFE ASSURANCE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "C",
+    "E": "F",
+    "M": "S",
+    "K": "U",
+    "[": "R",
+    "N": "N",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "TOCROSSGROWTH",
+   "wordLogp": -9.2139,
+   "words": "TO CROSS GROWTH",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "T",
+    "E": "C",
+    "M": "S",
+    "K": "G",
+    "[": "R",
+    "N": "W",
+    "z": "H"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "CATSASSURANCE",
+   "wordLogp": -9.2323,
+   "words": "CATS ASSURANCE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "A": "C",
+    "E": "T",
+    "M": "S",
+    "K": "U",
+    "[": "R",
+    "N": "N",
+    "z": "E"
+   }
+  }
+ ]
+}

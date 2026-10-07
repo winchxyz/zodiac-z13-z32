@@ -1,0 +1,1609 @@
+{
+ "observed": {
+  "O1_penn_BRS_STINE_deg": 60.278251834939,
+  "O1_penn_LHR_STINE_deg": 61.68936016518052,
+  "O1_error_vs_1rad_deg": 2.982472321856676,
+  "O1_error_pct": 5.205396186599898,
+  "pairs_S4": {
+   "LHR-BRS": 1.4111083302415182,
+   "LHR-LB": 20.312895711448846,
+   "LHR-STINE": 61.68936016518052,
+   "BRS-LB": 21.724004041690364,
+   "BRS-STINE": 60.278251834939,
+   "LB-STINE": 82.00225587662936
+  },
+  "O2_LHR_ccw_from_magN_deg": 57.27631488536838,
+  "O2_error_deg": -0.019464627713944083,
+  "O2_with_decl": {
+   "15.0": 0.9668480882212235,
+   "16.0": 0.9843013807411667,
+   "16.88": 0.9996602781587167,
+   "17.0": 1.00175467326111,
+   "17.5": 1.0104813195210816
+  },
+  "O2_on_map_frame_rad": {
+   "magN = map-up + 17 deg (what the Zodiac could draw on this sheet)": 0.9222456754273227,
+   "magN = drawn 0-arm (no rotation)": 0.6782954354905388
+  },
+  "O2_BRS_ccw_rad": 1.0242887646237506,
+  "O3_STINE_clock": 8.034477498315036,
+  "O3_BRS_clock": 10.04375255947967,
+  "O3_LHR_clock": 10.090789503821053,
+  "O5_grinell_4rad_true_bearing": 246.0631180523293,
+  "O5_STINE_minus_4rad_deg": 11.851206897121813,
+  "O5_RADETICH_minus_4rad_deg": 9.011611895180295,
+  "O4_watchface": {
+   "radius_mi": 26.057053436317528,
+   "twelve_oclock_true_bearing": 323.92,
+   "centre_enu_mi": [
+    -1.8567480253130348,
+    25.98999012769462
+   ],
+   "solve_err_mi": 0.002989478928035975,
+   "mtd_clock": 7.066456033411254,
+   "BRS_clock": 9.050234276318918,
+   "BRS_dist_from_centre_mi": 16.06960923010377,
+   "LHR_clock": 8.650294662350067,
+   "BRS_angle_from_MTD_radius_deg": 59.51334728722991,
+   "note": "12:00 on Lake Berryessa and 7:04 on Mt. Diablo fix the circle; 9:00 - 7:04 = 58 deg by construction, so the test is only whether Blue Rock Springs lies on the 9:00 radius"
+  }
+ },
+ "monte_carlo": [
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "-",
+   "family": "pairs vs 1 rad",
+   "n_tests": 6,
+   "observed_min_error_deg": 2.982472321856676,
+   "p_at_least_as_good_as_observed": 0.17935,
+   "p_within": {
+    "0.05": 0.0036,
+    "0.25": 0.01645,
+    "0.5": 0.03355,
+    "1.0": 0.0657,
+    "2.98": 0.1791
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "-",
+   "family": "pairs vs 1, 2, 3 rad",
+   "n_tests": 18,
+   "observed_min_error_deg": 2.982472321856676,
+   "p_at_least_as_good_as_observed": 0.469,
+   "p_within": {
+    "0.05": 0.00975,
+    "0.25": 0.0488,
+    "0.5": 0.0989,
+    "1.0": 0.18745,
+    "2.98": 0.4685
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 48,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.00465,
+   "p_within": {
+    "0.05": 0.0117,
+    "0.25": 0.06135,
+    "0.5": 0.12485,
+    "1.0": 0.2393,
+    "2.98": 0.58915
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 66,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.00815,
+   "p_within": {
+    "0.05": 0.02135,
+    "0.25": 0.10845,
+    "0.5": 0.21415,
+    "1.0": 0.3875,
+    "2.98": 0.79955
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "bearings vs clock hours",
+   "n_tests": 44,
+   "observed_min_error_deg": 1.0343249494511042,
+   "p_at_least_as_good_as_observed": 0.22665,
+   "p_within": {
+    "0.05": 0.0114,
+    "0.25": 0.0584,
+    "0.5": 0.11395,
+    "1.0": 0.22025,
+    "2.98": 0.5535
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 110,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.01215,
+   "p_within": {
+    "0.05": 0.03255,
+    "0.25": 0.16115,
+    "0.5": 0.3066,
+    "1.0": 0.52935,
+    "2.98": 0.9158
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 192,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.02075,
+   "p_within": {
+    "0.05": 0.05175,
+    "0.25": 0.23795,
+    "0.5": 0.4228,
+    "1.0": 0.654,
+    "2.98": 0.92315
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 210,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0242,
+   "p_within": {
+    "0.05": 0.06095,
+    "0.25": 0.27755,
+    "0.5": 0.485,
+    "1.0": 0.7291,
+    "2.98": 0.9697
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "bearings vs clock hours",
+   "n_tests": 176,
+   "observed_min_error_deg": 1.0343249494511042,
+   "p_at_least_as_good_as_observed": 0.65945,
+   "p_within": {
+    "0.05": 0.0474,
+    "0.25": 0.22015,
+    "0.5": 0.4029,
+    "1.0": 0.64905,
+    "2.98": 0.938
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 386,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0418,
+   "p_within": {
+    "0.05": 0.10565,
+    "0.25": 0.44405,
+    "0.5": 0.6987,
+    "1.0": 0.9087,
+    "2.98": 0.9985
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 288,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0319,
+   "p_within": {
+    "0.05": 0.07775,
+    "0.25": 0.332,
+    "0.5": 0.5301,
+    "1.0": 0.7467,
+    "2.98": 0.9516
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 306,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.03535,
+   "p_within": {
+    "0.05": 0.08675,
+    "0.25": 0.36745,
+    "0.5": 0.5829,
+    "1.0": 0.8048,
+    "2.98": 0.983
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "bearings vs clock hours",
+   "n_tests": 264,
+   "observed_min_error_deg": 0.41432494945109966,
+   "p_at_least_as_good_as_observed": 0.46325,
+   "p_within": {
+    "0.05": 0.06925,
+    "0.25": 0.3163,
+    "0.5": 0.5252,
+    "1.0": 0.76835,
+    "2.98": 0.96845
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 570,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0615,
+   "p_within": {
+    "0.05": 0.15,
+    "0.25": 0.56675,
+    "0.5": 0.7997,
+    "1.0": 0.95445,
+    "2.98": 0.99935
+   },
+   "sector": null
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "-",
+   "family": "pairs vs 1 rad",
+   "n_tests": 6,
+   "observed_min_error_deg": 2.982472321856676,
+   "p_at_least_as_good_as_observed": 0.2657,
+   "p_within": {
+    "0.05": 0.0053,
+    "0.25": 0.026,
+    "0.5": 0.052,
+    "1.0": 0.10155,
+    "2.98": 0.2655
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "-",
+   "family": "pairs vs 1, 2, 3 rad",
+   "n_tests": 18,
+   "observed_min_error_deg": 2.982472321856676,
+   "p_at_least_as_good_as_observed": 0.2657,
+   "p_within": {
+    "0.05": 0.0053,
+    "0.25": 0.026,
+    "0.5": 0.052,
+    "1.0": 0.10155,
+    "2.98": 0.2655
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 48,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.00455,
+   "p_within": {
+    "0.05": 0.0116,
+    "0.25": 0.0589,
+    "0.5": 0.114,
+    "1.0": 0.21725,
+    "2.98": 0.55815
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 66,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.00665,
+   "p_within": {
+    "0.05": 0.01685,
+    "0.25": 0.0838,
+    "0.5": 0.1615,
+    "1.0": 0.30095,
+    "2.98": 0.6947
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "bearings vs clock hours",
+   "n_tests": 44,
+   "observed_min_error_deg": 1.0343249494511042,
+   "p_at_least_as_good_as_observed": 0.2893,
+   "p_within": {
+    "0.05": 0.0146,
+    "0.25": 0.0782,
+    "0.5": 0.1484,
+    "1.0": 0.2806,
+    "2.98": 0.6591
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 110,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0123,
+   "p_within": {
+    "0.05": 0.03135,
+    "0.25": 0.15635,
+    "0.5": 0.28975,
+    "1.0": 0.50715,
+    "2.98": 0.9016
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 192,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0184,
+   "p_within": {
+    "0.05": 0.0455,
+    "0.25": 0.2188,
+    "0.5": 0.3885,
+    "1.0": 0.61115,
+    "2.98": 0.90225
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 210,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.02045,
+   "p_within": {
+    "0.05": 0.0506,
+    "0.25": 0.24015,
+    "0.5": 0.42355,
+    "1.0": 0.66005,
+    "2.98": 0.9421
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "bearings vs clock hours",
+   "n_tests": 176,
+   "observed_min_error_deg": 1.0343249494511042,
+   "p_at_least_as_good_as_observed": 0.6747,
+   "p_within": {
+    "0.05": 0.04985,
+    "0.25": 0.22725,
+    "0.5": 0.415,
+    "1.0": 0.6619,
+    "2.98": 0.95505
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 386,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.03965,
+   "p_within": {
+    "0.05": 0.09845,
+    "0.25": 0.41525,
+    "0.5": 0.6683,
+    "1.0": 0.8901,
+    "2.98": 0.9987
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 288,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.02775,
+   "p_within": {
+    "0.05": 0.0675,
+    "0.25": 0.3017,
+    "0.5": 0.49195,
+    "1.0": 0.7049,
+    "2.98": 0.93705
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 306,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0298,
+   "p_within": {
+    "0.05": 0.0726,
+    "0.25": 0.32105,
+    "0.5": 0.52245,
+    "1.0": 0.74485,
+    "2.98": 0.96425
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "bearings vs clock hours",
+   "n_tests": 264,
+   "observed_min_error_deg": 0.41432494945109966,
+   "p_at_least_as_good_as_observed": 0.5039,
+   "p_within": {
+    "0.05": 0.0805,
+    "0.25": 0.3505,
+    "0.5": 0.56895,
+    "1.0": 0.8058,
+    "2.98": 0.982
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S4 (LHR, BRS, LB, STINE)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 570,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.061,
+   "p_within": {
+    "0.05": 0.14685,
+    "0.25": 0.55565,
+    "0.5": 0.79635,
+    "1.0": 0.95215,
+    "2.98": 0.9995
+   },
+   "sector": [
+    247.9143249494511,
+    102.0022558766293
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "-",
+   "family": "pairs vs 1 rad",
+   "n_tests": 21,
+   "observed_min_error_deg": 2.982472321856676,
+   "p_at_least_as_good_as_observed": 0.50705,
+   "p_within": {
+    "0.05": 0.0112,
+    "0.25": 0.0543,
+    "0.5": 0.1093,
+    "1.0": 0.2111,
+    "2.98": 0.5068
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "-",
+   "family": "pairs vs 1, 2, 3 rad",
+   "n_tests": 63,
+   "observed_min_error_deg": 2.982472321856676,
+   "p_at_least_as_good_as_observed": 0.9011,
+   "p_within": {
+    "0.05": 0.0361,
+    "0.25": 0.16425,
+    "0.5": 0.3018,
+    "1.0": 0.5181,
+    "2.98": 0.9009
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 84,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.00905,
+   "p_within": {
+    "0.05": 0.022,
+    "0.25": 0.11115,
+    "0.5": 0.2088,
+    "1.0": 0.3841,
+    "2.98": 0.78795
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 147,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0239,
+   "p_within": {
+    "0.05": 0.0573,
+    "0.25": 0.25865,
+    "0.5": 0.4502,
+    "1.0": 0.7118,
+    "2.98": 0.98335
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "bearings vs clock hours",
+   "n_tests": 77,
+   "observed_min_error_deg": 1.0343249494511042,
+   "p_at_least_as_good_as_observed": 0.36465,
+   "p_within": {
+    "0.05": 0.02085,
+    "0.25": 0.1018,
+    "0.5": 0.191,
+    "1.0": 0.3542,
+    "2.98": 0.7527
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 224,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.03275,
+   "p_within": {
+    "0.05": 0.07695,
+    "0.25": 0.33545,
+    "0.5": 0.5569,
+    "1.0": 0.81745,
+    "2.98": 0.99635
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 336,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0356,
+   "p_within": {
+    "0.05": 0.0912,
+    "0.25": 0.3864,
+    "0.5": 0.6206,
+    "1.0": 0.84715,
+    "2.98": 0.98895
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 399,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0501,
+   "p_within": {
+    "0.05": 0.1241,
+    "0.25": 0.48945,
+    "0.5": 0.7406,
+    "1.0": 0.9353,
+    "2.98": 0.9997
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "bearings vs clock hours",
+   "n_tests": 308,
+   "observed_min_error_deg": 1.0343249494511042,
+   "p_at_least_as_good_as_observed": 0.84855,
+   "p_within": {
+    "0.05": 0.0831,
+    "0.25": 0.358,
+    "0.5": 0.5938,
+    "1.0": 0.84005,
+    "2.98": 0.99275
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 707,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.08095,
+   "p_within": {
+    "0.05": 0.19815,
+    "0.25": 0.6772,
+    "0.5": 0.89555,
+    "1.0": 0.9906,
+    "2.98": 0.99995
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 504,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.052,
+   "p_within": {
+    "0.05": 0.13335,
+    "0.25": 0.51475,
+    "0.5": 0.7367,
+    "1.0": 0.91015,
+    "2.98": 0.9955
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 567,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.06625,
+   "p_within": {
+    "0.05": 0.16495,
+    "0.25": 0.59865,
+    "0.5": 0.8231,
+    "1.0": 0.96465,
+    "2.98": 0.9999
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "bearings vs clock hours",
+   "n_tests": 462,
+   "observed_min_error_deg": 0.0747299475095815,
+   "p_at_least_as_good_as_observed": 0.1779,
+   "p_within": {
+    "0.05": 0.12265,
+    "0.25": 0.48795,
+    "0.5": 0.72935,
+    "1.0": 0.92305,
+    "2.98": 0.99805
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 1029,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.11225,
+   "p_within": {
+    "0.05": 0.26895,
+    "0.25": 0.79115,
+    "0.5": 0.94935,
+    "1.0": 0.9969,
+    "2.98": 0.99995
+   },
+   "sector": null
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "-",
+   "family": "pairs vs 1 rad",
+   "n_tests": 21,
+   "observed_min_error_deg": 2.982472321856676,
+   "p_at_least_as_good_as_observed": 0.5446,
+   "p_within": {
+    "0.05": 0.0133,
+    "0.25": 0.0652,
+    "0.5": 0.1252,
+    "1.0": 0.2353,
+    "2.98": 0.54445
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "-",
+   "family": "pairs vs 1, 2, 3 rad",
+   "n_tests": 63,
+   "observed_min_error_deg": 2.982472321856676,
+   "p_at_least_as_good_as_observed": 0.86815,
+   "p_within": {
+    "0.05": 0.03175,
+    "0.25": 0.14645,
+    "0.5": 0.2716,
+    "1.0": 0.476,
+    "2.98": 0.86785
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 84,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0088,
+   "p_within": {
+    "0.05": 0.02295,
+    "0.25": 0.10795,
+    "0.5": 0.2052,
+    "1.0": 0.37915,
+    "2.98": 0.7881
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 147,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.02175,
+   "p_within": {
+    "0.05": 0.0539,
+    "0.25": 0.2408,
+    "0.5": 0.4255,
+    "1.0": 0.687,
+    "2.98": 0.98065
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "bearings vs clock hours",
+   "n_tests": 77,
+   "observed_min_error_deg": 1.0343249494511042,
+   "p_at_least_as_good_as_observed": 0.4188,
+   "p_within": {
+    "0.05": 0.0253,
+    "0.25": 0.1213,
+    "0.5": 0.2313,
+    "1.0": 0.40955,
+    "2.98": 0.80835
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 224,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0306,
+   "p_within": {
+    "0.05": 0.07785,
+    "0.25": 0.3325,
+    "0.5": 0.56165,
+    "1.0": 0.81875,
+    "2.98": 0.99715
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 336,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.03735,
+   "p_within": {
+    "0.05": 0.09595,
+    "0.25": 0.4072,
+    "0.5": 0.6458,
+    "1.0": 0.86585,
+    "2.98": 0.99145
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 399,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.05015,
+   "p_within": {
+    "0.05": 0.125,
+    "0.25": 0.4995,
+    "0.5": 0.75305,
+    "1.0": 0.9418,
+    "2.98": 0.99955
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "bearings vs clock hours",
+   "n_tests": 308,
+   "observed_min_error_deg": 1.0343249494511042,
+   "p_at_least_as_good_as_observed": 0.8801,
+   "p_within": {
+    "0.05": 0.0886,
+    "0.25": 0.38895,
+    "0.5": 0.6391,
+    "1.0": 0.8712,
+    "2.98": 0.9963
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 707,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.08265,
+   "p_within": {
+    "0.05": 0.20265,
+    "0.25": 0.70065,
+    "0.5": 0.91545,
+    "1.0": 0.994,
+    "2.98": 1.0
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 504,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.05425,
+   "p_within": {
+    "0.05": 0.1368,
+    "0.25": 0.52915,
+    "0.5": 0.74965,
+    "1.0": 0.91785,
+    "2.98": 0.9961
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 567,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0667,
+   "p_within": {
+    "0.05": 0.16445,
+    "0.25": 0.6054,
+    "0.5": 0.82945,
+    "1.0": 0.96605,
+    "2.98": 0.99975
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "bearings vs clock hours",
+   "n_tests": 462,
+   "observed_min_error_deg": 0.0747299475095815,
+   "p_at_least_as_good_as_observed": 0.19505,
+   "p_within": {
+    "0.05": 0.13315,
+    "0.25": 0.5329,
+    "0.5": 0.7702,
+    "1.0": 0.94405,
+    "2.98": 0.999
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S7 (+ RADETICH, JOHNS_VERNALIS, BATES)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 1029,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.117,
+   "p_within": {
+    "0.05": 0.27565,
+    "0.25": 0.81385,
+    "0.5": 0.9607,
+    "1.0": 0.9982,
+    "2.98": 1.0
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "-",
+   "family": "pairs vs 1 rad",
+   "n_tests": 36,
+   "observed_min_error_deg": 1.1248665188913947,
+   "p_at_least_as_good_as_observed": 0.36195,
+   "p_within": {
+    "0.05": 0.0191,
+    "0.25": 0.09455,
+    "0.5": 0.17965,
+    "1.0": 0.32865,
+    "2.98": 0.6994
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "-",
+   "family": "pairs vs 1, 2, 3 rad",
+   "n_tests": 108,
+   "observed_min_error_deg": 1.1248665188913947,
+   "p_at_least_as_good_as_observed": 0.75715,
+   "p_within": {
+    "0.05": 0.057,
+    "0.25": 0.25885,
+    "0.5": 0.4585,
+    "1.0": 0.71315,
+    "2.98": 0.9824
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 108,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.01055,
+   "p_within": {
+    "0.05": 0.02825,
+    "0.25": 0.14255,
+    "0.5": 0.2622,
+    "1.0": 0.4635,
+    "2.98": 0.86195
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 216,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.033,
+   "p_within": {
+    "0.05": 0.08375,
+    "0.25": 0.3675,
+    "0.5": 0.6066,
+    "1.0": 0.8549,
+    "2.98": 0.9986
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "bearings vs clock hours",
+   "n_tests": 99,
+   "observed_min_error_deg": 1.0343249494511042,
+   "p_at_least_as_good_as_observed": 0.4464,
+   "p_within": {
+    "0.05": 0.0271,
+    "0.25": 0.13145,
+    "0.5": 0.24425,
+    "1.0": 0.4337,
+    "2.98": 0.84215
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "magN only",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 315,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0432,
+   "p_within": {
+    "0.05": 0.1088,
+    "0.25": 0.45395,
+    "0.5": 0.7049,
+    "1.0": 0.92005,
+    "2.98": 0.99985
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 432,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0459,
+   "p_within": {
+    "0.05": 0.11305,
+    "0.25": 0.4648,
+    "0.5": 0.70855,
+    "1.0": 0.90515,
+    "2.98": 0.9968
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 540,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0672,
+   "p_within": {
+    "0.05": 0.1635,
+    "0.25": 0.60755,
+    "0.5": 0.851,
+    "1.0": 0.97665,
+    "2.98": 1.0
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "bearings vs clock hours",
+   "n_tests": 396,
+   "observed_min_error_deg": 0.4326420890137115,
+   "p_at_least_as_good_as_observed": 0.63315,
+   "p_within": {
+    "0.05": 0.10275,
+    "0.25": 0.4316,
+    "0.5": 0.68805,
+    "1.0": 0.90435,
+    "2.98": 0.99835
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 936,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.10645,
+   "p_within": {
+    "0.05": 0.25015,
+    "0.25": 0.78495,
+    "0.5": 0.9565,
+    "1.0": 0.99785,
+    "2.98": 1.0
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 648,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.06825,
+   "p_within": {
+    "0.05": 0.1651,
+    "0.25": 0.604,
+    "0.5": 0.819,
+    "1.0": 0.9527,
+    "2.98": 0.99865
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 756,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0891,
+   "p_within": {
+    "0.05": 0.21305,
+    "0.25": 0.7112,
+    "0.5": 0.90945,
+    "1.0": 0.98965,
+    "2.98": 1.0
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "bearings vs clock hours",
+   "n_tests": 594,
+   "observed_min_error_deg": 0.0747299475095815,
+   "p_at_least_as_good_as_observed": 0.2181,
+   "p_within": {
+    "0.05": 0.1498,
+    "0.25": 0.5754,
+    "0.5": 0.81555,
+    "1.0": 0.96095,
+    "2.98": 0.9996
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N1 uniform",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 1350,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.1455,
+   "p_within": {
+    "0.05": 0.3329,
+    "0.25": 0.878,
+    "0.5": 0.98285,
+    "1.0": 0.9996,
+    "2.98": 1.0
+   },
+   "sector": null
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "-",
+   "family": "pairs vs 1 rad",
+   "n_tests": 36,
+   "observed_min_error_deg": 1.1248665188913947,
+   "p_at_least_as_good_as_observed": 0.39295,
+   "p_within": {
+    "0.05": 0.0246,
+    "0.25": 0.10615,
+    "0.5": 0.2031,
+    "1.0": 0.35865,
+    "2.98": 0.72715
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "-",
+   "family": "pairs vs 1, 2, 3 rad",
+   "n_tests": 108,
+   "observed_min_error_deg": 1.1248665188913947,
+   "p_at_least_as_good_as_observed": 0.712,
+   "p_within": {
+    "0.05": 0.0543,
+    "0.25": 0.2349,
+    "0.5": 0.4222,
+    "1.0": 0.6687,
+    "2.98": 0.9692
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 108,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.01225,
+   "p_within": {
+    "0.05": 0.03075,
+    "0.25": 0.13845,
+    "0.5": 0.2611,
+    "1.0": 0.4619,
+    "2.98": 0.8625
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 216,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.0343,
+   "p_within": {
+    "0.05": 0.0834,
+    "0.25": 0.3414,
+    "0.5": 0.57695,
+    "1.0": 0.83175,
+    "2.98": 0.9977
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "bearings vs clock hours",
+   "n_tests": 99,
+   "observed_min_error_deg": 1.0343249494511042,
+   "p_at_least_as_good_as_observed": 0.494,
+   "p_within": {
+    "0.05": 0.0302,
+    "0.25": 0.1533,
+    "0.5": 0.2791,
+    "1.0": 0.4814,
+    "2.98": 0.8723
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "magN only",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 315,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.04645,
+   "p_within": {
+    "0.05": 0.11135,
+    "0.25": 0.44365,
+    "0.5": 0.69685,
+    "1.0": 0.9151,
+    "2.98": 0.9997
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 432,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.05175,
+   "p_within": {
+    "0.05": 0.123,
+    "0.25": 0.48815,
+    "0.5": 0.73505,
+    "1.0": 0.9246,
+    "2.98": 0.9982
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 540,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.07315,
+   "p_within": {
+    "0.05": 0.17035,
+    "0.25": 0.6118,
+    "0.5": 0.85325,
+    "1.0": 0.98115,
+    "2.98": 1.0
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "bearings vs clock hours",
+   "n_tests": 396,
+   "observed_min_error_deg": 0.4326420890137115,
+   "p_at_least_as_good_as_observed": 0.672,
+   "p_within": {
+    "0.05": 0.11115,
+    "0.25": 0.4656,
+    "0.5": 0.728,
+    "1.0": 0.92745,
+    "2.98": 0.99915
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "4 refs (true N, magN 16.9, map-up, drawn 0-arm)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 936,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.1157,
+   "p_within": {
+    "0.05": 0.2641,
+    "0.25": 0.7988,
+    "0.5": 0.96285,
+    "1.0": 0.99885,
+    "2.98": 1.0
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "single bearings vs k rad (k=1..6), cw or ccw",
+   "n_tests": 648,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.07255,
+   "p_within": {
+    "0.05": 0.17605,
+    "0.25": 0.6199,
+    "0.5": 0.8296,
+    "1.0": 0.9598,
+    "2.98": 0.9992
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "pairs vs 1-3 rad + bearings vs k rad",
+   "n_tests": 756,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.09345,
+   "p_within": {
+    "0.05": 0.22085,
+    "0.25": 0.7135,
+    "0.5": 0.9095,
+    "1.0": 0.9912,
+    "2.98": 1.0
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "bearings vs clock hours",
+   "n_tests": 594,
+   "observed_min_error_deg": 0.0747299475095815,
+   "p_at_least_as_good_as_observed": 0.24655,
+   "p_within": {
+    "0.05": 0.1668,
+    "0.25": 0.6186,
+    "0.5": 0.84875,
+    "1.0": 0.97495,
+    "2.98": 0.99985
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  },
+  {
+   "sites": "S9 (+ VALLEJO_PHONE, NAPA_PHONE)",
+   "null": "N2 sector",
+   "refs": "6 refs (+ magN 15, magN 17.5)",
+   "family": "everything (pairs 1-3 rad, bearings k rad, clock hours)",
+   "n_tests": 1350,
+   "observed_min_error_deg": 0.019464627713944083,
+   "p_at_least_as_good_as_observed": 0.1578,
+   "p_within": {
+    "0.05": 0.3511,
+    "0.25": 0.89115,
+    "0.5": 0.98495,
+    "1.0": 0.9999,
+    "2.98": 1.0
+   },
+   "sector": [
+    106.55552761712298,
+    243.36105320895751
+   ]
+  }
+ ],
+ "trials": 20000,
+ "analytic_one_pair_within_2.98": 0.03311111111111111
+}

@@ -1,0 +1,615 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:39:38.951Z",
+ "label": "eng12_08",
+ "cipher": {
+  "id": "eng12",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng12.txt",
+  "text": "abcdabceffgfh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   8
+  ],
+  "isomorphAfterSlips": "abcdabce*fgfh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 769301,
+  "scored": 726969,
+  "keptAtLeastStreamMin": 370,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 43971,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 5633,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 370,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 12,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 9,
+  "3": 117,
+  "4": 244
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.280901083644215,
+  "topShare": 0.08368951423222606,
+  "top10Share": 0.334731076273968,
+  "effectiveNumberExpEntropy": 553.8274589332841,
+  "effectiveNumberInverseSimpson": 55.66502467853201,
+  "unscoredMassBoundRelative": 0.008860737507287879,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 40,
+   "maxWordLogp": -14.684439933787761,
+   "massEstimateRelative": 0.000008683047757722901,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.003026562649021219
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 6,
+   "-18.25": 30,
+   "-18.00": 41,
+   "-17.75": 69,
+   "-17.50": 88,
+   "-17.25": 140,
+   "-17.00": 162,
+   "-16.75": 194,
+   "-16.50": 309,
+   "-16.25": 430,
+   "-16.00": 652,
+   "-15.75": 821,
+   "-15.50": 1101,
+   "-15.25": 1445,
+   "-15.00": 1884,
+   "-14.75": 2476,
+   "-14.50": 3075,
+   "-14.25": 3875,
+   "-14.00": 4651,
+   "-13.75": 5625,
+   "-13.50": 6477,
+   "-13.25": 7490,
+   "-13.00": 8745,
+   "-12.75": 10266,
+   "-12.50": 11659,
+   "-12.25": 13615,
+   "-12.00": 15558,
+   "-11.75": 17869,
+   "-11.50": 19880,
+   "-11.25": 22214,
+   "-11.00": 24106,
+   "-10.75": 25762,
+   "-10.50": 27000,
+   "-10.25": 28295,
+   "-10.00": 29215,
+   "-9.75": 30553,
+   "-9.50": 31354,
+   "-9.25": 31985,
+   "-9.00": 32577,
+   "-8.75": 33443,
+   "-8.50": 34178,
+   "-8.25": 33755,
+   "-8.00": 32968,
+   "-7.75": 31982,
+   "-7.50": 30250,
+   "-7.25": 27535,
+   "-7.00": 24927,
+   "-6.75": 21596,
+   "-6.50": 18184,
+   "-6.25": 14912,
+   "-6.00": 12003,
+   "-5.75": 9568,
+   "-5.50": 6992,
+   "-5.25": 5094,
+   "-5.00": 3662,
+   "-4.75": 2463,
+   "-4.50": 1649,
+   "-4.25": 1045,
+   "-4.00": 612,
+   "-3.75": 375,
+   "-3.50": 200,
+   "-3.25": 110,
+   "-3.00": 67,
+   "-2.75": 19,
+   "-2.50": 12,
+   "-2.25": 6
+  },
+  "exactScored": {
+   "-19.25": 13,
+   "-19.00": 78,
+   "-18.75": 263,
+   "-18.50": 1023,
+   "-18.25": 3137,
+   "-18.00": 7157,
+   "-17.75": 13176,
+   "-17.50": 21009,
+   "-17.25": 29482,
+   "-17.00": 36688,
+   "-16.75": 42612,
+   "-16.50": 46510,
+   "-16.25": 49325,
+   "-16.00": 50433,
+   "-15.75": 51208,
+   "-15.50": 49685,
+   "-15.25": 47324,
+   "-15.00": 44411,
+   "-14.75": 40748,
+   "-14.50": 36243,
+   "-14.25": 31295,
+   "-14.00": 26156,
+   "-13.75": 21339,
+   "-13.50": 17665,
+   "-13.25": 14014,
+   "-13.00": 11581,
+   "-12.75": 9199,
+   "-12.50": 6865,
+   "-12.25": 5167,
+   "-12.00": 3875,
+   "-11.75": 2727,
+   "-11.50": 2077,
+   "-11.25": 1441,
+   "-11.00": 961,
+   "-10.75": 725,
+   "-10.50": 488,
+   "-10.25": 362,
+   "-10.00": 215,
+   "-9.75": 123,
+   "-9.50": 80,
+   "-9.25": 29,
+   "-9.00": 23,
+   "-8.75": 15,
+   "-8.50": 12,
+   "-8.25": 3,
+   "-8.00": 4,
+   "-7.75": 1,
+   "-7.50": 2
+  },
+  "boundUnscored": {
+   "-18.50": 6,
+   "-18.25": 30,
+   "-18.00": 41,
+   "-17.75": 69,
+   "-17.50": 88,
+   "-17.25": 140,
+   "-17.00": 162,
+   "-16.75": 194,
+   "-16.50": 309,
+   "-16.25": 430,
+   "-16.00": 652,
+   "-15.75": 821,
+   "-15.50": 1101,
+   "-15.25": 1445,
+   "-15.00": 1884,
+   "-14.75": 2476,
+   "-14.50": 3075,
+   "-14.25": 3875,
+   "-14.00": 4651,
+   "-13.75": 5625,
+   "-13.50": 6477,
+   "-13.25": 7490,
+   "-13.00": 1291
+  }
+ },
+ "timeMs": {
+  "total": 6157,
+  "setup": 449
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ANDHANDBOOKOF",
+   "wordLogp": -7.3582,
+   "words": "AND HANDBOOK OF",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "H",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THEOTHERCIVIL",
+   "wordLogp": -7.4517,
+   "words": "THE OTHER CIVIL",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "I",
+    "g": "V",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THEOTHERINAND",
+   "wordLogp": -7.6387,
+   "words": "THE OTHER IN AND",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "N",
+    "g": "A",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "VERYVERSIONOF",
+   "wordLogp": -7.8029,
+   "words": "VERY VERSION OF",
+   "unknown": 0,
+   "key": {
+    "a": "V",
+    "b": "E",
+    "c": "R",
+    "d": "Y",
+    "e": "S",
+    "f": "O",
+    "g": "N",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "THEOTHERJAPAN",
+   "wordLogp": -7.8315,
+   "words": "THE OTHER JAPAN",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "A",
+    "g": "P",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "THEOTHERINANY",
+   "wordLogp": -7.9594,
+   "words": "THE OTHER IN ANY",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "N",
+    "g": "A",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THEOTHERONAND",
+   "wordLogp": -7.9665,
+   "words": "THE OTHER ON AND",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "N",
+    "g": "A",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THISTHINGEVER",
+   "wordLogp": -8.0634,
+   "words": "THIS THING EVER",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "I",
+    "d": "S",
+    "e": "N",
+    "f": "E",
+    "g": "V",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ANDHANDLEITIS",
+   "wordLogp": -8.21,
+   "words": "AND HANDLE IT IS",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "H",
+    "e": "L",
+    "f": "I",
+    "g": "T",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THEOTHERWAYAS",
+   "wordLogp": -8.2163,
+   "words": "THE OTHER WAY AS",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "A",
+    "g": "Y",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THEMTHEREISIN",
+   "wordLogp": -8.2577,
+   "words": "THEM THERE IS IN",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "M",
+    "e": "R",
+    "f": "I",
+    "g": "S",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "FORMFORTHENEW",
+   "wordLogp": -8.2627,
+   "words": "FORM FOR THE NEW",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "R",
+    "d": "M",
+    "e": "T",
+    "f": "E",
+    "g": "N",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "REALREASONING",
+   "wordLogp": -8.3405,
+   "words": "REAL REASONING",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "E",
+    "c": "A",
+    "d": "L",
+    "e": "S",
+    "f": "N",
+    "g": "I",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "THEOTHERHASAN",
+   "wordLogp": -8.3604,
+   "words": "THE OTHER HAS AN",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "A",
+    "g": "S",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THEOTHERSASAN",
+   "wordLogp": -8.3748,
+   "words": "THE OTHERS AS AN",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "A",
+    "g": "S",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THENTHEBOOKOF",
+   "wordLogp": -8.3809,
+   "words": "THEN THE BOOK OF",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "YOURYOUCANAND",
+   "wordLogp": -8.3819,
+   "words": "YOUR YOU CAN AND",
+   "unknown": 0,
+   "key": {
+    "a": "Y",
+    "b": "O",
+    "c": "U",
+    "d": "R",
+    "e": "C",
+    "f": "N",
+    "g": "A",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THEOTHERWASAN",
+   "wordLogp": -8.3962,
+   "words": "THE OTHER WAS AN",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "A",
+    "g": "S",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THEOTHERONANY",
+   "wordLogp": -8.4254,
+   "words": "THE OTHER ON ANY",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "N",
+    "g": "A",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "THEMTHEORIGIN",
+   "wordLogp": -8.4441,
+   "words": "THEM THE ORIGIN",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "M",
+    "e": "O",
+    "f": "I",
+    "g": "G",
+    "h": "N"
+   }
+  }
+ ]
+}

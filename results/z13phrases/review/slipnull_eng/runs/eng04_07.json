@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:31:46.270Z",
+ "label": "eng04_07",
+ "cipher": {
+  "id": "eng04",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng04.txt",
+  "text": "abcdeefgcfheg",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abcdeef*cfheg"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 288436,
+  "scored": 271955,
+  "keptAtLeastStreamMin": 110,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 11096,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1370,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 110,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 8,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 14,
+  "3": 59,
+  "4": 37
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.585536632786859,
+  "topShare": 0.1579205983519462,
+  "top10Share": 0.5488725760640852,
+  "effectiveNumberExpEntropy": 77.85677603412987,
+  "effectiveNumberInverseSimpson": 18.04998427910124,
+  "unscoredMassBoundRelative": 0.006956970986475716,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 15,
+   "maxWordLogp": -14.760535808643258,
+   "massEstimateRelative": 0.000008976682974788922,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0023597981183265514
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 10,
+   "-17.75": 18,
+   "-17.50": 28,
+   "-17.25": 28,
+   "-17.00": 54,
+   "-16.75": 67,
+   "-16.50": 99,
+   "-16.25": 143,
+   "-16.00": 179,
+   "-15.75": 284,
+   "-15.50": 420,
+   "-15.25": 633,
+   "-15.00": 857,
+   "-14.75": 981,
+   "-14.50": 1271,
+   "-14.25": 1544,
+   "-14.00": 1841,
+   "-13.75": 2145,
+   "-13.50": 2486,
+   "-13.25": 2869,
+   "-13.00": 3451,
+   "-12.75": 4245,
+   "-12.50": 5059,
+   "-12.25": 5899,
+   "-12.00": 6844,
+   "-11.75": 7744,
+   "-11.50": 8231,
+   "-11.25": 8922,
+   "-11.00": 9698,
+   "-10.75": 10254,
+   "-10.50": 10778,
+   "-10.25": 11038,
+   "-10.00": 11588,
+   "-9.75": 11937,
+   "-9.50": 12375,
+   "-9.25": 12758,
+   "-9.00": 12894,
+   "-8.75": 12502,
+   "-8.50": 12228,
+   "-8.25": 11891,
+   "-8.00": 11560,
+   "-7.75": 10752,
+   "-7.50": 10438,
+   "-7.25": 9430,
+   "-7.00": 8280,
+   "-6.75": 7263,
+   "-6.50": 5997,
+   "-6.25": 4805,
+   "-6.00": 3808,
+   "-5.75": 2995,
+   "-5.50": 2151,
+   "-5.25": 1566,
+   "-5.00": 1127,
+   "-4.75": 758,
+   "-4.50": 463,
+   "-4.25": 325,
+   "-4.00": 212,
+   "-3.75": 111,
+   "-3.50": 58,
+   "-3.25": 31,
+   "-3.00": 9,
+   "-2.75": 3
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-19.00": 16,
+   "-18.75": 134,
+   "-18.50": 452,
+   "-18.25": 1423,
+   "-18.00": 3563,
+   "-17.75": 6489,
+   "-17.50": 10431,
+   "-17.25": 14695,
+   "-17.00": 18367,
+   "-16.75": 20928,
+   "-16.50": 22181,
+   "-16.25": 22264,
+   "-16.00": 21298,
+   "-15.75": 19759,
+   "-15.50": 17757,
+   "-15.25": 15438,
+   "-15.00": 13895,
+   "-14.75": 11568,
+   "-14.50": 9771,
+   "-14.25": 8430,
+   "-14.00": 7003,
+   "-13.75": 5848,
+   "-13.50": 4754,
+   "-13.25": 3891,
+   "-13.00": 2945,
+   "-12.75": 2293,
+   "-12.50": 1783,
+   "-12.25": 1339,
+   "-12.00": 926,
+   "-11.75": 713,
+   "-11.50": 513,
+   "-11.25": 346,
+   "-11.00": 249,
+   "-10.75": 183,
+   "-10.50": 105,
+   "-10.25": 68,
+   "-10.00": 39,
+   "-9.75": 26,
+   "-9.50": 20,
+   "-9.25": 10,
+   "-9.00": 17,
+   "-8.75": 9,
+   "-8.50": 8,
+   "-8.25": 2,
+   "-8.00": 3,
+   "-7.50": 2
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 10,
+   "-17.75": 18,
+   "-17.50": 28,
+   "-17.25": 28,
+   "-17.00": 54,
+   "-16.75": 67,
+   "-16.50": 99,
+   "-16.25": 143,
+   "-16.00": 179,
+   "-15.75": 284,
+   "-15.50": 420,
+   "-15.25": 633,
+   "-15.00": 857,
+   "-14.75": 981,
+   "-14.50": 1271,
+   "-14.25": 1544,
+   "-14.00": 1841,
+   "-13.75": 2145,
+   "-13.50": 2486,
+   "-13.25": 2869,
+   "-13.00": 523
+  }
+ },
+ "timeMs": {
+  "total": 2690,
+  "setup": 480
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "BYGETTINGINTO",
+   "wordLogp": -7.3871,
+   "words": "BY GETTING INTO",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "Y",
+    "c": "G",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "h": "N",
+    "g": "O"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "AMGETTINGINTO",
+   "wordLogp": -7.4564,
+   "words": "AM GETTING INTO",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "M",
+    "c": "G",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "h": "N",
+    "g": "O"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "UPGETTINGINTO",
+   "wordLogp": -7.8402,
+   "words": "UP GETTING INTO",
+   "unknown": 0,
+   "key": {
+    "a": "U",
+    "b": "P",
+    "c": "G",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "h": "N",
+    "g": "O"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "WECANNOTCOUNT",
+   "wordLogp": -7.8791,
+   "words": "WE CAN NOT COUNT",
+   "unknown": 0,
+   "key": {
+    "a": "W",
+    "b": "E",
+    "c": "C",
+    "d": "A",
+    "e": "N",
+    "f": "O",
+    "h": "U",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ASGETTINGINTO",
+   "wordLogp": -7.9599,
+   "words": "AS GETTING INTO",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "S",
+    "c": "G",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "h": "N",
+    "g": "O"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "IMAGEENHANCED",
+   "wordLogp": -8.0492,
+   "words": "IMAGE ENHANCED",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "M",
+    "c": "A",
+    "d": "G",
+    "e": "E",
+    "f": "N",
+    "h": "C",
+    "g": "D"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "USGETTINGINTO",
+   "wordLogp": -8.2031,
+   "words": "US GETTING INTO",
+   "unknown": 0,
+   "key": {
+    "a": "U",
+    "b": "S",
+    "c": "G",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "h": "N",
+    "g": "O"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "THEDOORPERSON",
+   "wordLogp": -8.2549,
+   "words": "THE DOOR PERSON",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "D",
+    "e": "O",
+    "f": "R",
+    "h": "S",
+    "g": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "GREATTIMEINTO",
+   "wordLogp": -8.441,
+   "words": "GREAT TIME INTO",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "R",
+    "c": "E",
+    "d": "A",
+    "e": "T",
+    "f": "I",
+    "h": "N",
+    "g": "O"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "PMGETTINGINTO",
+   "wordLogp": -8.4479,
+   "words": "PM GETTING INTO",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "M",
+    "c": "G",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "h": "N",
+    "g": "O"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SHAREENHANCED",
+   "wordLogp": -8.4583,
+   "words": "SHARE ENHANCED",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "H",
+    "c": "A",
+    "d": "R",
+    "e": "E",
+    "f": "N",
+    "h": "C",
+    "g": "D"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "MYGETTINGINTO",
+   "wordLogp": -8.4625,
+   "words": "MY GETTING INTO",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "Y",
+    "c": "G",
+    "d": "E",
+    "e": "T",
+    "f": "I",
+    "h": "N",
+    "g": "O"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THEPOORPERSON",
+   "wordLogp": -8.4935,
+   "words": "THE POOR PERSON",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "P",
+    "e": "O",
+    "f": "R",
+    "h": "S",
+    "g": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "OFAREENHANCED",
+   "wordLogp": -8.4942,
+   "words": "OF ARE ENHANCED",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "A",
+    "d": "R",
+    "e": "E",
+    "f": "N",
+    "h": "C",
+    "g": "D"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "FIRSTTOGROWTH",
+   "wordLogp": -8.4994,
+   "words": "FIRST TO GROWTH",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "I",
+    "c": "R",
+    "d": "S",
+    "e": "T",
+    "f": "O",
+    "h": "W",
+    "g": "H"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "YOUNEEDBUDGET",
+   "wordLogp": -8.5028,
+   "words": "YOU NEED BUDGET",
+   "unknown": 0,
+   "key": {
+    "a": "Y",
+    "b": "O",
+    "c": "U",
+    "d": "N",
+    "e": "E",
+    "f": "D",
+    "h": "G",
+    "g": "T"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "IHAVEENHANCED",
+   "wordLogp": -8.5559,
+   "words": "I HAVE ENHANCED",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "H",
+    "c": "A",
+    "d": "V",
+    "e": "E",
+    "f": "N",
+    "h": "C",
+    "g": "D"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "STAGEENHANCED",
+   "wordLogp": -8.6057,
+   "words": "STAGE ENHANCED",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "T",
+    "c": "A",
+    "d": "G",
+    "e": "E",
+    "f": "N",
+    "h": "C",
+    "g": "D"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "FRAMEENHANCED",
+   "wordLogp": -8.6157,
+   "words": "FRAME ENHANCED",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "A",
+    "d": "M",
+    "e": "E",
+    "f": "N",
+    "h": "C",
+    "g": "D"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "OFSUCCESSEACH",
+   "wordLogp": -8.6357,
+   "words": "OF SUCCESS EACH",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "F",
+    "c": "S",
+    "d": "U",
+    "e": "C",
+    "f": "E",
+    "h": "A",
+    "g": "H"
+   }
+  }
+ ]
+}

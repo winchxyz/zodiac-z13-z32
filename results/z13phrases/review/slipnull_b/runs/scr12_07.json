@@ -1,0 +1,614 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:27:37.451Z",
+ "label": "scr12_07",
+ "cipher": {
+  "id": "scr12",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr12.txt",
+  "text": "MNzE[0AAN0K0M",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   7
+  ],
+  "isomorphAfterSlips": "abcdefg*bfhfa"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 363173,
+  "scored": 341160,
+  "keptAtLeastStreamMin": 96,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 14182,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1557,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 96,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 9,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 6,
+  "3": 54,
+  "4": 36
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.7282556567069145,
+  "topShare": 0.16496652258986766,
+  "top10Share": 0.5298026661875841,
+  "effectiveNumberExpEntropy": 114.902817040924,
+  "effectiveNumberInverseSimpson": 21.238681576965465,
+  "unscoredMassBoundRelative": 0.012907284722738312,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 21,
+   "maxWordLogp": -15.305187302305043,
+   "massEstimateRelative": 0.0000041344280464790506,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.004216273348037641
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 6,
+   "-18.00": 30,
+   "-17.75": 47,
+   "-17.50": 70,
+   "-17.25": 118,
+   "-17.00": 141,
+   "-16.75": 187,
+   "-16.50": 232,
+   "-16.25": 285,
+   "-16.00": 356,
+   "-15.75": 492,
+   "-15.50": 601,
+   "-15.25": 856,
+   "-15.00": 1024,
+   "-14.75": 1346,
+   "-14.50": 1563,
+   "-14.25": 1965,
+   "-14.00": 2370,
+   "-13.75": 2720,
+   "-13.50": 3252,
+   "-13.25": 3723,
+   "-13.00": 4311,
+   "-12.75": 4994,
+   "-12.50": 5545,
+   "-12.25": 6260,
+   "-12.00": 7273,
+   "-11.75": 8193,
+   "-11.50": 9227,
+   "-11.25": 9789,
+   "-11.00": 10867,
+   "-10.75": 11703,
+   "-10.50": 12273,
+   "-10.25": 13164,
+   "-10.00": 13654,
+   "-9.75": 14241,
+   "-9.50": 14621,
+   "-9.25": 15197,
+   "-9.00": 15648,
+   "-8.75": 16114,
+   "-8.50": 16207,
+   "-8.25": 16369,
+   "-8.00": 16010,
+   "-7.75": 15740,
+   "-7.50": 14907,
+   "-7.25": 13568,
+   "-7.00": 12101,
+   "-6.75": 10519,
+   "-6.50": 9059,
+   "-6.25": 7093,
+   "-6.00": 5432,
+   "-5.75": 3976,
+   "-5.50": 2790,
+   "-5.25": 1867,
+   "-5.00": 1219,
+   "-4.75": 782,
+   "-4.50": 470,
+   "-4.25": 272,
+   "-4.00": 159,
+   "-3.75": 93,
+   "-3.50": 34,
+   "-3.25": 25,
+   "-3.00": 15,
+   "-2.75": 4,
+   "-2.50": 2,
+   "-2.25": 1,
+   "-2.00": 1
+  },
+  "exactScored": {
+   "-19.50": 1,
+   "-19.25": 9,
+   "-19.00": 25,
+   "-18.75": 152,
+   "-18.50": 621,
+   "-18.25": 1705,
+   "-18.00": 3995,
+   "-17.75": 7382,
+   "-17.50": 11673,
+   "-17.25": 16016,
+   "-17.00": 19858,
+   "-16.75": 22364,
+   "-16.50": 23940,
+   "-16.25": 24670,
+   "-16.00": 25039,
+   "-15.75": 24496,
+   "-15.50": 23215,
+   "-15.25": 21872,
+   "-15.00": 20221,
+   "-14.75": 17954,
+   "-14.50": 15796,
+   "-14.25": 13254,
+   "-14.00": 10782,
+   "-13.75": 8802,
+   "-13.50": 7001,
+   "-13.25": 5402,
+   "-13.00": 4083,
+   "-12.75": 3028,
+   "-12.50": 2264,
+   "-12.25": 1691,
+   "-12.00": 1166,
+   "-11.75": 882,
+   "-11.50": 603,
+   "-11.25": 432,
+   "-11.00": 317,
+   "-10.75": 164,
+   "-10.50": 105,
+   "-10.25": 56,
+   "-10.00": 42,
+   "-9.75": 25,
+   "-9.50": 25,
+   "-9.25": 7,
+   "-9.00": 8,
+   "-8.75": 5,
+   "-8.50": 5,
+   "-8.25": 4,
+   "-8.00": 2,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-18.25": 6,
+   "-18.00": 30,
+   "-17.75": 47,
+   "-17.50": 70,
+   "-17.25": 118,
+   "-17.00": 141,
+   "-16.75": 187,
+   "-16.50": 232,
+   "-16.25": 285,
+   "-16.00": 356,
+   "-15.75": 492,
+   "-15.50": 601,
+   "-15.25": 856,
+   "-15.00": 1024,
+   "-14.75": 1346,
+   "-14.50": 1563,
+   "-14.25": 1965,
+   "-14.00": 2370,
+   "-13.75": 2720,
+   "-13.50": 3252,
+   "-13.25": 3723,
+   "-13.00": 629
+  }
+ },
+ "timeMs": {
+  "total": 7517,
+  "setup": 446
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "FIRSTOPTIONOF",
+   "wordLogp": -7.5109,
+   "words": "FIRST OPTION OF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "F",
+    "N": "I",
+    "z": "R",
+    "E": "S",
+    "[": "T",
+    "A": "P",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TECHNIQUEISIT",
+   "wordLogp": -7.8426,
+   "words": "TECHNIQUE IS IT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "T",
+    "N": "E",
+    "z": "C",
+    "E": "H",
+    "[": "N",
+    "A": "Q",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "GARDENMEANING",
+   "wordLogp": -7.9507,
+   "words": "GARDEN MEANING",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "G",
+    "N": "A",
+    "z": "R",
+    "E": "D",
+    "[": "E",
+    "A": "M",
+    "K": "I"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "FILEPORTIONOF",
+   "wordLogp": -8.0019,
+   "words": "FILE PORTION OF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "F",
+    "N": "I",
+    "z": "L",
+    "E": "E",
+    "[": "P",
+    "A": "R",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "YOUMENTIONANY",
+   "wordLogp": -8.166,
+   "words": "YOU MENTION ANY",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "Y",
+    "N": "O",
+    "z": "U",
+    "E": "M",
+    "[": "E",
+    "A": "T",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "GERMANOPENING",
+   "wordLogp": -8.2012,
+   "words": "GERMAN OPENING",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "G",
+    "N": "E",
+    "z": "R",
+    "E": "M",
+    "[": "A",
+    "A": "O",
+    "K": "I"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "FILMPORTIONOF",
+   "wordLogp": -8.243,
+   "words": "FILM PORTION OF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "F",
+    "N": "I",
+    "z": "L",
+    "E": "M",
+    "[": "P",
+    "A": "R",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "DESIGNWHENAND",
+   "wordLogp": -8.3218,
+   "words": "DESIGN WHEN AND",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "D",
+    "N": "E",
+    "z": "S",
+    "E": "I",
+    "[": "G",
+    "A": "W",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "DESIGNOPENAND",
+   "wordLogp": -8.3269,
+   "words": "DESIGN OPEN AND",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "D",
+    "N": "E",
+    "z": "S",
+    "E": "I",
+    "[": "G",
+    "A": "O",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "SHAREOFPHOTOS",
+   "wordLogp": -8.3595,
+   "words": "SHARE OF PHOTOS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "S",
+    "N": "H",
+    "z": "A",
+    "E": "R",
+    "[": "E",
+    "A": "F",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "FIVEPORTIONOF",
+   "wordLogp": -8.4091,
+   "words": "FIVE PORTION OF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "F",
+    "N": "I",
+    "z": "V",
+    "E": "E",
+    "[": "P",
+    "A": "R",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "DESIGNTHENAND",
+   "wordLogp": -8.4325,
+   "words": "DESIGN THEN AND",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "D",
+    "N": "E",
+    "z": "S",
+    "E": "I",
+    "[": "G",
+    "A": "T",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "DESIGNBEENAND",
+   "wordLogp": -8.5635,
+   "words": "DESIGN BEEN AND",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "D",
+    "N": "E",
+    "z": "S",
+    "E": "I",
+    "[": "G",
+    "A": "B",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "FISHPORTIONOF",
+   "wordLogp": -8.6114,
+   "words": "FISH PORTION OF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "F",
+    "N": "I",
+    "z": "S",
+    "E": "H",
+    "[": "P",
+    "A": "R",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "ONEPATIENTSTO",
+   "wordLogp": -8.6413,
+   "words": "ONE PATIENTS TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "O",
+    "N": "N",
+    "z": "E",
+    "E": "P",
+    "[": "A",
+    "A": "I",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "TECHNIQUEIFIT",
+   "wordLogp": -8.6875,
+   "words": "TECHNIQUE IF IT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "T",
+    "N": "E",
+    "z": "C",
+    "E": "H",
+    "[": "N",
+    "A": "Q",
+    "K": "F"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "SHAPEOFPHOTOS",
+   "wordLogp": -8.7445,
+   "words": "SHAPE OF PHOTOS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "S",
+    "N": "H",
+    "z": "A",
+    "E": "P",
+    "[": "E",
+    "A": "F",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "DESIGNTEENAND",
+   "wordLogp": -8.7982,
+   "words": "DESIGN TEEN AND",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "M": "D",
+    "N": "E",
+    "z": "S",
+    "E": "I",
+    "[": "G",
+    "A": "T",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "WHYDOESTHENEW",
+   "wordLogp": -8.8281,
+   "words": "WHY DOES THE NEW",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "W",
+    "N": "H",
+    "z": "Y",
+    "E": "D",
+    "[": "O",
+    "A": "S",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ONLASTMONTHTO",
+   "wordLogp": -8.8599,
+   "words": "ON LAST MONTH TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "O",
+    "N": "N",
+    "z": "L",
+    "E": "A",
+    "[": "S",
+    "A": "M",
+    "K": "H"
+   }
+  }
+ ]
+}

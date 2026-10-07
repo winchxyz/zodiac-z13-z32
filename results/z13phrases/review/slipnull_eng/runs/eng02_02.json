@@ -1,0 +1,614 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:29:45.673Z",
+ "label": "eng02_02",
+ "cipher": {
+  "id": "eng02",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng02.txt",
+  "text": "abcadbefddgch",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   2
+  ],
+  "isomorphAfterSlips": "ab*adbefddgch"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 119,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 119,
+  "tasks": 119,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 261520,
+  "scored": 246653,
+  "keptAtLeastStreamMin": 262,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 11497,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2024,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 262,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 25,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 2,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 1,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 12,
+  "3": 217,
+  "4": 33
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -5.833516536319677,
+  "topShare": 0.5421626782636447,
+  "top10Share": 0.7865498109613533,
+  "effectiveNumberExpEntropy": 13.77467199082946,
+  "effectiveNumberInverseSimpson": 3.2680650389014807,
+  "unscoredMassBoundRelative": 0.0011108102479512713,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 12,
+   "maxWordLogp": -15.167477455099185,
+   "massEstimateRelative": 6.785015024074779e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00036433388499234985
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 3,
+   "-18.25": 7,
+   "-18.00": 11,
+   "-17.75": 33,
+   "-17.50": 31,
+   "-17.25": 56,
+   "-17.00": 69,
+   "-16.75": 91,
+   "-16.50": 101,
+   "-16.25": 137,
+   "-16.00": 212,
+   "-15.75": 279,
+   "-15.50": 376,
+   "-15.25": 556,
+   "-15.00": 776,
+   "-14.75": 989,
+   "-14.50": 1137,
+   "-14.25": 1316,
+   "-14.00": 1646,
+   "-13.75": 1953,
+   "-13.50": 2157,
+   "-13.25": 2501,
+   "-13.00": 3004,
+   "-12.75": 3377,
+   "-12.50": 4012,
+   "-12.25": 4655,
+   "-12.00": 5337,
+   "-11.75": 6197,
+   "-11.50": 6754,
+   "-11.25": 7359,
+   "-11.00": 8022,
+   "-10.75": 8551,
+   "-10.50": 9061,
+   "-10.25": 9413,
+   "-10.00": 9991,
+   "-9.75": 10317,
+   "-9.50": 10635,
+   "-9.25": 10996,
+   "-9.00": 11403,
+   "-8.75": 11958,
+   "-8.50": 12046,
+   "-8.25": 11888,
+   "-8.00": 11354,
+   "-7.75": 11023,
+   "-7.50": 10190,
+   "-7.25": 9486,
+   "-7.00": 8519,
+   "-6.75": 7363,
+   "-6.50": 6285,
+   "-6.25": 4790,
+   "-6.00": 3857,
+   "-5.75": 3014,
+   "-5.50": 2140,
+   "-5.25": 1471,
+   "-5.00": 1051,
+   "-4.75": 705,
+   "-4.50": 387,
+   "-4.25": 243,
+   "-4.00": 136,
+   "-3.75": 62,
+   "-3.50": 24,
+   "-3.25": 4,
+   "-3.00": 2,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-19.00": 20,
+   "-18.75": 155,
+   "-18.50": 611,
+   "-18.25": 1571,
+   "-18.00": 3305,
+   "-17.75": 5613,
+   "-17.50": 8208,
+   "-17.25": 11008,
+   "-17.00": 13757,
+   "-16.75": 15475,
+   "-16.50": 17116,
+   "-16.25": 18026,
+   "-16.00": 18363,
+   "-15.75": 17852,
+   "-15.50": 17543,
+   "-15.25": 16169,
+   "-15.00": 14690,
+   "-14.75": 12942,
+   "-14.50": 10919,
+   "-14.25": 9193,
+   "-14.00": 7502,
+   "-13.75": 6217,
+   "-13.50": 4788,
+   "-13.25": 3597,
+   "-13.00": 2751,
+   "-12.75": 2066,
+   "-12.50": 1667,
+   "-12.25": 1375,
+   "-12.00": 1030,
+   "-11.75": 826,
+   "-11.50": 639,
+   "-11.25": 408,
+   "-11.00": 359,
+   "-10.75": 244,
+   "-10.50": 206,
+   "-10.25": 132,
+   "-10.00": 92,
+   "-9.75": 86,
+   "-9.50": 48,
+   "-9.25": 33,
+   "-9.00": 13,
+   "-8.75": 10,
+   "-8.50": 6,
+   "-8.25": 6,
+   "-8.00": 6,
+   "-7.75": 6,
+   "-7.50": 2,
+   "-7.00": 1,
+   "-6.25": 1
+  },
+  "boundUnscored": {
+   "-18.50": 3,
+   "-18.25": 7,
+   "-18.00": 11,
+   "-17.75": 33,
+   "-17.50": 31,
+   "-17.25": 56,
+   "-17.00": 69,
+   "-16.75": 91,
+   "-16.50": 101,
+   "-16.25": 137,
+   "-16.00": 212,
+   "-15.75": 279,
+   "-15.50": 376,
+   "-15.25": 556,
+   "-15.00": 776,
+   "-14.75": 989,
+   "-14.50": 1137,
+   "-14.25": 1316,
+   "-14.00": 1646,
+   "-13.75": 1953,
+   "-13.50": 2157,
+   "-13.25": 2501,
+   "-13.00": 430
+  }
+ },
+ "timeMs": {
+  "total": 2335,
+  "setup": 482
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "PEOPLEWILLNOT",
+   "wordLogp": -6.0994,
+   "words": "PEOPLE WILL NOT",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "N",
+    "c": "O",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "PEOPLECALLFOR",
+   "wordLogp": -6.8903,
+   "words": "PEOPLE CALL FOR",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "F",
+    "c": "O",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "PEOPLEWILLYOU",
+   "wordLogp": -7.3077,
+   "words": "PEOPLE WILL YOU",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "Y",
+    "c": "O",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "PEOPLEWILLAND",
+   "wordLogp": -7.3532,
+   "words": "PEOPLE WILL AND",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "A",
+    "c": "N",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "PEOPLEDOLLARS",
+   "wordLogp": -7.5366,
+   "words": "PEOPLE DOLLARS",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "D",
+    "f": "O",
+    "g": "A",
+    "c": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "PEOPLEWILLTRY",
+   "wordLogp": -7.5593,
+   "words": "PEOPLE WILL TRY",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "T",
+    "c": "R",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "PEOPLECALLING",
+   "wordLogp": -7.6641,
+   "words": "PEOPLE CALLING",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "I",
+    "c": "N",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "PEOPLECALLYOU",
+   "wordLogp": -7.6916,
+   "words": "PEOPLE CALL YOU",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "Y",
+    "c": "O",
+    "h": "U"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "PEOPLECALLOUR",
+   "wordLogp": -7.7138,
+   "words": "PEOPLE CALL OUR",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "O",
+    "c": "U",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "PEOPLEWILLRUN",
+   "wordLogp": -7.7385,
+   "words": "PEOPLE WILL RUN",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "R",
+    "c": "U",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "PEOPLEWILLFOR",
+   "wordLogp": -7.7697,
+   "words": "PEOPLE WILL FOR",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "F",
+    "c": "O",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "PEOPLECALLNOW",
+   "wordLogp": -7.7958,
+   "words": "PEOPLE CALL NOW",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "N",
+    "c": "O",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "PEOPLEWILLSAY",
+   "wordLogp": -7.7986,
+   "words": "PEOPLE WILL SAY",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "S",
+    "c": "A",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "PEOPLEWILLASK",
+   "wordLogp": -7.8797,
+   "words": "PEOPLE WILL ASK",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "A",
+    "c": "S",
+    "h": "K"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "PEOPLEROLLING",
+   "wordLogp": -7.9615,
+   "words": "PEOPLE ROLLING",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "R",
+    "f": "O",
+    "g": "I",
+    "c": "N",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "PEOPLECALLHIM",
+   "wordLogp": -7.9802,
+   "words": "PEOPLE CALL HIM",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "C",
+    "f": "A",
+    "g": "H",
+    "c": "I",
+    "h": "M"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "PEOPLECOLLINS",
+   "wordLogp": -8.0384,
+   "words": "PEOPLE COLLINS",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "C",
+    "f": "O",
+    "g": "I",
+    "c": "N",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "PEOPLEFALLING",
+   "wordLogp": -8.0494,
+   "words": "PEOPLE FALLING",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "F",
+    "f": "A",
+    "g": "I",
+    "c": "N",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "PEOPLEHOLLAND",
+   "wordLogp": -8.0647,
+   "words": "PEOPLE HOLLAND",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "H",
+    "f": "O",
+    "g": "A",
+    "c": "N",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "PEOPLEWILLBUY",
+   "wordLogp": -8.1733,
+   "words": "PEOPLE WILL BUY",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "d": "L",
+    "e": "W",
+    "f": "I",
+    "g": "B",
+    "c": "U",
+    "h": "Y"
+   }
+  }
+ ]
+}

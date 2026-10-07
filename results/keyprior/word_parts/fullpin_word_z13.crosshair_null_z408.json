@@ -1,0 +1,111 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:45:58.435Z",
+ "argv": "--ciphers z13.crosshair_null --keys z408 --null 10000 --null-kind permute --threads 1 --seed 1970 --stat word --out results/keyprior/word_parts/fullpin_word_z13.crosshair_null_z408.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 8.158,
+ "results": [
+  {
+   "cipher": "z13.crosshair_null",
+   "key": "z408",
+   "text": "AEN0K0M0[NAM",
+   "pinnedSymbols": "AENKM",
+   "nPinned": 5,
+   "nFree": 2,
+   "carriedOver": "WEE?S?H??EWH",
+   "real": {
+    "best": {
+     "plaintext": "WEEESEHEEEWH",
+     "words": "WEEESEHEEEWH",
+     "wordLogp": -16.640509543454158,
+     "unknownWords": [
+      "WEEESEHEEEWH"
+     ],
+     "ngram5": -58.03576993942261
+    },
+    "score": -16.260204269045914,
+    "top5": [
+     {
+      "plaintext": "WEEESEHEEEWH",
+      "score": -16.260204269045914
+     },
+     {
+      "plaintext": "WEEKSKHKEEWH",
+      "score": -16.376869015701637
+     },
+     {
+      "plaintext": "WEEESEHETEWH",
+      "score": -16.40006895219716
+     },
+     {
+      "plaintext": "WEEESEHEAEWH",
+      "score": -16.45434458410176
+     },
+     {
+      "plaintext": "WEEDSDHDEEWH",
+      "score": -16.458011016886978
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -16.853772928132294,
+     "sd": 1.666561044552383,
+     "min": -22.810479340588557,
+     "q05": -19.764131007229793,
+     "q25": -17.865438637768733,
+     "median": -16.803423104321467,
+     "q75": -15.744172868763911,
+     "q95": -14.185142738122478,
+     "q99": -13.118710003525308,
+     "max": -9.90134719830296
+    },
+    "topNull": [
+     {
+      "index": 1566,
+      "score": -9.90134719830296,
+      "plaintext": "TOASASESTATE"
+     },
+     {
+      "index": 780,
+      "score": -10.763989073827819,
+      "plaintext": "INHERETECHIT"
+     },
+     {
+      "index": 1170,
+      "score": -11.485984833755074,
+      "plaintext": "THEAWASASETS"
+     },
+     {
+      "index": 4042,
+      "score": -11.59980443173157,
+      "plaintext": "THENONANBETA"
+     },
+     {
+      "index": 1626,
+      "score": -11.844519661669452,
+      "plaintext": "AGEITISIDEAS"
+     }
+    ]
+   },
+   "test": {
+    "ge": 3651,
+    "n": 10000,
+    "p": 0.3651634836516348,
+    "percentile": 63.49,
+    "z": 0.3561637667138707
+   }
+  }
+ ]
+}

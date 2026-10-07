@@ -1,0 +1,604 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:11:18.609Z",
+ "label": "scr07_03",
+ "cipher": {
+  "id": "scr07",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr07.txt",
+  "text": "KMA0A0NN0M[Ez",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   3
+  ],
+  "isomorphAfterSlips": "abc*cdeedbfgh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 137127,
+  "scored": 127729,
+  "keptAtLeastStreamMin": 43,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 6611,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 723,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 43,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 31,
+  "4": 12
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.390583690269106,
+  "topShare": 0.07294035243995572,
+  "top10Share": 0.3521702087793306,
+  "effectiveNumberExpEntropy": 276.2277445156205,
+  "effectiveNumberInverseSimpson": 53.48838321429559,
+  "unscoredMassBoundRelative": 0.025323231833167738,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 8,
+   "maxWordLogp": -14.579037019902755,
+   "massEstimateRelative": 0.00006879925077599725,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.008234076669807865
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 4,
+   "-18.25": 2,
+   "-18.00": 9,
+   "-17.75": 6,
+   "-17.50": 43,
+   "-17.25": 62,
+   "-17.00": 96,
+   "-16.75": 132,
+   "-16.50": 114,
+   "-16.25": 134,
+   "-16.00": 144,
+   "-15.75": 163,
+   "-15.50": 188,
+   "-15.25": 280,
+   "-15.00": 385,
+   "-14.75": 568,
+   "-14.50": 712,
+   "-14.25": 876,
+   "-14.00": 1046,
+   "-13.75": 1236,
+   "-13.50": 1389,
+   "-13.25": 1543,
+   "-13.00": 1757,
+   "-12.75": 1791,
+   "-12.50": 2055,
+   "-12.25": 2370,
+   "-12.00": 2607,
+   "-11.75": 2947,
+   "-11.50": 3389,
+   "-11.25": 3932,
+   "-11.00": 4290,
+   "-10.75": 4527,
+   "-10.50": 4892,
+   "-10.25": 5194,
+   "-10.00": 5124,
+   "-9.75": 5419,
+   "-9.50": 5668,
+   "-9.25": 5846,
+   "-9.00": 5704,
+   "-8.75": 5801,
+   "-8.50": 6093,
+   "-8.25": 5810,
+   "-8.00": 5754,
+   "-7.75": 5657,
+   "-7.50": 5423,
+   "-7.25": 5032,
+   "-7.00": 4520,
+   "-6.75": 3890,
+   "-6.50": 3222,
+   "-6.25": 2618,
+   "-6.00": 2042,
+   "-5.75": 1551,
+   "-5.50": 1126,
+   "-5.25": 758,
+   "-5.00": 484,
+   "-4.75": 314,
+   "-4.50": 176,
+   "-4.25": 116,
+   "-4.00": 49,
+   "-3.75": 24,
+   "-3.50": 20,
+   "-3.00": 3
+  },
+  "exactScored": {
+   "-19.00": 3,
+   "-18.75": 21,
+   "-18.50": 180,
+   "-18.25": 548,
+   "-18.00": 1263,
+   "-17.75": 2176,
+   "-17.50": 3470,
+   "-17.25": 4786,
+   "-17.00": 6107,
+   "-16.75": 7487,
+   "-16.50": 9038,
+   "-16.25": 9172,
+   "-16.00": 9617,
+   "-15.75": 9773,
+   "-15.50": 9602,
+   "-15.25": 8988,
+   "-15.00": 8028,
+   "-14.75": 7020,
+   "-14.50": 5953,
+   "-14.25": 5027,
+   "-14.00": 4099,
+   "-13.75": 3396,
+   "-13.50": 2763,
+   "-13.25": 2263,
+   "-13.00": 1898,
+   "-12.75": 1397,
+   "-12.50": 1080,
+   "-12.25": 765,
+   "-12.00": 581,
+   "-11.75": 392,
+   "-11.50": 276,
+   "-11.25": 198,
+   "-11.00": 132,
+   "-10.75": 93,
+   "-10.50": 48,
+   "-10.25": 35,
+   "-10.00": 20,
+   "-9.75": 11,
+   "-9.50": 11,
+   "-9.25": 6,
+   "-9.00": 3,
+   "-8.75": 3
+  },
+  "boundUnscored": {
+   "-18.50": 4,
+   "-18.25": 2,
+   "-18.00": 9,
+   "-17.75": 6,
+   "-17.50": 43,
+   "-17.25": 62,
+   "-17.00": 96,
+   "-16.75": 132,
+   "-16.50": 114,
+   "-16.25": 134,
+   "-16.00": 144,
+   "-15.75": 163,
+   "-15.50": 188,
+   "-15.25": 280,
+   "-15.00": 385,
+   "-14.75": 568,
+   "-14.50": 712,
+   "-14.25": 876,
+   "-14.00": 1046,
+   "-13.75": 1236,
+   "-13.50": 1389,
+   "-13.25": 1543,
+   "-13.00": 266
+  }
+ },
+ "timeMs": {
+  "total": 1788,
+  "setup": 448
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "HOMEMILLIONBY",
+   "wordLogp": -8.5276,
+   "words": "HOME MILLION BY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "L",
+    "[": "N",
+    "E": "B",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "HOMEMILLIONAT",
+   "wordLogp": -8.5812,
+   "words": "HOME MILLION AT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "L",
+    "[": "N",
+    "E": "A",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "HOMEMILLIONAS",
+   "wordLogp": -8.6861,
+   "words": "HOME MILLION AS",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "L",
+    "[": "N",
+    "E": "A",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "HOMEMISSIONBY",
+   "wordLogp": -8.8521,
+   "words": "HOME MISSION BY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "S",
+    "[": "N",
+    "E": "B",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "HOMEMISSIONAT",
+   "wordLogp": -8.9578,
+   "words": "HOME MISSION AT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "S",
+    "[": "N",
+    "E": "A",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "HOMEMILLIONBE",
+   "wordLogp": -8.9583,
+   "words": "HOME MILLION BE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "L",
+    "[": "N",
+    "E": "B",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ORBEBETTERAND",
+   "wordLogp": -9.0387,
+   "words": "OR BE BETTER AND",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "O",
+    "M": "R",
+    "A": "B",
+    "N": "T",
+    "[": "A",
+    "E": "N",
+    "z": "D"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "DRAMAOFFORTHE",
+   "wordLogp": -9.0633,
+   "words": "DRAMA OF FOR THE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "K": "D",
+    "M": "R",
+    "A": "A",
+    "N": "F",
+    "[": "T",
+    "E": "H",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "HOMEMISSIONBE",
+   "wordLogp": -9.1864,
+   "words": "HOME MISSION BE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "S",
+    "[": "N",
+    "E": "B",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "HOMEMILLIONWE",
+   "wordLogp": -9.195,
+   "words": "HOME MILLION WE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "L",
+    "[": "N",
+    "E": "W",
+    "z": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SOMEMILLIONBY",
+   "wordLogp": -9.2019,
+   "words": "SOME MILLION BY",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "S",
+    "M": "O",
+    "A": "M",
+    "N": "L",
+    "[": "N",
+    "E": "B",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "HOMEMILLIONUS",
+   "wordLogp": -9.2486,
+   "words": "HOME MILLION US",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "L",
+    "[": "N",
+    "E": "U",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "SOMEMILLIONAT",
+   "wordLogp": -9.2555,
+   "words": "SOME MILLION AT",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "S",
+    "M": "O",
+    "A": "M",
+    "N": "L",
+    "[": "N",
+    "E": "A",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ONPAPERRENTAL",
+   "wordLogp": -9.3087,
+   "words": "ON PAPER RENTAL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "O",
+    "M": "N",
+    "A": "P",
+    "N": "R",
+    "[": "T",
+    "E": "A",
+    "z": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "INTOTALLANDOF",
+   "wordLogp": -9.3147,
+   "words": "IN TOTAL LAND OF",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "K": "I",
+    "M": "N",
+    "A": "T",
+    "N": "L",
+    "[": "D",
+    "E": "O",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "INTOTWOOWNERS",
+   "wordLogp": -9.3663,
+   "words": "INTO TWO OWNERS",
+   "unknown": 0,
+   "key": {
+    "0": "W",
+    "K": "I",
+    "M": "N",
+    "A": "T",
+    "N": "O",
+    "[": "E",
+    "E": "R",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "FINDNEWWEIGHT",
+   "wordLogp": -9.3852,
+   "words": "FIND NEW WEIGHT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "F",
+    "M": "I",
+    "A": "N",
+    "N": "W",
+    "[": "G",
+    "E": "H",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ORBEBETTERWAY",
+   "wordLogp": -9.3873,
+   "words": "OR BE BETTER WAY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "K": "O",
+    "M": "R",
+    "A": "B",
+    "N": "T",
+    "[": "W",
+    "E": "A",
+    "z": "Y"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "HOMEMILLIONSA",
+   "wordLogp": -9.4162,
+   "words": "HOME MILLIONS A",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "L",
+    "[": "N",
+    "E": "S",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "HOMEMILLIONUP",
+   "wordLogp": -9.4192,
+   "words": "HOME MILLION UP",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "K": "H",
+    "M": "O",
+    "A": "M",
+    "N": "L",
+    "[": "N",
+    "E": "U",
+    "z": "P"
+   }
+  }
+ ]
+}

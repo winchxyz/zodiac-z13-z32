@@ -1,0 +1,415 @@
+{
+ "tool": "tools/keyprior_joint.js",
+ "created": "2026-10-07T14:42:59.253Z",
+ "argv": "--synthetic 5 --null 30 --restarts 4 --iters 120000 --threads 4 --seed 2026 --out results/keyprior/joint_synthetic.json",
+ "solver": {
+  "restarts": 4,
+  "iters": 120000,
+  "T0": 8,
+  "objective": "sum of the anneal.js objectives of both ciphers under one key (links tie symbols)"
+ },
+ "null": {
+  "n": 30,
+  "kind": "A-side shared symbols linked to random B symbols with the same occurrence count as the real partner"
+ },
+ "seconds": 76.425,
+ "problems": [
+  {
+   "name": "syn0",
+   "a": "E=Kov6^&$BSgl",
+   "b": "3pKd;Fig>XZ#l7~1UVy3Aa@]WcrR.T+d",
+   "sharedSymbols": "Kgl",
+   "nLinks": 3,
+   "independent": {
+    "score": -173.19655669667304,
+    "ptA": "PRESENTHERAND",
+    "ptB": "ANDTHEWASTHEROOMANDANDTHECOMEBUT",
+    "restartScores": [
+     -187.9906637175652,
+     -184.26290799089796,
+     -186.9973325045445,
+     -173.19655669667304
+    ]
+   },
+   "joint": {
+    "score": -187.51279304152865,
+    "scoreA": -47.977082980970714,
+    "scoreB": -139.53571006055793,
+    "ptA": "BELIKETHESURE",
+    "ptB": "EALLTHEREDTHEFOLLOWEDTHEPASSINGL",
+    "wordsA": "BE LIKE THE SURE",
+    "wordsB": "E ALL THE RED THE FOLLOWED THE PASSING L",
+    "restartScores": [
+     -190.89798425006137,
+     -187.51279304152865,
+     -187.6239239184776,
+     -192.66198507653445
+    ]
+   },
+   "penaltyReal": 14.31623634485561,
+   "null": {
+    "n": 30,
+    "summary": {
+     "n": 30,
+     "finite": 30,
+     "mean": -185.02145734386258,
+     "sd": 3.303166931430399,
+     "min": -192.50273487603317,
+     "q05": -191.97977295376657,
+     "q25": -187.0281672472567,
+     "median": -184.40537023334142,
+     "q75": -183.171630515109,
+     "q95": -179.19248712024864,
+     "q99": -178.4147630602919,
+     "max": -178.4147630602919
+    },
+    "penaltySummary": {
+     "n": 30,
+     "finite": 30,
+     "mean": 11.824900647189539,
+     "sd": 3.303166931430399,
+     "min": 5.218206363618862,
+     "q05": 5.995930423575601,
+     "q25": 9.975073818435959,
+     "median": 11.43213830464964,
+     "q75": 13.831610550583662,
+     "q95": 18.783216257093528,
+     "q99": 19.30617817936013,
+     "max": 19.30617817936013
+    }
+   },
+   "test": {
+    "ge": 23,
+    "n": 30,
+    "p": 0.7741935483870968,
+    "percentile": 23.33333333333333
+   },
+   "truth": {
+    "a": "FAIXANIDOMISS",
+    "b": "SMITHHESUGGESTEDLETSWALKDOWNTHAT",
+    "score": -251.23511240195504
+   },
+   "truthRecovered": false
+  },
+  {
+   "name": "syn1",
+   "a": "i*bmMo3ap8?I|",
+   "b": "-Gq%+TB~_tPLmzkBb@jYW%!&*S)GMYo|",
+   "sharedSymbols": "*bmMo|",
+   "nLinks": 6,
+   "independent": {
+    "score": -187.5757409128156,
+    "ptA": "GOODINTHATTHE",
+    "ptB": "REDTHEINTHESHAVINGCOATEDTOBEFORE",
+    "restartScores": [
+     -189.5327479978292,
+     -199.3925566630259,
+     -188.34632646945582,
+     -187.5757409128156
+    ]
+   },
+   "joint": {
+    "score": -184.16553060222034,
+    "scoreA": -49.22771681437772,
+    "scoreB": -134.93781378784263,
+    "ptA": "GLENTHEREDTHE",
+    "ptB": "COVERTHEHADANDTHEOFTHEWILLNOTTHE",
+    "wordsA": "GLEN THE RED THE",
+    "wordsB": "COVER THE HAD AND THE OF THE WILL NOT THE",
+    "restartScores": [
+     -190.7638440899692,
+     -184.16553060222034,
+     -194.1955948183795,
+     -202.67407189985056
+    ]
+   },
+   "penaltyReal": -3.410210310595261,
+   "null": {
+    "n": 30,
+    "summary": {
+     "n": 30,
+     "finite": 30,
+     "mean": -188.42842559487923,
+     "sd": 4.400285699479904,
+     "min": -196.3001003363717,
+     "q05": -196.12324668426857,
+     "q25": -191.66009368161744,
+     "median": -187.86580218194968,
+     "q75": -185.07945807810776,
+     "q95": -180.78033273320378,
+     "q99": -178.56336698333166,
+     "max": -178.56336698333166
+    },
+    "penaltySummary": {
+     "n": 30,
+     "finite": 30,
+     "mean": 0.8526846820636688,
+     "sd": 4.400285699479904,
+     "min": -9.012373929483942,
+     "q05": -6.795408179611826,
+     "q25": -2.4962828347078414,
+     "median": 0.7802217523326931,
+     "q75": 4.0843527688018355,
+     "q95": 8.547505771452961,
+     "q99": 8.724359423556109,
+     "max": 8.724359423556109
+    }
+   },
+   "test": {
+    "ge": 4,
+    "n": 30,
+    "p": 0.16129032258064516,
+    "percentile": 86.66666666666667
+   },
+   "truth": {
+    "a": "THESEATJABBED",
+    "b": "SHELOOKEDLESSLIKEACHILDTHANHEHAD",
+    "score": -223.3267251892566
+   },
+   "truthRecovered": false
+  },
+  {
+   "name": "syn2",
+   "a": "AG-MBSP!4|WV%",
+   "b": "oE:Kvl^ZXy-)i$G>wTgM].EY/D+f2PJK",
+   "sharedSymbols": "G-MP",
+   "nLinks": 4,
+   "independent": {
+    "score": -179.31026733811046,
+    "ptA": "STINGINGFORTH",
+    "ptB": "THERESIDEOFTHENTHECLOTHINGANDFOR",
+    "restartScores": [
+     -183.34050445045722,
+     -179.31026733811046,
+     -193.6979373090066,
+     -185.36141542719906
+    ]
+   },
+   "joint": {
+    "score": -182.80033092598256,
+    "scoreA": -52.38347801864499,
+    "scoreB": -130.41685290733759,
+    "ptA": "ATHEPRESSWARM",
+    "ptB": "MATTERANDTHINGTHEYWEREABOUTTHEST",
+    "wordsA": "A THE PRESS WARM",
+    "wordsB": "MATTER AND THING THEY WERE ABOUT THE ST",
+    "restartScores": [
+     -182.80033092598256,
+     -196.69613157758394,
+     -194.70915207849708,
+     -194.29486803806688
+    ]
+   },
+   "penaltyReal": 3.4900635878721005,
+   "null": {
+    "n": 30,
+    "summary": {
+     "n": 30,
+     "finite": 30,
+     "mean": -183.0434241317881,
+     "sd": 4.021530405939719,
+     "min": -192.09831817755577,
+     "q05": -189.1803530355218,
+     "q25": -185.31174928125435,
+     "median": -183.50388039863472,
+     "q75": -180.99408397132413,
+     "q95": -173.406700595006,
+     "q99": -172.66833307663262,
+     "max": -172.66833307663262
+    },
+    "penaltySummary": {
+     "n": 30,
+     "finite": 30,
+     "mean": 3.7331567936776424,
+     "sd": 4.021530405939719,
+     "min": -6.641934261477843,
+     "q05": -5.903566743104477,
+     "q25": 1.6838166332136666,
+     "median": 4.385676530686169,
+     "q75": 6.001481943143887,
+     "q95": 9.870085697411326,
+     "q99": 12.788050839445305,
+     "max": 12.788050839445305
+    }
+   },
+   "test": {
+    "ge": 12,
+    "n": 30,
+    "p": 0.41935483870967744,
+    "percentile": 60
+   },
+   "truth": {
+    "a": "YESTHATSITAND",
+    "b": "HESEEMEDRESOLVEDNOTTOLEAPUPONTHE",
+    "score": -217.79909360279325
+   },
+   "truthRecovered": false
+  },
+  {
+   "name": "syn3",
+   "a": "+d>W7Nu?<1A@_",
+   "b": "P6Jl]O^Cp&:Edh-813z/UfWXco#JNx&H",
+   "sharedSymbols": "dWN1",
+   "nLinks": 4,
+   "independent": {
+    "score": -177.25806532149784,
+    "ptA": "ATHEREANDSAID",
+    "ptB": "PLACETHEREANDSOMETHERANGETHATWEB",
+    "restartScores": [
+     -187.9787229200867,
+     -177.25806532149784,
+     -184.2034981552688,
+     -187.1592597062929
+    ]
+   },
+   "joint": {
+    "score": -183.24647408524112,
+    "scoreA": -48.50125839094032,
+    "scoreB": -134.7452156943008,
+    "ptA": "TOTHEDISTAKEN",
+    "ptB": "CALLTHATHEREOVERANDTOTHEWOULDBEI",
+    "wordsA": "TO THE DIS TAKEN",
+    "wordsB": "CALL THAT HERE OVER AND TO THE WOULD BE I",
+    "restartScores": [
+     -192.10087841282356,
+     -186.00286924347228,
+     -183.24647408524112,
+     -189.1117446411595
+    ]
+   },
+   "penaltyReal": 5.98840876374328,
+   "null": {
+    "n": 30,
+    "summary": {
+     "n": 30,
+     "finite": 30,
+     "mean": -183.3765309842581,
+     "sd": 4.090858434039526,
+     "min": -189.3797494875771,
+     "q05": -189.07116549862292,
+     "q25": -186.31203329206534,
+     "median": -183.81574627538402,
+     "q75": -179.23157779994966,
+     "q95": -176.2382811519946,
+     "q99": -175.9107525922273,
+     "max": -175.9107525922273
+    },
+    "penaltySummary": {
+     "n": 30,
+     "finite": 30,
+     "mean": 6.118465662760237,
+     "sd": 4.090858434039527,
+     "min": -1.3473127292705271,
+     "q05": -1.0197841695032253,
+     "q25": 1.9735124784518234,
+     "median": 6.816236060650368,
+     "q75": 9.053967970567498,
+     "q95": 11.81310017712508,
+     "q99": 12.121684166079262,
+     "max": 12.121684166079262
+    }
+   },
+   "test": {
+    "ge": 12,
+    "n": 30,
+    "p": 0.41935483870967744,
+    "percentile": 60
+   },
+   "truth": {
+    "a": "WHENSHEPUTHER",
+    "b": "BUTITWASONETHINGTOLEARNSOMETHING",
+    "score": -195.3900622419883
+   },
+   "truthRecovered": false
+  },
+  {
+   "name": "syn4",
+   "a": "[*0q~LRTp&4sk",
+   "b": "Zsj$]htg<Orv1z%S~BkQ^ZJGx:p[yNFq",
+   "sharedSymbols": "[q~psk",
+   "nLinks": 6,
+   "independent": {
+    "score": -190.82307467791622,
+    "ptA": "FURTHERTHEMAN",
+    "ptB": "EDTHESIDEBOOKSTHATHEREFOUNDHERIN",
+    "restartScores": [
+     -190.9304384551498,
+     -190.82307467791622,
+     -194.68053486403602,
+     -192.22339030826163
+    ]
+   },
+   "joint": {
+    "score": -176.54027717563872,
+    "scoreA": -46.14438551181742,
+    "scoreB": -130.39589166382132,
+    "ptA": "HAVINGOFTHEIT",
+    "ptB": "RIVERANDTHEWASHINGTHEREDWITHOUTI",
+    "wordsA": "HAVING OF THE IT",
+    "wordsB": "RIVER AND THE WASHING THE RED WITHOUT I",
+    "restartScores": [
+     -192.2247952732476,
+     -192.4333794851333,
+     -189.45136423192662,
+     -176.54027717563872
+    ]
+   },
+   "penaltyReal": -14.282797502277504,
+   "null": {
+    "n": 30,
+    "summary": {
+     "n": 30,
+     "finite": 30,
+     "mean": -185.0790719923525,
+     "sd": 4.2192370482057235,
+     "min": -192.8704779302991,
+     "q05": -192.65057165249988,
+     "q25": -187.44722158647164,
+     "median": -184.93036369760307,
+     "q75": -183.57684646570564,
+     "q95": -178.7425522283994,
+     "q99": -174.30184750246977,
+     "max": -174.30184750246977
+    },
+    "penaltySummary": {
+     "n": 30,
+     "finite": 30,
+     "mean": -5.744002685563675,
+     "sd": 4.2192370482057235,
+     "min": -16.521227175446455,
+     "q05": -12.08052244951682,
+     "q25": -7.246228212210582,
+     "median": -5.707596057015735,
+     "q75": -3.375853091444583,
+     "q95": 1.827496974583653,
+     "q99": 2.0474032523828782,
+     "max": 2.0474032523828782
+    }
+   },
+   "test": {
+    "ge": 1,
+    "n": 30,
+    "p": 0.06451612903225806,
+    "percentile": 96.66666666666667
+   },
+   "truth": {
+    "a": "HOWHEMUSTLOVE",
+    "b": "EVENTHEBLOTTERSWERECLEANASTHOUGH",
+    "score": -209.21413219624066
+   },
+   "truthRecovered": false
+  }
+ ],
+ "power": {
+  "n": 5,
+  "pValues": [
+   0.7741935483870968,
+   0.16129032258064516,
+   0.41935483870967744,
+   0.41935483870967744,
+   0.06451612903225806
+  ],
+  "detectedAt05": 0,
+  "truthBeatsJoint": 0
+ }
+}

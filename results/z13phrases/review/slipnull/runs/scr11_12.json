@@ -1,0 +1,606 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:18:53.489Z",
+ "label": "scr11_12",
+ "cipher": {
+  "id": "scr11",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr11.txt",
+  "text": "EKNzNM0[MA0A0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   12
+  ],
+  "isomorphAfterSlips": "abcdcefgehfh*"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 138682,
+  "scored": 129547,
+  "keptAtLeastStreamMin": 45,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 6253,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 675,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 45,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 27,
+  "4": 18
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.464985139898209,
+  "topShare": 0.08071915618054806,
+  "top10Share": 0.25404433574625873,
+  "effectiveNumberExpEntropy": 421.58164230410534,
+  "effectiveNumberInverseSimpson": 78.69723177131407,
+  "unscoredMassBoundRelative": 0.02921417938050482,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 8,
+   "maxWordLogp": -15.852298778062774,
+   "massEstimateRelative": 0.0000066359197237094315,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.009161609061109544
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 4,
+   "-18.00": 9,
+   "-17.75": 16,
+   "-17.50": 19,
+   "-17.25": 25,
+   "-17.00": 58,
+   "-16.75": 58,
+   "-16.50": 91,
+   "-16.25": 124,
+   "-16.00": 170,
+   "-15.75": 220,
+   "-15.50": 280,
+   "-15.25": 377,
+   "-15.00": 460,
+   "-14.75": 576,
+   "-14.50": 717,
+   "-14.25": 846,
+   "-14.00": 972,
+   "-13.75": 1112,
+   "-13.50": 1294,
+   "-13.25": 1464,
+   "-13.00": 1648,
+   "-12.75": 1876,
+   "-12.50": 2253,
+   "-12.25": 2751,
+   "-12.00": 2992,
+   "-11.75": 3402,
+   "-11.50": 3723,
+   "-11.25": 4109,
+   "-11.00": 4385,
+   "-10.75": 4669,
+   "-10.50": 4727,
+   "-10.25": 4851,
+   "-10.00": 5205,
+   "-9.75": 5205,
+   "-9.50": 5431,
+   "-9.25": 5439,
+   "-9.00": 5550,
+   "-8.75": 5654,
+   "-8.50": 5715,
+   "-8.25": 5931,
+   "-8.00": 5869,
+   "-7.75": 5564,
+   "-7.50": 5337,
+   "-7.25": 4790,
+   "-7.00": 4409,
+   "-6.75": 3982,
+   "-6.50": 3437,
+   "-6.25": 2759,
+   "-6.00": 2286,
+   "-5.75": 1682,
+   "-5.50": 1320,
+   "-5.25": 952,
+   "-5.00": 671,
+   "-4.75": 469,
+   "-4.50": 295,
+   "-4.25": 170,
+   "-4.00": 103,
+   "-3.75": 86,
+   "-3.50": 51,
+   "-3.25": 21,
+   "-3.00": 16,
+   "-2.75": 1,
+   "-2.50": 3,
+   "-2.00": 1
+  },
+  "exactScored": {
+   "-19.00": 1,
+   "-18.75": 30,
+   "-18.50": 152,
+   "-18.25": 510,
+   "-18.00": 1290,
+   "-17.75": 2484,
+   "-17.50": 3754,
+   "-17.25": 5058,
+   "-17.00": 6481,
+   "-16.75": 7526,
+   "-16.50": 8528,
+   "-16.25": 9026,
+   "-16.00": 9431,
+   "-15.75": 9434,
+   "-15.50": 9196,
+   "-15.25": 8744,
+   "-15.00": 8174,
+   "-14.75": 7204,
+   "-14.50": 6515,
+   "-14.25": 5438,
+   "-14.00": 4630,
+   "-13.75": 3769,
+   "-13.50": 3150,
+   "-13.25": 2448,
+   "-13.00": 1798,
+   "-12.75": 1308,
+   "-12.50": 969,
+   "-12.25": 772,
+   "-12.00": 529,
+   "-11.75": 400,
+   "-11.50": 258,
+   "-11.25": 193,
+   "-11.00": 107,
+   "-10.75": 78,
+   "-10.50": 53,
+   "-10.25": 38,
+   "-10.00": 38,
+   "-9.75": 17,
+   "-9.50": 10,
+   "-9.25": 3,
+   "-9.00": 2,
+   "-8.75": 1
+  },
+  "boundUnscored": {
+   "-18.25": 4,
+   "-18.00": 9,
+   "-17.75": 16,
+   "-17.50": 19,
+   "-17.25": 25,
+   "-17.00": 58,
+   "-16.75": 58,
+   "-16.50": 91,
+   "-16.25": 124,
+   "-16.00": 170,
+   "-15.75": 220,
+   "-15.50": 280,
+   "-15.25": 377,
+   "-15.00": 460,
+   "-14.75": 576,
+   "-14.50": 717,
+   "-14.25": 846,
+   "-14.00": 972,
+   "-13.75": 1112,
+   "-13.50": 1294,
+   "-13.25": 1464,
+   "-13.00": 243
+  }
+ },
+ "timeMs": {
+  "total": 2619,
+  "setup": 580
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "PRESENTONITIS",
+   "wordLogp": -8.558,
+   "words": "PRESENT ON IT IS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "P",
+    "K": "R",
+    "N": "E",
+    "z": "S",
+    "M": "N",
+    "[": "O",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "FROMONLINELET",
+   "wordLogp": -8.9249,
+   "words": "FROM ONLINE LET",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "E": "F",
+    "K": "R",
+    "N": "O",
+    "z": "M",
+    "M": "N",
+    "[": "I",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "PROMOTESTHEHE",
+   "wordLogp": -8.9714,
+   "words": "PROMOTES THE HE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "E": "P",
+    "K": "R",
+    "N": "O",
+    "z": "M",
+    "M": "T",
+    "[": "S",
+    "A": "H"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "DISASTERTHEHE",
+   "wordLogp": -9.161,
+   "words": "DISASTER THE HE",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "E": "D",
+    "K": "I",
+    "N": "S",
+    "z": "A",
+    "M": "T",
+    "[": "R",
+    "A": "H"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "PRESENTUNITIS",
+   "wordLogp": -9.2156,
+   "words": "PRESENT UNIT IS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "P",
+    "K": "R",
+    "N": "E",
+    "z": "S",
+    "M": "N",
+    "[": "U",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "SHOPONLINELET",
+   "wordLogp": -9.2202,
+   "words": "SHOP ONLINE LET",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "E": "S",
+    "K": "H",
+    "N": "O",
+    "z": "P",
+    "M": "N",
+    "[": "I",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "PRESENTUNITIN",
+   "wordLogp": -9.3157,
+   "words": "PRESENT UNIT IN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "P",
+    "K": "R",
+    "N": "E",
+    "z": "S",
+    "M": "N",
+    "[": "U",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "PRESENTANITIS",
+   "wordLogp": -9.3294,
+   "words": "PRESENT AN IT IS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "P",
+    "K": "R",
+    "N": "E",
+    "z": "S",
+    "M": "N",
+    "[": "A",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THESEINDIANAA",
+   "wordLogp": -9.3575,
+   "words": "THESE INDIANA A",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "E": "T",
+    "K": "H",
+    "N": "E",
+    "z": "S",
+    "M": "I",
+    "[": "D",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "FROMONLINELED",
+   "wordLogp": -9.4064,
+   "words": "FROM ONLINE LED",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "E": "F",
+    "K": "R",
+    "N": "O",
+    "z": "M",
+    "M": "N",
+    "[": "I",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "FORTRIALINAND",
+   "wordLogp": -9.4219,
+   "words": "FOR TRIAL IN AND",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "E": "F",
+    "K": "O",
+    "N": "R",
+    "z": "T",
+    "M": "I",
+    "[": "L",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "FROMONLINELEE",
+   "wordLogp": -9.4315,
+   "words": "FROM ONLINE LEE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "E": "F",
+    "K": "R",
+    "N": "O",
+    "z": "M",
+    "M": "N",
+    "[": "I",
+    "A": "E"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "PHOTOINDIANAA",
+   "wordLogp": -9.4382,
+   "words": "PHOTO INDIANA A",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "E": "P",
+    "K": "H",
+    "N": "O",
+    "z": "T",
+    "M": "I",
+    "[": "D",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "PRESENTINATAX",
+   "wordLogp": -9.4679,
+   "words": "PRESENT IN A TAX",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "P",
+    "K": "R",
+    "N": "E",
+    "z": "S",
+    "M": "N",
+    "[": "I",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THEREINDIANAA",
+   "wordLogp": -9.4852,
+   "words": "THERE INDIANA A",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "E": "T",
+    "K": "H",
+    "N": "E",
+    "z": "R",
+    "M": "I",
+    "[": "D",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "POSTSINDIANAA",
+   "wordLogp": -9.4924,
+   "words": "POSTS INDIANA A",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "E": "P",
+    "K": "O",
+    "N": "S",
+    "z": "T",
+    "M": "I",
+    "[": "D",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "PRESENTONITIN",
+   "wordLogp": -9.5042,
+   "words": "PRESENT ON IT IN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "P",
+    "K": "R",
+    "N": "E",
+    "z": "S",
+    "M": "N",
+    "[": "O",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "PREVENTONITIS",
+   "wordLogp": -9.5531,
+   "words": "PREVENT ON IT IS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "E": "P",
+    "K": "R",
+    "N": "E",
+    "z": "V",
+    "M": "N",
+    "[": "O",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "FORTRADEANDNO",
+   "wordLogp": -9.557,
+   "words": "FOR TRADE AND NO",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "E": "F",
+    "K": "O",
+    "N": "R",
+    "z": "T",
+    "M": "A",
+    "[": "E",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "THEREALMAILIN",
+   "wordLogp": -9.5583,
+   "words": "THE REAL MAIL IN",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "E": "T",
+    "K": "H",
+    "N": "E",
+    "z": "R",
+    "M": "A",
+    "[": "M",
+    "A": "I"
+   }
+  }
+ ]
+}

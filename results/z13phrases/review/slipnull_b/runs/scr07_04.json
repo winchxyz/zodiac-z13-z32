@@ -1,0 +1,605 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:23:33.941Z",
+ "label": "scr07_04",
+ "cipher": {
+  "id": "scr07",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr07.txt",
+  "text": "0M[KM0E0NzNAA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   4
+  ],
+  "isomorphAfterSlips": "abcd*aeafgfhh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 193888,
+  "scored": 174873,
+  "keptAtLeastStreamMin": 43,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 6701,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 821,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 43,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 33,
+  "4": 9
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.4023542952781165,
+  "topShare": 0.09406163364352586,
+  "top10Share": 0.3310293789969725,
+  "effectiveNumberExpEntropy": 360.0841325925304,
+  "effectiveNumberInverseSimpson": 55.53441904090372,
+  "unscoredMassBoundRelative": 0.05264421147285322,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 18,
+   "maxWordLogp": -15.865618519404242,
+   "massEstimateRelative": 0.00001379576744022433,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.016697510461563377
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 3,
+   "-17.75": 9,
+   "-17.50": 21,
+   "-17.25": 35,
+   "-17.00": 62,
+   "-16.75": 180,
+   "-16.50": 208,
+   "-16.25": 293,
+   "-16.00": 388,
+   "-15.75": 502,
+   "-15.50": 631,
+   "-15.25": 749,
+   "-15.00": 868,
+   "-14.75": 1098,
+   "-14.50": 1402,
+   "-14.25": 1724,
+   "-14.00": 2167,
+   "-13.75": 2381,
+   "-13.50": 2712,
+   "-13.25": 3053,
+   "-13.00": 3481,
+   "-12.75": 3918,
+   "-12.50": 4250,
+   "-12.25": 4729,
+   "-12.00": 5132,
+   "-11.75": 5630,
+   "-11.50": 6193,
+   "-11.25": 6627,
+   "-11.00": 6956,
+   "-10.75": 7274,
+   "-10.50": 7715,
+   "-10.25": 7852,
+   "-10.00": 8016,
+   "-9.75": 8050,
+   "-9.50": 8004,
+   "-9.25": 8040,
+   "-9.00": 7663,
+   "-8.75": 7434,
+   "-8.50": 7122,
+   "-8.25": 6776,
+   "-8.00": 6536,
+   "-7.75": 5988,
+   "-7.50": 5489,
+   "-7.25": 5023,
+   "-7.00": 4334,
+   "-6.75": 3758,
+   "-6.50": 3200,
+   "-6.25": 2718,
+   "-6.00": 2044,
+   "-5.75": 1535,
+   "-5.50": 1244,
+   "-5.25": 895,
+   "-5.00": 638,
+   "-4.75": 425,
+   "-4.50": 298,
+   "-4.25": 190,
+   "-4.00": 97,
+   "-3.75": 63,
+   "-3.50": 23,
+   "-3.25": 27,
+   "-3.00": 10,
+   "-2.75": 2,
+   "-2.50": 3
+  },
+  "exactScored": {
+   "-19.00": 12,
+   "-18.75": 81,
+   "-18.50": 430,
+   "-18.25": 1232,
+   "-18.00": 2451,
+   "-17.75": 4131,
+   "-17.50": 6433,
+   "-17.25": 8520,
+   "-17.00": 10623,
+   "-16.75": 12341,
+   "-16.50": 13264,
+   "-16.25": 13423,
+   "-16.00": 13410,
+   "-15.75": 13315,
+   "-15.50": 12131,
+   "-15.25": 11026,
+   "-15.00": 9834,
+   "-14.75": 8102,
+   "-14.50": 7024,
+   "-14.25": 5840,
+   "-14.00": 4897,
+   "-13.75": 3932,
+   "-13.50": 3050,
+   "-13.25": 2353,
+   "-13.00": 1803,
+   "-12.75": 1386,
+   "-12.50": 1060,
+   "-12.25": 819,
+   "-12.00": 570,
+   "-11.75": 410,
+   "-11.50": 326,
+   "-11.25": 233,
+   "-11.00": 146,
+   "-10.75": 106,
+   "-10.50": 59,
+   "-10.25": 41,
+   "-10.00": 25,
+   "-9.75": 19,
+   "-9.50": 6,
+   "-9.25": 3,
+   "-9.00": 4,
+   "-8.75": 1,
+   "-8.50": 1
+  },
+  "boundUnscored": {
+   "-18.00": 3,
+   "-17.75": 9,
+   "-17.50": 21,
+   "-17.25": 35,
+   "-17.00": 62,
+   "-16.75": 180,
+   "-16.50": 208,
+   "-16.25": 293,
+   "-16.00": 388,
+   "-15.75": 502,
+   "-15.50": 631,
+   "-15.25": 749,
+   "-15.00": 868,
+   "-14.75": 1098,
+   "-14.50": 1402,
+   "-14.25": 1724,
+   "-14.00": 2167,
+   "-13.75": 2381,
+   "-13.50": 2712,
+   "-13.25": 3053,
+   "-13.00": 529
+  }
+ },
+ "timeMs": {
+  "total": 2910,
+  "setup": 471
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "THISSTATEWELL",
+   "wordLogp": -8.4289,
+   "words": "THIS STATE WELL",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "H",
+    "[": "I",
+    "K": "S",
+    "E": "A",
+    "N": "E",
+    "z": "W",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "ENTIREYEARALL",
+   "wordLogp": -8.708,
+   "words": "ENTIRE YEAR ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "T",
+    "K": "I",
+    "E": "Y",
+    "N": "A",
+    "z": "R",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "HEALTHSHOWOFF",
+   "wordLogp": -8.7996,
+   "words": "HEALTH SHOW OFF",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "E",
+    "[": "A",
+    "K": "L",
+    "E": "S",
+    "N": "O",
+    "z": "W",
+    "A": "F"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THISSTATECELL",
+   "wordLogp": -8.9344,
+   "words": "THIS STATE CELL",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "H",
+    "[": "I",
+    "K": "S",
+    "E": "A",
+    "N": "E",
+    "z": "C",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ENGINEREADALL",
+   "wordLogp": -8.967,
+   "words": "ENGINE READ ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "R",
+    "N": "A",
+    "z": "D",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "TICKETSTOROLL",
+   "wordLogp": -8.9767,
+   "words": "TICKETS TO ROLL",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "I",
+    "[": "C",
+    "K": "K",
+    "E": "S",
+    "N": "O",
+    "z": "R",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "INOFFICIALADD",
+   "wordLogp": -9.1253,
+   "words": "IN OFFICIAL ADD",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "N",
+    "[": "O",
+    "K": "F",
+    "E": "C",
+    "N": "A",
+    "z": "L",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ENTIREREADALL",
+   "wordLogp": -9.2037,
+   "words": "ENTIRE READ ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "T",
+    "K": "I",
+    "E": "R",
+    "N": "A",
+    "z": "D",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "IPHYSICIANALL",
+   "wordLogp": -9.2085,
+   "words": "I PHYSICIAN ALL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "P",
+    "[": "H",
+    "K": "Y",
+    "E": "C",
+    "N": "A",
+    "z": "N",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THEIRTOTALADD",
+   "wordLogp": -9.2624,
+   "words": "THEIR TOTAL ADD",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "H",
+    "[": "E",
+    "K": "I",
+    "E": "O",
+    "N": "A",
+    "z": "L",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "INACTIVITYTOO",
+   "wordLogp": -9.2801,
+   "words": "INACTIVITY TOO",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "N",
+    "[": "A",
+    "K": "C",
+    "E": "V",
+    "N": "T",
+    "z": "Y",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "WINDOWSWAYALL",
+   "wordLogp": -9.455,
+   "words": "WINDOWS WAY ALL",
+   "unknown": 0,
+   "key": {
+    "0": "W",
+    "M": "I",
+    "[": "N",
+    "K": "D",
+    "E": "S",
+    "N": "A",
+    "z": "Y",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ENTIREYEARADD",
+   "wordLogp": -9.4663,
+   "words": "ENTIRE YEAR ADD",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "T",
+    "K": "I",
+    "E": "Y",
+    "N": "A",
+    "z": "R",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "SPORTSISANALL",
+   "wordLogp": -9.4705,
+   "words": "SPORTS IS AN ALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "P",
+    "[": "O",
+    "K": "R",
+    "E": "I",
+    "N": "A",
+    "z": "N",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "COMPACTCANADD",
+   "wordLogp": -9.4797,
+   "words": "COMPACT CAN ADD",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "M": "O",
+    "[": "M",
+    "K": "P",
+    "E": "T",
+    "N": "A",
+    "z": "N",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THISSTATEDELL",
+   "wordLogp": -9.5221,
+   "words": "THIS STATE DELL",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "H",
+    "[": "I",
+    "K": "S",
+    "E": "A",
+    "N": "E",
+    "z": "D",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ENGINEYEARALL",
+   "wordLogp": -9.5303,
+   "words": "ENGINE YEAR ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "Y",
+    "N": "A",
+    "z": "R",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SPORTSISACALL",
+   "wordLogp": -9.5414,
+   "words": "SPORTS IS A CALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "P",
+    "[": "O",
+    "K": "R",
+    "E": "I",
+    "N": "A",
+    "z": "C",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "HOLDTHEHAWAII",
+   "wordLogp": -9.5598,
+   "words": "HOLD THE HAWAII",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "O",
+    "[": "L",
+    "K": "D",
+    "E": "E",
+    "N": "A",
+    "z": "W",
+    "A": "I"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "EMPIREREADALL",
+   "wordLogp": -9.5703,
+   "words": "EMPIRE READ ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "M",
+    "[": "P",
+    "K": "I",
+    "E": "R",
+    "N": "A",
+    "z": "D",
+    "A": "L"
+   }
+  }
+ ]
+}

@@ -1,0 +1,614 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:37:32.626Z",
+ "label": "eng09_12",
+ "cipher": {
+  "id": "eng09",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng09.txt",
+  "text": "abcdbefbgdahc",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   12
+  ],
+  "isomorphAfterSlips": "abcdbefbgdah*"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 845043,
+  "scored": 782484,
+  "keptAtLeastStreamMin": 192,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 28459,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 3409,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 192,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 7,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 4,
+  "3": 66,
+  "4": 122
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.566588981865312,
+  "topShare": 0.1317125564401583,
+  "top10Share": 0.4009977389044247,
+  "effectiveNumberExpEntropy": 373.15249401358733,
+  "effectiveNumberInverseSimpson": 31.145207613371458,
+  "unscoredMassBoundRelative": 0.02528009955005693,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 61,
+   "maxWordLogp": -15.035911033446084,
+   "massEstimateRelative": 0.000012697874013786408,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.00828470126927519
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 3,
+   "-18.25": 11,
+   "-18.00": 41,
+   "-17.75": 106,
+   "-17.50": 163,
+   "-17.25": 232,
+   "-17.00": 360,
+   "-16.75": 495,
+   "-16.50": 582,
+   "-16.25": 779,
+   "-16.00": 1043,
+   "-15.75": 1342,
+   "-15.50": 1753,
+   "-15.25": 2251,
+   "-15.00": 2907,
+   "-14.75": 3825,
+   "-14.50": 4664,
+   "-14.25": 5853,
+   "-14.00": 6735,
+   "-13.75": 7985,
+   "-13.50": 8956,
+   "-13.25": 10579,
+   "-13.00": 12210,
+   "-12.75": 13734,
+   "-12.50": 15410,
+   "-12.25": 17862,
+   "-12.00": 20247,
+   "-11.75": 22897,
+   "-11.50": 24995,
+   "-11.25": 27517,
+   "-11.00": 29250,
+   "-10.75": 30864,
+   "-10.50": 32439,
+   "-10.25": 33258,
+   "-10.00": 34065,
+   "-9.75": 34765,
+   "-9.50": 35215,
+   "-9.25": 35876,
+   "-9.00": 35867,
+   "-8.75": 36076,
+   "-8.50": 35409,
+   "-8.25": 34553,
+   "-8.00": 33628,
+   "-7.75": 31299,
+   "-7.50": 29046,
+   "-7.25": 26096,
+   "-7.00": 22594,
+   "-6.75": 19238,
+   "-6.50": 15826,
+   "-6.25": 12910,
+   "-6.00": 9521,
+   "-5.75": 7152,
+   "-5.50": 5126,
+   "-5.25": 3589,
+   "-5.00": 2383,
+   "-4.75": 1416,
+   "-4.50": 968,
+   "-4.25": 521,
+   "-4.00": 273,
+   "-3.75": 147,
+   "-3.50": 70,
+   "-3.25": 37,
+   "-3.00": 16,
+   "-2.75": 11,
+   "-2.50": 1,
+   "-2.00": 1
+  },
+  "exactScored": {
+   "-19.25": 27,
+   "-19.00": 77,
+   "-18.75": 418,
+   "-18.50": 1956,
+   "-18.25": 5503,
+   "-18.00": 11465,
+   "-17.75": 20800,
+   "-17.50": 32696,
+   "-17.25": 44374,
+   "-17.00": 53834,
+   "-16.75": 60510,
+   "-16.50": 63300,
+   "-16.25": 62610,
+   "-16.00": 60186,
+   "-15.75": 55376,
+   "-15.50": 50417,
+   "-15.25": 44668,
+   "-15.00": 39250,
+   "-14.75": 33664,
+   "-14.50": 28759,
+   "-14.25": 24056,
+   "-14.00": 19903,
+   "-13.75": 16136,
+   "-13.50": 12613,
+   "-13.25": 10021,
+   "-13.00": 7891,
+   "-12.75": 5838,
+   "-12.50": 4542,
+   "-12.25": 3353,
+   "-12.00": 2474,
+   "-11.75": 1793,
+   "-11.50": 1270,
+   "-11.25": 893,
+   "-11.00": 663,
+   "-10.75": 430,
+   "-10.50": 266,
+   "-10.25": 198,
+   "-10.00": 105,
+   "-9.75": 71,
+   "-9.50": 26,
+   "-9.25": 31,
+   "-9.00": 5,
+   "-8.75": 4,
+   "-8.50": 6,
+   "-8.25": 4,
+   "-7.75": 1,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-18.50": 3,
+   "-18.25": 11,
+   "-18.00": 41,
+   "-17.75": 106,
+   "-17.50": 163,
+   "-17.25": 232,
+   "-17.00": 360,
+   "-16.75": 495,
+   "-16.50": 582,
+   "-16.25": 779,
+   "-16.00": 1043,
+   "-15.75": 1342,
+   "-15.50": 1753,
+   "-15.25": 2251,
+   "-15.00": 2907,
+   "-14.75": 3825,
+   "-14.50": 4664,
+   "-14.25": 5853,
+   "-14.00": 6735,
+   "-13.75": 7985,
+   "-13.50": 8956,
+   "-13.25": 10579,
+   "-13.00": 1894
+  }
+ },
+ "timeMs": {
+  "total": 6634,
+  "setup": 453
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "SEQUENCEMUSIC",
+   "wordLogp": -7.447,
+   "words": "SEQUENCE MUSIC",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "Q",
+    "d": "U",
+    "e": "N",
+    "f": "C",
+    "g": "M",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TIMEINSIDETHE",
+   "wordLogp": -7.5766,
+   "words": "TIME INSIDE THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "I",
+    "c": "M",
+    "d": "E",
+    "e": "N",
+    "f": "S",
+    "g": "D",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "TOKNOWCOUNTRY",
+   "wordLogp": -8.0491,
+   "words": "TO KNOW COUNTRY",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "c": "K",
+    "d": "N",
+    "e": "W",
+    "f": "C",
+    "g": "U",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "TOGROWYOURTHE",
+   "wordLogp": -8.116,
+   "words": "TO GROW YOUR THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "c": "G",
+    "d": "R",
+    "e": "W",
+    "f": "Y",
+    "g": "U",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "TOFROMYOURTHE",
+   "wordLogp": -8.1707,
+   "words": "TO FROM YOUR THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "c": "F",
+    "d": "R",
+    "e": "M",
+    "f": "Y",
+    "g": "U",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ROLEOFPOVERTY",
+   "wordLogp": -8.2493,
+   "words": "ROLE OF POVERTY",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "O",
+    "c": "L",
+    "d": "E",
+    "e": "F",
+    "f": "P",
+    "g": "V",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "HOWTOFROMTHIS",
+   "wordLogp": -8.3015,
+   "words": "HOW TO FROM THIS",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "W",
+    "d": "T",
+    "e": "F",
+    "f": "R",
+    "g": "M",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "TIMEISLIKETHE",
+   "wordLogp": -8.3402,
+   "words": "TIME IS LIKE THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "I",
+    "c": "M",
+    "d": "E",
+    "e": "S",
+    "f": "L",
+    "g": "K",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "FANTASYARTFOR",
+   "wordLogp": -8.3882,
+   "words": "FANTASY ART FOR",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "A",
+    "c": "N",
+    "d": "T",
+    "e": "S",
+    "f": "Y",
+    "g": "R",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "TAKEAPLACETHE",
+   "wordLogp": -8.4067,
+   "words": "TAKE A PLACE THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "A",
+    "c": "K",
+    "d": "E",
+    "e": "P",
+    "f": "L",
+    "g": "C",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "TOWNOFCOUNTRY",
+   "wordLogp": -8.4079,
+   "words": "TOWN OF COUNTRY",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "c": "W",
+    "d": "N",
+    "e": "F",
+    "f": "C",
+    "g": "U",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "SECRETYEARSOF",
+   "wordLogp": -8.4651,
+   "words": "SECRET YEARS OF",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "C",
+    "d": "R",
+    "e": "T",
+    "f": "Y",
+    "g": "A",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "SEQUENCEJUSTA",
+   "wordLogp": -8.5434,
+   "words": "SEQUENCE JUST A",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "Q",
+    "d": "U",
+    "e": "N",
+    "f": "C",
+    "g": "J",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "HOWTOAMONTHLY",
+   "wordLogp": -8.6495,
+   "words": "HOW TO A MONTHLY",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "W",
+    "d": "T",
+    "e": "A",
+    "f": "M",
+    "g": "N",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HOWTOFROMTHAT",
+   "wordLogp": -8.6668,
+   "words": "HOW TO FROM THAT",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "W",
+    "d": "T",
+    "e": "F",
+    "f": "R",
+    "g": "M",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "TIMEINLIKETHE",
+   "wordLogp": -8.6956,
+   "words": "TIME IN LIKE THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "I",
+    "c": "M",
+    "d": "E",
+    "e": "N",
+    "f": "L",
+    "g": "K",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "TOKNOWCOUNTER",
+   "wordLogp": -8.7765,
+   "words": "TO KNOW COUNTER",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "c": "K",
+    "d": "N",
+    "e": "W",
+    "f": "C",
+    "g": "U",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SEQUENCEBUSTY",
+   "wordLogp": -8.8679,
+   "words": "SEQUENCE BUSTY",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "Q",
+    "d": "U",
+    "e": "N",
+    "f": "C",
+    "g": "B",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ROLEOFPOWERTO",
+   "wordLogp": -8.9066,
+   "words": "ROLE OF POWER TO",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "O",
+    "c": "L",
+    "d": "E",
+    "e": "F",
+    "f": "P",
+    "g": "W",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "TIMEINLIFETHE",
+   "wordLogp": -8.9072,
+   "words": "TIME IN LIFE THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "I",
+    "c": "M",
+    "d": "E",
+    "e": "N",
+    "f": "L",
+    "g": "F",
+    "h": "H"
+   }
+  }
+ ]
+}

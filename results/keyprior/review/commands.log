@@ -1,0 +1,22 @@
+# keyprior adversarial review, 2026-10-07. Run from the repository root. Heavy runs went through tools/run_slot.js (--threads 4).
+node tools/keyprior_selftest.js                                    # all checks pass
+# queue A (results/keyprior/review/queueA.sh)
+node tools/run_slot.js --label keyprior-review -- node results/keyprior/review/review_family.js --null 10000 --threads 4 --seed 1970 --out results/keyprior/review/family.json
+node tools/run_slot.js --label keyprior-review -- node tools/keyprior_fullpin.js --ciphers z32.canonical --keys z408,z340,union --null 1000 --null-kind permute --threads 4 --seed 1970 --max-free 3 --out results/keyprior/review/repro_fullpin_z32_canonical.json
+node tools/run_slot.js --label keyprior-review -- node tools/keyprior_fullpin.js --ciphers z32.canonical --keys z408 --null 200 --null-kind permute --threads 4 --seed 1970 --max-free 4 --out results/keyprior/review/repro_fullpin_z32_canonical_z408_200.json
+node tools/run_slot.js --label keyprior-review -- node tools/keyprior_condnull.js --stat objective --null 3000 --seed 21 --out results/keyprior/review/repro_condnull_objective.json
+# queue B (results/keyprior/review/queueB.sh)
+node tools/run_slot.js --label keyprior-review -- node tools/keyprior_z13subsets.js --fits <scratch>/keyprior/z13_homo_fits_top500k.tsv --kind words --keys z340 --null 20000 --with-t2 --threads 4 --seed 13 --out results/keyprior/review/z13subsets_top500k_z340_n20000.json
+node tools/run_slot.js --label keyprior-review -- node tools/keyprior_z13subsets.js --fits <scratch>/keyprior/z13_homo_fits_top500k.tsv --kind words --keys z408 --null 20000 --with-t2 --threads 4 --seed 13 --out results/keyprior/review/z13subsets_top500k_z408_n20000.json
+node tools/run_slot.js --label keyprior-review -- node results/keyprior/review/review_z32keylevel.js --key z408 --ks 8,16 --subsets 10 --null 60 --restarts 2 --iters-per-k 8:50000,16:25000 --threads 4 --seed 77 --out results/keyprior/review/z32keylevel_z408.json
+node tools/run_slot.js --label keyprior-review -- node results/keyprior/review/review_z32keylevel.js --key z340 --ks 8,16 --subsets 10 --null 60 --restarts 2 --iters-per-k 8:50000,16:25000 --threads 4 --seed 78 --out results/keyprior/review/z32keylevel_z340.json
+node tools/run_slot.js --label keyprior-review -- node tools/keyprior_joint.js --a z13.canonical --b z32.canonical --null 1 --restarts 16 --iters 120000 --threads 4 --seed 1332 --out results/keyprior/review/joint_convergence.json
+# queue C (results/keyprior/review/queueC.sh): only step 1 ran; steps 2-3 cancelled (see queueC.cancelled.txt)
+node tools/run_slot.js --label keyprior-review -- node tools/keyprior_fullpin.js --ciphers z13.circles_distinct --keys z408,z340 --null 2000 --null-kind permute --threads 4 --seed 1970 --max-free 4 --stat word --out results/keyprior/review/fullpin_z13_circles_word_n2000.json
+# small single-thread runs (< 45 s each)
+node tools/enumerate.js words --cipher data/ciphers/variants/z13.circles_distinct.txt --mode homophonic --top-words 100000 --vocab full --max-words 5 --pin A=D,E=R,N=E,z=A,K=A,M=O --threads 1 --max-seconds 40 --top 2000 --out results/keyprior/review/enum_z13_circles_distinct_words_pin_z340.json   # stopped at 40 s: counts are lower bounds
+node tools/enumerate.js words --cipher data/ciphers/variants/z13.circles_distinct.txt --mode homophonic --top-words 100000 --vocab full --max-words 5 --pin A=W,E=E,N=E,z=D,K=S,M=H --threads 1 --max-seconds 40 --top 2000 --out results/keyprior/review/enum_z13_circles_distinct_words_pin_z408.json   # stopped at 40 s
+node tools/enumerate.js names --cipher data/ciphers/variants/z13.circles_distinct.txt --mode homophonic --patterns FL,FIL,FML --fillers 1 --pin A=D,E=R,N=E,z=A,K=A,M=O --threads 1 --max-seconds 25 --out results/keyprior/review/enum_z13_circles_distinct_names_pin_z340.json
+node tools/enumerate.js names --cipher data/ciphers/variants/z13.circles_distinct.txt --mode homophonic --patterns FL,FIL,FML --fillers 1 --pin A=W,E=E,N=E,z=D,K=S,M=H --threads 1 --max-seconds 25 --out results/keyprior/review/enum_z13_circles_distinct_names_pin_z408.json
+# arithmetic checks (python one-liners on the attacker's JSON): arrangement p exact = ge/n = 1/360 = 0.0028; 0.0008 x 24 = 0.0192, x 2 = 0.0384
+# English reference: results/selftest.json synthetic zodiac63_len13 truthScore (20 texts): -70.1 .. -44.4; -62.05 is above 2 of 20

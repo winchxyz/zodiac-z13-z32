@@ -1,0 +1,609 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:23:49.729Z",
+ "label": "scr07_08",
+ "cipher": {
+  "id": "scr07",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr07.txt",
+  "text": "0M[KM0E0NzNAA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   8
+  ],
+  "isomorphAfterSlips": "abcdbaea*gfhh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 287349,
+  "scored": 265150,
+  "keptAtLeastStreamMin": 47,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 9790,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1056,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 47,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 30,
+  "4": 16
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.289800784824851,
+  "topShare": 0.0886973847561377,
+  "top10Share": 0.3332326699620173,
+  "effectiveNumberExpEntropy": 459.2991656709345,
+  "effectiveNumberInverseSimpson": 53.683419221380156,
+  "unscoredMassBoundRelative": 0.04742793281870977,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 20,
+   "maxWordLogp": -15.824282647736734,
+   "massEstimateRelative": 0.00000905510315222428,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.016232330284618162
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 4,
+   "-18.00": 8,
+   "-17.75": 25,
+   "-17.50": 35,
+   "-17.25": 71,
+   "-17.00": 107,
+   "-16.75": 162,
+   "-16.50": 209,
+   "-16.25": 259,
+   "-16.00": 313,
+   "-15.75": 468,
+   "-15.50": 576,
+   "-15.25": 778,
+   "-15.00": 1061,
+   "-14.75": 1240,
+   "-14.50": 1584,
+   "-14.25": 2012,
+   "-14.00": 2435,
+   "-13.75": 2794,
+   "-13.50": 3363,
+   "-13.25": 4028,
+   "-13.00": 4419,
+   "-12.75": 5075,
+   "-12.50": 5865,
+   "-12.25": 6562,
+   "-12.00": 7238,
+   "-11.75": 8211,
+   "-11.50": 9081,
+   "-11.25": 9676,
+   "-11.00": 10360,
+   "-10.75": 10749,
+   "-10.50": 11177,
+   "-10.25": 11554,
+   "-10.00": 11605,
+   "-9.75": 11923,
+   "-9.50": 12027,
+   "-9.25": 12114,
+   "-9.00": 11998,
+   "-8.75": 11900,
+   "-8.50": 11796,
+   "-8.25": 11269,
+   "-8.00": 10522,
+   "-7.75": 10028,
+   "-7.50": 9078,
+   "-7.25": 7896,
+   "-7.00": 7144,
+   "-6.75": 5906,
+   "-6.50": 5010,
+   "-6.25": 4045,
+   "-6.00": 3157,
+   "-5.75": 2501,
+   "-5.50": 1828,
+   "-5.25": 1368,
+   "-5.00": 921,
+   "-4.75": 657,
+   "-4.50": 432,
+   "-4.25": 303,
+   "-4.00": 179,
+   "-3.75": 112,
+   "-3.50": 64,
+   "-3.25": 34,
+   "-3.00": 16,
+   "-2.75": 13,
+   "-2.50": 2,
+   "-2.25": 1,
+   "-2.00": 1
+  },
+  "exactScored": {
+   "-19.25": 7,
+   "-19.00": 53,
+   "-18.75": 259,
+   "-18.50": 1026,
+   "-18.25": 2297,
+   "-18.00": 4651,
+   "-17.75": 7406,
+   "-17.50": 11046,
+   "-17.25": 14281,
+   "-17.00": 17098,
+   "-16.75": 19311,
+   "-16.50": 20405,
+   "-16.25": 20606,
+   "-16.00": 20340,
+   "-15.75": 19095,
+   "-15.50": 17547,
+   "-15.25": 15840,
+   "-15.00": 13734,
+   "-14.75": 11539,
+   "-14.50": 9999,
+   "-14.25": 8204,
+   "-14.00": 6876,
+   "-13.75": 5427,
+   "-13.50": 4370,
+   "-13.25": 3465,
+   "-13.00": 2613,
+   "-12.75": 2051,
+   "-12.50": 1601,
+   "-12.25": 1203,
+   "-12.00": 900,
+   "-11.75": 661,
+   "-11.50": 455,
+   "-11.25": 270,
+   "-11.00": 176,
+   "-10.75": 125,
+   "-10.50": 99,
+   "-10.25": 50,
+   "-10.00": 30,
+   "-9.75": 17,
+   "-9.50": 7,
+   "-9.25": 3,
+   "-9.00": 5,
+   "-8.50": 2
+  },
+  "boundUnscored": {
+   "-18.25": 4,
+   "-18.00": 8,
+   "-17.75": 25,
+   "-17.50": 35,
+   "-17.25": 71,
+   "-17.00": 107,
+   "-16.75": 162,
+   "-16.50": 209,
+   "-16.25": 259,
+   "-16.00": 313,
+   "-15.75": 468,
+   "-15.50": 576,
+   "-15.25": 778,
+   "-15.00": 1061,
+   "-14.75": 1240,
+   "-14.50": 1584,
+   "-14.25": 2012,
+   "-14.00": 2435,
+   "-13.75": 2794,
+   "-13.50": 3363,
+   "-13.25": 4028,
+   "-13.00": 667
+  }
+ },
+ "timeMs": {
+  "total": 2901,
+  "setup": 419
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ISPOSITIVEALL",
+   "wordLogp": -8.3419,
+   "words": "IS POSITIVE ALL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "S",
+    "[": "P",
+    "K": "O",
+    "E": "T",
+    "z": "E",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "SERVESASAFULL",
+   "wordLogp": -8.4192,
+   "words": "SERVES AS A FULL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "V",
+    "E": "A",
+    "z": "F",
+    "N": "U",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ENGINESEEFULL",
+   "wordLogp": -8.7962,
+   "words": "ENGINE SEE FULL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "S",
+    "z": "F",
+    "N": "U",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "SERVESASSTILL",
+   "wordLogp": -8.8497,
+   "words": "SERVES AS STILL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "V",
+    "E": "A",
+    "z": "T",
+    "N": "I",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "SERVESASAWILL",
+   "wordLogp": -8.8967,
+   "words": "SERVES AS A WILL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "V",
+    "E": "A",
+    "z": "W",
+    "N": "I",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ENGINEWESHALL",
+   "wordLogp": -8.9635,
+   "words": "ENGINE WE SHALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "W",
+    "z": "H",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "ENGINEREADALL",
+   "wordLogp": -8.967,
+   "words": "ENGINE READ ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "R",
+    "z": "D",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ISPOSITIVEADD",
+   "wordLogp": -9.0598,
+   "words": "IS POSITIVE ADD",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "S",
+    "[": "P",
+    "K": "O",
+    "E": "T",
+    "z": "E",
+    "N": "A",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "SITEISUSEDALL",
+   "wordLogp": -9.0772,
+   "words": "SITE IS USED ALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "I",
+    "[": "T",
+    "K": "E",
+    "E": "U",
+    "z": "D",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ROADORPROCESS",
+   "wordLogp": -9.2352,
+   "words": "ROAD OR PROCESS",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "[": "A",
+    "K": "D",
+    "E": "P",
+    "z": "C",
+    "N": "E",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SERIESASAFULL",
+   "wordLogp": -9.2556,
+   "words": "SERIES AS A FULL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "I",
+    "E": "A",
+    "z": "F",
+    "N": "U",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ISPOSITIONALL",
+   "wordLogp": -9.2759,
+   "words": "IS POSITION ALL",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "S",
+    "[": "P",
+    "K": "O",
+    "E": "T",
+    "z": "N",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "SERVESASABILL",
+   "wordLogp": -9.3744,
+   "words": "SERVES AS A BILL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "V",
+    "E": "A",
+    "z": "B",
+    "N": "I",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ENGINEHELPALL",
+   "wordLogp": -9.3747,
+   "words": "ENGINE HELP ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "H",
+    "z": "P",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "SERVESASSTUFF",
+   "wordLogp": -9.3791,
+   "words": "SERVES AS STUFF",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "V",
+    "E": "A",
+    "z": "T",
+    "N": "U",
+    "A": "F"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "SERIESUSEDALL",
+   "wordLogp": -9.4365,
+   "words": "SERIES USED ALL",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "I",
+    "E": "U",
+    "z": "D",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "SERVESASITOFF",
+   "wordLogp": -9.4811,
+   "words": "SERVES AS IT OFF",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "E",
+    "[": "R",
+    "K": "V",
+    "E": "A",
+    "z": "T",
+    "N": "O",
+    "A": "F"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ORDEROFOFWILL",
+   "wordLogp": -9.5068,
+   "words": "ORDER OF OF WILL",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "R",
+    "[": "D",
+    "K": "E",
+    "E": "F",
+    "z": "W",
+    "N": "I",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "ENGINEMEETALL",
+   "wordLogp": -9.5126,
+   "words": "ENGINE MEET ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "M",
+    "z": "T",
+    "N": "A",
+    "A": "L"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ENGINEYEARALL",
+   "wordLogp": -9.5303,
+   "words": "ENGINE YEAR ALL",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "M": "N",
+    "[": "G",
+    "K": "I",
+    "E": "Y",
+    "z": "R",
+    "N": "A",
+    "A": "L"
+   }
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:45:39.916Z",
+ "argv": "--ciphers z13.bracket_is_perp --keys z340 --null 10000 --null-kind permute --threads 1 --seed 1970 --stat word --out results/keyprior/word_parts/fullpin_word_z13.bracket_is_perp_z340.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 0.667,
+ "results": [
+  {
+   "cipher": "z13.bracket_is_perp",
+   "key": "z340",
+   "text": "AENz0K0M0tNAM",
+   "pinnedSymbols": "AENzKMt",
+   "nPinned": 7,
+   "nFree": 1,
+   "carriedOver": "DREA?A?O?LEDO",
+   "real": {
+    "best": {
+     "plaintext": "DREAMAMOMLEDO",
+     "words": "DREAM AMOMLEDO",
+     "wordLogp": -17.204047355698087,
+     "unknownWords": [
+      "AMOMLEDO"
+     ],
+     "ngram5": -63.271185874938965
+    },
+    "score": -17.10263484985554,
+    "top5": [
+     {
+      "plaintext": "DREAMAMOMLEDO",
+      "score": -17.10263484985554
+     },
+     {
+      "plaintext": "DREAEAEOELEDO",
+      "score": -17.790968709393088
+     },
+     {
+      "plaintext": "DREADADODLEDO",
+      "score": -17.88216651924553
+     },
+     {
+      "plaintext": "DREATATOTLEDO",
+      "score": -18.210562758846823
+     },
+     {
+      "plaintext": "DREAAAAOALEDO",
+      "score": -18.37338965456063
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -18.97086916078745,
+     "sd": 1.2334522759272735,
+     "min": -23.714248271140722,
+     "q05": -20.95692248880738,
+     "q25": -19.80422017112699,
+     "median": -18.9904252006146,
+     "q75": -18.181916711198845,
+     "q95": -16.909555771006357,
+     "q99": -15.863208385614096,
+     "max": -13.714996785138272
+    },
+    "topNull": [
+     {
+      "index": 6569,
+      "score": -13.714996785138272,
+      "plaintext": "STARRARERBASE"
+     },
+     {
+      "index": 921,
+      "score": -13.797705600167303,
+      "plaintext": "AREMINISITEAS"
+     },
+     {
+      "index": 5416,
+      "score": -13.821108462179172,
+      "plaintext": "SITEHUHTHATST"
+     },
+     {
+      "index": 3709,
+      "score": -13.932909949135277,
+      "plaintext": "ADELISISIDEAS"
+     },
+     {
+      "index": 2900,
+      "score": -13.98489812884949,
+      "plaintext": "EDTUTATSTATES"
+     }
+    ]
+   },
+   "test": {
+    "ge": 642,
+    "n": 10000,
+    "p": 0.06429357064293571,
+    "percentile": 93.58,
+    "z": 1.514638504783192
+   }
+  }
+ ]
+}

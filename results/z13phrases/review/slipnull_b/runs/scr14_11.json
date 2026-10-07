@@ -1,0 +1,569 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:28:58.041Z",
+ "label": "scr14_11",
+ "cipher": {
+  "id": "scr14",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr14.txt",
+  "text": "[0K0MMAA0zNNE",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   11
+  ],
+  "isomorphAfterSlips": "abcbddeebfg*h"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 137908,
+  "scored": 120271,
+  "keptAtLeastStreamMin": 18,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 3045,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 235,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 18,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 11,
+  "4": 7
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.833426920908019,
+  "topShare": 0.12855647093788788,
+  "top10Share": 0.44724868547065,
+  "effectiveNumberExpEntropy": 145.03204769757,
+  "effectiveNumberInverseSimpson": 28.85349939091924,
+  "unscoredMassBoundRelative": 0.13175030698575604,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 16,
+   "maxWordLogp": -15.603788207884069,
+   "massEstimateRelative": 0.00002944178113362187,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.041481978748421
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-18.00": 46,
+   "-17.75": 43,
+   "-17.50": 31,
+   "-17.25": 63,
+   "-17.00": 88,
+   "-16.75": 132,
+   "-16.50": 212,
+   "-16.25": 253,
+   "-16.00": 283,
+   "-15.75": 403,
+   "-15.50": 459,
+   "-15.25": 671,
+   "-15.00": 911,
+   "-14.75": 1092,
+   "-14.50": 1317,
+   "-14.25": 1646,
+   "-14.00": 1970,
+   "-13.75": 2253,
+   "-13.50": 2474,
+   "-13.25": 2837,
+   "-13.00": 3069,
+   "-12.75": 3258,
+   "-12.50": 3570,
+   "-12.25": 3640,
+   "-12.00": 4102,
+   "-11.75": 4540,
+   "-11.50": 4951,
+   "-11.25": 5398,
+   "-11.00": 5527,
+   "-10.75": 5658,
+   "-10.50": 5593,
+   "-10.25": 5508,
+   "-10.00": 5373,
+   "-9.75": 5184,
+   "-9.50": 5088,
+   "-9.25": 4562,
+   "-9.00": 4621,
+   "-8.75": 4435,
+   "-8.50": 4325,
+   "-8.25": 4185,
+   "-8.00": 4027,
+   "-7.75": 3858,
+   "-7.50": 3416,
+   "-7.25": 3170,
+   "-7.00": 2814,
+   "-6.75": 2303,
+   "-6.50": 1998,
+   "-6.25": 1617,
+   "-6.00": 1263,
+   "-5.75": 1041,
+   "-5.50": 790,
+   "-5.25": 628,
+   "-5.00": 444,
+   "-4.75": 315,
+   "-4.50": 205,
+   "-4.25": 123,
+   "-4.00": 74,
+   "-3.75": 34,
+   "-3.50": 13,
+   "-3.25": 2,
+   "-3.00": 1
+  },
+  "exactScored": {
+   "-19.00": 1,
+   "-18.75": 60,
+   "-18.50": 429,
+   "-18.25": 1339,
+   "-18.00": 2721,
+   "-17.75": 4479,
+   "-17.50": 6302,
+   "-17.25": 8252,
+   "-17.00": 9257,
+   "-16.75": 9921,
+   "-16.50": 9607,
+   "-16.25": 9321,
+   "-16.00": 8943,
+   "-15.75": 8443,
+   "-15.50": 7357,
+   "-15.25": 6384,
+   "-15.00": 5404,
+   "-14.75": 4467,
+   "-14.50": 3977,
+   "-14.25": 3182,
+   "-14.00": 2585,
+   "-13.75": 1953,
+   "-13.50": 1490,
+   "-13.25": 1170,
+   "-13.00": 1007,
+   "-12.75": 678,
+   "-12.50": 471,
+   "-12.25": 350,
+   "-12.00": 255,
+   "-11.75": 185,
+   "-11.50": 106,
+   "-11.25": 60,
+   "-11.00": 32,
+   "-10.75": 19,
+   "-10.50": 24,
+   "-10.25": 15,
+   "-10.00": 11,
+   "-9.75": 5,
+   "-9.50": 6,
+   "-9.25": 1,
+   "-9.00": 1,
+   "-8.75": 1
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-18.00": 46,
+   "-17.75": 43,
+   "-17.50": 31,
+   "-17.25": 63,
+   "-17.00": 88,
+   "-16.75": 132,
+   "-16.50": 212,
+   "-16.25": 253,
+   "-16.00": 283,
+   "-15.75": 403,
+   "-15.50": 459,
+   "-15.25": 671,
+   "-15.00": 911,
+   "-14.75": 1092,
+   "-14.50": 1317,
+   "-14.25": 1646,
+   "-14.00": 1970,
+   "-13.75": 2253,
+   "-13.50": 2474,
+   "-13.25": 2837,
+   "-13.00": 452
+  }
+ },
+ "timeMs": {
+  "total": 1476,
+  "setup": 404
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "TOWORRYYOUCAN",
+   "wordLogp": -8.7243,
+   "words": "TO WORRY YOU CAN",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "T",
+    "K": "W",
+    "M": "R",
+    "A": "Y",
+    "z": "U",
+    "N": "C",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TOWORRYYOUARE",
+   "wordLogp": -8.8662,
+   "words": "TO WORRY YOU ARE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "T",
+    "K": "W",
+    "M": "R",
+    "A": "Y",
+    "z": "U",
+    "N": "A",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "WEREAACCEPTED",
+   "wordLogp": -9.1961,
+   "words": "WERE A ACCEPTED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "W",
+    "K": "R",
+    "M": "A",
+    "A": "C",
+    "z": "P",
+    "N": "T",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "TOSORRYYOUCAN",
+   "wordLogp": -9.3009,
+   "words": "TO SORRY YOU CAN",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "T",
+    "K": "S",
+    "M": "R",
+    "A": "Y",
+    "z": "U",
+    "N": "C",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "WEREAASSEMBLY",
+   "wordLogp": -9.3398,
+   "words": "WERE A ASSEMBLY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "W",
+    "K": "R",
+    "M": "A",
+    "A": "S",
+    "z": "M",
+    "N": "B",
+    "E": "Y"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "HEREAACCEPTED",
+   "wordLogp": -9.3816,
+   "words": "HERE A ACCEPTED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "K": "R",
+    "M": "A",
+    "A": "C",
+    "z": "P",
+    "N": "T",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "TOSORRYYOUARE",
+   "wordLogp": -9.4427,
+   "words": "TO SORRY YOU ARE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "T",
+    "K": "S",
+    "M": "R",
+    "A": "Y",
+    "z": "U",
+    "N": "A",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "WEREAAFFECTED",
+   "wordLogp": -9.4818,
+   "words": "WERE A AFFECTED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "W",
+    "K": "R",
+    "M": "A",
+    "A": "F",
+    "z": "C",
+    "N": "T",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "WEREAAPPENDIX",
+   "wordLogp": -9.4983,
+   "words": "WERE A APPENDIX",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "W",
+    "K": "R",
+    "M": "A",
+    "A": "P",
+    "z": "N",
+    "N": "D",
+    "E": "X"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "HEREAASSEMBLY",
+   "wordLogp": -9.5253,
+   "words": "HERE A ASSEMBLY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "K": "R",
+    "M": "A",
+    "A": "S",
+    "z": "M",
+    "N": "B",
+    "E": "Y"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "TOWORRYYOUAND",
+   "wordLogp": -9.5819,
+   "words": "TO WORRY YOU AND",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "T",
+    "K": "W",
+    "M": "R",
+    "A": "Y",
+    "z": "U",
+    "N": "A",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "TOPOLLSSOURCE",
+   "wordLogp": -9.5867,
+   "words": "TO POLLS SOURCE",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "T",
+    "K": "P",
+    "M": "L",
+    "A": "S",
+    "z": "U",
+    "N": "R",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "HEREAAFFECTED",
+   "wordLogp": -9.6673,
+   "words": "HERE A AFFECTED",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "K": "R",
+    "M": "A",
+    "A": "F",
+    "z": "C",
+    "N": "T",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "HEREAAPPENDIX",
+   "wordLogp": -9.6838,
+   "words": "HERE A APPENDIX",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "K": "R",
+    "M": "A",
+    "A": "P",
+    "z": "N",
+    "N": "D",
+    "E": "X"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "GOTOAACCOUNTS",
+   "wordLogp": -9.756,
+   "words": "GO TO A ACCOUNTS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "G",
+    "K": "T",
+    "M": "A",
+    "A": "C",
+    "z": "U",
+    "N": "N",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "WEREAATTEMPTS",
+   "wordLogp": -9.7669,
+   "words": "WERE A ATTEMPTS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "W",
+    "K": "R",
+    "M": "A",
+    "A": "T",
+    "z": "M",
+    "N": "P",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "HETELLSSECOND",
+   "wordLogp": -9.7792,
+   "words": "HE TELLS SECOND",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "H",
+    "K": "T",
+    "M": "L",
+    "A": "S",
+    "z": "C",
+    "N": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "WEGETTOOEARLY",
+   "wordLogp": -9.7851,
+   "words": "WE GET TOO EARLY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "W",
+    "K": "G",
+    "M": "T",
+    "A": "O",
+    "z": "A",
+    "N": "R",
+    "E": "Y"
+   }
+  }
+ ]
+}

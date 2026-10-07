@@ -1,0 +1,609 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:39:11.150Z",
+ "label": "eng12_00",
+ "cipher": {
+  "id": "eng12",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng12.txt",
+  "text": "abcdabceffgfh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   0
+  ],
+  "isomorphAfterSlips": "*bcdabceffgfh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 118,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 118,
+  "tasks": 118,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 387487,
+  "scored": 373419,
+  "keptAtLeastStreamMin": 163,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 18947,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2027,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 163,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 3,
+  "3": 83,
+  "4": 77
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.70884680592318,
+  "topShare": 0.2241902748071505,
+  "top10Share": 0.4030703284475881,
+  "effectiveNumberExpEntropy": 225.19062538928327,
+  "effectiveNumberInverseSimpson": 17.35686416391791,
+  "unscoredMassBoundRelative": 0.007888222744985674,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 12,
+   "maxWordLogp": -15.97062830858272,
+   "massEstimateRelative": 0.0000012556981217877815,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.003036704590318704
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 1,
+   "-17.75": 5,
+   "-17.50": 5,
+   "-17.25": 12,
+   "-17.00": 26,
+   "-16.75": 22,
+   "-16.50": 45,
+   "-16.25": 54,
+   "-16.00": 60,
+   "-15.75": 113,
+   "-15.50": 169,
+   "-15.25": 281,
+   "-15.00": 527,
+   "-14.75": 826,
+   "-14.50": 1140,
+   "-14.25": 1368,
+   "-14.00": 1719,
+   "-13.75": 1954,
+   "-13.50": 2332,
+   "-13.25": 2867,
+   "-13.00": 3478,
+   "-12.75": 4231,
+   "-12.50": 4889,
+   "-12.25": 5855,
+   "-12.00": 7154,
+   "-11.75": 8606,
+   "-11.50": 10068,
+   "-11.25": 11334,
+   "-11.00": 12160,
+   "-10.75": 13015,
+   "-10.50": 13767,
+   "-10.25": 14877,
+   "-10.00": 15252,
+   "-9.75": 16102,
+   "-9.50": 16625,
+   "-9.25": 17017,
+   "-9.00": 17744,
+   "-8.75": 18292,
+   "-8.50": 18263,
+   "-8.25": 17977,
+   "-8.00": 17598,
+   "-7.75": 16813,
+   "-7.50": 15814,
+   "-7.25": 14382,
+   "-7.00": 13006,
+   "-6.75": 11153,
+   "-6.50": 9334,
+   "-6.25": 7768,
+   "-6.00": 6103,
+   "-5.75": 4624,
+   "-5.50": 3659,
+   "-5.25": 2445,
+   "-5.00": 1738,
+   "-4.75": 1188,
+   "-4.50": 689,
+   "-4.25": 432,
+   "-4.00": 246,
+   "-3.75": 138,
+   "-3.50": 66,
+   "-3.25": 29,
+   "-3.00": 17,
+   "-2.75": 8,
+   "-2.50": 4,
+   "-2.25": 1
+  },
+  "exactScored": {
+   "-19.25": 6,
+   "-19.00": 59,
+   "-18.75": 251,
+   "-18.50": 713,
+   "-18.25": 1949,
+   "-18.00": 4206,
+   "-17.75": 7792,
+   "-17.50": 12520,
+   "-17.25": 17764,
+   "-17.00": 22723,
+   "-16.75": 25706,
+   "-16.50": 27387,
+   "-16.25": 26995,
+   "-16.00": 26013,
+   "-15.75": 23960,
+   "-15.50": 22151,
+   "-15.25": 20597,
+   "-15.00": 19858,
+   "-14.75": 18742,
+   "-14.50": 17219,
+   "-14.25": 15743,
+   "-14.00": 13526,
+   "-13.75": 11296,
+   "-13.50": 9127,
+   "-13.25": 7218,
+   "-13.00": 5534,
+   "-12.75": 4073,
+   "-12.50": 3004,
+   "-12.25": 2199,
+   "-12.00": 1620,
+   "-11.75": 1082,
+   "-11.50": 801,
+   "-11.25": 530,
+   "-11.00": 362,
+   "-10.75": 223,
+   "-10.50": 157,
+   "-10.25": 102,
+   "-10.00": 81,
+   "-9.75": 52,
+   "-9.50": 33,
+   "-9.25": 18,
+   "-9.00": 15,
+   "-8.75": 7,
+   "-8.50": 3,
+   "-8.00": 1,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-18.00": 1,
+   "-17.75": 5,
+   "-17.50": 5,
+   "-17.25": 12,
+   "-17.00": 26,
+   "-16.75": 22,
+   "-16.50": 45,
+   "-16.25": 54,
+   "-16.00": 60,
+   "-15.75": 113,
+   "-15.50": 169,
+   "-15.25": 281,
+   "-15.00": 527,
+   "-14.75": 826,
+   "-14.50": 1140,
+   "-14.25": 1368,
+   "-14.00": 1719,
+   "-13.75": 1954,
+   "-13.50": 2332,
+   "-13.25": 2867,
+   "-13.00": 542
+  }
+ },
+ "timeMs": {
+  "total": 3104,
+  "setup": 394
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ANDHANDBOOKOF",
+   "wordLogp": -7.3582,
+   "words": "AND HANDBOOK OF",
+   "unknown": 0,
+   "key": {
+    "b": "N",
+    "c": "D",
+    "d": "H",
+    "a": "A",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "WHENTHEBOOKOF",
+   "wordLogp": -7.9025,
+   "words": "WHEN THE BOOK OF",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "a": "T",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THENTHEBOOKOF",
+   "wordLogp": -8.3809,
+   "words": "THEN THE BOOK OF",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "a": "T",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "WHENTHEDOOROF",
+   "wordLogp": -8.4047,
+   "words": "WHEN THE DOOR OF",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "a": "T",
+    "e": "D",
+    "f": "O",
+    "g": "R",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "MORETORUNNING",
+   "wordLogp": -8.4843,
+   "words": "MORE TO RUNNING",
+   "unknown": 0,
+   "key": {
+    "b": "O",
+    "c": "R",
+    "d": "E",
+    "a": "T",
+    "e": "U",
+    "f": "N",
+    "g": "I",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "WHENTHEROOMOF",
+   "wordLogp": -8.5937,
+   "words": "WHEN THE ROOM OF",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "a": "T",
+    "e": "R",
+    "f": "O",
+    "g": "M",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "HERTHERUNNING",
+   "wordLogp": -8.6465,
+   "words": "HER THE RUNNING",
+   "unknown": 0,
+   "key": {
+    "b": "E",
+    "c": "R",
+    "d": "T",
+    "a": "H",
+    "e": "U",
+    "f": "N",
+    "g": "I",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "YOURHOUSEEVEN",
+   "wordLogp": -8.665,
+   "words": "YOUR HOUSE EVEN",
+   "unknown": 0,
+   "key": {
+    "b": "O",
+    "c": "U",
+    "d": "R",
+    "a": "H",
+    "e": "S",
+    "f": "E",
+    "g": "V",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "WHENTHEGOODOF",
+   "wordLogp": -8.6736,
+   "words": "WHEN THE GOOD OF",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "a": "T",
+    "e": "G",
+    "f": "O",
+    "g": "D",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "WHENTHEPOOLOF",
+   "wordLogp": -8.7013,
+   "words": "WHEN THE POOL OF",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "a": "T",
+    "e": "P",
+    "f": "O",
+    "g": "L",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "REDUCEDASSIST",
+   "wordLogp": -8.706,
+   "words": "REDUCED ASSIST",
+   "unknown": 0,
+   "key": {
+    "b": "E",
+    "c": "D",
+    "d": "U",
+    "a": "C",
+    "e": "A",
+    "f": "S",
+    "g": "I",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "HISTHISBOOKOF",
+   "wordLogp": -8.7096,
+   "words": "HIS THIS BOOK OF",
+   "unknown": 0,
+   "key": {
+    "b": "I",
+    "c": "S",
+    "d": "T",
+    "a": "H",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THEMTHEBOOKOF",
+   "wordLogp": -8.7581,
+   "words": "THEM THE BOOK OF",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "M",
+    "a": "T",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "FORTWORUNNING",
+   "wordLogp": -8.7723,
+   "words": "FOR TWO RUNNING",
+   "unknown": 0,
+   "key": {
+    "b": "O",
+    "c": "R",
+    "d": "T",
+    "a": "W",
+    "e": "U",
+    "f": "N",
+    "g": "I",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "WORKTORUNNING",
+   "wordLogp": -8.8143,
+   "words": "WORK TO RUNNING",
+   "unknown": 0,
+   "key": {
+    "b": "O",
+    "c": "R",
+    "d": "K",
+    "a": "T",
+    "e": "U",
+    "f": "N",
+    "g": "I",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "WHENTHEBOOKOR",
+   "wordLogp": -8.8263,
+   "words": "WHEN THE BOOK OR",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "a": "T",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "WITHAITSEEMED",
+   "wordLogp": -8.8441,
+   "words": "WITH A IT SEEMED",
+   "unknown": 0,
+   "key": {
+    "b": "I",
+    "c": "T",
+    "d": "H",
+    "a": "A",
+    "e": "S",
+    "f": "E",
+    "g": "M",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THENTHEDOOROF",
+   "wordLogp": -8.883,
+   "words": "THEN THE DOOR OF",
+   "unknown": 0,
+   "key": {
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "a": "T",
+    "e": "D",
+    "f": "O",
+    "g": "R",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "REDUCEDBOOKOF",
+   "wordLogp": -8.8869,
+   "words": "REDUCED BOOK OF",
+   "unknown": 0,
+   "key": {
+    "b": "E",
+    "c": "D",
+    "d": "U",
+    "a": "C",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "ITHASTHREENEW",
+   "wordLogp": -8.8945,
+   "words": "IT HAS THREE NEW",
+   "unknown": 0,
+   "key": {
+    "b": "T",
+    "c": "H",
+    "d": "A",
+    "a": "S",
+    "e": "R",
+    "f": "E",
+    "g": "N",
+    "h": "W"
+   }
+  }
+ ]
+}

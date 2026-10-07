@@ -1,0 +1,197 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:39:04.146Z",
+ "label": "eng11_10",
+ "cipher": {
+  "id": "eng11",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng11.txt",
+  "text": "aabcbadefghgf",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   10
+  ],
+  "isomorphAfterSlips": "aabcbadefg*gf"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 4,
+  "tasks": 115,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 115,
+  "tasks": 115,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 379,
+  "scored": 374,
+  "keptAtLeastStreamMin": 0,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 33,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 3,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 0,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {},
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -10.324432852992931,
+  "topShare": null,
+  "top10Share": null,
+  "effectiveNumberExpEntropy": 18.265724199058265,
+  "effectiveNumberInverseSimpson": 8.93055676453567,
+  "unscoredMassBoundRelative": 0.0115691874375611,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.003683064449075659
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-14.50": 2,
+   "-13.75": 2,
+   "-13.25": 1,
+   "-13.00": 1,
+   "-12.75": 4,
+   "-12.50": 3,
+   "-12.25": 1,
+   "-12.00": 3,
+   "-11.75": 5,
+   "-11.50": 5,
+   "-11.25": 4,
+   "-11.00": 11,
+   "-10.75": 8,
+   "-10.50": 10,
+   "-10.25": 11,
+   "-10.00": 11,
+   "-9.75": 17,
+   "-9.50": 10,
+   "-9.25": 19,
+   "-9.00": 19,
+   "-8.75": 18,
+   "-8.50": 14,
+   "-8.25": 18,
+   "-8.00": 11,
+   "-7.75": 16,
+   "-7.50": 18,
+   "-7.25": 21,
+   "-7.00": 12,
+   "-6.75": 19,
+   "-6.50": 18,
+   "-6.25": 12,
+   "-6.00": 12,
+   "-5.75": 9,
+   "-5.50": 9,
+   "-5.25": 12,
+   "-5.00": 5,
+   "-4.75": 4,
+   "-4.50": 4
+  },
+  "exactScored": {
+   "-16.50": 1,
+   "-16.25": 3,
+   "-16.00": 10,
+   "-15.75": 26,
+   "-15.50": 39,
+   "-15.25": 31,
+   "-15.00": 44,
+   "-14.75": 46,
+   "-14.50": 44,
+   "-14.25": 26,
+   "-14.00": 23,
+   "-13.75": 22,
+   "-13.50": 13,
+   "-13.25": 12,
+   "-13.00": 8,
+   "-12.75": 9,
+   "-12.50": 4,
+   "-12.25": 5,
+   "-12.00": 2,
+   "-11.75": 1,
+   "-11.50": 2,
+   "-11.25": 2,
+   "-11.00": 1
+  },
+  "boundUnscored": {
+   "-14.50": 2,
+   "-13.75": 2,
+   "-13.25": 1
+  }
+ },
+ "timeMs": {
+  "total": 990,
+  "setup": 471
+ },
+ "violations": [],
+ "top": []
+}

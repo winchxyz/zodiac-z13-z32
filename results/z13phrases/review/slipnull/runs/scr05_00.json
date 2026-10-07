@@ -1,0 +1,610 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:09:50.341Z",
+ "label": "scr05_00",
+ "cipher": {
+  "id": "scr05",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr05.txt",
+  "text": "00MENAA[M0NzK",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   0
+  ],
+  "isomorphAfterSlips": "*abcdeefbadgh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 118,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 118,
+  "tasks": 118,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 228632,
+  "scored": 212332,
+  "keptAtLeastStreamMin": 118,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 12025,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1414,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 118,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 8,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 19,
+  "3": 67,
+  "4": 32
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.683774408656139,
+  "topShare": 0.1425193601017229,
+  "top10Share": 0.4639945432106486,
+  "effectiveNumberExpEntropy": 126.19148275978645,
+  "effectiveNumberInverseSimpson": 26.87743224226956,
+  "unscoredMassBoundRelative": 0.008627044000203043,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 13,
+   "maxWordLogp": -15.098053856540396,
+   "massEstimateRelative": 0.0000093714972282765,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0028305763932997526
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 2,
+   "-18.00": 11,
+   "-17.75": 33,
+   "-17.50": 48,
+   "-17.25": 81,
+   "-17.00": 111,
+   "-16.75": 112,
+   "-16.50": 173,
+   "-16.25": 187,
+   "-16.00": 245,
+   "-15.75": 340,
+   "-15.50": 449,
+   "-15.25": 576,
+   "-15.00": 745,
+   "-14.75": 1003,
+   "-14.50": 1262,
+   "-14.25": 1434,
+   "-14.00": 1794,
+   "-13.75": 2112,
+   "-13.50": 2333,
+   "-13.25": 2777,
+   "-13.00": 3102,
+   "-12.75": 3619,
+   "-12.50": 4036,
+   "-12.25": 4643,
+   "-12.00": 5261,
+   "-11.75": 6004,
+   "-11.50": 6549,
+   "-11.25": 7253,
+   "-11.00": 7787,
+   "-10.75": 8378,
+   "-10.50": 8694,
+   "-10.25": 8809,
+   "-10.00": 8938,
+   "-9.75": 9394,
+   "-9.50": 9344,
+   "-9.25": 9315,
+   "-9.00": 9142,
+   "-8.75": 9441,
+   "-8.50": 9343,
+   "-8.25": 9133,
+   "-8.00": 8829,
+   "-7.75": 8650,
+   "-7.50": 8050,
+   "-7.25": 7415,
+   "-7.00": 6526,
+   "-6.75": 5746,
+   "-6.50": 4768,
+   "-6.25": 3979,
+   "-6.00": 3239,
+   "-5.75": 2328,
+   "-5.50": 1669,
+   "-5.25": 1264,
+   "-5.00": 804,
+   "-4.75": 606,
+   "-4.50": 314,
+   "-4.25": 196,
+   "-4.00": 113,
+   "-3.75": 60,
+   "-3.50": 30,
+   "-3.25": 18,
+   "-3.00": 7,
+   "-2.75": 6,
+   "-2.50": 2
+  },
+  "exactScored": {
+   "-19.00": 7,
+   "-18.75": 66,
+   "-18.50": 292,
+   "-18.25": 846,
+   "-18.00": 1900,
+   "-17.75": 3611,
+   "-17.50": 5539,
+   "-17.25": 7937,
+   "-17.00": 10396,
+   "-16.75": 12553,
+   "-16.50": 14627,
+   "-16.25": 15748,
+   "-16.00": 16124,
+   "-15.75": 16293,
+   "-15.50": 15789,
+   "-15.25": 14851,
+   "-15.00": 13229,
+   "-14.75": 11670,
+   "-14.50": 9825,
+   "-14.25": 8104,
+   "-14.00": 6809,
+   "-13.75": 5481,
+   "-13.50": 4438,
+   "-13.25": 3647,
+   "-13.00": 2990,
+   "-12.75": 2526,
+   "-12.50": 2014,
+   "-12.25": 1486,
+   "-12.00": 1065,
+   "-11.75": 791,
+   "-11.50": 559,
+   "-11.25": 385,
+   "-11.00": 224,
+   "-10.75": 167,
+   "-10.50": 118,
+   "-10.25": 79,
+   "-10.00": 48,
+   "-9.75": 26,
+   "-9.50": 16,
+   "-9.25": 19,
+   "-9.00": 14,
+   "-8.75": 14,
+   "-8.50": 3,
+   "-8.25": 2,
+   "-8.00": 3,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-18.25": 2,
+   "-18.00": 11,
+   "-17.75": 33,
+   "-17.50": 48,
+   "-17.25": 81,
+   "-17.00": 111,
+   "-16.75": 112,
+   "-16.50": 173,
+   "-16.25": 187,
+   "-16.00": 245,
+   "-15.75": 340,
+   "-15.50": 449,
+   "-15.25": 576,
+   "-15.00": 745,
+   "-14.75": 1003,
+   "-14.50": 1262,
+   "-14.25": 1434,
+   "-14.00": 1794,
+   "-13.75": 2112,
+   "-13.50": 2333,
+   "-13.25": 2777,
+   "-13.00": 472
+  }
+ },
+ "timeMs": {
+  "total": 3197,
+  "setup": 639
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "PROCESSTOREAD",
+   "wordLogp": -7.5299,
+   "words": "PROCESS TO READ",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "E": "C",
+    "N": "E",
+    "A": "S",
+    "[": "T",
+    "z": "A",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "PROCESSMOREIN",
+   "wordLogp": -7.9014,
+   "words": "PROCESS MORE IN",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "E": "C",
+    "N": "E",
+    "A": "S",
+    "[": "M",
+    "z": "I",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "SUBMITTOBUILD",
+   "wordLogp": -7.9146,
+   "words": "SUBMIT TO BUILD",
+   "unknown": 0,
+   "key": {
+    "0": "U",
+    "M": "B",
+    "E": "M",
+    "N": "I",
+    "A": "T",
+    "[": "O",
+    "z": "L",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "PROCESSMOREAT",
+   "wordLogp": -7.9423,
+   "words": "PROCESS MORE AT",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "E": "C",
+    "N": "E",
+    "A": "S",
+    "[": "M",
+    "z": "A",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "PROCESSMOREBY",
+   "wordLogp": -8.0558,
+   "words": "PROCESS MORE BY",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "E": "C",
+    "N": "E",
+    "A": "S",
+    "[": "M",
+    "z": "B",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "PROCESSKOREAN",
+   "wordLogp": -8.2497,
+   "words": "PROCESS KOREAN",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "E": "C",
+    "N": "E",
+    "A": "S",
+    "[": "K",
+    "z": "A",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "CREDITTHERISK",
+   "wordLogp": -8.3066,
+   "words": "CREDIT THE RISK",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "E": "D",
+    "N": "I",
+    "A": "T",
+    "[": "H",
+    "z": "S",
+    "K": "K"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ARENOTTHEROAD",
+   "wordLogp": -8.318,
+   "words": "ARE NOT THE ROAD",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "E",
+    "E": "N",
+    "N": "O",
+    "A": "T",
+    "[": "H",
+    "z": "A",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "RICHASSOCIATE",
+   "wordLogp": -8.4756,
+   "words": "RICH ASSOCIATE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "C",
+    "E": "H",
+    "N": "A",
+    "A": "S",
+    "[": "O",
+    "z": "T",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "PROCESSTOREAL",
+   "wordLogp": -8.5329,
+   "words": "PROCESS TO REAL",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "E": "C",
+    "N": "E",
+    "A": "S",
+    "[": "T",
+    "z": "A",
+    "K": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "GRATISSHARING",
+   "wordLogp": -8.5375,
+   "words": "GRATIS SHARING",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "A",
+    "E": "T",
+    "N": "I",
+    "A": "S",
+    "[": "H",
+    "z": "N",
+    "K": "G"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "PROCESSMOREIT",
+   "wordLogp": -8.5479,
+   "words": "PROCESS MORE IT",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "E": "C",
+    "N": "E",
+    "A": "S",
+    "[": "M",
+    "z": "I",
+    "K": "T"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "FORFULLAROUND",
+   "wordLogp": -8.5587,
+   "words": "FOR FULL AROUND",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "R",
+    "E": "F",
+    "N": "U",
+    "A": "L",
+    "[": "A",
+    "z": "N",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "NOTHAPPYTOAND",
+   "wordLogp": -8.57,
+   "words": "NOT HAPPY TO AND",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "T",
+    "E": "H",
+    "N": "A",
+    "A": "P",
+    "[": "Y",
+    "z": "N",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "PROCESSFOREND",
+   "wordLogp": -8.5775,
+   "words": "PROCESS FOR END",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "E": "C",
+    "N": "E",
+    "A": "S",
+    "[": "F",
+    "z": "N",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "DICKASSOCIATE",
+   "wordLogp": -8.6028,
+   "words": "DICK ASSOCIATE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "C",
+    "E": "K",
+    "N": "A",
+    "A": "S",
+    "[": "O",
+    "z": "T",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "FROMALLFORAND",
+   "wordLogp": -8.6314,
+   "words": "FROM ALL FOR AND",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "E": "M",
+    "N": "A",
+    "A": "L",
+    "[": "F",
+    "z": "N",
+    "K": "D"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "NICKASSOCIATE",
+   "wordLogp": -8.6853,
+   "words": "NICK ASSOCIATE",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "M": "C",
+    "E": "K",
+    "N": "A",
+    "A": "S",
+    "[": "O",
+    "z": "T",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "THEMIDDLEHITS",
+   "wordLogp": -8.6944,
+   "words": "THE MIDDLE HITS",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "M": "E",
+    "E": "M",
+    "N": "I",
+    "A": "D",
+    "[": "L",
+    "z": "T",
+    "K": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "FROMALLFORANY",
+   "wordLogp": -8.7043,
+   "words": "FROM ALL FOR ANY",
+   "unknown": 0,
+   "key": {
+    "0": "R",
+    "M": "O",
+    "E": "M",
+    "N": "A",
+    "A": "L",
+    "[": "F",
+    "z": "N",
+    "K": "Y"
+   }
+  }
+ ]
+}

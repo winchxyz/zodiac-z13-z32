@@ -1,0 +1,615 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:36:29.481Z",
+ "label": "eng09_02",
+ "cipher": {
+  "id": "eng09",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng09.txt",
+  "text": "abcdbefbgdahc",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   2
+  ],
+  "isomorphAfterSlips": "ab*dbefbgdahc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 119,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 119,
+  "tasks": 119,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 855130,
+  "scored": 792213,
+  "keptAtLeastStreamMin": 196,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 28141,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 3302,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 196,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 7,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 3,
+  "3": 82,
+  "4": 110,
+  "5": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.642170819558058,
+  "topShare": 0.049033483912899835,
+  "top10Share": 0.27832305346532554,
+  "effectiveNumberExpEntropy": 690.4374121120575,
+  "effectiveNumberInverseSimpson": 94.4782354568618,
+  "unscoredMassBoundRelative": 0.03025790298163539,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 60,
+   "maxWordLogp": -14.819185574408447,
+   "massEstimateRelative": 0.000012791449245420122,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.009898270010097767
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 6,
+   "-18.25": 14,
+   "-18.00": 48,
+   "-17.75": 115,
+   "-17.50": 165,
+   "-17.25": 246,
+   "-17.00": 347,
+   "-16.75": 504,
+   "-16.50": 609,
+   "-16.25": 779,
+   "-16.00": 1006,
+   "-15.75": 1280,
+   "-15.50": 1746,
+   "-15.25": 2180,
+   "-15.00": 2991,
+   "-14.75": 3894,
+   "-14.50": 4744,
+   "-14.25": 5905,
+   "-14.00": 6870,
+   "-13.75": 7937,
+   "-13.50": 9040,
+   "-13.25": 10579,
+   "-13.00": 12334,
+   "-12.75": 13778,
+   "-12.50": 15796,
+   "-12.25": 18117,
+   "-12.00": 20505,
+   "-11.75": 23153,
+   "-11.50": 25554,
+   "-11.25": 27959,
+   "-11.00": 29806,
+   "-10.75": 31200,
+   "-10.50": 33062,
+   "-10.25": 33499,
+   "-10.00": 34932,
+   "-9.75": 35663,
+   "-9.50": 35790,
+   "-9.25": 36403,
+   "-9.00": 36571,
+   "-8.75": 36906,
+   "-8.50": 36227,
+   "-8.25": 35205,
+   "-8.00": 34028,
+   "-7.75": 31816,
+   "-7.50": 29202,
+   "-7.25": 26047,
+   "-7.00": 22416,
+   "-6.75": 19220,
+   "-6.50": 15713,
+   "-6.25": 12637,
+   "-6.00": 9543,
+   "-5.75": 6998,
+   "-5.50": 4997,
+   "-5.25": 3429,
+   "-5.00": 2215,
+   "-4.75": 1354,
+   "-4.50": 884,
+   "-4.25": 512,
+   "-4.00": 304,
+   "-3.75": 175,
+   "-3.50": 92,
+   "-3.25": 39,
+   "-3.00": 18,
+   "-2.75": 21,
+   "-2.50": 2,
+   "-2.25": 1,
+   "-2.00": 2
+  },
+  "exactScored": {
+   "-19.25": 35,
+   "-19.00": 95,
+   "-18.75": 433,
+   "-18.50": 2007,
+   "-18.25": 5541,
+   "-18.00": 11536,
+   "-17.75": 21296,
+   "-17.50": 32830,
+   "-17.25": 44782,
+   "-17.00": 54855,
+   "-16.75": 61620,
+   "-16.50": 64591,
+   "-16.25": 63670,
+   "-16.00": 60957,
+   "-15.75": 56059,
+   "-15.50": 50881,
+   "-15.25": 45078,
+   "-15.00": 39827,
+   "-14.75": 34061,
+   "-14.50": 29071,
+   "-14.25": 24472,
+   "-14.00": 20132,
+   "-13.75": 16129,
+   "-13.50": 12667,
+   "-13.25": 10021,
+   "-13.00": 7854,
+   "-12.75": 5747,
+   "-12.50": 4526,
+   "-12.25": 3367,
+   "-12.00": 2450,
+   "-11.75": 1792,
+   "-11.50": 1221,
+   "-11.25": 866,
+   "-11.00": 638,
+   "-10.75": 404,
+   "-10.50": 267,
+   "-10.25": 180,
+   "-10.00": 103,
+   "-9.75": 66,
+   "-9.50": 32,
+   "-9.25": 27,
+   "-9.00": 9,
+   "-8.75": 7,
+   "-8.50": 5,
+   "-8.25": 5,
+   "-8.00": 1
+  },
+  "boundUnscored": {
+   "-18.50": 6,
+   "-18.25": 14,
+   "-18.00": 48,
+   "-17.75": 115,
+   "-17.50": 165,
+   "-17.25": 246,
+   "-17.00": 347,
+   "-16.75": 504,
+   "-16.50": 609,
+   "-16.25": 779,
+   "-16.00": 1006,
+   "-15.75": 1280,
+   "-15.50": 1746,
+   "-15.25": 2180,
+   "-15.00": 2991,
+   "-14.75": 3894,
+   "-14.50": 4744,
+   "-14.25": 5905,
+   "-14.00": 6870,
+   "-13.75": 7937,
+   "-13.50": 9040,
+   "-13.25": 10579,
+   "-13.00": 1912
+  }
+ },
+ "timeMs": {
+  "total": 5773,
+  "setup": 401
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "HOWTOKNOWTHIS",
+   "wordLogp": -7.9517,
+   "words": "HOW TO KNOW THIS",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "d": "T",
+    "e": "K",
+    "f": "N",
+    "g": "W",
+    "h": "I",
+    "c": "S"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TOKNOWCOUNTRY",
+   "wordLogp": -8.0491,
+   "words": "TO KNOW COUNTRY",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "d": "N",
+    "e": "W",
+    "f": "C",
+    "g": "U",
+    "h": "R",
+    "c": "Y"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "TOGROWYOURTHE",
+   "wordLogp": -8.116,
+   "words": "TO GROW YOUR THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "d": "R",
+    "e": "W",
+    "f": "Y",
+    "g": "U",
+    "h": "H",
+    "c": "E"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "TOFROMYOURTHE",
+   "wordLogp": -8.1707,
+   "words": "TO FROM YOUR THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "d": "R",
+    "e": "M",
+    "f": "Y",
+    "g": "U",
+    "h": "H",
+    "c": "E"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "HOWTOKNOWTHEY",
+   "wordLogp": -8.1716,
+   "words": "HOW TO KNOW THEY",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "d": "T",
+    "e": "K",
+    "f": "N",
+    "g": "W",
+    "h": "E",
+    "c": "Y"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ROLEOFPOVERTY",
+   "wordLogp": -8.2493,
+   "words": "ROLE OF POVERTY",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "O",
+    "d": "E",
+    "e": "F",
+    "f": "P",
+    "g": "V",
+    "h": "T",
+    "c": "Y"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "HOWTOFROMTHIS",
+   "wordLogp": -8.3015,
+   "words": "HOW TO FROM THIS",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "d": "T",
+    "e": "F",
+    "f": "R",
+    "g": "M",
+    "h": "I",
+    "c": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ITISTHATUSING",
+   "wordLogp": -8.3736,
+   "words": "IT IS THAT USING",
+   "unknown": 0,
+   "key": {
+    "a": "I",
+    "b": "T",
+    "d": "S",
+    "e": "H",
+    "f": "A",
+    "g": "U",
+    "h": "N",
+    "c": "G"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "TOWNOFCOUNTRY",
+   "wordLogp": -8.4079,
+   "words": "TOWN OF COUNTRY",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "d": "N",
+    "e": "F",
+    "f": "C",
+    "g": "U",
+    "h": "R",
+    "c": "Y"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "SECRETYEARSOF",
+   "wordLogp": -8.4651,
+   "words": "SECRET YEARS OF",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "d": "R",
+    "e": "T",
+    "f": "Y",
+    "g": "A",
+    "h": "O",
+    "c": "F"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SEEMEDTERMSOF",
+   "wordLogp": -8.4964,
+   "words": "SEEMED TERMS OF",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "d": "M",
+    "e": "D",
+    "f": "T",
+    "g": "R",
+    "h": "O",
+    "c": "F"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "SEQUENCEJUSTA",
+   "wordLogp": -8.5434,
+   "words": "SEQUENCE JUST A",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "d": "U",
+    "e": "N",
+    "f": "C",
+    "g": "J",
+    "h": "T",
+    "c": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "SELLERDEALSON",
+   "wordLogp": -8.6036,
+   "words": "SELLER DEALS ON",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "d": "L",
+    "e": "R",
+    "f": "D",
+    "g": "A",
+    "h": "O",
+    "c": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "HOWTOKNOWTHEM",
+   "wordLogp": -8.6146,
+   "words": "HOW TO KNOW THEM",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "d": "T",
+    "e": "K",
+    "f": "N",
+    "g": "W",
+    "h": "E",
+    "c": "M"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THISHIGHESTOF",
+   "wordLogp": -8.6356,
+   "words": "THIS HIGHEST OF",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "d": "S",
+    "e": "I",
+    "f": "G",
+    "g": "E",
+    "h": "O",
+    "c": "F"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "HOWTOAMONTHLY",
+   "wordLogp": -8.6495,
+   "words": "HOW TO A MONTHLY",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "d": "T",
+    "e": "A",
+    "f": "M",
+    "g": "N",
+    "h": "L",
+    "c": "Y"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "HOWTOGROWTHIN",
+   "wordLogp": -8.6926,
+   "words": "HOW TO GROWTH IN",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "d": "T",
+    "e": "G",
+    "f": "R",
+    "g": "W",
+    "h": "I",
+    "c": "N"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "TOUROFYOURTHE",
+   "wordLogp": -8.7053,
+   "words": "TOUR OF YOUR THE",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "d": "R",
+    "e": "F",
+    "f": "Y",
+    "g": "U",
+    "h": "H",
+    "c": "E"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "HISWIFEISWHAT",
+   "wordLogp": -8.7688,
+   "words": "HIS WIFE IS WHAT",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "I",
+    "d": "W",
+    "e": "F",
+    "f": "E",
+    "g": "S",
+    "h": "A",
+    "c": "T"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "TOKNOWCOUNTER",
+   "wordLogp": -8.7765,
+   "words": "TO KNOW COUNTER",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "O",
+    "d": "N",
+    "e": "W",
+    "f": "C",
+    "g": "U",
+    "h": "E",
+    "c": "R"
+   }
+  }
+ ]
+}

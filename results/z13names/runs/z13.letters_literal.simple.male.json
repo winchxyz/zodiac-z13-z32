@@ -1,0 +1,100 @@
+{
+ "tool": "tools/z13names_enumerate.js names",
+ "created": "2026-10-07T15:46:44.408Z",
+ "cipher": {
+  "id": "z13.canonical",
+  "source": "data/ciphers/variants/z13.canonical.txt",
+  "text": "AENz0K0M0[NAM",
+  "length": 13,
+  "symbols": 8
+ },
+ "options": {
+  "mode": "simple",
+  "patterns": [
+   "FL",
+   "FIL",
+   "FML",
+   "FIIL",
+   "IIL",
+   "LF"
+  ],
+  "first": "all",
+  "files": {
+   "first": "data/names/first_male.tsv",
+   "middle": "same as first",
+   "last": "data/names/surnames.tsv",
+   "initials": "first list"
+  },
+  "firstNames": 10853,
+  "middleNames": 10853,
+  "surnames": 175348,
+  "fillers": 2,
+  "fillerAt": "ends",
+  "minWeight": 0,
+  "threads": 4,
+  "pin": "A=A,E=E,N=N,K=K,M=M",
+  "forbid": "",
+  "plaintextLegend": "upper case = name letter; ? = free filler letter; lower case = filler letter forced by the key"
+ },
+ "counts": {
+  "complete": true,
+  "stoppedBy": null,
+  "fits": 7,
+  "rawCallbacks": 7,
+  "perPattern": {
+   "FIIL": 7
+  },
+  "cells": {
+   "FIIL|2|1": {
+    "n": 7,
+    "sw": 1.5206437835183535e-15,
+    "nb": 0,
+    "swb": 0,
+    "top": [
+     {
+      "plaintext": "aENOCKCMCINAm",
+      "weight": 7.404283002312574e-16,
+      "parts": "ENOCK C M CINA"
+     },
+     {
+      "plaintext": "aENOCKCMCUNAm",
+      "weight": 4.870870711371408e-16,
+      "parts": "ENOCK C M CUNA"
+     },
+     {
+      "plaintext": "aENZOKOMORNAm",
+      "weight": 1.6660984302677118e-16,
+      "parts": "ENZO K O MORNA"
+     },
+     {
+      "plaintext": "aENIOKOMORNAm",
+      "weight": 4.5736042696720323e-17,
+      "parts": "ENIO K O MORNA"
+     },
+     {
+      "plaintext": "aENZOKOMOINAm",
+      "weight": 3.834823883023601e-17,
+      "parts": "ENZO K O MOINA"
+     },
+     {
+      "plaintext": "aENZOKOMOYNAm",
+      "weight": 3.3294593729810245e-17,
+      "parts": "ENZO K O MOYNA"
+     },
+     {
+      "plaintext": "aENIOKOMOYNAm",
+      "weight": 9.139693866417469e-18,
+      "parts": "ENIO K O MOYNA"
+     }
+    ]
+   }
+  },
+  "cellLegend": "key pattern|fillers|leading fillers; n fits, sw sum of prior weights, nb/swb the same for fits with a name-part boundary at --boundary; top = heaviest fits; `top` below holds only streamed fits (fillers <= --stream-max-fillers)",
+  "boundary": -1,
+  "streamMaxFillers": 0
+ },
+ "timeMs": {
+  "total": 9620
+ },
+ "top": []
+}

@@ -1,0 +1,603 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:08:30.422Z",
+ "label": "scr03_02",
+ "cipher": {
+  "id": "scr03",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr03.txt",
+  "text": "0[N0KzNAA0MEM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   2
+  ],
+  "isomorphAfterSlips": "ab*adecffaghg"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 119,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 119,
+  "tasks": 119,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 96991,
+  "scored": 91018,
+  "keptAtLeastStreamMin": 34,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 4837,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 549,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 34,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 22,
+  "4": 12
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.547097909153716,
+  "topShare": 0.1488255692487439,
+  "top10Share": 0.3438961611068873,
+  "effectiveNumberExpEntropy": 244.82447542930188,
+  "effectiveNumberInverseSimpson": 33.75577185466859,
+  "unscoredMassBoundRelative": 0.023077588435549898,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 4,
+   "maxWordLogp": -17.078057074665217,
+   "massEstimateRelative": 4.1853665086769977e-7,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.008576527913731745
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 1,
+   "-17.75": 8,
+   "-17.50": 6,
+   "-17.25": 18,
+   "-17.00": 24,
+   "-16.75": 27,
+   "-16.50": 39,
+   "-16.25": 56,
+   "-16.00": 71,
+   "-15.75": 123,
+   "-15.50": 128,
+   "-15.25": 179,
+   "-15.00": 229,
+   "-14.75": 343,
+   "-14.50": 387,
+   "-14.25": 513,
+   "-14.00": 655,
+   "-13.75": 823,
+   "-13.50": 909,
+   "-13.25": 1222,
+   "-13.00": 1326,
+   "-12.75": 1614,
+   "-12.50": 1756,
+   "-12.25": 2034,
+   "-12.00": 2310,
+   "-11.75": 2527,
+   "-11.50": 2843,
+   "-11.25": 3092,
+   "-11.00": 3337,
+   "-10.75": 3433,
+   "-10.50": 3680,
+   "-10.25": 3810,
+   "-10.00": 3901,
+   "-9.75": 3985,
+   "-9.50": 4084,
+   "-9.25": 3944,
+   "-9.00": 3897,
+   "-8.75": 4020,
+   "-8.50": 3977,
+   "-8.25": 3808,
+   "-8.00": 3553,
+   "-7.75": 3510,
+   "-7.50": 3328,
+   "-7.25": 2985,
+   "-7.00": 2666,
+   "-6.75": 2359,
+   "-6.50": 2046,
+   "-6.25": 1664,
+   "-6.00": 1402,
+   "-5.75": 1126,
+   "-5.50": 956,
+   "-5.25": 673,
+   "-5.00": 505,
+   "-4.75": 397,
+   "-4.50": 259,
+   "-4.25": 173,
+   "-4.00": 123,
+   "-3.75": 63,
+   "-3.50": 33,
+   "-3.25": 23,
+   "-3.00": 4,
+   "-2.75": 3,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.00": 11,
+   "-18.75": 96,
+   "-18.50": 331,
+   "-18.25": 613,
+   "-18.00": 1261,
+   "-17.75": 1987,
+   "-17.50": 2817,
+   "-17.25": 3705,
+   "-17.00": 4388,
+   "-16.75": 4939,
+   "-16.50": 5316,
+   "-16.25": 5884,
+   "-16.00": 6048,
+   "-15.75": 6248,
+   "-15.50": 6516,
+   "-15.25": 6365,
+   "-15.00": 5877,
+   "-14.75": 5290,
+   "-14.50": 4539,
+   "-14.25": 4017,
+   "-14.00": 3266,
+   "-13.75": 2659,
+   "-13.50": 2157,
+   "-13.25": 1611,
+   "-13.00": 1388,
+   "-12.75": 1069,
+   "-12.50": 718,
+   "-12.25": 524,
+   "-12.00": 444,
+   "-11.75": 305,
+   "-11.50": 190,
+   "-11.25": 152,
+   "-11.00": 108,
+   "-10.75": 61,
+   "-10.50": 45,
+   "-10.25": 26,
+   "-10.00": 20,
+   "-9.75": 14,
+   "-9.50": 8,
+   "-9.25": 3,
+   "-9.00": 1,
+   "-8.50": 1
+  },
+  "boundUnscored": {
+   "-18.00": 1,
+   "-17.75": 8,
+   "-17.50": 6,
+   "-17.25": 18,
+   "-17.00": 24,
+   "-16.75": 27,
+   "-16.50": 39,
+   "-16.25": 56,
+   "-16.00": 71,
+   "-15.75": 123,
+   "-15.50": 128,
+   "-15.25": 179,
+   "-15.00": 229,
+   "-14.75": 343,
+   "-14.50": 387,
+   "-14.25": 513,
+   "-14.00": 655,
+   "-13.75": 823,
+   "-13.50": 909,
+   "-13.25": 1222,
+   "-13.00": 212
+  }
+ },
+ "timeMs": {
+  "total": 2963,
+  "setup": 538
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "HIGHKNOWWHERE",
+   "wordLogp": -8.3744,
+   "words": "HIGH KNOW WHERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "K": "K",
+    "z": "N",
+    "N": "O",
+    "A": "W",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "HIGHCOSTTHERE",
+   "wordLogp": -8.8643,
+   "words": "HIGH COST THERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "K": "C",
+    "z": "O",
+    "N": "S",
+    "A": "T",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ANDABOUTTASKS",
+   "wordLogp": -9.1999,
+   "words": "AND ABOUT TASKS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "N",
+    "K": "B",
+    "z": "O",
+    "N": "U",
+    "A": "T",
+    "M": "S",
+    "E": "K"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "EXTERNALLETIT",
+   "wordLogp": -9.2187,
+   "words": "EXTERNAL LET IT",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "X",
+    "K": "R",
+    "z": "N",
+    "N": "A",
+    "A": "L",
+    "M": "T",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ALLABOUTTASKS",
+   "wordLogp": -9.2401,
+   "words": "ALL ABOUT TASKS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "L",
+    "K": "B",
+    "z": "O",
+    "N": "U",
+    "A": "T",
+    "M": "S",
+    "E": "K"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "HIGHKNOWWHATA",
+   "wordLogp": -9.2924,
+   "words": "HIGH KNOW WHAT A",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "K": "K",
+    "z": "N",
+    "N": "O",
+    "A": "W",
+    "M": "A",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "THATSMALLTODO",
+   "wordLogp": -9.2975,
+   "words": "THAT SMALL TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "K": "S",
+    "z": "M",
+    "N": "A",
+    "A": "L",
+    "M": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "HIGHCLASSHERE",
+   "wordLogp": -9.3364,
+   "words": "HIGH CLASS HERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "K": "C",
+    "z": "L",
+    "N": "A",
+    "A": "S",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "ELSEWRITTENON",
+   "wordLogp": -9.3493,
+   "words": "ELSE WRITTEN ON",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "L",
+    "K": "W",
+    "z": "R",
+    "N": "I",
+    "A": "T",
+    "M": "N",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "THATCLASSTODO",
+   "wordLogp": -9.3619,
+   "words": "THAT CLASS TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "K": "C",
+    "z": "L",
+    "N": "A",
+    "A": "S",
+    "M": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "HIGHLYATTHESE",
+   "wordLogp": -9.3845,
+   "words": "HIGHLY AT THESE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "K": "L",
+    "z": "Y",
+    "N": "A",
+    "A": "T",
+    "M": "E",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THATAGREETODO",
+   "wordLogp": -9.3949,
+   "words": "THAT AGREE TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "K": "A",
+    "z": "G",
+    "N": "R",
+    "A": "E",
+    "M": "O",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "OFTOHELPPOSTS",
+   "wordLogp": -9.48,
+   "words": "OF TO HELP POSTS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "F",
+    "K": "H",
+    "z": "E",
+    "N": "L",
+    "A": "P",
+    "M": "S",
+    "E": "T"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "HIGHJUSTTHERE",
+   "wordLogp": -9.5331,
+   "words": "HIGH JUST THERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "K": "J",
+    "z": "U",
+    "N": "S",
+    "A": "T",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "HIGHSTUFFHERE",
+   "wordLogp": -9.5364,
+   "words": "HIGH STUFF HERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "K": "S",
+    "z": "T",
+    "N": "U",
+    "A": "F",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THATSMALLTOGO",
+   "wordLogp": -9.5613,
+   "words": "THAT SMALL TO GO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "H",
+    "K": "S",
+    "z": "M",
+    "N": "A",
+    "A": "L",
+    "M": "O",
+    "E": "G"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "HIGHPOSTTHERE",
+   "wordLogp": -9.5614,
+   "words": "HIGH POST THERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "K": "P",
+    "z": "O",
+    "N": "S",
+    "A": "T",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "OUTOFLESSONIN",
+   "wordLogp": -9.5634,
+   "words": "OUT OF LESSON IN",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "U",
+    "K": "F",
+    "z": "L",
+    "N": "E",
+    "A": "S",
+    "M": "N",
+    "E": "I"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "HIGHFACTTHERE",
+   "wordLogp": -9.5654,
+   "words": "HIGH FACT THERE",
+   "unknown": 0,
+   "key": {
+    "0": "H",
+    "[": "I",
+    "K": "F",
+    "z": "A",
+    "N": "C",
+    "A": "T",
+    "M": "E",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "AGRAPHICCASES",
+   "wordLogp": -9.5826,
+   "words": "A GRAPHIC CASES",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "G",
+    "K": "P",
+    "z": "H",
+    "N": "I",
+    "A": "C",
+    "M": "S",
+    "E": "E"
+   }
+  }
+ ]
+}

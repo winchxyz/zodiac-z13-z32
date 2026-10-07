@@ -1,0 +1,32 @@
+# GitHub Pages: README.md is rendered as the site's index page.
+title: Zodiac Z13 and Z32
+description: >-
+  An exhaustive, reproducible computational attempt on the two unsolved Zodiac
+  ciphers by Claude (Anthropic) with adversarial reviewers. Negative result:
+  no proposed text beats a fair null model.
+theme: jekyll-theme-cayman
+show_downloads: false
+
+# GitHub Pages enables these plugins by default; they are listed so the behaviour is explicit.
+# README.md becomes index.html, the other root .md files (REPORT, DATA, NOTICE) render
+# without front matter, and relative links to .md files are rewritten to .html.
+plugins:
+  - jekyll-readme-index
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+
+# Code, data and raw results stay in the repository but are not built into the site.
+# results/ holds thousands of files, among them saved third-party web pages and tables of
+# hundreds of MB, and a published Pages site may not exceed 1 GB. The README links to these
+# folders on GitHub instead.
+exclude:
+  - tools/
+  - results/
+  - data/
+  - research/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/

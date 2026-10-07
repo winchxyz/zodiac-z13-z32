@@ -1,0 +1,615 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:39:54.580Z",
+ "label": "eng12_11",
+ "cipher": {
+  "id": "eng12",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng12.txt",
+  "text": "abcdabceffgfh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   11
+  ],
+  "isomorphAfterSlips": "abcdabceffg*h"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 665998,
+  "scored": 631481,
+  "keptAtLeastStreamMin": 366,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 34019,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 4359,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 366,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 12,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 5,
+  "3": 165,
+  "4": 196
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.3574746751044575,
+  "topShare": 0.09982622275607171,
+  "top10Share": 0.30306820213325053,
+  "effectiveNumberExpEntropy": 534.2782163240644,
+  "effectiveNumberInverseSimpson": 59.44211113529854,
+  "unscoredMassBoundRelative": 0.00861802436603751,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 33,
+   "maxWordLogp": -15.34769194183712,
+   "massEstimateRelative": 0.000002167084080335665,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0031077829643760446
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 1,
+   "-18.25": 7,
+   "-18.00": 14,
+   "-17.75": 23,
+   "-17.50": 50,
+   "-17.25": 48,
+   "-17.00": 86,
+   "-16.75": 177,
+   "-16.50": 210,
+   "-16.25": 324,
+   "-16.00": 421,
+   "-15.75": 569,
+   "-15.50": 644,
+   "-15.25": 985,
+   "-15.00": 1336,
+   "-14.75": 1980,
+   "-14.50": 2649,
+   "-14.25": 3244,
+   "-14.00": 3915,
+   "-13.75": 4652,
+   "-13.50": 5458,
+   "-13.25": 6599,
+   "-13.00": 7773,
+   "-12.75": 9262,
+   "-12.50": 10675,
+   "-12.25": 12424,
+   "-12.00": 14549,
+   "-11.75": 16357,
+   "-11.50": 18226,
+   "-11.25": 19939,
+   "-11.00": 21736,
+   "-10.75": 23100,
+   "-10.50": 24542,
+   "-10.25": 25720,
+   "-10.00": 26576,
+   "-9.75": 27578,
+   "-9.50": 28448,
+   "-9.25": 29264,
+   "-9.00": 29752,
+   "-8.75": 29849,
+   "-8.50": 29606,
+   "-8.25": 29262,
+   "-8.00": 28030,
+   "-7.75": 26329,
+   "-7.50": 24347,
+   "-7.25": 22034,
+   "-7.00": 19544,
+   "-6.75": 16883,
+   "-6.50": 13980,
+   "-6.25": 11394,
+   "-6.00": 9147,
+   "-5.75": 7042,
+   "-5.50": 5614,
+   "-5.25": 4178,
+   "-5.00": 3105,
+   "-4.75": 2203,
+   "-4.50": 1591,
+   "-4.25": 1041,
+   "-4.00": 645,
+   "-3.75": 447,
+   "-3.50": 215,
+   "-3.25": 113,
+   "-3.00": 53,
+   "-2.75": 18,
+   "-2.50": 11,
+   "-2.25": 4
+  },
+  "exactScored": {
+   "-19.25": 18,
+   "-19.00": 121,
+   "-18.75": 451,
+   "-18.50": 1726,
+   "-18.25": 4456,
+   "-18.00": 8793,
+   "-17.75": 14588,
+   "-17.50": 22327,
+   "-17.25": 30760,
+   "-17.00": 38057,
+   "-16.75": 43014,
+   "-16.50": 45643,
+   "-16.25": 45918,
+   "-16.00": 44682,
+   "-15.75": 44114,
+   "-15.50": 41204,
+   "-15.25": 37549,
+   "-15.00": 34478,
+   "-14.75": 30988,
+   "-14.50": 26287,
+   "-14.25": 22777,
+   "-14.00": 18937,
+   "-13.75": 15672,
+   "-13.50": 12980,
+   "-13.25": 10402,
+   "-13.00": 8738,
+   "-12.75": 7120,
+   "-12.50": 5438,
+   "-12.25": 4059,
+   "-12.00": 3043,
+   "-11.75": 2114,
+   "-11.50": 1490,
+   "-11.25": 1073,
+   "-11.00": 777,
+   "-10.75": 554,
+   "-10.50": 397,
+   "-10.25": 268,
+   "-10.00": 161,
+   "-9.75": 124,
+   "-9.50": 78,
+   "-9.25": 57,
+   "-9.00": 20,
+   "-8.75": 9,
+   "-8.50": 9,
+   "-8.25": 5,
+   "-8.00": 3,
+   "-7.75": 1,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-18.50": 1,
+   "-18.25": 7,
+   "-18.00": 14,
+   "-17.75": 23,
+   "-17.50": 50,
+   "-17.25": 48,
+   "-17.00": 86,
+   "-16.75": 177,
+   "-16.50": 210,
+   "-16.25": 324,
+   "-16.00": 421,
+   "-15.75": 569,
+   "-15.50": 644,
+   "-15.25": 985,
+   "-15.00": 1336,
+   "-14.75": 1980,
+   "-14.50": 2649,
+   "-14.25": 3244,
+   "-14.00": 3915,
+   "-13.75": 4652,
+   "-13.50": 5458,
+   "-13.25": 6599,
+   "-13.00": 1125
+  }
+ },
+ "timeMs": {
+  "total": 4018,
+  "setup": 378
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "ANDHANDBOOKOF",
+   "wordLogp": -7.3582,
+   "words": "AND HANDBOOK OF",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "H",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "THEOTHERSSAID",
+   "wordLogp": -7.7048,
+   "words": "THE OTHERS SAID",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "S",
+    "g": "A",
+    "h": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "CARTCARIBBEAN",
+   "wordLogp": -7.9677,
+   "words": "CART CARIBBEAN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "A",
+    "c": "R",
+    "d": "T",
+    "e": "I",
+    "f": "B",
+    "g": "E",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "CARDCARIBBEAN",
+   "wordLogp": -7.9839,
+   "words": "CARD CARIBBEAN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "A",
+    "c": "R",
+    "d": "D",
+    "e": "I",
+    "f": "B",
+    "g": "E",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "FORMFORALLTHE",
+   "wordLogp": -7.9908,
+   "words": "FORM FOR ALL THE",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "R",
+    "d": "M",
+    "e": "A",
+    "f": "L",
+    "g": "T",
+    "h": "E"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "THEMTHEANNUAL",
+   "wordLogp": -8.0165,
+   "words": "THEM THE ANNUAL",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "M",
+    "e": "A",
+    "f": "N",
+    "g": "U",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "YOURYOUNGGIRL",
+   "wordLogp": -8.0797,
+   "words": "YOUR YOUNG GIRL",
+   "unknown": 0,
+   "key": {
+    "a": "Y",
+    "b": "O",
+    "c": "U",
+    "d": "R",
+    "e": "N",
+    "f": "G",
+    "g": "I",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "CARSCARIBBEAN",
+   "wordLogp": -8.1431,
+   "words": "CARS CARIBBEAN",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "A",
+    "c": "R",
+    "d": "S",
+    "e": "I",
+    "f": "B",
+    "g": "E",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THEYTHEANNUAL",
+   "wordLogp": -8.164,
+   "words": "THEY THE ANNUAL",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "Y",
+    "e": "A",
+    "f": "N",
+    "g": "U",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ANDHANDBOOKIS",
+   "wordLogp": -8.2119,
+   "words": "AND HANDBOOK IS",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "H",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "YOURYOUSEEALL",
+   "wordLogp": -8.2929,
+   "words": "YOUR YOU SEE ALL",
+   "unknown": 0,
+   "key": {
+    "a": "Y",
+    "b": "O",
+    "c": "U",
+    "d": "R",
+    "e": "S",
+    "f": "E",
+    "g": "A",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "YOURYOUACCEPT",
+   "wordLogp": -8.2942,
+   "words": "YOUR YOU ACCEPT",
+   "unknown": 0,
+   "key": {
+    "a": "Y",
+    "b": "O",
+    "c": "U",
+    "d": "R",
+    "e": "A",
+    "f": "C",
+    "g": "E",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THEOTHERSSIGN",
+   "wordLogp": -8.3422,
+   "words": "THE OTHERS SIGN",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "O",
+    "e": "R",
+    "f": "S",
+    "g": "I",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "FORMFORACCESS",
+   "wordLogp": -8.3742,
+   "words": "FORM FOR ACCESS",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "O",
+    "c": "R",
+    "d": "M",
+    "e": "A",
+    "f": "C",
+    "g": "E",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "YOURYOUNEEDOF",
+   "wordLogp": -8.3754,
+   "words": "YOUR YOU NEED OF",
+   "unknown": 0,
+   "key": {
+    "a": "Y",
+    "b": "O",
+    "c": "U",
+    "d": "R",
+    "e": "N",
+    "f": "E",
+    "g": "D",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "THENTHEBOOKOF",
+   "wordLogp": -8.3809,
+   "words": "THEN THE BOOK OF",
+   "unknown": 0,
+   "key": {
+    "a": "T",
+    "b": "H",
+    "c": "E",
+    "d": "N",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "YOURYOUACCESS",
+   "wordLogp": -8.3855,
+   "words": "YOUR YOU ACCESS",
+   "unknown": 0,
+   "key": {
+    "a": "Y",
+    "b": "O",
+    "c": "U",
+    "d": "R",
+    "e": "A",
+    "f": "C",
+    "g": "E",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "ANDHANDBOOKBY",
+   "wordLogp": -8.4795,
+   "words": "AND HANDBOOK BY",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "N",
+    "c": "D",
+    "d": "H",
+    "e": "B",
+    "f": "O",
+    "g": "K",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "FROMFRONTTHIS",
+   "wordLogp": -8.4939,
+   "words": "FROM FRONT THIS",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "O",
+    "d": "M",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "YOURYOUALLTHE",
+   "wordLogp": -8.546,
+   "words": "YOUR YOU ALL THE",
+   "unknown": 0,
+   "key": {
+    "a": "Y",
+    "b": "O",
+    "c": "U",
+    "d": "R",
+    "e": "A",
+    "f": "L",
+    "g": "T",
+    "h": "E"
+   }
+  }
+ ]
+}

@@ -1,0 +1,3296 @@
+{
+ "tool": "tools/keyprior_z13subsets.js",
+ "created": "2026-10-07T16:35:54.804Z",
+ "argv": "--fits <scratch>/keyprior/z13_homo_fits_top500k.tsv --kind words --keys z340 --null 20000 --with-t2 --threads 4 --seed 13 --out results/keyprior/review/z13subsets_top500k_z340_n20000.json",
+ "fits": {
+  "file": "<scratch>/keyprior/z13_homo_fits_top500k.tsv",
+  "kind": "words",
+  "n": 500000,
+  "scoreQuantiles": {
+   "top": -7.8137388939704255,
+   "rank1000": -11.496906085765024,
+   "rank10000": -13.048380221685031,
+   "median": -15.736072492608086
+  }
+ },
+ "thresholds": [
+  {
+   "rank": 1000,
+   "score": -11.496906085765024
+  },
+  {
+   "rank": 10000,
+   "score": -13.048380221685031
+  },
+  {
+   "rank": 100000,
+   "score": -14.884959551705169
+  }
+ ],
+ "null": {
+  "kind": "permute",
+  "n": 20000,
+  "seed": 13
+ },
+ "note": "'[' is pinned to the letter of the plain upside-down T 't' when --with-t2 is given (z13.bracket_is_perp hypothesis)",
+ "seconds": 329.964,
+ "results": [
+  {
+   "key": "z340",
+   "realLetters": "DREAAOL",
+   "symbols": "AENzKM[",
+   "familywise": {
+    "best": {
+     "all": {
+      "minP": 0.00044997750112494374,
+      "argSubset": "ENzM",
+      "familywiseP": 0.026298685065746712,
+      "nullsAtLeastAsExtreme": 525
+     },
+     "k=1": {
+      "minP": 0.21053947302634868,
+      "argSubset": "z",
+      "familywiseP": 0.7623618819059047,
+      "nullsAtLeastAsExtreme": 15247
+     },
+     "k=2": {
+      "minP": 0.04044797760111994,
+      "argSubset": "EN",
+      "familywiseP": 0.47997600119994,
+      "nullsAtLeastAsExtreme": 9599
+     },
+     "k=3": {
+      "minP": 0.005149742512874356,
+      "argSubset": "ENz",
+      "familywiseP": 0.1328433578321084,
+      "nullsAtLeastAsExtreme": 2656
+     },
+     "k=4": {
+      "minP": 0.00044997750112494374,
+      "argSubset": "ENzM",
+      "familywiseP": 0.013149342532873356,
+      "nullsAtLeastAsExtreme": 262
+     },
+     "k=5": {
+      "minP": 0.004749762511874406,
+      "argSubset": "AENzM",
+      "familywiseP": 0.07219639018049097,
+      "nullsAtLeastAsExtreme": 1443
+     },
+     "k=6": {
+      "minP": 0.0036998150092495377,
+      "argSubset": "AENzKM",
+      "familywiseP": 0.021098945052747363,
+      "nullsAtLeastAsExtreme": 421
+     },
+     "k=7": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     }
+    },
+    "count@rank1000": {
+     "all": {
+      "minP": 0.004099795010249488,
+      "argSubset": "ENzM",
+      "familywiseP": 0.1223938803059847,
+      "nullsAtLeastAsExtreme": 2447
+     },
+     "k=1": {
+      "minP": 0.1631918404079796,
+      "argSubset": "E",
+      "familywiseP": 0.6260686965651717,
+      "nullsAtLeastAsExtreme": 12521
+     },
+     "k=2": {
+      "minP": 0.019699015049247537,
+      "argSubset": "EN",
+      "familywiseP": 0.2663866806659667,
+      "nullsAtLeastAsExtreme": 5327
+     },
+     "k=3": {
+      "minP": 0.0071996400179991,
+      "argSubset": "ENz",
+      "familywiseP": 0.14404279786010699,
+      "nullsAtLeastAsExtreme": 2880
+     },
+     "k=4": {
+      "minP": 0.004099795010249488,
+      "argSubset": "ENzM",
+      "familywiseP": 0.057747112644367785,
+      "nullsAtLeastAsExtreme": 1154
+     },
+     "k=5": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     },
+     "k=6": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     },
+     "k=7": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     }
+    },
+    "count@rank10000": {
+     "all": {
+      "minP": 0.0018499075046247689,
+      "argSubset": "ENz",
+      "familywiseP": 0.07799610019499024,
+      "nullsAtLeastAsExtreme": 1559
+     },
+     "k=1": {
+      "minP": 0.09149542522873856,
+      "argSubset": "N",
+      "familywiseP": 0.4016299185040748,
+      "nullsAtLeastAsExtreme": 8032
+     },
+     "k=2": {
+      "minP": 0.007849607519624019,
+      "argSubset": "EN",
+      "familywiseP": 0.09084545772711364,
+      "nullsAtLeastAsExtreme": 1816
+     },
+     "k=3": {
+      "minP": 0.0018499075046247689,
+      "argSubset": "ENz",
+      "familywiseP": 0.04524773761311934,
+      "nullsAtLeastAsExtreme": 904
+     },
+     "k=4": {
+      "minP": 0.003749812509374531,
+      "argSubset": "ENzM",
+      "familywiseP": 0.07464626768661567,
+      "nullsAtLeastAsExtreme": 1492
+     },
+     "k=5": {
+      "minP": 0.004899755012249388,
+      "argSubset": "AENzM",
+      "familywiseP": 0.05104744762761862,
+      "nullsAtLeastAsExtreme": 1020
+     },
+     "k=6": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     },
+     "k=7": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     }
+    },
+    "count@rank100000": {
+     "all": {
+      "minP": 0.0012499375031248437,
+      "argSubset": "ENzK",
+      "familywiseP": 0.05269736513174341,
+      "nullsAtLeastAsExtreme": 1053
+     },
+     "k=1": {
+      "minP": 0.09149542522873856,
+      "argSubset": "N",
+      "familywiseP": 0.33808309584520774,
+      "nullsAtLeastAsExtreme": 6761
+     },
+     "k=2": {
+      "minP": 0.007849607519624019,
+      "argSubset": "EN",
+      "familywiseP": 0.10284485775711215,
+      "nullsAtLeastAsExtreme": 2056
+     },
+     "k=3": {
+      "minP": 0.0031498425078746064,
+      "argSubset": "ENz",
+      "familywiseP": 0.0751462426878656,
+      "nullsAtLeastAsExtreme": 1502
+     },
+     "k=4": {
+      "minP": 0.0012499375031248437,
+      "argSubset": "ENzK",
+      "familywiseP": 0.029698515074246288,
+      "nullsAtLeastAsExtreme": 593
+     },
+     "k=5": {
+      "minP": 0.004149792510374482,
+      "argSubset": "ENzK[",
+      "familywiseP": 0.04924753762311884,
+      "nullsAtLeastAsExtreme": 984
+     },
+     "k=6": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     },
+     "k=7": {
+      "minP": 1,
+      "argSubset": "",
+      "familywiseP": 1,
+      "nullsAtLeastAsExtreme": 20000
+     }
+    }
+   },
+   "subsets": [
+    {
+     "subset": "[",
+     "k": 1,
+     "realBest": -9.53693380716328,
+     "realBestFit": "INTHESECELTIC",
+     "nullMeanFinite": -9.12251239773916,
+     "nullFiniteFraction": 1,
+     "p": 0.7901104944752763,
+     "count@rank1000": {
+      "real": 58,
+      "nullMean": 54.3134,
+      "p": 0.4489275536223189
+     },
+     "count@rank10000": {
+      "real": 790,
+      "nullMean": 541.02795,
+      "p": 0.128043597820109
+     },
+     "count@rank100000": {
+      "real": 7613,
+      "nullMean": 5345.89855,
+      "p": 0.128043597820109
+     }
+    },
+    {
+     "subset": "A",
+     "k": 1,
+     "realBest": -8.992228018892634,
+     "realBestFit": "DONOTITSTANDS",
+     "nullMeanFinite": -9.314497158164441,
+     "nullFiniteFraction": 1,
+     "p": 0.3808309584520774,
+     "count@rank1000": {
+      "real": 8,
+      "nullMean": 71.6321,
+      "p": 0.9539523023848807
+     },
+     "count@rank10000": {
+      "real": 134,
+      "nullMean": 701.2845,
+      "p": 0.8418079096045198
+     },
+     "count@rank100000": {
+      "real": 1922,
+      "nullMean": 6991.2165,
+      "p": 0.6782160891955402
+     }
+    },
+    {
+     "subset": "E",
+     "k": 1,
+     "realBest": -9.093734078510707,
+     "realBestFit": "OREGONOFONEOF",
+     "nullMeanFinite": -9.217830490665479,
+     "nullFiniteFraction": 1,
+     "p": 0.41707914604269786,
+     "count@rank1000": {
+      "real": 94,
+      "nullMean": 57.14915,
+      "p": 0.1631918404079796
+     },
+     "count@rank10000": {
+      "real": 1013,
+      "nullMean": 577.0697,
+      "p": 0.1631918404079796
+     },
+     "count@rank100000": {
+      "real": 9248,
+      "nullMean": 5768.96785,
+      "p": 0.1631918404079796
+     }
+    },
+    {
+     "subset": "K",
+     "k": 1,
+     "realBest": -9.076193936969243,
+     "realBestFit": "HESITATETOSHE",
+     "nullMeanFinite": -9.108778003779513,
+     "nullFiniteFraction": 1,
+     "p": 0.5045747712614369,
+     "count@rank1000": {
+      "real": 58,
+      "nullMean": 52.1603,
+      "p": 0.47157642117894105
+     },
+     "count@rank10000": {
+      "real": 515,
+      "nullMean": 521.53505,
+      "p": 0.4576271186440678
+     },
+     "count@rank100000": {
+      "real": 5280,
+      "nullMean": 5270.5076,
+      "p": 0.503974801259937
+     }
+    },
+    {
+     "subset": "M",
+     "k": 1,
+     "realBest": -9.197401301101142,
+     "realBestFit": "TWENTYTOTHETO",
+     "nullMeanFinite": -9.591780138196418,
+     "nullFiniteFraction": 1,
+     "p": 0.4124293785310734,
+     "count@rank1000": {
+      "real": 49,
+      "nullMean": 68.28115,
+      "p": 0.5175741212939353
+     },
+     "count@rank10000": {
+      "real": 404,
+      "nullMean": 699.1656,
+      "p": 0.5499725013749313
+     },
+     "count@rank100000": {
+      "real": 3602,
+      "nullMean": 6876.6289,
+      "p": 0.6291185440727963
+     }
+    },
+    {
+     "subset": "N",
+     "k": 1,
+     "realBest": -8.310430927107696,
+     "realBestFit": "ADEFINITIVEAT",
+     "nullMeanFinite": -9.224053157184208,
+     "nullFiniteFraction": 1,
+     "p": 0.23538823058847058,
+     "count@rank1000": {
+      "real": 175,
+      "nullMean": 76.66425,
+      "p": 0.18744062796860156
+     },
+     "count@rank10000": {
+      "real": 1934,
+      "nullMean": 742.70885,
+      "p": 0.09149542522873856
+     },
+     "count@rank100000": {
+      "real": 20605,
+      "nullMean": 7257.15865,
+      "p": 0.09149542522873856
+     }
+    },
+    {
+     "subset": "z",
+     "k": 1,
+     "realBest": -8.770747844394307,
+     "realBestFit": "LEBANONENABLE",
+     "nullMeanFinite": -9.267706560217757,
+     "nullFiniteFraction": 1,
+     "p": 0.21053947302634868,
+     "count@rank1000": {
+      "real": 22,
+      "nullMean": 48.2849,
+      "p": 0.7564121793910304
+     },
+     "count@rank10000": {
+      "real": 296,
+      "nullMean": 506.55205,
+      "p": 0.7699115044247787
+     },
+     "count@rank100000": {
+      "real": 3585,
+      "nullMean": 5214.60935,
+      "p": 0.7088145592720364
+     }
+    },
+    {
+     "subset": "A[",
+     "k": 2,
+     "realBest": -12.2527078596898,
+     "realBestFit": "DAYSNONONLYDO",
+     "nullMeanFinite": -11.27797020392101,
+     "nullFiniteFraction": 1,
+     "p": 0.7878606069696515,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 3.8486,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 6,
+      "nullMean": 37.67925,
+      "p": 0.7427628618569072
+     },
+     "count@rank100000": {
+      "real": 215,
+      "nullMean": 371.2232,
+      "p": 0.4522273886305685
+     }
+    },
+    {
+     "subset": "AE",
+     "k": 2,
+     "realBest": -10.390842580411608,
+     "realBestFit": "DRESSESASKEDA",
+     "nullMeanFinite": -11.051132814194755,
+     "nullFiniteFraction": 0.6597,
+     "p": 0.224088795560222,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 4.22835,
+      "p": 0.40032998350082494
+     },
+     "count@rank10000": {
+      "real": 28,
+      "nullMean": 41.2919,
+      "p": 0.3089345532723364
+     },
+     "count@rank100000": {
+      "real": 392,
+      "nullMean": 404.9961,
+      "p": 0.271886405679716
+     }
+    },
+    {
+     "subset": "AK",
+     "k": 2,
+     "realBest": -10.386075486358457,
+     "realBestFit": "DONOTATSTANDS",
+     "nullMeanFinite": -11.242322649375627,
+     "nullFiniteFraction": 0.9997,
+     "p": 0.20598970051497426,
+     "count@rank1000": {
+      "real": 3,
+      "nullMean": 3.68725,
+      "p": 0.31538423078846056
+     },
+     "count@rank10000": {
+      "real": 17,
+      "nullMean": 36.3232,
+      "p": 0.4455277236138193
+     },
+     "count@rank100000": {
+      "real": 251,
+      "nullMean": 365.9677,
+      "p": 0.36198190090495475
+     }
+    },
+    {
+     "subset": "AM",
+     "k": 2,
+     "realBest": -10.599111717179845,
+     "realBestFit": "DELETETOTALDO",
+     "nullMeanFinite": -11.752251525221478,
+     "nullFiniteFraction": 0.7948,
+     "p": 0.2176891155442228,
+     "count@rank1000": {
+      "real": 2,
+      "nullMean": 4.8049,
+      "p": 0.31703414829258536
+     },
+     "count@rank10000": {
+      "real": 31,
+      "nullMean": 48.0067,
+      "p": 0.26043697815109246
+     },
+     "count@rank100000": {
+      "real": 234,
+      "nullMean": 469.8338,
+      "p": 0.31253437328133593
+     }
+    },
+    {
+     "subset": "AN",
+     "k": 2,
+     "realBest": -10.390842580411608,
+     "realBestFit": "DRESSESASKEDA",
+     "nullMeanFinite": -11.685420888777433,
+     "nullFiniteFraction": 0.9607,
+     "p": 0.224038798060097,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 5.62665,
+      "p": 0.48052597370131495
+     },
+     "count@rank10000": {
+      "real": 25,
+      "nullMean": 52.9711,
+      "p": 0.35878206089695514
+     },
+     "count@rank100000": {
+      "real": 339,
+      "nullMean": 516.9768,
+      "p": 0.3448827558622069
+     }
+    },
+    {
+     "subset": "Az",
+     "k": 2,
+     "realBest": -12.011157592292836,
+     "realBestFit": "DANATITSTANDS",
+     "nullMeanFinite": -11.377377940758139,
+     "nullFiniteFraction": 1,
+     "p": 0.7081145942702864,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 3.4526,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 8,
+      "nullMean": 35.5167,
+      "p": 0.6330683465826709
+     },
+     "count@rank100000": {
+      "real": 88,
+      "nullMean": 364.7695,
+      "p": 0.672566371681416
+     }
+    },
+    {
+     "subset": "E[",
+     "k": 2,
+     "realBest": -10.445361021524118,
+     "realBestFit": "ARECANADALEAD",
+     "nullMeanFinite": -10.898662449915008,
+     "nullFiniteFraction": 1,
+     "p": 0.31488425578721063,
+     "count@rank1000": {
+      "real": 4,
+      "nullMean": 3.1239,
+      "p": 0.3095845207739613
+     },
+     "count@rank10000": {
+      "real": 68,
+      "nullMean": 31.19315,
+      "p": 0.10349482525873706
+     },
+     "count@rank100000": {
+      "real": 754,
+      "nullMean": 310.7241,
+      "p": 0.0367981600919954
+     }
+    },
+    {
+     "subset": "EK",
+     "k": 2,
+     "realBest": -11.008422893195366,
+     "realBestFit": "TRANSASESTATE",
+     "nullMeanFinite": -10.978739076416643,
+     "nullFiniteFraction": 1,
+     "p": 0.4874256287185641,
+     "count@rank1000": {
+      "real": 5,
+      "nullMean": 2.99735,
+      "p": 0.20943952802359883
+     },
+     "count@rank10000": {
+      "real": 49,
+      "nullMean": 30.15365,
+      "p": 0.18994050297485127
+     },
+     "count@rank100000": {
+      "real": 473,
+      "nullMean": 305.35355,
+      "p": 0.20743962801859908
+     }
+    },
+    {
+     "subset": "EM",
+     "k": 2,
+     "realBest": -9.553638972834802,
+     "realBestFit": "TREATYTOTHETO",
+     "nullMeanFinite": -11.4717114509698,
+     "nullFiniteFraction": 0.9978,
+     "p": 0.08589570521473926,
+     "count@rank1000": {
+      "real": 7,
+      "nullMean": 3.852,
+      "p": 0.16729163541822908
+     },
+     "count@rank10000": {
+      "real": 57,
+      "nullMean": 39.6315,
+      "p": 0.22758862056897156
+     },
+     "count@rank100000": {
+      "real": 346,
+      "nullMean": 392.19775,
+      "p": 0.36023198840057996
+     }
+    },
+    {
+     "subset": "EN",
+     "k": 2,
+     "realBest": -9.093734078510707,
+     "realBestFit": "OREGONOFONEOF",
+     "nullMeanFinite": -11.364808758286818,
+     "nullFiniteFraction": 0.9679,
+     "p": 0.04044797760111994,
+     "count@rank1000": {
+      "real": 54,
+      "nullMean": 4.2838,
+      "p": 0.019699015049247537
+     },
+     "count@rank10000": {
+      "real": 472,
+      "nullMean": 42.44125,
+      "p": 0.007849607519624019
+     },
+     "count@rank100000": {
+      "real": 3831,
+      "nullMean": 414.9318,
+      "p": 0.007849607519624019
+     }
+    },
+    {
+     "subset": "Ez",
+     "k": 2,
+     "realBest": -9.553638972834802,
+     "realBestFit": "TREATYTOTHETO",
+     "nullMeanFinite": -11.07031827302225,
+     "nullFiniteFraction": 1,
+     "p": 0.06724663766811659,
+     "count@rank1000": {
+      "real": 5,
+      "nullMean": 2.7224,
+      "p": 0.20698965051747412
+     },
+     "count@rank10000": {
+      "real": 82,
+      "nullMean": 29.07355,
+      "p": 0.05264736763161842
+     },
+     "count@rank100000": {
+      "real": 661,
+      "nullMean": 300.30495,
+      "p": 0.10284485775711215
+     }
+    },
+    {
+     "subset": "K[",
+     "k": 2,
+     "realBest": -11.93447890482062,
+     "realBestFit": "STARTATATLASA",
+     "nullMeanFinite": -11.038755874832495,
+     "nullFiniteFraction": 1,
+     "p": 0.8362581870906455,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 2.79695,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 13,
+      "nullMean": 28.00385,
+      "p": 0.6586170691465427
+     },
+     "count@rank100000": {
+      "real": 233,
+      "nullMean": 283.0415,
+      "p": 0.46697665116744164
+     }
+    },
+    {
+     "subset": "KM",
+     "k": 2,
+     "realBest": -11.718770470092718,
+     "realBestFit": "THEONANONCETO",
+     "nullMeanFinite": -11.726335425612922,
+     "nullFiniteFraction": 0.9844,
+     "p": 0.5096745162741863,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 3.3971,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 23,
+      "nullMean": 34.9956,
+      "p": 0.36693165341732914
+     },
+     "count@rank100000": {
+      "real": 321,
+      "nullMean": 352.6128,
+      "p": 0.3424828758562072
+     }
+    },
+    {
+     "subset": "M[",
+     "k": 2,
+     "realBest": -11.424595249039312,
+     "realBestFit": "GROUNDNONLOGO",
+     "nullMeanFinite": -11.587161436329254,
+     "nullFiniteFraction": 0.996,
+     "p": 0.5161741912904355,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 3.74565,
+      "p": 0.5380230988450577
+     },
+     "count@rank10000": {
+      "real": 15,
+      "nullMean": 37.3317,
+      "p": 0.5310234488275586
+     },
+     "count@rank100000": {
+      "real": 90,
+      "nullMean": 363.00605,
+      "p": 0.6564671766411679
+     }
+    },
+    {
+     "subset": "N[",
+     "k": 2,
+     "realBest": -10.445361021524118,
+     "realBestFit": "ARECANADALEAD",
+     "nullMeanFinite": -11.356110646384787,
+     "nullFiniteFraction": 0.9988,
+     "p": 0.2663866806659667,
+     "count@rank1000": {
+      "real": 10,
+      "nullMean": 4.06185,
+      "p": 0.1448427578621069
+     },
+     "count@rank10000": {
+      "real": 135,
+      "nullMean": 39.67155,
+      "p": 0.08594570271486425
+     },
+     "count@rank100000": {
+      "real": 1540,
+      "nullMean": 380.9681,
+      "p": 0.016899155042247888
+     }
+    },
+    {
+     "subset": "NK",
+     "k": 2,
+     "realBest": -9.563684672507847,
+     "realBestFit": "SEESTATETHESE",
+     "nullMeanFinite": -11.174367111716741,
+     "nullFiniteFraction": 1,
+     "p": 0.10274486275686216,
+     "count@rank1000": {
+      "real": 20,
+      "nullMean": 4.0045,
+      "p": 0.05879706014699265
+     },
+     "count@rank10000": {
+      "real": 107,
+      "nullMean": 38.50265,
+      "p": 0.1048447577621119
+     },
+     "count@rank100000": {
+      "real": 931,
+      "nullMean": 380.3356,
+      "p": 0.10664466776661168
+     }
+    },
+    {
+     "subset": "NM",
+     "k": 2,
+     "realBest": -9.197401301101142,
+     "realBestFit": "TWENTYTOTHETO",
+     "nullMeanFinite": -11.653065090080021,
+     "nullFiniteFraction": 0.97815,
+     "p": 0.05889705514724264,
+     "count@rank1000": {
+      "real": 25,
+      "nullMean": 5.24665,
+      "p": 0.07154642267886606
+     },
+     "count@rank10000": {
+      "real": 104,
+      "nullMean": 52.18855,
+      "p": 0.167841607919604
+     },
+     "count@rank100000": {
+      "real": 549,
+      "nullMean": 502.74095,
+      "p": 0.26438678066096694
+     }
+    },
+    {
+     "subset": "Nz",
+     "k": 2,
+     "realBest": -9.553638972834802,
+     "realBestFit": "TREATYTOTHETO",
+     "nullMeanFinite": -11.38804168547277,
+     "nullFiniteFraction": 0.9997,
+     "p": 0.09444527773611319,
+     "count@rank1000": {
+      "real": 8,
+      "nullMean": 3.59485,
+      "p": 0.14044297785110743
+     },
+     "count@rank10000": {
+      "real": 121,
+      "nullMean": 36.8155,
+      "p": 0.0968451577421129
+     },
+     "count@rank100000": {
+      "real": 1072,
+      "nullMean": 372.62235,
+      "p": 0.08019599020048998
+     }
+    },
+    {
+     "subset": "z[",
+     "k": 2,
+     "realBest": -10.889720092625993,
+     "realBestFit": "BYEACHCYCLEBY",
+     "nullMeanFinite": -11.084279370432787,
+     "nullFiniteFraction": 1,
+     "p": 0.3864306784660767,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 2.6605,
+      "p": 0.6338683065846707
+     },
+     "count@rank10000": {
+      "real": 16,
+      "nullMean": 27.7161,
+      "p": 0.6061196940152992
+     },
+     "count@rank100000": {
+      "real": 163,
+      "nullMean": 280.47945,
+      "p": 0.6745162741862907
+     }
+    },
+    {
+     "subset": "zK",
+     "k": 2,
+     "realBest": -11.831475357385852,
+     "realBestFit": "MAYANANENZYME",
+     "nullMeanFinite": -11.159744065888566,
+     "nullFiniteFraction": 1,
+     "p": 0.7749612519374032,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 2.3977,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 19,
+      "nullMean": 25.74305,
+      "p": 0.5032248387580621
+     },
+     "count@rank100000": {
+      "real": 465,
+      "nullMean": 274.3352,
+      "p": 0.15859207039648018
+     }
+    },
+    {
+     "subset": "zM",
+     "k": 2,
+     "realBest": -9.553638972834802,
+     "realBestFit": "TREATYTOTHETO",
+     "nullMeanFinite": -11.450662785968472,
+     "nullFiniteFraction": 1,
+     "p": 0.08674566271686415,
+     "count@rank1000": {
+      "real": 9,
+      "nullMean": 3.3819,
+      "p": 0.13229338533073345
+     },
+     "count@rank10000": {
+      "real": 69,
+      "nullMean": 35.34155,
+      "p": 0.17479126043697815
+     },
+     "count@rank100000": {
+      "real": 534,
+      "nullMean": 354.62405,
+      "p": 0.22423878806059697
+     }
+    },
+    {
+     "subset": "AE[",
+     "k": 3,
+     "realBest": -13.068088650854488,
+     "realBestFit": "DRAMASASALADS",
+     "nullMeanFinite": -12.937375657139627,
+     "nullFiniteFraction": 0.62985,
+     "p": 0.335783210839458,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.22855,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.2447,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 55,
+      "nullMean": 21.86765,
+      "p": 0.11409429528523574
+     }
+    },
+    {
+     "subset": "AEK",
+     "k": 3,
+     "realBest": -12.22099419778395,
+     "realBestFit": "DRAINANDNOADD",
+     "nullMeanFinite": -12.94356874018936,
+     "nullFiniteFraction": 0.6397,
+     "p": 0.19144042797860106,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.21705,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 5,
+      "nullMean": 2.1359,
+      "p": 0.12649367531623418
+     },
+     "count@rank100000": {
+      "real": 48,
+      "nullMean": 21.36055,
+      "p": 0.12684365781710916
+     }
+    },
+    {
+     "subset": "AEM",
+     "k": 3,
+     "realBest": -12.78177143006727,
+     "realBestFit": "DREWTOTOTHEDO",
+     "nullMeanFinite": -13.159885738003954,
+     "nullFiniteFraction": 0.47295,
+     "p": 0.19689015549222538,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.28525,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 3,
+      "nullMean": 2.8417,
+      "p": 0.14754262286885655
+     },
+     "count@rank100000": {
+      "real": 29,
+      "nullMean": 27.5011,
+      "p": 0.16099195040247988
+     }
+    },
+    {
+     "subset": "AEN",
+     "k": 3,
+     "realBest": -10.390842580411608,
+     "realBestFit": "DRESSESASKEDA",
+     "nullMeanFinite": -12.861399076286604,
+     "nullFiniteFraction": 0.38735,
+     "p": 0.024898755062246886,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.33345,
+      "p": 0.08229588520573972
+     },
+     "count@rank10000": {
+      "real": 11,
+      "nullMean": 3.1615,
+      "p": 0.06579671016449178
+     },
+     "count@rank100000": {
+      "real": 78,
+      "nullMean": 30.09965,
+      "p": 0.08674566271686415
+     }
+    },
+    {
+     "subset": "AEz",
+     "k": 3,
+     "realBest": -12.98056744733079,
+     "realBestFit": "DREAMSMOMWEDO",
+     "nullMeanFinite": -13.028197176143834,
+     "nullFiniteFraction": 0.6005,
+     "p": 0.29183540822958853,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.19175,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 2.0674,
+      "p": 0.30353482325883707
+     },
+     "count@rank100000": {
+      "real": 14,
+      "nullMean": 21.09065,
+      "p": 0.28443577821108945
+     }
+    },
+    {
+     "subset": "AK[",
+     "k": 3,
+     "realBest": -13.227052960007981,
+     "realBestFit": "DEADBABEBLADE",
+     "nullMeanFinite": -13.273644167805775,
+     "nullFiniteFraction": 0.9698,
+     "p": 0.46607669616519176,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1925,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 1.89875,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 25,
+      "nullMean": 19.1445,
+      "p": 0.2215889205539723
+     }
+    },
+    {
+     "subset": "AKM",
+     "k": 3,
+     "realBest": -13.546791142936868,
+     "realBestFit": "DELATATOTALDO",
+     "nullMeanFinite": -13.503382397688009,
+     "nullFiniteFraction": 0.689,
+     "p": 0.3454327283635818,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.23965,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.43645,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 17,
+      "nullMean": 23.97735,
+      "p": 0.23978801059947003
+     }
+    },
+    {
+     "subset": "AM[",
+     "k": 3,
+     "realBest": -12.2527078596898,
+     "realBestFit": "DAYSNONONLYDO",
+     "nullMeanFinite": -13.440787749941371,
+     "nullFiniteFraction": 0.6502,
+     "p": 0.14664266786660668,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.25685,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 2.5524,
+      "p": 0.2569371531423429
+     },
+     "count@rank100000": {
+      "real": 6,
+      "nullMean": 24.8208,
+      "p": 0.3429828508574571
+     }
+    },
+    {
+     "subset": "AN[",
+     "k": 3,
+     "realBest": -13.317396410116322,
+     "realBestFit": "DOESTOTITLEDI",
+     "nullMeanFinite": -13.45701700762033,
+     "nullFiniteFraction": 0.72735,
+     "p": 0.3304334783260837,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.29165,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.8086,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 16,
+      "nullMean": 26.82225,
+      "p": 0.2744862756862157
+     }
+    },
+    {
+     "subset": "ANK",
+     "k": 3,
+     "realBest": -12.8634913518096,
+     "realBestFit": "DRESSASASKEDA",
+     "nullMeanFinite": -13.408397610355518,
+     "nullFiniteFraction": 0.82995,
+     "p": 0.30418479076046195,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.30245,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 2.7946,
+      "p": 0.34683265836708166
+     },
+     "count@rank100000": {
+      "real": 54,
+      "nullMean": 27.1399,
+      "p": 0.13244337783110843
+     }
+    },
+    {
+     "subset": "ANM",
+     "k": 3,
+     "realBest": -11.854892503770696,
+     "realBestFit": "DOESTOTOTHEDO",
+     "nullMeanFinite": -13.1802484033587,
+     "nullFiniteFraction": 0.4377,
+     "p": 0.09564521773911304,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.3643,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 11,
+      "nullMean": 3.53715,
+      "p": 0.06619669016549172
+     },
+     "count@rank100000": {
+      "real": 41,
+      "nullMean": 34.4596,
+      "p": 0.13254337283135842
+     }
+    },
+    {
+     "subset": "ANz",
+     "k": 3,
+     "realBest": -12.98056744733079,
+     "realBestFit": "DREAMSMOMWEDO",
+     "nullMeanFinite": -13.53075993476808,
+     "nullFiniteFraction": 0.75355,
+     "p": 0.2809359532023399,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.2565,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 2.5342,
+      "p": 0.29103544822758864
+     },
+     "count@rank100000": {
+      "real": 16,
+      "nullMean": 25.8647,
+      "p": 0.26948652567371634
+     }
+    },
+    {
+     "subset": "Az[",
+     "k": 3,
+     "realBest": -13.136767829658393,
+     "realBestFit": "DAYANONONLYDO",
+     "nullMeanFinite": -13.302112732353354,
+     "nullFiniteFraction": 0.94595,
+     "p": 0.43992800359982,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1835,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 1.92465,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 19.4481,
+      "p": 0.7247637618119094
+     }
+    },
+    {
+     "subset": "AzK",
+     "k": 3,
+     "realBest": -12.724025015060743,
+     "realBestFit": "DIDABABYBUDDY",
+     "nullMeanFinite": -13.369505932989792,
+     "nullFiniteFraction": 0.9497,
+     "p": 0.31888405579721013,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1723,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 1.80185,
+      "p": 0.39323033848307587
+     },
+     "count@rank100000": {
+      "real": 13,
+      "nullMean": 19.0111,
+      "p": 0.36658167091645416
+     }
+    },
+    {
+     "subset": "AzM",
+     "k": 3,
+     "realBest": -12.093228452029347,
+     "realBestFit": "DONATETOTENDO",
+     "nullMeanFinite": -13.428405000054731,
+     "nullFiniteFraction": 0.68035,
+     "p": 0.14939253037348132,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.2376,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 2.45985,
+      "p": 0.21543922803859808
+     },
+     "count@rank100000": {
+      "real": 36,
+      "nullMean": 24.45395,
+      "p": 0.16099195040247988
+     }
+    },
+    {
+     "subset": "EK[",
+     "k": 3,
+     "realBest": -12.64669230508783,
+     "realBestFit": "TRYINANONLYTO",
+     "nullMeanFinite": -12.972494667241612,
+     "nullFiniteFraction": 0.9945,
+     "p": 0.3817309134543273,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.16235,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 1.6216,
+      "p": 0.33173341332933354
+     },
+     "count@rank100000": {
+      "real": 25,
+      "nullMean": 16.6117,
+      "p": 0.21978901054947253
+     }
+    },
+    {
+     "subset": "EKM",
+     "k": 3,
+     "realBest": -12.217120206925074,
+     "realBestFit": "TRAUMAMOMMATO",
+     "nullMeanFinite": -13.4689828053657,
+     "nullFiniteFraction": 0.90805,
+     "p": 0.2007399630018499,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1996,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 4,
+      "nullMean": 1.9855,
+      "p": 0.15729213539323034
+     },
+     "count@rank100000": {
+      "real": 45,
+      "nullMean": 20.19565,
+      "p": 0.14204289785510724
+     }
+    },
+    {
+     "subset": "EM[",
+     "k": 3,
+     "realBest": -11.424595249039312,
+     "realBestFit": "GROUNDNONLOGO",
+     "nullMeanFinite": -13.29569703518842,
+     "nullFiniteFraction": 0.903,
+     "p": 0.09484525773711315,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.2109,
+      "p": 0.10434478276086195
+     },
+     "count@rank10000": {
+      "real": 10,
+      "nullMean": 2.103,
+      "p": 0.06529673516324183
+     },
+     "count@rank100000": {
+      "real": 20,
+      "nullMean": 20.79015,
+      "p": 0.2845857707114644
+     }
+    },
+    {
+     "subset": "EN[",
+     "k": 3,
+     "realBest": -10.445361021524118,
+     "realBestFit": "ARECANADALEAD",
+     "nullMeanFinite": -13.28134758279562,
+     "nullFiniteFraction": 0.8619,
+     "p": 0.030198490075496225,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.23345,
+      "p": 0.10494475276236188
+     },
+     "count@rank10000": {
+      "real": 21,
+      "nullMean": 2.2653,
+      "p": 0.020498975051247436
+     },
+     "count@rank100000": {
+      "real": 235,
+      "nullMean": 22.11995,
+      "p": 0.006849657517124144
+     }
+    },
+    {
+     "subset": "ENK",
+     "k": 3,
+     "realBest": -11.133001500521727,
+     "realBestFit": "SRESTATETHESE",
+     "nullMeanFinite": -13.293114036311001,
+     "nullFiniteFraction": 0.90055,
+     "p": 0.06934653267336634,
+     "count@rank1000": {
+      "real": 2,
+      "nullMean": 0.22135,
+      "p": 0.04624768761561922
+     },
+     "count@rank10000": {
+      "real": 11,
+      "nullMean": 2.18095,
+      "p": 0.052247387630618466
+     },
+     "count@rank100000": {
+      "real": 132,
+      "nullMean": 21.78485,
+      "p": 0.02839858007099645
+     }
+    },
+    {
+     "subset": "ENM",
+     "k": 3,
+     "realBest": -9.553638972834802,
+     "realBestFit": "TREATYTOTHETO",
+     "nullMeanFinite": -13.430662839897394,
+     "nullFiniteFraction": 0.7492,
+     "p": 0.00919954002299885,
+     "count@rank1000": {
+      "real": 5,
+      "nullMean": 0.30395,
+      "p": 0.020848957552122394
+     },
+     "count@rank10000": {
+      "real": 21,
+      "nullMean": 3.0187,
+      "p": 0.040497975101244935
+     },
+     "count@rank100000": {
+      "real": 96,
+      "nullMean": 29.00785,
+      "p": 0.08189590520473976
+     }
+    },
+    {
+     "subset": "ENz",
+     "k": 3,
+     "realBest": -9.553638972834802,
+     "realBestFit": "TREATYTOTHETO",
+     "nullMeanFinite": -13.334481468083894,
+     "nullFiniteFraction": 0.7856,
+     "p": 0.005149742512874356,
+     "count@rank1000": {
+      "real": 5,
+      "nullMean": 0.20475,
+      "p": 0.0071996400179991
+     },
+     "count@rank10000": {
+      "real": 76,
+      "nullMean": 2.10045,
+      "p": 0.0018499075046247689
+     },
+     "count@rank100000": {
+      "real": 539,
+      "nullMean": 21.4269,
+      "p": 0.0031498425078746064
+     }
+    },
+    {
+     "subset": "Ez[",
+     "k": 3,
+     "realBest": -11.917229494088227,
+     "realBestFit": "BREACHCYCLEBY",
+     "nullMeanFinite": -13.047795485038499,
+     "nullFiniteFraction": 0.9899,
+     "p": 0.17734113294335282,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.15205,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 5,
+      "nullMean": 1.5839,
+      "p": 0.11209439528023599
+     },
+     "count@rank100000": {
+      "real": 45,
+      "nullMean": 16.201,
+      "p": 0.08294585270736463
+     }
+    },
+    {
+     "subset": "EzK",
+     "k": 3,
+     "realBest": -12.325210072533208,
+     "realBestFit": "AREASASKSPEAK",
+     "nullMeanFinite": -13.216493971531628,
+     "nullFiniteFraction": 0.98405,
+     "p": 0.24043797810109493,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1324,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 3,
+      "nullMean": 1.48425,
+      "p": 0.18989050547472627
+     },
+     "count@rank100000": {
+      "real": 54,
+      "nullMean": 15.86105,
+      "p": 0.06234688265586721
+     }
+    },
+    {
+     "subset": "EzM",
+     "k": 3,
+     "realBest": -9.553638972834802,
+     "realBestFit": "TREATYTOTHETO",
+     "nullMeanFinite": -13.358000075661714,
+     "nullFiniteFraction": 0.9043,
+     "p": 0.005949702514874256,
+     "count@rank1000": {
+      "real": 2,
+      "nullMean": 0.19845,
+      "p": 0.04074796260186991
+     },
+     "count@rank10000": {
+      "real": 10,
+      "nullMean": 2.0349,
+      "p": 0.05824708764561772
+     },
+     "count@rank100000": {
+      "real": 43,
+      "nullMean": 20.53085,
+      "p": 0.1575421228938553
+     }
+    },
+    {
+     "subset": "KM[",
+     "k": 3,
+     "realBest": -12.64669230508783,
+     "realBestFit": "TRYINANONLYTO",
+     "nullMeanFinite": -13.48398227046435,
+     "nullFiniteFraction": 0.8659,
+     "p": 0.2536873156342183,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.18705,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 1.86485,
+      "p": 0.2303384830758462
+     },
+     "count@rank100000": {
+      "real": 11,
+      "nullMean": 18.8035,
+      "p": 0.35643217839108043
+     }
+    },
+    {
+     "subset": "NK[",
+     "k": 3,
+     "realBest": -12.27335030497284,
+     "realBestFit": "SPENTATITLESI",
+     "nullMeanFinite": -13.33220540358535,
+     "nullFiniteFraction": 0.92485,
+     "p": 0.22578871056447178,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.2104,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 4,
+      "nullMean": 2.07195,
+      "p": 0.167891605419729
+     },
+     "count@rank100000": {
+      "real": 47,
+      "nullMean": 20.22985,
+      "p": 0.13254337283135842
+     }
+    },
+    {
+     "subset": "NKM",
+     "k": 3,
+     "realBest": -11.718770470092718,
+     "realBestFit": "THEONANONCETO",
+     "nullMeanFinite": -13.539462982163586,
+     "nullFiniteFraction": 0.83105,
+     "p": 0.1143942802859857,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.2609,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 4,
+      "nullMean": 2.61715,
+      "p": 0.15789210539473025
+     },
+     "count@rank100000": {
+      "real": 48,
+      "nullMean": 25.5605,
+      "p": 0.15009249537523123
+     }
+    },
+    {
+     "subset": "NM[",
+     "k": 3,
+     "realBest": -14.160716439455179,
+     "realBestFit": "THEMACAOALETO",
+     "nullMeanFinite": -13.554561209338168,
+     "nullFiniteFraction": 0.78455,
+     "p": 0.48937553122343885,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.26925,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 2.7162,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 25.86505,
+      "p": 0.5255737213139343
+     }
+    },
+    {
+     "subset": "Nz[",
+     "k": 3,
+     "realBest": -10.889720092625993,
+     "realBestFit": "BYEACHCYCLEBY",
+     "nullMeanFinite": -13.387934151511637,
+     "nullFiniteFraction": 0.9133,
+     "p": 0.03819809009549523,
+     "count@rank1000": {
+      "real": 1,
+      "nullMean": 0.18525,
+      "p": 0.08769561521923903
+     },
+     "count@rank10000": {
+      "real": 12,
+      "nullMean": 1.97645,
+      "p": 0.04249787510624469
+     },
+     "count@rank100000": {
+      "real": 77,
+      "nullMean": 19.6609,
+      "p": 0.06619669016549172
+     }
+    },
+    {
+     "subset": "NzK",
+     "k": 3,
+     "realBest": -12.08972373632619,
+     "realBestFit": "SWEATATSTRESS",
+     "nullMeanFinite": -13.415358189356324,
+     "nullFiniteFraction": 0.9123,
+     "p": 0.1687915604219789,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1662,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 6,
+      "nullMean": 1.8224,
+      "p": 0.09819509024548773
+     },
+     "count@rank100000": {
+      "real": 140,
+      "nullMean": 19.24085,
+      "p": 0.016349182540872958
+     }
+    },
+    {
+     "subset": "NzM",
+     "k": 3,
+     "realBest": -9.553638972834802,
+     "realBestFit": "TREATYTOTHETO",
+     "nullMeanFinite": -13.483764265312766,
+     "nullFiniteFraction": 0.8249,
+     "p": 0.006499675016249188,
+     "count@rank1000": {
+      "real": 4,
+      "nullMean": 0.26585,
+      "p": 0.0175991200439978
+     },
+     "count@rank10000": {
+      "real": 18,
+      "nullMean": 2.6217,
+      "p": 0.0375981200939953
+     },
+     "count@rank100000": {
+      "real": 82,
+      "nullMean": 25.3869,
+      "p": 0.07799610019499024
+     }
+    },
+    {
+     "subset": "zK[",
+     "k": 3,
+     "realBest": -13.798248162125116,
+     "realBestFit": "SWEATATITLESI",
+     "nullMeanFinite": -13.137447460711433,
+     "nullFiniteFraction": 0.99065,
+     "p": 0.7074646267686616,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1355,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 1.39895,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 14,
+      "nullMean": 14.86855,
+      "p": 0.3630318484075796
+     }
+    },
+    {
+     "subset": "zKM",
+     "k": 3,
+     "realBest": -12.193752341928201,
+     "realBestFit": "TELATATOTALTO",
+     "nullMeanFinite": -13.519337687862054,
+     "nullFiniteFraction": 0.88845,
+     "p": 0.1727913604319784,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.16055,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 1.7066,
+      "p": 0.23208839558022099
+     },
+     "count@rank100000": {
+      "real": 49,
+      "nullMean": 18.1856,
+      "p": 0.11274436278186091
+     }
+    },
+    {
+     "subset": "zM[",
+     "k": 3,
+     "realBest": -12.36502133961065,
+     "realBestFit": "TRYANONONLYTO",
+     "nullMeanFinite": -13.340148161320872,
+     "nullFiniteFraction": 0.9202,
+     "p": 0.2295885205739713,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.1925,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 1.93445,
+      "p": 0.3981800909954502
+     },
+     "count@rank100000": {
+      "real": 19,
+      "nullMean": 18.92555,
+      "p": 0.2965851707414629
+     }
+    },
+    {
+     "subset": "AEK[",
+     "k": 4,
+     "realBest": -13.685519300889155,
+     "realBestFit": "DRAWBABEBLADE",
+     "nullMeanFinite": -14.488730551340813,
+     "nullFiniteFraction": 0.4621,
+     "p": 0.12019399030048497,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0119,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1168,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 5,
+      "nullMean": 1.1442,
+      "p": 0.07534623268836559
+     }
+    },
+    {
+     "subset": "AEKM",
+     "k": 4,
+     "realBest": -13.897952438516732,
+     "realBestFit": "DROWNANONTODO",
+     "nullMeanFinite": -14.423243857589256,
+     "nullFiniteFraction": 0.29905,
+     "p": 0.09614519274036298,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01345,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1379,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 1.37255,
+      "p": 0.12449377531123444
+     }
+    },
+    {
+     "subset": "AEM[",
+     "k": 4,
+     "realBest": -14.285156425199258,
+     "realBestFit": "DRYANONONLYDO",
+     "nullMeanFinite": -14.353459382953284,
+     "nullFiniteFraction": 0.2772,
+     "p": 0.11899405029748512,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0144,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1405,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.39795,
+      "p": 0.1641917904104795
+     }
+    },
+    {
+     "subset": "AEN[",
+     "k": 4,
+     "realBest": -13.411786494832777,
+     "realBestFit": "DRESSESISLEDI",
+     "nullMeanFinite": -14.183245287944743,
+     "nullFiniteFraction": 0.23015,
+     "p": 0.06464676766161692,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01795,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1795,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 4,
+      "nullMean": 1.60035,
+      "p": 0.07879606019699015
+     }
+    },
+    {
+     "subset": "AENK",
+     "k": 4,
+     "realBest": -12.8634913518096,
+     "realBestFit": "DRESSASASKEDA",
+     "nullMeanFinite": -14.22438850850136,
+     "nullFiniteFraction": 0.26035,
+     "p": 0.04329783510824459,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01735,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 0.1595,
+      "p": 0.05179741012949352
+     },
+     "count@rank100000": {
+      "real": 9,
+      "nullMean": 1.55075,
+      "p": 0.047297635118244086
+     }
+    },
+    {
+     "subset": "AENM",
+     "k": 4,
+     "realBest": -12.78177143006727,
+     "realBestFit": "DREWTOTOTHEDO",
+     "nullMeanFinite": -14.018337861528058,
+     "nullFiniteFraction": 0.1477,
+     "p": 0.03144842757862107,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0251,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 0.23875,
+      "p": 0.025748712564371782
+     },
+     "count@rank100000": {
+      "real": 6,
+      "nullMean": 2.24745,
+      "p": 0.05234738263086846
+     }
+    },
+    {
+     "subset": "AENz",
+     "k": 4,
+     "realBest": -12.98056744733079,
+     "realBestFit": "DREAMSMOMWEDO",
+     "nullMeanFinite": -14.216102751427451,
+     "nullFiniteFraction": 0.1908,
+     "p": 0.03629818509074546,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01485,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 0.14775,
+      "p": 0.03844807759612019
+     },
+     "count@rank100000": {
+      "real": 11,
+      "nullMean": 1.5102,
+      "p": 0.03159842007899605
+     }
+    },
+    {
+     "subset": "AEz[",
+     "k": 4,
+     "realBest": -14.285156425199258,
+     "realBestFit": "DRYANONONLYDO",
+     "nullMeanFinite": -14.462105159424702,
+     "nullFiniteFraction": 0.40795,
+     "p": 0.1641917904104795,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01165,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.11645,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.1372,
+      "p": 0.23343832808359583
+     }
+    },
+    {
+     "subset": "AEzK",
+     "k": 4,
+     "realBest": -14.52638227440486,
+     "realBestFit": "DREADADADDEDA",
+     "nullMeanFinite": -14.55046440199391,
+     "nullFiniteFraction": 0.4291,
+     "p": 0.18929053547322633,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01065,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.10935,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 1.14,
+      "p": 0.15169241537923103
+     }
+    },
+    {
+     "subset": "AEzM",
+     "k": 4,
+     "realBest": -12.98056744733079,
+     "realBestFit": "DREAMSMOMWEDO",
+     "nullMeanFinite": -14.36578407677272,
+     "nullFiniteFraction": 0.27375,
+     "p": 0.04699765011749413,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0141,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 0.14995,
+      "p": 0.05029748512574371
+     },
+     "count@rank100000": {
+      "real": 7,
+      "nullMean": 1.5021,
+      "p": 0.05724713764311785
+     }
+    },
+    {
+     "subset": "AKM[",
+     "k": 4,
+     "realBest": -14.008409444811772,
+     "realBestFit": "DAYSNANONLYDO",
+     "nullMeanFinite": -14.635702931192691,
+     "nullFiniteFraction": 0.3719,
+     "p": 0.10859457027148643,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0106,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1183,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.24785,
+      "p": 0.1894905254737263
+     }
+    },
+    {
+     "subset": "ANK[",
+     "k": 4,
+     "realBest": -15.074350081576696,
+     "realBestFit": "DUEATATITLEDI",
+     "nullMeanFinite": -14.63704411504032,
+     "nullFiniteFraction": 0.42565,
+     "p": 0.23978801059947003,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01385,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.13895,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.3419,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANKM",
+     "k": 4,
+     "realBest": -14.349087205263151,
+     "realBestFit": "DOESNANONWEDO",
+     "nullMeanFinite": -14.435025563371187,
+     "nullFiniteFraction": 0.2612,
+     "p": 0.10759462026898656,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0199,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.19105,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 1.77665,
+      "p": 0.14519274036298185
+     }
+    },
+    {
+     "subset": "ANM[",
+     "k": 4,
+     "realBest": -15.9641571007301,
+     "realBestFit": "DIEGOTOOOLEDO",
+     "nullMeanFinite": -14.376638632077604,
+     "nullFiniteFraction": 0.2056,
+     "p": 0.18274086295685216,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0189,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.16705,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.56115,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANz[",
+     "k": 4,
+     "realBest": -15.074350081576696,
+     "realBestFit": "DUEATATITLEDI",
+     "nullMeanFinite": -14.519790657723634,
+     "nullFiniteFraction": 0.35835,
+     "p": 0.2144392780360982,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01215,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1355,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.3586,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANzK",
+     "k": 4,
+     "realBest": -14.52638227440486,
+     "realBestFit": "DREADADADDEDA",
+     "nullMeanFinite": -14.64898657819508,
+     "nullFiniteFraction": 0.40825,
+     "p": 0.16529173541322933,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01335,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.13155,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 1.32405,
+      "p": 0.14739263036848158
+     }
+    },
+    {
+     "subset": "ANzM",
+     "k": 4,
+     "realBest": -12.98056744733079,
+     "realBestFit": "DREAMSMOMWEDO",
+     "nullMeanFinite": -14.386753861992522,
+     "nullFiniteFraction": 0.23655,
+     "p": 0.03944802759862007,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.02025,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 0.18665,
+      "p": 0.041947902604869754
+     },
+     "count@rank100000": {
+      "real": 5,
+      "nullMean": 1.7782,
+      "p": 0.06614669266536673
+     }
+    },
+    {
+     "subset": "AzK[",
+     "k": 4,
+     "realBest": -15.074350081576696,
+     "realBestFit": "DUEATATITLEDI",
+     "nullMeanFinite": -14.720843342775963,
+     "nullFiniteFraction": 0.5997,
+     "p": 0.3302834858257087,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00955,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.09755,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.99765,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AzKM",
+     "k": 4,
+     "realBest": -13.546791142936868,
+     "realBestFit": "DELATATOTALDO",
+     "nullMeanFinite": -14.631508724510631,
+     "nullFiniteFraction": 0.3902,
+     "p": 0.07634618269086546,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.11685,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 1.22615,
+      "p": 0.14054297285135744
+     }
+    },
+    {
+     "subset": "AzM[",
+     "k": 4,
+     "realBest": -13.136767829658393,
+     "realBestFit": "DAYANONONLYDO",
+     "nullMeanFinite": -14.532419187400626,
+     "nullFiniteFraction": 0.3684,
+     "p": 0.060296985150742465,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0104,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1326,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 1.30675,
+      "p": 0.13844307784610768
+     }
+    },
+    {
+     "subset": "EKM[",
+     "k": 4,
+     "realBest": -12.64669230508783,
+     "realBestFit": "TRYINANONLYTO",
+     "nullMeanFinite": -14.628064079318515,
+     "nullFiniteFraction": 0.54235,
+     "p": 0.03824808759562022,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01045,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 0.1048,
+      "p": 0.022748862556872158
+     },
+     "count@rank100000": {
+      "real": 4,
+      "nullMean": 1.099,
+      "p": 0.09164541772911354
+     }
+    },
+    {
+     "subset": "ENK[",
+     "k": 4,
+     "realBest": -13.989252752649241,
+     "realBestFit": "AREASASKSLEAK",
+     "nullMeanFinite": -14.561177151776686,
+     "nullFiniteFraction": 0.52915,
+     "p": 0.16294185290735463,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0124,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1209,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 4,
+      "nullMean": 1.18775,
+      "p": 0.10089495525223739
+     }
+    },
+    {
+     "subset": "ENKM",
+     "k": 4,
+     "realBest": -13.128885278486145,
+     "realBestFit": "TRENDADODGETO",
+     "nullMeanFinite": -14.579188234292376,
+     "nullFiniteFraction": 0.4098,
+     "p": 0.05904704764761762,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01385,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.13985,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 11,
+      "nullMean": 1.4597,
+      "p": 0.03714814259287036
+     }
+    },
+    {
+     "subset": "ENM[",
+     "k": 4,
+     "realBest": -16.40984218618564,
+     "realBestFit": "TREECOCOCLETO",
+     "nullMeanFinite": -14.49418423531297,
+     "nullFiniteFraction": 0.37235,
+     "p": 0.36943152842357885,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01795,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.15855,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.5354,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ENz[",
+     "k": 4,
+     "realBest": -11.917229494088227,
+     "realBestFit": "BREACHCYCLEBY",
+     "nullMeanFinite": -14.558116347774128,
+     "nullFiniteFraction": 0.4531,
+     "p": 0.01399930003499825,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0107,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 4,
+      "nullMean": 0.11035,
+      "p": 0.005299735013249337
+     },
+     "count@rank100000": {
+      "real": 40,
+      "nullMean": 1.13215,
+      "p": 0.0015499225038748063
+     }
+    },
+    {
+     "subset": "ENzK",
+     "k": 4,
+     "realBest": -12.325210072533208,
+     "realBestFit": "AREASASKSPEAK",
+     "nullMeanFinite": -14.6771701617356,
+     "nullFiniteFraction": 0.4898,
+     "p": 0.022598870056497175,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0089,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 2,
+      "nullMean": 0.1075,
+      "p": 0.020848957552122394
+     },
+     "count@rank100000": {
+      "real": 43,
+      "nullMean": 1.1232,
+      "p": 0.0012499375031248437
+     }
+    },
+    {
+     "subset": "ENzM",
+     "k": 4,
+     "realBest": -9.553638972834802,
+     "realBestFit": "TREATYTOTHETO",
+     "nullMeanFinite": -14.513986464173229,
+     "nullFiniteFraction": 0.3545,
+     "p": 0.00044997750112494374,
+     "count@rank1000": {
+      "real": 2,
+      "nullMean": 0.01755,
+      "p": 0.004099795010249488
+     },
+     "count@rank10000": {
+      "real": 9,
+      "nullMean": 0.1552,
+      "p": 0.003749812509374531
+     },
+     "count@rank100000": {
+      "real": 30,
+      "nullMean": 1.49065,
+      "p": 0.00999950002499875
+     }
+    },
+    {
+     "subset": "EzK[",
+     "k": 4,
+     "realBest": -13.989252752649241,
+     "realBestFit": "AREASASKSLEAK",
+     "nullMeanFinite": -14.702229470536718,
+     "nullFiniteFraction": 0.705,
+     "p": 0.17704114794260287,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00775,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.082,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 3,
+      "nullMean": 0.8769,
+      "p": 0.10939453027348632
+     }
+    },
+    {
+     "subset": "EzKM",
+     "k": 4,
+     "realBest": -13.937870503959541,
+     "realBestFit": "TREADADODGETO",
+     "nullMeanFinite": -14.716036562213196,
+     "nullFiniteFraction": 0.5416,
+     "p": 0.13384330783460827,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00815,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0923,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 1.0389,
+      "p": 0.1631418429078546
+     }
+    },
+    {
+     "subset": "EzM[",
+     "k": 4,
+     "realBest": -12.36502133961065,
+     "realBestFit": "TRYANONONLYTO",
+     "nullMeanFinite": -14.603672054467712,
+     "nullFiniteFraction": 0.54,
+     "p": 0.027298635068246587,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0114,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 0.1103,
+      "p": 0.06374681265936703
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 1.10015,
+      "p": 0.18354082295885205
+     }
+    },
+    {
+     "subset": "NKM[",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.660231674059881,
+     "nullFiniteFraction": 0.41235,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01505,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.146,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.37355,
+      "p": 1
+     }
+    },
+    {
+     "subset": "NzK[",
+     "k": 4,
+     "realBest": -13.798248162125116,
+     "realBestFit": "SWEATATITLESI",
+     "nullMeanFinite": -14.654993737991054,
+     "nullFiniteFraction": 0.5259,
+     "p": 0.12519374031298436,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0103,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1018,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 10,
+      "nullMean": 1.0464,
+      "p": 0.02269886505674716
+     }
+    },
+    {
+     "subset": "NzKM",
+     "k": 4,
+     "realBest": -12.878897125101826,
+     "realBestFit": "THEADADODGETO",
+     "nullMeanFinite": -14.69548691580804,
+     "nullFiniteFraction": 0.4232,
+     "p": 0.04229788510574471,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0113,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 0.12375,
+      "p": 0.051297435128243585
+     },
+     "count@rank100000": {
+      "real": 4,
+      "nullMean": 1.24485,
+      "p": 0.09194540272986351
+     }
+    },
+    {
+     "subset": "NzM[",
+     "k": 4,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.611210578041057,
+     "nullFiniteFraction": 0.4029,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.01315,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.1411,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 1.32925,
+      "p": 1
+     }
+    },
+    {
+     "subset": "zKM[",
+     "k": 4,
+     "realBest": -16.28967265714177,
+     "realBestFit": "GEOANANONLOGO",
+     "nullMeanFinite": -14.714011258744044,
+     "nullFiniteFraction": 0.5349,
+     "p": 0.5109744512774361,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0089,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.09585,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.9921,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEKM[",
+     "k": 5,
+     "realBest": -15.760578226244208,
+     "realBestFit": "DROPSASOSLODO",
+     "nullMeanFinite": -15.066149116196158,
+     "nullFiniteFraction": 0.0948,
+     "p": 0.0648467576621169,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00045,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0064,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0707,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENK[",
+     "k": 5,
+     "realBest": -15.511485481150242,
+     "realBestFit": "DRESSASASLEDA",
+     "nullMeanFinite": -15.039349625964196,
+     "nullFiniteFraction": 0.0868,
+     "p": 0.0503974801259937,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.001,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00915,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0766,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENKM",
+     "k": 5,
+     "realBest": -15.09160840882196,
+     "realBestFit": "DREADADODGEDO",
+     "nullMeanFinite": -14.886756243406337,
+     "nullFiniteFraction": 0.05935,
+     "p": 0.028048597570121493,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00105,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.01145,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.10855,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.808605164522774,
+     "nullFiniteFraction": 0.04905,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0018,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0105,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.10315,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENz[",
+     "k": 5,
+     "realBest": -15.686451978538049,
+     "realBestFit": "DREAMIMAMLEDA",
+     "nullMeanFinite": -14.919567470451756,
+     "nullFiniteFraction": 0.0636,
+     "p": 0.043447827608619566,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0008,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0091,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.082,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENzK",
+     "k": 5,
+     "realBest": -14.52638227440486,
+     "realBestFit": "DREADADADDEDA",
+     "nullMeanFinite": -15.071632021224465,
+     "nullFiniteFraction": 0.0753,
+     "p": 0.01984900754962252,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0009,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0076,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 0.0787,
+      "p": 0.011899405029748513
+     }
+    },
+    {
+     "subset": "AENzM",
+     "k": 5,
+     "realBest": -12.98056744733079,
+     "realBestFit": "DREAMSMOMWEDO",
+     "nullMeanFinite": -14.81843936520902,
+     "nullFiniteFraction": 0.04605,
+     "p": 0.004749762511874406,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00145,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 1,
+      "nullMean": 0.01415,
+      "p": 0.004899755012249388
+     },
+     "count@rank100000": {
+      "real": 5,
+      "nullMean": 0.1178,
+      "p": 0.0058997050147492625
+     }
+    },
+    {
+     "subset": "AEzK[",
+     "k": 5,
+     "realBest": -16.081349286996648,
+     "realBestFit": "DRAAAAASALADS",
+     "nullMeanFinite": -15.211849314383914,
+     "nullFiniteFraction": 0.13445,
+     "p": 0.10594470276486176,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00045,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00675,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.061,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEzKM",
+     "k": 5,
+     "realBest": -15.09160840882196,
+     "realBestFit": "DREADADODGEDO",
+     "nullMeanFinite": -15.121979476968747,
+     "nullFiniteFraction": 0.09965,
+     "p": 0.039098045097745115,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00055,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00705,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.07535,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEzM[",
+     "k": 5,
+     "realBest": -14.285156425199258,
+     "realBestFit": "DRYANONONLYDO",
+     "nullMeanFinite": -15.032505786044956,
+     "nullFiniteFraction": 0.0865,
+     "p": 0.018849057547122645,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0004,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0071,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 1,
+      "nullMean": 0.07345,
+      "p": 0.03234838258087096
+     }
+    },
+    {
+     "subset": "ANKM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.093029474785242,
+     "nullFiniteFraction": 0.06885,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0011,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0098,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0797,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANzK[",
+     "k": 5,
+     "realBest": -15.074350081576696,
+     "realBestFit": "DUEATATITLEDI",
+     "nullMeanFinite": -15.1686480911374,
+     "nullFiniteFraction": 0.1031,
+     "p": 0.038348082595870206,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00065,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00705,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.06835,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANzKM",
+     "k": 5,
+     "realBest": -15.09160840882196,
+     "realBestFit": "DREADADODGEDO",
+     "nullMeanFinite": -15.084173034366149,
+     "nullFiniteFraction": 0.07575,
+     "p": 0.030598470076496177,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00125,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00885,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.08595,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANzM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -14.986705976016964,
+     "nullFiniteFraction": 0.06045,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00065,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00865,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.08485,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AzKM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.221338951529471,
+     "nullFiniteFraction": 0.1106,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00035,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00545,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0641,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ENKM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.123083521465926,
+     "nullFiniteFraction": 0.1079,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0008,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0074,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0807,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ENzK[",
+     "k": 5,
+     "realBest": -13.989252752649241,
+     "realBestFit": "AREASASKSLEAK",
+     "nullMeanFinite": -15.227380007253098,
+     "nullFiniteFraction": 0.1362,
+     "p": 0.015949202539873007,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0005,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00535,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 3,
+      "nullMean": 0.0609,
+      "p": 0.004149792510374482
+     }
+    },
+    {
+     "subset": "ENzKM",
+     "k": 5,
+     "realBest": -13.937870503959541,
+     "realBestFit": "TREADADODGETO",
+     "nullMeanFinite": -15.206376371639294,
+     "nullFiniteFraction": 0.1041,
+     "p": 0.012199390030498474,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00055,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00615,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 2,
+      "nullMean": 0.0673,
+      "p": 0.013149342532873356
+     }
+    },
+    {
+     "subset": "ENzM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.070631955854395,
+     "nullFiniteFraction": 0.0909,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00085,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0089,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0793,
+      "p": 1
+     }
+    },
+    {
+     "subset": "EzKM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.268389260554097,
+     "nullFiniteFraction": 0.15155,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00045,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00495,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.06035,
+      "p": 1
+     }
+    },
+    {
+     "subset": "NzKM[",
+     "k": 5,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.194000259849927,
+     "nullFiniteFraction": 0.1052,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0005,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0066,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0679,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENKM[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.324595099956154,
+     "nullFiniteFraction": 0.0101,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00015,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0007,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0043,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENzK[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.298573410777813,
+     "nullFiniteFraction": 0.0129,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00005,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0005,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.00465,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENzKM",
+     "k": 6,
+     "realBest": -15.09160840882196,
+     "realBestFit": "DREADADODGEDO",
+     "nullMeanFinite": -15.380901893498567,
+     "nullFiniteFraction": 0.01125,
+     "p": 0.0036998150092495377,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00025,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0051,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENzM[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.193357876184239,
+     "nullFiniteFraction": 0.00825,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.00005,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00045,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0053,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AEzKM[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.406925578591304,
+     "nullFiniteFraction": 0.0165,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0003,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.00435,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ANzKM[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.39018358792959,
+     "nullFiniteFraction": 0.01,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0.0001,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.00045,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.00365,
+      "p": 1
+     }
+    },
+    {
+     "subset": "ENzKM[",
+     "k": 6,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.431895472222806,
+     "nullFiniteFraction": 0.01435,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0.0001,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.0037,
+      "p": 1
+     }
+    },
+    {
+     "subset": "AENzKM[",
+     "k": 7,
+     "realBest": null,
+     "realBestFit": null,
+     "nullMeanFinite": -15.578185347921124,
+     "nullFiniteFraction": 0.00125,
+     "p": 1,
+     "count@rank1000": {
+      "real": 0,
+      "nullMean": 0,
+      "p": 1
+     },
+     "count@rank10000": {
+      "real": 0,
+      "nullMean": 0,
+      "p": 1
+     },
+     "count@rank100000": {
+      "real": 0,
+      "nullMean": 0.00025,
+      "p": 1
+     }
+    }
+   ]
+  }
+ ]
+}

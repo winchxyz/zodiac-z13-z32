@@ -1,0 +1,570 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:31:25.253Z",
+ "label": "scr17_01",
+ "cipher": {
+  "id": "scr17",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr17.txt",
+  "text": "0AM00AzEKN[NM",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   1
+  ],
+  "isomorphAfterSlips": "a*caabdefghgc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 103235,
+  "scored": 97086,
+  "keptAtLeastStreamMin": 18,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 4826,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 441,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 18,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 8,
+  "4": 10
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.719156813598617,
+  "topShare": 0.0814322810355467,
+  "top10Share": 0.3807504175398163,
+  "effectiveNumberExpEntropy": 317.21010584190435,
+  "effectiveNumberInverseSimpson": 49.966224245885556,
+  "unscoredMassBoundRelative": 0.03530703976048607,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 4,
+   "maxWordLogp": -15.662840628865723,
+   "massEstimateRelative": 0.00001868863267643383,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.010887043138666324
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 2,
+   "-18.00": 9,
+   "-17.75": 13,
+   "-17.50": 25,
+   "-17.25": 28,
+   "-17.00": 56,
+   "-16.75": 51,
+   "-16.50": 76,
+   "-16.25": 91,
+   "-16.00": 86,
+   "-15.75": 149,
+   "-15.50": 189,
+   "-15.25": 251,
+   "-15.00": 312,
+   "-14.75": 386,
+   "-14.50": 493,
+   "-14.25": 564,
+   "-14.00": 633,
+   "-13.75": 749,
+   "-13.50": 868,
+   "-13.25": 944,
+   "-13.00": 1115,
+   "-12.75": 1222,
+   "-12.50": 1405,
+   "-12.25": 1665,
+   "-12.00": 2003,
+   "-11.75": 2280,
+   "-11.50": 2505,
+   "-11.25": 2820,
+   "-11.00": 3045,
+   "-10.75": 3188,
+   "-10.50": 3172,
+   "-10.25": 3483,
+   "-10.00": 3711,
+   "-9.75": 3819,
+   "-9.50": 3947,
+   "-9.25": 4091,
+   "-9.00": 4305,
+   "-8.75": 4439,
+   "-8.50": 4582,
+   "-8.25": 4579,
+   "-8.00": 4602,
+   "-7.75": 4245,
+   "-7.50": 3983,
+   "-7.25": 3740,
+   "-7.00": 3396,
+   "-6.75": 3116,
+   "-6.50": 2563,
+   "-6.25": 2164,
+   "-6.00": 1814,
+   "-5.75": 1509,
+   "-5.50": 1322,
+   "-5.25": 1046,
+   "-5.00": 815,
+   "-4.75": 602,
+   "-4.50": 410,
+   "-4.25": 252,
+   "-4.00": 168,
+   "-3.75": 75,
+   "-3.50": 31,
+   "-3.25": 17,
+   "-3.00": 10,
+   "-2.75": 2,
+   "-2.50": 2
+  },
+  "exactScored": {
+   "-19.00": 4,
+   "-18.75": 47,
+   "-18.50": 162,
+   "-18.25": 375,
+   "-18.00": 666,
+   "-17.75": 1228,
+   "-17.50": 2024,
+   "-17.25": 3158,
+   "-17.00": 4121,
+   "-16.75": 4929,
+   "-16.50": 5907,
+   "-16.25": 6276,
+   "-16.00": 6582,
+   "-15.75": 7019,
+   "-15.50": 6960,
+   "-15.25": 7104,
+   "-15.00": 6763,
+   "-14.75": 6490,
+   "-14.50": 5717,
+   "-14.25": 4879,
+   "-14.00": 3995,
+   "-13.75": 3224,
+   "-13.50": 2450,
+   "-13.25": 1921,
+   "-13.00": 1455,
+   "-12.75": 1031,
+   "-12.50": 767,
+   "-12.25": 591,
+   "-12.00": 427,
+   "-11.75": 282,
+   "-11.50": 209,
+   "-11.25": 108,
+   "-11.00": 96,
+   "-10.75": 44,
+   "-10.50": 28,
+   "-10.25": 24,
+   "-10.00": 9,
+   "-9.75": 6,
+   "-9.50": 3,
+   "-9.25": 3,
+   "-9.00": 2
+  },
+  "boundUnscored": {
+   "-18.25": 2,
+   "-18.00": 9,
+   "-17.75": 13,
+   "-17.50": 25,
+   "-17.25": 28,
+   "-17.00": 56,
+   "-16.75": 51,
+   "-16.50": 76,
+   "-16.25": 91,
+   "-16.00": 86,
+   "-15.75": 149,
+   "-15.50": 189,
+   "-15.25": 251,
+   "-15.00": 312,
+   "-14.75": 386,
+   "-14.50": 493,
+   "-14.25": 564,
+   "-14.00": 633,
+   "-13.75": 749,
+   "-13.50": 868,
+   "-13.25": 944,
+   "-13.00": 174
+  }
+ },
+ "timeMs": {
+  "total": 2506,
+  "setup": 521
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "OFBOOKSTHEWEB",
+   "wordLogp": -8.8084,
+   "words": "OF BOOKS THE WEB",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "B",
+    "A": "K",
+    "z": "S",
+    "E": "T",
+    "K": "H",
+    "N": "E",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "OFGOODWARNING",
+   "wordLogp": -8.9607,
+   "words": "OF GOOD WARNING",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "G",
+    "A": "D",
+    "z": "W",
+    "E": "A",
+    "K": "R",
+    "N": "N",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "THATTHERISKSA",
+   "wordLogp": -9.0128,
+   "words": "THAT THE RISKS A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "A": "H",
+    "z": "E",
+    "E": "R",
+    "K": "I",
+    "N": "S",
+    "[": "K"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "AREAASMUCHTHE",
+   "wordLogp": -9.0797,
+   "words": "AREA AS MUCH THE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "E",
+    "A": "S",
+    "z": "M",
+    "E": "U",
+    "K": "C",
+    "N": "H",
+    "[": "T"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "THATTHISWEREA",
+   "wordLogp": -9.1117,
+   "words": "THAT THIS WERE A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "A": "H",
+    "z": "I",
+    "E": "S",
+    "K": "W",
+    "N": "E",
+    "[": "R"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "OFGOODMEANING",
+   "wordLogp": -9.2681,
+   "words": "OF GOOD MEANING",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "G",
+    "A": "D",
+    "z": "M",
+    "E": "E",
+    "K": "A",
+    "N": "N",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "AREAANDITSUSE",
+   "wordLogp": -9.2841,
+   "words": "AREA AND ITS USE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "E",
+    "A": "N",
+    "z": "D",
+    "E": "I",
+    "K": "T",
+    "N": "S",
+    "[": "U"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "TEXTTOLIVESEX",
+   "wordLogp": -9.4047,
+   "words": "TEXT TO LIVE SEX",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "X",
+    "A": "O",
+    "z": "L",
+    "E": "I",
+    "K": "V",
+    "N": "E",
+    "[": "S"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "OFGOODTURNING",
+   "wordLogp": -9.5262,
+   "words": "OF GOOD TURNING",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "G",
+    "A": "D",
+    "z": "T",
+    "E": "U",
+    "K": "R",
+    "N": "N",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "OFGOODBURNING",
+   "wordLogp": -9.5337,
+   "words": "OF GOOD BURNING",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "G",
+    "A": "D",
+    "z": "B",
+    "E": "U",
+    "K": "R",
+    "N": "N",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "TESTTWOPIECES",
+   "wordLogp": -9.6916,
+   "words": "TEST TWO PIECES",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "S",
+    "A": "W",
+    "z": "O",
+    "E": "P",
+    "K": "I",
+    "N": "E",
+    "[": "C"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "AREAABOUTNINE",
+   "wordLogp": -9.7059,
+   "words": "AREA ABOUT NINE",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "E",
+    "A": "B",
+    "z": "O",
+    "E": "U",
+    "K": "T",
+    "N": "N",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ONGOODWARNING",
+   "wordLogp": -9.7255,
+   "words": "ON GOOD WARNING",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "G",
+    "A": "D",
+    "z": "W",
+    "E": "A",
+    "K": "R",
+    "N": "N",
+    "[": "I"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "TESTTHEMAINIS",
+   "wordLogp": -9.7378,
+   "words": "TEST THE MAIN IS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "S",
+    "A": "H",
+    "z": "E",
+    "E": "M",
+    "K": "A",
+    "N": "I",
+    "[": "N"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "THATTHEIRNONA",
+   "wordLogp": -9.7897,
+   "words": "THAT THEIR NON A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "A": "H",
+    "z": "E",
+    "E": "I",
+    "K": "R",
+    "N": "N",
+    "[": "O"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ONBOOKSTHEWEB",
+   "wordLogp": -9.7947,
+   "words": "ON BOOKS THE WEB",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "B",
+    "A": "K",
+    "z": "S",
+    "E": "T",
+    "K": "H",
+    "N": "E",
+    "[": "W"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "TESTTOANGELES",
+   "wordLogp": -9.8012,
+   "words": "TEST TO ANGELES",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "S",
+    "A": "O",
+    "z": "A",
+    "E": "N",
+    "K": "G",
+    "N": "E",
+    "[": "L"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "THATTHISGENEA",
+   "wordLogp": -9.828,
+   "words": "THAT THIS GENE A",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "M": "A",
+    "A": "H",
+    "z": "I",
+    "E": "S",
+    "K": "G",
+    "N": "E",
+    "[": "N"
+   }
+  }
+ ]
+}

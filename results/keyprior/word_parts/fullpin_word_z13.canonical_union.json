@@ -1,0 +1,111 @@
+{
+ "tool": "tools/keyprior_fullpin.js",
+ "created": "2026-10-07T15:45:23.336Z",
+ "argv": "--ciphers z13.canonical --keys union --null 10000 --null-kind permute --threads 1 --seed 1970 --stat word --out results/keyprior/word_parts/fullpin_word_z13.canonical_union.json",
+ "statistic": "word",
+ "objective": "word statistic: wordfast (unigram) word-segmentation log10 P only (common vocab, unknown-word spelling model); exhaustive over free symbols",
+ "null": {
+  "kind": "permute",
+  "n": 10000,
+  "seed": 1970,
+  "note": "null keys for a key name are shared by all ciphers; permute = key letters shuffled among the key symbols"
+ },
+ "seconds": 5.611,
+ "results": [
+  {
+   "cipher": "z13.canonical",
+   "key": "union",
+   "text": "AENz0K0M0[NAM",
+   "pinnedSymbols": "AENzKM",
+   "nPinned": 6,
+   "nFree": 2,
+   "carriedOver": "WEED?S?H??EWH",
+   "real": {
+    "best": {
+     "plaintext": "WEEDASAHAVEWH",
+     "words": "WEED AS A HAVE WH",
+     "wordLogp": -17.617619555789872,
+     "unknownWords": [
+      "WH"
+     ],
+     "ngram5": -51.20824909210205
+    },
+    "score": -17.240242540965436,
+    "top5": [
+     {
+      "plaintext": "WEEDASAHAVEWH",
+      "score": -17.240242540965436
+     },
+     {
+      "plaintext": "WEEDSSSHSEEWH",
+      "score": -17.46731385975523
+     },
+     {
+      "plaintext": "WEEDESEHEEEWH",
+      "score": -17.504276938762985
+     },
+     {
+      "plaintext": "WEEDSSSHSTEWH",
+      "score": -17.607178542906475
+     },
+     {
+      "plaintext": "WEEDESEHETEWH",
+      "score": -17.64414162191423
+     }
+    ]
+   },
+   "null": {
+    "n": 10000,
+    "kind": "permute",
+    "summary": {
+     "n": 10000,
+     "finite": 10000,
+     "mean": -18.139741065586946,
+     "sd": 1.6888923567136636,
+     "min": -24.914984555396703,
+     "q05": -20.990499944839147,
+     "q25": -19.206616191640812,
+     "median": -18.120595069083837,
+     "q75": -17.046896140840868,
+     "q95": -15.362861483840707,
+     "q99": -14.373885558074699,
+     "max": -11.392794172537714
+    },
+    "topNull": [
+     {
+      "index": 3304,
+      "score": -11.392794172537714,
+      "plaintext": "LITSTATETITLE"
+     },
+     {
+      "index": 2945,
+      "score": -12.09527300846105,
+      "plaintext": "SPEEDADSDRESS"
+     },
+     {
+      "index": 9528,
+      "score": -12.14801373014185,
+      "plaintext": "THEISUSESPETE"
+     },
+     {
+      "index": 6470,
+      "score": -12.452375842600267,
+      "plaintext": "ARETOCONOCEAN"
+     },
+     {
+      "index": 3844,
+      "score": -12.54580396466946,
+      "plaintext": "OFTOONONORTON"
+     }
+    ]
+   },
+   "test": {
+    "ge": 2895,
+    "n": 10000,
+    "p": 0.28957104289571045,
+    "percentile": 71.05,
+    "z": 0.5325967170411039
+   }
+  }
+ ]
+}

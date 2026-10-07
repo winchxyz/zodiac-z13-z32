@@ -1,0 +1,7 @@
+node tools/run_slot.js --label lead-cipherexpert -- node tools/lead_cipherexpert_arrange.js
+python tools/lead_cipherexpert_homophones.py
+node tools/run_slot.js --label lead-cipherexpert -- node tools/lead_cipherexpert_arrpower.js --variant canonical --src all --max 48 --workers 1
+node tools/run_slot.js --label lead-cipherexpert -- node tools/lead_cipherexpert_arrpower.js --variant circles_distinct --src heldout --max 200 --workers 4 --seed 5
+node tools/run_slot.js --label lead-cipherexpert -- node tools/lead_cipherexpert_jackknife.js --variant canonical --null 500 --seed 7
+node tools/run_slot.js --label lead-cipherexpert -- node tools/lead_cipherexpert_condn.js --variant canonical --null 10000 --seed 11
+python tools/lead_cipherexpert_summary.py

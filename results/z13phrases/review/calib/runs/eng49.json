@@ -1,0 +1,914 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:13:45.637Z",
+ "label": "eng49",
+ "cipher": {
+  "id": "eng49",
+  "source": "results\\z13phrases\\review\\calib\\ciphers\\eng49.txt",
+  "text": "abcdbefgdhdaf",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcdbefgdhdaf"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 20000,
+  "wordsUsed": 19878,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 2,
+  "tasks": 92,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 92,
+  "tasks": 92,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 680472,
+  "scored": 263350,
+  "keptAtLeastStreamMin": 35,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 2447,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 286,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 35,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 8,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 2,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   },
+   "t-7.260010499293889": {
+    "threshold": -7.260010499293889,
+    "count": 3,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 3,
+  "4": 31
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.329963319622333,
+  "topShare": 0.45387580824530077,
+  "top10Share": 0.9588819054655203,
+  "effectiveNumberExpEntropy": 6.1647869869127865,
+  "effectiveNumberInverseSimpson": 3.6376321847966584,
+  "unscoredMassBoundRelative": 0.0977521719612058,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 415,
+   "maxWordLogp": -14.840016113729416,
+   "massEstimateRelative": 0.000005343199579662659,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.010184797225811155
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-22.50": 1,
+   "-22.25": 16,
+   "-22.00": 47,
+   "-21.75": 95,
+   "-21.50": 186,
+   "-21.25": 366,
+   "-21.00": 665,
+   "-20.75": 956,
+   "-20.50": 1317,
+   "-20.25": 2017,
+   "-20.00": 2609,
+   "-19.75": 3456,
+   "-19.50": 4230,
+   "-19.25": 5190,
+   "-19.00": 6075,
+   "-18.75": 7088,
+   "-18.50": 8184,
+   "-18.25": 9173,
+   "-18.00": 10386,
+   "-17.75": 11625,
+   "-17.50": 12875,
+   "-17.25": 13810,
+   "-17.00": 15329,
+   "-16.75": 16654,
+   "-16.50": 18098,
+   "-16.25": 19451,
+   "-16.00": 20319,
+   "-15.75": 20963,
+   "-15.50": 21145,
+   "-15.25": 21325,
+   "-15.00": 21138,
+   "-14.75": 21152,
+   "-14.50": 20475,
+   "-14.25": 20014,
+   "-14.00": 19894,
+   "-13.75": 19365,
+   "-13.50": 19226,
+   "-13.25": 19201,
+   "-13.00": 19089,
+   "-12.75": 18887,
+   "-12.50": 18978,
+   "-12.25": 18603,
+   "-12.00": 17712,
+   "-11.75": 16838,
+   "-11.50": 16245,
+   "-11.25": 14824,
+   "-11.00": 13617,
+   "-10.75": 12477,
+   "-10.50": 11135,
+   "-10.25": 10116,
+   "-10.00": 9136,
+   "-9.75": 8077,
+   "-9.50": 7490,
+   "-9.25": 6827,
+   "-9.00": 6252,
+   "-8.75": 5649,
+   "-8.50": 5166,
+   "-8.25": 4931,
+   "-8.00": 4166,
+   "-7.75": 3819,
+   "-7.50": 3332,
+   "-7.25": 2891,
+   "-7.00": 2358,
+   "-6.75": 1963,
+   "-6.50": 1468,
+   "-6.25": 1211,
+   "-6.00": 812,
+   "-5.75": 656,
+   "-5.50": 533,
+   "-5.25": 383,
+   "-5.00": 264,
+   "-4.75": 177,
+   "-4.50": 115,
+   "-4.25": 69,
+   "-4.00": 48,
+   "-3.75": 24,
+   "-3.50": 10,
+   "-3.25": 3,
+   "-3.00": 4,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-21.75": 3,
+   "-21.50": 7,
+   "-21.25": 18,
+   "-21.00": 78,
+   "-20.75": 171,
+   "-20.50": 336,
+   "-20.25": 749,
+   "-20.00": 1451,
+   "-19.75": 2724,
+   "-19.50": 4351,
+   "-19.25": 6726,
+   "-19.00": 9320,
+   "-18.75": 11937,
+   "-18.50": 14293,
+   "-18.25": 16719,
+   "-18.00": 17880,
+   "-17.75": 18852,
+   "-17.50": 19443,
+   "-17.25": 18817,
+   "-17.00": 18114,
+   "-16.75": 16282,
+   "-16.50": 14431,
+   "-16.25": 12516,
+   "-16.00": 11127,
+   "-15.75": 9300,
+   "-15.50": 7829,
+   "-15.25": 6386,
+   "-15.00": 5062,
+   "-14.75": 4223,
+   "-14.50": 3352,
+   "-14.25": 2541,
+   "-14.00": 1988,
+   "-13.75": 1558,
+   "-13.50": 1242,
+   "-13.25": 947,
+   "-13.00": 709,
+   "-12.75": 530,
+   "-12.50": 376,
+   "-12.25": 313,
+   "-12.00": 186,
+   "-11.75": 138,
+   "-11.50": 94,
+   "-11.25": 54,
+   "-11.00": 49,
+   "-10.75": 39,
+   "-10.50": 28,
+   "-10.25": 17,
+   "-10.00": 14,
+   "-9.75": 8,
+   "-9.50": 4,
+   "-9.25": 5,
+   "-9.00": 4,
+   "-8.75": 1,
+   "-8.50": 2,
+   "-8.25": 1,
+   "-8.00": 1,
+   "-7.50": 2,
+   "-7.25": 1,
+   "-6.75": 1
+  },
+  "boundUnscored": {
+   "-22.50": 1,
+   "-22.25": 16,
+   "-22.00": 47,
+   "-21.75": 95,
+   "-21.50": 186,
+   "-21.25": 366,
+   "-21.00": 665,
+   "-20.75": 956,
+   "-20.50": 1317,
+   "-20.25": 2017,
+   "-20.00": 2609,
+   "-19.75": 3456,
+   "-19.50": 4230,
+   "-19.25": 5190,
+   "-19.00": 6075,
+   "-18.75": 7088,
+   "-18.50": 8184,
+   "-18.25": 9173,
+   "-18.00": 10386,
+   "-17.75": 11625,
+   "-17.50": 12875,
+   "-17.25": 13810,
+   "-17.00": 15329,
+   "-16.75": 16654,
+   "-16.50": 18098,
+   "-16.25": 19451,
+   "-16.00": 20319,
+   "-15.75": 20963,
+   "-15.50": 21145,
+   "-15.25": 21325,
+   "-15.00": 21138,
+   "-14.75": 21152,
+   "-14.50": 20475,
+   "-14.25": 20014,
+   "-14.00": 19894,
+   "-13.75": 19365,
+   "-13.50": 19226,
+   "-13.25": 19201,
+   "-13.00": 3006
+  }
+ },
+ "timeMs": {
+  "total": 16460,
+  "setup": 542
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "SOMEOFTHEBEST",
+   "wordLogp": -6.673,
+   "words": "SOME OF THE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "F",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "HASTAKENTOTHE",
+   "wordLogp": -7.0145,
+   "words": "HAS TAKEN TO THE",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "A",
+    "c": "S",
+    "d": "T",
+    "e": "K",
+    "f": "E",
+    "g": "N",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "SOMEOFTHEREST",
+   "wordLogp": -7.26,
+   "words": "SOME OF THE REST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "F",
+    "f": "T",
+    "g": "H",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "HADTAKENTOTHE",
+   "wordLogp": -7.3124,
+   "words": "HAD TAKEN TO THE",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "A",
+    "c": "D",
+    "d": "T",
+    "e": "K",
+    "f": "E",
+    "g": "N",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "SOMEOFTHEWEST",
+   "wordLogp": -7.8645,
+   "words": "SOME OF THE WEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "F",
+    "f": "T",
+    "g": "H",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "SIZEINTHEBEST",
+   "wordLogp": -8.0479,
+   "words": "SIZE IN THE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "I",
+    "c": "Z",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "SOMEONTHEBEST",
+   "wordLogp": -8.3123,
+   "words": "SOME ON THE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "SIDEINTHEBEST",
+   "wordLogp": -8.3285,
+   "words": "SIDE IN THE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "I",
+    "c": "D",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "SIZEINTHEREST",
+   "wordLogp": -8.6348,
+   "words": "SIZE IN THE REST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "I",
+    "c": "Z",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "COMEOUTSELECT",
+   "wordLogp": -8.8722,
+   "words": "COME OUT SELECT",
+   "unknown": 0,
+   "key": {
+    "a": "C",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "U",
+    "f": "T",
+    "g": "S",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SOMEONTHEREST",
+   "wordLogp": -8.8993,
+   "words": "SOME ON THE REST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "SIDEINTHEREST",
+   "wordLogp": -8.9155,
+   "words": "SIDE IN THE REST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "I",
+    "c": "D",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "R"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "FIREINTHELEFT",
+   "wordLogp": -8.9531,
+   "words": "FIRE IN THE LEFT",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "I",
+    "c": "R",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "SOMEOFTHENEST",
+   "wordLogp": -9.0001,
+   "words": "SOME OF THE NEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "F",
+    "f": "T",
+    "g": "H",
+    "h": "N"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "SOMEORTHEBEST",
+   "wordLogp": -9.0497,
+   "words": "SOME OR THE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ARETRULYTOTAL",
+   "wordLogp": -9.1603,
+   "words": "ARE TRULY TOTAL",
+   "unknown": 0,
+   "key": {
+    "a": "A",
+    "b": "R",
+    "c": "E",
+    "d": "T",
+    "e": "U",
+    "f": "L",
+    "g": "Y",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "SIZEINTHEWEST",
+   "wordLogp": -9.2393,
+   "words": "SIZE IN THE WEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "I",
+    "c": "Z",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "FIVEINTHELEFT",
+   "wordLogp": -9.2422,
+   "words": "FIVE IN THE LEFT",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "I",
+    "c": "V",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "SIZEIFTHEBEST",
+   "wordLogp": -9.286,
+   "words": "SIZE IF THE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "I",
+    "c": "Z",
+    "d": "E",
+    "e": "F",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "SOLEOFTHEBEST",
+   "wordLogp": -9.3197,
+   "words": "SOLE OF THE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "L",
+    "d": "E",
+    "e": "F",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 21,
+   "plaintext": "SOMEOFTHEPEST",
+   "wordLogp": -9.3737,
+   "words": "SOME OF THE PEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "F",
+    "f": "T",
+    "g": "H",
+    "h": "P"
+   }
+  },
+  {
+   "rank": 22,
+   "plaintext": "HUNTUSEDTOTHE",
+   "wordLogp": -9.4494,
+   "words": "HUNT USED TO THE",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "U",
+    "c": "N",
+    "d": "T",
+    "e": "S",
+    "f": "E",
+    "g": "D",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 23,
+   "plaintext": "SOMEONTHEWEST",
+   "wordLogp": -9.5038,
+   "words": "SOME ON THE WEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "M",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 24,
+   "plaintext": "SIDEINTHEWEST",
+   "wordLogp": -9.52,
+   "words": "SIDE IN THE WEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "I",
+    "c": "D",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 25,
+   "plaintext": "LIVEINTHEBELT",
+   "wordLogp": -9.542,
+   "words": "LIVE IN THE BELT",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "I",
+    "c": "V",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 26,
+   "plaintext": "HURTUSEDTOTHE",
+   "wordLogp": -9.6076,
+   "words": "HURT USED TO THE",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "U",
+    "c": "R",
+    "d": "T",
+    "e": "S",
+    "f": "E",
+    "g": "D",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 27,
+   "plaintext": "ENDINGSCITIES",
+   "wordLogp": -9.628,
+   "words": "ENDINGS CITIES",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "N",
+    "c": "D",
+    "d": "I",
+    "e": "G",
+    "f": "S",
+    "g": "C",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 28,
+   "plaintext": "ORDERINGEYEON",
+   "wordLogp": -9.6474,
+   "words": "ORDERING EYE ON",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "R",
+    "c": "D",
+    "d": "E",
+    "e": "I",
+    "f": "N",
+    "g": "G",
+    "h": "Y"
+   }
+  },
+  {
+   "rank": 29,
+   "plaintext": "LIFEINTHEBELT",
+   "wordLogp": -9.6939,
+   "words": "LIFE IN THE BELT",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "I",
+    "c": "F",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 30,
+   "plaintext": "SIDEIFTHEBEST",
+   "wordLogp": -9.7099,
+   "words": "SIDE IF THE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "I",
+    "c": "D",
+    "d": "E",
+    "e": "F",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 31,
+   "plaintext": "LIVEINTHEFELT",
+   "wordLogp": -9.7519,
+   "words": "LIVE IN THE FELT",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "I",
+    "c": "V",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "F"
+   }
+  },
+  {
+   "rank": 32,
+   "plaintext": "SOREOFTHEBEST",
+   "wordLogp": -9.7967,
+   "words": "SORE OF THE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "R",
+    "d": "E",
+    "e": "F",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  },
+  {
+   "rank": 33,
+   "plaintext": "HOWTODELTATHE",
+   "wordLogp": -9.8054,
+   "words": "HOW TO DELTA THE",
+   "unknown": 0,
+   "key": {
+    "a": "H",
+    "b": "O",
+    "c": "W",
+    "d": "T",
+    "e": "D",
+    "f": "E",
+    "g": "L",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 34,
+   "plaintext": "FIREISTHELEFT",
+   "wordLogp": -9.8118,
+   "words": "FIRE IS THE LEFT",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "I",
+    "c": "R",
+    "d": "E",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 35,
+   "plaintext": "SOLEONTHEBEST",
+   "wordLogp": -9.8356,
+   "words": "SOLE ON THE BEST",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "O",
+    "c": "L",
+    "d": "E",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "B"
+   }
+  }
+ ]
+}

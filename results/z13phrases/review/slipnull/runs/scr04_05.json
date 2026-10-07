@@ -1,0 +1,605 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:09:24.259Z",
+ "label": "scr04_05",
+ "cipher": {
+  "id": "scr04",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr04.txt",
+  "text": "0z0[KNN0MEAMA",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   5
+  ],
+  "isomorphAfterSlips": "abacd*eafghfh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 4,
+  "tasks": 109,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 109,
+  "tasks": 109,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 177845,
+  "scored": 167347,
+  "keptAtLeastStreamMin": 66,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 9209,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 954,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 66,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 4,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 3,
+  "3": 28,
+  "4": 35
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.898387069674274,
+  "topShare": 0.25070669360080267,
+  "top10Share": 0.6632081800820443,
+  "effectiveNumberExpEntropy": 52.45258020108127,
+  "effectiveNumberInverseSimpson": 9.11814455865237,
+  "unscoredMassBoundRelative": 0.00910738378463826,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 8,
+   "maxWordLogp": -16.18441029275151,
+   "massEstimateRelative": 0.0000012398318439089798,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.003077463068369773
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 5,
+   "-17.50": 16,
+   "-17.25": 31,
+   "-17.00": 40,
+   "-16.75": 43,
+   "-16.50": 48,
+   "-16.25": 83,
+   "-16.00": 161,
+   "-15.75": 211,
+   "-15.50": 290,
+   "-15.25": 425,
+   "-15.00": 533,
+   "-14.75": 681,
+   "-14.50": 818,
+   "-14.25": 925,
+   "-14.00": 1089,
+   "-13.75": 1344,
+   "-13.50": 1581,
+   "-13.25": 1857,
+   "-13.00": 2170,
+   "-12.75": 2553,
+   "-12.50": 3057,
+   "-12.25": 3366,
+   "-12.00": 3749,
+   "-11.75": 4115,
+   "-11.50": 4565,
+   "-11.25": 4924,
+   "-11.00": 5453,
+   "-10.75": 5824,
+   "-10.50": 6203,
+   "-10.25": 6548,
+   "-10.00": 7013,
+   "-9.75": 7250,
+   "-9.50": 7401,
+   "-9.25": 7664,
+   "-9.00": 7642,
+   "-8.75": 7672,
+   "-8.50": 7526,
+   "-8.25": 7353,
+   "-8.00": 7150,
+   "-7.75": 6839,
+   "-7.50": 6561,
+   "-7.25": 6319,
+   "-7.00": 5709,
+   "-6.75": 5071,
+   "-6.50": 4486,
+   "-6.25": 3653,
+   "-6.00": 2725,
+   "-5.75": 2191,
+   "-5.50": 1619,
+   "-5.25": 1174,
+   "-5.00": 791,
+   "-4.75": 535,
+   "-4.50": 375,
+   "-4.25": 212,
+   "-4.00": 115,
+   "-3.75": 53,
+   "-3.50": 24,
+   "-3.25": 7,
+   "-3.00": 5,
+   "-2.75": 2
+  },
+  "exactScored": {
+   "-19.00": 4,
+   "-18.75": 83,
+   "-18.50": 497,
+   "-18.25": 1365,
+   "-18.00": 2877,
+   "-17.75": 4432,
+   "-17.50": 6153,
+   "-17.25": 7622,
+   "-17.00": 8933,
+   "-16.75": 9907,
+   "-16.50": 10087,
+   "-16.25": 10277,
+   "-16.00": 10568,
+   "-15.75": 10797,
+   "-15.50": 11045,
+   "-15.25": 10605,
+   "-15.00": 10018,
+   "-14.75": 9230,
+   "-14.50": 7992,
+   "-14.25": 7083,
+   "-14.00": 5899,
+   "-13.75": 4785,
+   "-13.50": 4104,
+   "-13.25": 3291,
+   "-13.00": 2588,
+   "-12.75": 1979,
+   "-12.50": 1498,
+   "-12.25": 1148,
+   "-12.00": 807,
+   "-11.75": 535,
+   "-11.50": 373,
+   "-11.25": 266,
+   "-11.00": 185,
+   "-10.75": 109,
+   "-10.50": 77,
+   "-10.25": 46,
+   "-10.00": 27,
+   "-9.75": 22,
+   "-9.50": 15,
+   "-9.25": 7,
+   "-9.00": 3,
+   "-8.75": 4,
+   "-8.50": 1,
+   "-8.00": 1,
+   "-7.75": 1,
+   "-7.50": 1
+  },
+  "boundUnscored": {
+   "-17.75": 5,
+   "-17.50": 16,
+   "-17.25": 31,
+   "-17.00": 40,
+   "-16.75": 43,
+   "-16.50": 48,
+   "-16.25": 83,
+   "-16.00": 161,
+   "-15.75": 211,
+   "-15.50": 290,
+   "-15.25": 425,
+   "-15.00": 533,
+   "-14.75": 681,
+   "-14.50": 818,
+   "-14.25": 925,
+   "-14.00": 1089,
+   "-13.75": 1344,
+   "-13.50": 1581,
+   "-13.25": 1857,
+   "-13.00": 317
+  }
+ },
+ "timeMs": {
+  "total": 5806,
+  "setup": 585
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "EVERYONETHATA",
+   "wordLogp": -7.4992,
+   "words": "EVERYONE THAT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "V",
+    "[": "R",
+    "K": "Y",
+    "N": "N",
+    "M": "T",
+    "E": "H",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "TOTALEXTENDED",
+   "wordLogp": -7.6676,
+   "words": "TOTAL EXTENDED",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "A",
+    "K": "L",
+    "N": "X",
+    "M": "E",
+    "E": "N",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "EXERCISETHATA",
+   "wordLogp": -7.8167,
+   "words": "EXERCISE THAT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "X",
+    "[": "R",
+    "K": "C",
+    "N": "S",
+    "M": "T",
+    "E": "H",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "EXERCISEOFNON",
+   "wordLogp": -8.3195,
+   "words": "EXERCISE OF NON",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "X",
+    "[": "R",
+    "K": "C",
+    "N": "S",
+    "M": "O",
+    "E": "F",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "AWARETHATGOTO",
+   "wordLogp": -8.6698,
+   "words": "AWARE THAT GO TO",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "z": "W",
+    "[": "R",
+    "K": "E",
+    "N": "H",
+    "M": "T",
+    "E": "G",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "EVENMORETHATA",
+   "wordLogp": -8.7155,
+   "words": "EVEN MORE THAT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "V",
+    "[": "N",
+    "K": "M",
+    "N": "R",
+    "M": "T",
+    "E": "H",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "EVENTSYEARSAS",
+   "wordLogp": -8.7282,
+   "words": "EVENTS YEARS AS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "V",
+    "[": "N",
+    "K": "T",
+    "N": "Y",
+    "M": "A",
+    "E": "R",
+    "A": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "TOTHEOBTAINAN",
+   "wordLogp": -8.7442,
+   "words": "TO THE OBTAIN AN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "H",
+    "K": "E",
+    "N": "B",
+    "M": "A",
+    "E": "I",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "SYSTEMASIGNIN",
+   "wordLogp": -8.7949,
+   "words": "SYSTEM A SIGN IN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "z": "Y",
+    "[": "T",
+    "K": "E",
+    "N": "A",
+    "M": "I",
+    "E": "G",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "EVENSURETHATA",
+   "wordLogp": -8.9046,
+   "words": "EVEN SURE THAT A",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "V",
+    "[": "N",
+    "K": "S",
+    "N": "R",
+    "M": "T",
+    "E": "H",
+    "A": "A"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "EVERYONEITDID",
+   "wordLogp": -8.9148,
+   "words": "EVERYONE IT DID",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "V",
+    "[": "R",
+    "K": "Y",
+    "N": "N",
+    "M": "I",
+    "E": "T",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "EVERYONETWOTO",
+   "wordLogp": -9.0047,
+   "words": "EVERYONE TWO TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "V",
+    "[": "R",
+    "K": "Y",
+    "N": "N",
+    "M": "T",
+    "E": "W",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "EXERCISEITDID",
+   "wordLogp": -9.0214,
+   "words": "EXERCISE IT DID",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "X",
+    "[": "R",
+    "K": "C",
+    "N": "S",
+    "M": "I",
+    "E": "T",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "EXERCISETWOTO",
+   "wordLogp": -9.1114,
+   "words": "EXERCISE TWO TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "X",
+    "[": "R",
+    "K": "C",
+    "N": "S",
+    "M": "T",
+    "E": "W",
+    "A": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "TOTRYEXTENDED",
+   "wordLogp": -9.124,
+   "words": "TO TRY EXTENDED",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "R",
+    "K": "Y",
+    "N": "X",
+    "M": "E",
+    "E": "N",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "TOTAKEITENDED",
+   "wordLogp": -9.1484,
+   "words": "TO TAKE IT ENDED",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "z": "O",
+    "[": "A",
+    "K": "K",
+    "N": "I",
+    "M": "E",
+    "E": "N",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "EVERYONEISDID",
+   "wordLogp": -9.2402,
+   "words": "EVERYONE IS DID",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "V",
+    "[": "R",
+    "K": "Y",
+    "N": "N",
+    "M": "I",
+    "E": "S",
+    "A": "D"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "EXERCISEOFPOP",
+   "wordLogp": -9.2428,
+   "words": "EXERCISE OF POP",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "X",
+    "[": "R",
+    "K": "C",
+    "N": "S",
+    "M": "O",
+    "E": "F",
+    "A": "P"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "BABYWASBORNON",
+   "wordLogp": -9.2591,
+   "words": "BABY WAS BORN ON",
+   "unknown": 0,
+   "key": {
+    "0": "B",
+    "z": "A",
+    "[": "Y",
+    "K": "W",
+    "N": "S",
+    "M": "O",
+    "E": "R",
+    "A": "N"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "EXERCISEINDID",
+   "wordLogp": -9.2952,
+   "words": "EXERCISE IN DID",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "z": "X",
+    "[": "R",
+    "K": "C",
+    "N": "S",
+    "M": "I",
+    "E": "N",
+    "A": "D"
+   }
+  }
+ ]
+}

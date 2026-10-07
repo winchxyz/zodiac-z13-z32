@@ -1,0 +1,418 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:33:16.207Z",
+ "label": "eng06_04",
+ "cipher": {
+  "id": "eng06",
+  "source": "results\\z13phrases\\review\\slipnull_eng\\ciphers\\eng06.txt",
+  "text": "abccdbcefgehh",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   4
+  ],
+  "isomorphAfterSlips": "abcc*bcefgehh"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 47069,
+  "scored": 43560,
+  "keptAtLeastStreamMin": 10,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 2148,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 241,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 10,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "3": 6,
+  "4": 4
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.096506402848325,
+  "topShare": 0.07646244986666649,
+  "top10Share": 0.3272884532333749,
+  "effectiveNumberExpEntropy": 269.1159653963672,
+  "effectiveNumberInverseSimpson": 58.403346906512176,
+  "unscoredMassBoundRelative": 0.04803853682816947,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 1,
+   "maxWordLogp": -16.734498332674583,
+   "massEstimateRelative": 0.000002301484583800125,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.01636162519984506
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 6,
+   "-17.75": 6,
+   "-17.50": 10,
+   "-17.25": 19,
+   "-17.00": 20,
+   "-16.75": 27,
+   "-16.50": 28,
+   "-16.25": 27,
+   "-16.00": 43,
+   "-15.75": 50,
+   "-15.50": 92,
+   "-15.25": 113,
+   "-15.00": 159,
+   "-14.75": 202,
+   "-14.50": 293,
+   "-14.25": 324,
+   "-14.00": 394,
+   "-13.75": 447,
+   "-13.50": 508,
+   "-13.25": 616,
+   "-13.00": 722,
+   "-12.75": 872,
+   "-12.50": 986,
+   "-12.25": 1121,
+   "-12.00": 1271,
+   "-11.75": 1406,
+   "-11.50": 1492,
+   "-11.25": 1639,
+   "-11.00": 1737,
+   "-10.75": 1796,
+   "-10.50": 1906,
+   "-10.25": 2003,
+   "-10.00": 2038,
+   "-9.75": 2021,
+   "-9.50": 1991,
+   "-9.25": 1911,
+   "-9.00": 1987,
+   "-8.75": 1864,
+   "-8.50": 1913,
+   "-8.25": 1853,
+   "-8.00": 1670,
+   "-7.75": 1557,
+   "-7.50": 1442,
+   "-7.25": 1388,
+   "-7.00": 1115,
+   "-6.75": 905,
+   "-6.50": 797,
+   "-6.25": 606,
+   "-6.00": 528,
+   "-5.75": 416,
+   "-5.50": 248,
+   "-5.25": 198,
+   "-5.00": 128,
+   "-4.75": 81,
+   "-4.50": 38,
+   "-4.25": 19,
+   "-4.00": 9,
+   "-3.75": 9,
+   "-3.50": 2
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-19.00": 4,
+   "-18.75": 18,
+   "-18.50": 78,
+   "-18.25": 229,
+   "-18.00": 491,
+   "-17.75": 934,
+   "-17.50": 1372,
+   "-17.25": 1894,
+   "-17.00": 2483,
+   "-16.75": 2797,
+   "-16.50": 3122,
+   "-16.25": 3286,
+   "-16.00": 3355,
+   "-15.75": 3273,
+   "-15.50": 3132,
+   "-15.25": 2830,
+   "-15.00": 2530,
+   "-14.75": 2246,
+   "-14.50": 1808,
+   "-14.25": 1547,
+   "-14.00": 1280,
+   "-13.75": 1048,
+   "-13.50": 844,
+   "-13.25": 710,
+   "-13.00": 554,
+   "-12.75": 416,
+   "-12.50": 353,
+   "-12.25": 258,
+   "-12.00": 214,
+   "-11.75": 151,
+   "-11.50": 113,
+   "-11.25": 74,
+   "-11.00": 40,
+   "-10.75": 36,
+   "-10.50": 18,
+   "-10.25": 6,
+   "-10.00": 10,
+   "-9.75": 3,
+   "-9.50": 1,
+   "-9.25": 1
+  },
+  "boundUnscored": {
+   "-18.00": 6,
+   "-17.75": 6,
+   "-17.50": 10,
+   "-17.25": 19,
+   "-17.00": 20,
+   "-16.75": 27,
+   "-16.50": 28,
+   "-16.25": 27,
+   "-16.00": 43,
+   "-15.75": 50,
+   "-15.50": 92,
+   "-15.25": 113,
+   "-15.00": 159,
+   "-14.75": 202,
+   "-14.50": 293,
+   "-14.25": 324,
+   "-14.00": 394,
+   "-13.75": 447,
+   "-13.50": 508,
+   "-13.25": 616,
+   "-13.00": 125
+  }
+ },
+ "timeMs": {
+  "total": 1175,
+  "setup": 388
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "FREEAREASHALL",
+   "wordLogp": -9.2131,
+   "words": "FREE AREA SHALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "e": "A",
+    "f": "S",
+    "g": "H",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "FREEAREASMALL",
+   "wordLogp": -9.2863,
+   "words": "FREE ARE A SMALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "e": "A",
+    "f": "S",
+    "g": "M",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "FREEGREATWALL",
+   "wordLogp": -9.5339,
+   "words": "FREE GREAT WALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "e": "A",
+    "f": "T",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "FREEBREASTALL",
+   "wordLogp": -9.6312,
+   "words": "FREE BREAST ALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "e": "A",
+    "f": "S",
+    "g": "T",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "GETTHETOCROSS",
+   "wordLogp": -9.7007,
+   "words": "GET THE TO CROSS",
+   "unknown": 0,
+   "key": {
+    "a": "G",
+    "b": "E",
+    "c": "T",
+    "e": "O",
+    "f": "C",
+    "g": "R",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "FREEGREATCALL",
+   "wordLogp": -9.7705,
+   "words": "FREE GREAT CALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "e": "A",
+    "f": "T",
+    "g": "C",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "FREEAREACLASS",
+   "wordLogp": -9.8089,
+   "words": "FREE AREA CLASS",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "e": "A",
+    "f": "C",
+    "g": "L",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "FREEAREANDALL",
+   "wordLogp": -9.8116,
+   "words": "FREE ARE AND ALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "e": "A",
+    "f": "N",
+    "g": "D",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "FREEAREITWILL",
+   "wordLogp": -9.8407,
+   "words": "FREE ARE IT WILL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "e": "I",
+    "f": "T",
+    "g": "W",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "FREEDREAMSALL",
+   "wordLogp": -9.847,
+   "words": "FREE DREAMS ALL",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "R",
+    "c": "E",
+    "e": "A",
+    "f": "M",
+    "g": "S",
+    "h": "L"
+   }
+  }
+ ]
+}

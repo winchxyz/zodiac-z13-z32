@@ -1,0 +1,469 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:26:59.850Z",
+ "label": "scr11_12",
+ "cipher": {
+  "id": "scr11",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr11.txt",
+  "text": "N[0M0AEAz0MNK",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   12
+  ],
+  "isomorphAfterSlips": "abcdcefegcda*"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 17105,
+  "scored": 15988,
+  "keptAtLeastStreamMin": 13,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1070,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 155,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 13,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 1,
+  "3": 10,
+  "4": 2
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.852611843654507,
+  "topShare": 0.34425798850326844,
+  "top10Share": 0.7161585087641515,
+  "effectiveNumberExpEntropy": 28.018966782334584,
+  "effectiveNumberInverseSimpson": 6.951758689313773,
+  "unscoredMassBoundRelative": 0.008720974502987772,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0028489778727512284
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.25": 1,
+   "-17.75": 1,
+   "-17.50": 3,
+   "-17.25": 4,
+   "-17.00": 8,
+   "-16.75": 8,
+   "-16.50": 3,
+   "-16.25": 12,
+   "-16.00": 16,
+   "-15.75": 24,
+   "-15.50": 27,
+   "-15.25": 43,
+   "-15.00": 43,
+   "-14.75": 88,
+   "-14.50": 84,
+   "-14.25": 108,
+   "-14.00": 114,
+   "-13.75": 145,
+   "-13.50": 169,
+   "-13.25": 184,
+   "-13.00": 193,
+   "-12.75": 195,
+   "-12.50": 255,
+   "-12.25": 302,
+   "-12.00": 342,
+   "-11.75": 399,
+   "-11.50": 450,
+   "-11.25": 464,
+   "-11.00": 540,
+   "-10.75": 535,
+   "-10.50": 578,
+   "-10.25": 561,
+   "-10.00": 598,
+   "-9.75": 623,
+   "-9.50": 631,
+   "-9.25": 639,
+   "-9.00": 682,
+   "-8.75": 687,
+   "-8.50": 695,
+   "-8.25": 743,
+   "-8.00": 720,
+   "-7.75": 685,
+   "-7.50": 654,
+   "-7.25": 641,
+   "-7.00": 577,
+   "-6.75": 557,
+   "-6.50": 497,
+   "-6.25": 374,
+   "-6.00": 325,
+   "-5.75": 262,
+   "-5.50": 220,
+   "-5.25": 134,
+   "-5.00": 82,
+   "-4.75": 76,
+   "-4.50": 34,
+   "-4.25": 35,
+   "-4.00": 16,
+   "-3.75": 7,
+   "-3.50": 5,
+   "-3.25": 6,
+   "-3.00": 1
+  },
+  "exactScored": {
+   "-18.75": 3,
+   "-18.50": 13,
+   "-18.25": 38,
+   "-18.00": 84,
+   "-17.75": 186,
+   "-17.50": 296,
+   "-17.25": 450,
+   "-17.00": 613,
+   "-16.75": 751,
+   "-16.50": 906,
+   "-16.25": 1046,
+   "-16.00": 1144,
+   "-15.75": 1183,
+   "-15.50": 1240,
+   "-15.25": 1184,
+   "-15.00": 1098,
+   "-14.75": 994,
+   "-14.50": 924,
+   "-14.25": 771,
+   "-14.00": 574,
+   "-13.75": 555,
+   "-13.50": 437,
+   "-13.25": 369,
+   "-13.00": 281,
+   "-12.75": 231,
+   "-12.50": 161,
+   "-12.25": 124,
+   "-12.00": 82,
+   "-11.75": 76,
+   "-11.50": 50,
+   "-11.25": 34,
+   "-11.00": 28,
+   "-10.75": 23,
+   "-10.50": 16,
+   "-10.25": 8,
+   "-10.00": 3,
+   "-9.75": 4,
+   "-9.50": 4,
+   "-9.25": 2,
+   "-9.00": 1,
+   "-8.50": 1
+  },
+  "boundUnscored": {
+   "-18.25": 1,
+   "-17.75": 1,
+   "-17.50": 3,
+   "-17.25": 4,
+   "-17.00": 8,
+   "-16.75": 8,
+   "-16.50": 3,
+   "-16.25": 12,
+   "-16.00": 16,
+   "-15.75": 24,
+   "-15.50": 27,
+   "-15.25": 43,
+   "-15.00": 43,
+   "-14.75": 88,
+   "-14.50": 84,
+   "-14.25": 108,
+   "-14.00": 114,
+   "-13.75": 145,
+   "-13.50": 169,
+   "-13.25": 184,
+   "-13.00": 32
+  }
+ },
+ "timeMs": {
+  "total": 1084,
+  "setup": 459
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "EDITIONOFITEM",
+   "wordLogp": -8.3157,
+   "words": "EDITION OF ITEM",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "N": "E",
+    "[": "D",
+    "M": "T",
+    "A": "O",
+    "E": "N",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "SITETOCONTEST",
+   "wordLogp": -8.7652,
+   "words": "SITE TO CONTEST",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "S",
+    "[": "I",
+    "M": "E",
+    "A": "O",
+    "E": "C",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "SPIRITATFIRST",
+   "wordLogp": -9.0606,
+   "words": "SPIRIT AT FIRST",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "N": "S",
+    "[": "P",
+    "M": "R",
+    "A": "T",
+    "E": "A",
+    "z": "F"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THENEARAGENTS",
+   "wordLogp": -9.2453,
+   "words": "THE NEAR AGENTS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "N",
+    "A": "A",
+    "E": "R",
+    "z": "G"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ISTATECERTAIN",
+   "wordLogp": -9.329,
+   "words": "I STATE CERTAIN",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "I",
+    "[": "S",
+    "M": "A",
+    "A": "E",
+    "E": "C",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "THEREOFOVERTO",
+   "wordLogp": -9.3809,
+   "words": "THEREOF OVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "R",
+    "A": "O",
+    "E": "F",
+    "z": "V"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "SALELIMITLESS",
+   "wordLogp": -9.4799,
+   "words": "SALE LIMITLESS",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "N": "S",
+    "[": "A",
+    "M": "E",
+    "A": "I",
+    "E": "M",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "EDITIONORITEM",
+   "wordLogp": -9.4891,
+   "words": "EDITION OR ITEM",
+   "unknown": 0,
+   "key": {
+    "0": "I",
+    "N": "E",
+    "[": "D",
+    "M": "T",
+    "A": "O",
+    "E": "N",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THESEBABIESTO",
+   "wordLogp": -9.5247,
+   "words": "THESE BABIES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "S",
+    "A": "B",
+    "E": "A",
+    "z": "I"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ISTATEMENTAIR",
+   "wordLogp": -9.6438,
+   "words": "I STATEMENT AIR",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "N": "I",
+    "[": "S",
+    "M": "A",
+    "A": "E",
+    "E": "M",
+    "z": "N"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THEREADALERTS",
+   "wordLogp": -9.7121,
+   "words": "THE READ ALERTS",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "R",
+    "A": "A",
+    "E": "D",
+    "z": "L"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "THESEAGAMESTO",
+   "wordLogp": -9.7136,
+   "words": "THE SEA GAMES TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "S",
+    "A": "A",
+    "E": "G",
+    "z": "M"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "THEREONOVERTO",
+   "wordLogp": -9.8489,
+   "words": "THERE ON OVER TO",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "N": "T",
+    "[": "H",
+    "M": "R",
+    "A": "O",
+    "E": "N",
+    "z": "V"
+   }
+  }
+ ]
+}

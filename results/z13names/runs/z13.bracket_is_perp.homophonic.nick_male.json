@@ -1,0 +1,123 @@
+{
+ "tool": "tools/z13names_enumerate.js names",
+ "created": "2026-10-07T15:36:51.308Z",
+ "cipher": {
+  "id": "z13.bracket_is_perp",
+  "source": "data/ciphers/variants/z13.bracket_is_perp.txt",
+  "text": "AENz0K0M0tNAM",
+  "length": 13,
+  "symbols": 8
+ },
+ "options": {
+  "mode": "homophonic",
+  "patterns": [
+   "FL",
+   "FIL"
+  ],
+  "first": "all",
+  "files": {
+   "first": "results/z13names/lists/nick_male.tsv",
+   "middle": "same as first",
+   "last": "data/names/surnames.tsv",
+   "initials": "data/names/first_male.tsv"
+  },
+  "firstNames": 111,
+  "middleNames": 111,
+  "surnames": 175348,
+  "fillers": 0,
+  "fillerAt": "ends",
+  "minWeight": 0,
+  "threads": 1,
+  "pin": "",
+  "forbid": "",
+  "plaintextLegend": "upper case = name letter; ? = free filler letter; lower case = filler letter forced by the key"
+ },
+ "counts": {
+  "complete": true,
+  "stoppedBy": null,
+  "fits": 4,
+  "rawCallbacks": 4,
+  "perPattern": {
+   "FIL": 2,
+   "FL": 2
+  },
+  "cells": {
+   "FIL|0|0": {
+    "n": 2,
+    "sw": 2.50614416333705e-10,
+    "nb": 0,
+    "swb": 0,
+    "top": [
+     {
+      "plaintext": "ALHRAMANATHAN",
+      "weight": 2.204724391087198e-10,
+      "parts": "AL H RAMANATHAN"
+     },
+     {
+      "plaintext": "ALHJAGANATHAN",
+      "weight": 3.0141977224985206e-11,
+      "parts": "AL H JAGANATHAN"
+     }
+    ]
+   },
+   "FL|0|0": {
+    "n": 2,
+    "sw": 1.0427466130157999e-8,
+    "nb": 0,
+    "swb": 0,
+    "top": [
+     {
+      "plaintext": "EDDIERESENDES",
+      "weight": 1.0140673684349999e-8,
+      "parts": "EDDIE RESENDES"
+     },
+     {
+      "plaintext": "EDDIEREZENDEZ",
+      "weight": 2.86792445808e-10,
+      "parts": "EDDIE REZENDEZ"
+     }
+    ]
+   }
+  },
+  "cellLegend": "key pattern|fillers|leading fillers; n fits, sw sum of prior weights, nb/swb the same for fits with a name-part boundary at --boundary; top = heaviest fits; `top` below holds only streamed fits (fillers <= --stream-max-fillers)",
+  "boundary": -1,
+  "streamMaxFillers": 0
+ },
+ "timeMs": {
+  "total": 18150
+ },
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "EDDIERESENDES",
+   "weight": 1.0140673684349999e-8,
+   "pattern": "FL",
+   "parts": "EDDIE RESENDES",
+   "fillers": 0
+  },
+  {
+   "rank": 2,
+   "plaintext": "EDDIEREZENDEZ",
+   "weight": 2.86792445808e-10,
+   "pattern": "FL",
+   "parts": "EDDIE REZENDEZ",
+   "fillers": 0
+  },
+  {
+   "rank": 3,
+   "plaintext": "ALHRAMANATHAN",
+   "weight": 2.204724391087198e-10,
+   "pattern": "FIL",
+   "parts": "AL H RAMANATHAN",
+   "fillers": 0
+  },
+  {
+   "rank": 4,
+   "plaintext": "ALHJAGANATHAN",
+   "weight": 3.0141977224985206e-11,
+   "pattern": "FIL",
+   "parts": "AL H JAGANATHAN",
+   "fillers": 0
+  }
+ ]
+}

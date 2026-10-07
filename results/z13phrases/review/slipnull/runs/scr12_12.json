@@ -1,0 +1,612 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:20:46.304Z",
+ "label": "scr12_12",
+ "cipher": {
+  "id": "scr12",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr12.txt",
+  "text": "[AEzNMA00MK0N",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   12
+  ],
+  "isomorphAfterSlips": "abcdefbggfhg*"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 433708,
+  "scored": 404734,
+  "keptAtLeastStreamMin": 138,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 19654,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 2225,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 138,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 2,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 14,
+  "3": 68,
+  "4": 56
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.841595608895205,
+  "topShare": 0.12897572865064333,
+  "top10Share": 0.32386811152740147,
+  "effectiveNumberExpEntropy": 484.4271778425874,
+  "effectiveNumberInverseSimpson": 39.21718740049318,
+  "unscoredMassBoundRelative": 0.022054847780230577,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 27,
+   "maxWordLogp": -15.454484495935393,
+   "massEstimateRelative": 0.000007355696647932935,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.007665760088618796
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.50": 4,
+   "-18.25": 6,
+   "-18.00": 6,
+   "-17.75": 25,
+   "-17.50": 67,
+   "-17.25": 71,
+   "-17.00": 101,
+   "-16.75": 157,
+   "-16.50": 194,
+   "-16.25": 298,
+   "-16.00": 463,
+   "-15.75": 673,
+   "-15.50": 831,
+   "-15.25": 1106,
+   "-15.00": 1367,
+   "-14.75": 1643,
+   "-14.50": 2013,
+   "-14.25": 2390,
+   "-14.00": 3053,
+   "-13.75": 3775,
+   "-13.50": 4489,
+   "-13.25": 5316,
+   "-13.00": 5961,
+   "-12.75": 6527,
+   "-12.50": 7571,
+   "-12.25": 8452,
+   "-12.00": 9515,
+   "-11.75": 10400,
+   "-11.50": 11502,
+   "-11.25": 12747,
+   "-11.00": 13712,
+   "-10.75": 14382,
+   "-10.50": 15467,
+   "-10.25": 16539,
+   "-10.00": 16933,
+   "-9.75": 17350,
+   "-9.50": 17802,
+   "-9.25": 18211,
+   "-9.00": 18558,
+   "-8.75": 18416,
+   "-8.50": 18327,
+   "-8.25": 18236,
+   "-8.00": 17838,
+   "-7.75": 17201,
+   "-7.50": 15775,
+   "-7.25": 14249,
+   "-7.00": 12765,
+   "-6.75": 11235,
+   "-6.50": 9334,
+   "-6.25": 8036,
+   "-6.00": 6207,
+   "-5.75": 4949,
+   "-5.50": 3750,
+   "-5.25": 2809,
+   "-5.00": 1943,
+   "-4.75": 1284,
+   "-4.50": 756,
+   "-4.25": 421,
+   "-4.00": 251,
+   "-3.75": 117,
+   "-3.50": 79,
+   "-3.25": 34,
+   "-3.00": 14,
+   "-2.75": 5
+  },
+  "exactScored": {
+   "-19.50": 2,
+   "-19.25": 6,
+   "-19.00": 7,
+   "-18.75": 48,
+   "-18.50": 312,
+   "-18.25": 1352,
+   "-18.00": 3564,
+   "-17.75": 7278,
+   "-17.50": 11688,
+   "-17.25": 16344,
+   "-17.00": 21171,
+   "-16.75": 25721,
+   "-16.50": 29667,
+   "-16.25": 31823,
+   "-16.00": 32594,
+   "-15.75": 32191,
+   "-15.50": 30525,
+   "-15.25": 27477,
+   "-15.00": 24396,
+   "-14.75": 20835,
+   "-14.50": 17509,
+   "-14.25": 14481,
+   "-14.00": 11650,
+   "-13.75": 9598,
+   "-13.50": 7744,
+   "-13.25": 6162,
+   "-13.00": 5231,
+   "-12.75": 4097,
+   "-12.50": 3201,
+   "-12.25": 2371,
+   "-12.00": 1722,
+   "-11.75": 1342,
+   "-11.50": 914,
+   "-11.25": 600,
+   "-11.00": 367,
+   "-10.75": 280,
+   "-10.50": 161,
+   "-10.25": 115,
+   "-10.00": 84,
+   "-9.75": 48,
+   "-9.50": 26,
+   "-9.25": 13,
+   "-9.00": 10,
+   "-8.75": 4,
+   "-8.50": 1,
+   "-8.00": 1,
+   "-7.75": 1
+  },
+  "boundUnscored": {
+   "-18.50": 4,
+   "-18.25": 6,
+   "-18.00": 6,
+   "-17.75": 25,
+   "-17.50": 67,
+   "-17.25": 71,
+   "-17.00": 101,
+   "-16.75": 157,
+   "-16.50": 194,
+   "-16.25": 298,
+   "-16.00": 463,
+   "-15.75": 673,
+   "-15.50": 831,
+   "-15.25": 1106,
+   "-15.00": 1367,
+   "-14.75": 1643,
+   "-14.50": 2013,
+   "-14.25": 2390,
+   "-14.00": 3053,
+   "-13.75": 3775,
+   "-13.50": 4489,
+   "-13.25": 5316,
+   "-13.00": 926
+  }
+ },
+ "timeMs": {
+  "total": 5603,
+  "setup": 465
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "FINDALITTLETO",
+   "wordLogp": -7.7311,
+   "words": "FIND A LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "F",
+    "A": "I",
+    "E": "N",
+    "z": "D",
+    "N": "A",
+    "M": "L",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "VICTORIAAREAS",
+   "wordLogp": -7.9658,
+   "words": "VICTORIA AREAS",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "V",
+    "A": "I",
+    "E": "C",
+    "z": "T",
+    "N": "O",
+    "M": "R",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "BROTHERSSENSE",
+   "wordLogp": -8.4636,
+   "words": "BROTHERS SENSE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "B",
+    "A": "R",
+    "E": "O",
+    "z": "T",
+    "N": "H",
+    "M": "E",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "BRAINTREETHEY",
+   "wordLogp": -8.6001,
+   "words": "BRAINTREE THEY",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "B",
+    "A": "R",
+    "E": "A",
+    "z": "I",
+    "N": "N",
+    "M": "T",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "TRAILERSSENSE",
+   "wordLogp": -8.6174,
+   "words": "TRAILERS SENSE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "T",
+    "A": "R",
+    "E": "A",
+    "z": "I",
+    "N": "L",
+    "M": "E",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "WATERFALLFULL",
+   "wordLogp": -8.6407,
+   "words": "WATERFALL FULL",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "[": "W",
+    "A": "A",
+    "E": "T",
+    "z": "E",
+    "N": "R",
+    "M": "F",
+    "K": "U"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "WATERFALLFILE",
+   "wordLogp": -8.7484,
+   "words": "WATERFALL FILE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "[": "W",
+    "A": "A",
+    "E": "T",
+    "z": "E",
+    "N": "R",
+    "M": "F",
+    "K": "I"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "BASKETADDTODO",
+   "wordLogp": -8.7662,
+   "words": "BASKET ADD TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "D",
+    "[": "B",
+    "A": "A",
+    "E": "S",
+    "z": "K",
+    "N": "E",
+    "M": "T",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "FROMSTREETNEW",
+   "wordLogp": -8.8005,
+   "words": "FROM STREET NEW",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "F",
+    "A": "R",
+    "E": "O",
+    "z": "M",
+    "N": "S",
+    "M": "T",
+    "K": "N"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "VICTORIAAREAL",
+   "wordLogp": -8.8189,
+   "words": "VICTORIA A REAL",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "V",
+    "A": "I",
+    "E": "C",
+    "z": "T",
+    "N": "O",
+    "M": "R",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "PAGESHALLHOLD",
+   "wordLogp": -8.8658,
+   "words": "PAGE SHALL HOLD",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "[": "P",
+    "A": "A",
+    "E": "G",
+    "z": "E",
+    "N": "S",
+    "M": "H",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "HISTORICCRACK",
+   "wordLogp": -8.9169,
+   "words": "HISTORIC CRACK",
+   "unknown": 0,
+   "key": {
+    "0": "C",
+    "[": "H",
+    "A": "I",
+    "E": "S",
+    "z": "T",
+    "N": "O",
+    "M": "R",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "BRAINTREETHEM",
+   "wordLogp": -8.9409,
+   "words": "BRAINTREE THEM",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "B",
+    "A": "R",
+    "E": "A",
+    "z": "I",
+    "N": "N",
+    "M": "T",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "DATESHALLHOLD",
+   "wordLogp": -8.9764,
+   "words": "DATE SHALL HOLD",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "[": "D",
+    "A": "A",
+    "E": "T",
+    "z": "E",
+    "N": "S",
+    "M": "H",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "BRAINTREETHEN",
+   "wordLogp": -8.9781,
+   "words": "BRAINTREE THEN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "B",
+    "A": "R",
+    "E": "A",
+    "z": "I",
+    "N": "N",
+    "M": "T",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "VICTORIAAREAT",
+   "wordLogp": -8.9856,
+   "words": "VICTORIA ARE AT",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "V",
+    "A": "I",
+    "E": "C",
+    "z": "T",
+    "N": "O",
+    "M": "R",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "SIGNALITTLETO",
+   "wordLogp": -8.9896,
+   "words": "SIGN A LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "S",
+    "A": "I",
+    "E": "G",
+    "z": "N",
+    "N": "A",
+    "M": "L",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "PICKALITTLETO",
+   "wordLogp": -9.017,
+   "words": "PICK A LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "P",
+    "A": "I",
+    "E": "C",
+    "z": "K",
+    "N": "A",
+    "M": "L",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "NAMESHALLHOLD",
+   "wordLogp": -9.0307,
+   "words": "NAME SHALL HOLD",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "[": "N",
+    "A": "A",
+    "E": "M",
+    "z": "E",
+    "N": "S",
+    "M": "H",
+    "K": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "PAGECLASSLIST",
+   "wordLogp": -9.0315,
+   "words": "PAGE CLASS LIST",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "P",
+    "A": "A",
+    "E": "G",
+    "z": "E",
+    "N": "C",
+    "M": "L",
+    "K": "I"
+   }
+  }
+ ]
+}

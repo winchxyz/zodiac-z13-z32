@@ -1,0 +1,582 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:20:56.692Z",
+ "label": "scr03_04",
+ "cipher": {
+  "id": "scr03",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr03.txt",
+  "text": "0MNAKM00[EAzN",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   4
+  ],
+  "isomorphAfterSlips": "abcd*baafgdhc"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 36153,
+  "scored": 33778,
+  "keptAtLeastStreamMin": 24,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 2281,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 272,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 24,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 3,
+  "3": 12,
+  "4": 9
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.636765228845606,
+  "topShare": 0.13947612844372717,
+  "top10Share": 0.583726347837575,
+  "effectiveNumberExpEntropy": 66.97231553782984,
+  "effectiveNumberInverseSimpson": 19.159862860539967,
+  "unscoredMassBoundRelative": 0.011280512803885,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0038781272573445327
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 2,
+   "-17.75": 4,
+   "-17.50": 8,
+   "-17.25": 7,
+   "-17.00": 14,
+   "-16.75": 12,
+   "-16.50": 14,
+   "-16.25": 18,
+   "-16.00": 33,
+   "-15.75": 39,
+   "-15.50": 53,
+   "-15.25": 91,
+   "-15.00": 120,
+   "-14.75": 118,
+   "-14.50": 180,
+   "-14.25": 190,
+   "-14.00": 286,
+   "-13.75": 315,
+   "-13.50": 383,
+   "-13.25": 438,
+   "-13.00": 451,
+   "-12.75": 525,
+   "-12.50": 601,
+   "-12.25": 730,
+   "-12.00": 785,
+   "-11.75": 868,
+   "-11.50": 971,
+   "-11.25": 1065,
+   "-11.00": 1152,
+   "-10.75": 1193,
+   "-10.50": 1315,
+   "-10.25": 1319,
+   "-10.00": 1379,
+   "-9.75": 1367,
+   "-9.50": 1395,
+   "-9.25": 1448,
+   "-9.00": 1509,
+   "-8.75": 1540,
+   "-8.50": 1608,
+   "-8.25": 1507,
+   "-8.00": 1503,
+   "-7.75": 1519,
+   "-7.50": 1492,
+   "-7.25": 1234,
+   "-7.00": 1179,
+   "-6.75": 988,
+   "-6.50": 748,
+   "-6.25": 673,
+   "-6.00": 484,
+   "-5.75": 426,
+   "-5.50": 322,
+   "-5.25": 227,
+   "-5.00": 136,
+   "-4.75": 73,
+   "-4.50": 48,
+   "-4.25": 22,
+   "-4.00": 14,
+   "-3.75": 10,
+   "-2.75": 2
+  },
+  "exactScored": {
+   "-19.25": 1,
+   "-19.00": 6,
+   "-18.75": 12,
+   "-18.50": 30,
+   "-18.25": 93,
+   "-18.00": 235,
+   "-17.75": 471,
+   "-17.50": 739,
+   "-17.25": 1169,
+   "-17.00": 1541,
+   "-16.75": 1927,
+   "-16.50": 2172,
+   "-16.25": 2203,
+   "-16.00": 2208,
+   "-15.75": 2247,
+   "-15.50": 2322,
+   "-15.25": 2289,
+   "-15.00": 2261,
+   "-14.75": 2026,
+   "-14.50": 1851,
+   "-14.25": 1577,
+   "-14.00": 1421,
+   "-13.75": 1071,
+   "-13.50": 874,
+   "-13.25": 662,
+   "-13.00": 565,
+   "-12.75": 462,
+   "-12.50": 379,
+   "-12.25": 287,
+   "-12.00": 184,
+   "-11.75": 164,
+   "-11.50": 127,
+   "-11.25": 68,
+   "-11.00": 44,
+   "-10.75": 27,
+   "-10.50": 18,
+   "-10.25": 17,
+   "-10.00": 10,
+   "-9.75": 3,
+   "-9.50": 7,
+   "-9.25": 3,
+   "-9.00": 2,
+   "-8.75": 2,
+   "-8.50": 1
+  },
+  "boundUnscored": {
+   "-18.00": 2,
+   "-17.75": 4,
+   "-17.50": 8,
+   "-17.25": 7,
+   "-17.00": 14,
+   "-16.75": 12,
+   "-16.50": 14,
+   "-16.25": 18,
+   "-16.00": 33,
+   "-15.75": 39,
+   "-15.50": 53,
+   "-15.25": 91,
+   "-15.00": 120,
+   "-14.75": 118,
+   "-14.50": 180,
+   "-14.25": 190,
+   "-14.00": 286,
+   "-13.75": 315,
+   "-13.50": 383,
+   "-13.25": 438,
+   "-13.00": 50
+  }
+ },
+ "timeMs": {
+  "total": 1355,
+  "setup": 490
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "LIFEVILLAGEOF",
+   "wordLogp": -8.4923,
+   "words": "LIFE VILLAGE OF",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "I",
+    "N": "F",
+    "A": "E",
+    "[": "A",
+    "E": "G",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "OFTHEFOODWHAT",
+   "wordLogp": -8.5533,
+   "words": "OF THE FOOD WHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "F",
+    "N": "T",
+    "A": "H",
+    "[": "D",
+    "E": "W",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "LIFEWILLUSEOF",
+   "wordLogp": -8.7495,
+   "words": "LIFE WILL USE OF",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "I",
+    "N": "F",
+    "A": "E",
+    "[": "U",
+    "E": "S",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "LISTWILLNOTAS",
+   "wordLogp": -8.9211,
+   "words": "LIST WILL NOT AS",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "I",
+    "N": "S",
+    "A": "T",
+    "[": "N",
+    "E": "O",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "MOSTCOMMENTIS",
+   "wordLogp": -8.9258,
+   "words": "MOST COMMENT IS",
+   "unknown": 0,
+   "key": {
+    "0": "M",
+    "M": "O",
+    "N": "S",
+    "A": "T",
+    "[": "E",
+    "E": "N",
+    "z": "I"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "LASERALLITEMS",
+   "wordLogp": -9.0281,
+   "words": "LASER ALL ITEMS",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "A",
+    "N": "S",
+    "A": "E",
+    "[": "I",
+    "E": "T",
+    "z": "M"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "LATERALLOWEST",
+   "wordLogp": -9.1688,
+   "words": "LATERAL LOWEST",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "A",
+    "N": "T",
+    "A": "E",
+    "[": "O",
+    "E": "W",
+    "z": "S"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "ANTENNAASPECT",
+   "wordLogp": -9.2178,
+   "words": "ANTENNA ASPECT",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "N",
+    "N": "T",
+    "A": "E",
+    "[": "S",
+    "E": "P",
+    "z": "C"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "LIKEWILLSPEAK",
+   "wordLogp": -9.256,
+   "words": "LIKE WILL SPEAK",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "I",
+    "N": "K",
+    "A": "E",
+    "[": "S",
+    "E": "P",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ANTENNAALBERT",
+   "wordLogp": -9.2886,
+   "words": "ANTENNA ALBERT",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "M": "N",
+    "N": "T",
+    "A": "E",
+    "[": "L",
+    "E": "B",
+    "z": "R"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "OFSEAFOODNEWS",
+   "wordLogp": -9.293,
+   "words": "OF SEAFOOD NEWS",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "F",
+    "N": "S",
+    "A": "E",
+    "[": "D",
+    "E": "N",
+    "z": "W"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "LIKEWILLBREAK",
+   "wordLogp": -9.3707,
+   "words": "LIKE WILL BREAK",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "I",
+    "N": "K",
+    "A": "E",
+    "[": "B",
+    "E": "R",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "MOSTCOMMENTAS",
+   "wordLogp": -9.3974,
+   "words": "MOST COMMENT AS",
+   "unknown": 0,
+   "key": {
+    "0": "M",
+    "M": "O",
+    "N": "S",
+    "A": "T",
+    "[": "E",
+    "E": "N",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "OFHISFOODWITH",
+   "wordLogp": -9.4637,
+   "words": "OF HIS FOOD WITH",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "F",
+    "N": "H",
+    "A": "I",
+    "[": "D",
+    "E": "W",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "LINEVILLAGEON",
+   "wordLogp": -9.4962,
+   "words": "LINE VILLAGE ON",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "I",
+    "N": "N",
+    "A": "E",
+    "[": "A",
+    "E": "G",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "OFTHEFOODCHAT",
+   "wordLogp": -9.5408,
+   "words": "OF THE FOOD CHAT",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "F",
+    "N": "T",
+    "A": "H",
+    "[": "D",
+    "E": "C",
+    "z": "A"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "ORHISROOMWITH",
+   "wordLogp": -9.6991,
+   "words": "OR HIS ROOM WITH",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "M": "R",
+    "N": "H",
+    "A": "I",
+    "[": "M",
+    "E": "W",
+    "z": "T"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "LIFEWILLTHEOF",
+   "wordLogp": -9.7282,
+   "words": "LIFE WILL THE OF",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "M": "I",
+    "N": "F",
+    "A": "E",
+    "[": "T",
+    "E": "H",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "GIFTBIGGESTOF",
+   "wordLogp": -9.7902,
+   "words": "GIFT BIGGEST OF",
+   "unknown": 0,
+   "key": {
+    "0": "G",
+    "M": "I",
+    "N": "F",
+    "A": "T",
+    "[": "E",
+    "E": "S",
+    "z": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "SINCEISSUECAN",
+   "wordLogp": -9.7984,
+   "words": "SINCE ISSUE CAN",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "M": "I",
+    "N": "N",
+    "A": "C",
+    "[": "U",
+    "E": "E",
+    "z": "A"
+   }
+  }
+ ]
+}

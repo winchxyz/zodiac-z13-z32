@@ -1,0 +1,691 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:11:36.369Z",
+ "label": "eng38",
+ "cipher": {
+  "id": "eng38",
+  "source": "results\\z13phrases\\review\\calib\\ciphers\\eng38.txt",
+  "text": "abcdebfgbahef",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [],
+  "isomorphAfterSlips": "abcdebfgbahef"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 20000,
+  "wordsUsed": 19878,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 2,
+  "tasks": 92,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 92,
+  "tasks": 92,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 2400805,
+  "scored": 789550,
+  "keptAtLeastStreamMin": 22,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 3316,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 298,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 22,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 1,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   },
+   "t-11.076474992119342": {
+    "threshold": -11.076474992119342,
+    "count": 168,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 3,
+  "3": 15,
+  "4": 4
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.556843539289029,
+  "topShare": 0.357039386814572,
+  "top10Share": 0.6588685966278266,
+  "effectiveNumberExpEntropy": 46.36669807414445,
+  "effectiveNumberInverseSimpson": 6.969752141949856,
+  "unscoredMassBoundRelative": 6.3666037004546885,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 1609,
+   "maxWordLogp": -15.51758003745816,
+   "massEstimateRelative": 0.00012317020628467847,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.6171746943640783
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-22.75": 4,
+   "-22.50": 38,
+   "-22.25": 103,
+   "-22.00": 305,
+   "-21.75": 714,
+   "-21.50": 1504,
+   "-21.25": 2481,
+   "-21.00": 3889,
+   "-20.75": 5870,
+   "-20.50": 8212,
+   "-20.25": 11045,
+   "-20.00": 13937,
+   "-19.75": 17116,
+   "-19.50": 20478,
+   "-19.25": 23741,
+   "-19.00": 27484,
+   "-18.75": 31058,
+   "-18.50": 34968,
+   "-18.25": 38664,
+   "-18.00": 42870,
+   "-17.75": 47072,
+   "-17.50": 51791,
+   "-17.25": 56602,
+   "-17.00": 61718,
+   "-16.75": 67186,
+   "-16.50": 71012,
+   "-16.25": 74917,
+   "-16.00": 76475,
+   "-15.75": 77654,
+   "-15.50": 78200,
+   "-15.25": 77321,
+   "-15.00": 76484,
+   "-14.75": 74866,
+   "-14.50": 72962,
+   "-14.25": 72015,
+   "-14.00": 71277,
+   "-13.75": 70339,
+   "-13.50": 69474,
+   "-13.25": 68565,
+   "-13.00": 67352,
+   "-12.75": 65965,
+   "-12.50": 63361,
+   "-12.25": 61275,
+   "-12.00": 57368,
+   "-11.75": 53611,
+   "-11.50": 49231,
+   "-11.25": 44914,
+   "-11.00": 40105,
+   "-10.75": 35867,
+   "-10.50": 32262,
+   "-10.25": 29016,
+   "-10.00": 25732,
+   "-9.75": 23471,
+   "-9.50": 21198,
+   "-9.25": 19277,
+   "-9.00": 17361,
+   "-8.75": 15664,
+   "-8.50": 14005,
+   "-8.25": 12303,
+   "-8.00": 10646,
+   "-7.75": 9086,
+   "-7.50": 7535,
+   "-7.25": 6051,
+   "-7.00": 4812,
+   "-6.75": 3678,
+   "-6.50": 2816,
+   "-6.25": 2047,
+   "-6.00": 1447,
+   "-5.75": 1016,
+   "-5.50": 721,
+   "-5.25": 456,
+   "-5.00": 303,
+   "-4.75": 173,
+   "-4.50": 123,
+   "-4.25": 66,
+   "-4.00": 43,
+   "-3.75": 19,
+   "-3.50": 12,
+   "-3.25": 4,
+   "-3.00": 1,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-22.00": 5,
+   "-21.75": 35,
+   "-21.50": 95,
+   "-21.25": 241,
+   "-21.00": 573,
+   "-20.75": 1340,
+   "-20.50": 3019,
+   "-20.25": 5937,
+   "-20.00": 10814,
+   "-19.75": 17626,
+   "-19.50": 24971,
+   "-19.25": 32740,
+   "-19.00": 41100,
+   "-18.75": 48310,
+   "-18.50": 53608,
+   "-18.25": 57777,
+   "-18.00": 58881,
+   "-17.75": 58280,
+   "-17.50": 55496,
+   "-17.25": 51069,
+   "-17.00": 46004,
+   "-16.75": 40395,
+   "-16.50": 34485,
+   "-16.25": 29211,
+   "-16.00": 24171,
+   "-15.75": 20082,
+   "-15.50": 16418,
+   "-15.25": 13050,
+   "-15.00": 10369,
+   "-14.75": 8292,
+   "-14.50": 6501,
+   "-14.25": 4919,
+   "-14.00": 3839,
+   "-13.75": 2835,
+   "-13.50": 2062,
+   "-13.25": 1503,
+   "-13.00": 1045,
+   "-12.75": 780,
+   "-12.50": 536,
+   "-12.25": 362,
+   "-12.00": 258,
+   "-11.75": 168,
+   "-11.50": 122,
+   "-11.25": 77,
+   "-11.00": 49,
+   "-10.75": 37,
+   "-10.50": 26,
+   "-10.25": 10,
+   "-10.00": 10,
+   "-9.75": 9,
+   "-9.50": 2,
+   "-9.25": 2,
+   "-9.00": 1,
+   "-8.75": 2,
+   "-8.25": 1
+  },
+  "boundUnscored": {
+   "-22.75": 4,
+   "-22.50": 38,
+   "-22.25": 103,
+   "-22.00": 305,
+   "-21.75": 714,
+   "-21.50": 1504,
+   "-21.25": 2481,
+   "-21.00": 3889,
+   "-20.75": 5870,
+   "-20.50": 8212,
+   "-20.25": 11045,
+   "-20.00": 13937,
+   "-19.75": 17116,
+   "-19.50": 20478,
+   "-19.25": 23741,
+   "-19.00": 27484,
+   "-18.75": 31058,
+   "-18.50": 34968,
+   "-18.25": 38664,
+   "-18.00": 42870,
+   "-17.75": 47072,
+   "-17.50": 51791,
+   "-17.25": 56602,
+   "-17.00": 61718,
+   "-16.75": 67186,
+   "-16.50": 71012,
+   "-16.25": 74917,
+   "-16.00": 76475,
+   "-15.75": 77654,
+   "-15.50": 78200,
+   "-15.25": 77321,
+   "-15.00": 76484,
+   "-14.75": 74866,
+   "-14.50": 72962,
+   "-14.25": 72015,
+   "-14.00": 71277,
+   "-13.75": 70339,
+   "-13.50": 69474,
+   "-13.25": 68565,
+   "-13.00": 10844
+  }
+ },
+ "timeMs": {
+  "total": 17426,
+  "setup": 551
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "REDUCEAMERICA",
+   "wordLogp": -8.0041,
+   "words": "REDUCE AMERICA",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "E",
+    "c": "D",
+    "d": "U",
+    "e": "C",
+    "f": "A",
+    "g": "M",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "FAXYEARSAFTER",
+   "wordLogp": -8.7077,
+   "words": "FAX YEARS AFTER",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "A",
+    "c": "X",
+    "d": "Y",
+    "e": "E",
+    "f": "R",
+    "g": "S",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "MANILAEXAMPLE",
+   "wordLogp": -8.7156,
+   "words": "MANILA EXAMPLE",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "A",
+    "c": "N",
+    "d": "I",
+    "e": "L",
+    "f": "E",
+    "g": "X",
+    "h": "P"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "SECURETHESORT",
+   "wordLogp": -8.8047,
+   "words": "SECURE THE SORT",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "C",
+    "d": "U",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "PRECURSORPLUS",
+   "wordLogp": -9.1054,
+   "words": "PRECURSOR PLUS",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "E",
+    "d": "C",
+    "e": "U",
+    "f": "S",
+    "g": "O",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "FANYEARSAFTER",
+   "wordLogp": -9.1856,
+   "words": "FAN YEARS AFTER",
+   "unknown": 0,
+   "key": {
+    "a": "F",
+    "b": "A",
+    "c": "N",
+    "d": "Y",
+    "e": "E",
+    "f": "R",
+    "g": "S",
+    "h": "T"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "PERUSETHEPAST",
+   "wordLogp": -9.3015,
+   "words": "PERUSE THE PAST",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "R",
+    "d": "U",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "PRIMARYORPLAY",
+   "wordLogp": -9.4064,
+   "words": "PRIMARY OR PLAY",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "R",
+    "c": "I",
+    "d": "M",
+    "e": "A",
+    "f": "Y",
+    "g": "O",
+    "h": "L"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "REPLIESTERMIS",
+   "wordLogp": -9.5178,
+   "words": "REPLIES TERM IS",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "E",
+    "c": "P",
+    "d": "L",
+    "e": "I",
+    "f": "S",
+    "g": "T",
+    "h": "M"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "ENGLANDONEHAD",
+   "wordLogp": -9.5398,
+   "words": "ENGLAND ONE HAD",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "N",
+    "c": "G",
+    "d": "L",
+    "e": "A",
+    "f": "D",
+    "g": "O",
+    "h": "H"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "SEXTHEONESWHO",
+   "wordLogp": -9.5848,
+   "words": "SEX THE ONES WHO",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "X",
+    "d": "T",
+    "e": "H",
+    "f": "O",
+    "g": "N",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ORLEARNFROMAN",
+   "wordLogp": -9.6139,
+   "words": "OR LEARN FROM AN",
+   "unknown": 0,
+   "key": {
+    "a": "O",
+    "b": "R",
+    "c": "L",
+    "d": "E",
+    "e": "A",
+    "f": "N",
+    "g": "F",
+    "h": "M"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "MENUSETHEMOST",
+   "wordLogp": -9.6269,
+   "words": "MEN USE THE MOST",
+   "unknown": 0,
+   "key": {
+    "a": "M",
+    "b": "E",
+    "c": "N",
+    "d": "U",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ENDCONFINESOF",
+   "wordLogp": -9.6426,
+   "words": "END CONFINES OF",
+   "unknown": 0,
+   "key": {
+    "a": "E",
+    "b": "N",
+    "c": "D",
+    "d": "C",
+    "e": "O",
+    "f": "F",
+    "g": "I",
+    "h": "S"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "RANGEATMARKET",
+   "wordLogp": -9.6707,
+   "words": "RANGE AT MARKET",
+   "unknown": 0,
+   "key": {
+    "a": "R",
+    "b": "A",
+    "c": "N",
+    "d": "G",
+    "e": "E",
+    "f": "T",
+    "g": "M",
+    "h": "K"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "BEFORETHEBART",
+   "wordLogp": -9.68,
+   "words": "BEFORE THE BART",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "E",
+    "c": "F",
+    "d": "O",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "A"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "LARGEANDALIEN",
+   "wordLogp": -9.7384,
+   "words": "LARGE AND ALIEN",
+   "unknown": 0,
+   "key": {
+    "a": "L",
+    "b": "A",
+    "c": "R",
+    "d": "G",
+    "e": "E",
+    "f": "N",
+    "g": "D",
+    "h": "I"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "DEFINETHEDONT",
+   "wordLogp": -9.8035,
+   "words": "DEFINE THE DONT",
+   "unknown": 0,
+   "key": {
+    "a": "D",
+    "b": "E",
+    "c": "F",
+    "d": "I",
+    "e": "N",
+    "f": "T",
+    "g": "H",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "PERUSETHEPOST",
+   "wordLogp": -9.8052,
+   "words": "PERUSE THE POST",
+   "unknown": 0,
+   "key": {
+    "a": "P",
+    "b": "E",
+    "c": "R",
+    "d": "U",
+    "e": "S",
+    "f": "T",
+    "g": "H",
+    "h": "O"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "NOISEORLONGER",
+   "wordLogp": -9.8307,
+   "words": "NOISE OR LONGER",
+   "unknown": 0,
+   "key": {
+    "a": "N",
+    "b": "O",
+    "c": "I",
+    "d": "S",
+    "e": "E",
+    "f": "R",
+    "g": "L",
+    "h": "G"
+   }
+  },
+  {
+   "rank": 21,
+   "plaintext": "SEPTHEONESWHO",
+   "wordLogp": -9.8424,
+   "words": "SEP THE ONES WHO",
+   "unknown": 0,
+   "key": {
+    "a": "S",
+    "b": "E",
+    "c": "P",
+    "d": "T",
+    "e": "H",
+    "f": "O",
+    "g": "N",
+    "h": "W"
+   }
+  },
+  {
+   "rank": 22,
+   "plaintext": "BEFORETHEBURT",
+   "wordLogp": -9.8559,
+   "words": "BEFORE THE BURT",
+   "unknown": 0,
+   "key": {
+    "a": "B",
+    "b": "E",
+    "c": "F",
+    "d": "O",
+    "e": "R",
+    "f": "T",
+    "g": "H",
+    "h": "U"
+   }
+  }
+ ]
+}

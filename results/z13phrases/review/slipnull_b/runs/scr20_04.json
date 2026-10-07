@@ -1,0 +1,607 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:34:46.410Z",
+ "label": "scr20_04",
+ "cipher": {
+  "id": "scr20",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr20.txt",
+  "text": "AM00NK[NzMA0E",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   4
+  ],
+  "isomorphAfterSlips": "abcc*efdgbach"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 227198,
+  "scored": 206273,
+  "keptAtLeastStreamMin": 77,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 9065,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 955,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 77,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 3,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 13,
+  "3": 49,
+  "4": 15
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -6.954546697084861,
+  "topShare": 0.23335494070507526,
+  "top10Share": 0.596670125396953,
+  "effectiveNumberExpEntropy": 78.20671770015099,
+  "effectiveNumberInverseSimpson": 11.139490109364669,
+  "unscoredMassBoundRelative": 0.020659136433659225,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 18,
+   "maxWordLogp": -15.750578897475476,
+   "massEstimateRelative": 0.000004157400273190834,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.006861268390733566
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-18.00": 1,
+   "-17.75": 11,
+   "-17.50": 42,
+   "-17.25": 68,
+   "-17.00": 107,
+   "-16.75": 144,
+   "-16.50": 146,
+   "-16.25": 187,
+   "-16.00": 265,
+   "-15.75": 381,
+   "-15.50": 577,
+   "-15.25": 798,
+   "-15.00": 1001,
+   "-14.75": 1252,
+   "-14.50": 1684,
+   "-14.25": 1951,
+   "-14.00": 2401,
+   "-13.75": 2621,
+   "-13.50": 3073,
+   "-13.25": 3602,
+   "-13.00": 4105,
+   "-12.75": 4841,
+   "-12.50": 5411,
+   "-12.25": 6132,
+   "-12.00": 6700,
+   "-11.75": 7412,
+   "-11.50": 8220,
+   "-11.25": 8499,
+   "-11.00": 9004,
+   "-10.75": 9182,
+   "-10.50": 9492,
+   "-10.25": 9536,
+   "-10.00": 9698,
+   "-9.75": 9572,
+   "-9.50": 9355,
+   "-9.25": 9305,
+   "-9.00": 9098,
+   "-8.75": 8929,
+   "-8.50": 8579,
+   "-8.25": 8673,
+   "-8.00": 7918,
+   "-7.75": 6985,
+   "-7.50": 6224,
+   "-7.25": 5632,
+   "-7.00": 4766,
+   "-6.75": 3721,
+   "-6.50": 2859,
+   "-6.25": 2207,
+   "-6.00": 1640,
+   "-5.75": 1122,
+   "-5.50": 777,
+   "-5.25": 519,
+   "-5.00": 327,
+   "-4.75": 177,
+   "-4.50": 111,
+   "-4.25": 89,
+   "-4.00": 30,
+   "-3.75": 19,
+   "-3.50": 14,
+   "-3.25": 4,
+   "-3.00": 2
+  },
+  "exactScored": {
+   "-19.50": 1,
+   "-19.25": 2,
+   "-19.00": 5,
+   "-18.75": 69,
+   "-18.50": 461,
+   "-18.25": 1614,
+   "-18.00": 3076,
+   "-17.75": 4958,
+   "-17.50": 7164,
+   "-17.25": 9755,
+   "-17.00": 12374,
+   "-16.75": 13898,
+   "-16.50": 15141,
+   "-16.25": 15814,
+   "-16.00": 15575,
+   "-15.75": 14834,
+   "-15.50": 14133,
+   "-15.25": 13027,
+   "-15.00": 11532,
+   "-14.75": 10163,
+   "-14.50": 8728,
+   "-14.25": 7201,
+   "-14.00": 5813,
+   "-13.75": 4645,
+   "-13.50": 3739,
+   "-13.25": 3032,
+   "-13.00": 2398,
+   "-12.75": 1957,
+   "-12.50": 1462,
+   "-12.25": 1149,
+   "-12.00": 802,
+   "-11.75": 608,
+   "-11.50": 381,
+   "-11.25": 234,
+   "-11.00": 187,
+   "-10.75": 112,
+   "-10.50": 80,
+   "-10.25": 50,
+   "-10.00": 39,
+   "-9.75": 29,
+   "-9.50": 14,
+   "-9.25": 7,
+   "-9.00": 4,
+   "-8.75": 1,
+   "-8.50": 2,
+   "-8.25": 1,
+   "-7.75": 2
+  },
+  "boundUnscored": {
+   "-18.00": 1,
+   "-17.75": 11,
+   "-17.50": 42,
+   "-17.25": 68,
+   "-17.00": 107,
+   "-16.75": 144,
+   "-16.50": 146,
+   "-16.25": 187,
+   "-16.00": 265,
+   "-15.75": 381,
+   "-15.50": 577,
+   "-15.25": 798,
+   "-15.00": 1001,
+   "-14.75": 1252,
+   "-14.50": 1684,
+   "-14.25": 1951,
+   "-14.00": 2401,
+   "-13.75": 2621,
+   "-13.50": 3073,
+   "-13.25": 3602,
+   "-13.00": 613
+  }
+ },
+ "timeMs": {
+  "total": 3425,
+  "setup": 460
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "RUSSIANCOURSE",
+   "wordLogp": -7.5865,
+   "words": "RUSSIAN COURSE",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "R",
+    "M": "U",
+    "K": "A",
+    "[": "N",
+    "N": "C",
+    "z": "O",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "LITTLEAPRILTO",
+   "wordLogp": -7.7377,
+   "words": "LITTLE APRIL TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "L",
+    "M": "I",
+    "K": "E",
+    "[": "A",
+    "N": "P",
+    "z": "R",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "SMOOTHTERMSOF",
+   "wordLogp": -8.1521,
+   "words": "SMOOTH TERMS OF",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "S",
+    "M": "M",
+    "K": "H",
+    "[": "T",
+    "N": "E",
+    "z": "R",
+    "E": "F"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "NOTTAKEAMONTH",
+   "wordLogp": -8.4191,
+   "words": "NOT TAKE A MONTH",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "N",
+    "M": "O",
+    "K": "K",
+    "[": "E",
+    "N": "A",
+    "z": "M",
+    "E": "H"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ROLLSTHEWORLD",
+   "wordLogp": -8.4586,
+   "words": "ROLLS THE WORLD",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "R",
+    "M": "O",
+    "K": "T",
+    "[": "H",
+    "N": "E",
+    "z": "W",
+    "E": "D"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "BALLPRINTABLE",
+   "wordLogp": -8.5303,
+   "words": "BALL PRINTABLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "B",
+    "M": "A",
+    "K": "R",
+    "[": "I",
+    "N": "N",
+    "z": "T",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "BALLSPORTABLE",
+   "wordLogp": -8.848,
+   "words": "BALLS PORTABLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "B",
+    "M": "A",
+    "K": "P",
+    "[": "O",
+    "N": "R",
+    "z": "T",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "SMOOTHITEMSON",
+   "wordLogp": -8.9285,
+   "words": "SMOOTH ITEMS ON",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "S",
+    "M": "M",
+    "K": "H",
+    "[": "I",
+    "N": "T",
+    "z": "E",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "FLOORIDEALFOR",
+   "wordLogp": -8.9622,
+   "words": "FLOOR IDEAL FOR",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "F",
+    "M": "L",
+    "K": "I",
+    "[": "D",
+    "N": "E",
+    "z": "A",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "CALLINGORACLE",
+   "wordLogp": -8.9683,
+   "words": "CALLING ORACLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "C",
+    "M": "A",
+    "K": "N",
+    "[": "G",
+    "N": "O",
+    "z": "R",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "CUTTOPRODUCTS",
+   "wordLogp": -9.0335,
+   "words": "CUT TO PRODUCTS",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "C",
+    "M": "U",
+    "K": "P",
+    "[": "R",
+    "N": "O",
+    "z": "D",
+    "E": "S"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "ITOOCCUPATION",
+   "wordLogp": -9.0465,
+   "words": "I TO OCCUPATION",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "I",
+    "M": "T",
+    "K": "C",
+    "[": "U",
+    "N": "P",
+    "z": "A",
+    "E": "N"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "BALLSSUITABLE",
+   "wordLogp": -9.0635,
+   "words": "BALLS SUITABLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "B",
+    "M": "A",
+    "K": "S",
+    "[": "U",
+    "N": "I",
+    "z": "T",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "PUTTHINGSUPTO",
+   "wordLogp": -9.1012,
+   "words": "PUT THINGS UP TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "P",
+    "M": "U",
+    "K": "I",
+    "[": "N",
+    "N": "G",
+    "z": "S",
+    "E": "O"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "FLOOREMAILFOR",
+   "wordLogp": -9.1782,
+   "words": "FLOOR EMAIL FOR",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "A": "F",
+    "M": "L",
+    "K": "E",
+    "[": "M",
+    "N": "A",
+    "z": "I",
+    "E": "R"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "ITSSUBJECTISA",
+   "wordLogp": -9.19,
+   "words": "ITS SUBJECT IS A",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "A": "I",
+    "M": "T",
+    "K": "B",
+    "[": "J",
+    "N": "E",
+    "z": "C",
+    "E": "A"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "BALLENJOYABLE",
+   "wordLogp": -9.2182,
+   "words": "BALL ENJOYABLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "B",
+    "M": "A",
+    "K": "N",
+    "[": "J",
+    "N": "O",
+    "z": "Y",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "SPEEDGROUPSEX",
+   "wordLogp": -9.2654,
+   "words": "SPEED GROUP SEX",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "A": "S",
+    "M": "P",
+    "K": "G",
+    "[": "R",
+    "N": "O",
+    "z": "U",
+    "E": "X"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "PULLINGCOUPLE",
+   "wordLogp": -9.2668,
+   "words": "PULLING COUPLE",
+   "unknown": 0,
+   "key": {
+    "0": "L",
+    "A": "P",
+    "M": "U",
+    "K": "N",
+    "[": "G",
+    "N": "C",
+    "z": "O",
+    "E": "E"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "NOTTOPERMONTH",
+   "wordLogp": -9.2818,
+   "words": "NOT TO PER MONTH",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "A": "N",
+    "M": "O",
+    "K": "P",
+    "[": "E",
+    "N": "R",
+    "z": "M",
+    "E": "H"
+   }
+  }
+ ]
+}

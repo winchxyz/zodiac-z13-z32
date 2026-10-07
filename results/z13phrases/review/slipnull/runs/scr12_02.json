@@ -1,0 +1,401 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:19:16.343Z",
+ "label": "scr12_02",
+ "cipher": {
+  "id": "scr12",
+  "source": "results\\z13phrases\\review\\slipnull\\ciphers\\scr12.txt",
+  "text": "[AEzNMA00MK0N",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   2
+  ],
+  "isomorphAfterSlips": "ab*defbggfhge"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 119,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 119,
+  "tasks": 119,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 28002,
+  "scored": 25671,
+  "keptAtLeastStreamMin": 9,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 1173,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 113,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 9,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 3,
+  "3": 5,
+  "4": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -8.198339602623648,
+  "topShare": 0.16606112255745045,
+  "top10Share": 0.6625438635734191,
+  "effectiveNumberExpEntropy": 51.82782122209539,
+  "effectiveNumberInverseSimpson": 14.46564564675473,
+  "unscoredMassBoundRelative": 0.04034427134801091,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 0,
+   "maxWordLogp": null,
+   "massEstimateRelative": null,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.014688061871827418
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.25": 7,
+   "-17.00": 17,
+   "-16.75": 16,
+   "-16.50": 15,
+   "-16.25": 26,
+   "-16.00": 56,
+   "-15.75": 84,
+   "-15.50": 82,
+   "-15.25": 89,
+   "-15.00": 90,
+   "-14.75": 94,
+   "-14.50": 147,
+   "-14.25": 166,
+   "-14.00": 214,
+   "-13.75": 286,
+   "-13.50": 407,
+   "-13.25": 465,
+   "-13.00": 418,
+   "-12.75": 465,
+   "-12.50": 521,
+   "-12.25": 596,
+   "-12.00": 736,
+   "-11.75": 767,
+   "-11.50": 826,
+   "-11.25": 776,
+   "-11.00": 848,
+   "-10.75": 894,
+   "-10.50": 1010,
+   "-10.25": 1048,
+   "-10.00": 1074,
+   "-9.75": 1070,
+   "-9.50": 1159,
+   "-9.25": 1062,
+   "-9.00": 1109,
+   "-8.75": 1110,
+   "-8.50": 1055,
+   "-8.25": 1082,
+   "-8.00": 1011,
+   "-7.75": 988,
+   "-7.50": 949,
+   "-7.25": 928,
+   "-7.00": 823,
+   "-6.75": 707,
+   "-6.50": 608,
+   "-6.25": 547,
+   "-6.00": 435,
+   "-5.75": 355,
+   "-5.50": 246,
+   "-5.25": 187,
+   "-5.00": 122,
+   "-4.75": 76,
+   "-4.50": 57,
+   "-4.25": 27,
+   "-4.00": 23,
+   "-3.75": 11,
+   "-3.50": 5,
+   "-3.25": 5,
+   "-3.00": 3,
+   "-2.75": 1,
+   "-2.50": 1
+  },
+  "exactScored": {
+   "-19.25": 2,
+   "-19.00": 2,
+   "-18.75": 1,
+   "-18.50": 14,
+   "-18.25": 77,
+   "-18.00": 181,
+   "-17.75": 386,
+   "-17.50": 734,
+   "-17.25": 1114,
+   "-17.00": 1364,
+   "-16.75": 1762,
+   "-16.50": 2052,
+   "-16.25": 2247,
+   "-16.00": 2199,
+   "-15.75": 2035,
+   "-15.50": 1828,
+   "-15.25": 1628,
+   "-15.00": 1368,
+   "-14.75": 1286,
+   "-14.50": 1067,
+   "-14.25": 909,
+   "-14.00": 733,
+   "-13.75": 581,
+   "-13.50": 467,
+   "-13.25": 409,
+   "-13.00": 331,
+   "-12.75": 232,
+   "-12.50": 200,
+   "-12.25": 153,
+   "-12.00": 90,
+   "-11.75": 85,
+   "-11.50": 60,
+   "-11.25": 34,
+   "-11.00": 15,
+   "-10.75": 5,
+   "-10.50": 6,
+   "-10.25": 4,
+   "-10.00": 4,
+   "-9.50": 2,
+   "-9.25": 3,
+   "-9.00": 1
+  },
+  "boundUnscored": {
+   "-17.25": 7,
+   "-17.00": 17,
+   "-16.75": 16,
+   "-16.50": 15,
+   "-16.25": 26,
+   "-16.00": 56,
+   "-15.75": 84,
+   "-15.50": 82,
+   "-15.25": 89,
+   "-15.00": 90,
+   "-14.75": 94,
+   "-14.50": 147,
+   "-14.25": 166,
+   "-14.00": 214,
+   "-13.75": 286,
+   "-13.50": 407,
+   "-13.25": 465,
+   "-13.00": 70
+  }
+ },
+ "timeMs": {
+  "total": 1718,
+  "setup": 412
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "BRAINTREETHEN",
+   "wordLogp": -8.9781,
+   "words": "BRAINTREE THEN",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "B",
+    "A": "R",
+    "z": "I",
+    "N": "N",
+    "M": "T",
+    "K": "H"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "HEARTLESSLIST",
+   "wordLogp": -9.1345,
+   "words": "HEARTLESS LIST",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "H",
+    "A": "E",
+    "z": "R",
+    "N": "T",
+    "M": "L",
+    "K": "I"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "HEARTLESSLAST",
+   "wordLogp": -9.1882,
+   "words": "HEARTLESS LAST",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "H",
+    "A": "E",
+    "z": "R",
+    "N": "T",
+    "M": "L",
+    "K": "A"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "DIEGOLITTLETO",
+   "wordLogp": -9.2465,
+   "words": "DIEGO LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "D",
+    "A": "I",
+    "z": "G",
+    "N": "O",
+    "M": "L",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "MICROLITTLETO",
+   "wordLogp": -9.4069,
+   "words": "MICRO LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "M",
+    "A": "I",
+    "z": "R",
+    "N": "O",
+    "M": "L",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "PIANOLITTLETO",
+   "wordLogp": -9.4863,
+   "words": "PIANO LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "P",
+    "A": "I",
+    "z": "N",
+    "N": "O",
+    "M": "L",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "DIDSOLITTLETO",
+   "wordLogp": -9.7842,
+   "words": "DID SO LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "D",
+    "A": "I",
+    "z": "S",
+    "N": "O",
+    "M": "L",
+    "K": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "FROMSTREETYES",
+   "wordLogp": -9.7882,
+   "words": "FROM STREET YES",
+   "unknown": 0,
+   "key": {
+    "0": "E",
+    "[": "F",
+    "A": "R",
+    "z": "M",
+    "N": "S",
+    "M": "T",
+    "K": "Y"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "BINGOLITTLETO",
+   "wordLogp": -9.8232,
+   "words": "BINGO LITTLE TO",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "B",
+    "A": "I",
+    "z": "G",
+    "N": "O",
+    "M": "L",
+    "K": "E"
+   }
+  }
+ ]
+}

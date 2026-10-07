@@ -1,0 +1,604 @@
+{
+ "tool": "tools/z13phrases_enum.js",
+ "created": "2026-10-07T17:34:20.834Z",
+ "label": "scr19_11",
+ "cipher": {
+  "id": "scr19",
+  "source": "results\\z13phrases\\review\\slipnull_b\\ciphers\\scr19.txt",
+  "text": "[NKAz0EMAM0N0",
+  "length": 13,
+  "symbols": 8,
+  "range": null,
+  "slips": [
+   11
+  ],
+  "isomorphAfterSlips": "abcdefghdhf*f"
+ },
+ "options": {
+  "overrides": null,
+  "mode": "simple",
+  "topWords": 5000,
+  "wordsUsed": 4979,
+  "maxWords": 4,
+  "vocab": "common",
+  "wordList": "data/lm/words_common.tsv",
+  "pin": "",
+  "forbid": "",
+  "tlow": -12.9601,
+  "streamMin": -9.8613,
+  "threads": 4,
+  "taskDepth": 3,
+  "tasks": 116,
+  "maxSeconds": 60
+ },
+ "reference": {
+  "file": "results/z13phrases/null_real_phrases.json",
+  "length": 13,
+  "vocab": "common",
+  "dist": {
+   "mean": -10.0155,
+   "max": -4.4925,
+   "p5": -14.0785,
+   "p10": -12.9601,
+   "p25": -11.4014,
+   "p50": -9.8613,
+   "p75": -8.3388,
+   "p90": -7.1913,
+   "p95": -6.6421,
+   "p99": -6.0071
+  }
+ },
+ "counts": {
+  "complete": true,
+  "tasksDone": 116,
+  "tasks": 116,
+  "taskSample": null,
+  "estimate": null,
+  "consistentStrings": 158002,
+  "scored": 149075,
+  "keptAtLeastStreamMin": 65,
+  "atLeast": {
+   "real_p10": {
+    "threshold": -12.9601,
+    "count": 13181,
+    "exact": true
+   },
+   "real_p25": {
+    "threshold": -11.4014,
+    "count": 1411,
+    "exact": true
+   },
+   "real_p50": {
+    "threshold": -9.8613,
+    "count": 65,
+    "exact": true
+   },
+   "real_p75": {
+    "threshold": -8.3388,
+    "count": 0,
+    "exact": true
+   },
+   "real_p90": {
+    "threshold": -7.1913,
+    "count": 0,
+    "exact": true
+   },
+   "real_p95": {
+    "threshold": -6.6421,
+    "count": 0,
+    "exact": true
+   },
+   "real_p99": {
+    "threshold": -6.0071,
+    "count": 0,
+    "exact": true
+   }
+  },
+  "boundViolations": 0,
+  "note": "complete enumeration; counts at thresholds >= tlow are exact"
+ },
+ "wordsInBestSegmentationAboveMedian": {
+  "2": 10,
+  "3": 17,
+  "4": 37,
+  "5": 1
+ },
+ "posterior": {
+  "note": "LM prior (10^wordLogp) renormalised over all scored fits (score bound >= tlow); unscored fits add at most unscoredMassBound relative mass",
+  "log10TotalMassScored": -7.1650427746932115,
+  "topShare": 0.04022706529291958,
+  "top10Share": 0.2624592395811456,
+  "effectiveNumberExpEntropy": 599.9750571803775,
+  "effectiveNumberInverseSimpson": 102.72494615007813,
+  "unscoredMassBoundRelative": 0.014310285867347205,
+  "unscoredSample": {
+   "every": 1000,
+   "sampled": 8,
+   "maxWordLogp": -15.778953231454892,
+   "massEstimateRelative": 0.0000065489386374608016,
+   "note": "systematic sample (every k-th unscored string scored exactly); estimated total mass of the unscored fits relative to the scored mass"
+  },
+  "unscoredMassBoundFromBoundHistogram": 0.0038980356586147814
+ },
+ "histograms": {
+  "binWidth": 0.25,
+  "boundAllStrings": {
+   "-17.75": 24,
+   "-17.50": 23,
+   "-17.25": 84,
+   "-17.00": 66,
+   "-16.75": 125,
+   "-16.50": 93,
+   "-16.25": 128,
+   "-16.00": 141,
+   "-15.75": 222,
+   "-15.50": 293,
+   "-15.25": 474,
+   "-15.00": 548,
+   "-14.75": 602,
+   "-14.50": 804,
+   "-14.25": 857,
+   "-14.00": 924,
+   "-13.75": 1003,
+   "-13.50": 1180,
+   "-13.25": 1156,
+   "-13.00": 1286,
+   "-12.75": 1419,
+   "-12.50": 1611,
+   "-12.25": 1934,
+   "-12.00": 2305,
+   "-11.75": 2795,
+   "-11.50": 3162,
+   "-11.25": 3602,
+   "-11.00": 4153,
+   "-10.75": 4721,
+   "-10.50": 5073,
+   "-10.25": 5338,
+   "-10.00": 5638,
+   "-9.75": 5938,
+   "-9.50": 6061,
+   "-9.25": 6043,
+   "-9.00": 6081,
+   "-8.75": 6397,
+   "-8.50": 6890,
+   "-8.25": 7330,
+   "-8.00": 7494,
+   "-7.75": 7369,
+   "-7.50": 7282,
+   "-7.25": 6849,
+   "-7.00": 6403,
+   "-6.75": 5608,
+   "-6.50": 4857,
+   "-6.25": 4254,
+   "-6.00": 3297,
+   "-5.75": 2595,
+   "-5.50": 1859,
+   "-5.25": 1275,
+   "-5.00": 949,
+   "-4.75": 599,
+   "-4.50": 349,
+   "-4.25": 203,
+   "-4.00": 134,
+   "-3.75": 53,
+   "-3.50": 33,
+   "-3.25": 12,
+   "-3.00": 3,
+   "-2.75": 1
+  },
+  "exactScored": {
+   "-19.50": 1,
+   "-19.25": 4,
+   "-19.00": 8,
+   "-18.75": 72,
+   "-18.50": 168,
+   "-18.25": 379,
+   "-18.00": 770,
+   "-17.75": 1321,
+   "-17.50": 2121,
+   "-17.25": 3024,
+   "-17.00": 4190,
+   "-16.75": 5451,
+   "-16.50": 6739,
+   "-16.25": 7657,
+   "-16.00": 8573,
+   "-15.75": 9408,
+   "-15.50": 10192,
+   "-15.25": 10693,
+   "-15.00": 10817,
+   "-14.75": 10561,
+   "-14.50": 9721,
+   "-14.25": 8946,
+   "-14.00": 7888,
+   "-13.75": 6623,
+   "-13.50": 5435,
+   "-13.25": 4486,
+   "-13.00": 3560,
+   "-12.75": 2746,
+   "-12.50": 2169,
+   "-12.25": 1665,
+   "-12.00": 1172,
+   "-11.75": 822,
+   "-11.50": 636,
+   "-11.25": 406,
+   "-11.00": 269,
+   "-10.75": 156,
+   "-10.50": 81,
+   "-10.25": 57,
+   "-10.00": 39,
+   "-9.75": 20,
+   "-9.50": 7,
+   "-9.25": 10,
+   "-9.00": 9,
+   "-8.75": 3
+  },
+  "boundUnscored": {
+   "-17.75": 24,
+   "-17.50": 23,
+   "-17.25": 84,
+   "-17.00": 66,
+   "-16.75": 125,
+   "-16.50": 93,
+   "-16.25": 128,
+   "-16.00": 141,
+   "-15.75": 222,
+   "-15.50": 293,
+   "-15.25": 474,
+   "-15.00": 548,
+   "-14.75": 602,
+   "-14.50": 804,
+   "-14.25": 857,
+   "-14.00": 924,
+   "-13.75": 1003,
+   "-13.50": 1180,
+   "-13.25": 1156,
+   "-13.00": 180
+  }
+ },
+ "timeMs": {
+  "total": 4443,
+  "setup": 390
+ },
+ "violations": [],
+ "top": [
+  {
+   "rank": 1,
+   "plaintext": "EACHMONTHTODO",
+   "wordLogp": -8.5605,
+   "words": "EACH MONTH TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "E",
+    "N": "A",
+    "K": "C",
+    "A": "H",
+    "z": "M",
+    "E": "N",
+    "M": "T"
+   }
+  },
+  {
+   "rank": 2,
+   "plaintext": "SOFTWARETEAMA",
+   "wordLogp": -8.6352,
+   "words": "SOFTWARE TEAM A",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "S",
+    "N": "O",
+    "K": "F",
+    "A": "T",
+    "z": "W",
+    "E": "R",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 3,
+   "plaintext": "ITEMSFROMOFOF",
+   "wordLogp": -8.7165,
+   "words": "ITEMS FROM OF OF",
+   "unknown": 0,
+   "key": {
+    "0": "F",
+    "[": "I",
+    "N": "T",
+    "K": "E",
+    "A": "M",
+    "z": "S",
+    "E": "R",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 4,
+   "plaintext": "THEWINDOWONIN",
+   "wordLogp": -8.7787,
+   "words": "THE WINDOW ON IN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "T",
+    "N": "H",
+    "K": "E",
+    "A": "W",
+    "z": "I",
+    "E": "D",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 5,
+   "plaintext": "ANDSPORTSTODO",
+   "wordLogp": -8.7932,
+   "words": "AND SPORTS TO DO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "A",
+    "N": "N",
+    "K": "D",
+    "A": "S",
+    "z": "P",
+    "E": "R",
+    "M": "T"
+   }
+  },
+  {
+   "rank": 6,
+   "plaintext": "ADVERTISESTAT",
+   "wordLogp": -8.8045,
+   "words": "ADVERTISE STAT",
+   "unknown": 0,
+   "key": {
+    "0": "T",
+    "[": "A",
+    "N": "D",
+    "K": "V",
+    "A": "E",
+    "z": "R",
+    "E": "I",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 7,
+   "plaintext": "POINTSGENESIS",
+   "wordLogp": -8.8054,
+   "words": "POINTS GENESIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "P",
+    "N": "O",
+    "K": "I",
+    "A": "N",
+    "z": "T",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 8,
+   "plaintext": "EACHMONTHTOTO",
+   "wordLogp": -8.8124,
+   "words": "EACH MONTH TO TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "E",
+    "N": "A",
+    "K": "C",
+    "A": "H",
+    "z": "M",
+    "E": "N",
+    "M": "T"
+   }
+  },
+  {
+   "rank": 9,
+   "plaintext": "THEWINDOWONAN",
+   "wordLogp": -8.8203,
+   "words": "THE WINDOW ON AN",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "T",
+    "N": "H",
+    "K": "E",
+    "A": "W",
+    "z": "I",
+    "E": "D",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 10,
+   "plaintext": "EACHMONTHTOGO",
+   "wordLogp": -8.8243,
+   "words": "EACH MONTH TO GO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "E",
+    "N": "A",
+    "K": "C",
+    "A": "H",
+    "z": "M",
+    "E": "N",
+    "M": "T"
+   }
+  },
+  {
+   "rank": 11,
+   "plaintext": "THANKSGENESIS",
+   "wordLogp": -8.9146,
+   "words": "THANKS GENESIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "T",
+    "N": "H",
+    "K": "A",
+    "A": "N",
+    "z": "K",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 12,
+   "plaintext": "OFISLANDSDATA",
+   "wordLogp": -8.9297,
+   "words": "OF ISLANDS DATA",
+   "unknown": 0,
+   "key": {
+    "0": "A",
+    "[": "O",
+    "N": "F",
+    "K": "I",
+    "A": "S",
+    "z": "L",
+    "E": "N",
+    "M": "D"
+   }
+  },
+  {
+   "rank": 13,
+   "plaintext": "ANDSPORTSTOTO",
+   "wordLogp": -9.045,
+   "words": "AND SPORTS TO TO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "A",
+    "N": "N",
+    "K": "D",
+    "A": "S",
+    "z": "P",
+    "E": "R",
+    "M": "T"
+   }
+  },
+  {
+   "rank": 14,
+   "plaintext": "ANDSPORTSTOGO",
+   "wordLogp": -9.057,
+   "words": "AND SPORTS TO GO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "A",
+    "N": "N",
+    "K": "D",
+    "A": "S",
+    "z": "P",
+    "E": "R",
+    "M": "T"
+   }
+  },
+  {
+   "rank": 15,
+   "plaintext": "BRANDSGENESIS",
+   "wordLogp": -9.1164,
+   "words": "BRANDS GENESIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "B",
+    "N": "R",
+    "K": "A",
+    "A": "N",
+    "z": "D",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 16,
+   "plaintext": "PLANTSGENESIS",
+   "wordLogp": -9.1272,
+   "words": "PLANTS GENESIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "P",
+    "N": "L",
+    "K": "A",
+    "A": "N",
+    "z": "T",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 17,
+   "plaintext": "PLACESTOCOSTS",
+   "wordLogp": -9.144,
+   "words": "PLACES TO COSTS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "P",
+    "N": "L",
+    "K": "A",
+    "A": "C",
+    "z": "E",
+    "E": "T",
+    "M": "O"
+   }
+  },
+  {
+   "rank": 18,
+   "plaintext": "WAREHOUSESOLO",
+   "wordLogp": -9.1784,
+   "words": "WAREHOUSE SOLO",
+   "unknown": 0,
+   "key": {
+    "0": "O",
+    "[": "W",
+    "N": "A",
+    "K": "R",
+    "A": "E",
+    "z": "H",
+    "E": "U",
+    "M": "S"
+   }
+  },
+  {
+   "rank": 19,
+   "plaintext": "PRINTSGENESIS",
+   "wordLogp": -9.213,
+   "words": "PRINTS GENESIS",
+   "unknown": 0,
+   "key": {
+    "0": "S",
+    "[": "P",
+    "N": "R",
+    "K": "I",
+    "A": "N",
+    "z": "T",
+    "E": "G",
+    "M": "E"
+   }
+  },
+  {
+   "rank": 20,
+   "plaintext": "THEWINDOWONON",
+   "wordLogp": -9.2199,
+   "words": "THE WINDOW ON ON",
+   "unknown": 0,
+   "key": {
+    "0": "N",
+    "[": "T",
+    "N": "H",
+    "K": "E",
+    "A": "W",
+    "z": "I",
+    "E": "D",
+    "M": "O"
+   }
+  }
+ ]
+}
